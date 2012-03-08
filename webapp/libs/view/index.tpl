@@ -153,6 +153,9 @@
 
     </div> <!-- /container -->
 
+    <!-- Dumb hack to give Pinterest bookmarklet an image, argh -->
+    <img src="http://narrowthegapp.com/images/narrow-the-gapp.jpg" style="visibility:hidden;"/>
+
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
