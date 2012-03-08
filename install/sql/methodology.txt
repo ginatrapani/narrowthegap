@@ -1,0 +1,68 @@
+--
+-- How to create and populate data table
+-- To skip these steps, just run build-db_mysql.sql
+--
+-- In MySQL:
+--
+DROP TABLE IF EXISTS ntg_occupation_gap;
+CREATE TABLE ntg_occupation_gap (
+  id int(11) NOT NULL AUTO_INCREMENT COMMENT 'Unique internal ID',
+  primary_category varchar(100) NOT NULL COMMENT 'Occupation primary category.',
+  secondary_category varchar(100) NOT NULL COMMENT 'Occupation secondary category.',
+  tertiary_category varchar(100) NOT NULL COMMENT 'Occupation tertiary category.',
+  job_title varchar(100) NOT NULL COMMENT 'Job title of this occupation.',
+  mw_total_workers int(11) NOT NULL COMMENT 'Total workers of both genders in this occupation.',
+  mw_median_weekly_earnings int(11) NOT NULL COMMENT 'Median weekly earnings by both genders in this occupation.',
+  m_total_workers int(11) NOT NULL COMMENT 'Total men workers in this occupation.',
+  m_median_weekly_earnings int(11) NOT NULL COMMENT 'Median weekly earnings of full-time wage and salary men in this occupation.',
+  w_total_workers int(11) NOT NULL COMMENT 'Total women workers in this occupation.',
+  w_median_weekly_earnings int(11) NOT NULL COMMENT 'Median weekly earnings of full-time wage and salary women in this occupation.',
+  earnings_gap int(11) DEFAULT NULL COMMENT 'Median weekly earnings of full-time wage and salary women workers as a percentage of men in this occupation.',
+  worker_gap int(11) DEFAULT NULL COMMENT 'Total women workers as a percentage of men. Null if 100% or more.',
+  PRIMARY KEY (id),
+  KEY earnings_gap (earnings_gap)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='2010 gender wage and worker gap per occupation.';
+
+--
+-- How to generate data.csv file (included in project):
+--
+-- Download source text file from ftp://ftp.bls.gov/pub/special.requests/lf/aat39.txt
+-- Using a text editor like TextMate, select all the numeric data into a new text file
+-- Convert all the spaces to tabs, then convert all the double tabs to single tabs
+-- Repeat till there are no double tabs
+-- Replace all line breaks followed by a tab to just line breaks
+-- Copy all numeric data into a new spreadsheet
+-- Select all the occupation names into a new text file
+-- Replace all dots with empty chars
+-- Convert all double spaces to tabs
+-- Create a new sheet in your spreadsheet and copy occupation names into it
+-- In first sheet, add four new columns before numeric data
+-- Copy second sheet's occupation names til it all lines up correctly
+-- Export spreadsheet to CSV
+-- Open CSV result in a text editor
+-- Remove all empty rows by replacing 2 newlines with 1
+-- Remove all occupation names that wrap to next line by replacing "newline,, with empty char, and by manually adding
+--     in closing quote to resulting line in occupation name/category 
+
+LOAD DATA LOCAL INFILE '/your/path/to/narrowthegap/install/sql/data.csv' INTO TABLE ntg_occupation_gap
+FIELDS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\' LINES TERMINATED BY '\n'(
+primary_category , secondary_category , tertiary_category , job_title , mw_total_workers , mw_median_weekly_earnings , m_total_workers , m_median_weekly_earnings , w_total_workers , w_median_weekly_earnings
+)
+
+UPDATE ntg_occupation_gap SET earnings_gap = ((w_median_weekly_earnings * 100)/m_median_weekly_earnings)
+WHERE w_median_weekly_earnings < m_median_weekly_earnings 
+AND (m_median_weekly_earnings != -1 AND w_median_weekly_earnings != -1)
+AND (m_median_weekly_earnings != 0 AND w_median_weekly_earnings != 0);
+
+UPDATE ntg_occupation_gap SET worker_gap = ((w_total_workers * 100)/m_total_workers)
+WHERE w_total_workers < m_total_workers 
+AND (m_total_workers > 10 AND w_total_workers > 10);
+
+DELETE FROM ntg_occupation_gap WHERE earnings_gap IS NULL;
+
+--
+-- Check your numbers
+--
+-- SELECT id, job_title, m_median_weekly_earnings, w_median_weekly_earnings, earnings_gap FROM ntg_occupation_gap where earnings_gap is not null order by earnings_gap ASC;
+
+-- SELECT id, primary_category, secondary_category, tertiary_category, job_title, m_total_workers, w_total_workers, worker_gap FROM ntg_occupation_gap where worker_gap is not null order by worker_gap ASC
