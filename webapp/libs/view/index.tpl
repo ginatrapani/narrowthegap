@@ -74,7 +74,7 @@
         <div style="float:left;margin-top:20px">
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://narrowthegapp.com/?i={$id}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
             <div class="fb-like" data-href="http://narrowthegapp.com/?i={$id}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
-            <g:plusone size="tall" href="{'http://narrowthegapp.com/?i='|urlencode}{$id}"></g:plusone>
+            <g:plusone size="tall" href="http://narrowthegapp.com/?i={$id}"></g:plusone>
             <a href="http://pinterest.com/pin/create/button/?url={'http://narrowthegapp.com/?i='|urlencode}{$id}" class="pin-it-button" count-layout="vertical">Pin It</a>
         </div>
         <p align="right" style="margin-top:30px"><a class="btn btn-custom btn-large" href="/">{$exclamation} Show me another &raquo;</a></p>
