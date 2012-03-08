@@ -3,28 +3,14 @@
 ,,"Management occupations",,10743,1230,6376,1414,4368,1018
 ,,,"Chief executives,1034,1949,769,2217,265,1598
 ,,,"General and operations managers",884,1237,626,1354,258,972
-,,,"Legislators",9,(1),7,(1),2,(1),
-,,,"Advertising and promotions managers",71,1021,24,(1),47,(1)
 ,,,"Marketing and sales managers",854,1335,485,1534,368,1010
-,,,"Public relations managers",76,1163,33,(1),43,(1)
-,,,"Administrative services managers",96,1241,68,1350,29,(1)
 ,,,"Computer and information systems managers",505,1600,353,1729,152,1415
 ,,,"Financial managers",1046,1227,494,1546,552,1022
 ,,,"Human resources managers",245,1308,71,1458,174,1170
-,,,"Industrial production managers",241,1301,201,1331,40,(1)
 ,,,"Purchasing managers",195,1272,110,1394,85,1050
-,,,"Transportation, storage, and distribution managers",248,919,208,920,40,(1)
-,,,"Farm, ranch, and other agricultural managers",96,789,88,780,8,(1)
-,,,"Construction managers",477,1170,448,1189,29,(1)
 ,,,"Education administrators",724,1202,278,1396,446,1137
-,,,"Engineering managers",106,1885,98,1888,8,(1)
 ,,,"Food service managers",598,709,308,796,290,626
-,,,"Funeral directors",27,(1),21,(1),6,(1)
-,,,"Gaming managers",19,(1),13,(1),6,(1)
-,,,"Lodging managers",101,790,54,952,47,(1)
 ,,,"Medical and health services managers",494,1251,138,1510,356,1163
-,,,"Natural sciences managers",21,(1),9,(1),12,(1)
-,,,"Postmasters and mail superintendents",27,(1),7,(1),19,(1)
 ,,,"Property, real estate, and community association managers",336,869,156,1111,180,726
 ,,,Social and community service managers,289,968,87,1163,202,915
 ,,,"Managers, all other",1922,1242,1219,1395,703,1045
@@ -71,7 +57,6 @@
 ,,,"Architects, except naval",122,1209,85,1329,36,-1
 ,,,"Surveyors, cartographers, and photogrammetrists",29,-1,25,-1,5,-1
 ,,,Aerospace engineers,121,1593,111,1662,10,-1
-,,,Agricultural engineers,1,-1,1,-1,  -,   -   
 ,,,Biomedical engineers,11,-1,10,-1,2,-1
 ,,,Chemical engineers,68,1505,57,1516,11,-1
 ,,,Civil engineers,276,1332,250,1363,26,-1
@@ -82,7 +67,6 @@
 ,,,Marine engineers and naval architects,13,-1,12,-1,1,-1
 ,,,Materials engineers,38,-1,34,-1,4,-1
 ,,,Mechanical engineers,282,1337,265,1337,17,-1
-,,,"Mining and geological engineers, including mining safety engineers",13,-1,13,-1,  -,   -   
 ,,,Nuclear engineers,10,-1,9,-1,1,-1
 ,,,Petroleum engineers,20,-1,19,-1,1,-1
 ,,,"Engineers, all other",294,1318,254,1335,41,-1
@@ -102,14 +86,12 @@
 ,,,Economists,27,-1,21,-1,6,-1
 ,,,Market and survey researchers,118,1162,50,1414,68,1009
 ,,,Psychologists,92,1122,33,-1,59,1041
-,,,Sociologists,4,-1,-, -,4,-1
 ,,,Urban and regional planners,18,-1,10,-1,8,-1
 ,,,Miscellaneous social scientists and related workers,37,-1,18,-1,19,-1
 ,,,Agricultural and food science technicians,22,-1,14,-1,8,-1
 ,,,Biological technicians,18,-1,8,-1,10,-1
 ,,,Chemical technicians,57,890,37,-1,20,-1
 ,,,Geological and petroleum technicians,23,-1,17,-1,6,-1
-,,,Nuclear technicians,1,-1,1,-1,  -,   -   
 ,,,"Other life, physical, and social science technicians",119,786,53,857,67,721
 ,,Community and social services occupations,,1909,802,702,864,1208,774
 ,,,Counselors,517,808,154,780,363,818
@@ -154,7 +136,6 @@
 ,,,Broadcast and sound engineering technicians and radio operators,64,848,58,842,6,-1
 ,,,Photographers,45,-1,30,-1,15,-1
 ,,,"Television, video, and motion picture camera operators and editors",28,-1,25,-1,3,-1
-,,,"Media and communication equipment workers, all other",2,-1,2,-1,  -,   -   
 ,,Healthcare practitioner and technical occupations,,5678,986,1437,1233,4241,933
 ,,,Chiropractors,7,-1,4,-1,3,-1
 ,,,Dentists,41,-1,21,-1,20,-1
@@ -202,7 +183,6 @@ Service occupations,,,,14424,479,7294,543,7129,423
 ,,Fire inspectors,,16,-1,15,-1,1,-1
 ,,"Bailiffs, correctional officers, and jailers",,445,685,333,724,113,625
 ,,Detectives and criminal investigators,,155,1161,116,1261,38,-1
-,,Fish and game wardens,,4,-1,4,-1,  -,   -   
 ,,Parking enforcement workers,,11,-1,7,-1,4,-1
 ,,Police and sheriff's patrol officers,,704,961,608,992,96,772
 ,,Transit and railroad police,,4,-1,3,-1,1,-1
@@ -317,7 +297,6 @@ Sales and office occupations,,,,23060,631,8840,736,14220,597
 ,,Computer operators,,104,751,50,866,54,654
 ,,Data entry keyers,,293,591,60,610,232,585
 ,,Word processors and typists,,114,634,11,-1,103,627
-,,Desktop publishers,,3,-1,-, -,3,-1
 ,,Insurance claims and policy processing clerks,,208,629,35,-1,173,626
 ,,"Mail clerks and mail machine operators, except postal service",,72,507,36,-1,36,-1
 ,,"Office clerks, general",,705,600,110,632,595,597
@@ -329,73 +308,42 @@ Sales and office occupations,,,,23060,631,8840,736,14220,597
 ,"Farming, fishing, and forestry occupations",,,729,416,577,438,151,369
 ,,"First-line supervisors/managers of farming, fishing, and forestry workers",,31,-1,26,-1,4,-1
 ,,Agricultural inspectors,,25,-1,15,-1,11,-1
-,,Animal breeders,,2,-1,2,-1,  -,   -   
 ,,"Graders and sorters, agricultural products",,84,399,31,-1,54,381
 ,,Miscellaneous agricultural workers,,528,400,447,415,81,349
-,,Fishers and related fishing workers,,11,-1,11,-1,  -,   -   
-,,Hunters and trappers,,2,-1,2,-1,  -,   -   
 ,,Forest and conservation workers,,5,-1,4,-1,1,-1
 ,,Logging workers,,40,-1,39,-1,1,-1
 ,Construction and extraction occupations,,,5020,709,4918,710,102,646
 ,,First-line supervisors/managers of construction trades and extraction workers,,494,955,477,960,18,-1
 ,,Boilermakers,,25,-1,23,-1,1,-1
-,,"Brickmasons, blockmasons, and stonemasons",,106,701,106,701,  -,   -   
 ,,Carpenters,,669,623,659,624,10,-1
-,,"Carpet, floor, and tile installers and finishers",,115,536,115,536,  -,   -   
-,,"Cement masons, concrete finishers, and terrazzo workers",,63,556,63,556,  -,   -   
 ,,Construction laborers,,877,568,858,569,19,-1
-,,"Paving, surfacing, and tamping equipment operators",,16,-1,16,-1,  -,   -   
-,,Pile-driver operators,,2,-1,2,-1,  -,   -   
 ,,Operating engineers and other construction equipment operators,,328,859,325,864,4,-1
 ,,"Drywall installers, ceiling tile installers, and tapers",,118,507,117,509,1,-1
 ,,Electricians,,560,888,552,890,8,-1
 ,,Glaziers,,35,-1,35,-1,1,-1
-,,Insulation workers,,28,-1,28,-1,  -,   -   
 ,,"Painters, construction and maintenance",,299,521,286,520,13,-1
-,,Paperhangers,,1,-1,1,-1,  -,   -   
 ,,"Pipelayers, plumbers, pipefitters, and steamfitters",,396,796,389,793,6,-1
-,,Plasterers and stucco masons,,29,-1,29,-1,  -,   -   
-,,Reinforcing iron and rebar workers,,2,-1,2,-1,  -,   -   
-,,Roofers,,146,521,146,521,  -,   -   
 ,,Sheet metal workers,,89,751,85,733,4,-1
-,,Structural iron and steel workers,,51,767,51,767,  -,   -   
 ,,"Helpers, construction trades",,42,-1,41,-1,1,-1
 ,,Construction and building inspectors,,85,949,79,949,6,-1
-,,Elevator installers and repairers,,32,-1,32,-1,  -,   -   
-,,Fence erectors,,30,-1,30,-1,  -,   -   
 ,,Hazardous materials removal workers,,35,-1,32,-1,3,-1
 ,,Highway maintenance workers,,102,715,99,729,3,-1
-,,Rail-track laying and maintenance equipment operators,,12,-1,12,-1,  -,   -   
-,,Septic tank servicers and sewer pipe cleaners,,12,-1,12,-1,  -,   -   
 ,,Miscellaneous construction and related workers,,30,-1,29,-1,2,-1
 ,,"Derrick, rotary drill, and service unit operators, oil, gas, and mining",,38,-1,37,-1,1,-1
-,,"Earth drillers, except oil and gas",,18,-1,18,-1,  -,   -   
-,,"Explosives workers, ordnance handling experts, and blasters",,9,-1,9,-1,  -,   -   
 ,,Mining machine operators,,60,996,58,995,2,-1
-,,"Roof bolters, mining",,4,-1,4,-1,  -,   -   
-,,"Roustabouts, oil and gas",,10,-1,10,-1,  -,   -   
-,,Helpers-extraction workers,,6,-1,6,-1,  -,   -   
 ,,Other extraction workers,,48,-1,48,-1,1,-1
 ,"Installation, maintenance, and repair occupations",,,4120,794,3968,799,152,683
 ,,"First-line supervisors/managers of mechanics, installers, and repairers",,365,964,339,979,26,-1
 ,,"Computer, automated teller, and office machine repairers",,231,804,208,814,23,-1
 ,,Radio and telecommunications equipment installers and repairers,,155,916,139,942,16,-1
 ,,Avionics technicians,,18,-1,16,-1,2,-1
-,,"Electric motor, power tool, and related repairers",,25,-1,24,-1,  -,   -   
-,,"Electrical and electronics installers and repairers, transportation equipment",,4,-1,4,-1,  -,   -   
-,,"Electrical and electronics repairers, industrial and utility",,18,-1,18,-1,  -,   -   
-,,"Electronic equipment installers and repairers, motor vehicles",,10,-1,10,-1,  -,   -   
-,,Electronic home entertainment equipment installers and repairers,,39,-1,39,-1,  -,   -   
 ,,Security and fire alarm systems installers,,50,904,49,-1,1,-1
 ,,Aircraft mechanics and service technicians,,129,980,126,986,4,-1
 ,,Automotive body and related repairers,,126,682,126,683,1,-1
-,,Automotive glass installers and repairers,,17,-1,17,-1,  -,   -   
 ,,Automotive service technicians and mechanics,,595,675,585,680,11,-1
 ,,Bus and truck mechanics and diesel engine specialists,,300,767,298,768,1,-1
 ,,Heavy vehicle and mobile equipment service technicians and mechanics,,216,879,213,879,3,-1
 ,,Small engine mechanics,,41,-1,40,-1,1,-1
-,,"Miscellaneous vehicle and mobile equipment mechanics, installers, and repairers",,78,521,78,521,  -,   -   
-,,Control and valve installers and repairers,,22,-1,22,-1,  -,   -   
 ,,"Heating, air conditioning, and refrigeration mechanics and installers",,311,824,308,826,3,-1
 ,,Home appliance repairers,,33,-1,32,-1,1,-1
 ,,Industrial and refractory machinery mechanics,,417,858,403,866,14,-1
@@ -406,10 +354,7 @@ Sales and office occupations,,,,23060,631,8840,736,14220,597
 ,,Telecommunications line installers and repairers,,150,863,137,873,12,-1
 ,,Precision instrument and equipment repairers,,53,914,45,-1,8,-1
 ,,"Coin, vending, and amusement machine servicers and repairers",,28,-1,27,-1,1,-1
-,,Locksmiths and safe repairers,,15,-1,15,-1,  -,   -   
-,,Manufactured building and mobile home installers,,7,-1,7,-1,  -,   -   
 ,,Riggers,,8,-1,7,-1,1,-1
-,,Signal and track switch repairers,,6,-1,6,-1,  -,   -   
 ,,"Helpers-installation, maintenance, and repair workers",,22,-1,18,-1,4,-1
 ,,"Other installation, maintenance, and repair workers",,142,664,136,671,6,-1
 "Production, transportation, and material moving occupations",,,,13034,599,10453,640,2581,473
@@ -430,21 +375,16 @@ Sales and office occupations,,,,23060,631,8840,736,14220,597
 ,,"Forging machine setters, operators, and tenders, metal and plastic",,8,-1,7,-1,1,-1
 ,,"Rolling machine setters, operators, and tenders, metal and plastic",,9,-1,7,-1,2,-1
 ,,"Cutting, punching, and press machine setters, operators, and tenders, metal and plastic",,74,574,58,637,15,-1
-,,"Drilling and boring machine tool setters, operators, and tenders, metal and plastic",,1,-1,1,-1,  -,   -   
 ,,"Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic",,49,-1,45,-1,4,-1
 ,,"Lathe and turning machine tool setters, operators, and tenders, metal and plastic",,18,-1,15,-1,3,-1
 ,,"Milling and planning machine setters, operators, tenders, metal and plastic",,5,-1,4,-1,2,-1
 ,,Machinists,,355,794,345,802,10,-1
-,,Metal furnace and kiln operators and tenders,,20,-1,20,-1,  -,   -   
 ,,"Model makers and patternmakers, metal and plastic",,9,-1,8,-1,1,-1
 ,,"Molders and molding machine setters, operators, and tenders, metal and plastic",,45,-1,36,-1,9,-1
 ,,"Multiple machine tool setters, operators, and tenders, metal and plastic ",,7,-1,6,-1,1,-1
-,,Tool and die makers,,62,921,62,922,  -,   -   
 ,,"Welding, soldering, and brazing workers",,416,648,391,661,24,-1
-,,"Heat treating equipment setters, operators, and tenders, metal and plastic",,5,-1,5,-1,  -,   -   
 ,,"Lay-out workers, metal and plastic",,8,-1,7,-1,1,-1
 ,,"Plating and coating machine setters, operators, and tenders, metal and plastic",,16,-1,15,-1,1,-1
-,,"Tool grinders, filers, and sharpeners",,7,-1,7,-1,  -,   -   
 ,,"Metalworkers and plastic workers, all other",,302,599,237,629,64,496
 ,,Bookbinders and bindery workers,,15,-1,7,-1,9,-1
 ,,Job printers,,48,-1,40,-1,8,-1
@@ -460,15 +400,12 @@ Sales and office occupations,,,,23060,631,8840,736,14220,597
 ,,"Textile cutting machine setters, operators, and tenders",,5,-1,1,-1,4,-1
 ,,"Textile knitting and weaving machine setters, operators, and tenders",,9,-1,5,-1,5,-1
 ,,"Textile winding, twisting, and drawing out machine setters, operators, and tenders",,12,-1,3,-1,9,-1
-,,"Extruding and forming machine setters, operators, and tenders, synthetic and glass fibers",,1,-1,-, -,1,-1
 ,,Fabric and apparel patternmakers,,2,-1,1,-1,1,-1
 ,,Upholsterers,,14,-1,12,-1,3,-1
 ,,"Textile, apparel, and furnishings workers, all other",,19,-1,11,-1,8,-1
 ,,Cabinetmakers and bench carpenters,,45,-1,43,-1,1,-1
-,,Furniture finishers,,10,-1,9,-1,  -,   -   
 ,,"Sawing machine setters, operators, and tenders, wood",,30,-1,25,-1,6,-1
 ,,"Woodworking machine setters, operators, and tenders, except sawing",,17,-1,15,-1,2,-1
-,,"Woodworkers, all other",,15,-1,15,-1,  -,   -   
 ,,"Power plant operators, distributors, and dispatchers",,40,-1,39,-1,1,-1
 ,,Stationary engineers and boiler operators,,93,900,91,899,2,-1
 ,,Water and liquid waste treatment plant and system operators,,72,857,68,859,4,-1
@@ -487,7 +424,6 @@ Sales and office occupations,,,,23060,631,8840,736,14220,597
 ,,Semiconductor processors,,4,-1,2,-1,2,-1
 ,,Cementing and gluing machine operators and tenders,,10,-1,6,-1,3,-1
 ,,"Cleaning, washing, and metal pickling equipment operators and tenders",,9,-1,6,-1,3,-1
-,,Cooling and freezing equipment operators and tenders,,3,-1,3,-1,  -,   -   
 ,,Etchers and engravers,,8,-1,7,-1,1,-1
 ,,"Molders, shapers, and casters, except metal and plastic",,22,-1,19,-1,3,-1
 ,,"Paper goods machine setters, operators, and tenders",,35,-1,28,-1,6,-1
@@ -504,27 +440,17 @@ Sales and office occupations,,,,23060,631,8840,736,14220,597
 ,,Taxi drivers and chauffeurs,,251,537,216,570,35,-1
 ,,"Motor vehicle operators, all other",,23,-1,20,-1,3,-1
 ,,Locomotive engineers and operators,,58,1268,57,1268,1,-1
-,,"Railroad brake, signal, and switch operators",,7,-1,7,-1,  -,   -   
 ,,Railroad conductors and yardmasters,,56,1198,53,1230,3,-1
-,,"Subway, streetcar, and other rail transportation workers",,10,-1,10,-1,  -,   -   
 ,,Sailors and marine oilers,,25,-1,24,-1,1,-1
-,,Ship and boat captains and operators,,30,-1,30,-1,  -,   -   
-,,Ship engineers,,7,-1,7,-1,  -,   -   
-,,Bridge and lock tenders,,2,-1,2,-1,  -,   -   
 ,,Parking lot attendants,,41,-1,37,-1,3,-1
 ,,Service station attendants,,57,393,50,406,7,-1
 ,,Transportation inspectors,,40,-1,35,-1,5,-1
-,,Other transportation workers,,12,-1,12,-1,  -,   -   
-,,Conveyor operators and tenders,,7,-1,7,-1,  -,   -   
-,,Crane and tower operators,,48,-1,48,-1,  -,   -   
 ,,"Dredge, excavating, and loading machine operators",,35,-1,33,-1,1,-1
-,,Hoist and winch operators,,3,-1,3,-1,  -,   -   
 ,,Industrial truck and tractor operators,,459,559,430,556,29,-1
 ,,Cleaners of vehicles and equipment,,235,448,204,452,31,-1
 ,,"Laborers and freight, stock, and material movers, hand",,1155,497,973,508,183,419
 ,,Machine feeders and offbearers,,27,-1,18,-1,9,-1
 ,,"Packers and packagers, hand",,346,400,159,413,187,389
-,,Pumping station operators,,21,-1,20,-1,  -,   -   
 ,,Refuse and recyclable material collectors,,77,481,74,491,4,-1
 ,,Shuttle car operators,,2,-1,1,-1,1,-1
 ,,"Material moving workers, all other",,51,742,47,-1,4,-1
