@@ -77,7 +77,7 @@
       <div class="hero-unit">
         <h1>Women{$phrasing} <span style="color:#006DCC">{$occupation}</span> make <span style="color:red">{$earnings_gap}&nbsp;cents</span> to the dollar men earn doing the same job.</h1>
         <br>
-        <p>That's ${$less_per_week} out of a weekly paycheck, which means she gets paid ${($less_per_week * 52)|number_format} less per year.</p>
+        <p>That's ${$less_per_week} out of a weekly paycheck, which means she gets paid ${($less_per_week * 52)|number_format} less per year. <small>[<a href="ftp://ftp.bls.gov/pub/special.requests/lf/aat39.txt">source</a>]</small></p>
         <div style="float:left;margin-top:20px">
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://narrowthegapp.com/?i={$id}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
             <div class="fb-like" data-href="http://narrowthegapp.com/?i={$id}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
