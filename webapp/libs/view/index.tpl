@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta itemprop="name" content="Narrow the Gapp">
     <meta itemprop="description" content="Women{$phrasing} {$occupation} make {$earnings_gap} cents to the dollar men earn doing the same job. #NarrowTheGap">
+    <meta itemprop="image" content="http://narrowthegapp.com/images/narrow-the-gapp.jpg">
     <meta name="author" content="">
+    <meta property="og:title" content="Narrow the Gapp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://narrowthegapp.com/" />
+    <meta property="og:image" content="http://narrowthegapp.com/images/narrow-the-gapp.jpg" />
+    <meta property="og:site_name" content="Narrow the Gapp" />
+    <meta property="fb:admins" content="606837591" />
 
     <!-- Le styles -->
     <link href="/extlibs/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -75,7 +82,7 @@
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://narrowthegapp.com/?i={$id}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
             <div class="fb-like" data-href="http://narrowthegapp.com/?i={$id}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
             <g:plusone size="tall" href="http://narrowthegapp.com/?i={$id}"></g:plusone>
-            <a href="http://pinterest.com/pin/create/button/?url={'http://narrowthegapp.com/?i='|urlencode}{$id}" class="pin-it-button" count-layout="vertical">Pin It</a>
+            <a href="http://pinterest.com/pin/create/button/?url={'http://narrowthegapp.com/?i='|urlencode}{$id}&media=http%3A%2F%2Fnarrowthegapp.com%2Fimages%2Fnarrow-the-gapp.jpg" class="pin-it-button" count-layout="vertical">Pin It</a>
         </div>
         <p align="right" style="margin-top:30px"><a class="btn btn-custom btn-large" href="/">{$exclamation} Show me another &raquo;</a></p>
         <br style="clear:all;">
