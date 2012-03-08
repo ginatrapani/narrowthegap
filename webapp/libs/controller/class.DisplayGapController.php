@@ -65,7 +65,7 @@ class DisplayGapController extends Controller {
             $exclamations = array("Holy poop!", "That's bananas!", "In this day and age?!", "Stupid!", "So unfair!",
             "Unacceptable!", "Outrageous!", "Complete BS!", "Ugh!", "Blurg!", "Oof!", "What garbage!",
             "Aw hell no!", "Utter crap!", "No effin' way!", "Such nonsense!", "Epic FAIL!", "Insane!", "So lame!",
-            "That's bonkers!", "Gah!", "Idiotic!", "Ridiculous!",  "Not okay!", "Bah!", "Jeepers!",
+            "That's bonkers!", "Gah!", "Idiotic!", "Ridiculous!",  "Not okay!", "Bah!", "Jeepers!", "Not cool!",
             "That's wack!", "So wrong!", "Intolerable!", "What the what?!", "Shut the front door!",
             "Sweet grandmother's spatula!", "Craptastic!", "Oh COME on!", "GTFO!", "Wait, seriously?!");
             $exclamation_key = array_rand($exclamations);
