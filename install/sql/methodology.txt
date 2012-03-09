@@ -9,7 +9,7 @@ CREATE TABLE ntg_occupation_gap (
   id int(11) NOT NULL AUTO_INCREMENT COMMENT 'Unique internal ID',
   primary_category varchar(100) NOT NULL COMMENT 'Occupation primary category.',
   secondary_category varchar(100) NOT NULL COMMENT 'Occupation secondary category.',
-  tertiary_category varchar(100) NOT NULL COMMENT 'Occupation tertiary category.',
+  tertiary_category varchar(110) NOT NULL COMMENT 'Occupation tertiary category.',
   job_title varchar(100) NOT NULL COMMENT 'Job title of this occupation.',
   mw_total_workers int(11) NOT NULL COMMENT 'Total workers of both genders in this occupation.',
   mw_median_weekly_earnings int(11) NOT NULL COMMENT 'Median weekly earnings by both genders in this occupation.',
@@ -41,6 +41,7 @@ CREATE TABLE ntg_occupation_gap (
 -- Export spreadsheet to CSV
 -- Open CSV result in a text editor
 -- Remove all empty rows by replacing 2 newlines with 1
+-- Remove lines with dashes or -1 for values representing missing data
 -- Remove all occupation names that wrap to next line by replacing "newline,, with empty char, and by manually adding
 --     in closing quote to resulting line in occupation name/category 
 
