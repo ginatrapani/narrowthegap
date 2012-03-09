@@ -106,7 +106,11 @@
           <li><strong>Talk to employees and employers</strong> you know about the pay gap, salary negotiation techniques, and equal pay laws.</li>
           </ul>
           <p>Starter resources include:</p>
-          <p><a href="http://www.amazon.com/o/ASIN/0553383876/ref=nosim/lifehackerboo-20">Women Don't Ask: The High Cost of Avoiding Negotiation--and Positive Strategies for Change</a></p>
+          <ul>
+          <li><i><a href="http://www.amazon.com/o/ASIN/0553383876/ref=nosim/lifehackerboo-20">Women Don't Ask: The High Cost of Avoiding Negotiation--and Positive Strategies for Change</a></i> by Linda Babcock and Sara Laschever</li>
+          <li><a href="http://www.reddit.com/r/TwoXChromosomes/comments/hvv2m/i_work_for_a_large_multinational_tech_company_i/">"I regularly hire women for 65% to 75% of what men make. I am sick of it. Here is why it happens and how you can avoid it."</a></li>
+          <li>Catalyst.org's research report <a href="http://www.catalyst.org/publication/509/the-myth-of-the-ideal-worker-does-doing-all-the-right-things-really-get-women-ahead">The Myth of the Ideal Worker: Does Doing All The Right Things Really Get Women Ahead?</a></a></li>
+          </ul>
           <p>What else should be listed here?
           <p><a class="btn" href="http://www.google.com/profiles/ginatrapani/contactme">Suggest a resource &raquo;</a></p>
        </div>
@@ -114,7 +118,7 @@
           <h2>Hack On It</h2>
           <p>If we cite the numbers, we can change the numbers. Boatloads of data just like this is freely available from the <a href="http://www.dol.gov/">U.S. Department of Labor</a> and beyond.</p>
           <p>Developers, make an app which uses the data to help job seekers and employers narrow the pay gap.</p>
-          <p>Submit your world-changing creation to the <a href="http://equalpay.challenge.gov/">Equal Pay App Challenge</a> between now and March 31st, 2012.</p>
+          <p>Submit your world-changing creation to the <a href="http://equalpay.challenge.gov/">Equal Pay App Challenge</a> between now and March 31st, 2012 to win prizes and <a href="https://equalpayapp.interviewstreet.com/challenges/">land an interview at a leading tech company</a>.</p>
           <br>
           <p><a class="btn-large btn-success" href="http://equalpay.challenge.gov/">Accept the challenge &raquo;</a></p>
         </div>
