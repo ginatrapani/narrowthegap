@@ -155,7 +155,7 @@
         <p><a href="ftp://ftp.bls.gov/pub/special.requests/lf/aat39.txt">Source</a>: <a href="http://bls.gov">U.S. Bureau of Labor Statistics</a>. Pay gap calculation based on 2010 median weekly earnings of full-time salary workers over 16 years of age in the United States.</p>
         <p>A <a href="http://ginatrapani.org">Gina Trapani</a> Production. Made with open data, <a href="https://github.com/ginatrapani/isosceles">Isosceles</a>, <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>, insomnia, outrage, and hope. <a href="http://github.com/ginatrapani/narrowthegapp">Fork this app on GitHub.</a> Please copy and repurpose.</p>
       </footer>
-
+      <a style="visibility:hidden;" href="https://plus.google.com/113612142759476883204?rel=author">Gina Trapani</a>
     </div> <!-- /container -->
 
     <!-- Dumb hack to give Pinterest bookmarklet an image, argh -->
