@@ -97,6 +97,7 @@
            <p>Just as interest compounds, so does the pay gap. As a woman moves from job to job during her career, the pay gap between her and her male colleagues is likely to become wider and wider.</p>
            <p><a href="?i=50">Personal financial advisors</a> and <a href="?i=122">legal occupations</a> suffer the largest gender pay gaps. <a href="?i=253">Personal and home care aides</a> and <a href="?i=132">special education teachers</a> have the smallest pay gaps.</p> 
            <p>Unequal pay isn't just unfair, it's illegal. But unless men and women who have the same job discuss what they're getting paid, unequal pay can go unaddressed indefinitely.</p>
+           <p>Women make up nearly half of the labor force and mothers are the primary or co-breadwinners in the majority of families. When women aren't paid fairly, families suffer and the American economy suffers.</p>
         </div>
         <div class="span4">
           <h2>Narrow the Gap</h2>
