@@ -17,19 +17,16 @@ class DisplayGapController extends Controller {
         //Set the view template file to use
         $this->setViewTemplate('index.tpl');
 
-        //Get a random occupation if a specific one isn't requested
+        //Default to all occupations
         if (!isset($_GET['i'])) {
-            $occup_gap_dao = new OccupationGapMySQLDAO();
-            $gap_id = $occup_gap_dao->getRandomGapId();
+            $gap_id = 1;
             //set $_GET so that app uses its cache key
             $_GET['i'] = $gap_id;
         }
 
         //Only load data from database if file cache is expired
         if ($this->shouldRefreshCache() ) {
-            if (!isset($occup_gap_dao)) {
-                $occup_gap_dao = new OccupationGapMySQLDAO();
-            }
+            $occup_gap_dao = new OccupationGapMySQLDAO();
 
             $gap_array = $occup_gap_dao->getGap($_GET["i"]);
 
@@ -62,7 +59,7 @@ class DisplayGapController extends Controller {
             }
 
             //Thanks to Andy Baio, Kevin Purdy, and TFB for their additions to this list
-            $exclamations = array("Holy poop!", "That's bananas!", "In this day and age?!", "Stupid!", "So unfair!",
+            $exclamations = array("Holy poop!", "In this day and age?!", "Stupid!", "So unfair!", "Unbelievable!",
             "Unacceptable!", "Outrageous!", "Complete BS!", "Ugh!", "Blurg!", "Oof!", "What garbage!",
             "Aw hell no!", "Utter crap!", "No effin' way!", "Such nonsense!", "Epic FAIL!", "Insane!", "So lame!",
             "That's bonkers!", "Gah!", "Idiotic!", "Ridiculous!",  "Not okay!", "Bah!", "Jeepers!", "Not cool!",
@@ -70,6 +67,7 @@ class DisplayGapController extends Controller {
             "Sweet grandmother's spatula!", "Craptastic!", "Oh COME on!", "GTFO!", "Wait, seriously?!");
             $exclamation_key = array_rand($exclamations);
             $this->addToView('exclamation', $exclamations[$exclamation_key]);
+            $this->addToView('next_gap', $occup_gap_dao->getRandomGapId());
         }
         return $this->generateView();
     }

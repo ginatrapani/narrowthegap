@@ -11,7 +11,7 @@ class OccupationGapMySQLDAO extends PDODAO {
     /**
      * @var int Total number rows in the table, hardcoded for performance reasons
      */
-    var $total_occupations = 137;
+    var $total_occupations = 136;
 
     /**
      * Get random Gap ID
