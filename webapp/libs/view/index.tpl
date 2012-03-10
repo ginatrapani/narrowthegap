@@ -115,7 +115,42 @@
           <p><a class="btn" href="http://www.google.com/profiles/ginatrapani/contactme">Suggest a resource &raquo;</a></p>
        </div>
         <div class="span4">
-          <h2>Hack On It</h2>
+          <h2>Spread the Word</h2>
+            <script src="http://widgets.twimg.com/j/2/widget.js" type="text/javascript"></script>
+            <script>
+            new TWTR.Widget({
+              version: 2,
+              type: 'search',
+              search: 'narrowthegapp',
+              interval: 2000,
+              subject: '',
+              width: 306,
+              height: 225,
+              theme: {
+                shell: {
+                  background: '#ccc',
+                  color: '#ffffff'
+                },
+                tweets: {
+                  background: '#F5F5F5',
+                  color: '#404040',
+                  links: '#006DCC'
+                }
+              },
+              features: {
+                scrollbar: false,
+                loop: true,
+                live: true,
+                hashtags: true,
+                timestamp: true,
+                avatars: true,
+                toptweets: true,
+                behavior: 'default'
+              }
+            }).render().start();
+            </script>
+          <br><br>
+          <h2>Hack on It</h2>
           <p>If we cite the numbers, we can change the numbers. Boatloads of data just like this is freely available from the <a href="http://www.dol.gov/">U.S. Department of Labor</a> and beyond.</p>
           <p>Developers, make an app which uses the data to help job seekers and employers narrow the pay gap.</p>
           <p>Submit your world-changing creation to the <a href="http://equalpay.challenge.gov/">Equal Pay App Challenge</a> between now and March 31st, 2012 to win prizes and <a href="https://equalpayapp.interviewstreet.com/challenges/">land an interview at a leading tech company</a>.</p>
