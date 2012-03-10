@@ -86,7 +86,7 @@
             <g:plusone size="tall" href="http://narrowthegapp.com/?i={$id}"></g:plusone>
             <a href="http://pinterest.com/pin/create/button/?url={'http://narrowthegapp.com/?i='|urlencode}{$id}&media=http%3A%2F%2Fnarrowthegapp.com%2Fimages%2Fnarrow-the-gapp.jpg" class="pin-it-button" count-layout="vertical">Pin It</a>
         </div>
-        <p align="right" style="margin-top:30px"><a class="btn btn-inverse btn-large" href="/?i={$next_gap}">{$exclamation} Show me another &raquo;</a></p>
+        <p align="right" style="margin-top:30px"><a class="btn btn-inverse btn-large" href="/?i={$next_gap}">{$exclamation} {if $id eq 1}Tell me more{else}Show me another{/if} &raquo;</a></p>
         <br style="clear:all;">
       </div>
 
