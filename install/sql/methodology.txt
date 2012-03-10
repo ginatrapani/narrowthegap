@@ -1,5 +1,5 @@
 --
--- How to create and populate data table
+-- How to create and populate the data table
 -- To skip these steps, just run build-db_mysql.sql
 --
 -- In MySQL:
@@ -24,7 +24,7 @@ CREATE TABLE ntg_occupation_gap (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='2010 gender wage and worker gap per occupation.';
 
 --
--- How to generate data.csv file (included in project):
+-- Convert BLS txt file to data.csv file (included in project):
 --
 -- Download source text file from ftp://ftp.bls.gov/pub/special.requests/lf/aat39.txt
 -- Using a text editor like TextMate, select all the numeric data into a new text file
@@ -41,7 +41,6 @@ CREATE TABLE ntg_occupation_gap (
 -- Export spreadsheet to CSV
 -- Open CSV result in a text editor
 -- Remove all empty rows by replacing 2 newlines with 1
--- Remove lines with dashes or -1 for values representing missing data
 -- Remove all occupation names that wrap to next line by replacing "newline,, with empty char, and by manually adding
 --     in closing quote to resulting line in occupation name/category 
 

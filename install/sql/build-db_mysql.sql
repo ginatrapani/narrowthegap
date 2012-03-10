@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS `ntg_occupation_gap` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Unique internal ID',
   `primary_category` varchar(100) NOT NULL COMMENT 'Occupation primary category.',
   `secondary_category` varchar(100) NOT NULL COMMENT 'Occupation secondary category.',
-  `tertiary_category` varchar(100) NOT NULL COMMENT 'Occupation tertiary category.',
+  `tertiary_category` varchar(110) NOT NULL COMMENT 'Occupation tertiary category.',
   `job_title` varchar(100) NOT NULL COMMENT 'Job title of this occupation.',
   `mw_total_workers` int(11) NOT NULL COMMENT 'Total workers of both genders in this occupation.',
   `mw_median_weekly_earnings` int(11) NOT NULL COMMENT 'Median weekly earnings by both genders in this occupation.',
