@@ -107,11 +107,10 @@
           <li><strong>Talk to employees and employers</strong> you know about the pay gap, salary negotiation techniques, and equal pay laws.</li>
           </ul>
           <p>Starter resources include:</p>
-          <ul>
-          <li><i><a href="http://www.amazon.com/o/ASIN/0553383876/ref=nosim/lifehackerboo-20">Women Don't Ask: The High Cost of Avoiding Negotiation--and Positive Strategies for Change</a></i> by Linda Babcock and Sara Laschever</li>
-          <li><a href="http://www.reddit.com/r/TwoXChromosomes/comments/hvv2m/i_work_for_a_large_multinational_tech_company_i/">"I regularly hire women for 65% to 75% of what men make. I am sick of it. Here is why it happens and how you can avoid it."</a></li>
-          <li>Catalyst.org's research report <a href="http://www.catalyst.org/publication/509/the-myth-of-the-ideal-worker-does-doing-all-the-right-things-really-get-women-ahead">The Myth of the Ideal Worker: Does Doing All The Right Things Really Get Women Ahead?</a></a></li>
-          </ul>
+          <p><i><a href="http://www.amazon.com/o/ASIN/0553383876/ref=nosim/lifehackerboo-20">Women Don't Ask: The High Cost of Avoiding Negotiation--and Positive Strategies for Change</a></i> by Linda Babcock and Sara Laschever (Book, 272 pages)</p>
+          <p><a href="http://www.reddit.com/r/TwoXChromosomes/comments/hvv2m/i_work_for_a_large_multinational_tech_company_i/">"I regularly hire women for 65% to 75% of what men make. I am sick of it. Here is why it happens and how you can avoid it."</a> (Reddit thread)</p>
+          <p>Catalyst.org's research report <a href="http://www.catalyst.org/publication/509/the-myth-of-the-ideal-worker-does-doing-all-the-right-things-really-get-women-ahead">The Myth of the Ideal Worker: Does Doing All The Right Things Really Get Women Ahead?</a> (PDF, 21 pages)</p>
+          <p>Sheryl Sandberg's TEDWomen Talk, <a href="http://www.ted.com/talks/sheryl_sandberg_why_we_have_too_few_women_leaders.html">Why we have too few women leaders</a> (Video, 15:00 minutes)</p>
           <p>What else should be listed here?
           <p><a class="btn" href="http://www.google.com/profiles/ginatrapani/contactme">Suggest a resource &raquo;</a></p>
        </div>
