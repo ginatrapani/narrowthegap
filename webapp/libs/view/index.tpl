@@ -37,23 +37,6 @@
       a:hover {
         color:#006DCC;
       }
-
-    .btn-custom {
-      background-color: hsl(0, 0%, 16%) !important;
-      background-repeat: repeat-x;
-      filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)", #5b5b5b, #282828));
-      background-image: -khtml-gradient(linear, left top, left bottom, from(#5b5b5b), to(#282828));
-      background-image: -moz-linear-gradient(top, #5b5b5b, #282828);
-      background-image: -ms-linear-gradient(top, #5b5b5b, #282828);
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5b5b5b), color-stop(100%, #282828));
-      background-image: -webkit-linear-gradient(top, #5b5b5b, #282828);
-      background-image: -o-linear-gradient(top, #5b5b5b, #282828);
-      background-image: linear-gradient(#5b5b5b, #282828);
-      border-color: #282828 #282828 hsl(0, 0%, 11%);
-      color: #fff !important;
-      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
-      -webkit-font-smoothing: antialiased;
-    }
     </style>
     <link href="/extlibs/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -85,7 +68,7 @@
             <g:plusone size="tall" href="http://narrowthegapp.com/?i={$id}"></g:plusone>
             <a href="http://pinterest.com/pin/create/button/?url={'http://narrowthegapp.com/?i='|urlencode}{$id}&media=http%3A%2F%2Fnarrowthegapp.com%2Fimages%2Fnarrow-the-gapp.jpg" class="pin-it-button" count-layout="vertical">Pin It</a>
         </div>
-        <p align="right" style="margin-top:30px"><a class="btn btn-custom btn-large" href="/">{$exclamation} Show me another &raquo;</a></p>
+        <p align="right" style="margin-top:30px"><a class="btn btn-inverse btn-large" href="/">{$exclamation} Show me another &raquo;</a></p>
         <br style="clear:all;">
       </div>
 
