@@ -37,6 +37,24 @@
       a:hover {
         color:#006DCC;
       }
+      .cat1 {
+        margin-left:0px;
+        font-weight:bold;
+        font-size:125%;
+        margin-top:10px;
+      }
+      .cat2 {
+        margin-left:5px;
+        font-weight:bold;
+        font-size:110%;
+        margin-top:5px;
+      }
+      .cat3 {
+        margin-left:10px;
+      }
+      .jobtitle {
+        margin-left:15px;
+      }
     </style>
     <link href="/extlibs/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -109,7 +127,7 @@
 
       <hr>
 
-      <div class="row" style="margin-top:20px;margin-bottom:10px;">
+      <div class="row" style="margin-top:20px;">
         <div class="span12">
             <h2>Tell people how it is in <em>your</em> line of work.</h2>
         </div>
@@ -121,12 +139,12 @@
                     {if $occ.primary_category eq 'Service occupations'}</div><div class="span4">{/if}
                     {if $occ.primary_category eq 'Sales and office occupations'}</div><div class="span4">{/if}
 
-                    {if $occ.primary_category}<h3><a href="/?i={$occ.id}">{$occ.primary_category}</a></h3>{/if}
-                    {if $occ.secondary_category}&nbsp;<b><a href="/?i={$occ.id}">{$occ.secondary_category}</a></b><br>{/if}
-                    {if $occ.tertiary_category}&nbsp;&nbsp;<a href="/?i={$occ.id}">{$occ.tertiary_category}</a><br>{/if}
-                    {if $occ.job_title}&nbsp;&nbsp;&nbsp;<a href="/?i={$occ.id}">{$occ.job_title}</a><br>{/if}
+                    {if $occ.primary_category}<div class="cat1"><a href="/?i={$occ.id}">{$occ.primary_category}</a></div>{/if}
+                    {if $occ.secondary_category}<div class="cat2"><a href="/?i={$occ.id}">{$occ.secondary_category}</a></div>{/if}
+                    {if $occ.tertiary_category}<div class="cat3"><a href="/?i={$occ.id}">{$occ.tertiary_category}</a></div>{/if}
+                    {if $occ.job_title}<div class="jobtitle"><a href="/?i={$occ.id}">{$occ.job_title}</a></div>{/if}
                 {else}
-                    <h3><a href="/?i={$occ.id}">All Occupations</a></h3>
+                    <div class="cat1"><a href="/?i={$occ.id}">All Occupations</a></div>
                 {/if}
             {/foreach}
         </div>
