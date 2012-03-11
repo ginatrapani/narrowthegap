@@ -11,7 +11,7 @@ Narrow the Gapps's source code is licensed under the
 
 ## INSTALLATION
 
-* Create NTG's single database table using /install/sql/build-db_mysql.sql.
+* Create NTG's single database table using `install/sql/build-db_mysql.sql`.
 * Create the application config file by copying `webapp/extlibs/isosceles/libs/config.sample.inc.php` to
   `config.inc.php` in that same directory.
 * Enter all the required values into `config.inc.php`, especially your database credentials, writable data_dir path,
