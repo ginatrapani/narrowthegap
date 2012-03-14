@@ -96,7 +96,7 @@
            <p>Nearly 50 years after President Kennedy signed the <a href="http://www.eeoc.gov/laws/statutes/epa.cfm">Equal Pay Act</a>, on average women are still paid less than their male counterparts for doing comparable jobs in the U.S. &mdash; that's called the pay gap. It means that each time the average woman starts a new job, she's likely to start from a lower base salary than her male counterparts.</p>
            <p>Just as interest compounds, so does the pay gap. As a woman moves from job to job during her career, the pay gap between her and her male colleagues is likely to become wider and wider.</p>
            <p><a href="?i=50">Personal financial advisors</a> and <a href="?i=122">legal occupations</a> suffer the largest gender pay gaps. <a href="?i=253">Personal and home care aides</a> and <a href="?i=132">special education teachers</a> have the smallest pay gaps.</p> 
-           <p>Unequal pay isn't just unfair, it's illegal. But unless men and women who have the same job discuss what they're getting paid, unequal pay can go unaddressed indefinitely.</p>
+           <p>Unequal pay isn't just unfair, it's illegal. But unless men and women who have the same job discuss what they're getting paid, unequal pay can go unaddressed indefinitely. At the current pace, <a href="http://www.iwpr.org/press-room/press-releases/on-100th-anniversary-of-international-women2019s-day-45-more-years-needed-to-close-gender-wage-gap-in-the-u.s">it will take until 2056 for women and men’s earnings to reach pay parity.</a> Let's make it happen sooner.</p>
            <p>Women make up nearly half of the labor force and mothers are the primary or co-breadwinners in the majority of families. When women aren't paid fairly, families suffer and the American economy suffers.</p>
         </div>
         <div class="span4">
@@ -109,9 +109,11 @@
           </ul>
           <p>Starter resources include:</p>
           <p><i><a href="http://www.amazon.com/o/ASIN/0553383876/ref=nosim/lifehackerboo-20">Women Don't Ask: The High Cost of Avoiding Negotiation--and Positive Strategies for Change</a></i> by Linda Babcock and Sara Laschever (Book, 272 pages)</p>
-          <p><a href="http://www.reddit.com/r/TwoXChromosomes/comments/hvv2m/i_work_for_a_large_multinational_tech_company_i/">"I regularly hire women for 65% to 75% of what men make. I am sick of it. Here is why it happens and how you can avoid it."</a> (Reddit thread)</p>
           <p>Catalyst.org's research report <a href="http://www.catalyst.org/publication/509/the-myth-of-the-ideal-worker-does-doing-all-the-right-things-really-get-women-ahead">The Myth of the Ideal Worker: Does Doing All The Right Things Really Get Women Ahead?</a> (PDF, 21 pages)</p>
-          <p>Sheryl Sandberg's TEDWomen Talk, <a href="http://www.ted.com/talks/sheryl_sandberg_why_we_have_too_few_women_leaders.html">Why we have too few women leaders</a> (Video, 15:00 minutes)</p>
+          <p>Sheryl Sandberg's TEDWomen Talk, <a href="http://www.ted.com/talks/sheryl_sandberg_why_we_have_too_few_women_leaders.html">Why we have too few women leaders</a> (Video, 15 minutes)</p>
+<p>The American Association of University Women's <a href="http://www.aauw.org/learn/research/upload/SimpleTruthAboutPayGap.pdf">The Simple Truth about the Gender Pay Gap</a> (PDF, 25 pages)</p>
+          <p>Secretary of Labor Hilda Solis' advice to young women: <a href="http://www.thedailymuse.com/lessons-to-my-younger-self-2/hilda-solis-know-your-worth/">"Know your worth."</a></p>
+          <p><a href="http://www.reddit.com/r/TwoXChromosomes/comments/hvv2m/i_work_for_a_large_multinational_tech_company_i/">"I regularly hire women for 65% to 75% of what men make. I am sick of it. Here is why it happens and how you can avoid it."</a></p>
           <p>What else should be listed here?
           <p><a class="btn" href="http://www.google.com/profiles/ginatrapani/contactme">Suggest a resource &raquo;</a></p>
        </div>
