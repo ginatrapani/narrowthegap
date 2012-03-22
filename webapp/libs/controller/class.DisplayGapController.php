@@ -61,7 +61,7 @@ class DisplayGapController extends Controller {
             //Thanks to Andy Baio, Kevin Purdy, and TFB for their additions to this list
             $exclamations = array("Holy poop!", "In this day and age?!", "Stupid!", "So unfair!", "Unbelievable!",
             "Unacceptable!", "Outrageous!", "Complete BS!", "Ugh!", "Blurg!", "Oof!", "What garbage!",
-            "Aw hell no!", "Utter crap!", "No effin' way!", "Such nonsense!", "Epic FAIL!", "Insane!", "So lame!",
+            "Aw hell no!", "Utter crap!", "No effin' way!", "Such nonsense!", "Epic FAIL!", "Insane!", "So uncool!",
             "That's bonkers!", "Gah!", "Idiotic!", "Ridiculous!",  "Not okay!", "Bah!", "Jeepers!", "Not cool!",
             "That's wack!", "So wrong!", "Intolerable!", "What the what?!", "Shut the front door!",
             "Sweet grandmother's spatula!", "Craptastic!", "Oh COME on!", "GTFO!", "Wait, seriously?!");
