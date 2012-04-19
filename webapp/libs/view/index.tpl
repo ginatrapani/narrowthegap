@@ -81,12 +81,12 @@
         <br>
         <p>That's ${$less_per_week} out of a weekly paycheck, which means she gets paid ${($less_per_week * 52)|number_format} less per year. <small>[<a href="/aat39.txt">source</a>]</small></p>
         <div style="float:left;margin-top:20px">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://narrowthegapp.com/?i={$id}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
-            <div class="fb-like" data-href="http://narrowthegapp.com/?i={$id}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
-            <g:plusone size="tall" href="http://narrowthegapp.com/?i={$id}"></g:plusone>
-            <a href="http://pinterest.com/pin/create/button/?url={'http://narrowthegapp.com/?i='|urlencode}{$id}&media=http%3A%2F%2Fnarrowthegapp.com%2Fimages%2Fnarrow-the-gapp.jpg" class="pin-it-button" count-layout="vertical">Pin It</a>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://narrowthegapp.com/gap/{$id}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
+            <div class="fb-like" data-href="http://narrowthegapp.com/gap/{$id}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
+            <g:plusone size="tall" href="http://narrowthegapp.com/gap/{$id}"></g:plusone>
+            <a href="http://pinterest.com/pin/create/button/?url={'http://narrowthegapp.com/gap/'|urlencode}{$id}&media=http%3A%2F%2Fnarrowthegapp.com%2Fimages%2Fnarrow-the-gapp.jpg" class="pin-it-button" count-layout="vertical">Pin It</a>
         </div>
-        <p align="right" style="margin-top:30px"><a class="btn btn-inverse btn-large" href="/?i={$next_gap}">{$exclamation} {if $id eq 1}Tell me more{else}Show me another{/if} &raquo;</a></p>
+        <p align="right" style="margin-top:30px"><a class="btn btn-inverse btn-large" href="/gap/{$next_gap}">{$exclamation} {if $id eq 1}Tell me more{else}Show me another{/if} &raquo;</a></p>
         <br style="clear:all;">
       </div>
 
@@ -95,7 +95,7 @@
           <h2>Unfair and Illegal</h2>
            <p>Nearly 50 years after President Kennedy signed the <a href="http://www.eeoc.gov/laws/statutes/epa.cfm">Equal Pay Act</a>, on average women are still paid less than their male counterparts for doing comparable jobs in the U.S. &mdash; that's called the pay gap. It means that each time the average woman starts a new job, she's likely to start from a lower base salary than her male counterparts.</p>
            <p>Just as interest compounds, so does the pay gap. As a woman moves from job to job during her career, the pay gap between her and her male colleagues is likely to become wider and wider.</p>
-           <p><a href="?i=50">Personal financial advisors</a> and <a href="?i=122">legal occupations</a> suffer the largest gender pay gaps. <a href="?i=253">Personal and home care aides</a> and <a href="?i=132">special education teachers</a> have the smallest pay gaps.</p> 
+           <p><a href="/gap/50">Personal financial advisors</a> and <a href="/gap/122">legal occupations</a> suffer the largest gender pay gaps. <a href="/gap/253">Personal and home care aides</a> and <a href="/gap/132">special education teachers</a> have the smallest pay gaps.</p> 
            <p>Unequal pay isn't just unfair, it's illegal. But unless men and women who have the same job discuss what they're getting paid, unequal pay can go unaddressed indefinitely. At the current pace, <a href="http://www.iwpr.org/press-room/press-releases/on-100th-anniversary-of-international-women2019s-day-45-more-years-needed-to-close-gender-wage-gap-in-the-u.s">it will take until 2056 for women and men’s earnings to reach pay parity.</a> Let's make it happen sooner.</p>
            <p>Women make up nearly half of the labor force and mothers are the primary or co-breadwinners in the majority of families. When women aren't paid fairly, families suffer and the American economy suffers.</p>
         </div>
@@ -172,12 +172,12 @@
                     {if $occ.primary_category eq 'Service occupations'}</div><div class="span4">{/if}
                     {if $occ.primary_category eq 'Sales and office occupations'}</div><div class="span4">{/if}
 
-                    {if $occ.primary_category}<div class="cat1"><a href="/?i={$occ.id}">{$occ.primary_category}</a></div>{/if}
-                    {if $occ.secondary_category}<div class="cat2"><a href="/?i={$occ.id}">{$occ.secondary_category}</a></div>{/if}
-                    {if $occ.tertiary_category}<div class="cat3"><a href="/?i={$occ.id}">{$occ.tertiary_category}</a></div>{/if}
-                    {if $occ.job_title}<div class="jobtitle"><a href="/?i={$occ.id}">{$occ.job_title}</a></div>{/if}
+                    {if $occ.primary_category}<div class="cat1"><a href="/gap/{$occ.id}">{$occ.primary_category}</a></div>{/if}
+                    {if $occ.secondary_category}<div class="cat2"><a href="/gap/{$occ.id}">{$occ.secondary_category}</a></div>{/if}
+                    {if $occ.tertiary_category}<div class="cat3"><a href="/gap/{$occ.id}">{$occ.tertiary_category}</a></div>{/if}
+                    {if $occ.job_title}<div class="jobtitle"><a href="/gap/{$occ.id}">{$occ.job_title}</a></div>{/if}
                 {else}
-                    <div class="cat1"><a href="/?i={$occ.id}">All Occupations</a></div>
+                    <div class="cat1"><a href="/gap/{$occ.id}">All Occupations</a></div>
                 {/if}
             {/foreach}
         </div>
