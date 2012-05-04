@@ -6,7 +6,7 @@
     <title>Narrow the Gapp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta itemprop="name" content="Narrow the Gapp">
-    <meta itemprop="description" content="Women{$phrasing} {$occupation} make {$earnings_gap} cents to the dollar men earn doing the same job. #NarrowTheGap">
+    <meta itemprop="description" content="Women{$phrasing} {$occupation} make {$earnings_gap} cents to the dollar men earn working in the same line of work. #NarrowTheGap">
     <meta itemprop="image" content="http://narrowthegapp.com/images/narrow-the-gapp.jpg">
     <meta name="author" content="">
     <meta property="og:title" content="Narrow the Gapp" />
