@@ -108,47 +108,12 @@
           <li><strong>Talk to employees and employers</strong> you know about the pay gap, salary negotiation techniques, and equal pay laws.</li>
           <li><strong>Change the numbers</strong> by citing the numbers. Boatloads of data just like this is freely available from the <a href="http://www.dol.gov/">U.S. Department of Labor</a> and beyond.</li>
           </ul>
-          <p>Check out recent tweets about the pay gap and add your own.</p>
-            <script src="http://widgets.twimg.com/j/2/widget.js" type="text/javascript"></script>
-            <script>
-            new TWTR.Widget({
-              version: 2,
-              type: 'search',
-              search: 'narrowthegapp',
-              interval: 2000,
-              subject: '',
-              width: 306,
-              height: 225,
-              theme: {
-                shell: {
-                  background: '#ccc',
-                  color: '#ffffff'
-                },
-                tweets: {
-                  background: '#F5F5F5',
-                  color: '#404040',
-                  links: '#006DCC'
-                }
-              },
-              features: {
-                scrollbar: false,
-                loop: true,
-                live: true,
-                hashtags: true,
-                timestamp: true,
-                avatars: true,
-                toptweets: true,
-                behavior: 'default'
-              }
-            }).render().start();
-            </script>
-
        </div>
         <div class="span4">
           <h2>Learn More</h2>
           <p>To find out more about the gender pay gap, check out some of the following resources:</p>
-          <p>The American Association of University Women's <a href="http://www.aauw.org/learn/research/upload/SimpleTruthAboutPayGap.pdf">The Simple Truth about the Gender Pay Gap</a> (PDF, 25 pages)</p>
-          <p>Catalyst.org's research report <a href="http://www.catalyst.org/publication/509/the-myth-of-the-ideal-worker-does-doing-all-the-right-things-really-get-women-ahead">The Myth of the Ideal Worker: Does Doing All The Right Things Really Get Women Ahead?</a> (PDF, 21 pages)</p>
+          <p>The American Association of University Women's <a href="http://www.aauw.org/files/2013/02/The-Simple-Truth-2013.pdf">The Simple Truth about the Gender Pay Gap</a> (PDF, 25 pages)</p>
+          <p>Catalyst.org's research report <a href="http://www.catalyst.org/knowledge/myth-ideal-worker-does-doing-all-right-things-really-get-women-ahead">The Myth of the Ideal Worker: Does Doing All The Right Things Really Get Women Ahead?</a> (PDF, 21 pages)</p>
           <p>Sheryl Sandberg's TEDWomen Talk, <a href="http://www.ted.com/talks/sheryl_sandberg_why_we_have_too_few_women_leaders.html">Why we have too few women leaders</a> (Video, 15 minutes)</p>
           <p><i><a href="http://www.amazon.com/o/ASIN/0553383876/ref=nosim/lifehackerboo-20">Women Don't Ask: The High Cost of Avoiding Negotiation--and Positive Strategies for Change</a></i> by Linda Babcock and Sara Laschever (Book, 272 pages)</p>
           <p>Secretary of Labor Hilda Solis' advice to women: <a href="http://www.thedailymuse.com/lessons-to-my-younger-self-2/hilda-solis-know-your-worth/">"Know your worth."</a></p>
