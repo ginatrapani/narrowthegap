@@ -24,23 +24,35 @@
       body {
         padding-top: 60px;
         padding-bottom: 40px;
-        background-color:#F5F5F5;
+        background-color:#006DCC; /*#F5F5F5;*/
+        color:#fff;
         font-family: 'Open Sans', sans-serif;
       }
       .jumbotron {
-       background-color:#fff;
+        background-color:#fff;
+        color:#333;
       }
       .jumbotron h1 {
-        font-weight: bold
+        font-weight: bold;
+      }
+      .jumbotron a {
+        color:#333;
+      }
+      .jumbotron a:hover {
+        color:#333;
+        text-decoration:underline;
       }
       h2 {
         font-weight: bold
       }
       a {
-        color:#006DCC;
+        color:#fff; /*#006DCC;*/
+        border-bottom: 1px dotted #fff;
       }
       a:hover {
-        color:#006DCC;
+        color:#fff; /*#006DCC;*/
+        border-bottom: 1px solid #fff;
+        text-decoration:none
       }
       .cat1 {
         margin-left:0px;
@@ -82,18 +94,15 @@
       <div class="jumbotron">
         <h1>Women{$phrasing} <span style="color:#006DCC">{$occupation}</span> make <span style="color:red">{$earnings_gap}&nbsp;cents</span> to the dollar men earn doing the same job.</h1>
         <br>
-        <p>That's ${$less_per_week} out of a weekly paycheck, which means she gets paid ${($less_per_week * 52)|number_format} less per year. <small>[<a href="/aat39.txt">source</a>]</small></p>
-        <div style="float:left;margin-top:20px">
+        <p>That's ${$less_per_week} out of a weekly paycheck, which means she gets paid ${($less_per_week * 52)|number_format} less per year.</p>
+        <div style="margin-top:20px" align="right">
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://narrowthegapp.com/?i={$id}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
             <div class="fb-like" data-href="http://narrowthegapp.com/?i={$id}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
-            <g:plusone size="tall" href="http://narrowthegapp.com/?i={$id}"></g:plusone>
-            <a href="http://pinterest.com/pin/create/button/?url={'http://narrowthegapp.com/?i='|urlencode}{$id}&media=http%3A%2F%2Fnarrowthegapp.com%2Fimages%2Fnarrow-the-gapp.jpg" class="pin-it-button" count-layout="vertical">Pin It</a>
         </div>
-        <p align="right" style="margin-top:30px"><a class="btn btn-inverse btn-large" href="/gap/{$next_gap}">{$exclamation} {if $id eq 1}Tell me more{else}Show me another{/if} &raquo;</a></p>
-        <br style="clear:all;">
+        <div style="margin-top:20px" align="right"><a href="/aat39.txt">Source: U.S. Bureau of Labor Statistics</a></div>
       </div>
 
-      <div class="row">
+      <div class="row readmore">
         <div class="col-xs-4">
           <h2>Unfair and Illegal</h2>
            <p>Nearly 50 years after President Kennedy signed the <a href="http://www.eeoc.gov/laws/statutes/epa.cfm">Equal Pay Act</a>, on average women are still paid less than their male counterparts for doing comparable jobs in the U.S. &mdash; that's called the pay gap. It means that each time the average woman starts a new job, she's likely to start from a lower base salary than her male counterparts.</p>
@@ -121,33 +130,8 @@
           <p><i><a href="http://www.amazon.com/o/ASIN/0553383876/ref=nosim/lifehackerboo-20">Women Don't Ask: The High Cost of Avoiding Negotiation--and Positive Strategies for Change</a></i> by Linda Babcock and Sara Laschever (Book, 272 pages)</p>
           <p>Secretary of Labor Hilda Solis' advice to women: <a href="http://www.thedailymuse.com/lessons-to-my-younger-self-2/hilda-solis-know-your-worth/">"Know your worth."</a></p>
           <p>Hiring manager at a multinational tech company: <a href="http://www.reddit.com/r/TwoXChromosomes/comments/hvv2m/i_work_for_a_large_multinational_tech_company_i/">"I regularly hire women for 65% to 75% of what men make. I am sick of it. Here is why it happens and how you can avoid it."</a></p>
-          <p>What else should be listed here?
-          <p><a class="btn" href="http://www.google.com/profiles/ginatrapani/contactme">Suggest a resource &raquo;</a></p>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="row" style="margin-top:20px;">
-        <div class="col-xs-12">
-            <h2>Tell people how it is in <em>your</em> line of work.</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-4">
-            {foreach from=$occupations_array item=occ}
-                {if $occ.tertiary_category neq 'Total, 16 years and over'}
-                    {if $occ.primary_category eq 'Service occupations'}</div><div class="col-xs-4">{/if}
-                    {if $occ.primary_category eq 'Sales and office occupations'}</div><div class="col-xs-4">{/if}
-
-                    {if $occ.primary_category}<div class="cat1"><a href="/gap/{$occ.id}">{$occ.primary_category}</a></div>{/if}
-                    {if $occ.secondary_category}<div class="cat2"><a href="/gap/{$occ.id}">{$occ.secondary_category}</a></div>{/if}
-                    {if $occ.tertiary_category}<div class="cat3"><a href="/gap/{$occ.id}">{$occ.tertiary_category}</a></div>{/if}
-                    {if $occ.job_title}<div class="jobtitle"><a href="/gap/{$occ.id}">{$occ.job_title}</a></div>{/if}
-                {else}
-                    <div class="cat1"><a href="/gap/{$occ.id}">All Occupations</a></div>
-                {/if}
-            {/foreach}
+          <p>What else should be listed here?</p>
+          <p><a class="btn btn-success" href="https://github.com/ginatrapani/narrowthegapp/issues">Suggest a resource &raquo;</a></p>
         </div>
       </div>
 
@@ -155,30 +139,14 @@
 
       <footer>
         <p><a href="/aat39.txt">Source</a>: <a href="http://bls.gov">U.S. Bureau of Labor Statistics</a>. Pay gap calculation based on 2010 median weekly earnings of full-time salary workers over 16 years of age in the United States.</p>
-        <p>A <a href="http://ginatrapani.org">Gina Trapani</a> Production. Made with open data, <a href="https://github.com/ginatrapani/isosceles">Isosceles</a>, <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>, insomnia, outrage, and hope. <a href="http://github.com/ginatrapani/narrowthegapp">Fork this app on GitHub.</a> Please copy and repurpose.</p>
+        <p>A <a href="http://ginatrapani.org">Gina Trapani</a> Production. <a href="http://github.com/ginatrapani/narrowthegapp">Fork this web site on GitHub.</a></p>
       </footer>
       <a style="visibility:hidden;" href="https://plus.google.com/113612142759476883204?rel=author">Gina Trapani</a>
     </div> <!-- /container -->
 
     <!-- Dumb hack to give Pinterest bookmarklet an image, argh -->
-    <img src="http://narrowthegapp.com/images/narrow-the-gapp.jpg" style="visibility:hidden;"/>
+    <img src="http://narrowthegapp.com/images/narrow-the-gapp.jpg" style="display:none;"/>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/extlibs/bootstrap/assets/js/jquery.js"></script>
-    <script src="/extlibs/bootstrap/assets/js/bootstrap-transition.js"></script>
-    <script src="/extlibs/bootstrap/assets/js/bootstrap-alert.js"></script>
-    <script src="/extlibs/bootstrap/assets/js/bootstrap-modal.js"></script>
-    <script src="/extlibs/bootstrap/assets/js/bootstrap-dropdown.js"></script>
-    <script src="/extlibs/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
-    <script src="/extlibs/bootstrap/assets/js/bootstrap-tab.js"></script>
-    <script src="/extlibs/bootstrap/assets/js/bootstrap-tooltip.js"></script>
-    <script src="/extlibs/bootstrap/assets/js/bootstrap-popover.js"></script>
-    <script src="/extlibs/bootstrap/assets/js/bootstrap-button.js"></script>
-    <script src="/extlibs/bootstrap/assets/js/bootstrap-collapse.js"></script>
-    <script src="/extlibs/bootstrap/assets/js/bootstrap-carousel.js"></script>
-    <script src="/extlibs/bootstrap/assets/js/bootstrap-typeahead.js"></script>
 
     {literal}
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

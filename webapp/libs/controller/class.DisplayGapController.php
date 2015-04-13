@@ -49,25 +49,12 @@ class DisplayGapController extends Controller {
             $this->addToView('less_per_week',
             $gap_array['m_median_weekly_earnings']-$gap_array['w_median_weekly_earnings']);
 
-            $occupations_array = $occup_gap_dao->getAllOccupations();
-            $this->addToView('occupations_array', $occupations_array);
             // Get the phrasing right
             if (substr($occupation_name, (strlen($occupation_name)-strlen('occupations')))=='occupations') {
                 $this->addToView('phrasing', ' who work in');
             } else {
                 $this->addToView('phrasing', '');
             }
-
-            //Thanks to Andy Baio, Kevin Purdy, and TFB for their additions to this list
-            $exclamations = array("Holy poop!", "In this day and age?!", "Stupid!", "So unfair!", "Unbelievable!",
-            "Unacceptable!", "Outrageous!", "Complete BS!", "Ugh!", "Blurg!", "Oof!", "What garbage!",
-            "Aw hell no!", "Utter crap!", "No effin' way!", "Such nonsense!", "Epic FAIL!", "Insane!", "So uncool!",
-            "That's bonkers!", "Gah!", "Idiotic!", "Ridiculous!",  "Not okay!", "Bah!", "Jeepers!", "Not cool!",
-            "That's wack!", "So wrong!", "Intolerable!", "What the what?!", "Shut the front door!",
-            "Sweet grandmother's spatula!", "Craptastic!", "Oh COME on!", "GTFO!", "Wait, seriously?!");
-            $exclamation_key = array_rand($exclamations);
-            $this->addToView('exclamation', $exclamations[$exclamation_key]);
-            $this->addToView('next_gap', $occup_gap_dao->getRandomGapId());
         }
         return $this->generateView();
     }
