@@ -30,7 +30,10 @@ class DisplayGapController extends Controller {
 
             $gap_array = $occup_gap_dao->getGapByYearSlug(2010, $_GET['slug']);
 
-            $this->addToView('id', $gap_array['id']);
+            if (!isset($gap_array)) {
+                $gap_array = $occup_gap_dao->getGapByYearSlug(2010, 'total-16-years-and-over');
+            }
+            $this->addToView('slug', $gap_array['slug']);
             $this->addToView('earnings_gap', $gap_array['earnings_gap']);
             $occupation_name = $this->cleanOccupationName($gap_array['occupation']);
             $this->addToView('occupation', $occupation_name);

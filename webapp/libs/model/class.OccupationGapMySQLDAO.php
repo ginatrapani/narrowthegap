@@ -69,7 +69,7 @@ class OccupationGapMySQLDAO extends PDODAO {
      * @return arr Pay gap information
      */
     public function getGapByYearSlug($year, $slug) {
-        $q  = "SELECT id, primary_category, secondary_category, tertiary_category, job_title, earnings_gap, ";
+        $q  = "SELECT id, slug, primary_category, secondary_category, tertiary_category, job_title, earnings_gap, ";
         $q .= "m_median_weekly_earnings, w_median_weekly_earnings FROM ";
         $q .= " #prefix#occupation_gap WHERE year=:year AND slug=:slug;";
         $vars = array(
@@ -81,6 +81,7 @@ class OccupationGapMySQLDAO extends PDODAO {
         if (isset($row['earnings_gap'])) {
             $result['earnings_gap'] = $row['earnings_gap'];
             $result['id'] = $row['id'];
+            $result['slug'] = $row['slug'];
             $result['m_median_weekly_earnings'] = $row['m_median_weekly_earnings'];
             $result['w_median_weekly_earnings'] = $row['w_median_weekly_earnings'];
             if ($row['job_title'] != '') {

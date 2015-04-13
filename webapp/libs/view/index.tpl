@@ -168,8 +168,8 @@
       <!-- Main hero unit for a primary call to action -->
       <div class="jumbotron">
         <div style="float:right">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://narrowthegapp.com/?i={$id}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
-            <div class="fb-like" data-href="http://narrowthegapp.com/?i={$id}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://narrowthegapp.com/{if $slug neq 'total-16-years-and-over'}gap/{$slug}{/if}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
+            <div class="fb-like" data-href="http://narrowthegapp.com/{if $slug neq 'total-16-years-and-over'}gap/{$slug}{/if}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
         </div>
         <h1>Women{$phrasing} <span style="color:#006DCC">{$occupation}</span> make <span style="color:red">{$earnings_gap}&nbsp;cents</span> to the dollar men earn doing the same job.</h1>
         <br>
