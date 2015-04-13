@@ -7,7 +7,7 @@
  */
 
 //Register the lazy class loader
-require_once 'extlibs/isosceles/libs/model/class.Loader.php';
+require_once 'extlibs/isosceles/libs/class.Loader.php';
 Loader::register(array(dirname(__FILE__).'/libs/model/', dirname(__FILE__).'/libs/controller/'));
 
 $router = new Router();
