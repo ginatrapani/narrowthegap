@@ -17,7 +17,9 @@
     <meta property="fb:admins" content="606837591" />
 
     <!-- Le styles -->
-    <link href="/extlibs/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -25,11 +27,14 @@
         background-color:#F5F5F5;
         font-family: 'Open Sans', sans-serif;
       }
-      p {
-        font-family: 'Open Sans', sans-serif;
+      .jumbotron {
+       background-color:#fff;
       }
-      .hero-unit {
-        background-color:#fff;
+      .jumbotron h1 {
+        font-weight: bold
+      }
+      h2 {
+        font-weight: bold
       }
       a {
         color:#006DCC;
@@ -56,7 +61,6 @@
         margin-left:15px;
       }
     </style>
-    <link href="/extlibs/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -68,7 +72,6 @@
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
   </head>
 
@@ -76,7 +79,7 @@
     <div id="fb-root"></div>
     <div class="container">
       <!-- Main hero unit for a primary call to action -->
-      <div class="hero-unit">
+      <div class="jumbotron">
         <h1>Women{$phrasing} <span style="color:#006DCC">{$occupation}</span> make <span style="color:red">{$earnings_gap}&nbsp;cents</span> to the dollar men earn doing the same job.</h1>
         <br>
         <p>That's ${$less_per_week} out of a weekly paycheck, which means she gets paid ${($less_per_week * 52)|number_format} less per year. <small>[<a href="/aat39.txt">source</a>]</small></p>
@@ -91,15 +94,15 @@
       </div>
 
       <div class="row">
-        <div class="span4">
+        <div class="col-xs-4">
           <h2>Unfair and Illegal</h2>
            <p>Nearly 50 years after President Kennedy signed the <a href="http://www.eeoc.gov/laws/statutes/epa.cfm">Equal Pay Act</a>, on average women are still paid less than their male counterparts for doing comparable jobs in the U.S. &mdash; that's called the pay gap. It means that each time the average woman starts a new job, she's likely to start from a lower base salary than her male counterparts.</p>
            <p>Just as interest compounds, so does the pay gap. As a woman moves from job to job during her career, the pay gap between her and her male colleagues is likely to become wider and wider.</p>
-           <p><a href="/gap/50">Personal financial advisors</a> and <a href="/gap/122">legal occupations</a> suffer the largest gender pay gaps. <a href="/gap/253">Personal and home care aides</a> and <a href="/gap/132">special education teachers</a> have the smallest pay gaps.</p> 
+           <p><a href="/gap/50">Personal financial advisors</a> and <a href="/gap/122">legal occupations</a> suffer the largest gender pay gaps. <a href="/gap/253">Personal and home care aides</a> and <a href="/gap/132">special education teachers</a> have the smallest pay gaps.</p>
            <p>Unequal pay isn't just unfair, it's illegal. But unless men and women who have the same job discuss what they're getting paid, unequal pay can go unaddressed indefinitely. At the current pace, <a href="http://www.iwpr.org/press-room/press-releases/on-100th-anniversary-of-international-women2019s-day-45-more-years-needed-to-close-gender-wage-gap-in-the-u.s">it will take until 2056 for women and men’s earnings to reach pay parity.</a> Let's make it happen sooner.</p>
            <p>Women make up nearly half of the labor force and mothers are the primary or co-breadwinners in the majority of families. When women aren't paid fairly, families suffer and the American economy suffers.</p>
         </div>
-        <div class="span4">
+        <div class="col-xs-4">
           <h2>Narrow the Gap</h2>
           <p>Insist on equal pay for equal work in your and your loved ones' workplaces. Here's what you can do.</p>
           <ul>
@@ -109,7 +112,7 @@
           <li><strong>Change the numbers</strong> by citing the numbers. Boatloads of data just like this is freely available from the <a href="http://www.dol.gov/">U.S. Department of Labor</a> and beyond.</li>
           </ul>
        </div>
-        <div class="span4">
+        <div class="col-xs-4">
           <h2>Learn More</h2>
           <p>To find out more about the gender pay gap, check out some of the following resources:</p>
           <p>The American Association of University Women's <a href="http://www.aauw.org/files/2013/02/The-Simple-Truth-2013.pdf">The Simple Truth about the Gender Pay Gap</a> (PDF, 25 pages)</p>
@@ -126,16 +129,16 @@
       <hr>
 
       <div class="row" style="margin-top:20px;">
-        <div class="span12">
+        <div class="col-xs-12">
             <h2>Tell people how it is in <em>your</em> line of work.</h2>
         </div>
       </div>
       <div class="row">
-        <div class="span4">
+        <div class="col-xs-4">
             {foreach from=$occupations_array item=occ}
                 {if $occ.tertiary_category neq 'Total, 16 years and over'}
-                    {if $occ.primary_category eq 'Service occupations'}</div><div class="span4">{/if}
-                    {if $occ.primary_category eq 'Sales and office occupations'}</div><div class="span4">{/if}
+                    {if $occ.primary_category eq 'Service occupations'}</div><div class="col-xs-4">{/if}
+                    {if $occ.primary_category eq 'Sales and office occupations'}</div><div class="col-xs-4">{/if}
 
                     {if $occ.primary_category}<div class="cat1"><a href="/gap/{$occ.id}">{$occ.primary_category}</a></div>{/if}
                     {if $occ.secondary_category}<div class="cat2"><a href="/gap/{$occ.id}">{$occ.secondary_category}</a></div>{/if}
@@ -176,7 +179,7 @@
     <script src="/extlibs/bootstrap/assets/js/bootstrap-collapse.js"></script>
     <script src="/extlibs/bootstrap/assets/js/bootstrap-carousel.js"></script>
     <script src="/extlibs/bootstrap/assets/js/bootstrap-typeahead.js"></script>
-    
+
     {literal}
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 

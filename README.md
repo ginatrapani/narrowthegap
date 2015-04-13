@@ -69,4 +69,3 @@ This Vagrant virtual machine was built with [PuPHPet](http://puphpet.com). To mo
 ## EXTERNAL LIBRARIES
 
 - [Isoceles](http://ginatrapani.github.io/isosceles/) (Submodule)
-- [Twitter Bootstrap](http://twitter.github.com/bootstrap/) (Included)
