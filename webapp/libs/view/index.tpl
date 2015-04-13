@@ -22,7 +22,6 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <style type="text/css">
       body {
-        padding-top: 60px;
         padding-bottom: 40px;
         background-color:#006DCC; /*#F5F5F5;*/
         color:#fff;
@@ -31,6 +30,7 @@
       .jumbotron {
         background-color:#fff;
         color:#333;
+        margin-top:30px;
       }
       .jumbotron h1 {
         font-weight: bold;
@@ -41,6 +41,69 @@
       .jumbotron a:hover {
         color:#333;
         text-decoration:underline;
+      }
+      .search {
+        font-size:150%;
+        height:auto;
+        min-width: 400px;
+      }
+      .tt-dropdown-menu {
+        z-index: 1000;
+        min-width: 500px;
+        padding: 4px 0 4px 4px;
+        margin: 2px 0 0;
+        font-size: 14px;
+        text-align: left;
+        list-style: none;
+        background-color: #fff;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: 4px;
+        -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        color: #000;
+      }
+      .tt-suggestion {
+        padding: 4px 4px 2px 8px;
+        margin: 0 6px 0 0;
+        font-weight: normal;
+        color: #46bcff;
+        border-radius: 4px;
+        white-space: nowrap; // prevent links from randomly breaking onto new lines
+      }
+
+      .tt-suggestion h4 {
+        color: #666;
+        font-weight: 200;
+      }
+
+      .tt-suggestion a {
+        color: #666;
+        text-decoration: none;
+      }
+
+      .tt-suggestion a strong {
+        font-weight: 600;
+        color: #222;
+      }
+
+      .tt-suggestion.tt-cursor {
+        background-color: red; /* #46bcff;*/
+      }
+
+      .tt-suggestion.tt-cursor a,
+      .tt-suggestion.tt-cursor a h3,
+      .tt-suggestion.tt-cursor a h4 {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .tt-suggestion.tt-cursor a strong,
+      .tt-suggestion.tt-cursor a h3 strong,
+      .tt-suggestion.tt-cursor a h4 strong {
+        font-weight: 600;
       }
       h2 {
         font-weight: bold
@@ -90,19 +153,32 @@
   <body>
     <div id="fb-root"></div>
     <div class="container">
+
+      <div class="row" style="margin-top:10px">
+        <div class="col-xs-3">
+          <a href="/" role="button" class="btn btn-danger btn-lg active">Narrow the Gapp</a>
+        </div>
+        <div class="col-xs-9">
+          <div class="input-group" id="prefetch">
+              <input class="typeahead search form-control" type="text" placeholder="What's your occupation?">
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+      </div>
+
       <!-- Main hero unit for a primary call to action -->
       <div class="jumbotron">
         <h1>Women{$phrasing} <span style="color:#006DCC">{$occupation}</span> make <span style="color:red">{$earnings_gap}&nbsp;cents</span> to the dollar men earn doing the same job.</h1>
         <br>
         <p>That's ${$less_per_week} out of a weekly paycheck, which means she gets paid ${($less_per_week * 52)|number_format} less per year.</p>
-        <div style="margin-top:20px" align="right">
+
+        <div align="right">
             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://narrowthegapp.com/?i={$id}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
             <div class="fb-like" data-href="http://narrowthegapp.com/?i={$id}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
         </div>
         <div style="margin-top:20px" align="right"><a href="/aat39.txt">Source: U.S. Bureau of Labor Statistics</a></div>
       </div>
 
-      <div class="row readmore">
+      <div class="row">
         <div class="col-xs-4">
           <h2>Unfair and Illegal</h2>
            <p>Nearly 50 years after President Kennedy signed the <a href="http://www.eeoc.gov/laws/statutes/epa.cfm">Equal Pay Act</a>, on average women are still paid less than their male counterparts for doing comparable jobs in the U.S. &mdash; that's called the pay gap. It means that each time the average woman starts a new job, she's likely to start from a lower base salary than her male counterparts.</p>
@@ -151,15 +227,6 @@
     {literal}
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-    <!-- Place this render call where appropriate -->
-    <script type="text/javascript">
-      (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-      })();
-    </script>
-
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -167,8 +234,6 @@
       js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=64091411419";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-
-    <script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script>
 
     <script type="text/javascript">
     var _sf_async_config={uid:34052,domain:"narrowthegapp.com"};
@@ -202,6 +267,39 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
+      </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/extlibs/typeahead.bundle.js"></script>
+    <script src="/extlibs/handlebars-v3.0.1.js"></script>
+
+      <script type="text/javascript">
+{literal}
+      var occupations = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('occupation_name'),
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        prefetch: 'http://narrowthegapp.dev/gaps/'
+      });
+
+      occupations.initialize();
+
+      $('#prefetch .typeahead').typeahead(null, {
+        name: 'occupation-gaps',
+        displayKey: 'occupation_name',
+        source: occupations.ttAdapter(),
+        templates: {
+          empty: [
+            '<div class="empty-message">',
+            'unable to find any Occupations that match',
+            '</div>'
+          ].join('\n'),
+          suggestion: Handlebars.compile('<a href="/gap/{{slug}}"><div class="occupation-result">{{occupation_name}}</div></a>')
+        }
+      });
+
+{/literal}
+
     </script>
 
   </body>
