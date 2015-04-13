@@ -155,31 +155,33 @@
     <div class="container">
 
       <div class="row" style="margin-top:10px">
-        <div class="col-xs-3">
+        <div class="col-md-3">
           <a href="/" role="button" class="btn btn-danger btn-lg active">Narrow the Gapp</a>
         </div>
-        <div class="col-xs-9">
+        <div class="col-md-9">
           <div class="input-group" id="prefetch">
-              <input class="typeahead search form-control" type="text" placeholder="What's your occupation?">
+              <input class="typeahead search form-control" type="text" placeholder="{if $smarty.get.slug eq 'total-16-years-and-over'}What's your occupation?{else}Check another occupation{/if}">
           </div><!-- /input-group -->
         </div><!-- /.col-lg-6 -->
       </div>
 
       <!-- Main hero unit for a primary call to action -->
       <div class="jumbotron">
+        <div style="float:right">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://narrowthegapp.com/?i={$id}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
+            <div class="fb-like" data-href="http://narrowthegapp.com/?i={$id}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
+        </div>
         <h1>Women{$phrasing} <span style="color:#006DCC">{$occupation}</span> make <span style="color:red">{$earnings_gap}&nbsp;cents</span> to the dollar men earn doing the same job.</h1>
         <br>
         <p>That's ${$less_per_week} out of a weekly paycheck, which means she gets paid ${($less_per_week * 52)|number_format} less per year.</p>
 
-        <div align="right">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://narrowthegapp.com/?i={$id}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
-            <div class="fb-like" data-href="http://narrowthegapp.com/?i={$id}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
-        </div>
-        <div style="margin-top:20px" align="right"><a href="/aat39.txt">Source: U.S. Bureau of Labor Statistics</a></div>
+        <div><small> Wage gap calculated from 2014 median weekly earnings of full-time salary workers over 16 years of age in the United States as per census data published by the <a href="http://bls.gov">U.S. Bureau of Labor Statistics</a>.</small>
+
+</div>
       </div>
 
       <div class="row">
-        <div class="col-xs-4">
+        <div class="col-md-4">
           <h2>Unfair and Illegal</h2>
            <p>Nearly 50 years after President Kennedy signed the <a href="http://www.eeoc.gov/laws/statutes/epa.cfm">Equal Pay Act</a>, on average women are still paid less than their male counterparts for doing comparable jobs in the U.S. &mdash; that's called the pay gap. It means that each time the average woman starts a new job, she's likely to start from a lower base salary than her male counterparts.</p>
            <p>Just as interest compounds, so does the pay gap. As a woman moves from job to job during her career, the pay gap between her and her male colleagues is likely to become wider and wider.</p>
@@ -187,7 +189,7 @@
            <p>Unequal pay isn't just unfair, it's illegal. But unless men and women who have the same job discuss what they're getting paid, unequal pay can go unaddressed indefinitely. At the current pace, <a href="http://www.iwpr.org/press-room/press-releases/on-100th-anniversary-of-international-women2019s-day-45-more-years-needed-to-close-gender-wage-gap-in-the-u.s">it will take until 2056 for women and men’s earnings to reach pay parity.</a> Let's make it happen sooner.</p>
            <p>Women make up nearly half of the labor force and mothers are the primary or co-breadwinners in the majority of families. When women aren't paid fairly, families suffer and the American economy suffers.</p>
         </div>
-        <div class="col-xs-4">
+        <div class="col-md-4">
           <h2>Narrow the Gap</h2>
           <p>Insist on equal pay for equal work in your and your loved ones' workplaces. Here's what you can do.</p>
           <ul>
@@ -197,7 +199,7 @@
           <li><strong>Change the numbers</strong> by citing the numbers. Boatloads of data just like this is freely available from the <a href="http://www.dol.gov/">U.S. Department of Labor</a> and beyond.</li>
           </ul>
        </div>
-        <div class="col-xs-4">
+        <div class="col-md-4">
           <h2>Learn More</h2>
           <p>To find out more about the gender pay gap, check out some of the following resources:</p>
           <p>The American Association of University Women's <a href="http://www.aauw.org/files/2013/02/The-Simple-Truth-2013.pdf">The Simple Truth about the Gender Pay Gap</a> (PDF, 25 pages)</p>
@@ -214,7 +216,6 @@
       <hr>
 
       <footer>
-        <p><a href="/aat39.txt">Source</a>: <a href="http://bls.gov">U.S. Bureau of Labor Statistics</a>. Pay gap calculation based on 2010 median weekly earnings of full-time salary workers over 16 years of age in the United States.</p>
         <p>A <a href="http://ginatrapani.org">Gina Trapani</a> Production. <a href="http://github.com/ginatrapani/narrowthegapp">Fork this web site on GitHub.</a></p>
       </footer>
       <a style="visibility:hidden;" href="https://plus.google.com/113612142759476883204?rel=author">Gina Trapani</a>
