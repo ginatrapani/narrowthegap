@@ -1,3 +1,4 @@
+USE narrowthegapp;
 --
 -- Table structure for table `ntg_occupation_gap`
 --
