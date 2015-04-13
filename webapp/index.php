@@ -11,7 +11,7 @@ require_once 'extlibs/isosceles/libs/class.Loader.php';
 Loader::register(array(dirname(__FILE__).'/libs/model/', dirname(__FILE__).'/libs/controller/'));
 
 $router = new Router();
-$router->addRoute('gap', 'DisplayGapController', array('i'));
+$router->addRoute('gap', 'DisplayGapController', array('slug'));
 $router->addRoute('index', 'DisplayGapController');
 echo $router->route();
 

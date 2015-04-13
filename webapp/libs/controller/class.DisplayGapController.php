@@ -18,24 +18,17 @@ class DisplayGapController extends Controller {
         $this->setViewTemplate('index.tpl');
 
         //Default to all occupations
-        if (!isset($_GET['i'])) {
-            $gap_id = 1;
+        if (!isset($_GET['slug'])) {
+            $gap_slug = 'total-16-years-and-over';
             //set $_GET so that app uses its cache key
-            $_GET['i'] = $gap_id;
+            $_GET['slug'] = $gap_slug;
         }
 
         //Only load data from database if file cache is expired
         if ($this->shouldRefreshCache() ) {
             $occup_gap_dao = new OccupationGapMySQLDAO();
 
-            $gap_array = $occup_gap_dao->getGap($_GET["i"]);
-
-            //That gap doesn't exist; so get a random one to show
-            if (!isset($gap_array['id'])) {
-                $gap_id = $occup_gap_dao->getRandomGapId();
-                $_GET['i'] = $gap_id;
-                $gap_array = $occup_gap_dao->getGap($_GET["i"]);
-            }
+            $gap_array = $occup_gap_dao->getGapByYearSlug(2010, $_GET['slug']);
 
             $this->addToView('id', $gap_array['id']);
             $this->addToView('earnings_gap', $gap_array['earnings_gap']);

@@ -63,6 +63,42 @@ class OccupationGapMySQLDAO extends PDODAO {
     }
 
     /**
+     * Get gap by slug and year.
+     * @param int $year
+     * @param str $slug
+     * @return arr Pay gap information
+     */
+    public function getGapByYearSlug($year, $slug) {
+        $q  = "SELECT id, primary_category, secondary_category, tertiary_category, job_title, earnings_gap, ";
+        $q .= "m_median_weekly_earnings, w_median_weekly_earnings FROM ";
+        $q .= " #prefix#occupation_gap WHERE year=:year AND slug=:slug;";
+        $vars = array(
+            ':slug'=>$slug,
+            ':year'=>$year
+        );
+        $ps = $this->execute($q, $vars);
+        $row = $this->getDataRowAsArray($ps);
+        if (isset($row['earnings_gap'])) {
+            $result['earnings_gap'] = $row['earnings_gap'];
+            $result['id'] = $row['id'];
+            $result['m_median_weekly_earnings'] = $row['m_median_weekly_earnings'];
+            $result['w_median_weekly_earnings'] = $row['w_median_weekly_earnings'];
+            if ($row['job_title'] != '') {
+                $result['occupation'] = $row['job_title'];
+            } elseif ($row['tertiary_category'] != '') {
+                $result['occupation'] = $row['tertiary_category'];
+            } elseif ($row['secondary_category'] != '') {
+                $result['occupation'] = $row['secondary_category'];
+            } elseif ($row['primary_category'] != '') {
+                $result['occupation'] = $row['primary_category'];
+            }
+            return $result;
+        } else {
+            return null;
+        }
+    }
+
+    /**
      * Get all occupations
      * @return arr List of occupations with pay gap information
      */

@@ -22,6 +22,10 @@ CREATE TABLE IF NOT EXISTS ntg_occupation_gap (
   KEY earnings_gap (earnings_gap)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Gender wage and worker gap per occupation.';
 
+
+ALTER TABLE ntg_occupation_gap ADD slug varchar(110)  COMMENT 'Gap permalink.' AFTER id;
+-- TODO Add a UNIQUE index to slug?
+
 --
 -- Dumping data for table ntg_occupation_gap
 --
@@ -164,3 +168,16 @@ INSERT INTO ntg_occupation_gap (primary_category, secondary_category, tertiary_c
 ('', '', 'Driver/sales workers and truck drivers', '', 2386, 686, 2307, 691, 79, 492, 71, 3, 2010),
 ('', '', 'Laborers and freight, stock, and material movers, hand', '', 1155, 497, 973, 508, 183, 419, 82, 19, 2010),
 ('', '', 'Packers and packagers, hand', '', 346, 400, 159, 413, 187, 389, 94, NULL, 2010);
+
+
+UPDATE ntg_occupation_gap SET slug =
+  IF(primary_category <> '',
+  lcase(replace(replace(primary_category, ' ', '-'), ',', '')),
+    IF(secondary_category <> '',
+      lcase(replace(replace(secondary_category, ' ', '-'), ',', '')),
+        IF(tertiary_category <> '',
+          lcase(replace(replace(tertiary_category, ' ', '-'), ',', '')),
+            IF(job_title <> '',
+              lcase(replace(replace(job_title, ' ', '-'), ',', '')),
+              ''))));
+
