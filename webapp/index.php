@@ -10,10 +10,10 @@
 require_once 'extlibs/isosceles/libs/class.Loader.php';
 Loader::register(array(dirname(__FILE__).'/libs/model/', dirname(__FILE__).'/libs/controller/'));
 
-header('Access-Control-Allow-Origin: *');
 $router = new Router();
 $router->addRoute('gap', 'DisplayGapController', array('slug'));
 $router->addRoute('index', 'DisplayGapController');
-$router->addRoute('gaps', 'AllGapsController');
+//Use flat file instead of database call to populate search box
+//$router->addRoute('gaps', 'AllGapsController');
 echo $router->route();
 
