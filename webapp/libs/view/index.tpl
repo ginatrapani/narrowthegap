@@ -176,7 +176,7 @@
         <br>
         <p>That's ${$less_per_week} out of a weekly paycheck, which means she gets paid ${($less_per_week * 52)|number_format} less per year.</p>
 
-        <div><small>Wage gap calculated from 2014 median weekly earnings of full-time salary workers over 16 years of age in the United States as per data released by the <a href="http://www.bls.gov/cps/cpsaat39.htm">U.S. Bureau of Labor Statistics</a>.</small></div>
+        <div><small>Wage gap calculated from 2014 median weekly earnings of full-time salary workers in the United States as per the <a href="http://www.bls.gov/cps/cpsaat39.htm">U.S. Bureau of Labor Statistics</a>.</small></div>
       </div>
 
       <div class="row">
