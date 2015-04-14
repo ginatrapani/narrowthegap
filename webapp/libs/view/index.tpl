@@ -204,11 +204,11 @@
        </div>
         <div class="col-md-4">
           <h2>Have the Talk</h2>
-          <p><i>"Women work fewer hours than men so it follows they earn less."</i> The data presented here accounts for the salaries of full-time workers.</p>
+          <p><i>"Women work fewer hours than men so it follows they earn less."</i> The data presented here only counts the salaries of full-time workers.</p>
           <p><i>"Women choose lower-paying jobs so that's why there's a pay gap."</i> This data compares the salaries of women and men in the same jobs, from <a href="/gap/janitors-and-building-cleaners">janitors</a> to <a href="/gap/chief-executives">executives</a>.</p>
-          <p><i>"Women don't negotiate their salary as aggressively as men so it's their fault there's a pay gap."</i> Better negotiation techniques can help close the wage gap, but the problem is multi-faceted, systemic, and affects everyone.</p>
+          <p><i>"Women don't negotiate their salary as aggressively as men so it's their fault there's a pay gap."</i> Better negotiation techniques can help close the wage gap, but the problem is multi-faceted and systemic.</p>
           <p><i>"Women choose to stay home with their kids so they have less professional experience than men and thus should earn less."</i>  <a href="http://www.seattletimes.com/opinion/close-the-gender-wage-gap/">Studies show</a> the pay gap exists whether or not women have children.</p>
-          <p><i>"In a lot of jobs, there's no pay gap. Sometimes, women earn more than men."</i>  Pay disparity does not exist in every occupation&mdash;but across all occupations, women consistently earn less at the same jobs.</p>
+          <p><i>"In a lot of jobs, there's no pay gap. Sometimes, women earn more than men."</i>  Pay disparity does not exist in every occupation &mdash; but across all occupations, women consistently earn less at the same jobs.</p>
           <p>Hiring manager at a multinational tech company: <a href="http://www.reddit.com/r/TwoXChromosomes/comments/hvv2m/i_work_for_a_large_multinational_tech_company_i/">"I regularly hire women for 65% to 75% of what men make. I am sick of it. Here is why it happens and how you can avoid it."</a></p>
 
         </div>
