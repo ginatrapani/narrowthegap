@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Narrow the Gapp</title>
+    <title>The gender pay gap for women {$occupation} - Narrow the Gapp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta itemprop="name" content="Narrow the Gapp">
     <meta itemprop="description" content="Women{$phrasing} {$occupation} make {$earnings_gap} cents to the dollar men earn doing the same job. #NarrowTheGap">
