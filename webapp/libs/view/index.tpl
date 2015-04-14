@@ -298,6 +298,8 @@
           ].join('\n'),
           suggestion: Handlebars.compile('<a href="/gap/{{slug}}"><div class="occupation-result">{{occupation_name}}</div></a>')
         }
+      }).on('typeahead:selected', function (e, suggestion, data) {
+          document.location = '/gap/' + suggestion.slug;
       });
 
 {/literal}
