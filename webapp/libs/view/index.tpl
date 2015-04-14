@@ -1,3 +1,7 @@
+{assign var="title" value="Narrow the Gapp: Explore the gender pay gap by occupation"}
+{assign var="description" value="Women{$phrasing} {$occupation} make {$earnings_gap} cents to the dollar men earn doing the same job. #NarrowTheGap"}
+{assign var="image" value="http://narrowthegapp.com/images/narrow-the-gapp.png"}
+{assign var="permalink" value="http://narrowthegapp.com/{if $slug neq 'total-full-time-wage-and-salary-workers'}gap/{$slug}{/if}"}
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/">
 
@@ -5,16 +9,22 @@
     <meta charset="utf-8">
     <title>The gender pay gap for women {$occupation} - Narrow the Gapp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta itemprop="name" content="Narrow the Gapp">
-    <meta itemprop="description" content="Women{$phrasing} {$occupation} make {$earnings_gap} cents to the dollar men earn doing the same job. #NarrowTheGap">
-    <meta itemprop="image" content="http://narrowthegapp.com/images/narrow-the-gapp.png">
-    <meta name="author" content="">
-    <meta property="og:title" content="Narrow the Gapp" />
+    <meta itemprop="name" content="{$title}">
+    <meta itemprop="description" content="{$description}">
+    <meta itemprop="image" content="{$image}">
+    <meta name="author" content="U.S. Bureau of Labor Statistics">
+    <meta property="og:title" content="{$title}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://narrowthegapp.com/" />
-    <meta property="og:image" content="http://narrowthegapp.com/images/narrow-the-gapp.png" />
+    <meta property="og:image" content="{$image}" />
     <meta property="og:site_name" content="Narrow the Gapp" />
     <meta property="fb:admins" content="606837591" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{$title}" />
+    <meta name="twitter:description" content="{$description}" />
+    <meta name="twitter:image" content="{$image}" />
+    <meta name="twitter:url" content="{$permalink}" />
 
     <!-- Le styles -->
     <!-- Latest compiled and minified CSS -->
@@ -169,8 +179,8 @@
       <!-- Main hero unit for a primary call to action -->
       <div class="jumbotron">
         <div style="float:right">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://narrowthegapp.com/{if $slug neq 'total-full-time-wage-and-salary-workers'}gap/{$slug}{/if}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
-            <div class="fb-like" data-href="http://narrowthegapp.com/{if $slug neq 'total-full-time-wage-and-salary-workers'}gap/{$slug}{/if}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="{$permalink}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
+            <div class="fb-like" data-href="{$permalink}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
         </div>
         <h1>Women{$phrasing} <span style="color:#006DCC">{$occupation}</span> make <span style="color:red">{$earnings_gap}&nbsp;cents</span> to the dollar men earn doing the same job.</h1>
         <br>
