@@ -19,7 +19,7 @@ class DisplayGapController extends Controller {
 
         //Default to all occupations
         if (!isset($_GET['slug'])) {
-            $gap_slug = 'total-16-years-and-over';
+            $gap_slug = 'total-full-time-wage-and-salary-workers';
             //set $_GET so that app uses its cache key
             $_GET['slug'] = $gap_slug;
         }
