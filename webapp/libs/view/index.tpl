@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta itemprop="name" content="Narrow the Gapp">
     <meta itemprop="description" content="Women{$phrasing} {$occupation} make {$earnings_gap} cents to the dollar men earn doing the same job. #NarrowTheGap">
-    <meta itemprop="image" content="http://narrowthegapp.com/images/narrow-the-gapp.jpg">
+    <meta itemprop="image" content="http://narrowthegapp.com/images/narrow-the-gapp.png">
     <meta name="author" content="">
     <meta property="og:title" content="Narrow the Gapp" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://narrowthegapp.com/" />
-    <meta property="og:image" content="http://narrowthegapp.com/images/narrow-the-gapp.jpg" />
+    <meta property="og:image" content="http://narrowthegapp.com/images/narrow-the-gapp.png" />
     <meta property="og:site_name" content="Narrow the Gapp" />
     <meta property="fb:admins" content="606837591" />
 
@@ -160,7 +160,7 @@
         </div>
         <div class="col-md-9">
           <div class="input-group" id="prefetch">
-              <input class="typeahead search form-control" type="text" placeholder="{if $smarty.get.slug eq 'total-16-years-and-over'}What's your occupation?{else}Check another occupation{/if}">
+              <input class="typeahead search form-control" type="text" placeholder="{if $smarty.get.slug eq 'total-full-time-wage-and-salary-workers'}What's your occupation?{else}Check another occupation{/if}">
           </div><!-- /input-group -->
         </div><!-- /.col-lg-6 -->
       </div>
@@ -168,8 +168,8 @@
       <!-- Main hero unit for a primary call to action -->
       <div class="jumbotron">
         <div style="float:right">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://narrowthegapp.com/{if $slug neq 'total-16-years-and-over'}gap/{$slug}{/if}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
-            <div class="fb-like" data-href="http://narrowthegapp.com/{if $slug neq 'total-16-years-and-over'}gap/{$slug}{/if}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://narrowthegapp.com/{if $slug neq 'total-full-time-wage-and-salary-workers'}gap/{$slug}{/if}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
+            <div class="fb-like" data-href="http://narrowthegapp.com/{if $slug neq 'total-full-time-wage-and-salary-workers'}gap/{$slug}{/if}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
         </div>
         <h1>Women{$phrasing} <span style="color:#006DCC">{$occupation}</span> make <span style="color:red">{$earnings_gap}&nbsp;cents</span> to the dollar men earn doing the same job.</h1>
         <br>
@@ -222,7 +222,7 @@
     </div> <!-- /container -->
 
     <!-- Dumb hack to give Pinterest bookmarklet an image, argh -->
-    <img src="http://narrowthegapp.com/images/narrow-the-gapp.jpg" style="display:none;"/>
+    <img src="http://narrowthegapp.com/images/narrow-the-gapp.png" style="display:none;"/>
 
 
     {literal}
@@ -292,7 +292,7 @@
         templates: {
           empty: [
             '<div class="empty-message">',
-            'unable to find any Occupations that match',
+            'No occupations match',
             '</div>'
           ].join('\n'),
           suggestion: Handlebars.compile('<a href="/gap/{{slug}}"><div class="occupation-result">{{occupation_name}}</div></a>')
