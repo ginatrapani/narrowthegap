@@ -28,10 +28,10 @@ class DisplayGapController extends Controller {
         if ($this->shouldRefreshCache() ) {
             $occup_gap_dao = new OccupationGapMySQLDAO();
 
-            $gap_array = $occup_gap_dao->getGapByYearSlug(2010, $_GET['slug']);
+            $gap_array = $occup_gap_dao->getGapByYearSlug(2014, $_GET['slug']);
 
             if (!isset($gap_array)) {
-                $gap_array = $occup_gap_dao->getGapByYearSlug(2010, 'total-16-years-and-over');
+                $gap_array = $occup_gap_dao->getGapByYearSlug(2014, 'total-full-time-wage-and-salary-workers');
             }
             $this->addToView('slug', $gap_array['slug']);
             $this->addToView('earnings_gap', $gap_array['earnings_gap']);
@@ -83,7 +83,7 @@ class DisplayGapController extends Controller {
             $occupation_name = 'waitresses';
         }
         //total, 16 years and over just 16 years and over
-        if ($occupation_name == 'total, 16 years and over' ) {
+        if ($occupation_name == 'total, full-time wage and salary workers' ) {
             $occupation_name = 'in the U.S.';
         }
         return $occupation_name;

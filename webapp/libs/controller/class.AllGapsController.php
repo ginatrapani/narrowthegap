@@ -17,7 +17,7 @@ class AllGapsController extends Controller {
         //Only load data from database if file cache is expired
         //if ($this->shouldRefreshCache() ) {
             $occup_gap_dao = new OccupationGapMySQLDAO();
-            $all_gaps = $occup_gap_dao->getAllOccupations();
+            $all_gaps = $occup_gap_dao->getAllOccupations(2014);
             $this->setJsonData($all_gaps);
 
 

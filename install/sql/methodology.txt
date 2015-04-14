@@ -75,6 +75,17 @@ DELETE FROM ntg_occupation_gap WHERE earnings_gap IS NULL;
 
 -- 2014 DATA
 
+
+-- Import new data:
+-------------------
+-- * From the BLS web page (or mirror) cut and paste the HTML <table> data into a text file.
+-- * Search and replace <p class="sub1"> with --, sub2 with ----, sub3 with ------
+-- * Copy and paste data into Google Sheet.
+-- * Export CSV.
+-- * Import into temporary table via LOAD INFILE (See below)
+-- * Select from temp table into permanent table based on number of dashes -- (using 2014 instead of 2010).
+-- * Set and clean gaps same way 2010 data was cleaned.
+
 DROP TABLE ntg_tmp;
 
 CREATE TABLE IF NOT EXISTS ntg_tmp (
