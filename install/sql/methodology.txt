@@ -2,6 +2,11 @@
 -- How to create and populate the data table
 -- To skip these steps, just run build-db_mysql.sql
 --
+
+
+-- 2010 DATA
+
+--
 -- In MySQL:
 --
 DROP TABLE IF EXISTS ntg_occupation_gap;
@@ -42,7 +47,7 @@ CREATE TABLE ntg_occupation_gap (
 -- Open CSV result in a text editor
 -- Remove all empty rows by replacing 2 newlines with 1
 -- Remove all occupation names that wrap to next line by replacing "newline,, with empty char, and by manually adding
---     in closing quote to resulting line in occupation name/category 
+--     in closing quote to resulting line in occupation name/category
 
 LOAD DATA LOCAL INFILE '/your/path/to/narrowthegap/install/sql/data.csv' INTO TABLE ntg_occupation_gap
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\' LINES TERMINATED BY '\n'(
@@ -50,12 +55,12 @@ primary_category , secondary_category , tertiary_category , job_title , mw_total
 )
 
 UPDATE ntg_occupation_gap SET earnings_gap = ((w_median_weekly_earnings * 100)/m_median_weekly_earnings)
-WHERE w_median_weekly_earnings < m_median_weekly_earnings 
+WHERE w_median_weekly_earnings < m_median_weekly_earnings
 AND (m_median_weekly_earnings != -1 AND w_median_weekly_earnings != -1)
 AND (m_median_weekly_earnings != 0 AND w_median_weekly_earnings != 0);
 
 UPDATE ntg_occupation_gap SET worker_gap = ((w_total_workers * 100)/m_total_workers)
-WHERE w_total_workers < m_total_workers 
+WHERE w_total_workers < m_total_workers
 AND (m_total_workers > 10 AND w_total_workers > 10);
 
 DELETE FROM ntg_occupation_gap WHERE earnings_gap IS NULL;
@@ -66,3 +71,80 @@ DELETE FROM ntg_occupation_gap WHERE earnings_gap IS NULL;
 -- SELECT id, job_title, m_median_weekly_earnings, w_median_weekly_earnings, earnings_gap FROM ntg_occupation_gap where earnings_gap is not null order by earnings_gap ASC;
 
 -- SELECT id, primary_category, secondary_category, tertiary_category, job_title, m_total_workers, w_total_workers, worker_gap FROM ntg_occupation_gap where worker_gap is not null order by worker_gap ASC
+
+
+-- 2014 DATA
+
+DROP TABLE ntg_tmp;
+
+CREATE TABLE IF NOT EXISTS ntg_tmp (
+  id int(11) NOT NULL AUTO_INCREMENT COMMENT 'Unique internal ID',
+  primary_category varchar(100) NOT NULL COMMENT 'Occupation primary category.',
+  secondary_category varchar(100) NOT NULL COMMENT 'Occupation secondary category.',
+  tertiary_category varchar(110) NOT NULL COMMENT 'Occupation tertiary category.',
+  job_title varchar(100) NOT NULL COMMENT 'Job title of this occupation.',
+  tmp varchar(100) NOT NULL COMMENT 'Job title of this occupation.',
+  mw_total_workers int(11) NOT NULL COMMENT 'Total workers of both genders in this occupation.',
+  mw_median_weekly_earnings int(11) NOT NULL COMMENT 'Median weekly earnings by both genders in this occupation.',
+  m_total_workers int(11) NOT NULL COMMENT 'Total men workers in this occupation.',
+  m_median_weekly_earnings int(11) NOT NULL COMMENT 'Median weekly earnings of full-time wage and salary men in this occupation.',
+  w_total_workers int(11) NOT NULL COMMENT 'Total women workers in this occupation.',
+  w_median_weekly_earnings int(11) NOT NULL COMMENT 'Median weekly earnings of full-time wage and salary women in this occupation.',
+  earnings_gap int(11) DEFAULT NULL COMMENT 'Median weekly earnings of full-time wage and salary women workers as a percentage of men in this occupation.',
+  worker_gap int(11) DEFAULT NULL COMMENT 'Total women workers as a percentage of men. Null if 100% or more.',
+  year int(11) DEFAULT 2014 COMMENT 'Year of data collection.',
+  PRIMARY KEY (id),
+  KEY earnings_gap (earnings_gap)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Gender wage and worker gap per occupation.';
+
+ALTER TABLE ntg_tmp ADD slug varchar(110)  COMMENT 'Gap permalink.' AFTER id;
+
+
+LOAD DATA LOCAL INFILE '/Users/ginatrapani/Documents/mydata/code/sites/narrowthegapp/install/sql/data-2014.csv' INTO TABLE ntg_tmp
+FIELDS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\' LINES TERMINATED BY '\n'(
+tmp , mw_total_workers , mw_median_weekly_earnings , m_total_workers , m_median_weekly_earnings , w_total_workers , w_median_weekly_earnings
+);
+
+UPDATE ntg_tmp SET job_title = IF(LOCATE('------', tmp) > 0, REPLACE(tmp, '------', ''), '');
+UPDATE ntg_tmp SET tmp = '' WHERE job_title != '';
+
+UPDATE ntg_tmp SET tertiary_category = IF(LOCATE('----', tmp) > 0, REPLACE(tmp, '----', ''), '');
+UPDATE ntg_tmp SET tmp = '' WHERE tertiary_category != '';
+
+UPDATE ntg_tmp SET secondary_category = IF(LOCATE('--', tmp) > 0, REPLACE(tmp, '--', ''), '');
+UPDATE ntg_tmp SET tmp = '' WHERE secondary_category != '';
+
+UPDATE ntg_tmp SET primary_category = tmp WHERE tmp != '';
+UPDATE ntg_tmp SET tmp = '' WHERE primary_category != '';
+
+
+UPDATE ntg_tmp SET earnings_gap = ((w_median_weekly_earnings * 100)/m_median_weekly_earnings)
+WHERE w_median_weekly_earnings < m_median_weekly_earnings
+AND (m_median_weekly_earnings != -1 AND w_median_weekly_earnings != -1)
+AND (m_median_weekly_earnings != 0 AND w_median_weekly_earnings != 0);
+
+UPDATE ntg_tmp SET worker_gap = ((w_total_workers * 100)/m_total_workers)
+WHERE w_total_workers < m_total_workers
+AND (m_total_workers > 10 AND w_total_workers > 10);
+
+DELETE FROM ntg_tmp WHERE earnings_gap IS NULL;
+
+UPDATE ntg_tmp SET slug =
+  IF(primary_category <> '',
+  lcase(replace(replace(primary_category, ' ', '-'), ',', '')),
+    IF(secondary_category <> '',
+      lcase(replace(replace(secondary_category, ' ', '-'), ',', '')),
+        IF(tertiary_category <> '',
+          lcase(replace(replace(tertiary_category, ' ', '-'), ',', '')),
+            IF(job_title <> '',
+              lcase(replace(replace(job_title, ' ', '-'), ',', '')),
+              ''))));
+
+
+INSERT INTO ntg_occupation_gap (slug, primary_category, secondary_category, tertiary_category, job_title, mw_total_workers,
+  mw_median_weekly_earnings, m_total_workers, m_median_weekly_earnings, w_total_workers,
+  w_median_weekly_earnings, earnings_gap, worker_gap,  year)
+SELECT slug, primary_category, secondary_category, tertiary_category, job_title, mw_total_workers,
+  mw_median_weekly_earnings, m_total_workers, m_median_weekly_earnings, w_total_workers,
+  w_median_weekly_earnings, earnings_gap, worker_gap,  year FROM ntg_tmp;
+
