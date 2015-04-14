@@ -15,14 +15,11 @@ class AllGapsController extends Controller {
      */
     public function control() {
         //Only load data from database if file cache is expired
-        //if ($this->shouldRefreshCache() ) {
+        if ($this->shouldRefreshCache() ) {
             $occup_gap_dao = new OccupationGapMySQLDAO();
             $all_gaps = $occup_gap_dao->getAllOccupations(2014);
             $this->setJsonData($all_gaps);
-
-
-
-        //}
+        }
         return $this->generateView();
     }
 }
