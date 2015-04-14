@@ -51,6 +51,7 @@ class DisplayGapController extends Controller {
             } else {
                 $this->addToView('phrasing', '');
             }
+            $this->addToView('year', date('Y'));
         }
         return $this->generateView();
     }

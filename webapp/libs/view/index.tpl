@@ -199,9 +199,9 @@
         </div>
         <h1>Women{$phrasing} <span style="color:#1485CC">{$occupation}</span> make <span style="color:#b21212">{$earnings_gap}&nbsp;cents</span> to the dollar men earn doing the same job.</h1>
         <br>
-        <p>That's <strong>${$less_per_week}</strong> out of a weekly paycheck, which means she gets paid <strong>${($less_per_week * 52)|number_format}</strong> less per year.</p>
+        <p>That's <strong style="color:#b21212">${$less_per_week}</strong> out of a weekly paycheck, which means she gets paid <strong style="color:#b21212">${($less_per_week * 52)|number_format}</strong> less per year.</p>
 
-        <h6>Wage gap calculated from 2014 median weekly earnings of full-time salary workers over 16 years of age in the United States as per data released by the <a href="http://www.bls.gov/cps/cpsaat39.htm">U.S. Bureau of Labor Statistics</a>.</h6>
+        <h6>Wage gap calculated from 2014 median weekly earnings of full-time salary workers in the United States as per the <a href="http://www.bls.gov/cps/cpsaat39.htm">U.S. Bureau of Labor Statistics</a>.</h6>
       </div>
 
       <div class="row">
@@ -210,7 +210,7 @@
            <p>Over 50 years after President Kennedy signed the <a href="http://www.eeoc.gov/laws/statutes/epa.cfm">Equal Pay Act</a>, on average women are still paid less than their male counterparts for doing comparable jobs in the U.S. &mdash; that's called the pay gap. It means that each time the average woman starts a new job, she's likely to start from a lower base salary than her male counterparts.</p>
            <p>Just as interest compounds, so does the pay gap. As a woman moves from job to job during her career, the pay gap between her and her male colleagues is likely to become wider and wider.</p>
            <p><a href="/gap/legal-occupations">Legal occupations</a> and <a href="/gap/personal-financial-advisors">personal financial advisors</a> suffer the largest gender pay gaps. <a href="/gap/maids-and-housekeeping-cleaners">Maids and housekeeping cleaners</a> and <a href="/gap/food-preparation-workers">food preparation workers</a> have the smallest pay gaps.</p>
-           <h2>We can't wait 50 years</h2>
+           <h2>{2058 - $year} more years</h2>
            <p>Unequal pay isn't just unfair, it's illegal. But unless men and women who have the same job discuss what they're getting paid, unequal pay can go unaddressed indefinitely. At the current pace, it will <a href="http://www.newsweek.com/gender-pay-gap-wont-close-another-43-years-314249">take until 2058</a> for women and men’s earnings to reach pay parity. Let's make it happen sooner.</p>
            <p>Women make up nearly half of the labor force and mothers are the primary or co-breadwinners in the majority of families. When women aren't paid fairly, families suffer and the American economy suffers.</p>
         </div>
@@ -271,32 +271,32 @@
         <div class="col-md-4">
           <h2>Have the Talk</h2>
           <blockquote>
-            <p>"But women work fewer hours than men so it follows they earn less!"</p>
-            <footer>This data compares the salaries of full-time salary workers so it accounts for number of hours worked.</footer>
+            <p>"Women work fewer hours than men so it follows they earn less."</p>
+            <footer>The data set presented here only counts the salaries of full-time workers.</footer>
           </blockquote>
-          
+
 
           <blockquote>
             <p>"Women choose lower-paying jobs so that's why there's a pay gap."</p>
             <footer>This data compares the salaries of women and men in the same jobs, from <a href="/gap/janitors-and-building-cleaners">janitors</a> to <a href="/gap/chief-executives">executives</a>.</footer>
           </blockquote>
-          
+
 
           <blockquote>
             <p>"Women don't negotiate their salary as aggressively as men so it's their fault there's a pay gap."</p>
-            <footer>Better negotiation techniques can help close the wage gap, but the problem is multi-facted, systemic, and affects everyone.</footer>
+            <footer>Better negotiation techniques can help close the wage gap, but the problem is multi-faceted and systemic.</footer>
           </blockquote>
-          
+
 
           <blockquote>
             <p>"Women choose to stay home with their kids so they have less professional experience than men and thus should earn less."</p>
             <footer><a href="http://www.seattletimes.com/opinion/close-the-gender-wage-gap/">Studies show</a> the pay gap exists whether or not women have children.</footer>
           </blockquote>
-          
+
 
           <blockquote>
             <p>"In a lot of jobs, there's no pay gap&mdash;and sometimes, women earn more than men."</p>
-            <footer>Pay disparity does not exist in every occupation&mdash;but across all occupations, women consistently earn less at the same jobs.</footer>
+            <footer>Pay disparity does not exist in every occupation &mdash; but across all occupations, women consistently earn less at the same jobs.</footer>
           </blockquote>
 
         </div>
