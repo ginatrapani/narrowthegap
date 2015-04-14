@@ -37,6 +37,7 @@
       }
       .jumbotron a {
         color:#333;
+        text-decoration: underline;
       }
       .jumbotron a:hover {
         color:#333;
@@ -175,19 +176,17 @@
         <br>
         <p>That's ${$less_per_week} out of a weekly paycheck, which means she gets paid ${($less_per_week * 52)|number_format} less per year.</p>
 
-        <div><small> Wage gap calculated from 2014 median weekly earnings of full-time salary workers over 16 years of age in the United States as per census data published by the <a href="http://bls.gov">U.S. Bureau of Labor Statistics</a>.</small>
-
-</div>
+        <div><small>Wage gap calculated from 2014 median weekly earnings of full-time salary workers over 16 years of age in the United States as per data released by the <a href="http://www.bls.gov/cps/cpsaat39.htm">U.S. Bureau of Labor Statistics</a>.</small></div>
       </div>
 
       <div class="row">
         <div class="col-md-4">
           <h2>Unfair and Illegal</h2>
-           <p>Nearly 50 years after President Kennedy signed the <a href="http://www.eeoc.gov/laws/statutes/epa.cfm">Equal Pay Act</a>, on average women are still paid less than their male counterparts for doing comparable jobs in the U.S. &mdash; that's called the pay gap. It means that each time the average woman starts a new job, she's likely to start from a lower base salary than her male counterparts.</p>
+           <p>Over 50 years after President Kennedy signed the <a href="http://www.eeoc.gov/laws/statutes/epa.cfm">Equal Pay Act</a>, on average women are still paid less than their male counterparts for doing comparable jobs in the U.S. &mdash; that's called the pay gap. It means that each time the average woman starts a new job, she's likely to start from a lower base salary than her male counterparts.</p>
            <p>Just as interest compounds, so does the pay gap. As a woman moves from job to job during her career, the pay gap between her and her male colleagues is likely to become wider and wider.</p>
-           <p><a href="/gap/50">Personal financial advisors</a> and <a href="/gap/122">legal occupations</a> suffer the largest gender pay gaps. <a href="/gap/253">Personal and home care aides</a> and <a href="/gap/132">special education teachers</a> have the smallest pay gaps.</p>
-           <p>Unequal pay isn't just unfair, it's illegal. But unless men and women who have the same job discuss what they're getting paid, unequal pay can go unaddressed indefinitely. At the current pace, <a href="http://www.iwpr.org/press-room/press-releases/on-100th-anniversary-of-international-women2019s-day-45-more-years-needed-to-close-gender-wage-gap-in-the-u.s">it will take until 2056 for women and men’s earnings to reach pay parity.</a> Let's make it happen sooner.</p>
-           <p>Women make up nearly half of the labor force and mothers are the primary or co-breadwinners in the majority of families. When women aren't paid fairly, families suffer and the American economy suffers.</p>
+           <p><a href="/gap/legal-occupations">Legal occupations</a> and <a href="/gap/personal-financial-advisors">personal financial advisors</a> suffer the largest gender pay gaps. <a href="/gap/maids-and-housekeeping-cleaners">Maids and housekeeping cleaners</a> and <a href="/gap/food-preparation-workers">food preparation workers</a> have the smallest pay gaps.</p>
+           <p>Unequal pay isn't just unfair, it's illegal. But unless men and women who have the same job discuss what they're getting paid, unequal pay can go unaddressed indefinitely. At the current pace, it will <a href="http://www.newsweek.com/gender-pay-gap-wont-close-another-43-years-314249">take until 2058</a> for women and men’s earnings to reach pay parity. Let's make it happen sooner.</p>
+           <p>Unequal pay isn't just unfair, it's illegal. But unless men and women who have the same job discuss what they're getting paid, unequal pay can go unaddressed indefinitely. At the current pace, it will <a href="http://www.newsweek.com/gender-pay-gap-wont-close-another-43-years-314249">take until 2058</a> for women and men’s earnings to reach pay parity. Let's make it happen sooner.</p>
         </div>
         <div class="col-md-4">
           <h2>Narrow the Gap</h2>
@@ -198,18 +197,20 @@
           <li><strong>Talk to employees and employers</strong> you know about the pay gap, salary negotiation techniques, and equal pay laws.</li>
           <li><strong>Change the numbers</strong> by citing the numbers. Boatloads of data just like this is freely available from the <a href="http://www.dol.gov/">U.S. Department of Labor</a> and beyond.</li>
           </ul>
+          <p>To find out more about the gender pay gap, check out some of the following resources:</p>
+          <p>The Institute for Women's Policy Research's report <a href="http://www.aauw.org/files/2013/02/The-Simple-Truth-2013.pdf">The Status of Women in the States: 2015 Employment and Earnings</a> (PDF, 52 pages)</p>
+          <p>Catalyst.org's research report <a href="http://www.catalyst.org/knowledge/myth-ideal-worker-does-doing-all-right-things-really-get-women-ahead">The Myth of the Ideal Worker: Does Doing All The Right Things Really Get Women Ahead?</a> (PDF, 21 pages)</p>
+          <p><i><a href="http://www.amazon.com/o/ASIN/0553383876/ref=nosim/lifehackerboo-20">Women Don't Ask: The High Cost of Avoiding Negotiation--and Positive Strategies for Change</a></i> by Linda Babcock and Sara Laschever (Book, 272 pages)</p>
+          <p>Hiring manager at a multinational tech company: <a href="http://www.reddit.com/r/TwoXChromosomes/comments/hvv2m/i_work_for_a_large_multinational_tech_company_i/">"I regularly hire women for 65% to 75% of what men make. I am sick of it. Here is why it happens and how you can avoid it."</a></p>
+
        </div>
         <div class="col-md-4">
-          <h2>Learn More</h2>
-          <p>To find out more about the gender pay gap, check out some of the following resources:</p>
-          <p>The American Association of University Women's <a href="http://www.aauw.org/files/2013/02/The-Simple-Truth-2013.pdf">The Simple Truth about the Gender Pay Gap</a> (PDF, 25 pages)</p>
-          <p>Catalyst.org's research report <a href="http://www.catalyst.org/knowledge/myth-ideal-worker-does-doing-all-right-things-really-get-women-ahead">The Myth of the Ideal Worker: Does Doing All The Right Things Really Get Women Ahead?</a> (PDF, 21 pages)</p>
-          <p>Sheryl Sandberg's TEDWomen Talk, <a href="http://www.ted.com/talks/sheryl_sandberg_why_we_have_too_few_women_leaders.html">Why we have too few women leaders</a> (Video, 15 minutes)</p>
-          <p><i><a href="http://www.amazon.com/o/ASIN/0553383876/ref=nosim/lifehackerboo-20">Women Don't Ask: The High Cost of Avoiding Negotiation--and Positive Strategies for Change</a></i> by Linda Babcock and Sara Laschever (Book, 272 pages)</p>
-          <p>Secretary of Labor Hilda Solis' advice to women: <a href="http://www.thedailymuse.com/lessons-to-my-younger-self-2/hilda-solis-know-your-worth/">"Know your worth."</a></p>
-          <p>Hiring manager at a multinational tech company: <a href="http://www.reddit.com/r/TwoXChromosomes/comments/hvv2m/i_work_for_a_large_multinational_tech_company_i/">"I regularly hire women for 65% to 75% of what men make. I am sick of it. Here is why it happens and how you can avoid it."</a></p>
-          <p>What else should be listed here?</p>
-          <p><a class="btn btn-success" href="https://github.com/ginatrapani/narrowthegapp/issues">Suggest a resource &raquo;</a></p>
+          <h2>Have the Talk</h2>
+          <p><i>"Women work fewer hours than men so it follows they earn less."</i> This data compares the salaries of full-time salary workers so it accounts for number of hours worked.</p>
+          <p><i>"Women choose lower-paying jobs so that's why there's a pay gap."</i> This data compares the salaries of women and men in the same jobs, from <a href="/gap/janitors-and-building-cleaners">janitors</a> to <a href="/gap/chief-executives">executives</a>.</p>
+          <p><i>"Women don't negotiate their salary as aggressively as men so it's their fault there's a pay gap."</i>  Better negotiation techniques can help close the wage gap, but the problem is multi-facted, systemic, and affects everyone.</p>
+          <p><i>"Women choose to stay home with their kids so they have less professional experience than men and thus should earn less."</i>  <a href="http://www.seattletimes.com/opinion/close-the-gender-wage-gap/">Studies show</a> the pay gap exists whether or not women have children.</p>
+          <p><i>"In a lot of jobs, there's no pay gap&mdash;and sometimes, women earn more than men."</i>  Pay disparity does not exist in every occupation&mdash;but across all occupations, women consistently earn less at the same jobs.</p>
         </div>
       </div>
 
