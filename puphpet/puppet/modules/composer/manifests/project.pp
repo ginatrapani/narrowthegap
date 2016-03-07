@@ -6,14 +6,16 @@
 #
 # Document parameters here.
 #
+# [*project_name*]
+#   The project name as required by composer
+#
 # [*target_dir*]
-#   The target dir that composer should be installed to.
-#   Defaults to ```/usr/local/bin```.
+#   The target dir that the project should be installed to
 #
-# [*composer_file*]
-#   The name of the composer binary, which will reside in ```target_dir```.
+# [*version*]
+#   The version of the composer project that should be checked out
 #
-# [*download_method*]
+# [*dev*]
 #   Either ```curl``` or ```wget```.
 #
 # [*logoutput*]
@@ -26,7 +28,10 @@
 #   The Package name of the PHP CLI package.
 #
 # [*user*]
-#   The user name to exec the composer commands as. Default is undefined.
+#   The user name to exec the composer commands as. Default is composer::user.
+#
+# [*working_dir*]
+#   Use the given directory as working directory.
 #
 # === Authors
 #
@@ -40,17 +45,17 @@ define composer::project(
   $project_name,
   $target_dir,
   $version        = undef,
-  $dev            = false,
+  $dev            = true,
   $prefer_source  = false,
   $stability      = 'dev',
   $repository_url = undef,
   $keep_vcs       = false,
   $tries          = 3,
   $timeout        = 1200,
-  $user           = undef,
+  $user           = $composer::user,
+  $working_dir    = undef,
 ) {
-  require git
-  require composer
+  require ::composer
 
   Exec {
     path        => "/bin:/usr/bin/:/sbin:/usr/sbin:${composer::target_dir}",
@@ -58,13 +63,17 @@ define composer::project(
     user        => $user,
   }
 
+  $composer_path = "${composer::target_dir}/${composer::composer_file}"
+  $stability_config = "--stability=${stability}"
+
   $exec_name    = "composer_create_project_${title}"
-  $base_command = "${composer::php_bin} ${composer::target_dir}/${composer::composer_file} --stability=${stability}"
+  $base_command = "${composer::php_bin} ${composer_path} ${stability_config}"
+
   $end_command  = "${project_name} ${target_dir}"
 
   $dev_arg = $dev ? {
-    true    => ' --dev',
-    default => '',
+    true    => '',
+    default => ' --no-dev',
   }
 
   $vcs = $keep_vcs? {
@@ -78,8 +87,8 @@ define composer::project(
   }
 
   $pref_src = $prefer_source? {
-    true  => ' --prefer-source',
-    false => ''
+    true    => ' --prefer-source',
+    default => ''
   }
 
   $v = $version? {
@@ -87,10 +96,19 @@ define composer::project(
     default => " ${version}",
   }
 
+  $wdir = $working_dir? {
+    undef   => '',
+    default => " --working-dir=${working_dir}",
+  }
+
+  $concat_cmd = "${base_command}${dev_arg}${repo}${pref_src}${vcs}${wdir}"
+  $or_rm_command = "${end_command}${v} || rm -rf ${target_dir}"
+
   exec { $exec_name:
-    command => "${base_command}${dev_arg}${repo}${pref_src}${vcs} create-project ${end_command}${v}",
+    command => "${concat_cmd} --no-interaction create-project ${or_rm_command}",
     tries   => $tries,
     timeout => $timeout,
     creates => $target_dir,
+    cwd     => $working_dir
   }
 }

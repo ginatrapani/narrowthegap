@@ -5,6 +5,7 @@ Puppet::Type.newtype(:mysql_user) do
   ensurable
 
   autorequire(:file) { '/root/.my.cnf' }
+  autorequire(:class) { 'mysql::server' }
 
   newparam(:name, :namevar => true) do
     desc "The name of the user. This uses the 'username@hostname' or username@hostname."
@@ -13,10 +14,10 @@ Puppet::Type.newtype(:mysql_user) do
       # If at least one special char is used, string must be quoted
 
       # http://stackoverflow.com/questions/8055727/negating-a-backreference-in-regular-expressions/8057827#8057827
-      if matches = /^(['`"])((?:(?!\1).)*)\1@([\w%\.:\-]+)/.match(value)
+      if matches = /^(['`"])((?:(?!\1).)*)\1@([\w%\.:\-\/]+)$/.match(value)
         user_part = matches[2]
         host_part = matches[3]
-      elsif matches = /^([0-9a-zA-Z$_]*)@([\w%\.:\-]+)/.match(value)
+      elsif matches = /^([0-9a-zA-Z$_]*)@([\w%\.:\-\/]+)$/.match(value)
         user_part = matches[1]
         host_part = matches[2]
       elsif matches = /^((?!['`"]).*[^0-9a-zA-Z$_].*)@(.+)$/.match(value)
@@ -26,11 +27,18 @@ Puppet::Type.newtype(:mysql_user) do
         raise(ArgumentError, "Invalid database user #{value}")
       end
 
-      raise(ArgumentError, 'MySQL usernames are limited to a maximum of 16 characters') if user_part.size > 16
+      mysql_version = Facter.value(:mysql_version)
+      unless mysql_version.nil?
+        if Puppet::Util::Package.versioncmp(mysql_version, '10.0.0') < 0 and user_part.size > 16
+          raise(ArgumentError, 'MySQL usernames are limited to a maximum of 16 characters')
+        elsif Puppet::Util::Package.versioncmp(mysql_version, '10.0.0') > 0 and user_part.size > 80
+          raise(ArgumentError, 'MySQL usernames are limited to a maximum of 80 characters')
+        end
+      end
     end
 
     munge do |value|
-      matches = /^((['`"]?).*\2)@([\w%\.:\-]+)/.match(value)
+      matches = /^((['`"]?).*\2)@(.+)$/.match(value)
       "#{matches[1]}@#{matches[3].downcase}"
     end
   end

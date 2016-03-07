@@ -20,4 +20,3 @@ composer::project { 'my_second_test':
   prefer_source => true,
   stability     => 'dev',
 }
-

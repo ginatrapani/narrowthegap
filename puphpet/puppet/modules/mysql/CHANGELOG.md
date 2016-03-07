@@ -1,3 +1,76 @@
+## Supported Release 3.6.2
+###Summary
+
+Small release for support of newer PE versions. This increments the version of PE in the metadata.json file.
+
+## 2015-09-22 - Supported Release 3.6.1
+### Summary
+This is a security and bugfix release that fixes incorrect username truncation in the munge for the mysql_user type, incorrect function used in `mysql::server::backup` and fixes compatibility issues with PE 3.3.x.
+
+#### Bugfixes
+- Loosen the regex in mysql_user munging so the username is not unintentionally truncated.
+- Use `warning()` not `warn()`
+- Metadata had inadvertantly dropped 3.3.x support
+- Some 3.3.x compatibility issues in `mysqltuner` were corrected
+
+## 2015-08-10 - Supported Release 3.6.0
+### Summary
+This release adds the ability to use mysql::db and `mysql_*` types against unmanaged or external mysql instances.
+
+#### Features
+- Add ability to use mysql::db WITHOUT mysql::server (ie, externally)
+- Add prescript attribute to mysql::server::backup for xtrabackup
+- Add postscript ability to xtrabackup provider.
+
+#### Bugfixes
+- Fix default root passwords blocking puppet on mysql 5.8
+- Fix service dependency when package_manage is false
+- Fix selinux permissions on my.cnf
+
+##2015-07-23 - Supported Release 3.5.0
+###Summary
+A small release to add explicit support to newer Puppet versions and accumulated patches.
+
+####Features/Improvements
+- Start running tests against puppet 4
+- Support longer usernames on newer MariaDB versions
+- Add parameters for Solaris 11 and 12
+
+####Bugfixes
+- Fix references to the mysql-server package
+- mysql_server_id doesn't throw and error on machines without macaddress
+
+##2015-05-19 - Supported Release 3.4.0
+###Summary
+This release includes the addition of extra facts, OpenBSD compatibility, and a number of other features, improvements and bug fixes.
+
+####Features/Improvements
+- Added server_id fact which includes mac address for better uniqueness
+- Added OpenBSD compatibility, only for 'OpenBSD -current' (due to the recent switch to mariadb)
+- Added a $mysql_group parameter, and use that instead of the $root_group parameter to define the group membership of the mysql error log file.
+- Updated tests for rspec-puppet 2 and future parser
+- Further acceptance testing improvements
+- MODULES-1928 - allow log-error to be undef
+- Split package installation and database install
+- README wording improvements
+- Added options for including/excluding triggers and routines
+- Made the 'TRIGGER' privilege of mysqldump backups depend on whether or not we are actually backing up triggers
+- Cleaned up the privilege assignment in the mysqldump backup script
+- Add a fact for capturing the mysql version installed
+
+####Bugfixes
+- mysql backup: fix regression in mysql_user call
+- Set service_ensure to undef, in the case of an unmanaged service
+- README Typos fixed
+- Bugfix on Xtrabackup crons
+- Fixed a permission problem that was preventing triggers from being backed up
+- MODULES-1981: Revoke and grant difference of old and new privileges
+- Fix an issue were we assume triggers work
+- Change default for mysql::server::backup to ignore_triggers = false
+
+####Deprecations
+mysql::server::old_root_password property
+
 ##2015-03-03 - Supported Release 3.3.0
 ###Summary
 This release includes major README updates, the addition of backup providers, and a fix for managing the log-bin directory.
@@ -73,7 +146,7 @@ Added several new features including MariaDB support and future parser
 * `mysql::db` now has an import\_timeout feature that defaults to 300
 * The `mysql` class has been removed
 * `mysql::server` now takes an `override_options` hash that will affect the installation
-* Ability to install both dev and client dev 
+* Ability to install both dev and client dev
 
 ####BugFix
 * `mysql::server::backup` now passes `ensure` param to the nested `mysql_grant`

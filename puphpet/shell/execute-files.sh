@@ -14,7 +14,7 @@ if [ -d "/.puphpet-stuff/${EXEC_ONCE_DIR}-ran" ]; then
 fi
 
 if [ ! -f "/.puphpet-stuff/${EXEC_ONCE_DIR}-ran" ]; then
-   touch "/.puphpet-stuff/${EXEC_ONCE_DIR}-ran"
+   sudo touch "/.puphpet-stuff/${EXEC_ONCE_DIR}-ran"
    echo "Created file /.puphpet-stuff/${EXEC_ONCE_DIR}-ran"
 fi
 
@@ -22,7 +22,7 @@ find "${VAGRANT_CORE_FOLDER}/files/${EXEC_ONCE_DIR}" -maxdepth 1 -type f -name '
     SHA1=$(sha1sum "${FILENAME}")
 
     if ! grep -x -q "${SHA1}" "/.puphpet-stuff/${EXEC_ONCE_DIR}-ran"; then
-        echo "${SHA1}" >> "/.puphpet-stuff/${EXEC_ONCE_DIR}-ran"
+        sudo /bin/bash -c "echo \"${SHA1}\" >> \"/.puphpet-stuff/${EXEC_ONCE_DIR}-ran\""
 
         chmod +x "${FILENAME}"
         /bin/bash "${FILENAME}"
@@ -33,6 +33,10 @@ done
 
 echo "Finished running files in files/${EXEC_ONCE_DIR}"
 echo "To run again, delete hashes you want rerun in /.puphpet-stuff/${EXEC_ONCE_DIR}-ran or the whole file to rerun all"
+
+if [ -z ${EXEC_ALWAYS_DIR} ]; then
+    exit 0
+fi
 
 echo "Running files in files/${EXEC_ALWAYS_DIR}"
 

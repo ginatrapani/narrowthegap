@@ -5,41 +5,35 @@ class puphpet::php::wordpress::wpcli (
   $version
 ) {
 
-  if $wpcli_values['version'] != undef
-    and (hash_key_equals($php_values, 'install', 1)
-          or hash_key_equals($hhvm_values, 'install', 1))
-    and (hash_key_equals($php_values, 'composer', 1)
-          or hash_key_equals($hhvm_values, 'composer', 1))
-  {
-    $wpcli_github   = 'https://github.com/wp-cli/wp-cli.git'
-    $wpcli_location = '/usr/share/wp-cli'
+  $github   = 'https://github.com/wp-cli/wp-cli.git'
+  $location = '/usr/share/wp-cli'
 
-    exec { 'delete-wpcli-path-if-not-git-repo':
-      command => "rm -rf ${wpcli_location}",
-      onlyif  => "test ! -d ${wpcli_location}/.git",
-      path    => [ '/bin/', '/sbin/', '/usr/bin/', '/usr/sbin/' ],
-    } ->
-    vcsrepo { $wpcli_location:
-      ensure   => present,
-      provider => git,
-      source   => $wpcli_github,
-      revision => $wpcli_values['version'],
-    } ->
-    composer::exec { 'wp-cli':
-      cmd     => 'install',
-      cwd     => $wpcli_location,
-      require => Vcsrepo[$wpcli_location],
-    } ->
-    file { "${wpcli_location}/bin/wp":
-      ensure => present,
-      mode   => '+x',
-    }
-    file { 'symlink wp-cli':
-      ensure => link,
-      path   => '/usr/bin/wp',
-      mode   => '0766',
-      target => "${wpcli_location}/bin/wp",
-    }
+  exec { 'delete-wpcli-path-if-not-git-repo':
+    command => "rm -rf ${location}",
+    onlyif  => "test ! -d ${location}/.git",
+    path    => [ '/bin/', '/sbin/', '/usr/bin/', '/usr/sbin/' ],
+  } ->
+  vcsrepo { $location:
+    ensure   => present,
+    provider => git,
+    source   => $github,
+    revision => $version,
+  } ->
+  composer::exec { 'wp-cli':
+    cmd     => 'install',
+    cwd     => $location,
+    dev     => false,
+    require => Vcsrepo[$location],
+  } ->
+  file { "${location}/bin/wp":
+    ensure => present,
+    mode   => '+x',
+  }
+  file { 'symlink wp-cli':
+    ensure => link,
+    path   => '/usr/bin/wp',
+    mode   => '0766',
+    target => "${location}/bin/wp",
   }
 
 }

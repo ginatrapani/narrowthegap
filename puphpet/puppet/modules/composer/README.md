@@ -6,9 +6,14 @@
 
 The `puppet-composer` module installs the latest version of Composer from http://getcomposer.org. Composer is a dependency manager for PHP.
 
+## Supported Puppet versions
+
+This module supports puppet in versions `>= 2.7, <3.5`
+
 ## Supported Platforms
 
 * `Debian`
+* `Ubuntu`
 * `Redhat`
 * `Centos`
 * `Amazon Linux`
@@ -34,6 +39,7 @@ This module requires the following Puppet modules:
 And additional (for puppet version lower than 3.0.0) you need:
 
 * [`libaugeas`](http://augeas.net/) (For automatically updating php.ini settings for suhosin patch)
+* [`hiera-puppet`](http://docs.puppetlabs.com/hiera/1/installing.html#step-2-install-the-puppet-functions) (For managing config data)
 
 ## Usage
 To install the `composer` binary globally in `/usr/local/bin` you only need to declare the `composer` class. We try to set some sane defaults. There are also a number of parameters you can tweak should the defaults not be sufficient.
@@ -59,6 +65,9 @@ class { 'composer':
     composer_home   => '/root',
     php_bin         => 'php', # could also i.e. be 'php -d "apc.enable_cli=0"' for more fine grained control
     suhosin_enabled => true,
+    auto_update     => false, # Set to true to automatically update composer to the latest version
+    github_token    => '1234567890abcdefgh',
+    user            => 'app',
 }
 ```
 
@@ -80,7 +89,7 @@ composer::project { 'silex':
 }
 ```
 
-#### Updating Packages
+### Updating Packages
 
 The `composer::exec` definition provides a more generic wrapper arround composer `update` and `install` commands. The following example will update the `silex/silex` and `symfony/browser-kit` packages in the `/vagrant/silex` directory. You can omit `packages` to update the entire project.
 
@@ -96,13 +105,14 @@ composer::exec { 'silex-update':
     scripts              => false, # No script execution
     interaction          => false, # No interactive questions
     optimize             => false, # Optimize autoloader
-    dev                  => false, # Install dev dependencies
+    dev                  => true, # Install dev dependencies
+    timeout              => undef, # Set a timeout for the exec type
     user                 => undef, # Set the user to run as
     refreshonly          => false, # Only run on refresh
 }
 ```
 
-#### Installing Packages
+### Installing Packages
 
 We support the `install` command in addition to `update`. The install command will ignore the `packages` parameter and the following example is the equivalent to running `composer install` in the `/vagrant/silex` directory.
 
@@ -117,13 +127,35 @@ composer::exec { 'silex-install':
     scripts              => false, # No script execution
     interaction          => false, # No interactive questions
     optimize             => false, # Optimize autoloader
-    dev                  => false, # Install dev dependencies
+    dev                  => true, # Install dev dependencies
+    onlyif               => undef, # If true
+    unless               => undef, # If true
+}
+```
+
+### Updating composer
+
+You can use the defined type `composer::selfupdate` to update (or rollback) composer to the latest (or specific) version.
+
+```puppet
+composer::selfupdate { 'selfupdate_composer':
+  version       => undef, # Leave undef for latest version, otherwise specify commit hash here
+  rollback      => false, # Set to true to rollback to a specified version (version MUST be given)
+  clean_backups => false, # Set to true to clean backups
+  user          => undef, # If the command should be run as a user
+  logoutput     => false, # If the command's output should be written to the logs
+  timeout       => 300,   # Timeout for this command
+  tries         => 3,     # Retries for this command
 }
 ```
 
 ## Development
 
-We have `rspec-puppet` and Travis CI setup for the project. To run the spec tests locally you need `bundler` installed:
+For unit testing we use `rspec-puppet` and Travis CI. Functional testing happens through a Vagrant VM where you can test changes in a real server scenario.
+
+### Unit Tests
+
+When contributing fixes or features you should try and create RSpec tests for those changes. It is always a good idea to make sure the entire suite passes before opening a pull request. To run the RSpec tests locally you need `bundler` installed:
 
 ```
 gem install bundler
@@ -141,6 +173,42 @@ Finally, the tests can be run:
 rake spec
 ```
 
+### Functional Tests
+
+For easier development and actual testing the use of the module, we rely on Vagrant, which allows us to bring up a VM that we can use to test changes and perform active development without needing a real server.
+
+To get started with the Vagrant VM you should first get the [Unit Tests](#unit-tests) working. Then you will need to install [VirtualBox][virtualbox] and [Vagrant][vagrant].
+
+To bring up the development VM you can run `rake vagrant:up`. This Rake task runs `rake spec_prep` as a pre-requisite so that the `git` Puppet module is available. With the VM up and running you can login via SSH with `vagrant ssh` and run `puppet apply` against it with `rake vagrant:provision`.
+
+The VM will get the `spec/fixtures/manifests/vagrant.pp` file applied to the node. This currently creates a Silex project at `/tmp/silex` when the VM starts up. You can modify this manifest to your liking.
+
+### Acceptance Tests
+
+Acceptance tests are written using [Beaker](https://github.com/puppetlabs/beaker/wiki).
+
+To run the beaker tests via rake, you can simply run `rake beaker`.
+
+To use something other than the default beaker node, try the following:
+
+```
+BEAKER_set=ubuntu-server-1404-x64 rake beaker
+```
+
+To use beaker without rake, simply run `rspec spec/acceptance`.
+
+**Beaker + Hiera**
+
+When running acceptance tests, you may hit GitHub rate limits much faster than you would otherwise. To ensure your tests do not fail arbitrarily, you can add your GitHub auth token via hiera.
+
+Create a hiera config at `spec/fixtures/puppet/common.yaml`, that looks like this:
+
+```yaml
+composer::github_token: 'my_github_auth_token'
+```
+
+Happy testing!
+
 ## Contributing
 
 We welcome everyone to help develop this module. To contribute:
@@ -153,3 +221,6 @@ We welcome everyone to help develop this module. To contribute:
 ## Todo
 
 * Add a `composer::require` type
+
+[vagrant]: http://vagrantup.com/
+[virtualbox]: https://www.virtualbox.org/wiki/Downloads

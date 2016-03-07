@@ -1,13 +1,15 @@
+#
 define monitor::process (
-  $process,
-  $service,
-  $pidfile,
   $tool,
-  $enable       = true,
-  $argument     = '',
-  $user         = '',
-  $template     = '',
-  $config_hash  = {}
+  $process             = $name,
+  $service             = undef,
+  $service_description = undef,
+  $pidfile             = '',
+  $enable              = true,
+  $argument            = '',
+  $user                = '',
+  $template            = '',
+  $config_hash         = {}
   ) {
 
   $bool_enable=any2bool($enable)
@@ -20,12 +22,6 @@ define monitor::process (
   $ensure = $bool_enable ? {
     false => 'absent',
     true  => 'present',
-  }
-
-  if ($tool =~ /munin/) {
-  }
-
-  if ($tool =~ /collectd/) {
   }
 
   if ($tool =~ /monit/) {
@@ -73,17 +69,19 @@ define monitor::process (
 
   if ($tool =~ /nagios/) {
     nagios::service { $name:
-      ensure        => $ensure,
-      template      => $real_template,
-      check_command => $check_command,
+      ensure              => $ensure,
+      service_description => $service_description,
+      template            => $real_template,
+      check_command       => $check_command,
     }
   }
 
   if ($tool =~ /icinga/) {
     icinga::service { $name:
-      ensure        => $ensure,
-      template      => $real_template,
-      check_command => $check_command,
+      ensure              => $ensure,
+      service_description => $service_description,
+      template            => $real_template,
+      check_command       => $check_command,
     }
   }
 

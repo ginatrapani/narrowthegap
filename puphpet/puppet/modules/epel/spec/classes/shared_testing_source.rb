@@ -11,24 +11,36 @@ shared_context :epel_testing_source do
   end
 end
 
-shared_context :epel_testing_source_6 do
+shared_examples_for :epel_testing_source_7 do
   include_context :epel_testing_source
 
   it do
     should contain_yumrepo('epel-testing-source').with({
-      'baseurl'        => "http://download.fedoraproject.org/pub/epel/testing/6/SRPMS",
+      'baseurl'        => "https://download.fedoraproject.org/pub/epel/testing/7/SRPMS",
+      'gpgkey'         => "file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7",
+      'descr'          => "Extra Packages for Enterprise Linux 7 - Testing - $basearch - Source",
+    })
+  end
+end
+
+shared_examples_for :epel_testing_source_6 do
+  include_context :epel_testing_source
+
+  it do
+    should contain_yumrepo('epel-testing-source').with({
+      'baseurl'        => "https://download.fedoraproject.org/pub/epel/testing/6/SRPMS",
       'gpgkey'         => "file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6",
       'descr'          => "Extra Packages for Enterprise Linux 6 - Testing - $basearch - Source",
     })
   end
 end
 
-shared_context :epel_testing_source_5 do
+shared_examples_for :epel_testing_source_5 do
   include_context :epel_testing_source
 
   it do
     should contain_yumrepo('epel-testing-source').with({
-      'baseurl'        => "http://download.fedoraproject.org/pub/epel/testing/5/SRPMS",
+      'baseurl'        => "https://download.fedoraproject.org/pub/epel/testing/5/SRPMS",
       'gpgkey'         => "file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-5",
       'descr'          => "Extra Packages for Enterprise Linux 5 - Testing - $basearch - Source",
     })

@@ -62,12 +62,12 @@ define monitor::mount (
 
   if ( $create_dir == true ) and ( $only_check != true ) {
     file { $name:
-      ensure  => directory,
-      path    => $name,
-      owner   => $owner,
-      group   => $group,
-      mode    => $mode,
-      before  => Mount[$name],
+      ensure => directory,
+      path   => $name,
+      owner  => $owner,
+      group  => $group,
+      mode   => $mode,
+      before => Mount[$name],
     }
   }
 

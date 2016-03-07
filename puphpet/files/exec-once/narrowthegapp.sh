@@ -8,7 +8,7 @@ cp /var/www/puphpet/files/narrowthegapp-setup/configs/isosceles.config.inc.php /
 mkdir /home/vagrant/data
 
 # Set web-accessible perms
-chown -R www-data /home/vagrant/data/
+chown -R www-user /home/vagrant/data/
 
 # Load sample data
 mysql -u root -pequalpayforequalwork -D narrowthegapp < /var/www/install/sql/build-db_mysql.sql

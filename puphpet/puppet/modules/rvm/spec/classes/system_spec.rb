@@ -5,7 +5,7 @@ describe 'rvm::system' do
   # assume RVM is already installed
   let(:facts) {{
     :rvm_version => '1.10.0',
-    :path => '/bin'
+    :root_home => '/root'
   }}
 
   context "default parameters", :compile do
@@ -29,7 +29,22 @@ describe 'rvm::system' do
 
   context "with proxy_url parameter", :compile do
     let(:params) {{ :version => 'latest', :proxy_url => 'http://dummy.bogus.local:8080' }}
-    it { should contain_exec('system-rvm-get').with_environment("[\"http_proxy=#{params[:proxy_url]}\", \"https_proxy=#{params[:proxy_url]}\"]") }
+    it { should contain_exec('system-rvm-get').with_environment("[\"http_proxy=#{params[:proxy_url]}\", \"https_proxy=#{params[:proxy_url]}\", \"HOME=/root\"]") }
   end
 
+  context "with no_proxy parameter", :compile do
+    let(:params) {{ :version => 'latest', :proxy_url => 'http://dummy.bogus.local:8080', :no_proxy => '.example.local' }}
+    it { should contain_exec('system-rvm-get').with_environment("[\"http_proxy=#{params[:proxy_url]}\", \"https_proxy=#{params[:proxy_url]}\", \"no_proxy=#{params[:no_proxy]}\", \"HOME=/root\"]") }
+  end
+
+  context "with gnupg", :compile do
+    let(:pre_condition) { "class { '::gnupg': }" }
+    it { should contain_gnupg_key('rvm_D39DC0E3').with_key_id('D39DC0E3').with_key_server('hkp://keys.gnupg.net') }
+  end
+
+  context "with gnupg customized", :compile do
+    let(:params) {{ :key_server => 'hkp://example.com', :gnupg_key_id => 'AAAAAAAA' }}
+    let(:pre_condition) { "class { '::gnupg': }" }
+    it { should contain_gnupg_key('rvm_AAAAAAAA').with_key_id('AAAAAAAA').with_key_server('hkp://example.com') }
+  end
 end

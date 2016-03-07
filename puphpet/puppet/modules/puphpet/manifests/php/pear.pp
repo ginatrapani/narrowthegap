@@ -37,7 +37,10 @@ define puphpet::php::pear (
     $preferred_state = 'stable'
   }
 
-  if $package_name and $preferred_state and ! defined(::Php::Pear::Module[$package_name]) {
+  if $package_name and $preferred_state
+    and ! defined(Php::Pear::Module[$package_name])
+    and $puphpet::php::settings::enable_pear
+  {
     ::php::pear::module { $name:
       use_package         => false,
       preferred_state     => $preferred_state,

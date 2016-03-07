@@ -1,6 +1,7 @@
 require 'puppet'
 require 'set'
-Puppet::Type.type(:rabbitmq_user).provide(:rabbitmqctl) do
+require File.expand_path(File.join(File.dirname(__FILE__), '..', 'rabbitmqctl'))
+Puppet::Type.type(:rabbitmq_user).provide(:rabbitmqctl, :parent => Puppet::Provider::Rabbitmqctl) do
 
   if Puppet::PUPPETVERSION.to_f < 3
     commands :rabbitmqctl => 'rabbitmqctl'
@@ -13,7 +14,9 @@ Puppet::Type.type(:rabbitmq_user).provide(:rabbitmqctl) do
   defaultfor :feature => :posix
 
   def self.instances
-    rabbitmqctl('list_users').split(/\n/)[1..-2].collect do |line|
+    self.run_with_retries {
+      rabbitmqctl('-q', 'list_users')
+    }.split(/\n/).collect do |line|
       if line =~ /^(\S+)(\s+\[.*?\]|)$/
         new(:name => $1)
       else
@@ -27,8 +30,26 @@ Puppet::Type.type(:rabbitmq_user).provide(:rabbitmqctl) do
     if resource[:admin] == :true
       make_user_admin()
     end
-    if !resource[:tags].nil?
+    if ! resource[:tags].empty?
       set_user_tags(resource[:tags])
+    end
+  end
+
+  def change_password
+    rabbitmqctl('change_password', resource[:name], resource[:password])
+  end
+
+  def password
+    nil
+  end
+
+
+  def check_password
+    response = rabbitmqctl('eval', 'rabbit_access_control:check_user_pass_login(list_to_binary("' + resource[:name] + '"), list_to_binary("' + resource[:password] +'")).')
+    if response.include? 'refused'
+        false
+    else
+        true
     end
   end
 
@@ -37,14 +58,21 @@ Puppet::Type.type(:rabbitmq_user).provide(:rabbitmqctl) do
   end
 
   def exists?
-    rabbitmqctl('list_users').split(/\n/)[1..-2].detect do |line|
+    self.class.run_with_retries {
+      rabbitmqctl('-q', 'list_users')
+    }.split(/\n/).detect do |line|
       line.match(/^#{Regexp.escape(resource[:name])}(\s+(\[.*?\]|\S+)|)$/)
     end
   end
 
- 
+
   def tags
-    get_user_tags.entries.sort
+    tags = get_user_tags
+    # do not expose the administrator tag for admins
+    if resource[:admin] == :true
+      tags.delete('administrator')
+    end
+    tags.entries.sort
   end
 
 
@@ -90,9 +118,9 @@ Puppet::Type.type(:rabbitmq_user).provide(:rabbitmqctl) do
 
   private
   def get_user_tags
-    match = rabbitmqctl('list_users').split(/\n/)[1..-2].collect do |line|
+    match = rabbitmqctl('-q', 'list_users').split(/\n/).collect do |line|
       line.match(/^#{Regexp.escape(resource[:name])}\s+\[(.*?)\]/)
     end.compact.first
-    Set.new(match[1].split(/, /)) if match
+    Set.new(match[1].split(' ').map{|x| x.gsub(/,$/, '')}) if match
   end
 end

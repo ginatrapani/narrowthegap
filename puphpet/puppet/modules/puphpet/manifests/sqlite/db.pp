@@ -1,39 +1,45 @@
-# This depends on puppetlabs-sqlite: https://github.com/puppetlabs/puppetlabs-sqlite.git
 # Creates database, adds user
 # If requested, imports DB
 define puphpet::sqlite::db (
-  $name,
   $owner,
   $group = 0,
-  $mode = '0775',
   $sql_file = false
 ) {
 
-  if $name == '' or $owner == '' or $mode == '' {
-    fail('SQLite requires that name, owner, group, and mode be set.')
+  if $db_name == '' or $owner == '' {
+    fail('SQLite requires that name and owner be set.')
   }
 
-  file { '/var/lib/sqlite':
-    ensure  => directory,
+  $group_real = value_true($group) ? {
+    true    => $group,
+    default => 0
+  }
+
+  $location = "/var/lib/sqlite/${db_name}.db"
+
+  file { $location:
+    ensure  => present,
     owner   => $owner,
-    group   => $group,
+    group   => $group_real,
     mode    => '0775',
-    require => User[$owner]
-  } ->
-  sqlite::db { $name:
-    owner => $owner,
-    group => $group,
-    mode  => $mode
+    require => File['/var/lib/sqlite'],
+    notify  => Exec["create_${db_name}_db"],
+  }
+
+  exec { "create_${db_name}_db":
+    command     => "sqlite3 ${location}",
+    path        => '/usr/bin:/usr/local/bin',
+    refreshonly => true,
   }
 
   if $sql_file {
-    $sqlite_db = "sqlite3 /var/lib/sqlite/${name}.db"
+    $sqlite_db = "sqlite3 /var/lib/sqlite/${db_name}.db"
 
-    exec{ "${name}-import":
+    exec{ "${db_name}-import":
       command     => "cat ${sql_file} | sudo ${sqlite_db}",
       logoutput   => true,
-      refreshonly => $refresh,
-      require     => Sqlite::Db[$name],
+      refreshonly => true,
+      require     => File[$location],
       onlyif      => "test -f ${sql_file}"
     }
   }

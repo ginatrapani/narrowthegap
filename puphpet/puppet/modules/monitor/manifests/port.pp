@@ -1,3 +1,4 @@
+#
 define monitor::port (
   $port,
   $protocol,
@@ -5,6 +6,7 @@ define monitor::port (
   $tool,
   $checksource  = '',
   $template     = '',
+  $options_hash = {},
   $enable=true
   ) {
 
@@ -30,15 +32,6 @@ define monitor::port (
     true  => 'present',
   }
 
-  if ($tool =~ /munin/) {
-  }
-
-  if ($tool =~ /collectd/) {
-  }
-
-  if ($tool =~ /monit/) {
-  }
-
   $tcp_check_command = $real_checksource ? {
     local   => "check_nrpe!check_port_tcp!${target}!${port}",
     default => "check_tcp!${port}",
@@ -59,6 +52,7 @@ define monitor::port (
       ensure        => $ensure,
       template      => $real_template,
       check_command => $check_command,
+      options_hash  => $options_hash,
     }
   }
 

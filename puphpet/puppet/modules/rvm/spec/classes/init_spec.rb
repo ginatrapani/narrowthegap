@@ -3,7 +3,8 @@ require 'spec_helper'
 describe 'rvm' do
 
   let(:facts) {{
-    :path => '/bin'
+    :rvm_version => '',
+    :root_home => '/root'
   }}
 
   context "default parameters", :compile do
@@ -43,4 +44,11 @@ describe 'rvm' do
     it { should contain_rvm__system_user('john') }
     it { should contain_rvm__system_user('doe') }
   end
+
+  context "with no gnupg key id", :compile do
+    let(:params) {{ :gnupg_key_id => false }}
+    it { should_not contain_gnupg_key('rvm_D39DC0E3') }
+    it { should_not contain_gnupg_key('rvm_') }
+  end
+
 end
