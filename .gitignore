@@ -6,9 +6,7 @@ data/
 
 .vagrant/*
 
-default/adminer/index.php
-
-html/index.html
+html/*
 
 puphpet/files/dot/ssh/id_rsa
 
