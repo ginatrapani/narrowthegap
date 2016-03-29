@@ -19,7 +19,7 @@ header('Content-Type: application/json', true);
         "year":2015
     },
     {
-        "slug":"driver/sales-workers-and-truck-drivers",
+        "slug":"driver-sales-workers-and-truck-drivers",
         "occupation_name":"Driver/sales workers and truck drivers",
         "year":2015
     },
