@@ -14,6 +14,7 @@ $router = new Router();
 $router->addRoute('gap', 'DisplayGapController', array('slug'));
 $router->addRoute('index', 'DisplayGapController');
 //Use flat file instead of database call to populate search box
-//$router->addRoute('gaps', 'AllGapsController');
+//Use this route to generate the flat file and save to /gaps/index.php
+//$router->addRoute('refreshgaps', 'AllGapsController');
 echo $router->route();
 

@@ -28,14 +28,14 @@ class DisplayGapController extends Controller {
         if ($this->shouldRefreshCache() ) {
             $occup_gap_dao = new OccupationGapMySQLDAO();
 
-            $gap_array = $occup_gap_dao->getGapByYearSlug(2014, $_GET['slug']);
+            $gap_array = $occup_gap_dao->getGapByYearSlug(2015, $_GET['slug']);
 
             if (!isset($gap_array)) {
-                $gap_array = $occup_gap_dao->getGapByYearSlug(2014, 'total-full-time-wage-and-salary-workers');
+                $gap_array = $occup_gap_dao->getGapByYearSlug(2015, 'total-full-time-wage-and-salary-workers');
             }
             $this->addToView('slug', $gap_array['slug']);
             $this->addToView('earnings_gap', $gap_array['earnings_gap']);
-            $occupation_name = $this->cleanOccupationName($gap_array['occupation']);
+            $occupation_name = self::cleanOccupationName($gap_array['occupation']);
             $this->addToView('occupation', $occupation_name);
 
             // replace ', and ' and ' and ' with ' & ' for shorteneded, tweet-friendly version
@@ -59,10 +59,13 @@ class DisplayGapController extends Controller {
     /**
      * Clean awkward phrasing from DOL occupation names for easier reading in context.
      * @param str $occupation_name Raw occupation name from database
+     * @param bool $lowercase Whether or not to lowercase the name
      * @return str Cleaned occupation name
      */
-    private function cleanOccupationName($occupation_name) {
-        $occupation_name = strtolower($occupation_name);
+    public static function cleanOccupationName($occupation_name, $lowercase = true) {
+        if ($lowercase) {
+            $occupation_name = strtolower($occupation_name);
+        }
         //ends with , hand
         if (substr($occupation_name, (strlen($occupation_name)-strlen(', hand')))==', hand') {
             $occupation_name = substr($occupation_name, 0, (strlen($occupation_name)-strlen(', hand')));

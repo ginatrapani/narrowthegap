@@ -14,9 +14,16 @@ class AllGapsController extends Controller {
      * @return str Markup which renders controller results.
      */
     public function control() {
+        $this->setUpJsonResponse();
         $occup_gap_dao = new OccupationGapMySQLDAO();
-        $all_gaps = $occup_gap_dao->getAllOccupations(2014);
-        $this->setJsonData($all_gaps);
+        $all_dirty_gaps = $occup_gap_dao->getAllOccupations(2015);
+        $clean_gaps = array();
+        foreach ($all_dirty_gaps as $gap) {
+            $gap['occupation_name'] = DisplayGapController::cleanOccupationName($gap['occupation_name'], false);
+            $clean_gaps[] = $gap;
+
+        }
+        $this->setJsonData($clean_gaps);
         return $this->generateView();
     }
 }

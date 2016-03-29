@@ -73,7 +73,7 @@ DELETE FROM ntg_occupation_gap WHERE earnings_gap IS NULL;
 -- SELECT id, primary_category, secondary_category, tertiary_category, job_title, m_total_workers, w_total_workers, worker_gap FROM ntg_occupation_gap where worker_gap is not null order by worker_gap ASC
 
 
--- 2014 DATA
+-- 2015 DATA
 
 
 -- Import new data:
@@ -81,6 +81,7 @@ DELETE FROM ntg_occupation_gap WHERE earnings_gap IS NULL;
 -- * From the BLS web page (or mirror) cut and paste the HTML <table> data into a text file.
 -- * Search and replace <p class="sub1"> with --, sub2 with ----, sub3 with ------
 -- * Copy and paste data into Google Sheet.
+-- * In Google Sheet, reformat all numbers to remove dollar signs, commas, and decimals.
 -- * Export CSV.
 -- * Import into temporary table via LOAD INFILE (See below)
 -- * Select from temp table into permanent table based on number of dashes -- (using 2014 instead of 2010).
@@ -103,7 +104,7 @@ CREATE TABLE IF NOT EXISTS ntg_tmp (
   w_median_weekly_earnings int(11) NOT NULL COMMENT 'Median weekly earnings of full-time wage and salary women in this occupation.',
   earnings_gap int(11) DEFAULT NULL COMMENT 'Median weekly earnings of full-time wage and salary women workers as a percentage of men in this occupation.',
   worker_gap int(11) DEFAULT NULL COMMENT 'Total women workers as a percentage of men. Null if 100% or more.',
-  year int(11) DEFAULT 2014 COMMENT 'Year of data collection.',
+  year int(11) DEFAULT 2015 COMMENT 'Year of data collection.',
   PRIMARY KEY (id),
   KEY earnings_gap (earnings_gap)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Gender wage and worker gap per occupation.';
@@ -111,7 +112,7 @@ CREATE TABLE IF NOT EXISTS ntg_tmp (
 ALTER TABLE ntg_tmp ADD slug varchar(110)  COMMENT 'Gap permalink.' AFTER id;
 
 
-LOAD DATA LOCAL INFILE '/Users/ginatrapani/Documents/mydata/code/sites/narrowthegapp/install/sql/data-2014.csv' INTO TABLE ntg_tmp
+LOAD DATA LOCAL INFILE '/var/www/install/sql/data-2015.csv' INTO TABLE ntg_tmp
 FIELDS TERMINATED BY ',' ENCLOSED BY '"' ESCAPED BY '\\' LINES TERMINATED BY '\n'(
 tmp , mw_total_workers , mw_median_weekly_earnings , m_total_workers , m_median_weekly_earnings , w_total_workers , w_median_weekly_earnings
 );

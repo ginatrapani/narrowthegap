@@ -42,6 +42,7 @@
         background-color:#fff;
         color:#333;
         margin-top:30px;
+        padding-bottom:30px;
       }
       .jumbotron h1 {
         font-weight: bold;
@@ -122,6 +123,7 @@
       h6 {
         font-weight: 200;
         color: #666;
+        margin-bottom:0;
       }
       a {
         color:#fff; /*#006DCC;*/
@@ -161,6 +163,9 @@
       .jobtitle {
         margin-left:15px;
       }
+      .fb_iframe_widget span {
+        vertical-align: baseline !important;
+      }
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -178,6 +183,13 @@
 
   <body>
     <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=107325805956435";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <div class="container">
 
       <div class="row" style="margin-top:10px">
@@ -193,15 +205,13 @@
 
       <!-- Main hero unit for a primary call to action -->
       <div class="jumbotron">
-        <div style="float:right">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="{$permalink}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap" data-count="vertical">Tweet</a>
-            <div class="fb-like" data-href="{$permalink}" data-send="false" data-width="50" data-show-faces="true" data-layout="box_count" style="margin-bottom:3px;top:-3px;padding-left:6px;"></div>
-        </div>
         <h1>Women{$phrasing} <span style="color:#1485CC">{$occupation}</span> make <span style="color:#b21212">{$earnings_gap}&nbsp;cents</span> to the dollar men earn doing the same job.</h1>
         <br>
         <p>That's <strong style="color:#b21212">${$less_per_week}</strong> out of a weekly paycheck, which means she gets paid <strong style="color:#b21212">${($less_per_week * 52)|number_format}</strong> less per year.</p>
-
-        <h6>Wage gap calculated from 2014 median weekly earnings of full-time salary workers in the United States as per the <a href="http://www.bls.gov/cps/cpsaat39.htm">U.S. Bureau of Labor Statistics</a>.</h6>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="{$permalink}" data-lang="en" data-text="Women{$phrasing} {$occupation_short_version} make {$earnings_gap} cents to the dollar men earn #NarrowTheGap">Tweet</a>
+        <span class="fb-share-button" data-href="{$permalink}" data-layout="button"></span>
+        <br>
+        <h6>Wage gap calculated from 2015 median weekly earnings of full-time salary workers in the United States as per the <a href="http://www.bls.gov/cps/cpsaat39.htm">U.S. Bureau of Labor Statistics</a>.</h6>
       </div>
 
       <div class="row">
@@ -209,7 +219,7 @@
           <h2>Unfair and Illegal</h2>
            <p>Over 50 years after President Kennedy signed the <a href="http://www.eeoc.gov/laws/statutes/epa.cfm">Equal Pay Act</a>, on average women are still paid less than their male counterparts for doing comparable jobs in the U.S. &mdash; that's called the pay gap. It means that each time the average woman starts a new job, she's likely to start from a lower base salary than her male counterparts.</p>
            <p>Just as interest compounds, so does the pay gap. As a woman moves from job to job during her career, the pay gap between her and her male colleagues is likely to become wider and wider.</p>
-           <p><a href="/gap/legal-occupations">Legal occupations</a> and <a href="/gap/personal-financial-advisors">personal financial advisors</a> suffer the largest gender pay gaps. <a href="/gap/maids-and-housekeeping-cleaners">Maids and housekeeping cleaners</a> and <a href="/gap/food-preparation-workers">food preparation workers</a> have the smallest pay gaps.</p>
+           <p><a href="/gap/securities-commodities-and-financial-services-sales-agents">Securities, commodities, and financial services sales agents</a> and <a href="/gap/personal-financial-advisors">personal financial advisors</a> suffer the largest gender pay gaps. <a href="/gap/counselors">Counselors</a> and <a href="/gap/health-practitioner-support-technologists-and-technicians">health practitioner support technologists and technicians</a> have the smallest pay gaps.</p>
            <h2>{2058 - $year} more years</h2>
            <p>Unequal pay isn't just unfair, it's illegal. But unless men and women who have the same job discuss what they're getting paid, unequal pay can go unaddressed indefinitely. At the current pace, it will <a href="http://www.newsweek.com/gender-pay-gap-wont-close-another-43-years-314249">take until 2058</a> for women and men’s earnings to reach pay parity. Let's make it happen sooner.</p>
            <p>Women make up nearly half of the labor force and mothers are the primary or co-breadwinners in the majority of families. When women aren't paid fairly, families suffer and the American economy suffers.</p>
@@ -233,7 +243,7 @@
                 </a>
               </div>
               <div class="media-body">
-                <p class="media-heading">The Institute for Women's Policy Research's report <a href="http://www.aauw.org/files/2013/02/The-Simple-Truth-2013.pdf">The Status of Women in the States: 2015 Employment and Earnings</a> (PDF, 52 pages)</p>
+                <p class="media-heading">The Institute for Women's Policy Research's report <a href="http://www.iwpr.org/publications/pubs/the-status-of-women-in-the-states-2015-2014-employment-and-earnings">The Status of Women in the States: 2015 Employment and Earnings</a> (PDF, 82 pages)</p>
               </div>
             </div>
             <div class="media">
@@ -369,7 +379,7 @@
       var occupations = new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('occupation_name'),
         queryTokenizer: Bloodhound.tokenizers.whitespace,
-        prefetch: 'http://narrowthegapp.com/gaps/'
+        prefetch: '/gaps/'
       });
 
       occupations.initialize();
