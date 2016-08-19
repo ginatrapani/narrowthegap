@@ -6,7 +6,7 @@ All factoids based on data provided by the U.S. Bureau of Labor Statistics. See 
 
 ## LICENSE
 
-Narrow the Gapps's source code is licensed under the
+Narrow the Gapp's source code is licensed under the
 [GNU General Public License](http://www.gnu.org/licenses/gpl.html). Please copy and repurpose.
 
 ## INSTALLATION
