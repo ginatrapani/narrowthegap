@@ -1,0 +1,135 @@
+body {
+    padding-bottom: 40px;
+    background-color: #0971b2; /*#F5F5F5;*/
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.75;
+}
+.jumbotron {
+    background-color: #fff;
+    color: #333;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.jumbotron h1 {
+    font-weight: bold;
+}
+.jumbotron a {
+    color: #333;
+}
+.jumbotron a:hover {
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+.search {
+    font-size: 150%;
+    height: auto;
+    min-width: 400px;
+}
+.tt-dropdown-menu {
+    z-index: 1000;
+    min-width: 500px;
+    padding: 4px 0 4px 4px;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    color: #000;
+}
+.tt-suggestion {
+    padding: 4px 4px 2px 8px;
+    margin: 0 6px 0 0;
+    font-weight: normal;
+    color: #46bcff;
+    border-radius: 4px;
+    white-space: nowrap; /* prevent links from randomly breaking onto new lines*/
+}
+
+.tt-suggestion h4 {
+    color: #666;
+    font-weight: 200;
+}
+
+.tt-suggestion a {
+    color: #666;
+    text-decoration: none;
+}
+
+.tt-suggestion a strong {
+    font-weight: 600;
+    color: #222;
+}
+
+.tt-suggestion.tt-cursor {
+    background-color: #b21212; /* #46bcff;*/
+}
+
+.tt-suggestion.tt-cursor a,
+.tt-suggestion.tt-cursor a h3,
+.tt-suggestion.tt-cursor a h4 {
+    text-decoration: none;
+    color: #fff;
+}
+
+.tt-suggestion.tt-cursor a strong,
+.tt-suggestion.tt-cursor a h3 strong,
+.tt-suggestion.tt-cursor a h4 strong {
+    font-weight: 600;
+}
+h2 {
+    font-weight: 200;
+}
+h6 {
+    font-weight: 200;
+    color: #666;
+    margin-bottom: 0;
+}
+a {
+    color: #fff; /*#006DCC;*/
+    border-bottom: 1px dotted #ccc;
+}
+a:hover {
+    color: #fff; /*#006DCC;*/
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+}
+blockquote {
+    font-size: 16px;
+    border: none;
+    font-style: italic;
+    margin: 14px 0;
+}
+blockquote footer {
+    font-style: normal;
+    color: white;
+    padding-left: 20px;
+}
+.cat1 {
+    margin-left: 0px;
+    font-weight: bold;
+    font-size: 125%;
+    margin-top: 10px;
+}
+.cat2 {
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 110%;
+    margin-top: 5px;
+}
+.cat3 {
+    margin-left: 10px;
+}
+.jobtitle {
+    margin-left: 15px;
+}
+.fb_iframe_widget span {
+    vertical-align: baseline !important;
+}
