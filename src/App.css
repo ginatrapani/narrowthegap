@@ -133,3 +133,6 @@ blockquote footer {
 .fb_iframe_widget span {
     vertical-align: baseline !important;
 }
+.glyphicon {
+    font-size: 30px;
+}

@@ -50,7 +50,7 @@ class App extends Component {
                         </h1>
                         <br />
                         <p>
-                            That's <strong style={weeklyGapStyle}>
+                            That&#8217;s <strong style={weeklyGapStyle}>
                                 $169
                             </strong>{" "}
                             out of a weekly paycheck, which means she gets paid{" "}
@@ -90,9 +90,9 @@ class App extends Component {
                                     Equal Pay Act
                                 </a>, on average women are still paid less than
                                 their male counterparts for doing comparable
-                                jobs in the U.S. &mdash; that's called the pay
+                                jobs in the U.S. &mdash; that&#8217;s called the pay
                                 gap. It means that each time the average woman
-                                starts a new job, she's likely to start from a
+                                starts a new job, she&#8217;s likely to start from a
                                 lower base salary than her male counterparts.
                             </p>
                             <p>
@@ -120,21 +120,21 @@ class App extends Component {
                             </p>
                             <h2>41 more years</h2>
                             <p>
-                                Unequal pay isn't just unfair, it's illegal. But
+                                Unequal pay isn&#8217;t just unfair, it&#8217;s illegal. But
                                 unless men and women who have the same job
-                                discuss what they're getting paid, unequal pay
+                                discuss what they&#8217;re getting paid, unequal pay
                                 can go unaddressed indefinitely. At the current
                                 pace, it will{" "}
                                 <a href="http://www.newsweek.com/gender-pay-gap-wont-close-another-43-years-314249">
                                     take until 2058
                                 </a>{" "}
                                 for women and men’s earnings to reach pay
-                                parity. Let&apos;s make it happen sooner.
+                                parity. Let&#8217;s make it happen sooner.
                             </p>
                             <p>
                                 Women make up nearly half of the labor force and
                                 mothers are the primary or co-breadwinners in
-                                the majority of families. When women aren't paid
+                                the majority of families. When women aren&#8217;t paid
                                 fairly, families suffer and the American economy
                                 suffers.
                             </p>
@@ -143,7 +143,7 @@ class App extends Component {
                             <h2>Narrow the Gap</h2>
                             <p>
                                 Insist on equal pay for equal work in your and
-                                your loved ones' workplaces. Here's what you can
+                                your loved ones&#8217; workplaces. Here&#8217;s what you can
                                 do.
                             </p>
                             <ul>
@@ -182,13 +182,13 @@ class App extends Component {
                             <div className="media">
                                 <div className="media-left">
                                     <a href="http://www.aauw.org/files/2013/02/The-Simple-Truth-2013.pdf">
-                                        <h2 className="media-object glyphicon glyphicon-save-file" />
+                                        <div className="media-object glyphicon glyphicon-save-file" />
                                     </a>
                                 </div>
                                 <div className="media-body">
                                     <p className="media-heading">
-                                        The Institute for Women's Policy
-                                        Research's report{" "}
+                                        The Institute for Women&#8217;s Policy
+                                        Research&#8217;s report{" "}
                                         <a href="http://www.iwpr.org/publications/pubs/the-status-of-women-in-the-states-2015-2014-employment-and-earnings">
                                             The Status of Women in the States:
                                             2015 Employment and Earnings
@@ -200,12 +200,12 @@ class App extends Component {
                             <div className="media">
                                 <div className="media-left">
                                     <a href="http://www.catalyst.org/knowledge/myth-ideal-worker-does-doing-all-right-things-really-get-women-ahead">
-                                        <h2 className="media-object glyphicon glyphicon-save-file" />
+                                        <div className="media-object glyphicon glyphicon-save-file" />
                                     </a>
                                 </div>
                                 <div className="media-body">
                                     <p className="media-heading">
-                                        Catalyst.org&apos;s research report{" "}
+                                        Catalyst.org&#8217;s research report{" "}
                                         <a href="http://www.catalyst.org/knowledge/myth-ideal-worker-does-doing-all-right-things-really-get-women-ahead">
                                             The Myth of the Ideal Worker: Does
                                             Doing All The Right Things Really
@@ -218,14 +218,14 @@ class App extends Component {
                             <div className="media">
                                 <div className="media-left">
                                     <a href="http://www.amazon.com/o/ASIN/0553383876/ref=nosim/lifehackerboo-20">
-                                        <h2 className="media-object glyphicon glyphicon-book" />
+                                        <div className="media-object glyphicon glyphicon-book" />
                                     </a>
                                 </div>
                                 <div className="media-body">
                                     <p className="media-heading">
                                         <i>
                                             <a href="http://www.amazon.com/o/ASIN/0553383876/ref=nosim/lifehackerboo-20">
-                                                Women Don't Ask: The High Cost
+                                                Women Don&#8217;t Ask: The High Cost
                                                 of Avoiding Negotiation--and
                                                 Positive Strategies for Change
                                             </a>
@@ -238,7 +238,7 @@ class App extends Component {
                             <div className="media">
                                 <div className="media-left">
                                     <a href="http://www.reddit.com/r/TwoXChromosomes/comments/hvv2m/i_work_for_a_large_multinational_tech_company_i/">
-                                        <h2 className="media-object glyphicon glyphicon-comment" />
+                                        <div className="media-object glyphicon glyphicon-comment" />
                                     </a>
                                 </div>
                                 <div className="media-body">
@@ -271,7 +271,7 @@ class App extends Component {
                             <blockquote>
                                 <p>
                                     &quot;Women choose lower-paying jobs so
-                                    that's why there's a pay gap.&quot;
+                                    that&#8217;s why there&#8217;s a pay gap.&quot;
                                 </p>
                                 <footer>
                                     This data compares the salaries of women and
@@ -288,9 +288,9 @@ class App extends Component {
 
                             <blockquote>
                                 <p>
-                                    &quot;Women don't negotiate their salary as
-                                    aggressively as men so it's their fault
-                                    there's a pay gap.&quot;
+                                    &quot;Women don&#8217;t negotiate their salary as
+                                    aggressively as men so it&#8217;s their fault
+                                    there&#8217;s a pay gap.&quot;
                                 </p>
                                 <footer>
                                     Better negotiation techniques can help close
@@ -317,7 +317,7 @@ class App extends Component {
 
                             <blockquote>
                                 <p>
-                                    &quot;In a lot of jobs, there's no pay
+                                    &quot;In a lot of jobs, there&#8217;s no pay
                                     gap&mdash;and sometimes, women earn more
                                     than men.&quot;
                                 </p>
