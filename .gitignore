@@ -1,23 +1,22 @@
-.buildpath
-.project
-.settings/
 .DS_Store
-data/
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
-.vagrant/*
+# dependencies
+/node_modules
 
-html/*
+# testing
+/coverage
 
-puphpet/files/dot/ssh/id_rsa
+# production
+/build
 
-puphpet/files/dot/ssh/id_rsa.ppk
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-puphpet/files/dot/ssh/id_rsa.pub
-
-puphpet/files/dot/ssh/root_id_rsa
-
-puphpet/files/dot/ssh/root_id_rsa.ppk
-
-puphpet/files/dot/ssh/root_id_rsa.pub
-
-webapp/extlibs/isosceles/libs/config.inc.php
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
