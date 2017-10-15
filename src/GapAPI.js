@@ -2537,18 +2537,6 @@ const GapAPI = {
             cents_to_dollar: "-1"
         },
         {
-            slug: "",
-            occupation_name: "",
-            year: "2015",
-            number_workers: "",
-            median_weekly_earnings: "",
-            men_number_workers: "",
-            men_median_weekly_earnings: "",
-            women_number_workers: "",
-            women_median_weekly_earnings: "",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "service-occupations",
             occupation_name: "Service occupations",
             year: "2015",
@@ -3462,18 +3450,6 @@ const GapAPI = {
             cents_to_dollar: "-1"
         },
         {
-            slug: "",
-            occupation_name: "",
-            year: "2015",
-            number_workers: "",
-            median_weekly_earnings: "",
-            men_number_workers: "",
-            men_median_weekly_earnings: "",
-            women_number_workers: "",
-            women_median_weekly_earnings: "",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "sales-and-office-occupations",
             occupation_name: "Sales and office occupations",
             year: "2015",
@@ -4365,18 +4341,6 @@ const GapAPI = {
             women_number_workers: "298",
             women_median_weekly_earnings: "718",
             cents_to_dollar: "84"
-        },
-        {
-            slug: "",
-            occupation_name: "",
-            year: "2015",
-            number_workers: "",
-            median_weekly_earnings: "",
-            men_number_workers: "",
-            men_median_weekly_earnings: "",
-            women_number_workers: "",
-            women_median_weekly_earnings: "",
-            cents_to_dollar: "-1"
         },
         {
             slug: "natural-resources-construction-and-maintenance-occupations",
@@ -5495,18 +5459,6 @@ const GapAPI = {
             men_median_weekly_earnings: "810",
             women_number_workers: "6",
             women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "",
-            occupation_name: "",
-            year: "2015",
-            number_workers: "",
-            median_weekly_earnings: "",
-            men_number_workers: "",
-            men_median_weekly_earnings: "",
-            women_number_workers: "",
-            women_median_weekly_earnings: "",
             cents_to_dollar: "-1"
         },
         {
@@ -7027,6 +6979,40 @@ const GapAPI = {
     get: function(slug) {
         const isGap = g => g.slug === slug;
         return this.gaps.find(isGap);
+    },
+    cleanOccupationName: function(occupationName) {
+        let cleanName = occupationName.toLowerCase();
+        //ends with , hand
+        if (cleanName.endsWith(", hand")) {
+            return this.cutOffSuffix(cleanName, ", hand");
+        }
+        //ends with , all other
+        if (cleanName.endsWith(", all other")) {
+            return this.cutOffSuffix(cleanName, ", all other");
+        }
+        //starts with miscellaneous
+        if (cleanName.startsWith("miscellaneous ")) {
+            return cleanName.substring("miscellaneous ".length);
+        }
+        //starts with other
+        if (cleanName.startsWith("other ")) {
+            return cleanName.substring("other ".length);
+        }
+        //waitresses and waiters - waiters
+        if (cleanName === "waiters and waitresses") {
+            return "waitresses";
+        }
+        //total, 16 years and over just 16 years and over
+        if (cleanName === "total, full-time wage and salary workers") {
+            return "in the U.S.";
+        }
+        return cleanName;
+    },
+    cutOffSuffix: function(str, suffix) {
+        return str.substring(0, str.length - suffix.length);
+    },
+    capitalize: function(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
     }
 };
 

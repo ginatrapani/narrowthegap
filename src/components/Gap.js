@@ -9,39 +9,6 @@ class Gap extends Component {
         return "";
     }
 
-    cutOffSuffix(str, suffix) {
-        return str.substring(0, str.length - suffix.length);
-    }
-
-    cleanOccupationName(occupationName) {
-        let cleanName = occupationName.toLowerCase();
-        //ends with , hand
-        if (cleanName.endsWith(", hand")) {
-            return this.cutOffSuffix(cleanName, ", hand");
-        }
-        //ends with , all other
-        if (cleanName.endsWith(", all other")) {
-            return this.cutOffSuffix(", hand");
-        }
-        //starts with miscellaneous
-        if (cleanName.startsWith("miscellaneous ")) {
-            return cleanName.substring("miscellaneous ".length);
-        }
-        //starts with other
-        if (cleanName.startsWith("other ")) {
-            return cleanName.substring("other ".length);
-        }
-        //waitresses and waiters - waiters
-        if (cleanName === "waiters and waitresses") {
-            return "waitresses";
-        }
-        //total, 16 years and over just 16 years and over
-        if (cleanName === "total, full-time wage and salary workers") {
-            return "in the U.S.";
-        }
-        return cleanName;
-    }
-
     render() {
         const gapSlug =
             this.props.match.params.gapSlug === undefined
@@ -63,7 +30,7 @@ class Gap extends Component {
             "Women" +
             this.getPhrasing(gap.occupation_name) +
             " " +
-            this.cleanOccupationName(gap.occupation_name) +
+            GapAPI.cleanOccupationName(gap.occupation_name) +
             " make " +
             gap.cents_to_dollar +
             " cents to the dollar men earn #NarrowTheGap";
@@ -111,7 +78,9 @@ class Gap extends Component {
                         <h1>
                             Women{this.getPhrasing(gap.occupation_name)}{" "}
                             <span style={inTheUSStyle}>
-                                {this.cleanOccupationName(gap.occupation_name)}
+                                {GapAPI.cleanOccupationName(
+                                    gap.occupation_name
+                                )}
                             </span>{" "}
                             make{" "}
                             <span style={centsStyle}>
@@ -152,7 +121,7 @@ class Gap extends Component {
                             States as per the{" "}
                             <a href="http://www.bls.gov/cps/cpsaat39.htm">
                                 U.S. Bureau of Labor Statistics
-                            </a>.
+                            </a>. <a href="/all">See all.</a>
                         </h6>
                     </div>
                     <div className="row">
