@@ -3,6 +3,16 @@ import GapAPI from "../GapAPI.js";
 import Header from "./Header.js";
 import Footer from "./Footer.js";
 
+class ScrollToTopOnMount extends Component {
+    componentDidMount(prevProps) {
+        window.scrollTo(0, 0);
+    }
+
+    render() {
+        return null;
+    }
+}
+
 class Gap extends Component {
     getPhrasing(occupationName) {
         if (occupationName.endsWith("occupations")) {
@@ -55,6 +65,7 @@ class Gap extends Component {
 
         return (
             <div className="App">
+                <ScrollToTopOnMount />
                 <div className="container">
                     <Header />
                     {/* Main hero unit for a primary call to action */}
