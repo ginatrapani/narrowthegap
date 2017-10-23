@@ -121,13 +121,15 @@ class Gap extends Component {
                         />
                         <br />
                         <h6>
-                            <a href="/all">See all occupations.</a> Wage gap
-                            calculated from {gap.year} median weekly earnings of
-                            full-time salary workers in the United States as per
-                            the{" "}
+                            Wage gap calculated from {gap.year} median weekly
+                            earnings of full-time salary workers in the United
+                            States as per the{" "}
                             <a href="http://www.bls.gov/cps/cpsaat39.htm">
                                 U.S. Bureau of Labor Statistics
                             </a>.
+                        </h6>
+                        <h6>
+                            <a href="/all">See all occupations.</a>
                         </h6>
                     </div>
                     <div className="row">
@@ -206,8 +208,8 @@ class Gap extends Component {
                                 </li>
                                 <li>
                                     <strong>Raise awareness</strong> about the
-                                    pay gap. To start, tweet, like, share, +1,
-                                    and blog a page from this site.
+                                    pay gap. To start, tweet, like, share, and
+                                    blog a page from this site.
                                 </li>
                                 <li>
                                     <strong>
