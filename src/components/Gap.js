@@ -21,6 +21,14 @@ class Gap extends Component {
         return "";
     }
 
+    componentDidMount() {
+        window.twttr.widgets.load(
+            // re-scans the DOM to initialize widgets
+            document.getElementById("twitter-share-button")
+        );
+        window.FB.XFBML.parse(document.getElementById("fb-share-button"));
+    }
+
     render() {
         const gapSlug =
             this.props.match.params.gapSlug === undefined
@@ -98,6 +106,7 @@ class Gap extends Component {
                         <a
                             href="https://twitter.com/share"
                             className="twitter-share-button"
+                            id="twitter-share-button"
                             data-url={permalink}
                             data-lang="en"
                             data-text={tweetText}
@@ -107,6 +116,7 @@ class Gap extends Component {
                         <span
                             className="fb-share-button"
                             data-href={permalink}
+                            id="fb-share-button"
                             data-layout="button"
                         />
                         <br />
