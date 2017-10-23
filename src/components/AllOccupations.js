@@ -13,7 +13,7 @@ const AllOccupations = () => (
                 <ul>
                     {GapAPI.all().map(
                         g =>
-                            g.cents_to_dollar !== "-1" ? (
+                            g.cents_to_dollar > 0 && g.cents_to_dollar < 100 ? (
                                 <li key={g.slug}>
                                     <Link to={`/gap/${g.slug}`}>
                                         {GapAPI.capitalize(
