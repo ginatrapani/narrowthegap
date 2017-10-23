@@ -89,7 +89,7 @@
             "src",
             ("https:" == document.location.protocol
                 ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/"
-                : "http://static.chartbeat.com/") + "js/chartbeat.js"
+                : "https://static.chartbeat.com/") + "js/chartbeat.js"
         );
         document.body.appendChild(e);
     }
@@ -118,7 +118,7 @@ _gaq.push(["_trackPageview"]);
     ga.src =
         ("https:" == document.location.protocol
             ? "https://ssl"
-            : "http://www") + ".google-analytics.com/ga.js";
+            : "https://www") + ".google-analytics.com/ga.js";
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(ga, s);
 })();
