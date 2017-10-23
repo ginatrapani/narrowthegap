@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import GapAPI from "../GapAPI.js";
+import Header from "./Header.js";
+import Footer from "./Footer.js";
 
 class Gap extends Component {
     getPhrasing(occupationName) {
@@ -38,9 +40,6 @@ class Gap extends Component {
         const permalink = "https://narrowthegapp.com/gap/" + gapSlug;
 
         // @TODO Stop using inline CSS
-        var rowStyle = {
-            marginTop: "10px"
-        };
         var inTheUSStyle = {
             color: "#1485CC"
         };
@@ -53,26 +52,11 @@ class Gap extends Component {
         var yearlyGapStyle = {
             color: "#b21212"
         };
-        var hiddenStyle = {
-            visibility: "hidden"
-        };
 
         return (
             <div className="App">
                 <div className="container">
-                    <div className="row" style={rowStyle}>
-                        <div className="col-md-3">
-                            <a
-                                href="/"
-                                role="button"
-                                className="btn btn-danger btn-lg active"
-                            >
-                                Narrow the Gapp
-                            </a>
-                        </div>
-                        <div className="col-md-9" />
-                        {/* /.col-lg-6 */}
-                    </div>
+                    <Header />
                     {/* Main hero unit for a primary call to action */}
                     <div className="jumbotron">
                         <h1>
@@ -116,12 +100,13 @@ class Gap extends Component {
                         />
                         <br />
                         <h6>
-                            Wage gap calculated from {gap.year} median weekly
-                            earnings of full-time salary workers in the United
-                            States as per the{" "}
+                            <a href="/all">See all occupations.</a> Wage gap
+                            calculated from {gap.year} median weekly earnings of
+                            full-time salary workers in the United States as per
+                            the{" "}
                             <a href="http://www.bls.gov/cps/cpsaat39.htm">
                                 U.S. Bureau of Labor Statistics
-                            </a>. <a href="/all">See all.</a>
+                            </a>.
                         </h6>
                     </div>
                     <div className="row">
@@ -376,24 +361,7 @@ class Gap extends Component {
                             </blockquote>
                         </div>
                     </div>
-                    <hr />
-                    <footer>
-                        <p>
-                            A <a href="http://ginatrapani.org">
-                                Gina Trapani
-                            </a>{" "}
-                            Production.{" "}
-                            <a href="http://github.com/ginatrapani/narrowthegapp">
-                                Fork this web site on GitHub.
-                            </a>
-                        </p>
-                    </footer>
-                    <a
-                        style={hiddenStyle}
-                        href="https://plus.google.com/113612142759476883204?rel=author"
-                    >
-                        Gina Trapani
-                    </a>
+                    <Footer />
                 </div>{" "}
                 {/* /container */}
             </div>
