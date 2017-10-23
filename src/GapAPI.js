@@ -6609,7 +6609,7 @@ const GapAPI = {
             cents_to_dollar: "84"
         },
         {
-            slug: "driver/sales-workers-and-truck-drivers",
+            slug: "driver-sales-workers-and-truck-drivers",
             occupation_name: "Driver/sales workers and truck drivers",
             year: "2015",
             number_workers: "2687",
