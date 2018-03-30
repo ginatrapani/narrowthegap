@@ -22,11 +22,15 @@ class Gap extends Component {
     }
 
     componentDidMount() {
-        window.twttr.widgets.load(
-            // re-scans the DOM to initialize widgets
-            document.getElementById("twitter-share-button")
-        );
-        window.FB.XFBML.parse(document.getElementById("fb-share-button"));
+        if (window.twttr.widgets) {
+            window.twttr.widgets.load(
+                // re-scans the DOM to initialize widgets
+                document.getElementById("twitter-share-button")
+            );
+        }
+        if (window.FB) {
+            window.FB.XFBML.parse(document.getElementById("fb-share-button"));
+        }
     }
 
     render() {
