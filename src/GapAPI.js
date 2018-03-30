@@ -2832,7 +2832,7 @@ const GapAPI = {
             cents_to_dollar: "-1"
         },
         {
-            slug: "police-and-sheriff's-patrol-officers",
+            slug: "police-and-sheriffs-patrol-officers",
             occupation_name: "Police and sheriff's patrol officers",
             year: "2017",
             number_workers: "688",
