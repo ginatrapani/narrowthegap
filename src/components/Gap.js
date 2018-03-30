@@ -83,7 +83,7 @@ class Gap extends Component {
                     {/* Main hero unit for a primary call to action */}
                     <div className="jumbotron">
                         <h1>
-                            Women{this.getPhrasing(gap.occupation_name)}{" "}
+                            Womyn{this.getPhrasing(gap.occupation_name)}{" "}
                             <span style={inTheUSStyle}>
                                 {GapAPI.cleanOccupationName(
                                     gap.occupation_name
