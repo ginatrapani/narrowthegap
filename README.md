@@ -22,3 +22,7 @@ You will also see any lint errors in the console.
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.<br>
 It uses `react-snapshot` to [statically pre-render](https://medium.com/superhighfives/an-almost-static-stack-6df0a2791319) all the site's pages.
+
+## Update the Data
+
+Every year around March, the BLS publishes the latest wage data from the year before. To update the web site, use the instructions in [this Google Sheet](https://docs.google.com/spreadsheets/d/1fXNntG1sxuh7cAPwjJ4HKydxpOAPm_627G4_AckS0MU/edit?usp=sharing) to transform and export the new data set into the `GapAPI.js` file.

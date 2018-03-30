@@ -168,9 +168,8 @@ class Gap extends Component {
                                 </a>{" "}
                                 suffer the largest gender pay gaps.{" "}
                                 <a href="/gap/counselors">Counselors</a> and{" "}
-                                <a href="/gap/health-practitioner-support-technologists-and-technicians">
-                                    health practitioner support technologists
-                                    and technicians
+                                <a href="/gap/advertising-sales-agents">
+                                    advertising sales agents
                                 </a>{" "}
                                 have the smallest pay gaps.
                             </p>
