@@ -15,7 +15,7 @@ class Header extends Component {
                         role="button"
                         className="btn btn-danger btn-lg active"
                     >
-                        Narrow the Gapp
+                        Narrow the Gap
                     </a>
                 </div>
                 <div className="col-md-9" />

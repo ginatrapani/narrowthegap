@@ -65,9 +65,9 @@ class Gap extends Component {
             this.getPhrasing(gap.occupation_name) +
             " " +
             GapAPI.cleanOccupationName(gap.occupation_name) +
-            " - Narrow the Gapp";
+            " - Narrow the Gap";
 
-        const permalink = "https://narrowthegapp.com/gap/" + gapSlug;
+        const permalink = "https://narrowthegap.co/gap/" + gapSlug;
 
         // @TODO Stop using inline CSS
         var inTheUSStyle = {
@@ -91,7 +91,7 @@ class Gap extends Component {
                     <meta itemprop="description" content={tweetText} />
                     <meta
                         itemprop="image"
-                        content="https://narrowthegapp.com/images/narrow-the-gapp.png"
+                        content="https://narrowthegap.co/images/narrow-the-gapp.png"
                     />
                     <meta
                         name="author"
@@ -101,11 +101,11 @@ class Gap extends Component {
                     <meta property="og:type" content="website" />
                     <meta
                         property="og:url"
-                        content="https://narrowthegapp.com/"
+                        content="https://narrowthegap.co/"
                     />
                     <meta
                         property="og:image"
-                        content="https://narrowthegapp.com/images/narrow-the-gapp.png"
+                        content="https://narrowthegap.co/images/narrow-the-gapp.png"
                     />
                     <meta property="og:site_name" content="Narrow the Gapp" />
                     <meta property="fb:admins" content="606837591" />
@@ -115,11 +115,11 @@ class Gap extends Component {
                     <meta name="twitter:description" content={tweetText} />
                     <meta
                         name="twitter:image"
-                        content="https://narrowthegapp.com/images/narrow-the-gapp.png"
+                        content="https://narrowthegap.co/images/narrow-the-gapp.png"
                     />
                     <meta
                         name="twitter:url"
-                        content="https://narrowthegapp.com/"
+                        content="https://narrowthegap.co/"
                     />
                 </Helmet>
                 <ScrollToTopOnMount />

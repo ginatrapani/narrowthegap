@@ -1,7 +1,7 @@
-# Narrow the Gapp
+# Narrow the Gap
 
 A single-serving web site displays the wage gap between men and women in the United States on a per-occupation basis. All factoids based on data provided by the U.S. Bureau of Labor Statistics. See it in action at
-[https://narrowthegapp.com](https://narrowthegapp.com).
+[https://narrowthegap.co](https://narrowthegap.co).
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 

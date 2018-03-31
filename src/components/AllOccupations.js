@@ -7,7 +7,7 @@ import Footer from "./Footer.js";
 
 const AllOccupations = () => (
     <div className="App">
-        <Helmet title="All Occupations - Narrow the Gapp" />
+        <Helmet title="All Occupations - Narrow the Gap" />
         <div className="container">
             <Header />
             <div>
