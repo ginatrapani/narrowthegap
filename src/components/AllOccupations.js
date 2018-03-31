@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import GapAPI from "../GapAPI.js";
 import { Link } from "react-router-dom";
 import Header from "./Header.js";
@@ -8,6 +9,7 @@ const AllOccupations = () => (
     <div className="App">
         <div className="container">
             <Header />
+            <Helmet title="All Occupations - Narrow the Gapp" />
             <div>
                 <h1>All Occupations</h1>
                 <ul>

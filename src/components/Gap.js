@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 import GapAPI from "../GapAPI.js";
 import Header from "./Header.js";
 import Footer from "./Footer.js";
@@ -59,6 +60,13 @@ class Gap extends Component {
             gap.cents_to_dollar +
             " cents to the dollar men earn #NarrowTheGap";
 
+        const pageTitle =
+            "The gender pay gap for women" +
+            this.getPhrasing(gap.occupation_name) +
+            " " +
+            GapAPI.cleanOccupationName(gap.occupation_name) +
+            " - Narrow the Gapp";
+
         const permalink = "https://narrowthegapp.com/gap/" + gapSlug;
 
         // @TODO Stop using inline CSS
@@ -78,6 +86,7 @@ class Gap extends Component {
         return (
             <div className="App">
                 <ScrollToTopOnMount />
+                <Helmet title={pageTitle} />
                 <div className="container">
                     <Header />
                     {/* Main hero unit for a primary call to action */}
