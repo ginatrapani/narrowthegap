@@ -86,7 +86,43 @@ class Gap extends Component {
         return (
             <div className="App">
                 <ScrollToTopOnMount />
-                <Helmet title={pageTitle} />
+                <Helmet>
+                    <title>{pageTitle}</title>
+                    <meta itemprop="name" content={pageTitle} />
+                    <meta itemprop="description" content={tweetText} />
+                    <meta
+                        itemprop="image"
+                        content="https://narrowthegapp.com/images/narrow-the-gapp.png"
+                    />
+                    <meta
+                        name="author"
+                        content="U.S. Bureau of Labor Statistics"
+                    />
+                    <meta property="og:title" content={pageTitle} />
+                    <meta property="og:type" content="website" />
+                    <meta
+                        property="og:url"
+                        content="https://narrowthegapp.com/"
+                    />
+                    <meta
+                        property="og:image"
+                        content="https://narrowthegapp.com/images/narrow-the-gapp.png"
+                    />
+                    <meta property="og:site_name" content="Narrow the Gapp" />
+                    <meta property="fb:admins" content="606837591" />
+
+                    <meta name="twitter:card" content="summary" />
+                    <meta name="twitter:title" content={pageTitle} />
+                    <meta name="twitter:description" content={tweetText} />
+                    <meta
+                        name="twitter:image"
+                        content="https://narrowthegapp.com/images/narrow-the-gapp.png"
+                    />
+                    <meta
+                        name="twitter:url"
+                        content="https://narrowthegapp.com/"
+                    />
+                </Helmet>
                 <div className="container">
                     <Header />
                     {/* Main hero unit for a primary call to action */}
