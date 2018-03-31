@@ -85,7 +85,6 @@ class Gap extends Component {
 
         return (
             <div className="App">
-                <ScrollToTopOnMount />
                 <Helmet>
                     <title>{pageTitle}</title>
                     <meta itemprop="name" content={pageTitle} />
@@ -123,6 +122,7 @@ class Gap extends Component {
                         content="https://narrowthegapp.com/"
                     />
                 </Helmet>
+                <ScrollToTopOnMount />
                 <div className="container">
                     <Header />
                     {/* Main hero unit for a primary call to action */}
