@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 import GapAPI from "../GapAPI.js";
 import Header from "./Header.js";
 import Footer from "./Footer.js";
@@ -59,6 +60,13 @@ class Gap extends Component {
             gap.cents_to_dollar +
             " cents to the dollar men earn #NarrowTheGap";
 
+        const pageTitle =
+            "The gender pay gap for women" +
+            this.getPhrasing(gap.occupation_name) +
+            " " +
+            GapAPI.cleanOccupationName(gap.occupation_name) +
+            " - Narrow the Gapp";
+
         const permalink = "https://narrowthegapp.com/gap/" + gapSlug;
 
         // @TODO Stop using inline CSS
@@ -77,6 +85,43 @@ class Gap extends Component {
 
         return (
             <div className="App">
+                <Helmet>
+                    <title>{pageTitle}</title>
+                    <meta itemprop="name" content={pageTitle} />
+                    <meta itemprop="description" content={tweetText} />
+                    <meta
+                        itemprop="image"
+                        content="https://narrowthegapp.com/images/narrow-the-gapp.png"
+                    />
+                    <meta
+                        name="author"
+                        content="U.S. Bureau of Labor Statistics"
+                    />
+                    <meta property="og:title" content={pageTitle} />
+                    <meta property="og:type" content="website" />
+                    <meta
+                        property="og:url"
+                        content="https://narrowthegapp.com/"
+                    />
+                    <meta
+                        property="og:image"
+                        content="https://narrowthegapp.com/images/narrow-the-gapp.png"
+                    />
+                    <meta property="og:site_name" content="Narrow the Gapp" />
+                    <meta property="fb:admins" content="606837591" />
+
+                    <meta name="twitter:card" content="summary" />
+                    <meta name="twitter:title" content={pageTitle} />
+                    <meta name="twitter:description" content={tweetText} />
+                    <meta
+                        name="twitter:image"
+                        content="https://narrowthegapp.com/images/narrow-the-gapp.png"
+                    />
+                    <meta
+                        name="twitter:url"
+                        content="https://narrowthegapp.com/"
+                    />
+                </Helmet>
                 <ScrollToTopOnMount />
                 <div className="container">
                     <Header />
