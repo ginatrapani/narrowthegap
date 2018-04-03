@@ -78,30 +78,6 @@ const GapAPI = {
             cents_to_dollar: "76"
         },
         {
-            slug: "legislators",
-            occupation_name: "Legislators",
-            year: "2017",
-            number_workers: "14",
-            median_weekly_earnings: "-",
-            men_number_workers: "5",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "9",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "advertising-and-promotions-managers",
-            occupation_name: "Advertising and promotions managers",
-            year: "2017",
-            number_workers: "53",
-            median_weekly_earnings: "1330",
-            men_number_workers: "24",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "29",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "marketing-and-sales-managers",
             occupation_name: "Marketing and sales managers",
             year: "2017",
@@ -112,18 +88,6 @@ const GapAPI = {
             women_number_workers: "428",
             women_median_weekly_earnings: "1288",
             cents_to_dollar: "74"
-        },
-        {
-            slug: "public-relations-and-fundraising-managers",
-            occupation_name: "Public relations and fundraising managers",
-            year: "2017",
-            number_workers: "71",
-            median_weekly_earnings: "1318",
-            men_number_workers: "24",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "47",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "administrative-services-managers",
@@ -162,18 +126,6 @@ const GapAPI = {
             cents_to_dollar: "71"
         },
         {
-            slug: "compensation-and-benefits-managers",
-            occupation_name: "Compensation and benefits managers",
-            year: "2017",
-            number_workers: "16",
-            median_weekly_earnings: "-",
-            men_number_workers: "5",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "11",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "human-resources-managers",
             occupation_name: "Human resources managers",
             year: "2017",
@@ -184,18 +136,6 @@ const GapAPI = {
             women_number_workers: "211",
             women_median_weekly_earnings: "1280",
             cents_to_dollar: "73"
-        },
-        {
-            slug: "training-and-development-managers",
-            occupation_name: "Training and development managers",
-            year: "2017",
-            number_workers: "58",
-            median_weekly_earnings: "1396",
-            men_number_workers: "23",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "35",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "industrial-production-managers",
@@ -222,32 +162,6 @@ const GapAPI = {
             cents_to_dollar: "80"
         },
         {
-            slug: "transportation-storage-and-distribution-managers",
-            occupation_name:
-                "Transportation, storage, and distribution managers",
-            year: "2017",
-            number_workers: "274",
-            median_weekly_earnings: "1039",
-            men_number_workers: "225",
-            men_median_weekly_earnings: "1061",
-            women_number_workers: "49",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "farmers-ranchers-and-other-agricultural-managers",
-            occupation_name:
-                "Farmers, ranchers, and other agricultural managers",
-            year: "2017",
-            number_workers: "121",
-            median_weekly_earnings: "1001",
-            men_number_workers: "100",
-            men_median_weekly_earnings: "963",
-            women_number_workers: "21",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "construction-managers",
             occupation_name: "Construction managers",
             year: "2017",
@@ -272,18 +186,6 @@ const GapAPI = {
             cents_to_dollar: "80"
         },
         {
-            slug: "architectural-and-engineering-managers",
-            occupation_name: "Architectural and engineering managers",
-            year: "2017",
-            number_workers: "128",
-            median_weekly_earnings: "1999",
-            men_number_workers: "119",
-            men_median_weekly_earnings: "2020",
-            women_number_workers: "10",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "food-service-managers",
             occupation_name: "Food service managers",
             year: "2017",
@@ -294,30 +196,6 @@ const GapAPI = {
             women_number_workers: "394",
             women_median_weekly_earnings: "674",
             cents_to_dollar: "75"
-        },
-        {
-            slug: "funeral-service-managers",
-            occupation_name: "Funeral service managers",
-            year: "2017",
-            number_workers: "9",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "gaming-managers",
-            occupation_name: "Gaming managers",
-            year: "2017",
-            number_workers: "23",
-            median_weekly_earnings: "-",
-            men_number_workers: "17",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "6",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "lodging-managers",
@@ -342,30 +220,6 @@ const GapAPI = {
             women_number_workers: "433",
             women_median_weekly_earnings: "1177",
             cents_to_dollar: "79"
-        },
-        {
-            slug: "natural-sciences-managers",
-            occupation_name: "Natural sciences managers",
-            year: "2017",
-            number_workers: "17",
-            median_weekly_earnings: "-",
-            men_number_workers: "10",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "7",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "postmasters-and-mail-superintendents",
-            occupation_name: "Postmasters and mail superintendents",
-            year: "2017",
-            number_workers: "23",
-            median_weekly_earnings: "-",
-            men_number_workers: "13",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "10",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "property-real-estate-and-community-association-managers",
@@ -393,18 +247,6 @@ const GapAPI = {
             cents_to_dollar: "82"
         },
         {
-            slug: "emergency-management-directors",
-            occupation_name: "Emergency management directors",
-            year: "2017",
-            number_workers: "10",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "7",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "managers-all-other",
             occupation_name: "Managers, all other",
             year: "2017",
@@ -427,45 +269,6 @@ const GapAPI = {
             women_number_workers: "3398",
             women_median_weekly_earnings: "1055",
             cents_to_dollar: "76"
-        },
-        {
-            slug:
-                "agents-and-business-managers-of-artists-performers-and-athletes",
-            occupation_name:
-                "Agents and business managers of artists, performers, and athletes",
-            year: "2017",
-            number_workers: "23",
-            median_weekly_earnings: "-",
-            men_number_workers: "8",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "15",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "buyers-and-purchasing-agents-farm-products",
-            occupation_name: "Buyers and purchasing agents, farm products",
-            year: "2017",
-            number_workers: "10",
-            median_weekly_earnings: "-",
-            men_number_workers: "6",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "wholesale-and-retail-buyers-except-farm-products",
-            occupation_name:
-                "Wholesale and retail buyers, except farm products",
-            year: "2017",
-            number_workers: "154",
-            median_weekly_earnings: "886",
-            men_number_workers: "67",
-            men_median_weekly_earnings: "882",
-            women_number_workers: "87",
-            women_median_weekly_earnings: "888",
-            cents_to_dollar: "101"
         },
         {
             slug: "purchasing-agents-except-wholesale-retail-and-farm-products",
@@ -506,18 +309,6 @@ const GapAPI = {
             cents_to_dollar: "86"
         },
         {
-            slug: "cost-estimators",
-            occupation_name: "Cost estimators",
-            year: "2017",
-            number_workers: "113",
-            median_weekly_earnings: "1139",
-            men_number_workers: "100",
-            men_median_weekly_earnings: "1157",
-            women_number_workers: "13",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "human-resources-workers",
             occupation_name: "Human resources workers",
             year: "2017",
@@ -528,19 +319,6 @@ const GapAPI = {
             women_number_workers: "482",
             women_median_weekly_earnings: "1035",
             cents_to_dollar: "84"
-        },
-        {
-            slug: "compensation-benefits-and-job-analysis-specialists",
-            occupation_name:
-                "Compensation, benefits, and job analysis specialists",
-            year: "2017",
-            number_workers: "60",
-            median_weekly_earnings: "1042",
-            men_number_workers: "21",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "39",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "training-and-development-specialists",
@@ -555,18 +333,6 @@ const GapAPI = {
             cents_to_dollar: "75"
         },
         {
-            slug: "logisticians",
-            occupation_name: "Logisticians",
-            year: "2017",
-            number_workers: "101",
-            median_weekly_earnings: "1230",
-            men_number_workers: "67",
-            men_median_weekly_earnings: "1358",
-            women_number_workers: "33",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "management-analysts",
             occupation_name: "Management analysts",
             year: "2017",
@@ -577,30 +343,6 @@ const GapAPI = {
             women_number_workers: "255",
             women_median_weekly_earnings: "1315",
             cents_to_dollar: "80"
-        },
-        {
-            slug: "meeting-convention-and-event-planners",
-            occupation_name: "Meeting, convention, and event planners",
-            year: "2017",
-            number_workers: "102",
-            median_weekly_earnings: "1080",
-            men_number_workers: "14",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "89",
-            women_median_weekly_earnings: "1064",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "fundraisers",
-            occupation_name: "Fundraisers",
-            year: "2017",
-            number_workers: "72",
-            median_weekly_earnings: "1152",
-            men_number_workers: "17",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "55",
-            women_median_weekly_earnings: "1152",
-            cents_to_dollar: "-1"
         },
         {
             slug: "market-research-analysts-and-marketing-specialists",
@@ -640,42 +382,6 @@ const GapAPI = {
             cents_to_dollar: "77"
         },
         {
-            slug: "appraisers-and-assessors-of-real-estate",
-            occupation_name: "Appraisers and assessors of real estate",
-            year: "2017",
-            number_workers: "55",
-            median_weekly_earnings: "1074",
-            men_number_workers: "35",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "20",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "budget-analysts",
-            occupation_name: "Budget analysts",
-            year: "2017",
-            number_workers: "54",
-            median_weekly_earnings: "1377",
-            men_number_workers: "29",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "26",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "credit-analysts",
-            occupation_name: "Credit analysts",
-            year: "2017",
-            number_workers: "27",
-            median_weekly_earnings: "-",
-            men_number_workers: "13",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "15",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "financial-analysts",
             occupation_name: "Financial analysts",
             year: "2017",
@@ -700,30 +406,6 @@ const GapAPI = {
             cents_to_dollar: "59"
         },
         {
-            slug: "insurance-underwriters",
-            occupation_name: "Insurance underwriters",
-            year: "2017",
-            number_workers: "92",
-            median_weekly_earnings: "1153",
-            men_number_workers: "35",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "57",
-            women_median_weekly_earnings: "1115",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "financial-examiners",
-            occupation_name: "Financial examiners",
-            year: "2017",
-            number_workers: "15",
-            median_weekly_earnings: "-",
-            men_number_workers: "8",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "7",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "credit-counselors-and-loan-officers",
             occupation_name: "Credit counselors and loan officers",
             year: "2017",
@@ -734,42 +416,6 @@ const GapAPI = {
             women_number_workers: "193",
             women_median_weekly_earnings: "958",
             cents_to_dollar: "72"
-        },
-        {
-            slug: "tax-examiners-and-collectors-and-revenue-agents",
-            occupation_name: "Tax examiners and collectors, and revenue agents",
-            year: "2017",
-            number_workers: "62",
-            median_weekly_earnings: "1078",
-            men_number_workers: "28",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "33",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "tax-preparers",
-            occupation_name: "Tax preparers",
-            year: "2017",
-            number_workers: "56",
-            median_weekly_earnings: "791",
-            men_number_workers: "18",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "39",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "financial-specialists-all-other",
-            occupation_name: "Financial specialists, all other",
-            year: "2017",
-            number_workers: "36",
-            median_weekly_earnings: "-",
-            men_number_workers: "11",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "24",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "professional-and-related-occupations",
@@ -796,18 +442,6 @@ const GapAPI = {
             cents_to_dollar: "80"
         },
         {
-            slug: "computer-and-information-research-scientists",
-            occupation_name: "Computer and information research scientists",
-            year: "2017",
-            number_workers: "23",
-            median_weekly_earnings: "-",
-            men_number_workers: "13",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "9",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "computer-systems-analysts",
             occupation_name: "Computer systems analysts",
             year: "2017",
@@ -818,18 +452,6 @@ const GapAPI = {
             women_number_workers: "211",
             women_median_weekly_earnings: "1270",
             cents_to_dollar: "85"
-        },
-        {
-            slug: "information-security-analysts",
-            occupation_name: "Information security analysts",
-            year: "2017",
-            number_workers: "94",
-            median_weekly_earnings: "1725",
-            men_number_workers: "74",
-            men_median_weekly_earnings: "1773",
-            women_number_workers: "20",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "computer-programmers",
@@ -857,18 +479,6 @@ const GapAPI = {
             cents_to_dollar: "83"
         },
         {
-            slug: "web-developers",
-            occupation_name: "Web developers",
-            year: "2017",
-            number_workers: "144",
-            median_weekly_earnings: "1235",
-            men_number_workers: "98",
-            men_median_weekly_earnings: "1342",
-            women_number_workers: "46",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "computer-support-specialists",
             occupation_name: "Computer support specialists",
             year: "2017",
@@ -879,42 +489,6 @@ const GapAPI = {
             women_number_workers: "124",
             women_median_weekly_earnings: "919",
             cents_to_dollar: "81"
-        },
-        {
-            slug: "database-administrators",
-            occupation_name: "Database administrators",
-            year: "2017",
-            number_workers: "93",
-            median_weekly_earnings: "1381",
-            men_number_workers: "56",
-            men_median_weekly_earnings: "1745",
-            women_number_workers: "37",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "network-and-computer-systems-administrators",
-            occupation_name: "Network and computer systems administrators",
-            year: "2017",
-            number_workers: "193",
-            median_weekly_earnings: "1395",
-            men_number_workers: "155",
-            men_median_weekly_earnings: "1396",
-            women_number_workers: "38",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "computer-network-architects",
-            occupation_name: "Computer network architects",
-            year: "2017",
-            number_workers: "100",
-            median_weekly_earnings: "1636",
-            men_number_workers: "97",
-            men_median_weekly_earnings: "1659",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "computer-occupations-all-other",
@@ -929,30 +503,6 @@ const GapAPI = {
             cents_to_dollar: "85"
         },
         {
-            slug: "actuaries",
-            occupation_name: "Actuaries",
-            year: "2017",
-            number_workers: "23",
-            median_weekly_earnings: "-",
-            men_number_workers: "16",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "7",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "mathematicians",
-            occupation_name: "Mathematicians",
-            year: "2017",
-            number_workers: "2",
-            median_weekly_earnings: "-",
-            men_number_workers: "2",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "operations-research-analysts",
             occupation_name: "Operations research analysts",
             year: "2017",
@@ -963,30 +513,6 @@ const GapAPI = {
             women_number_workers: "74",
             women_median_weekly_earnings: "1205",
             cents_to_dollar: "77"
-        },
-        {
-            slug: "statisticians",
-            occupation_name: "Statisticians",
-            year: "2017",
-            number_workers: "77",
-            median_weekly_earnings: "1433",
-            men_number_workers: "36",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "41",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "miscellaneous-mathematical-science-occupations",
-            occupation_name: "Miscellaneous mathematical science occupations",
-            year: "2017",
-            number_workers: "2",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "architecture-and-engineering-occupations",
@@ -1001,78 +527,6 @@ const GapAPI = {
             cents_to_dollar: "86"
         },
         {
-            slug: "architects-except-naval",
-            occupation_name: "Architects, except naval",
-            year: "2017",
-            number_workers: "196",
-            median_weekly_earnings: "1453",
-            men_number_workers: "150",
-            men_median_weekly_earnings: "1650",
-            women_number_workers: "46",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "surveyors-cartographers-and-photogrammetrists",
-            occupation_name: "Surveyors, cartographers, and photogrammetrists",
-            year: "2017",
-            number_workers: "30",
-            median_weekly_earnings: "-",
-            men_number_workers: "25",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "aerospace-engineers",
-            occupation_name: "Aerospace engineers",
-            year: "2017",
-            number_workers: "137",
-            median_weekly_earnings: "1892",
-            men_number_workers: "128",
-            men_median_weekly_earnings: "1891",
-            women_number_workers: "9",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "agricultural-engineers",
-            occupation_name: "Agricultural engineers",
-            year: "2017",
-            number_workers: "3",
-            median_weekly_earnings: "-",
-            men_number_workers: "3",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "biomedical-engineers",
-            occupation_name: "Biomedical engineers",
-            year: "2017",
-            number_workers: "16",
-            median_weekly_earnings: "-",
-            men_number_workers: "11",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "chemical-engineers",
-            occupation_name: "Chemical engineers",
-            year: "2017",
-            number_workers: "78",
-            median_weekly_earnings: "1626",
-            men_number_workers: "66",
-            men_median_weekly_earnings: "1631",
-            women_number_workers: "12",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "civil-engineers",
             occupation_name: "Civil engineers",
             year: "2017",
@@ -1083,129 +537,6 @@ const GapAPI = {
             women_number_workers: "61",
             women_median_weekly_earnings: "1343",
             cents_to_dollar: "88"
-        },
-        {
-            slug: "computer-hardware-engineers",
-            occupation_name: "Computer hardware engineers",
-            year: "2017",
-            number_workers: "73",
-            median_weekly_earnings: "1771",
-            men_number_workers: "60",
-            men_median_weekly_earnings: "1793",
-            women_number_workers: "13",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "electrical-and-electronics-engineers",
-            occupation_name: "Electrical and electronics engineers",
-            year: "2017",
-            number_workers: "276",
-            median_weekly_earnings: "1803",
-            men_number_workers: "245",
-            men_median_weekly_earnings: "1772",
-            women_number_workers: "30",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "environmental-engineers",
-            occupation_name: "Environmental engineers",
-            year: "2017",
-            number_workers: "32",
-            median_weekly_earnings: "-",
-            men_number_workers: "21",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "11",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "industrial-engineers-including-health-and-safety",
-            occupation_name:
-                "Industrial engineers, including health and safety",
-            year: "2017",
-            number_workers: "213",
-            median_weekly_earnings: "1496",
-            men_number_workers: "168",
-            men_median_weekly_earnings: "1520",
-            women_number_workers: "46",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "marine-engineers-and-naval-architects",
-            occupation_name: "Marine engineers and naval architects",
-            year: "2017",
-            number_workers: "7",
-            median_weekly_earnings: "-",
-            men_number_workers: "7",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "materials-engineers",
-            occupation_name: "Materials engineers",
-            year: "2017",
-            number_workers: "32",
-            median_weekly_earnings: "-",
-            men_number_workers: "28",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "mechanical-engineers",
-            occupation_name: "Mechanical engineers",
-            year: "2017",
-            number_workers: "337",
-            median_weekly_earnings: "1534",
-            men_number_workers: "311",
-            men_median_weekly_earnings: "1533",
-            women_number_workers: "26",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "mining-and-geological-engineers-including-mining-safety-engineers",
-            occupation_name:
-                "Mining and geological engineers, including mining safety engineers",
-            year: "2017",
-            number_workers: "12",
-            median_weekly_earnings: "-",
-            men_number_workers: "10",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "nuclear-engineers",
-            occupation_name: "Nuclear engineers",
-            year: "2017",
-            number_workers: "7",
-            median_weekly_earnings: "-",
-            men_number_workers: "7",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "petroleum-engineers",
-            occupation_name: "Petroleum engineers",
-            year: "2017",
-            number_workers: "23",
-            median_weekly_earnings: "-",
-            men_number_workers: "17",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "6",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "engineers-all-other",
@@ -1220,18 +551,6 @@ const GapAPI = {
             cents_to_dollar: "91"
         },
         {
-            slug: "drafters",
-            occupation_name: "Drafters",
-            year: "2017",
-            number_workers: "122",
-            median_weekly_earnings: "1126",
-            men_number_workers: "100",
-            men_median_weekly_earnings: "1149",
-            women_number_workers: "21",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "engineering-technicians-except-drafters",
             occupation_name: "Engineering technicians, except drafters",
             year: "2017",
@@ -1242,18 +561,6 @@ const GapAPI = {
             women_number_workers: "70",
             women_median_weekly_earnings: "884",
             cents_to_dollar: "80"
-        },
-        {
-            slug: "surveying-and-mapping-technicians",
-            occupation_name: "Surveying and mapping technicians",
-            year: "2017",
-            number_workers: "63",
-            median_weekly_earnings: "1109",
-            men_number_workers: "61",
-            men_median_weekly_earnings: "1114",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "life-physical-and-social-science-occupations",
@@ -1268,42 +575,6 @@ const GapAPI = {
             cents_to_dollar: "87"
         },
         {
-            slug: "agricultural-and-food-scientists",
-            occupation_name: "Agricultural and food scientists",
-            year: "2017",
-            number_workers: "25",
-            median_weekly_earnings: "-",
-            men_number_workers: "14",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "10",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "biological-scientists",
-            occupation_name: "Biological scientists",
-            year: "2017",
-            number_workers: "82",
-            median_weekly_earnings: "1140",
-            men_number_workers: "41",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "41",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "conservation-scientists-and-foresters",
-            occupation_name: "Conservation scientists and foresters",
-            year: "2017",
-            number_workers: "26",
-            median_weekly_earnings: "-",
-            men_number_workers: "15",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "11",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "medical-scientists",
             occupation_name: "Medical scientists",
             year: "2017",
@@ -1316,66 +587,6 @@ const GapAPI = {
             cents_to_dollar: "92"
         },
         {
-            slug: "life-scientists-all-other",
-            occupation_name: "Life scientists, all other",
-            year: "2017",
-            number_workers: "4",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "astronomers-and-physicists",
-            occupation_name: "Astronomers and physicists",
-            year: "2017",
-            number_workers: "16",
-            median_weekly_earnings: "-",
-            men_number_workers: "15",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "atmospheric-and-space-scientists",
-            occupation_name: "Atmospheric and space scientists",
-            year: "2017",
-            number_workers: "6",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "chemists-and-materials-scientists",
-            occupation_name: "Chemists and materials scientists",
-            year: "2017",
-            number_workers: "98",
-            median_weekly_earnings: "1425",
-            men_number_workers: "56",
-            men_median_weekly_earnings: "1451",
-            women_number_workers: "41",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "environmental-scientists-and-geoscientists",
-            occupation_name: "Environmental scientists and geoscientists",
-            year: "2017",
-            number_workers: "80",
-            median_weekly_earnings: "1639",
-            men_number_workers: "51",
-            men_median_weekly_earnings: "1746",
-            women_number_workers: "30",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "physical-scientists-all-other",
             occupation_name: "Physical scientists, all other",
             year: "2017",
@@ -1386,151 +597,6 @@ const GapAPI = {
             women_number_workers: "122",
             women_median_weekly_earnings: "1409",
             cents_to_dollar: "90"
-        },
-        {
-            slug: "economists",
-            occupation_name: "Economists",
-            year: "2017",
-            number_workers: "29",
-            median_weekly_earnings: "-",
-            men_number_workers: "18",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "12",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "survey-researchers",
-            occupation_name: "Survey researchers",
-            year: "2017",
-            number_workers: "2",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "psychologists",
-            occupation_name: "Psychologists",
-            year: "2017",
-            number_workers: "106",
-            median_weekly_earnings: "1454",
-            men_number_workers: "35",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "71",
-            women_median_weekly_earnings: "1437",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "sociologists",
-            occupation_name: "Sociologists",
-            year: "2017",
-            number_workers: "2",
-            median_weekly_earnings: "-",
-            men_number_workers: "2",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "urban-and-regional-planners",
-            occupation_name: "Urban and regional planners",
-            year: "2017",
-            number_workers: "34",
-            median_weekly_earnings: "-",
-            men_number_workers: "18",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "16",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "miscellaneous-social-scientists-and-related-workers",
-            occupation_name:
-                "Miscellaneous social scientists and related workers",
-            year: "2017",
-            number_workers: "27",
-            median_weekly_earnings: "-",
-            men_number_workers: "18",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "9",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "agricultural-and-food-science-technicians",
-            occupation_name: "Agricultural and food science technicians",
-            year: "2017",
-            number_workers: "30",
-            median_weekly_earnings: "-",
-            men_number_workers: "20",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "10",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "biological-technicians",
-            occupation_name: "Biological technicians",
-            year: "2017",
-            number_workers: "23",
-            median_weekly_earnings: "-",
-            men_number_workers: "8",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "15",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "chemical-technicians",
-            occupation_name: "Chemical technicians",
-            year: "2017",
-            number_workers: "62",
-            median_weekly_earnings: "1013",
-            men_number_workers: "45",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "16",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "geological-and-petroleum-technicians",
-            occupation_name: "Geological and petroleum technicians",
-            year: "2017",
-            number_workers: "13",
-            median_weekly_earnings: "-",
-            men_number_workers: "9",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "nuclear-technicians",
-            occupation_name: "Nuclear technicians",
-            year: "2017",
-            number_workers: "6",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "social-science-research-assistants",
-            occupation_name: "Social science research assistants",
-            year: "2017",
-            number_workers: "4",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "miscellaneous-life-physical-and-social-science-technicians",
@@ -1582,81 +648,6 @@ const GapAPI = {
             cents_to_dollar: "96"
         },
         {
-            slug: "probation-officers-and-correctional-treatment-specialists",
-            occupation_name:
-                "Probation officers and correctional treatment specialists",
-            year: "2017",
-            number_workers: "90",
-            median_weekly_earnings: "881",
-            men_number_workers: "36",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "55",
-            women_median_weekly_earnings: "858",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "social-and-human-service-assistants",
-            occupation_name: "Social and human service assistants",
-            year: "2017",
-            number_workers: "189",
-            median_weekly_earnings: "739",
-            men_number_workers: "48",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "141",
-            women_median_weekly_earnings: "701",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "miscellaneous-community-and-social-service-specialists-including-health-educators-and-community-health-workers",
-            occupation_name:
-                "Miscellaneous community and social service specialists, including health educators and community health workers",
-            year: "2017",
-            number_workers: "68",
-            median_weekly_earnings: "829",
-            men_number_workers: "17",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "51",
-            women_median_weekly_earnings: "791",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "clergy",
-            occupation_name: "Clergy",
-            year: "2017",
-            number_workers: "342",
-            median_weekly_earnings: "1058",
-            men_number_workers: "297",
-            men_median_weekly_earnings: "1073",
-            women_number_workers: "46",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "directors-religious-activities-and-education",
-            occupation_name: "Directors, religious activities and education",
-            year: "2017",
-            number_workers: "61",
-            median_weekly_earnings: "844",
-            men_number_workers: "36",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "25",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "religious-workers-all-other",
-            occupation_name: "Religious workers, all other",
-            year: "2017",
-            number_workers: "50",
-            median_weekly_earnings: "831",
-            men_number_workers: "13",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "37",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "legal-occupations",
             occupation_name: "Legal occupations",
             year: "2017",
@@ -1681,54 +672,6 @@ const GapAPI = {
             cents_to_dollar: "83"
         },
         {
-            slug: "judicial-law-clerks",
-            occupation_name: "Judicial law clerks",
-            year: "2017",
-            number_workers: "13",
-            median_weekly_earnings: "-",
-            men_number_workers: "7",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "6",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "judges-magistrates-and-other-judicial-workers",
-            occupation_name: "Judges, magistrates, and other judicial workers",
-            year: "2017",
-            number_workers: "59",
-            median_weekly_earnings: "1742",
-            men_number_workers: "42",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "17",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "paralegals-and-legal-assistants",
-            occupation_name: "Paralegals and legal assistants",
-            year: "2017",
-            number_workers: "370",
-            median_weekly_earnings: "945",
-            men_number_workers: "49",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "321",
-            women_median_weekly_earnings: "934",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "miscellaneous-legal-support-workers",
-            occupation_name: "Miscellaneous legal support workers",
-            year: "2017",
-            number_workers: "156",
-            median_weekly_earnings: "957",
-            men_number_workers: "26",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "130",
-            women_median_weekly_earnings: "904",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "education-training-and-library-occupations",
             occupation_name: "Education, training, and library occupations",
             year: "2017",
@@ -1751,18 +694,6 @@ const GapAPI = {
             women_number_workers: "434",
             women_median_weekly_earnings: "1208",
             cents_to_dollar: "85"
-        },
-        {
-            slug: "preschool-and-kindergarten-teachers",
-            occupation_name: "Preschool and kindergarten teachers",
-            year: "2017",
-            number_workers: "530",
-            median_weekly_earnings: "657",
-            men_number_workers: "12",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "518",
-            women_median_weekly_earnings: "654",
-            cents_to_dollar: "-1"
         },
         {
             slug: "elementary-and-middle-school-teachers",
@@ -1813,42 +744,6 @@ const GapAPI = {
             cents_to_dollar: "73"
         },
         {
-            slug: "archivists-curators-and-museum-technicians",
-            occupation_name: "Archivists, curators, and museum technicians",
-            year: "2017",
-            number_workers: "42",
-            median_weekly_earnings: "-",
-            men_number_workers: "18",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "24",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "librarians",
-            occupation_name: "Librarians",
-            year: "2017",
-            number_workers: "135",
-            median_weekly_earnings: "1009",
-            men_number_workers: "31",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "104",
-            women_median_weekly_earnings: "972",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "library-technicians",
-            occupation_name: "Library technicians",
-            year: "2017",
-            number_workers: "16",
-            median_weekly_earnings: "-",
-            men_number_workers: "2",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "14",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "teacher-assistants",
             occupation_name: "Teacher assistants",
             year: "2017",
@@ -1859,18 +754,6 @@ const GapAPI = {
             women_number_workers: "523",
             women_median_weekly_earnings: "537",
             cents_to_dollar: "84"
-        },
-        {
-            slug: "other-education-training-and-library-workers",
-            occupation_name: "Other education, training, and library workers",
-            year: "2017",
-            number_workers: "120",
-            median_weekly_earnings: "1049",
-            men_number_workers: "44",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "77",
-            women_median_weekly_earnings: "956",
-            cents_to_dollar: "-1"
         },
         {
             slug: "arts-design-entertainment-sports-and-media-occupations",
@@ -1886,18 +769,6 @@ const GapAPI = {
             cents_to_dollar: "81"
         },
         {
-            slug: "artists-and-related-workers",
-            occupation_name: "Artists and related workers",
-            year: "2017",
-            number_workers: "70",
-            median_weekly_earnings: "1209",
-            men_number_workers: "43",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "27",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "designers",
             occupation_name: "Designers",
             year: "2017",
@@ -1908,116 +779,6 @@ const GapAPI = {
             women_number_workers: "273",
             women_median_weekly_earnings: "857",
             cents_to_dollar: "73"
-        },
-        {
-            slug: "actors",
-            occupation_name: "Actors",
-            year: "2017",
-            number_workers: "17",
-            median_weekly_earnings: "-",
-            men_number_workers: "11",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "6",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "producers-and-directors",
-            occupation_name: "Producers and directors",
-            year: "2017",
-            number_workers: "131",
-            median_weekly_earnings: "1489",
-            men_number_workers: "89",
-            men_median_weekly_earnings: "1708",
-            women_number_workers: "43",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "athletes-coaches-umpires-and-related-workers",
-            occupation_name: "Athletes, coaches, umpires, and related workers",
-            year: "2017",
-            number_workers: "149",
-            median_weekly_earnings: "898",
-            men_number_workers: "104",
-            men_median_weekly_earnings: "1031",
-            women_number_workers: "45",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "dancers-and-choreographers",
-            occupation_name: "Dancers and choreographers",
-            year: "2017",
-            number_workers: "9",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "musicians-singers-and-related-workers",
-            occupation_name: "Musicians, singers, and related workers",
-            year: "2017",
-            number_workers: "41",
-            median_weekly_earnings: "-",
-            men_number_workers: "29",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "12",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "entertainers-and-performers-sports-and-related-workers-all-other",
-            occupation_name:
-                "Entertainers and performers, sports and related workers, all other",
-            year: "2017",
-            number_workers: "24",
-            median_weekly_earnings: "-",
-            men_number_workers: "10",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "13",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "announcers",
-            occupation_name: "Announcers",
-            year: "2017",
-            number_workers: "24",
-            median_weekly_earnings: "-",
-            men_number_workers: "18",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "7",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "news-analysts-reporters-and-correspondents",
-            occupation_name: "News analysts, reporters and correspondents",
-            year: "2017",
-            number_workers: "72",
-            median_weekly_earnings: "945",
-            men_number_workers: "30",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "42",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "public-relations-specialists",
-            occupation_name: "Public relations specialists",
-            year: "2017",
-            number_workers: "92",
-            median_weekly_earnings: "1339",
-            men_number_workers: "35",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "57",
-            women_median_weekly_earnings: "1203",
-            cents_to_dollar: "-1"
         },
         {
             slug: "editors",
@@ -2032,18 +793,6 @@ const GapAPI = {
             cents_to_dollar: "88"
         },
         {
-            slug: "technical-writers",
-            occupation_name: "Technical writers",
-            year: "2017",
-            number_workers: "67",
-            median_weekly_earnings: "1222",
-            men_number_workers: "30",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "37",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "writers-and-authors",
             occupation_name: "Writers and authors",
             year: "2017",
@@ -2054,71 +803,6 @@ const GapAPI = {
             women_number_workers: "57",
             women_median_weekly_earnings: "1045",
             cents_to_dollar: "89"
-        },
-        {
-            slug: "miscellaneous-media-and-communication-workers",
-            occupation_name: "Miscellaneous media and communication workers",
-            year: "2017",
-            number_workers: "53",
-            median_weekly_earnings: "809",
-            men_number_workers: "25",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "28",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "broadcast-and-sound-engineering-technicians-and-radio-operators",
-            occupation_name:
-                "Broadcast and sound engineering technicians and radio operators",
-            year: "2017",
-            number_workers: "81",
-            median_weekly_earnings: "1150",
-            men_number_workers: "71",
-            men_median_weekly_earnings: "1160",
-            women_number_workers: "10",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "photographers",
-            occupation_name: "Photographers",
-            year: "2017",
-            number_workers: "66",
-            median_weekly_earnings: "931",
-            men_number_workers: "40",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "25",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "television-video-and-motion-picture-camera-operators-and-editors",
-            occupation_name:
-                "Television, video, and motion picture camera operators and editors",
-            year: "2017",
-            number_workers: "46",
-            median_weekly_earnings: "-",
-            men_number_workers: "38",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "8",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "media-and-communication-equipment-workers-all-other",
-            occupation_name:
-                "Media and communication equipment workers, all other",
-            year: "2017",
-            number_workers: "5",
-            median_weekly_earnings: "-",
-            men_number_workers: "3",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "healthcare-practitioners-and-technical-occupations",
@@ -2132,54 +816,6 @@ const GapAPI = {
             women_number_workers: "5246",
             women_median_weekly_earnings: "1068",
             cents_to_dollar: "80"
-        },
-        {
-            slug: "chiropractors",
-            occupation_name: "Chiropractors",
-            year: "2017",
-            number_workers: "11",
-            median_weekly_earnings: "-",
-            men_number_workers: "9",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "dentists",
-            occupation_name: "Dentists",
-            year: "2017",
-            number_workers: "41",
-            median_weekly_earnings: "-",
-            men_number_workers: "16",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "25",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "dietitians-and-nutritionists",
-            occupation_name: "Dietitians and nutritionists",
-            year: "2017",
-            number_workers: "88",
-            median_weekly_earnings: "991",
-            men_number_workers: "8",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "80",
-            women_median_weekly_earnings: "996",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "optometrists",
-            occupation_name: "Optometrists",
-            year: "2017",
-            number_workers: "19",
-            median_weekly_earnings: "-",
-            men_number_workers: "6",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "13",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "pharmacists",
@@ -2206,54 +842,6 @@ const GapAPI = {
             cents_to_dollar: "77"
         },
         {
-            slug: "physician-assistants",
-            occupation_name: "Physician assistants",
-            year: "2017",
-            number_workers: "97",
-            median_weekly_earnings: "1747",
-            men_number_workers: "31",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "66",
-            women_median_weekly_earnings: "1640",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "podiatrists",
-            occupation_name: "Podiatrists",
-            year: "2017",
-            number_workers: "7",
-            median_weekly_earnings: "-",
-            men_number_workers: "3",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "audiologists",
-            occupation_name: "Audiologists",
-            year: "2017",
-            number_workers: "13",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "12",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "occupational-therapists",
-            occupation_name: "Occupational therapists",
-            year: "2017",
-            number_workers: "74",
-            median_weekly_earnings: "1301",
-            men_number_workers: "12",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "62",
-            women_median_weekly_earnings: "1273",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "physical-therapists",
             occupation_name: "Physical therapists",
             year: "2017",
@@ -2264,90 +852,6 @@ const GapAPI = {
             women_number_workers: "118",
             women_median_weekly_earnings: "1297",
             cents_to_dollar: "97"
-        },
-        {
-            slug: "radiation-therapists",
-            occupation_name: "Radiation therapists",
-            year: "2017",
-            number_workers: "11",
-            median_weekly_earnings: "-",
-            men_number_workers: "3",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "8",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "recreational-therapists",
-            occupation_name: "Recreational therapists",
-            year: "2017",
-            number_workers: "5",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "respiratory-therapists",
-            occupation_name: "Respiratory therapists",
-            year: "2017",
-            number_workers: "83",
-            median_weekly_earnings: "961",
-            men_number_workers: "27",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "56",
-            women_median_weekly_earnings: "904",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "speech-language-pathologists",
-            occupation_name: "Speech-language pathologists",
-            year: "2017",
-            number_workers: "106",
-            median_weekly_earnings: "1213",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "102",
-            women_median_weekly_earnings: "1214",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "exercise-physiologists",
-            occupation_name: "Exercise physiologists",
-            year: "2017",
-            number_workers: "5",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "therapists-all-other",
-            occupation_name: "Therapists, all other",
-            year: "2017",
-            number_workers: "142",
-            median_weekly_earnings: "983",
-            men_number_workers: "29",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "114",
-            women_median_weekly_earnings: "947",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "veterinarians",
-            occupation_name: "Veterinarians",
-            year: "2017",
-            number_workers: "60",
-            median_weekly_earnings: "1840",
-            men_number_workers: "20",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "40",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "registered-nurses",
@@ -2362,55 +866,6 @@ const GapAPI = {
             cents_to_dollar: "91"
         },
         {
-            slug: "nurse-anesthetists",
-            occupation_name: "Nurse anesthetists",
-            year: "2017",
-            number_workers: "30",
-            median_weekly_earnings: "-",
-            men_number_workers: "13",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "17",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "nurse-midwives",
-            occupation_name: "Nurse midwives",
-            year: "2017",
-            number_workers: "5",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "nurse-practitioners",
-            occupation_name: "Nurse practitioners",
-            year: "2017",
-            number_workers: "141",
-            median_weekly_earnings: "1841",
-            men_number_workers: "12",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "129",
-            women_median_weekly_earnings: "1832",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "health-diagnosing-and-treating-practitioners-all-other",
-            occupation_name:
-                "Health diagnosing and treating practitioners, all other",
-            year: "2017",
-            number_workers: "15",
-            median_weekly_earnings: "-",
-            men_number_workers: "3",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "12",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "clinical-laboratory-technologists-and-technicians",
             occupation_name:
                 "Clinical laboratory technologists and technicians",
@@ -2422,18 +877,6 @@ const GapAPI = {
             women_number_workers: "203",
             women_median_weekly_earnings: "845",
             cents_to_dollar: "80"
-        },
-        {
-            slug: "dental-hygienists",
-            occupation_name: "Dental hygienists",
-            year: "2017",
-            number_workers: "78",
-            median_weekly_earnings: "1033",
-            men_number_workers: "5",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "73",
-            women_median_weekly_earnings: "1028",
-            cents_to_dollar: "-1"
         },
         {
             slug: "diagnostic-related-technologists-and-technicians",
@@ -2473,70 +916,6 @@ const GapAPI = {
             cents_to_dollar: "79"
         },
         {
-            slug: "licensed-practical-and-licensed-vocational-nurses",
-            occupation_name:
-                "Licensed practical and licensed vocational nurses",
-            year: "2017",
-            number_workers: "501",
-            median_weekly_earnings: "815",
-            men_number_workers: "62",
-            men_median_weekly_earnings: "817",
-            women_number_workers: "438",
-            women_median_weekly_earnings: "814",
-            cents_to_dollar: "100"
-        },
-        {
-            slug: "medical-records-and-health-information-technicians",
-            occupation_name:
-                "Medical records and health information technicians",
-            year: "2017",
-            number_workers: "151",
-            median_weekly_earnings: "763",
-            men_number_workers: "11",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "140",
-            women_median_weekly_earnings: "761",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "opticians-dispensing",
-            occupation_name: "Opticians, dispensing",
-            year: "2017",
-            number_workers: "43",
-            median_weekly_earnings: "-",
-            men_number_workers: "13",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "30",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "miscellaneous-health-technologists-and-technicians",
-            occupation_name:
-                "Miscellaneous health technologists and technicians",
-            year: "2017",
-            number_workers: "143",
-            median_weekly_earnings: "811",
-            men_number_workers: "48",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "95",
-            women_median_weekly_earnings: "746",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "other-healthcare-practitioners-and-technical-occupations",
-            occupation_name:
-                "Other healthcare practitioners and technical occupations",
-            year: "2017",
-            number_workers: "77",
-            median_weekly_earnings: "1183",
-            men_number_workers: "49",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "28",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "service-occupations",
             occupation_name: "Service occupations",
             year: "2017",
@@ -2573,129 +952,6 @@ const GapAPI = {
             cents_to_dollar: "85"
         },
         {
-            slug: "occupational-therapy-assistants-and-aides",
-            occupation_name: "Occupational therapy assistants and aides",
-            year: "2017",
-            number_workers: "13",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "11",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "physical-therapist-assistants-and-aides",
-            occupation_name: "Physical therapist assistants and aides",
-            year: "2017",
-            number_workers: "47",
-            median_weekly_earnings: "-",
-            men_number_workers: "15",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "33",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "massage-therapists",
-            occupation_name: "Massage therapists",
-            year: "2017",
-            number_workers: "51",
-            median_weekly_earnings: "632",
-            men_number_workers: "15",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "36",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "dental-assistants",
-            occupation_name: "Dental assistants",
-            year: "2017",
-            number_workers: "215",
-            median_weekly_earnings: "608",
-            men_number_workers: "12",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "203",
-            women_median_weekly_earnings: "602",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "medical-assistants",
-            occupation_name: "Medical assistants",
-            year: "2017",
-            number_workers: "457",
-            median_weekly_earnings: "594",
-            men_number_workers: "39",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "418",
-            women_median_weekly_earnings: "597",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "medical-transcriptionists",
-            occupation_name: "Medical transcriptionists",
-            year: "2017",
-            number_workers: "21",
-            median_weekly_earnings: "-",
-            men_number_workers: "3",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "18",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "pharmacy-aides",
-            occupation_name: "Pharmacy aides",
-            year: "2017",
-            number_workers: "25",
-            median_weekly_earnings: "-",
-            men_number_workers: "11",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "14",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "veterinary-assistants-and-laboratory-animal-caretakers",
-            occupation_name:
-                "Veterinary assistants and laboratory animal caretakers",
-            year: "2017",
-            number_workers: "37",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "33",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "phlebotomists",
-            occupation_name: "Phlebotomists",
-            year: "2017",
-            number_workers: "97",
-            median_weekly_earnings: "635",
-            men_number_workers: "16",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "82",
-            women_median_weekly_earnings: "639",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "miscellaneous-healthcare-support-occupations-including-medical-equipment-preparers",
-            occupation_name:
-                "Miscellaneous healthcare support occupations, including medical equipment preparers",
-            year: "2017",
-            number_workers: "150",
-            median_weekly_earnings: "587",
-            men_number_workers: "40",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "110",
-            women_median_weekly_earnings: "603",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "protective-service-occupations",
             occupation_name: "Protective service occupations",
             year: "2017",
@@ -2706,82 +962,6 @@ const GapAPI = {
             women_number_workers: "535",
             women_median_weekly_earnings: "690",
             cents_to_dollar: "77"
-        },
-        {
-            slug: "first-line-supervisors-of-correctional-officers",
-            occupation_name: "First-line supervisors of correctional officers",
-            year: "2017",
-            number_workers: "50",
-            median_weekly_earnings: "899",
-            men_number_workers: "38",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "12",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "first-line-supervisors-of-police-and-detectives",
-            occupation_name: "First-line supervisors of police and detectives",
-            year: "2017",
-            number_workers: "94",
-            median_weekly_earnings: "1348",
-            men_number_workers: "81",
-            men_median_weekly_earnings: "1347",
-            women_number_workers: "13",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "first-line-supervisors-of-fire-fighting-and-prevention-workers",
-            occupation_name:
-                "First-line supervisors of fire fighting and prevention workers",
-            year: "2017",
-            number_workers: "43",
-            median_weekly_earnings: "-",
-            men_number_workers: "42",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "first-line-supervisors-of-protective-service-workers-all-other",
-            occupation_name:
-                "First-line supervisors of protective service workers, all other",
-            year: "2017",
-            number_workers: "69",
-            median_weekly_earnings: "953",
-            men_number_workers: "58",
-            men_median_weekly_earnings: "938",
-            women_number_workers: "11",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "firefighters",
-            occupation_name: "Firefighters",
-            year: "2017",
-            number_workers: "272",
-            median_weekly_earnings: "1123",
-            men_number_workers: "264",
-            men_median_weekly_earnings: "1136",
-            women_number_workers: "8",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "fire-inspectors",
-            occupation_name: "Fire inspectors",
-            year: "2017",
-            number_workers: "22",
-            median_weekly_earnings: "-",
-            men_number_workers: "22",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "bailiffs-correctional-officers-and-jailers",
@@ -2796,42 +976,6 @@ const GapAPI = {
             cents_to_dollar: "81"
         },
         {
-            slug: "detectives-and-criminal-investigators",
-            occupation_name: "Detectives and criminal investigators",
-            year: "2017",
-            number_workers: "142",
-            median_weekly_earnings: "1256",
-            men_number_workers: "110",
-            men_median_weekly_earnings: "1291",
-            women_number_workers: "32",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "fish-and-game-wardens",
-            occupation_name: "Fish and game wardens",
-            year: "2017",
-            number_workers: "5",
-            median_weekly_earnings: "-",
-            men_number_workers: "5",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "parking-enforcement-workers",
-            occupation_name: "Parking enforcement workers",
-            year: "2017",
-            number_workers: "4",
-            median_weekly_earnings: "-",
-            men_number_workers: "2",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "police-and-sheriffs-patrol-officers",
             occupation_name: "Police and sheriff's patrol officers",
             year: "2017",
@@ -2844,42 +988,6 @@ const GapAPI = {
             cents_to_dollar: "96"
         },
         {
-            slug: "transit-and-railroad-police",
-            occupation_name: "Transit and railroad police",
-            year: "2017",
-            number_workers: "6",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "animal-control-workers",
-            occupation_name: "Animal control workers",
-            year: "2017",
-            number_workers: "12",
-            median_weekly_earnings: "-",
-            men_number_workers: "8",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "private-detectives-and-investigators",
-            occupation_name: "Private detectives and investigators",
-            year: "2017",
-            number_workers: "86",
-            median_weekly_earnings: "963",
-            men_number_workers: "42",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "44",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "security-guards-and-gaming-surveillance-officers",
             occupation_name: "Security guards and gaming surveillance officers",
             year: "2017",
@@ -2890,44 +998,6 @@ const GapAPI = {
             women_number_workers: "170",
             women_median_weekly_earnings: "548",
             cents_to_dollar: "89"
-        },
-        {
-            slug: "crossing-guards",
-            occupation_name: "Crossing guards",
-            year: "2017",
-            number_workers: "23",
-            median_weekly_earnings: "-",
-            men_number_workers: "17",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "6",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "transportation-security-screeners",
-            occupation_name: "Transportation security screeners",
-            year: "2017",
-            number_workers: "43",
-            median_weekly_earnings: "-",
-            men_number_workers: "32",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "11",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "lifeguards-and-other-recreational-and-all-other-protective-service-workers",
-            occupation_name:
-                "Lifeguards and other recreational, and all other protective service workers",
-            year: "2017",
-            number_workers: "49",
-            median_weekly_earnings: "-",
-            men_number_workers: "30",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "19",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "food-preparation-and-serving-related-occupations",
@@ -3018,20 +1088,6 @@ const GapAPI = {
             cents_to_dollar: "97"
         },
         {
-            slug:
-                "counter-attendants-cafeteria-food-concession-and-coffee-shop",
-            occupation_name:
-                "Counter attendants, cafeteria, food concession, and coffee shop",
-            year: "2017",
-            number_workers: "65",
-            median_weekly_earnings: "460",
-            men_number_workers: "29",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "36",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "waiters-and-waitresses",
             occupation_name: "Waiters and waitresses",
             year: "2017",
@@ -3042,69 +1098,6 @@ const GapAPI = {
             women_number_workers: "592",
             women_median_weekly_earnings: "475",
             cents_to_dollar: "89"
-        },
-        {
-            slug: "food-servers-nonrestaurant",
-            occupation_name: "Food servers, nonrestaurant",
-            year: "2017",
-            number_workers: "88",
-            median_weekly_earnings: "473",
-            men_number_workers: "28",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "59",
-            women_median_weekly_earnings: "468",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "dining-room-and-cafeteria-attendants-and-bartender-helpers",
-            occupation_name:
-                "Dining room and cafeteria attendants and bartender helpers",
-            year: "2017",
-            number_workers: "134",
-            median_weekly_earnings: "458",
-            men_number_workers: "79",
-            men_median_weekly_earnings: "444",
-            women_number_workers: "55",
-            women_median_weekly_earnings: "481",
-            cents_to_dollar: "108"
-        },
-        {
-            slug: "dishwashers",
-            occupation_name: "Dishwashers",
-            year: "2017",
-            number_workers: "131",
-            median_weekly_earnings: "401",
-            men_number_workers: "111",
-            men_median_weekly_earnings: "408",
-            women_number_workers: "19",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "hosts-and-hostesses-restaurant-lounge-and-coffee-shop",
-            occupation_name:
-                "Hosts and hostesses, restaurant, lounge, and coffee shop",
-            year: "2017",
-            number_workers: "67",
-            median_weekly_earnings: "401",
-            men_number_workers: "9",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "58",
-            women_median_weekly_earnings: "400",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "food-preparation-and-serving-related-workers-all-other",
-            occupation_name:
-                "Food preparation and serving related workers, all other",
-            year: "2017",
-            number_workers: "1",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "building-and-grounds-cleaning-and-maintenance-occupations",
@@ -3134,20 +1127,6 @@ const GapAPI = {
             cents_to_dollar: "69"
         },
         {
-            slug:
-                "first-line-supervisors-of-landscaping-lawn-service-and-groundskeeping-workers",
-            occupation_name:
-                "First-line supervisors of landscaping, lawn service, and groundskeeping workers",
-            year: "2017",
-            number_workers: "111",
-            median_weekly_earnings: "723",
-            men_number_workers: "102",
-            men_median_weekly_earnings: "760",
-            women_number_workers: "9",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "janitors-and-building-cleaners",
             occupation_name: "Janitors and building cleaners",
             year: "2017",
@@ -3170,30 +1149,6 @@ const GapAPI = {
             women_number_workers: "687",
             women_median_weekly_earnings: "439",
             cents_to_dollar: "86"
-        },
-        {
-            slug: "pest-control-workers",
-            occupation_name: "Pest control workers",
-            year: "2017",
-            number_workers: "94",
-            median_weekly_earnings: "616",
-            men_number_workers: "89",
-            men_median_weekly_earnings: "617",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "grounds-maintenance-workers",
-            occupation_name: "Grounds maintenance workers",
-            year: "2017",
-            number_workers: "837",
-            median_weekly_earnings: "525",
-            men_number_workers: "805",
-            men_median_weekly_earnings: "526",
-            women_number_workers: "31",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "personal-care-and-service-occupations",
@@ -3220,188 +1175,6 @@ const GapAPI = {
             cents_to_dollar: "91"
         },
         {
-            slug: "first-line-supervisors-of-personal-service-workers",
-            occupation_name:
-                "First-line supervisors of personal service workers",
-            year: "2017",
-            number_workers: "76",
-            median_weekly_earnings: "619",
-            men_number_workers: "31",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "45",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "animal-trainers",
-            occupation_name: "Animal trainers",
-            year: "2017",
-            number_workers: "23",
-            median_weekly_earnings: "-",
-            men_number_workers: "16",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "7",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "nonfarm-animal-caretakers",
-            occupation_name: "Nonfarm animal caretakers",
-            year: "2017",
-            number_workers: "99",
-            median_weekly_earnings: "506",
-            men_number_workers: "21",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "78",
-            women_median_weekly_earnings: "504",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "gaming-services-workers",
-            occupation_name: "Gaming services workers",
-            year: "2017",
-            number_workers: "66",
-            median_weekly_earnings: "692",
-            men_number_workers: "37",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "28",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "motion-picture-projectionists",
-            occupation_name: "Motion picture projectionists",
-            year: "2017",
-            number_workers: "0",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "ushers-lobby-attendants-and-ticket-takers",
-            occupation_name: "Ushers, lobby attendants, and ticket takers",
-            year: "2017",
-            number_workers: "8",
-            median_weekly_earnings: "-",
-            men_number_workers: "6",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "miscellaneous-entertainment-attendants-and-related-workers",
-            occupation_name:
-                "Miscellaneous entertainment attendants and related workers",
-            year: "2017",
-            number_workers: "74",
-            median_weekly_earnings: "517",
-            men_number_workers: "39",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "36",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "embalmers-and-funeral-attendants",
-            occupation_name: "Embalmers and funeral attendants",
-            year: "2017",
-            number_workers: "15",
-            median_weekly_earnings: "-",
-            men_number_workers: "8",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "7",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "morticians-undertakers-and-funeral-directors",
-            occupation_name: "Morticians, undertakers, and funeral directors",
-            year: "2017",
-            number_workers: "22",
-            median_weekly_earnings: "-",
-            men_number_workers: "19",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "barbers",
-            occupation_name: "Barbers",
-            year: "2017",
-            number_workers: "54",
-            median_weekly_earnings: "590",
-            men_number_workers: "47",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "8",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "hairdressers-hairstylists-and-cosmetologists",
-            occupation_name: "Hairdressers, hairstylists, and cosmetologists",
-            year: "2017",
-            number_workers: "324",
-            median_weekly_earnings: "528",
-            men_number_workers: "22",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "302",
-            women_median_weekly_earnings: "521",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "miscellaneous-personal-appearance-workers",
-            occupation_name: "Miscellaneous personal appearance workers",
-            year: "2017",
-            number_workers: "235",
-            median_weekly_earnings: "567",
-            men_number_workers: "48",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "187",
-            women_median_weekly_earnings: "538",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "baggage-porters-bellhops-and-concierges",
-            occupation_name: "Baggage porters, bellhops, and concierges",
-            year: "2017",
-            number_workers: "70",
-            median_weekly_earnings: "547",
-            men_number_workers: "56",
-            men_median_weekly_earnings: "543",
-            women_number_workers: "14",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "tour-and-travel-guides",
-            occupation_name: "Tour and travel guides",
-            year: "2017",
-            number_workers: "21",
-            median_weekly_earnings: "-",
-            men_number_workers: "14",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "6",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "childcare-workers",
-            occupation_name: "Childcare workers",
-            year: "2017",
-            number_workers: "448",
-            median_weekly_earnings: "482",
-            men_number_workers: "35",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "413",
-            women_median_weekly_earnings: "474",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "personal-care-aides",
             occupation_name: "Personal care aides",
             year: "2017",
@@ -3424,30 +1197,6 @@ const GapAPI = {
             women_number_workers: "118",
             women_median_weekly_earnings: "565",
             cents_to_dollar: "78"
-        },
-        {
-            slug: "residential-advisors",
-            occupation_name: "Residential advisors",
-            year: "2017",
-            number_workers: "27",
-            median_weekly_earnings: "-",
-            men_number_workers: "10",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "17",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "personal-care-and-service-workers-all-other",
-            occupation_name: "Personal care and service workers, all other",
-            year: "2017",
-            number_workers: "76",
-            median_weekly_earnings: "570",
-            men_number_workers: "37",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "40",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "sales-and-office-occupations",
@@ -3511,30 +1260,6 @@ const GapAPI = {
             cents_to_dollar: "86"
         },
         {
-            slug: "counter-and-rental-clerks",
-            occupation_name: "Counter and rental clerks",
-            year: "2017",
-            number_workers: "78",
-            median_weekly_earnings: "607",
-            men_number_workers: "48",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "31",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "parts-salespersons",
-            occupation_name: "Parts salespersons",
-            year: "2017",
-            number_workers: "115",
-            median_weekly_earnings: "786",
-            men_number_workers: "108",
-            men_median_weekly_earnings: "800",
-            women_number_workers: "7",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "retail-salespersons",
             occupation_name: "Retail salespersons",
             year: "2017",
@@ -3584,18 +1309,6 @@ const GapAPI = {
             cents_to_dollar: "64"
         },
         {
-            slug: "travel-agents",
-            occupation_name: "Travel agents",
-            year: "2017",
-            number_workers: "57",
-            median_weekly_earnings: "665",
-            men_number_workers: "10",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "47",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "sales-representatives-services-all-other",
             occupation_name: "Sales representatives, services, all other",
             year: "2017",
@@ -3621,18 +1334,6 @@ const GapAPI = {
             cents_to_dollar: "78"
         },
         {
-            slug: "models-demonstrators-and-product-promoters",
-            occupation_name: "Models, demonstrators, and product promoters",
-            year: "2017",
-            number_workers: "16",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "12",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "real-estate-brokers-and-sales-agents",
             occupation_name: "Real estate brokers and sales agents",
             year: "2017",
@@ -3643,44 +1344,6 @@ const GapAPI = {
             women_number_workers: "269",
             women_median_weekly_earnings: "818",
             cents_to_dollar: "71"
-        },
-        {
-            slug: "sales-engineers",
-            occupation_name: "Sales engineers",
-            year: "2017",
-            number_workers: "39",
-            median_weekly_earnings: "-",
-            men_number_workers: "36",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "telemarketers",
-            occupation_name: "Telemarketers",
-            year: "2017",
-            number_workers: "37",
-            median_weekly_earnings: "-",
-            men_number_workers: "11",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "27",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "door-to-door-sales-workers-news-and-street-vendors-and-related-workers",
-            occupation_name:
-                "Door-to-door sales workers, news and street vendors, and related workers",
-            year: "2017",
-            number_workers: "41",
-            median_weekly_earnings: "-",
-            men_number_workers: "27",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "15",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "sales-and-related-workers-all-other",
@@ -3721,55 +1384,6 @@ const GapAPI = {
             cents_to_dollar: "83"
         },
         {
-            slug: "switchboard-operators-including-answering-service",
-            occupation_name:
-                "Switchboard operators, including answering service",
-            year: "2017",
-            number_workers: "16",
-            median_weekly_earnings: "-",
-            men_number_workers: "3",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "12",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "telephone-operators",
-            occupation_name: "Telephone operators",
-            year: "2017",
-            number_workers: "35",
-            median_weekly_earnings: "-",
-            men_number_workers: "9",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "27",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "communications-equipment-operators-all-other",
-            occupation_name: "Communications equipment operators, all other",
-            year: "2017",
-            number_workers: "5",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "bill-and-account-collectors",
-            occupation_name: "Bill and account collectors",
-            year: "2017",
-            number_workers: "130",
-            median_weekly_earnings: "674",
-            men_number_workers: "38",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "92",
-            women_median_weekly_earnings: "655",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "billing-and-posting-clerks",
             occupation_name: "Billing and posting clerks",
             year: "2017",
@@ -3794,114 +1408,6 @@ const GapAPI = {
             cents_to_dollar: "96"
         },
         {
-            slug: "gaming-cage-workers",
-            occupation_name: "Gaming cage workers",
-            year: "2017",
-            number_workers: "11",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "11",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "payroll-and-timekeeping-clerks",
-            occupation_name: "Payroll and timekeeping clerks",
-            year: "2017",
-            number_workers: "103",
-            median_weekly_earnings: "765",
-            men_number_workers: "13",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "89",
-            women_median_weekly_earnings: "767",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "procurement-clerks",
-            occupation_name: "Procurement clerks",
-            year: "2017",
-            number_workers: "29",
-            median_weekly_earnings: "-",
-            men_number_workers: "14",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "15",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "tellers",
-            occupation_name: "Tellers",
-            year: "2017",
-            number_workers: "209",
-            median_weekly_earnings: "572",
-            men_number_workers: "25",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "184",
-            women_median_weekly_earnings: "562",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "financial-clerks-all-other",
-            occupation_name: "Financial clerks, all other",
-            year: "2017",
-            number_workers: "74",
-            median_weekly_earnings: "902",
-            men_number_workers: "26",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "48",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "brokerage-clerks",
-            occupation_name: "Brokerage clerks",
-            year: "2017",
-            number_workers: "5",
-            median_weekly_earnings: "-",
-            men_number_workers: "2",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "correspondence-clerks",
-            occupation_name: "Correspondence clerks",
-            year: "2017",
-            number_workers: "6",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "court-municipal-and-license-clerks",
-            occupation_name: "Court, municipal, and license clerks",
-            year: "2017",
-            number_workers: "79",
-            median_weekly_earnings: "738",
-            men_number_workers: "17",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "62",
-            women_median_weekly_earnings: "718",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "credit-authorizers-checkers-and-clerks",
-            occupation_name: "Credit authorizers, checkers, and clerks",
-            year: "2017",
-            number_workers: "50",
-            median_weekly_earnings: "807",
-            men_number_workers: "20",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "31",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "customer-service-representatives",
             occupation_name: "Customer service representatives",
             year: "2017",
@@ -3912,115 +1418,6 @@ const GapAPI = {
             women_number_workers: "1234",
             women_median_weekly_earnings: "637",
             cents_to_dollar: "89"
-        },
-        {
-            slug: "eligibility-interviewers-government-programs",
-            occupation_name: "Eligibility interviewers, government programs",
-            year: "2017",
-            number_workers: "66",
-            median_weekly_earnings: "849",
-            men_number_workers: "16",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "50",
-            women_median_weekly_earnings: "779",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "file-clerks",
-            occupation_name: "File clerks",
-            year: "2017",
-            number_workers: "135",
-            median_weekly_earnings: "704",
-            men_number_workers: "26",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "109",
-            women_median_weekly_earnings: "706",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "hotel-motel-and-resort-desk-clerks",
-            occupation_name: "Hotel, motel, and resort desk clerks",
-            year: "2017",
-            number_workers: "84",
-            median_weekly_earnings: "486",
-            men_number_workers: "35",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "49",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "interviewers-except-eligibility-and-loan",
-            occupation_name: "Interviewers, except eligibility and loan",
-            year: "2017",
-            number_workers: "106",
-            median_weekly_earnings: "671",
-            men_number_workers: "16",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "89",
-            women_median_weekly_earnings: "683",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "library-assistants-clerical",
-            occupation_name: "Library assistants, clerical",
-            year: "2017",
-            number_workers: "45",
-            median_weekly_earnings: "-",
-            men_number_workers: "8",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "37",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "loan-interviewers-and-clerks",
-            occupation_name: "Loan interviewers and clerks",
-            year: "2017",
-            number_workers: "114",
-            median_weekly_earnings: "742",
-            men_number_workers: "19",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "95",
-            women_median_weekly_earnings: "725",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "new-accounts-clerks",
-            occupation_name: "New accounts clerks",
-            year: "2017",
-            number_workers: "36",
-            median_weekly_earnings: "-",
-            men_number_workers: "8",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "28",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "order-clerks",
-            occupation_name: "Order clerks",
-            year: "2017",
-            number_workers: "80",
-            median_weekly_earnings: "629",
-            men_number_workers: "38",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "42",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "human-resources-assistants-except-payroll-and-timekeeping",
-            occupation_name:
-                "Human resources assistants, except payroll and timekeeping",
-            year: "2017",
-            number_workers: "45",
-            median_weekly_earnings: "-",
-            men_number_workers: "8",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "37",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "receptionists-and-information-clerks",
@@ -4035,56 +1432,6 @@ const GapAPI = {
             cents_to_dollar: "92"
         },
         {
-            slug:
-                "reservation-and-transportation-ticket-agents-and-travel-clerks",
-            occupation_name:
-                "Reservation and transportation ticket agents and travel clerks",
-            year: "2017",
-            number_workers: "99",
-            median_weekly_earnings: "739",
-            men_number_workers: "43",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "56",
-            women_median_weekly_earnings: "691",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "information-and-record-clerks-all-other",
-            occupation_name: "Information and record clerks, all other",
-            year: "2017",
-            number_workers: "92",
-            median_weekly_earnings: "691",
-            men_number_workers: "19",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "74",
-            women_median_weekly_earnings: "683",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "cargo-and-freight-agents",
-            occupation_name: "Cargo and freight agents",
-            year: "2017",
-            number_workers: "14",
-            median_weekly_earnings: "-",
-            men_number_workers: "10",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "couriers-and-messengers",
-            occupation_name: "Couriers and messengers",
-            year: "2017",
-            number_workers: "155",
-            median_weekly_earnings: "725",
-            men_number_workers: "131",
-            men_median_weekly_earnings: "751",
-            women_number_workers: "24",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "dispatchers",
             occupation_name: "Dispatchers",
             year: "2017",
@@ -4097,30 +1444,6 @@ const GapAPI = {
             cents_to_dollar: "92"
         },
         {
-            slug: "meter-readers-utilities",
-            occupation_name: "Meter readers, utilities",
-            year: "2017",
-            number_workers: "14",
-            median_weekly_earnings: "-",
-            men_number_workers: "12",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "postal-service-clerks",
-            occupation_name: "Postal service clerks",
-            year: "2017",
-            number_workers: "104",
-            median_weekly_earnings: "940",
-            men_number_workers: "48",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "56",
-            women_median_weekly_earnings: "925",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "postal-service-mail-carriers",
             occupation_name: "Postal service mail carriers",
             year: "2017",
@@ -4131,20 +1454,6 @@ const GapAPI = {
             women_number_workers: "108",
             women_median_weekly_earnings: "856",
             cents_to_dollar: "89"
-        },
-        {
-            slug:
-                "postal-service-mail-sorters-processors-and-processing-machine-operators",
-            occupation_name:
-                "Postal service mail sorters, processors, and processing machine operators",
-            year: "2017",
-            number_workers: "49",
-            median_weekly_earnings: "-",
-            men_number_workers: "26",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "23",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "production-planning-and-expediting-clerks",
@@ -4183,19 +1492,6 @@ const GapAPI = {
             cents_to_dollar: "94"
         },
         {
-            slug: "weighers-measurers-checkers-and-samplers-recordkeeping",
-            occupation_name:
-                "Weighers, measurers, checkers, and samplers, recordkeeping",
-            year: "2017",
-            number_workers: "43",
-            median_weekly_earnings: "-",
-            men_number_workers: "22",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "21",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "secretaries-and-administrative-assistants",
             occupation_name: "Secretaries and administrative assistants",
             year: "2017",
@@ -4208,80 +1504,6 @@ const GapAPI = {
             cents_to_dollar: "86"
         },
         {
-            slug: "computer-operators",
-            occupation_name: "Computer operators",
-            year: "2017",
-            number_workers: "63",
-            median_weekly_earnings: "809",
-            men_number_workers: "27",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "35",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "data-entry-keyers",
-            occupation_name: "Data entry keyers",
-            year: "2017",
-            number_workers: "224",
-            median_weekly_earnings: "650",
-            men_number_workers: "48",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "176",
-            women_median_weekly_earnings: "640",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "word-processors-and-typists",
-            occupation_name: "Word processors and typists",
-            year: "2017",
-            number_workers: "80",
-            median_weekly_earnings: "683",
-            men_number_workers: "8",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "72",
-            women_median_weekly_earnings: "667",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "desktop-publishers",
-            occupation_name: "Desktop publishers",
-            year: "2017",
-            number_workers: "1",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "insurance-claims-and-policy-processing-clerks",
-            occupation_name: "Insurance claims and policy processing clerks",
-            year: "2017",
-            number_workers: "223",
-            median_weekly_earnings: "714",
-            men_number_workers: "34",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "189",
-            women_median_weekly_earnings: "711",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "mail-clerks-and-mail-machine-operators-except-postal-service",
-            occupation_name:
-                "Mail clerks and mail machine operators, except postal service",
-            year: "2017",
-            number_workers: "46",
-            median_weekly_earnings: "-",
-            men_number_workers: "30",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "16",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "office-clerks-general",
             occupation_name: "Office clerks, general",
             year: "2017",
@@ -4292,42 +1514,6 @@ const GapAPI = {
             women_number_workers: "793",
             women_median_weekly_earnings: "670",
             cents_to_dollar: "86"
-        },
-        {
-            slug: "office-machine-operators-except-computer",
-            occupation_name: "Office machine operators, except computer",
-            year: "2017",
-            number_workers: "27",
-            median_weekly_earnings: "-",
-            men_number_workers: "10",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "17",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "proofreaders-and-copy-markers",
-            occupation_name: "Proofreaders and copy markers",
-            year: "2017",
-            number_workers: "6",
-            median_weekly_earnings: "-",
-            men_number_workers: "2",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "statistical-assistants",
-            occupation_name: "Statistical assistants",
-            year: "2017",
-            number_workers: "17",
-            median_weekly_earnings: "-",
-            men_number_workers: "7",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "10",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "office-and-administrative-support-workers-all-other",
@@ -4368,56 +1554,6 @@ const GapAPI = {
             cents_to_dollar: "81"
         },
         {
-            slug:
-                "first-line-supervisors-of-farming-fishing-and-forestry-workers",
-            occupation_name:
-                "First-line supervisors of farming, fishing, and forestry workers",
-            year: "2017",
-            number_workers: "51",
-            median_weekly_earnings: "711",
-            men_number_workers: "47",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "agricultural-inspectors",
-            occupation_name: "Agricultural inspectors",
-            year: "2017",
-            number_workers: "14",
-            median_weekly_earnings: "-",
-            men_number_workers: "10",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "animal-breeders",
-            occupation_name: "Animal breeders",
-            year: "2017",
-            number_workers: "3",
-            median_weekly_earnings: "-",
-            men_number_workers: "3",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "graders-and-sorters-agricultural-products",
-            occupation_name: "Graders and sorters, agricultural products",
-            year: "2017",
-            number_workers: "99",
-            median_weekly_earnings: "500",
-            men_number_workers: "32",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "67",
-            women_median_weekly_earnings: "487",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "miscellaneous-agricultural-workers",
             occupation_name: "Miscellaneous agricultural workers",
             year: "2017",
@@ -4428,558 +1564,6 @@ const GapAPI = {
             women_number_workers: "127",
             women_median_weekly_earnings: "453",
             cents_to_dollar: "82"
-        },
-        {
-            slug: "fishers-and-related-fishing-workers",
-            occupation_name: "Fishers and related fishing workers",
-            year: "2017",
-            number_workers: "21",
-            median_weekly_earnings: "-",
-            men_number_workers: "21",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "hunters-and-trappers",
-            occupation_name: "Hunters and trappers",
-            year: "2017",
-            number_workers: "2",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "forest-and-conservation-workers",
-            occupation_name: "Forest and conservation workers",
-            year: "2017",
-            number_workers: "25",
-            median_weekly_earnings: "-",
-            men_number_workers: "23",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "logging-workers",
-            occupation_name: "Logging workers",
-            year: "2017",
-            number_workers: "47",
-            median_weekly_earnings: "-",
-            men_number_workers: "46",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "construction-and-extraction-occupations",
-            occupation_name: "Construction and extraction occupations",
-            year: "2017",
-            number_workers: "6147",
-            median_weekly_earnings: "796",
-            men_number_workers: "5987",
-            men_median_weekly_earnings: "796",
-            women_number_workers: "160",
-            women_median_weekly_earnings: "802",
-            cents_to_dollar: "101"
-        },
-        {
-            slug:
-                "first-line-supervisors-of-construction-trades-and-extraction-workers",
-            occupation_name:
-                "First-line supervisors of construction trades and extraction workers",
-            year: "2017",
-            number_workers: "520",
-            median_weekly_earnings: "1158",
-            men_number_workers: "506",
-            men_median_weekly_earnings: "1166",
-            women_number_workers: "14",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "boilermakers",
-            occupation_name: "Boilermakers",
-            year: "2017",
-            number_workers: "15",
-            median_weekly_earnings: "-",
-            men_number_workers: "15",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "brickmasons-blockmasons-and-stonemasons",
-            occupation_name: "Brickmasons, blockmasons, and stonemasons",
-            year: "2017",
-            number_workers: "121",
-            median_weekly_earnings: "787",
-            men_number_workers: "121",
-            men_median_weekly_earnings: "787",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "carpenters",
-            occupation_name: "Carpenters",
-            year: "2017",
-            number_workers: "870",
-            median_weekly_earnings: "789",
-            men_number_workers: "851",
-            men_median_weekly_earnings: "789",
-            women_number_workers: "19",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "carpet-floor-and-tile-installers-and-finishers",
-            occupation_name: "Carpet, floor, and tile installers and finishers",
-            year: "2017",
-            number_workers: "115",
-            median_weekly_earnings: "631",
-            men_number_workers: "114",
-            men_median_weekly_earnings: "628",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "cement-masons-concrete-finishers-and-terrazzo-workers",
-            occupation_name:
-                "Cement masons, concrete finishers, and terrazzo workers",
-            year: "2017",
-            number_workers: "47",
-            median_weekly_earnings: "-",
-            men_number_workers: "45",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "construction-laborers",
-            occupation_name: "Construction laborers",
-            year: "2017",
-            number_workers: "1443",
-            median_weekly_earnings: "670",
-            men_number_workers: "1400",
-            men_median_weekly_earnings: "667",
-            women_number_workers: "43",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "paving-surfacing-and-tamping-equipment-operators",
-            occupation_name:
-                "Paving, surfacing, and tamping equipment operators",
-            year: "2017",
-            number_workers: "12",
-            median_weekly_earnings: "-",
-            men_number_workers: "12",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "pile-driver-operators",
-            occupation_name: "Pile-driver operators",
-            year: "2017",
-            number_workers: "2",
-            median_weekly_earnings: "-",
-            men_number_workers: "2",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "operating-engineers-and-other-construction-equipment-operators",
-            occupation_name:
-                "Operating engineers and other construction equipment operators",
-            year: "2017",
-            number_workers: "324",
-            median_weekly_earnings: "868",
-            men_number_workers: "318",
-            men_median_weekly_earnings: "868",
-            women_number_workers: "6",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "drywall-installers-ceiling-tile-installers-and-tapers",
-            occupation_name:
-                "Drywall installers, ceiling tile installers, and tapers",
-            year: "2017",
-            number_workers: "114",
-            median_weekly_earnings: "634",
-            men_number_workers: "112",
-            men_median_weekly_earnings: "628",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "electricians",
-            occupation_name: "Electricians",
-            year: "2017",
-            number_workers: "726",
-            median_weekly_earnings: "979",
-            men_number_workers: "711",
-            men_median_weekly_earnings: "974",
-            women_number_workers: "15",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "glaziers",
-            occupation_name: "Glaziers",
-            year: "2017",
-            number_workers: "39",
-            median_weekly_earnings: "-",
-            men_number_workers: "39",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "insulation-workers",
-            occupation_name: "Insulation workers",
-            year: "2017",
-            number_workers: "52",
-            median_weekly_earnings: "768",
-            men_number_workers: "49",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "painters-construction-and-maintenance",
-            occupation_name: "Painters, construction and maintenance",
-            year: "2017",
-            number_workers: "347",
-            median_weekly_earnings: "683",
-            men_number_workers: "328",
-            men_median_weekly_earnings: "689",
-            women_number_workers: "20",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "paperhangers",
-            occupation_name: "Paperhangers",
-            year: "2017",
-            number_workers: "1",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "pipelayers-plumbers-pipefitters-and-steamfitters",
-            occupation_name:
-                "Pipelayers, plumbers, pipefitters, and steamfitters",
-            year: "2017",
-            number_workers: "497",
-            median_weekly_earnings: "866",
-            men_number_workers: "489",
-            men_median_weekly_earnings: "865",
-            women_number_workers: "8",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "plasterers-and-stucco-masons",
-            occupation_name: "Plasterers and stucco masons",
-            year: "2017",
-            number_workers: "24",
-            median_weekly_earnings: "-",
-            men_number_workers: "24",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "reinforcing-iron-and-rebar-workers",
-            occupation_name: "Reinforcing iron and rebar workers",
-            year: "2017",
-            number_workers: "13",
-            median_weekly_earnings: "-",
-            men_number_workers: "13",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "roofers",
-            occupation_name: "Roofers",
-            year: "2017",
-            number_workers: "174",
-            median_weekly_earnings: "621",
-            men_number_workers: "174",
-            men_median_weekly_earnings: "621",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "sheet-metal-workers",
-            occupation_name: "Sheet metal workers",
-            year: "2017",
-            number_workers: "136",
-            median_weekly_earnings: "865",
-            men_number_workers: "132",
-            men_median_weekly_earnings: "866",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "structural-iron-and-steel-workers",
-            occupation_name: "Structural iron and steel workers",
-            year: "2017",
-            number_workers: "43",
-            median_weekly_earnings: "-",
-            men_number_workers: "41",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "solar-photovoltaic-installers",
-            occupation_name: "Solar photovoltaic installers",
-            year: "2017",
-            number_workers: "7",
-            median_weekly_earnings: "-",
-            men_number_workers: "7",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "helpers-construction-trades",
-            occupation_name: "Helpers, construction trades",
-            year: "2017",
-            number_workers: "57",
-            median_weekly_earnings: "621",
-            men_number_workers: "53",
-            men_median_weekly_earnings: "627",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "construction-and-building-inspectors",
-            occupation_name: "Construction and building inspectors",
-            year: "2017",
-            number_workers: "63",
-            median_weekly_earnings: "974",
-            men_number_workers: "60",
-            men_median_weekly_earnings: "1068",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "elevator-installers-and-repairers",
-            occupation_name: "Elevator installers and repairers",
-            year: "2017",
-            number_workers: "38",
-            median_weekly_earnings: "-",
-            men_number_workers: "38",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "fence-erectors",
-            occupation_name: "Fence erectors",
-            year: "2017",
-            number_workers: "26",
-            median_weekly_earnings: "-",
-            men_number_workers: "25",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "hazardous-materials-removal-workers",
-            occupation_name: "Hazardous materials removal workers",
-            year: "2017",
-            number_workers: "27",
-            median_weekly_earnings: "-",
-            men_number_workers: "20",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "6",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "highway-maintenance-workers",
-            occupation_name: "Highway maintenance workers",
-            year: "2017",
-            number_workers: "91",
-            median_weekly_earnings: "761",
-            men_number_workers: "88",
-            men_median_weekly_earnings: "770",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "rail-track-laying-and-maintenance-equipment-operators",
-            occupation_name:
-                "Rail-track laying and maintenance equipment operators",
-            year: "2017",
-            number_workers: "10",
-            median_weekly_earnings: "-",
-            men_number_workers: "10",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "septic-tank-servicers-and-sewer-pipe-cleaners",
-            occupation_name: "Septic tank servicers and sewer pipe cleaners",
-            year: "2017",
-            number_workers: "6",
-            median_weekly_earnings: "-",
-            men_number_workers: "6",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "miscellaneous-construction-and-related-workers",
-            occupation_name: "Miscellaneous construction and related workers",
-            year: "2017",
-            number_workers: "15",
-            median_weekly_earnings: "-",
-            men_number_workers: "14",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "derrick-rotary-drill-and-service-unit-operators-oil-gas-and-mining",
-            occupation_name:
-                "Derrick, rotary drill, and service unit operators, oil, gas, and mining",
-            year: "2017",
-            number_workers: "27",
-            median_weekly_earnings: "-",
-            men_number_workers: "27",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "earth-drillers-except-oil-and-gas",
-            occupation_name: "Earth drillers, except oil and gas",
-            year: "2017",
-            number_workers: "17",
-            median_weekly_earnings: "-",
-            men_number_workers: "17",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "explosives-workers-ordnance-handling-experts-and-blasters",
-            occupation_name:
-                "Explosives workers, ordnance handling experts, and blasters",
-            year: "2017",
-            number_workers: "12",
-            median_weekly_earnings: "-",
-            men_number_workers: "12",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "mining-machine-operators",
-            occupation_name: "Mining machine operators",
-            year: "2017",
-            number_workers: "49",
-            median_weekly_earnings: "-",
-            men_number_workers: "49",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "roof-bolters-mining",
-            occupation_name: "Roof bolters, mining",
-            year: "2017",
-            number_workers: "2",
-            median_weekly_earnings: "-",
-            men_number_workers: "2",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "roustabouts-oil-and-gas",
-            occupation_name: "Roustabouts, oil and gas",
-            year: "2017",
-            number_workers: "4",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "helpers-extraction-workers",
-            occupation_name: "Helpers--extraction workers",
-            year: "2017",
-            number_workers: "5",
-            median_weekly_earnings: "-",
-            men_number_workers: "5",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "other-extraction-workers",
-            occupation_name: "Other extraction workers",
-            year: "2017",
-            number_workers: "54",
-            median_weekly_earnings: "900",
-            men_number_workers: "52",
-            men_median_weekly_earnings: "907",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "installation-maintenance-and-repair-occupations",
@@ -4993,473 +1577,6 @@ const GapAPI = {
             women_number_workers: "149",
             women_median_weekly_earnings: "736",
             cents_to_dollar: "83"
-        },
-        {
-            slug:
-                "first-line-supervisors-of-mechanics-installers-and-repairers",
-            occupation_name:
-                "First-line supervisors of mechanics, installers, and repairers",
-            year: "2017",
-            number_workers: "244",
-            median_weekly_earnings: "1092",
-            men_number_workers: "225",
-            men_median_weekly_earnings: "1089",
-            women_number_workers: "19",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "computer-automated-teller-and-office-machine-repairers",
-            occupation_name:
-                "Computer, automated teller, and office machine repairers",
-            year: "2017",
-            number_workers: "173",
-            median_weekly_earnings: "819",
-            men_number_workers: "156",
-            men_median_weekly_earnings: "833",
-            women_number_workers: "17",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "radio-and-telecommunications-equipment-installers-and-repairers",
-            occupation_name:
-                "Radio and telecommunications equipment installers and repairers",
-            year: "2017",
-            number_workers: "121",
-            median_weekly_earnings: "1010",
-            men_number_workers: "113",
-            men_median_weekly_earnings: "1069",
-            women_number_workers: "8",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "avionics-technicians",
-            occupation_name: "Avionics technicians",
-            year: "2017",
-            number_workers: "7",
-            median_weekly_earnings: "-",
-            men_number_workers: "7",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "electric-motor-power-tool-and-related-repairers",
-            occupation_name:
-                "Electric motor, power tool, and related repairers",
-            year: "2017",
-            number_workers: "30",
-            median_weekly_earnings: "-",
-            men_number_workers: "30",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "electrical-and-electronics-installers-and-repairers-transportation-equipment",
-            occupation_name:
-                "Electrical and electronics installers and repairers, transportation equipment",
-            year: "2017",
-            number_workers: "1",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "electrical-and-electronics-repairers-industrial-and-utility",
-            occupation_name:
-                "Electrical and electronics repairers, industrial and utility",
-            year: "2017",
-            number_workers: "14",
-            median_weekly_earnings: "-",
-            men_number_workers: "14",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "electronic-equipment-installers-and-repairers-motor-vehicles",
-            occupation_name:
-                "Electronic equipment installers and repairers, motor vehicles",
-            year: "2017",
-            number_workers: "11",
-            median_weekly_earnings: "-",
-            men_number_workers: "11",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "electronic-home-entertainment-equipment-installers-and-repairers",
-            occupation_name:
-                "Electronic home entertainment equipment installers and repairers",
-            year: "2017",
-            number_workers: "38",
-            median_weekly_earnings: "-",
-            men_number_workers: "38",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "security-and-fire-alarm-systems-installers",
-            occupation_name: "Security and fire alarm systems installers",
-            year: "2017",
-            number_workers: "71",
-            median_weekly_earnings: "945",
-            men_number_workers: "68",
-            men_median_weekly_earnings: "943",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "aircraft-mechanics-and-service-technicians",
-            occupation_name: "Aircraft mechanics and service technicians",
-            year: "2017",
-            number_workers: "153",
-            median_weekly_earnings: "1169",
-            men_number_workers: "146",
-            men_median_weekly_earnings: "1175",
-            women_number_workers: "6",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "automotive-body-and-related-repairers",
-            occupation_name: "Automotive body and related repairers",
-            year: "2017",
-            number_workers: "124",
-            median_weekly_earnings: "821",
-            men_number_workers: "122",
-            men_median_weekly_earnings: "832",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "automotive-glass-installers-and-repairers",
-            occupation_name: "Automotive glass installers and repairers",
-            year: "2017",
-            number_workers: "21",
-            median_weekly_earnings: "-",
-            men_number_workers: "21",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "automotive-service-technicians-and-mechanics",
-            occupation_name: "Automotive service technicians and mechanics",
-            year: "2017",
-            number_workers: "752",
-            median_weekly_earnings: "761",
-            men_number_workers: "737",
-            men_median_weekly_earnings: "764",
-            women_number_workers: "15",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "bus-and-truck-mechanics-and-diesel-engine-specialists",
-            occupation_name:
-                "Bus and truck mechanics and diesel engine specialists",
-            year: "2017",
-            number_workers: "367",
-            median_weekly_earnings: "887",
-            men_number_workers: "362",
-            men_median_weekly_earnings: "887",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "heavy-vehicle-and-mobile-equipment-service-technicians-and-mechanics",
-            occupation_name:
-                "Heavy vehicle and mobile equipment service technicians and mechanics",
-            year: "2017",
-            number_workers: "177",
-            median_weekly_earnings: "993",
-            men_number_workers: "173",
-            men_median_weekly_earnings: "1005",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "small-engine-mechanics",
-            occupation_name: "Small engine mechanics",
-            year: "2017",
-            number_workers: "26",
-            median_weekly_earnings: "-",
-            men_number_workers: "26",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "miscellaneous-vehicle-and-mobile-equipment-mechanics-installers-and-repairers",
-            occupation_name:
-                "Miscellaneous vehicle and mobile equipment mechanics, installers, and repairers",
-            year: "2017",
-            number_workers: "64",
-            median_weekly_earnings: "613",
-            men_number_workers: "64",
-            men_median_weekly_earnings: "613",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "control-and-valve-installers-and-repairers",
-            occupation_name: "Control and valve installers and repairers",
-            year: "2017",
-            number_workers: "25",
-            median_weekly_earnings: "-",
-            men_number_workers: "25",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "heating-air-conditioning-and-refrigeration-mechanics-and-installers",
-            occupation_name:
-                "Heating, air conditioning, and refrigeration mechanics and installers",
-            year: "2017",
-            number_workers: "376",
-            median_weekly_earnings: "830",
-            men_number_workers: "369",
-            men_median_weekly_earnings: "832",
-            women_number_workers: "7",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "home-appliance-repairers",
-            occupation_name: "Home appliance repairers",
-            year: "2017",
-            number_workers: "26",
-            median_weekly_earnings: "-",
-            men_number_workers: "26",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "industrial-and-refractory-machinery-mechanics",
-            occupation_name: "Industrial and refractory machinery mechanics",
-            year: "2017",
-            number_workers: "395",
-            median_weekly_earnings: "923",
-            men_number_workers: "379",
-            men_median_weekly_earnings: "932",
-            women_number_workers: "16",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "maintenance-and-repair-workers-general",
-            occupation_name: "Maintenance and repair workers, general",
-            year: "2017",
-            number_workers: "511",
-            median_weekly_earnings: "828",
-            men_number_workers: "490",
-            men_median_weekly_earnings: "834",
-            women_number_workers: "20",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "maintenance-workers-machinery",
-            occupation_name: "Maintenance workers, machinery",
-            year: "2017",
-            number_workers: "25",
-            median_weekly_earnings: "-",
-            men_number_workers: "25",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "millwrights",
-            occupation_name: "Millwrights",
-            year: "2017",
-            number_workers: "40",
-            median_weekly_earnings: "-",
-            men_number_workers: "39",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "electrical-power-line-installers-and-repairers",
-            occupation_name: "Electrical power-line installers and repairers",
-            year: "2017",
-            number_workers: "132",
-            median_weekly_earnings: "1191",
-            men_number_workers: "132",
-            men_median_weekly_earnings: "1191",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "telecommunications-line-installers-and-repairers",
-            occupation_name: "Telecommunications line installers and repairers",
-            year: "2017",
-            number_workers: "187",
-            median_weekly_earnings: "879",
-            men_number_workers: "181",
-            men_median_weekly_earnings: "876",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "precision-instrument-and-equipment-repairers",
-            occupation_name: "Precision instrument and equipment repairers",
-            year: "2017",
-            number_workers: "44",
-            median_weekly_earnings: "-",
-            men_number_workers: "34",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "10",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "wind-turbine-service-technicians",
-            occupation_name: "Wind turbine service technicians",
-            year: "2017",
-            number_workers: "6",
-            median_weekly_earnings: "-",
-            men_number_workers: "6",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "coin-vending-and-amusement-machine-servicers-and-repairers",
-            occupation_name:
-                "Coin, vending, and amusement machine servicers and repairers",
-            year: "2017",
-            number_workers: "24",
-            median_weekly_earnings: "-",
-            men_number_workers: "23",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "commercial-divers",
-            occupation_name: "Commercial divers",
-            year: "2017",
-            number_workers: "0",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "locksmiths-and-safe-repairers",
-            occupation_name: "Locksmiths and safe repairers",
-            year: "2017",
-            number_workers: "20",
-            median_weekly_earnings: "-",
-            men_number_workers: "18",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "manufactured-building-and-mobile-home-installers",
-            occupation_name: "Manufactured building and mobile home installers",
-            year: "2017",
-            number_workers: "3",
-            median_weekly_earnings: "-",
-            men_number_workers: "3",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "riggers",
-            occupation_name: "Riggers",
-            year: "2017",
-            number_workers: "13",
-            median_weekly_earnings: "-",
-            men_number_workers: "13",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "signal-and-track-switch-repairers",
-            occupation_name: "Signal and track switch repairers",
-            year: "2017",
-            number_workers: "11",
-            median_weekly_earnings: "-",
-            men_number_workers: "11",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "helpers-installation-maintenance-and-repair-workers",
-            occupation_name:
-                "Helpers--installation, maintenance, and repair workers",
-            year: "2017",
-            number_workers: "15",
-            median_weekly_earnings: "-",
-            men_number_workers: "14",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "other-installation-maintenance-and-repair-workers",
-            occupation_name:
-                "Other installation, maintenance, and repair workers",
-            year: "2017",
-            number_workers: "156",
-            median_weekly_earnings: "774",
-            men_number_workers: "150",
-            men_median_weekly_earnings: "772",
-            women_number_workers: "6",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "production-transportation-and-material-moving-occupations",
@@ -5500,19 +1617,6 @@ const GapAPI = {
             cents_to_dollar: "71"
         },
         {
-            slug: "aircraft-structure-surfaces-rigging-and-systems-assemblers",
-            occupation_name:
-                "Aircraft structure, surfaces, rigging, and systems assemblers",
-            year: "2017",
-            number_workers: "1",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "electrical-electronics-and-electromechanical-assemblers",
             occupation_name:
                 "Electrical, electronics, and electromechanical assemblers",
@@ -5524,30 +1628,6 @@ const GapAPI = {
             women_number_workers: "50",
             women_median_weekly_earnings: "587",
             cents_to_dollar: "86"
-        },
-        {
-            slug: "engine-and-other-machine-assemblers",
-            occupation_name: "Engine and other machine assemblers",
-            year: "2017",
-            number_workers: "14",
-            median_weekly_earnings: "-",
-            men_number_workers: "11",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "structural-metal-fabricators-and-fitters",
-            occupation_name: "Structural metal fabricators and fitters",
-            year: "2017",
-            number_workers: "25",
-            median_weekly_earnings: "-",
-            men_number_workers: "24",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "miscellaneous-assemblers-and-fabricators",
@@ -5587,44 +1667,6 @@ const GapAPI = {
             cents_to_dollar: "78"
         },
         {
-            slug:
-                "food-and-tobacco-roasting-baking-and-drying-machine-operators-and-tenders",
-            occupation_name:
-                "Food and tobacco roasting, baking, and drying machine operators and tenders",
-            year: "2017",
-            number_workers: "7",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "food-batchmakers",
-            occupation_name: "Food batchmakers",
-            year: "2017",
-            number_workers: "70",
-            median_weekly_earnings: "575",
-            men_number_workers: "32",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "38",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "food-cooking-machine-operators-and-tenders",
-            occupation_name: "Food cooking machine operators and tenders",
-            year: "2017",
-            number_workers: "8",
-            median_weekly_earnings: "-",
-            men_number_workers: "3",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "food-processing-workers-all-other",
             occupation_name: "Food processing workers, all other",
             year: "2017",
@@ -5637,272 +1679,6 @@ const GapAPI = {
             cents_to_dollar: "78"
         },
         {
-            slug: "computer-control-programmers-and-operators",
-            occupation_name: "Computer control programmers and operators",
-            year: "2017",
-            number_workers: "100",
-            median_weekly_earnings: "868",
-            men_number_workers: "88",
-            men_median_weekly_earnings: "912",
-            women_number_workers: "12",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "extruding-and-drawing-machine-setters-operators-and-tenders-metal-and-plastic",
-            occupation_name:
-                "Extruding and drawing machine setters, operators, and tenders, metal and plastic",
-            year: "2017",
-            number_workers: "18",
-            median_weekly_earnings: "-",
-            men_number_workers: "17",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "forging-machine-setters-operators-and-tenders-metal-and-plastic",
-            occupation_name:
-                "Forging machine setters, operators, and tenders, metal and plastic",
-            year: "2017",
-            number_workers: "9",
-            median_weekly_earnings: "-",
-            men_number_workers: "8",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "rolling-machine-setters-operators-and-tenders-metal-and-plastic",
-            occupation_name:
-                "Rolling machine setters, operators, and tenders, metal and plastic",
-            year: "2017",
-            number_workers: "9",
-            median_weekly_earnings: "-",
-            men_number_workers: "6",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "cutting-punching-and-press-machine-setters-operators-and-tenders-metal-and-plastic",
-            occupation_name:
-                "Cutting, punching, and press machine setters, operators, and tenders, metal and plastic",
-            year: "2017",
-            number_workers: "84",
-            median_weekly_earnings: "665",
-            men_number_workers: "74",
-            men_median_weekly_earnings: "688",
-            women_number_workers: "9",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "drilling-and-boring-machine-tool-setters-operators-and-tenders-metal-and-plastic",
-            occupation_name:
-                "Drilling and boring machine tool setters, operators, and tenders, metal and plastic",
-            year: "2017",
-            number_workers: "7",
-            median_weekly_earnings: "-",
-            men_number_workers: "7",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "grinding-lapping-polishing-and-buffing-machine-tool-setters-operators-and-tenders-metal-and-plastic",
-            occupation_name:
-                "Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic",
-            year: "2017",
-            number_workers: "40",
-            median_weekly_earnings: "-",
-            men_number_workers: "35",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "lathe-and-turning-machine-tool-setters-operators-and-tenders-metal-and-plastic",
-            occupation_name:
-                "Lathe and turning machine tool setters, operators, and tenders, metal and plastic",
-            year: "2017",
-            number_workers: "14",
-            median_weekly_earnings: "-",
-            men_number_workers: "13",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "milling-and-planing-machine-setters-operators-and-tenders-metal-and-plastic",
-            occupation_name:
-                "Milling and planing machine setters, operators, and tenders, metal and plastic",
-            year: "2017",
-            number_workers: "5",
-            median_weekly_earnings: "-",
-            men_number_workers: "3",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "machinists",
-            occupation_name: "Machinists",
-            year: "2017",
-            number_workers: "343",
-            median_weekly_earnings: "831",
-            men_number_workers: "326",
-            men_median_weekly_earnings: "834",
-            women_number_workers: "16",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "metal-furnace-operators-tenders-pourers-and-casters",
-            occupation_name:
-                "Metal furnace operators, tenders, pourers, and casters",
-            year: "2017",
-            number_workers: "23",
-            median_weekly_earnings: "-",
-            men_number_workers: "20",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "model-makers-and-patternmakers-metal-and-plastic",
-            occupation_name:
-                "Model makers and patternmakers, metal and plastic",
-            year: "2017",
-            number_workers: "3",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "molders-and-molding-machine-setters-operators-and-tenders-metal-and-plastic",
-            occupation_name:
-                "Molders and molding machine setters, operators, and tenders, metal and plastic",
-            year: "2017",
-            number_workers: "43",
-            median_weekly_earnings: "-",
-            men_number_workers: "38",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "multiple-machine-tool-setters-operators-and-tenders-metal-and-plastic",
-            occupation_name:
-                "Multiple machine tool setters, operators, and tenders, metal and plastic",
-            year: "2017",
-            number_workers: "5",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "tool-and-die-makers",
-            occupation_name: "Tool and die makers",
-            year: "2017",
-            number_workers: "59",
-            median_weekly_earnings: "1007",
-            men_number_workers: "56",
-            men_median_weekly_earnings: "1021",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "welding-soldering-and-brazing-workers",
-            occupation_name: "Welding, soldering, and brazing workers",
-            year: "2017",
-            number_workers: "541",
-            median_weekly_earnings: "812",
-            men_number_workers: "517",
-            men_median_weekly_earnings: "821",
-            women_number_workers: "24",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "heat-treating-equipment-setters-operators-and-tenders-metal-and-plastic",
-            occupation_name:
-                "Heat treating equipment setters, operators, and tenders, metal and plastic",
-            year: "2017",
-            number_workers: "2",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "layout-workers-metal-and-plastic",
-            occupation_name: "Layout workers, metal and plastic",
-            year: "2017",
-            number_workers: "11",
-            median_weekly_earnings: "-",
-            men_number_workers: "11",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "plating-and-coating-machine-setters-operators-and-tenders-metal-and-plastic",
-            occupation_name:
-                "Plating and coating machine setters, operators, and tenders, metal and plastic",
-            year: "2017",
-            number_workers: "16",
-            median_weekly_earnings: "-",
-            men_number_workers: "14",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "tool-grinders-filers-and-sharpeners",
-            occupation_name: "Tool grinders, filers, and sharpeners",
-            year: "2017",
-            number_workers: "7",
-            median_weekly_earnings: "-",
-            men_number_workers: "7",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "metal-workers-and-plastic-workers-all-other",
             occupation_name: "Metal workers and plastic workers, all other",
             year: "2017",
@@ -5913,410 +1689,6 @@ const GapAPI = {
             women_number_workers: "78",
             women_median_weekly_earnings: "574",
             cents_to_dollar: "85"
-        },
-        {
-            slug: "prepress-technicians-and-workers",
-            occupation_name: "Prepress technicians and workers",
-            year: "2017",
-            number_workers: "13",
-            median_weekly_earnings: "-",
-            men_number_workers: "8",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "printing-press-operators",
-            occupation_name: "Printing press operators",
-            year: "2017",
-            number_workers: "151",
-            median_weekly_earnings: "758",
-            men_number_workers: "126",
-            men_median_weekly_earnings: "789",
-            women_number_workers: "26",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "print-binding-and-finishing-workers",
-            occupation_name: "Print binding and finishing workers",
-            year: "2017",
-            number_workers: "8",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "laundry-and-dry-cleaning-workers",
-            occupation_name: "Laundry and dry-cleaning workers",
-            year: "2017",
-            number_workers: "106",
-            median_weekly_earnings: "450",
-            men_number_workers: "27",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "79",
-            women_median_weekly_earnings: "443",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "pressers-textile-garment-and-related-materials",
-            occupation_name:
-                "Pressers, textile, garment, and related materials",
-            year: "2017",
-            number_workers: "19",
-            median_weekly_earnings: "-",
-            men_number_workers: "10",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "9",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "sewing-machine-operators",
-            occupation_name: "Sewing machine operators",
-            year: "2017",
-            number_workers: "157",
-            median_weekly_earnings: "519",
-            men_number_workers: "49",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "108",
-            women_median_weekly_earnings: "521",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "shoe-and-leather-workers-and-repairers",
-            occupation_name: "Shoe and leather workers and repairers",
-            year: "2017",
-            number_workers: "1",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "shoe-machine-operators-and-tenders",
-            occupation_name: "Shoe machine operators and tenders",
-            year: "2017",
-            number_workers: "3",
-            median_weekly_earnings: "-",
-            men_number_workers: "2",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "tailors-dressmakers-and-sewers",
-            occupation_name: "Tailors, dressmakers, and sewers",
-            year: "2017",
-            number_workers: "31",
-            median_weekly_earnings: "-",
-            men_number_workers: "10",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "21",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "textile-bleaching-and-dyeing-machine-operators-and-tenders",
-            occupation_name:
-                "Textile bleaching and dyeing machine operators and tenders",
-            year: "2017",
-            number_workers: "0",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "textile-cutting-machine-setters-operators-and-tenders",
-            occupation_name:
-                "Textile cutting machine setters, operators, and tenders",
-            year: "2017",
-            number_workers: "6",
-            median_weekly_earnings: "-",
-            men_number_workers: "2",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "textile-knitting-and-weaving-machine-setters-operators-and-tenders",
-            occupation_name:
-                "Textile knitting and weaving machine setters, operators, and tenders",
-            year: "2017",
-            number_workers: "17",
-            median_weekly_earnings: "-",
-            men_number_workers: "8",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "9",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "textile-winding-twisting-and-drawing-out-machine-setters-operators-and-tenders",
-            occupation_name:
-                "Textile winding, twisting, and drawing out machine setters, operators, and tenders",
-            year: "2017",
-            number_workers: "12",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "8",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "extruding-and-forming-machine-setters-operators-and-tenders-synthetic-and-glass-fibers",
-            occupation_name:
-                "Extruding and forming machine setters, operators, and tenders, synthetic and glass fibers",
-            year: "2017",
-            number_workers: "0",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "fabric-and-apparel-patternmakers",
-            occupation_name: "Fabric and apparel patternmakers",
-            year: "2017",
-            number_workers: "1",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "upholsterers",
-            occupation_name: "Upholsterers",
-            year: "2017",
-            number_workers: "22",
-            median_weekly_earnings: "-",
-            men_number_workers: "18",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "textile-apparel-and-furnishings-workers-all-other",
-            occupation_name:
-                "Textile, apparel, and furnishings workers, all other",
-            year: "2017",
-            number_workers: "19",
-            median_weekly_earnings: "-",
-            men_number_workers: "10",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "9",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "cabinetmakers-and-bench-carpenters",
-            occupation_name: "Cabinetmakers and bench carpenters",
-            year: "2017",
-            number_workers: "38",
-            median_weekly_earnings: "-",
-            men_number_workers: "36",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "furniture-finishers",
-            occupation_name: "Furniture finishers",
-            year: "2017",
-            number_workers: "8",
-            median_weekly_earnings: "-",
-            men_number_workers: "7",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "model-makers-and-patternmakers-wood",
-            occupation_name: "Model makers and patternmakers, wood",
-            year: "2017",
-            number_workers: "1",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "sawing-machine-setters-operators-and-tenders-wood",
-            occupation_name:
-                "Sawing machine setters, operators, and tenders, wood",
-            year: "2017",
-            number_workers: "26",
-            median_weekly_earnings: "-",
-            men_number_workers: "26",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "woodworking-machine-setters-operators-and-tenders-except-sawing",
-            occupation_name:
-                "Woodworking machine setters, operators, and tenders, except sawing",
-            year: "2017",
-            number_workers: "16",
-            median_weekly_earnings: "-",
-            men_number_workers: "12",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "woodworkers-all-other",
-            occupation_name: "Woodworkers, all other",
-            year: "2017",
-            number_workers: "19",
-            median_weekly_earnings: "-",
-            men_number_workers: "15",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "power-plant-operators-distributors-and-dispatchers",
-            occupation_name:
-                "Power plant operators, distributors, and dispatchers",
-            year: "2017",
-            number_workers: "47",
-            median_weekly_earnings: "-",
-            men_number_workers: "45",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "stationary-engineers-and-boiler-operators",
-            occupation_name: "Stationary engineers and boiler operators",
-            year: "2017",
-            number_workers: "76",
-            median_weekly_earnings: "1088",
-            men_number_workers: "72",
-            men_median_weekly_earnings: "1142",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "water-and-wastewater-treatment-plant-and-system-operators",
-            occupation_name:
-                "Water and wastewater treatment plant and system operators",
-            year: "2017",
-            number_workers: "107",
-            median_weekly_earnings: "907",
-            men_number_workers: "102",
-            men_median_weekly_earnings: "910",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "miscellaneous-plant-and-system-operators",
-            occupation_name: "Miscellaneous plant and system operators",
-            year: "2017",
-            number_workers: "41",
-            median_weekly_earnings: "-",
-            men_number_workers: "34",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "6",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "chemical-processing-machine-setters-operators-and-tenders",
-            occupation_name:
-                "Chemical processing machine setters, operators, and tenders",
-            year: "2017",
-            number_workers: "58",
-            median_weekly_earnings: "877",
-            men_number_workers: "55",
-            men_median_weekly_earnings: "879",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "crushing-grinding-polishing-mixing-and-blending-workers",
-            occupation_name:
-                "Crushing, grinding, polishing, mixing, and blending workers",
-            year: "2017",
-            number_workers: "70",
-            median_weekly_earnings: "771",
-            men_number_workers: "62",
-            men_median_weekly_earnings: "795",
-            women_number_workers: "8",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "cutting-workers",
-            occupation_name: "Cutting workers",
-            year: "2017",
-            number_workers: "51",
-            median_weekly_earnings: "521",
-            men_number_workers: "40",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "12",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "extruding-forming-pressing-and-compacting-machine-setters-operators-and-tenders",
-            occupation_name:
-                "Extruding, forming, pressing, and compacting machine setters, operators, and tenders",
-            year: "2017",
-            number_workers: "13",
-            median_weekly_earnings: "-",
-            men_number_workers: "10",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "3",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "furnace-kiln-oven-drier-and-kettle-operators-and-tenders",
-            occupation_name:
-                "Furnace, kiln, oven, drier, and kettle operators and tenders",
-            year: "2017",
-            number_workers: "5",
-            median_weekly_earnings: "-",
-            men_number_workers: "5",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "inspectors-testers-sorters-samplers-and-weighers",
@@ -6332,31 +1704,6 @@ const GapAPI = {
             cents_to_dollar: "75"
         },
         {
-            slug: "jewelers-and-precious-stone-and-metal-workers",
-            occupation_name: "Jewelers and precious stone and metal workers",
-            year: "2017",
-            number_workers: "24",
-            median_weekly_earnings: "-",
-            men_number_workers: "20",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "medical-dental-and-ophthalmic-laboratory-technicians",
-            occupation_name:
-                "Medical, dental, and ophthalmic laboratory technicians",
-            year: "2017",
-            number_workers: "57",
-            median_weekly_earnings: "598",
-            men_number_workers: "16",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "40",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "packaging-and-filling-machine-operators-and-tenders",
             occupation_name:
                 "Packaging and filling machine operators and tenders",
@@ -6368,145 +1715,6 @@ const GapAPI = {
             women_number_workers: "147",
             women_median_weekly_earnings: "516",
             cents_to_dollar: "86"
-        },
-        {
-            slug: "painting-workers",
-            occupation_name: "Painting workers",
-            year: "2017",
-            number_workers: "131",
-            median_weekly_earnings: "693",
-            men_number_workers: "117",
-            men_median_weekly_earnings: "705",
-            women_number_workers: "14",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "photographic-process-workers-and-processing-machine-operators",
-            occupation_name:
-                "Photographic process workers and processing machine operators",
-            year: "2017",
-            number_workers: "23",
-            median_weekly_earnings: "-",
-            men_number_workers: "16",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "7",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "semiconductor-processors",
-            occupation_name: "Semiconductor processors",
-            year: "2017",
-            number_workers: "2",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "adhesive-bonding-machine-operators-and-tenders",
-            occupation_name: "Adhesive bonding machine operators and tenders",
-            year: "2017",
-            number_workers: "4",
-            median_weekly_earnings: "-",
-            men_number_workers: "4",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "cleaning-washing-and-metal-pickling-equipment-operators-and-tenders",
-            occupation_name:
-                "Cleaning, washing, and metal pickling equipment operators and tenders",
-            year: "2017",
-            number_workers: "10",
-            median_weekly_earnings: "-",
-            men_number_workers: "8",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "cooling-and-freezing-equipment-operators-and-tenders",
-            occupation_name:
-                "Cooling and freezing equipment operators and tenders",
-            year: "2017",
-            number_workers: "2",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "etchers-and-engravers",
-            occupation_name: "Etchers and engravers",
-            year: "2017",
-            number_workers: "5",
-            median_weekly_earnings: "-",
-            men_number_workers: "3",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "molders-shapers-and-casters-except-metal-and-plastic",
-            occupation_name:
-                "Molders, shapers, and casters, except metal and plastic",
-            year: "2017",
-            number_workers: "25",
-            median_weekly_earnings: "-",
-            men_number_workers: "21",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "4",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "paper-goods-machine-setters-operators-and-tenders",
-            occupation_name:
-                "Paper goods machine setters, operators, and tenders",
-            year: "2017",
-            number_workers: "28",
-            median_weekly_earnings: "-",
-            men_number_workers: "23",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "tire-builders",
-            occupation_name: "Tire builders",
-            year: "2017",
-            number_workers: "10",
-            median_weekly_earnings: "-",
-            men_number_workers: "10",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "helpers-production-workers",
-            occupation_name: "Helpers--production workers",
-            year: "2017",
-            number_workers: "30",
-            median_weekly_earnings: "-",
-            men_number_workers: "19",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "11",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "production-workers-all-other",
@@ -6531,70 +1739,6 @@ const GapAPI = {
             women_number_workers: "1075",
             women_median_weekly_earnings: "514",
             cents_to_dollar: "72"
-        },
-        {
-            slug: "supervisors-of-transportation-and-material-moving-workers",
-            occupation_name:
-                "Supervisors of transportation and material moving workers",
-            year: "2017",
-            number_workers: "192",
-            median_weekly_earnings: "881",
-            men_number_workers: "160",
-            men_median_weekly_earnings: "919",
-            women_number_workers: "31",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "aircraft-pilots-and-flight-engineers",
-            occupation_name: "Aircraft pilots and flight engineers",
-            year: "2017",
-            number_workers: "112",
-            median_weekly_earnings: "1736",
-            men_number_workers: "105",
-            men_median_weekly_earnings: "1750",
-            women_number_workers: "7",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "air-traffic-controllers-and-airfield-operations-specialists",
-            occupation_name:
-                "Air traffic controllers and airfield operations specialists",
-            year: "2017",
-            number_workers: "16",
-            median_weekly_earnings: "-",
-            men_number_workers: "11",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "flight-attendants",
-            occupation_name: "Flight attendants",
-            year: "2017",
-            number_workers: "71",
-            median_weekly_earnings: "860",
-            men_number_workers: "20",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "51",
-            women_median_weekly_earnings: "873",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug:
-                "ambulance-drivers-and-attendants-except-emergency-medical-technicians",
-            occupation_name:
-                "Ambulance drivers and attendants, except emergency medical technicians",
-            year: "2017",
-            number_workers: "8",
-            median_weekly_earnings: "-",
-            men_number_workers: "7",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         },
         {
             slug: "bus-drivers",
@@ -6633,249 +1777,6 @@ const GapAPI = {
             cents_to_dollar: "73"
         },
         {
-            slug: "motor-vehicle-operators-all-other",
-            occupation_name: "Motor vehicle operators, all other",
-            year: "2017",
-            number_workers: "33",
-            median_weekly_earnings: "-",
-            men_number_workers: "28",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "5",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "locomotive-engineers-and-operators",
-            occupation_name: "Locomotive engineers and operators",
-            year: "2017",
-            number_workers: "43",
-            median_weekly_earnings: "-",
-            men_number_workers: "36",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "7",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "railroad-brake-signal-and-switch-operators",
-            occupation_name: "Railroad brake, signal, and switch operators",
-            year: "2017",
-            number_workers: "5",
-            median_weekly_earnings: "-",
-            men_number_workers: "5",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "railroad-conductors-and-yardmasters",
-            occupation_name: "Railroad conductors and yardmasters",
-            year: "2017",
-            number_workers: "42",
-            median_weekly_earnings: "-",
-            men_number_workers: "39",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "subway-streetcar-and-other-rail-transportation-workers",
-            occupation_name:
-                "Subway, streetcar, and other rail transportation workers",
-            year: "2017",
-            number_workers: "9",
-            median_weekly_earnings: "-",
-            men_number_workers: "7",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "sailors-and-marine-oilers",
-            occupation_name: "Sailors and marine oilers",
-            year: "2017",
-            number_workers: "19",
-            median_weekly_earnings: "-",
-            men_number_workers: "19",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "ship-and-boat-captains-and-operators",
-            occupation_name: "Ship and boat captains and operators",
-            year: "2017",
-            number_workers: "29",
-            median_weekly_earnings: "-",
-            men_number_workers: "29",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "ship-engineers",
-            occupation_name: "Ship engineers",
-            year: "2017",
-            number_workers: "3",
-            median_weekly_earnings: "-",
-            men_number_workers: "3",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "bridge-and-lock-tenders",
-            occupation_name: "Bridge and lock tenders",
-            year: "2017",
-            number_workers: "5",
-            median_weekly_earnings: "-",
-            men_number_workers: "3",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "2",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "parking-lot-attendants",
-            occupation_name: "Parking lot attendants",
-            year: "2017",
-            number_workers: "65",
-            median_weekly_earnings: "560",
-            men_number_workers: "49",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "16",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "automotive-and-watercraft-service-attendants",
-            occupation_name: "Automotive and watercraft service attendants",
-            year: "2017",
-            number_workers: "80",
-            median_weekly_earnings: "514",
-            men_number_workers: "73",
-            men_median_weekly_earnings: "535",
-            women_number_workers: "7",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "transportation-inspectors",
-            occupation_name: "Transportation inspectors",
-            year: "2017",
-            number_workers: "41",
-            median_weekly_earnings: "-",
-            men_number_workers: "33",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "8",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "transportation-attendants-except-flight-attendants",
-            occupation_name:
-                "Transportation attendants, except flight attendants",
-            year: "2017",
-            number_workers: "21",
-            median_weekly_earnings: "-",
-            men_number_workers: "11",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "10",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "other-transportation-workers",
-            occupation_name: "Other transportation workers",
-            year: "2017",
-            number_workers: "20",
-            median_weekly_earnings: "-",
-            men_number_workers: "19",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "conveyor-operators-and-tenders",
-            occupation_name: "Conveyor operators and tenders",
-            year: "2017",
-            number_workers: "1",
-            median_weekly_earnings: "-",
-            men_number_workers: "1",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "crane-and-tower-operators",
-            occupation_name: "Crane and tower operators",
-            year: "2017",
-            number_workers: "52",
-            median_weekly_earnings: "902",
-            men_number_workers: "51",
-            men_median_weekly_earnings: "898",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "dredge-excavating-and-loading-machine-operators",
-            occupation_name:
-                "Dredge, excavating, and loading machine operators",
-            year: "2017",
-            number_workers: "29",
-            median_weekly_earnings: "-",
-            men_number_workers: "28",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "1",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "hoist-and-winch-operators",
-            occupation_name: "Hoist and winch operators",
-            year: "2017",
-            number_workers: "6",
-            median_weekly_earnings: "-",
-            men_number_workers: "6",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "industrial-truck-and-tractor-operators",
-            occupation_name: "Industrial truck and tractor operators",
-            year: "2017",
-            number_workers: "584",
-            median_weekly_earnings: "624",
-            men_number_workers: "538",
-            men_median_weekly_earnings: "632",
-            women_number_workers: "46",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "cleaners-of-vehicles-and-equipment",
-            occupation_name: "Cleaners of vehicles and equipment",
-            year: "2017",
-            number_workers: "237",
-            median_weekly_earnings: "530",
-            men_number_workers: "197",
-            men_median_weekly_earnings: "531",
-            women_number_workers: "40",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "laborers-and-freight-stock-and-material-movers-hand",
             occupation_name:
                 "Laborers and freight, stock, and material movers, hand",
@@ -6889,18 +1790,6 @@ const GapAPI = {
             cents_to_dollar: "84"
         },
         {
-            slug: "machine-feeders-and-offbearers",
-            occupation_name: "Machine feeders and offbearers",
-            year: "2017",
-            number_workers: "29",
-            median_weekly_earnings: "-",
-            men_number_workers: "14",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "15",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
             slug: "packers-and-packagers-hand",
             occupation_name: "Packers and packagers, hand",
             year: "2017",
@@ -6911,66 +1800,6 @@ const GapAPI = {
             women_number_workers: "210",
             women_median_weekly_earnings: "462",
             cents_to_dollar: "92"
-        },
-        {
-            slug: "pumping-station-operators",
-            occupation_name: "Pumping station operators",
-            year: "2017",
-            number_workers: "19",
-            median_weekly_earnings: "-",
-            men_number_workers: "19",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "refuse-and-recyclable-material-collectors",
-            occupation_name: "Refuse and recyclable material collectors",
-            year: "2017",
-            number_workers: "56",
-            median_weekly_earnings: "522",
-            men_number_workers: "49",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "7",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "mine-shuttle-car-operators",
-            occupation_name: "Mine shuttle car operators",
-            year: "2017",
-            number_workers: "0",
-            median_weekly_earnings: "-",
-            men_number_workers: "0",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "tank-car-truck-and-ship-loaders",
-            occupation_name: "Tank car, truck, and ship loaders",
-            year: "2017",
-            number_workers: "6",
-            median_weekly_earnings: "-",
-            men_number_workers: "6",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "0",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
-        },
-        {
-            slug: "material-moving-workers-all-other",
-            occupation_name: "Material moving workers, all other",
-            year: "2017",
-            number_workers: "41",
-            median_weekly_earnings: "-",
-            men_number_workers: "34",
-            men_median_weekly_earnings: "-",
-            women_number_workers: "6",
-            women_median_weekly_earnings: "-",
-            cents_to_dollar: "-1"
         }
     ],
     all: function() {
