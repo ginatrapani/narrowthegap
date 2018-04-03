@@ -6,6 +6,7 @@ const GapAPI = {
         {
             slug: "total-full-time-wage-and-salary-workers",
             occupation_name: "Total, full-time wage and salary workers",
+            parent_slug: "",
             year: "2017",
             number_workers: "113272",
             median_weekly_earnings: "860",
@@ -19,6 +20,7 @@ const GapAPI = {
             slug: "management-professional-and-related-occupations",
             occupation_name:
                 "Management, professional, and related occupations",
+            parent_slug: "",
             year: "2017",
             number_workers: "47207",
             median_weekly_earnings: "1224",
@@ -32,6 +34,7 @@ const GapAPI = {
             slug: "management-business-and-financial-operations-occupations",
             occupation_name:
                 "Management, business, and financial operations occupations",
+            parent_slug: "management-professional-and-related-occupations",
             year: "2017",
             number_workers: "19414",
             median_weekly_earnings: "1327",
@@ -44,6 +47,8 @@ const GapAPI = {
         {
             slug: "management-occupations",
             occupation_name: "Management occupations",
+            parent_slug:
+                "management-business-and-financial-operations-occupations",
             year: "2017",
             number_workers: "13169",
             median_weekly_earnings: "1392",
@@ -56,6 +61,7 @@ const GapAPI = {
         {
             slug: "chief-executives",
             occupation_name: "Chief executives",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "1136",
             median_weekly_earnings: "2296",
@@ -68,6 +74,7 @@ const GapAPI = {
         {
             slug: "general-and-operations-managers",
             occupation_name: "General and operations managers",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "920",
             median_weekly_earnings: "1328",
@@ -80,6 +87,7 @@ const GapAPI = {
         {
             slug: "marketing-and-sales-managers",
             occupation_name: "Marketing and sales managers",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "994",
             median_weekly_earnings: "1509",
@@ -92,6 +100,7 @@ const GapAPI = {
         {
             slug: "administrative-services-managers",
             occupation_name: "Administrative services managers",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "147",
             median_weekly_earnings: "1233",
@@ -104,6 +113,7 @@ const GapAPI = {
         {
             slug: "computer-and-information-systems-managers",
             occupation_name: "Computer and information systems managers",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "594",
             median_weekly_earnings: "1843",
@@ -116,6 +126,7 @@ const GapAPI = {
         {
             slug: "financial-managers",
             occupation_name: "Financial managers",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "1111",
             median_weekly_earnings: "1412",
@@ -128,6 +139,7 @@ const GapAPI = {
         {
             slug: "human-resources-managers",
             occupation_name: "Human resources managers",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "304",
             median_weekly_earnings: "1448",
@@ -140,6 +152,7 @@ const GapAPI = {
         {
             slug: "industrial-production-managers",
             occupation_name: "Industrial production managers",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "265",
             median_weekly_earnings: "1486",
@@ -152,6 +165,7 @@ const GapAPI = {
         {
             slug: "purchasing-managers",
             occupation_name: "Purchasing managers",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "194",
             median_weekly_earnings: "1271",
@@ -164,6 +178,7 @@ const GapAPI = {
         {
             slug: "construction-managers",
             occupation_name: "Construction managers",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "582",
             median_weekly_earnings: "1428",
@@ -176,6 +191,7 @@ const GapAPI = {
         {
             slug: "education-administrators",
             occupation_name: "Education administrators",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "801",
             median_weekly_earnings: "1367",
@@ -188,6 +204,7 @@ const GapAPI = {
         {
             slug: "food-service-managers",
             occupation_name: "Food service managers",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "816",
             median_weekly_earnings: "753",
@@ -200,6 +217,7 @@ const GapAPI = {
         {
             slug: "lodging-managers",
             occupation_name: "Lodging managers",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "116",
             median_weekly_earnings: "882",
@@ -212,6 +230,7 @@ const GapAPI = {
         {
             slug: "medical-and-health-services-managers",
             occupation_name: "Medical and health services managers",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "610",
             median_weekly_earnings: "1319",
@@ -225,6 +244,7 @@ const GapAPI = {
             slug: "property-real-estate-and-community-association-managers",
             occupation_name:
                 "Property, real estate, and community association managers",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "421",
             median_weekly_earnings: "957",
@@ -237,6 +257,7 @@ const GapAPI = {
         {
             slug: "social-and-community-service-managers",
             occupation_name: "Social and community service managers",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "337",
             median_weekly_earnings: "1136",
@@ -249,6 +270,7 @@ const GapAPI = {
         {
             slug: "managers-all-other",
             occupation_name: "Managers, all other",
+            parent_slug: "management-occupations",
             year: "2017",
             number_workers: "3004",
             median_weekly_earnings: "1488",
@@ -261,6 +283,8 @@ const GapAPI = {
         {
             slug: "business-and-financial-operations-occupations",
             occupation_name: "Business and financial operations occupations",
+            parent_slug:
+                "management-business-and-financial-operations-occupations",
             year: "2017",
             number_workers: "6245",
             median_weekly_earnings: "1174",
@@ -274,6 +298,7 @@ const GapAPI = {
             slug: "purchasing-agents-except-wholesale-retail-and-farm-products",
             occupation_name:
                 "Purchasing agents, except wholesale, retail, and farm products",
+            parent_slug: "business-and-financial-operations-occupations",
             year: "2017",
             number_workers: "240",
             median_weekly_earnings: "1132",
@@ -287,6 +312,7 @@ const GapAPI = {
             slug: "claims-adjusters-appraisers-examiners-and-investigators",
             occupation_name:
                 "Claims adjusters, appraisers, examiners, and investigators",
+            parent_slug: "business-and-financial-operations-occupations",
             year: "2017",
             number_workers: "346",
             median_weekly_earnings: "1002",
@@ -299,6 +325,7 @@ const GapAPI = {
         {
             slug: "compliance-officers",
             occupation_name: "Compliance officers",
+            parent_slug: "business-and-financial-operations-occupations",
             year: "2017",
             number_workers: "240",
             median_weekly_earnings: "1391",
@@ -311,6 +338,7 @@ const GapAPI = {
         {
             slug: "human-resources-workers",
             occupation_name: "Human resources workers",
+            parent_slug: "business-and-financial-operations-occupations",
             year: "2017",
             number_workers: "664",
             median_weekly_earnings: "1086",
@@ -323,6 +351,7 @@ const GapAPI = {
         {
             slug: "training-and-development-specialists",
             occupation_name: "Training and development specialists",
+            parent_slug: "business-and-financial-operations-occupations",
             year: "2017",
             number_workers: "114",
             median_weekly_earnings: "1099",
@@ -335,6 +364,7 @@ const GapAPI = {
         {
             slug: "management-analysts",
             occupation_name: "Management analysts",
+            parent_slug: "business-and-financial-operations-occupations",
             year: "2017",
             number_workers: "606",
             median_weekly_earnings: "1499",
@@ -348,6 +378,7 @@ const GapAPI = {
             slug: "market-research-analysts-and-marketing-specialists",
             occupation_name:
                 "Market research analysts and marketing specialists",
+            parent_slug: "business-and-financial-operations-occupations",
             year: "2017",
             number_workers: "258",
             median_weekly_earnings: "1174",
@@ -360,6 +391,7 @@ const GapAPI = {
         {
             slug: "business-operations-specialists-all-other",
             occupation_name: "Business operations specialists, all other",
+            parent_slug: "business-and-financial-operations-occupations",
             year: "2017",
             number_workers: "250",
             median_weekly_earnings: "1136",
@@ -372,6 +404,7 @@ const GapAPI = {
         {
             slug: "accountants-and-auditors",
             occupation_name: "Accountants and auditors",
+            parent_slug: "business-and-financial-operations-occupations",
             year: "2017",
             number_workers: "1512",
             median_weekly_earnings: "1173",
@@ -384,6 +417,7 @@ const GapAPI = {
         {
             slug: "financial-analysts",
             occupation_name: "Financial analysts",
+            parent_slug: "business-and-financial-operations-occupations",
             year: "2017",
             number_workers: "264",
             median_weekly_earnings: "1530",
@@ -396,6 +430,7 @@ const GapAPI = {
         {
             slug: "personal-financial-advisors",
             occupation_name: "Personal financial advisors",
+            parent_slug: "business-and-financial-operations-occupations",
             year: "2017",
             number_workers: "398",
             median_weekly_earnings: "1425",
@@ -408,6 +443,7 @@ const GapAPI = {
         {
             slug: "credit-counselors-and-loan-officers",
             occupation_name: "Credit counselors and loan officers",
+            parent_slug: "business-and-financial-operations-occupations",
             year: "2017",
             number_workers: "320",
             median_weekly_earnings: "1070",
@@ -420,6 +456,7 @@ const GapAPI = {
         {
             slug: "professional-and-related-occupations",
             occupation_name: "Professional and related occupations",
+            parent_slug: "management-professional-and-related-occupations",
             year: "2017",
             number_workers: "27794",
             median_weekly_earnings: "1160",
@@ -432,6 +469,7 @@ const GapAPI = {
         {
             slug: "computer-and-mathematical-occupations",
             occupation_name: "Computer and mathematical occupations",
+            parent_slug: "professional-and-related-occupations",
             year: "2017",
             number_workers: "4350",
             median_weekly_earnings: "1465",
@@ -444,6 +482,7 @@ const GapAPI = {
         {
             slug: "computer-systems-analysts",
             occupation_name: "Computer systems analysts",
+            parent_slug: "computer-and-mathematical-occupations",
             year: "2017",
             number_workers: "522",
             median_weekly_earnings: "1409",
@@ -456,6 +495,7 @@ const GapAPI = {
         {
             slug: "computer-programmers",
             occupation_name: "Computer programmers",
+            parent_slug: "computer-and-mathematical-occupations",
             year: "2017",
             number_workers: "423",
             median_weekly_earnings: "1483",
@@ -469,6 +509,7 @@ const GapAPI = {
             slug: "software-developers-applications-and-systems-software",
             occupation_name:
                 "Software developers, applications and systems software",
+            parent_slug: "computer-and-mathematical-occupations",
             year: "2017",
             number_workers: "1439",
             median_weekly_earnings: "1792",
@@ -481,6 +522,7 @@ const GapAPI = {
         {
             slug: "computer-support-specialists",
             occupation_name: "Computer support specialists",
+            parent_slug: "computer-and-mathematical-occupations",
             year: "2017",
             number_workers: "443",
             median_weekly_earnings: "1068",
@@ -493,6 +535,7 @@ const GapAPI = {
         {
             slug: "computer-occupations-all-other",
             occupation_name: "Computer occupations, all other",
+            parent_slug: "computer-and-mathematical-occupations",
             year: "2017",
             number_workers: "627",
             median_weekly_earnings: "1194",
@@ -505,6 +548,7 @@ const GapAPI = {
         {
             slug: "operations-research-analysts",
             occupation_name: "Operations research analysts",
+            parent_slug: "computer-and-mathematical-occupations",
             year: "2017",
             number_workers: "146",
             median_weekly_earnings: "1396",
@@ -517,6 +561,7 @@ const GapAPI = {
         {
             slug: "architecture-and-engineering-occupations",
             occupation_name: "Architecture and engineering occupations",
+            parent_slug: "professional-and-related-occupations",
             year: "2017",
             number_workers: "2936",
             median_weekly_earnings: "1478",
@@ -529,6 +574,7 @@ const GapAPI = {
         {
             slug: "civil-engineers",
             occupation_name: "Civil engineers",
+            parent_slug: "architecture-and-engineering-occupations",
             year: "2017",
             number_workers: "393",
             median_weekly_earnings: "1494",
@@ -541,6 +587,7 @@ const GapAPI = {
         {
             slug: "engineers-all-other",
             occupation_name: "Engineers, all other",
+            parent_slug: "architecture-and-engineering-occupations",
             year: "2017",
             number_workers: "546",
             median_weekly_earnings: "1561",
@@ -553,6 +600,7 @@ const GapAPI = {
         {
             slug: "engineering-technicians-except-drafters",
             occupation_name: "Engineering technicians, except drafters",
+            parent_slug: "architecture-and-engineering-occupations",
             year: "2017",
             number_workers: "339",
             median_weekly_earnings: "1053",
@@ -565,6 +613,7 @@ const GapAPI = {
         {
             slug: "life-physical-and-social-science-occupations",
             occupation_name: "Life, physical, and social science occupations",
+            parent_slug: "professional-and-related-occupations",
             year: "2017",
             number_workers: "1238",
             median_weekly_earnings: "1286",
@@ -577,6 +626,7 @@ const GapAPI = {
         {
             slug: "medical-scientists",
             occupation_name: "Medical scientists",
+            parent_slug: "life-physical-and-social-science-occupations",
             year: "2017",
             number_workers: "162",
             median_weekly_earnings: "1378",
@@ -589,6 +639,7 @@ const GapAPI = {
         {
             slug: "physical-scientists-all-other",
             occupation_name: "Physical scientists, all other",
+            parent_slug: "life-physical-and-social-science-occupations",
             year: "2017",
             number_workers: "270",
             median_weekly_earnings: "1529",
@@ -602,6 +653,7 @@ const GapAPI = {
             slug: "miscellaneous-life-physical-and-social-science-technicians",
             occupation_name:
                 "Miscellaneous life, physical, and social science technicians",
+            parent_slug: "life-physical-and-social-science-occupations",
             year: "2017",
             number_workers: "132",
             median_weekly_earnings: "826",
@@ -614,6 +666,7 @@ const GapAPI = {
         {
             slug: "community-and-social-service-occupations",
             occupation_name: "Community and social service occupations",
+            parent_slug: "professional-and-related-occupations",
             year: "2017",
             number_workers: "2165",
             median_weekly_earnings: "900",
@@ -626,6 +679,7 @@ const GapAPI = {
         {
             slug: "counselors",
             occupation_name: "Counselors",
+            parent_slug: "community-and-social-service-occupations",
             year: "2017",
             number_workers: "650",
             median_weekly_earnings: "897",
@@ -638,6 +692,7 @@ const GapAPI = {
         {
             slug: "social-workers",
             occupation_name: "Social workers",
+            parent_slug: "community-and-social-service-occupations",
             year: "2017",
             number_workers: "714",
             median_weekly_earnings: "906",
@@ -650,6 +705,7 @@ const GapAPI = {
         {
             slug: "legal-occupations",
             occupation_name: "Legal occupations",
+            parent_slug: "professional-and-related-occupations",
             year: "2017",
             number_workers: "1379",
             median_weekly_earnings: "1443",
@@ -662,6 +718,7 @@ const GapAPI = {
         {
             slug: "lawyers",
             occupation_name: "Lawyers",
+            parent_slug: "legal-occupations",
             year: "2017",
             number_workers: "781",
             median_weekly_earnings: "1901",
@@ -674,6 +731,7 @@ const GapAPI = {
         {
             slug: "education-training-and-library-occupations",
             occupation_name: "Education, training, and library occupations",
+            parent_slug: "professional-and-related-occupations",
             year: "2017",
             number_workers: "6978",
             median_weekly_earnings: "1002",
@@ -686,6 +744,7 @@ const GapAPI = {
         {
             slug: "postsecondary-teachers",
             occupation_name: "Postsecondary teachers",
+            parent_slug: "education-training-and-library-occupations",
             year: "2017",
             number_workers: "985",
             median_weekly_earnings: "1312",
@@ -698,6 +757,7 @@ const GapAPI = {
         {
             slug: "elementary-and-middle-school-teachers",
             occupation_name: "Elementary and middle school teachers",
+            parent_slug: "education-training-and-library-occupations",
             year: "2017",
             number_workers: "2838",
             median_weekly_earnings: "1023",
@@ -710,6 +770,7 @@ const GapAPI = {
         {
             slug: "secondary-school-teachers",
             occupation_name: "Secondary school teachers",
+            parent_slug: "education-training-and-library-occupations",
             year: "2017",
             number_workers: "917",
             median_weekly_earnings: "1139",
@@ -722,6 +783,7 @@ const GapAPI = {
         {
             slug: "special-education-teachers",
             occupation_name: "Special education teachers",
+            parent_slug: "education-training-and-library-occupations",
             year: "2017",
             number_workers: "386",
             median_weekly_earnings: "1024",
@@ -734,6 +796,7 @@ const GapAPI = {
         {
             slug: "other-teachers-and-instructors",
             occupation_name: "Other teachers and instructors",
+            parent_slug: "education-training-and-library-occupations",
             year: "2017",
             number_workers: "419",
             median_weekly_earnings: "897",
@@ -746,6 +809,7 @@ const GapAPI = {
         {
             slug: "teacher-assistants",
             occupation_name: "Teacher assistants",
+            parent_slug: "education-training-and-library-occupations",
             year: "2017",
             number_workers: "590",
             median_weekly_earnings: "550",
@@ -759,6 +823,7 @@ const GapAPI = {
             slug: "arts-design-entertainment-sports-and-media-occupations",
             occupation_name:
                 "Arts, design, entertainment, sports, and media occupations",
+            parent_slug: "professional-and-related-occupations",
             year: "2017",
             number_workers: "1778",
             median_weekly_earnings: "1066",
@@ -771,6 +836,8 @@ const GapAPI = {
         {
             slug: "designers",
             occupation_name: "Designers",
+            parent_slug:
+                "arts-design-entertainment-sports-and-media-occupations",
             year: "2017",
             number_workers: "600",
             median_weekly_earnings: "1012",
@@ -783,6 +850,8 @@ const GapAPI = {
         {
             slug: "editors",
             occupation_name: "Editors",
+            parent_slug:
+                "arts-design-entertainment-sports-and-media-occupations",
             year: "2017",
             number_workers: "124",
             median_weekly_earnings: "1084",
@@ -795,6 +864,8 @@ const GapAPI = {
         {
             slug: "writers-and-authors",
             occupation_name: "Writers and authors",
+            parent_slug:
+                "arts-design-entertainment-sports-and-media-occupations",
             year: "2017",
             number_workers: "106",
             median_weekly_earnings: "1137",
@@ -808,6 +879,7 @@ const GapAPI = {
             slug: "healthcare-practitioners-and-technical-occupations",
             occupation_name:
                 "Healthcare practitioners and technical occupations",
+            parent_slug: "professional-and-related-occupations",
             year: "2017",
             number_workers: "6970",
             median_weekly_earnings: "1124",
@@ -820,6 +892,7 @@ const GapAPI = {
         {
             slug: "pharmacists",
             occupation_name: "Pharmacists",
+            parent_slug: "healthcare-practitioners-and-technical-occupations",
             year: "2017",
             number_workers: "254",
             median_weekly_earnings: "1923",
@@ -832,6 +905,7 @@ const GapAPI = {
         {
             slug: "physicians-and-surgeons",
             occupation_name: "Physicians and surgeons",
+            parent_slug: "healthcare-practitioners-and-technical-occupations",
             year: "2017",
             number_workers: "815",
             median_weekly_earnings: "1918",
@@ -844,6 +918,7 @@ const GapAPI = {
         {
             slug: "physical-therapists",
             occupation_name: "Physical therapists",
+            parent_slug: "healthcare-practitioners-and-technical-occupations",
             year: "2017",
             number_workers: "182",
             median_weekly_earnings: "1317",
@@ -856,6 +931,7 @@ const GapAPI = {
         {
             slug: "registered-nurses",
             occupation_name: "Registered nurses",
+            parent_slug: "healthcare-practitioners-and-technical-occupations",
             year: "2017",
             number_workers: "2536",
             median_weekly_earnings: "1150",
@@ -869,6 +945,7 @@ const GapAPI = {
             slug: "clinical-laboratory-technologists-and-technicians",
             occupation_name:
                 "Clinical laboratory technologists and technicians",
+            parent_slug: "healthcare-practitioners-and-technical-occupations",
             year: "2017",
             number_workers: "297",
             median_weekly_earnings: "890",
@@ -881,6 +958,7 @@ const GapAPI = {
         {
             slug: "diagnostic-related-technologists-and-technicians",
             occupation_name: "Diagnostic related technologists and technicians",
+            parent_slug: "healthcare-practitioners-and-technical-occupations",
             year: "2017",
             number_workers: "271",
             median_weekly_earnings: "1162",
@@ -893,6 +971,7 @@ const GapAPI = {
         {
             slug: "emergency-medical-technicians-and-paramedics",
             occupation_name: "Emergency medical technicians and paramedics",
+            parent_slug: "healthcare-practitioners-and-technical-occupations",
             year: "2017",
             number_workers: "203",
             median_weekly_earnings: "984",
@@ -906,6 +985,7 @@ const GapAPI = {
             slug: "health-practitioner-support-technologists-and-technicians",
             occupation_name:
                 "Health practitioner support technologists and technicians",
+            parent_slug: "healthcare-practitioners-and-technical-occupations",
             year: "2017",
             number_workers: "469",
             median_weekly_earnings: "710",
@@ -918,6 +998,7 @@ const GapAPI = {
         {
             slug: "service-occupations",
             occupation_name: "Service occupations",
+            parent_slug: "",
             year: "2017",
             number_workers: "16044",
             median_weekly_earnings: "544",
@@ -930,6 +1011,7 @@ const GapAPI = {
         {
             slug: "healthcare-support-occupations",
             occupation_name: "Healthcare support occupations",
+            parent_slug: "service-occupations",
             year: "2017",
             number_workers: "2500",
             median_weekly_earnings: "542",
@@ -942,6 +1024,7 @@ const GapAPI = {
         {
             slug: "nursing-psychiatric-and-home-health-aides",
             occupation_name: "Nursing, psychiatric, and home health aides",
+            parent_slug: "healthcare-support-occupations",
             year: "2017",
             number_workers: "1387",
             median_weekly_earnings: "500",
@@ -954,6 +1037,7 @@ const GapAPI = {
         {
             slug: "protective-service-occupations",
             occupation_name: "Protective service occupations",
+            parent_slug: "service-occupations",
             year: "2017",
             number_workers: "2739",
             median_weekly_earnings: "852",
@@ -966,6 +1050,7 @@ const GapAPI = {
         {
             slug: "bailiffs-correctional-officers-and-jailers",
             occupation_name: "Bailiffs, correctional officers, and jailers",
+            parent_slug: "protective-service-occupations",
             year: "2017",
             number_workers: "390",
             median_weekly_earnings: "771",
@@ -978,6 +1063,7 @@ const GapAPI = {
         {
             slug: "police-and-sheriffs-patrol-officers",
             occupation_name: "Police and sheriff's patrol officers",
+            parent_slug: "protective-service-occupations",
             year: "2017",
             number_workers: "688",
             median_weekly_earnings: "1015",
@@ -990,6 +1076,7 @@ const GapAPI = {
         {
             slug: "security-guards-and-gaming-surveillance-officers",
             occupation_name: "Security guards and gaming surveillance officers",
+            parent_slug: "protective-service-occupations",
             year: "2017",
             number_workers: "740",
             median_weekly_earnings: "596",
@@ -1002,6 +1089,7 @@ const GapAPI = {
         {
             slug: "food-preparation-and-serving-related-occupations",
             occupation_name: "Food preparation and serving related occupations",
+            parent_slug: "service-occupations",
             year: "2017",
             number_workers: "4465",
             median_weekly_earnings: "484",
@@ -1014,6 +1102,7 @@ const GapAPI = {
         {
             slug: "chefs-and-head-cooks",
             occupation_name: "Chefs and head cooks",
+            parent_slug: "food-preparation-and-serving-related-occupations",
             year: "2017",
             number_workers: "382",
             median_weekly_earnings: "634",
@@ -1028,6 +1117,7 @@ const GapAPI = {
                 "first-line-supervisors-of-food-preparation-and-serving-workers",
             occupation_name:
                 "First-line supervisors of food preparation and serving workers",
+            parent_slug: "food-preparation-and-serving-related-occupations",
             year: "2017",
             number_workers: "427",
             median_weekly_earnings: "537",
@@ -1040,6 +1130,7 @@ const GapAPI = {
         {
             slug: "cooks",
             occupation_name: "Cooks",
+            parent_slug: "food-preparation-and-serving-related-occupations",
             year: "2017",
             number_workers: "1365",
             median_weekly_earnings: "466",
@@ -1052,6 +1143,7 @@ const GapAPI = {
         {
             slug: "food-preparation-workers",
             occupation_name: "Food preparation workers",
+            parent_slug: "food-preparation-and-serving-related-occupations",
             year: "2017",
             number_workers: "510",
             median_weekly_earnings: "425",
@@ -1064,6 +1156,7 @@ const GapAPI = {
         {
             slug: "bartenders",
             occupation_name: "Bartenders",
+            parent_slug: "food-preparation-and-serving-related-occupations",
             year: "2017",
             number_workers: "210",
             median_weekly_earnings: "554",
@@ -1078,6 +1171,7 @@ const GapAPI = {
                 "combined-food-preparation-and-serving-workers-including-fast-food",
             occupation_name:
                 "Combined food preparation and serving workers, including fast food",
+            parent_slug: "food-preparation-and-serving-related-occupations",
             year: "2017",
             number_workers: "175",
             median_weekly_earnings: "407",
@@ -1090,6 +1184,7 @@ const GapAPI = {
         {
             slug: "waiters-and-waitresses",
             occupation_name: "Waiters and waitresses",
+            parent_slug: "food-preparation-and-serving-related-occupations",
             year: "2017",
             number_workers: "911",
             median_weekly_earnings: "493",
@@ -1103,6 +1198,7 @@ const GapAPI = {
             slug: "building-and-grounds-cleaning-and-maintenance-occupations",
             occupation_name:
                 "Building and grounds cleaning and maintenance occupations",
+            parent_slug: "service-occupations",
             year: "2017",
             number_workers: "3641",
             median_weekly_earnings: "522",
@@ -1117,6 +1213,8 @@ const GapAPI = {
                 "first-line-supervisors-of-housekeeping-and-janitorial-workers",
             occupation_name:
                 "First-line supervisors of housekeeping and janitorial workers",
+            parent_slug:
+                "building-and-grounds-cleaning-and-maintenance-occupations",
             year: "2017",
             number_workers: "190",
             median_weekly_earnings: "661",
@@ -1129,6 +1227,8 @@ const GapAPI = {
         {
             slug: "janitors-and-building-cleaners",
             occupation_name: "Janitors and building cleaners",
+            parent_slug:
+                "building-and-grounds-cleaning-and-maintenance-occupations",
             year: "2017",
             number_workers: "1595",
             median_weekly_earnings: "539",
@@ -1141,6 +1241,8 @@ const GapAPI = {
         {
             slug: "maids-and-housekeeping-cleaners",
             occupation_name: "Maids and housekeeping cleaners",
+            parent_slug:
+                "building-and-grounds-cleaning-and-maintenance-occupations",
             year: "2017",
             number_workers: "815",
             median_weekly_earnings: "450",
@@ -1153,6 +1255,7 @@ const GapAPI = {
         {
             slug: "personal-care-and-service-occupations",
             occupation_name: "Personal care and service occupations",
+            parent_slug: "service-occupations",
             year: "2017",
             number_workers: "2699",
             median_weekly_earnings: "520",
@@ -1165,6 +1268,7 @@ const GapAPI = {
         {
             slug: "first-line-supervisors-of-gaming-workers",
             occupation_name: "First-line supervisors of gaming workers",
+            parent_slug: "personal-care-and-service-occupations",
             year: "2017",
             number_workers: "126",
             median_weekly_earnings: "797",
@@ -1177,6 +1281,7 @@ const GapAPI = {
         {
             slug: "personal-care-aides",
             occupation_name: "Personal care aides",
+            parent_slug: "personal-care-and-service-occupations",
             year: "2017",
             number_workers: "735",
             median_weekly_earnings: "486",
@@ -1189,6 +1294,7 @@ const GapAPI = {
         {
             slug: "recreation-and-fitness-workers",
             occupation_name: "Recreation and fitness workers",
+            parent_slug: "personal-care-and-service-occupations",
             year: "2017",
             number_workers: "200",
             median_weekly_earnings: "616",
@@ -1201,6 +1307,7 @@ const GapAPI = {
         {
             slug: "sales-and-office-occupations",
             occupation_name: "Sales and office occupations",
+            parent_slug: "",
             year: "2017",
             number_workers: "23686",
             median_weekly_earnings: "718",
@@ -1213,6 +1320,7 @@ const GapAPI = {
         {
             slug: "sales-and-related-occupations",
             occupation_name: "Sales and related occupations",
+            parent_slug: "sales-and-office-occupations",
             year: "2017",
             number_workers: "9953",
             median_weekly_earnings: "763",
@@ -1225,6 +1333,7 @@ const GapAPI = {
         {
             slug: "first-line-supervisors-of-retail-sales-workers",
             occupation_name: "First-line supervisors of retail sales workers",
+            parent_slug: "sales-and-related-occupations",
             year: "2017",
             number_workers: "2388",
             median_weekly_earnings: "764",
@@ -1238,6 +1347,7 @@ const GapAPI = {
             slug: "first-line-supervisors-of-non-retail-sales-workers",
             occupation_name:
                 "First-line supervisors of non-retail sales workers",
+            parent_slug: "sales-and-related-occupations",
             year: "2017",
             number_workers: "815",
             median_weekly_earnings: "1062",
@@ -1250,6 +1360,7 @@ const GapAPI = {
         {
             slug: "cashiers",
             occupation_name: "Cashiers",
+            parent_slug: "sales-and-related-occupations",
             year: "2017",
             number_workers: "1360",
             median_weekly_earnings: "438",
@@ -1262,6 +1373,7 @@ const GapAPI = {
         {
             slug: "retail-salespersons",
             occupation_name: "Retail salespersons",
+            parent_slug: "sales-and-related-occupations",
             year: "2017",
             number_workers: "1896",
             median_weekly_earnings: "615",
@@ -1274,6 +1386,7 @@ const GapAPI = {
         {
             slug: "advertising-sales-agents",
             occupation_name: "Advertising sales agents",
+            parent_slug: "sales-and-related-occupations",
             year: "2017",
             number_workers: "193",
             median_weekly_earnings: "887",
@@ -1286,6 +1399,7 @@ const GapAPI = {
         {
             slug: "insurance-sales-agents",
             occupation_name: "Insurance sales agents",
+            parent_slug: "sales-and-related-occupations",
             year: "2017",
             number_workers: "440",
             median_weekly_earnings: "897",
@@ -1299,6 +1413,7 @@ const GapAPI = {
             slug: "securities-commodities-and-financial-services-sales-agents",
             occupation_name:
                 "Securities, commodities, and financial services sales agents",
+            parent_slug: "sales-and-related-occupations",
             year: "2017",
             number_workers: "231",
             median_weekly_earnings: "1332",
@@ -1311,6 +1426,7 @@ const GapAPI = {
         {
             slug: "sales-representatives-services-all-other",
             occupation_name: "Sales representatives, services, all other",
+            parent_slug: "sales-and-related-occupations",
             year: "2017",
             number_workers: "458",
             median_weekly_earnings: "1147",
@@ -1324,6 +1440,7 @@ const GapAPI = {
             slug: "sales-representatives-wholesale-and-manufacturing",
             occupation_name:
                 "Sales representatives, wholesale and manufacturing",
+            parent_slug: "sales-and-related-occupations",
             year: "2017",
             number_workers: "1105",
             median_weekly_earnings: "1157",
@@ -1336,6 +1453,7 @@ const GapAPI = {
         {
             slug: "real-estate-brokers-and-sales-agents",
             occupation_name: "Real estate brokers and sales agents",
+            parent_slug: "sales-and-related-occupations",
             year: "2017",
             number_workers: "488",
             median_weekly_earnings: "953",
@@ -1348,6 +1466,7 @@ const GapAPI = {
         {
             slug: "sales-and-related-workers-all-other",
             occupation_name: "Sales and related workers, all other",
+            parent_slug: "sales-and-related-occupations",
             year: "2017",
             number_workers: "195",
             median_weekly_earnings: "971",
@@ -1360,6 +1479,7 @@ const GapAPI = {
         {
             slug: "office-and-administrative-support-occupations",
             occupation_name: "Office and administrative support occupations",
+            parent_slug: "sales-and-office-occupations",
             year: "2017",
             number_workers: "13733",
             median_weekly_earnings: "701",
@@ -1374,6 +1494,7 @@ const GapAPI = {
                 "first-line-supervisors-of-office-and-administrative-support-workers",
             occupation_name:
                 "First-line supervisors of office and administrative support workers",
+            parent_slug: "office-and-administrative-support-occupations",
             year: "2017",
             number_workers: "1261",
             median_weekly_earnings: "867",
@@ -1386,6 +1507,7 @@ const GapAPI = {
         {
             slug: "billing-and-posting-clerks",
             occupation_name: "Billing and posting clerks",
+            parent_slug: "office-and-administrative-support-occupations",
             year: "2017",
             number_workers: "405",
             median_weekly_earnings: "696",
@@ -1398,6 +1520,7 @@ const GapAPI = {
         {
             slug: "bookkeeping-accounting-and-auditing-clerks",
             occupation_name: "Bookkeeping, accounting, and auditing clerks",
+            parent_slug: "office-and-administrative-support-occupations",
             year: "2017",
             number_workers: "718",
             median_weekly_earnings: "719",
@@ -1410,6 +1533,7 @@ const GapAPI = {
         {
             slug: "customer-service-representatives",
             occupation_name: "Customer service representatives",
+            parent_slug: "office-and-administrative-support-occupations",
             year: "2017",
             number_workers: "1881",
             median_weekly_earnings: "654",
@@ -1422,6 +1546,7 @@ const GapAPI = {
         {
             slug: "receptionists-and-information-clerks",
             occupation_name: "Receptionists and information clerks",
+            parent_slug: "office-and-administrative-support-occupations",
             year: "2017",
             number_workers: "892",
             median_weekly_earnings: "602",
@@ -1434,6 +1559,7 @@ const GapAPI = {
         {
             slug: "dispatchers",
             occupation_name: "Dispatchers",
+            parent_slug: "office-and-administrative-support-occupations",
             year: "2017",
             number_workers: "255",
             median_weekly_earnings: "710",
@@ -1446,6 +1572,7 @@ const GapAPI = {
         {
             slug: "postal-service-mail-carriers",
             occupation_name: "Postal service mail carriers",
+            parent_slug: "office-and-administrative-support-occupations",
             year: "2017",
             number_workers: "266",
             median_weekly_earnings: "944",
@@ -1458,6 +1585,7 @@ const GapAPI = {
         {
             slug: "production-planning-and-expediting-clerks",
             occupation_name: "Production, planning, and expediting clerks",
+            parent_slug: "office-and-administrative-support-occupations",
             year: "2017",
             number_workers: "238",
             median_weekly_earnings: "911",
@@ -1470,6 +1598,7 @@ const GapAPI = {
         {
             slug: "shipping-receiving-and-traffic-clerks",
             occupation_name: "Shipping, receiving, and traffic clerks",
+            parent_slug: "office-and-administrative-support-occupations",
             year: "2017",
             number_workers: "544",
             median_weekly_earnings: "611",
@@ -1482,6 +1611,7 @@ const GapAPI = {
         {
             slug: "stock-clerks-and-order-fillers",
             occupation_name: "Stock clerks and order fillers",
+            parent_slug: "office-and-administrative-support-occupations",
             year: "2017",
             number_workers: "982",
             median_weekly_earnings: "559",
@@ -1494,6 +1624,7 @@ const GapAPI = {
         {
             slug: "secretaries-and-administrative-assistants",
             occupation_name: "Secretaries and administrative assistants",
+            parent_slug: "office-and-administrative-support-occupations",
             year: "2017",
             number_workers: "2165",
             median_weekly_earnings: "739",
@@ -1506,6 +1637,7 @@ const GapAPI = {
         {
             slug: "office-clerks-general",
             occupation_name: "Office clerks, general",
+            parent_slug: "office-and-administrative-support-occupations",
             year: "2017",
             number_workers: "935",
             median_weekly_earnings: "682",
@@ -1519,6 +1651,7 @@ const GapAPI = {
             slug: "office-and-administrative-support-workers-all-other",
             occupation_name:
                 "Office and administrative support workers, all other",
+            parent_slug: "office-and-administrative-support-occupations",
             year: "2017",
             number_workers: "473",
             median_weekly_earnings: "758",
@@ -1532,6 +1665,7 @@ const GapAPI = {
             slug: "natural-resources-construction-and-maintenance-occupations",
             occupation_name:
                 "Natural resources, construction, and maintenance occupations",
+            parent_slug: "",
             year: "2017",
             number_workers: "11509",
             median_weekly_earnings: "801",
@@ -1544,6 +1678,8 @@ const GapAPI = {
         {
             slug: "farming-fishing-and-forestry-occupations",
             occupation_name: "Farming, fishing, and forestry occupations",
+            parent_slug:
+                "natural-resources-construction-and-maintenance-occupations",
             year: "2017",
             number_workers: "962",
             median_weekly_earnings: "539",
@@ -1556,6 +1692,7 @@ const GapAPI = {
         {
             slug: "miscellaneous-agricultural-workers",
             occupation_name: "Miscellaneous agricultural workers",
+            parent_slug: "farming-fishing-and-forestry-occupations",
             year: "2017",
             number_workers: "701",
             median_weekly_earnings: "517",
@@ -1569,6 +1706,8 @@ const GapAPI = {
             slug: "installation-maintenance-and-repair-occupations",
             occupation_name:
                 "Installation, maintenance, and repair occupations",
+            parent_slug:
+                "natural-resources-construction-and-maintenance-occupations",
             year: "2017",
             number_workers: "4400",
             median_weekly_earnings: "878",
@@ -1582,6 +1721,7 @@ const GapAPI = {
             slug: "production-transportation-and-material-moving-occupations",
             occupation_name:
                 "Production, transportation, and material moving occupations",
+            parent_slug: "",
             year: "2017",
             number_workers: "14825",
             median_weekly_earnings: "692",
@@ -1594,6 +1734,8 @@ const GapAPI = {
         {
             slug: "production-occupations",
             occupation_name: "Production occupations",
+            parent_slug:
+                "production-transportation-and-material-moving-occupations",
             year: "2017",
             number_workers: "7589",
             median_weekly_earnings: "701",
@@ -1607,6 +1749,7 @@ const GapAPI = {
             slug: "first-line-supervisors-of-production-and-operating-workers",
             occupation_name:
                 "First-line supervisors of production and operating workers",
+            parent_slug: "production-occupations",
             year: "2017",
             number_workers: "722",
             median_weekly_earnings: "966",
@@ -1620,6 +1763,7 @@ const GapAPI = {
             slug: "electrical-electronics-and-electromechanical-assemblers",
             occupation_name:
                 "Electrical, electronics, and electromechanical assemblers",
+            parent_slug: "production-occupations",
             year: "2017",
             number_workers: "123",
             median_weekly_earnings: "624",
@@ -1632,6 +1776,7 @@ const GapAPI = {
         {
             slug: "miscellaneous-assemblers-and-fabricators",
             occupation_name: "Miscellaneous assemblers and fabricators",
+            parent_slug: "production-occupations",
             year: "2017",
             number_workers: "957",
             median_weekly_earnings: "630",
@@ -1644,6 +1789,7 @@ const GapAPI = {
         {
             slug: "bakers",
             occupation_name: "Bakers",
+            parent_slug: "production-occupations",
             year: "2017",
             number_workers: "135",
             median_weekly_earnings: "472",
@@ -1657,6 +1803,7 @@ const GapAPI = {
             slug: "butchers-and-other-meat-poultry-and-fish-processing-workers",
             occupation_name:
                 "Butchers and other meat, poultry, and fish processing workers",
+            parent_slug: "production-occupations",
             year: "2017",
             number_workers: "259",
             median_weekly_earnings: "587",
@@ -1669,6 +1816,7 @@ const GapAPI = {
         {
             slug: "food-processing-workers-all-other",
             occupation_name: "Food processing workers, all other",
+            parent_slug: "production-occupations",
             year: "2017",
             number_workers: "171",
             median_weekly_earnings: "676",
@@ -1681,6 +1829,7 @@ const GapAPI = {
         {
             slug: "metal-workers-and-plastic-workers-all-other",
             occupation_name: "Metal workers and plastic workers, all other",
+            parent_slug: "production-occupations",
             year: "2017",
             number_workers: "381",
             median_weekly_earnings: "654",
@@ -1694,6 +1843,7 @@ const GapAPI = {
             slug: "inspectors-testers-sorters-samplers-and-weighers",
             occupation_name:
                 "Inspectors, testers, sorters, samplers, and weighers",
+            parent_slug: "production-occupations",
             year: "2017",
             number_workers: "717",
             median_weekly_earnings: "765",
@@ -1707,6 +1857,7 @@ const GapAPI = {
             slug: "packaging-and-filling-machine-operators-and-tenders",
             occupation_name:
                 "Packaging and filling machine operators and tenders",
+            parent_slug: "production-occupations",
             year: "2017",
             number_workers: "275",
             median_weekly_earnings: "553",
@@ -1719,6 +1870,7 @@ const GapAPI = {
         {
             slug: "production-workers-all-other",
             occupation_name: "Production workers, all other",
+            parent_slug: "production-occupations",
             year: "2017",
             number_workers: "890",
             median_weekly_earnings: "663",
@@ -1731,6 +1883,8 @@ const GapAPI = {
         {
             slug: "transportation-and-material-moving-occupations",
             occupation_name: "Transportation and material moving occupations",
+            parent_slug:
+                "production-transportation-and-material-moving-occupations",
             year: "2017",
             number_workers: "7236",
             median_weekly_earnings: "681",
@@ -1743,6 +1897,7 @@ const GapAPI = {
         {
             slug: "bus-drivers",
             occupation_name: "Bus drivers",
+            parent_slug: "transportation-and-material-moving-occupations",
             year: "2017",
             number_workers: "356",
             median_weekly_earnings: "605",
@@ -1755,6 +1910,7 @@ const GapAPI = {
         {
             slug: "driver-sales-workers-and-truck-drivers",
             occupation_name: "Driver/sales workers and truck drivers",
+            parent_slug: "transportation-and-material-moving-occupations",
             year: "2017",
             number_workers: "2828",
             median_weekly_earnings: "797",
@@ -1767,6 +1923,7 @@ const GapAPI = {
         {
             slug: "taxi-drivers-and-chauffeurs",
             occupation_name: "Taxi drivers and chauffeurs",
+            parent_slug: "transportation-and-material-moving-occupations",
             year: "2017",
             number_workers: "362",
             median_weekly_earnings: "604",
@@ -1780,6 +1937,7 @@ const GapAPI = {
             slug: "laborers-and-freight-stock-and-material-movers-hand",
             occupation_name:
                 "Laborers and freight, stock, and material movers, hand",
+            parent_slug: "transportation-and-material-moving-occupations",
             year: "2017",
             number_workers: "1450",
             median_weekly_earnings: "578",
@@ -1792,6 +1950,7 @@ const GapAPI = {
         {
             slug: "packers-and-packagers-hand",
             occupation_name: "Packers and packagers, hand",
+            parent_slug: "transportation-and-material-moving-occupations",
             year: "2017",
             number_workers: "368",
             median_weekly_earnings: "480",
