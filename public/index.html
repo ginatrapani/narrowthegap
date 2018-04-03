@@ -55,7 +55,6 @@
 })(document, "script", "facebook-jssdk");
 </script>
 
-</script>
     <script>
     window.twttr = (function(d, s, id) {
     var js,
@@ -73,6 +72,17 @@
     };
     return t;
 })(document, "script", "twitter-wjs");
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-436966-8"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag("js", new Date());
+
+gtag("config", "UA-436966-8");
 </script>
 
   </head>
@@ -103,21 +113,4 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
 
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(["_setAccount", "UA-436966-8"]);
-_gaq.push(["_trackPageview"]);
-
-(function() {
-    var ga = document.createElement("script");
-    ga.type = "text/javascript";
-    ga.async = true;
-    ga.src =
-        ("https:" == document.location.protocol
-            ? "https://ssl"
-            : "https://www") + ".google-analytics.com/ga.js";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(ga, s);
-})();
-</script>
 </html>
