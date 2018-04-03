@@ -8,20 +8,20 @@ import Footer from "./Footer.js";
 class AllOccupations extends Component {
     renderChidren(g) {
         return (
-            <li key={g.slug}>
-                <Link to={`/gap/${g.slug}`}>
-                    {GapAPI.capitalize(
-                        GapAPI.cleanOccupationName(g.occupation_name)
-                    )}
-                </Link>
-                <ul>
+            <ul>
+                <li key={g.slug}>
+                    <Link to={`/gap/${g.slug}`}>
+                        {GapAPI.capitalize(
+                            GapAPI.cleanOccupationName(g.occupation_name)
+                        )}
+                    </Link>
                     {GapAPI.gaps
                         .filter(function(child) {
                             return child.parent_slug === g.slug;
                         })
                         .map(g => this.renderChidren(g))}
-                </ul>
-            </li>
+                </li>
+            </ul>
         );
     }
 
