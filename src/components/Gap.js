@@ -218,7 +218,9 @@ class Gap extends Component {
                                 </a>{" "}
                                 have the smallest pay gaps.
                             </p>
-                            <h2>41 more years</h2>
+                            <h2>
+                                {2058 - new Date().getFullYear()} more years
+                            </h2>
                             <p>
                                 Unequal pay isn&#8217;t just unfair, it&#8217;s
                                 illegal. But unless men and women who have the
@@ -281,19 +283,19 @@ class Gap extends Component {
 
                             <div className="media">
                                 <div className="media-left">
-                                    <a href="http://www.aauw.org/files/2013/02/The-Simple-Truth-2013.pdf">
+                                    <a href="https://iwpr.org/wp-content/uploads/2018/03/C464_Gender-Wage-Gap-2.pdf">
                                         <div className="media-object glyphicon glyphicon-save-file" />
                                     </a>
                                 </div>
                                 <div className="media-body">
                                     <p className="media-heading">
                                         The Institute for Women&#8217;s Policy
-                                        Research&#8217;s report{" "}
-                                        <a href="http://www.iwpr.org/publications/pubs/the-status-of-women-in-the-states-2015-2014-employment-and-earnings">
-                                            The Status of Women in the States:
-                                            2015 Employment and Earnings
+                                        Research&#8217;s fact sheet{" "}
+                                        <a href="https://iwpr.org/wp-content/uploads/2018/03/C464_Gender-Wage-Gap-2.pdf">
+                                            The Gender Wage Gap: 2017 Earnings
+                                            Differences by Race and Ethnicity
                                         </a>{" "}
-                                        (PDF, 82 pages)
+                                        (PDF, 4 pages)
                                     </p>
                                 </div>
                             </div>
@@ -425,9 +427,9 @@ class Gap extends Component {
                                 </p>
                                 <footer>
                                     Pay disparity does not exist in every
-                                    occupation &mdash; but across all
-                                    occupations, women consistently earn less at
-                                    the same jobs.
+                                    occupation, but across all occupations,
+                                    women consistently earn less at the same
+                                    jobs.
                                 </footer>
                             </blockquote>
                         </div>
