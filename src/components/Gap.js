@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import GapAPI from "../GapAPI.js";
 import Header from "./Header.js";
 import Footer from "./Footer.js";
+import AllOccupations from "./AllOccupations.js";
 
 class ScrollToTopOnMount extends Component {
     componentDidMount(prevProps) {
@@ -176,9 +177,6 @@ class Gap extends Component {
                             <a href="http://www.bls.gov/cps/cpsaat39.htm">
                                 U.S. Bureau of Labor Statistics
                             </a>.
-                        </h6>
-                        <h6>
-                            <a href="/all">See all occupations.</a>
                         </h6>
                     </div>
                     <div className="row">
@@ -432,6 +430,24 @@ class Gap extends Component {
                                     jobs.
                                 </footer>
                             </blockquote>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h2>
+                                See how it is in <em>your</em> line of work.
+                            </h2>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <AllOccupations columnSlug="management-professional-and-related-occupations" />
+                        </div>
+                        <div className="col-md-6">
+                            <AllOccupations columnSlug="service-occupations" />
+                            <AllOccupations columnSlug="production-transportation-and-material-moving-occupations" />
                         </div>
                     </div>
                     <Footer />
