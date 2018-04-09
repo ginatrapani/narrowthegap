@@ -1,8 +1,8 @@
 body {
     padding-bottom: 40px;
-    background-color: #0971b2; /*#F5F5F5;*/
+    background-color: #0B4D73; /*#F5F5F5;*/
     color: #fff;
-    font-family: "Open Sans", sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     line-height: 1.75;
 }
 .jumbotron {
@@ -13,6 +13,7 @@ body {
 }
 .jumbotron h1 {
     font-weight: bold;
+    font-family: 'IBM Plex Serif', sans-serif;
 }
 .jumbotron a {
     color: #333;
