@@ -35,6 +35,33 @@ class Gap extends Component {
         }
     }
 
+    exclaim() {
+        const exclamations = [
+            "Holy poop!",
+            "In this day and age?!",
+            "Unfair!",
+            "Unbelievable!",
+            "Unacceptable!",
+            "Outrageous!",
+            "Ugh!",
+            "Argh!",
+            "What garbage!",
+            "Hell no!",
+            "No way!",
+            "Bonkers!",
+            "Gah!",
+            "Ridiculous!",
+            "Not okay!",
+            "Yikes!",
+            "Not cool!",
+            "So wrong!",
+            "The hell?",
+            "Oh COME on!",
+            "GTFO!",
+            "Seriously?!"
+        ];
+        return exclamations[Math.floor(Math.random() * exclamations.length)];
+    }
     render() {
         const gapSlug =
             this.props.match.params.gapSlug === undefined
@@ -83,7 +110,6 @@ class Gap extends Component {
         var yearlyGapStyle = {
             color: "#b21212"
         };
-
         return (
             <div className="App">
                 <Helmet>
@@ -142,35 +168,31 @@ class Gap extends Component {
                             to the dollar men earn doing the same job.
                         </h1>
                         <br />
-                        <p>
-                            That&#8217;s{" "}
-                            <strong style={weeklyGapStyle}>
-                                ${lessPerWeek}
-                            </strong>{" "}
-                            out of a weekly paycheck, which means she gets paid{" "}
-                            <strong style={yearlyGapStyle}>
-                                ${(lessPerWeek * 52).toLocaleString()}
-                            </strong>{" "}
-                            less per year.
-                        </p>
-                        <a
-                            href="https://twitter.com/share"
-                            className="twitter-share-button"
-                            id="twitter-share-button"
-                            data-url={permalink}
-                            data-lang="en"
-                            data-text={tweetText}
-                        >
-                            Tweet
-                        </a>
-                        <span
-                            className="fb-share-button"
-                            data-href={permalink}
-                            id="fb-share-button"
-                            data-layout="button"
-                        />
-                        <br />
-                        <h6>
+                        <div>
+                            <p>
+                                That&#8217;s{" "}
+                                <strong style={weeklyGapStyle}>
+                                    ${lessPerWeek}
+                                </strong>{" "}
+                                out of a weekly paycheck, which means she gets
+                                paid{" "}
+                                <strong style={yearlyGapStyle}>
+                                    ${(lessPerWeek * 52).toLocaleString()}
+                                </strong>{" "}
+                                less per year.
+                            </p>
+                        </div>
+                        <div className="righty">
+                            <a
+                                href={`/gap/` + GapAPI.random(gap.slug).slug}
+                                role="button"
+                                className="btn btn-danger btn-md active"
+                            >
+                                {this.exclaim()} Show me another
+                            </a>
+                        </div>
+
+                        <h6 className="small-print">
                             Wage gap calculated from {gap.year} median weekly
                             earnings of full-time salary workers in the United
                             States as per the{" "}

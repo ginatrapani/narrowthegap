@@ -1968,6 +1968,15 @@ const GapAPI = {
         const isGap = g => g.slug === slug;
         return this.gaps.find(isGap);
     },
+    random: function(excludeSlug) {
+        const gapsExcludingslug = this.gaps.filter(
+            gap => gap.slug !== excludeSlug
+        );
+
+        return gapsExcludingslug[
+            Math.floor(Math.random() * gapsExcludingslug.length)
+        ];
+    },
     cleanOccupationName: function(occupationName) {
         let cleanName = occupationName.toLowerCase();
         //ends with , hand
