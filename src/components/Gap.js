@@ -99,16 +99,16 @@ class Gap extends Component {
 
         // @TODO Stop using inline CSS
         var inTheUSStyle = {
-            color: "#1485CC"
+            color: "#0B4D73"
         };
         var centsStyle = {
-            color: "#b21212"
+            color: "#EC5A62"
         };
         var weeklyGapStyle = {
-            color: "#b21212"
+            color: "#EC5A62"
         };
         var yearlyGapStyle = {
-            color: "#b21212"
+            color: "#EC5A62"
         };
         return (
             <div className="App">
