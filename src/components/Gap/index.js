@@ -95,6 +95,8 @@ class Gap extends Component {
             GapAPI.cleanOccupationName(gap.occupation_name) +
             " - Narrow the Gap";
 
+        const permalink = "https://narrowthegap.co/gap/" + gapSlug;
+
         // @TODO Stop using inline CSS
         var inTheUSStyle = {
             color: "#0B4D73"
@@ -155,9 +157,24 @@ class Gap extends Component {
                             <span style={centsStyle}>
                                 {gap.cents_to_dollar}&nbsp;cents
                             </span>{" "}
-                            to the dollar men earn doing the same job.
+                            to the dollar men earn doing the same job.{" "}
                         </h1>
-                        <br />
+                        <a
+                            href="https://twitter.com/share"
+                            className="twitter-share-button"
+                            id="twitter-share-button"
+                            data-url={permalink}
+                            data-lang="en"
+                            data-text={tweetText}
+                        >
+                            Tweet
+                        </a>&nbsp;
+                        <span
+                            className="fb-share-button"
+                            data-href={permalink}
+                            id="fb-share-button"
+                            data-layout="button"
+                        />
                         <div>
                             <p>
                                 That&#8217;s{" "}
@@ -176,12 +193,11 @@ class Gap extends Component {
                             <a
                                 href={`/gap/` + GapAPI.random(gap.slug).slug}
                                 role="button"
-                                className="btn btn-danger btn-md active"
+                                className="btn btn-danger btn-lg active"
                             >
                                 {this.exclaim()} Show me another
                             </a>
                         </div>
-
                         <h6 className="small-print">
                             Wage gap calculated from {gap.year} median weekly
                             earnings of full-time salary workers in the United
