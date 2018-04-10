@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import SearchField from "../SearchField";
 import "./Header.css";
@@ -8,13 +9,13 @@ class Header extends Component {
         return (
             <div className="Header">
                 <div className="Header__brand">
-                    <a href="/" className="Header__logo-link">
+                    <Link to="/" className="Header__logo-link">
                         <img
                             className="Header__logo"
                             src="/images/ntg-logo-white.png"
                             alt="Narrow the Gap"
                         />
-                    </a>
+                    </Link>
                 </div>
                 <div className="Header__actions">
                     <SearchField />
