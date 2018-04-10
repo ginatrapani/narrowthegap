@@ -1,0 +1,18 @@
+.jumbotron a.RandomizerButton,
+a.RandomizerButton,
+.RandomizerButton {
+    display: inline-block;
+    margin-left: 0.5em;
+    background-color: #ec5a62;
+    color: #fff;
+    border: 0;
+    transition: 200ms all;
+}
+
+.jumbotron a.RandomizerButton:hover,
+a.RandomizerButton:hover,
+.RandomizerButton:hover {
+    color: #fff;
+    background-color: #0b4d73;
+    border: 0;
+}
