@@ -47,6 +47,6 @@ a.Header__logo-link:hover {
   }
 
   .Header__actions > * {
-    margin: 0 1em 0 0;
+    margin: 0;
   }
 }

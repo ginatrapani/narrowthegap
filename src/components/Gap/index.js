@@ -155,6 +155,7 @@ class Gap extends Component {
                                     ${(lessPerWeek * 52).toLocaleString()}
                                 </strong>{" "}
                                 less per year.
+                                <RandomizerButton gap={gap} />
                             </p>
                         </div>
                         <h6 className="small-print">
