@@ -7,9 +7,9 @@
 }
 
 .Header__logo {
-    width: 160px;
+    width: 10em;
     height: auto;
-    margin: 0;
+    margin: .5em 0 0;
 }
 
 .Header__actions {
