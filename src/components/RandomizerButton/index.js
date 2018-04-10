@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import GapAPI from "../../GapAPI.js";
-import './RandomizerButton.css';
+import "./RandomizerButton.css";
 
 class RandomizerButton extends Component {
     exclaim() {
@@ -32,16 +32,16 @@ class RandomizerButton extends Component {
         return exclamations[Math.floor(Math.random() * exclamations.length)];
     }
     render() {
-        return <Link
-            to={`/gap/` + GapAPI.random(this.props.gap.slug).slug}
-            role="button"
-            className="btn btn-default btn-sm RandomizerButton"
-        >
-            {this.exclaim()} Show me another
-        </Link>
-
+        return (
+            <Link
+                to={`/gap/` + GapAPI.random(this.props.gap.slug).slug}
+                role="button"
+                className="btn btn-default btn-sm RandomizerButton"
+            >
+                {this.exclaim()} Show me another
+            </Link>
+        );
     }
-
 }
 
 export default RandomizerButton;
