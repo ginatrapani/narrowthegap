@@ -38,6 +38,12 @@ class Gap extends Component {
         }
     }
 
+    componentDidUpdate(prevProps) {
+        // When we add a new page to the history, scroll to the top.
+        const { history } = this.props;
+        if (history.action === "PUSH") window.scrollTo(0,0);
+    }
+
     render() {
         const gapSlug =
             this.props.match.params.gapSlug === undefined
