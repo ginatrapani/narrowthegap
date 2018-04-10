@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import GapAPI from "../../GapAPI.js";
-import Header from "../Header.js";
+import Header from "../Header";
 import Footer from "../Footer.js";
 import RandomizerButton from "../RandomizerButton";
 import AllOccupations from "../AllOccupations.js";
@@ -111,7 +111,7 @@ class Gap extends Component {
                     <link rel="canonical" href={permalink} />
                 </Helmet>
                 <div className="container">
-                    <Header />
+                    <Header gap={gap} />
                     {/* Main hero unit for a primary call to action */}
                     <div className="jumbotron">
                         <h1>
@@ -156,9 +156,6 @@ class Gap extends Component {
                                 </strong>{" "}
                                 less per year.
                             </p>
-                        </div>
-                        <div className="righty">
-                            <RandomizerButton gap={gap} />
                         </div>
                         <h6 className="small-print">
                             Wage gap calculated from {gap.year} median weekly

@@ -1,0 +1,21 @@
+.Header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header__logo {
+  width: 160px;
+  height: auto;
+  margin: 0;
+}
+
+a.Header__logo-link {
+  text-decoration: none;
+  border: 0;
+}
+
+a.Header__logo-link:hover {
+  border: 0;
+}

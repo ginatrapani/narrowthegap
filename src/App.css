@@ -61,6 +61,7 @@ blockquote footer {
 .righty {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 h6.small-print {
     margin-top: 30px;
