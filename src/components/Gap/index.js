@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import GapAPI from "../../GapAPI.js";
 import Header from "../Header.js";
 import Footer from "../Footer.js";
+import RandomizerButton from '../RandomizerButton';
 import AllOccupations from "../AllOccupations.js";
 
 class ScrollToTopOnMount extends Component {
@@ -37,33 +38,6 @@ class Gap extends Component {
         }
     }
 
-    exclaim() {
-        const exclamations = [
-            "Holy poop!",
-            "In this day and age?!",
-            "Unfair!",
-            "Unbelievable!",
-            "Unacceptable!",
-            "Outrageous!",
-            "Ugh!",
-            "Argh!",
-            "What garbage!",
-            "Hell no!",
-            "No way!",
-            "Bonkers!",
-            "Gah!",
-            "Ridiculous!",
-            "Not okay!",
-            "Yikes!",
-            "Not cool!",
-            "So wrong!",
-            "The hell?",
-            "Oh COME on!",
-            "GTFO!",
-            "Seriously?!"
-        ];
-        return exclamations[Math.floor(Math.random() * exclamations.length)];
-    }
     render() {
         const gapSlug =
             this.props.match.params.gapSlug === undefined
@@ -192,13 +166,7 @@ class Gap extends Component {
                             </p>
                         </div>
                         <div className="righty">
-                            <a
-                                href={`/gap/` + GapAPI.random(gap.slug).slug}
-                                role="button"
-                                className="btn btn-danger btn-lg active"
-                            >
-                                {this.exclaim()} Show me another
-                            </a>
+                            <RandomizerButton gap={gap} />
                         </div>
                         <h6 className="small-print">
                             Wage gap calculated from {gap.year} median weekly
