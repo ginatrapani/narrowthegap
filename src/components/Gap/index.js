@@ -97,8 +97,6 @@ class Gap extends Component {
             GapAPI.cleanOccupationName(gap.occupation_name) +
             " - Narrow the Gap";
 
-        const permalink = "https://narrowthegap.co/gap/" + gapSlug;
-
         // @TODO Stop using inline CSS
         var inTheUSStyle = {
             color: "#0B4D73"
@@ -112,36 +110,32 @@ class Gap extends Component {
         var yearlyGapStyle = {
             color: "#EC5A62"
         };
+
+        const permalink = "https://narrowthegap.co/gap/" + gapSlug;
         var socialImage = require("./ntg-twitter-card.png");
+        const socialImageUrl = "https://narrowthegap.co" + socialImage;
         return (
             <div className="App">
                 <Helmet>
                     <title>{pageTitle}</title>
                     <meta itemprop="name" content={pageTitle} />
                     <meta itemprop="description" content={tweetText} />
-                    <meta itemprop="image" content={'https://narrowthegap.co' + socialImage} />
+                    <meta itemprop="image" content={socialImageUrl} />
                     <meta
                         name="author"
                         content="U.S. Bureau of Labor Statistics"
                     />
                     <meta property="og:title" content={pageTitle} />
                     <meta property="og:type" content="website" />
-                    <meta
-                        property="og:url"
-                        content="https://narrowthegap.co/"
-                    />
-                  <meta property="og:image" content={'https://narrowthegap.co' + socialImage} />
+                    <meta property="og:url" content={permalink} />
+                    <meta property="og:image" content={socialImageUrl} />
                     <meta property="og:site_name" content="Narrow the Gapp" />
                     <meta property="fb:admins" content="606837591" />
-
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:title" content={pageTitle} />
                     <meta name="twitter:description" content={tweetText} />
-                    <meta name="twitter:image" content={'https://narrowthegap.co' + socialImage} />
-                    <meta
-                        name="twitter:url"
-                        content="https://narrowthegap.co/"
-                    />
+                    <meta name="twitter:image" content={socialImageUrl} />
+                    <meta name="twitter:url" content={permalink} />
                 </Helmet>
                 <ScrollToTopOnMount />
                 <div className="container">
