@@ -1,6 +1,6 @@
 body {
     padding-bottom: 40px;
-    background-color: #0B4D73; /*#F5F5F5;*/
+    background-color: #0b4d73; /*#F5F5F5;*/
     color: #fff;
     font-family: "IBM Plex Sans", sans-serif;
     line-height: 1.75;
@@ -13,7 +13,7 @@ body {
 }
 .jumbotron h1 {
     font-weight: bold;
-    font-family: 'IBM Plex Serif', sans-serif;
+    font-family: "IBM Plex Serif", sans-serif;
 }
 .jumbotron a {
     color: #333;
@@ -144,4 +144,7 @@ blockquote footer {
 }
 .glyphicon {
     font-size: 30px;
+}
+a.btn.btn-danger {
+    background-color: #ec5a62;
 }
