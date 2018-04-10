@@ -14,7 +14,7 @@ class Footer extends Component {
                     <p>
                         A <a href="http://ginatrapani.org">Gina Trapani</a>{" "}
                         Production.{" "}
-                        <a href="http://github.com/ginatrapani/narrowthegapp">
+                        <a href="http://github.com/ginatrapani/narrowthegap">
                             Fork this web site on GitHub.
                         </a>
                     </p>

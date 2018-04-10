@@ -100,7 +100,8 @@ class Gap extends Component {
                     <meta property="og:type" content="website" />
                     <meta property="og:url" content={permalink} />
                     <meta property="og:image" content={socialImageUrl} />
-                    <meta property="og:site_name" content="Narrow the Gapp" />
+                    <meta property="og:site_name" content="Narrow the Gap" />
+                    <meta property="og:description" content={tweetText} />
                     <meta property="fb:admins" content="606837591" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:title" content={pageTitle} />
