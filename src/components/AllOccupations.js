@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import GapAPI from "../GapAPI.js";
 
 class AllOccupations extends Component {
@@ -6,11 +7,11 @@ class AllOccupations extends Component {
         return (
             <ul key={g.slug}>
                 <li key={g.slug}>
-                    <a href={`/gap/${g.slug}`}>
+                    <Link to={`/gap/${g.slug}`}>
                         {GapAPI.capitalize(
                             GapAPI.cleanOccupationName(g.occupation_name)
                         )}
-                    </a>
+                    </Link>
                     {GapAPI.gaps
                         .filter(function(child) {
                             return child.parent_slug === g.slug;
