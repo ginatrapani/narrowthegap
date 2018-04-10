@@ -3,18 +3,9 @@ import { Helmet } from "react-helmet";
 import GapAPI from "../../GapAPI.js";
 import Header from "../Header.js";
 import Footer from "../Footer.js";
-import RandomizerButton from '../RandomizerButton';
+import RandomizerButton from "../RandomizerButton";
 import AllOccupations from "../AllOccupations.js";
-
-class ScrollToTopOnMount extends Component {
-    componentDidMount(prevProps) {
-        window.scrollTo(0, 0);
-    }
-
-    render() {
-        return null;
-    }
-}
+import { Link } from "react-router-dom";
 
 class Gap extends Component {
     getPhrasing(occupationName) {
@@ -41,7 +32,7 @@ class Gap extends Component {
     componentDidUpdate(prevProps) {
         // When we add a new page to the history, scroll to the top.
         const { history } = this.props;
-        if (history.action === "PUSH") window.scrollTo(0,0);
+        if (history.action === "PUSH") window.scrollTo(0, 0);
     }
 
     render() {
@@ -118,7 +109,6 @@ class Gap extends Component {
                     <meta name="twitter:url" content={permalink} />
                     <link rel="canonical" href={permalink} />
                 </Helmet>
-                <ScrollToTopOnMount />
                 <div className="container">
                     <Header />
                     {/* Main hero unit for a primary call to action */}
@@ -200,19 +190,19 @@ class Gap extends Component {
                                 colleagues is likely to become wider and wider.
                             </p>
                             <p>
-                                <a href="/gap/securities-commodities-and-financial-services-sales-agents">
+                                <Link to="/gap/securities-commodities-and-financial-services-sales-agents">
                                     Securities, commodities, and financial
                                     services sales agents
-                                </a>{" "}
+                                </Link>{" "}
                                 and{" "}
-                                <a href="/gap/personal-financial-advisors">
+                                <Link to="/gap/personal-financial-advisors">
                                     personal financial advisors
-                                </a>{" "}
+                                </Link>{" "}
                                 suffer the largest gender pay gaps.{" "}
-                                <a href="/gap/counselors">Counselors</a> and{" "}
-                                <a href="/gap/advertising-sales-agents">
+                                <Link to="/gap/counselors">Counselors</Link> and{" "}
+                                <Link to="/gap/advertising-sales-agents">
                                     advertising sales agents
-                                </a>{" "}
+                                </Link>{" "}
                                 have the smallest pay gaps.
                             </p>
                             <h2>
@@ -377,13 +367,13 @@ class Gap extends Component {
                                 <footer>
                                     This data compares the salaries of women and
                                     men in the same jobs, from{" "}
-                                    <a href="/gap/janitors-and-building-cleaners">
+                                    <Link to="/gap/janitors-and-building-cleaners">
                                         janitors
-                                    </a>{" "}
+                                    </Link>{" "}
                                     to{" "}
-                                    <a href="/gap/chief-executives">
+                                    <Link to="/gap/chief-executives">
                                         executives
-                                    </a>.
+                                    </Link>.
                                 </footer>
                             </blockquote>
 
