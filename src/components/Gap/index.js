@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import GapAPI from "../GapAPI.js";
-import Header from "./Header.js";
-import Footer from "./Footer.js";
-import AllOccupations from "./AllOccupations.js";
+import GapAPI from "../../GapAPI.js";
+import Header from "../Header.js";
+import Footer from "../Footer.js";
+import AllOccupations from "../AllOccupations.js";
 
 class ScrollToTopOnMount extends Component {
     componentDidMount(prevProps) {
@@ -95,8 +95,6 @@ class Gap extends Component {
             GapAPI.cleanOccupationName(gap.occupation_name) +
             " - Narrow the Gap";
 
-        const permalink = "https://narrowthegap.co/gap/" + gapSlug;
-
         // @TODO Stop using inline CSS
         var inTheUSStyle = {
             color: "#0B4D73"
@@ -110,16 +108,14 @@ class Gap extends Component {
         var yearlyGapStyle = {
             color: "#EC5A62"
         };
+        var socialImage = require("./ntg-twitter-card.png");
         return (
             <div className="App">
                 <Helmet>
                     <title>{pageTitle}</title>
                     <meta itemprop="name" content={pageTitle} />
                     <meta itemprop="description" content={tweetText} />
-                    <meta
-                        itemprop="image"
-                        content="https://narrowthegap.co/images/narrow-the-gapp.png"
-                    />
+                    <meta itemprop="image" content={socialImage} />
                     <meta
                         name="author"
                         content="U.S. Bureau of Labor Statistics"
@@ -130,20 +126,14 @@ class Gap extends Component {
                         property="og:url"
                         content="https://narrowthegap.co/"
                     />
-                    <meta
-                        property="og:image"
-                        content="https://narrowthegap.co/images/narrow-the-gapp.png"
-                    />
+                    <meta property="og:image" content={socialImage} />
                     <meta property="og:site_name" content="Narrow the Gapp" />
                     <meta property="fb:admins" content="606837591" />
 
-                    <meta name="twitter:card" content="summary" />
+                    <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:title" content={pageTitle} />
                     <meta name="twitter:description" content={tweetText} />
-                    <meta
-                        name="twitter:image"
-                        content="https://narrowthegap.co/images/narrow-the-gapp.png"
-                    />
+                    <meta name="twitter:image" content={socialImage} />
                     <meta
                         name="twitter:url"
                         content="https://narrowthegap.co/"
