@@ -136,6 +136,7 @@ class Gap extends Component {
                     <meta name="twitter:description" content={tweetText} />
                     <meta name="twitter:image" content={socialImageUrl} />
                     <meta name="twitter:url" content={permalink} />
+                    <link rel="canonical" href={permalink} />
                 </Helmet>
                 <ScrollToTopOnMount />
                 <div className="container">
