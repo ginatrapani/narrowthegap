@@ -17,7 +17,9 @@ class ScrollToTopOnMount extends Component {
 
 class Gap extends Component {
     getPhrasing(occupationName) {
-        if (occupationName.endsWith("occupations")) {
+        if (
+            GapAPI.cleanOccupationName(occupationName).endsWith("occupations")
+        ) {
             return " who work in";
         }
         return "";
