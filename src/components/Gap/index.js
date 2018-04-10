@@ -86,7 +86,7 @@ class Gap extends Component {
             GapAPI.cleanOccupationName(gap.occupation_name) +
             " make " +
             gap.cents_to_dollar +
-            " cents to the dollar men earn #NarrowTheGap";
+            " cents to the dollar men earn #EqualPayDay";
 
         const pageTitle =
             "The gender pay gap for women" +
