@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+
 import RandomizerButton from '../RandomizerButton';
-import styles from './Header.css';
+import SearchField from '../SearchField';
+import './Header.css';
+
 class Header extends Component {
   render() {
     return (
@@ -19,6 +22,7 @@ class Header extends Component {
         </div>
         <div className="Header__actions">
           <RandomizerButton gap={this.props.gap} />
+            <SearchField />
         </div>
 
       </div>

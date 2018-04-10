@@ -1,7 +1,8 @@
 .Header {
   margin-top: 10px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
@@ -11,6 +12,17 @@
   margin: 0;
 }
 
+.Header__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Header__actions > * {
+  margin: 0.5em 0;
+}
+
 a.Header__logo-link {
   text-decoration: none;
   border: 0;
@@ -18,4 +30,23 @@ a.Header__logo-link {
 
 a.Header__logo-link:hover {
   border: 0;
+}
+
+@media (min-width: 400px) {
+  .Header {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .Header__actions {
+    flex-wrap: nowrap;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .Header__actions > * {
+    margin: 0 1em 0 0;
+  }
 }

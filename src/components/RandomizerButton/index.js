@@ -35,7 +35,7 @@ class RandomizerButton extends Component {
         return <Link
             to={`/gap/` + GapAPI.random(this.props.gap.slug).slug}
             role="button"
-            className="btn btn-danger btn-lg active"
+            className="btn btn-danger btn-md active"
         >
             {this.exclaim()} Show me another
         </Link>
