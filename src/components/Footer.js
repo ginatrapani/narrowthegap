@@ -12,10 +12,15 @@ class Footer extends Component {
                 <hr />
                 <footer>
                     <p>
-                        A <a href="http://ginatrapani.org">Gina Trapani</a>{" "}
-                        Production.{" "}
+                        Made with ❤️ by{" "}
+                        <a href="http://ginatrapani.org">Gina Trapani</a> and{" "}
+                        <a href="http://capndesign.com/">Matt Jacobs</a>. Logo
+                        by{" "}
+                        <a href="http://www.hollydoodlestudio.com/">
+                            Holly Graham
+                        </a>.{" "}
                         <a href="http://github.com/ginatrapani/narrowthegap">
-                            Fork this web site on GitHub.
+                            🍴Fork this site on GitHub.
                         </a>
                     </p>
                 </footer>
