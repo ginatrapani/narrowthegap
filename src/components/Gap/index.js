@@ -115,7 +115,7 @@ class Gap extends Component {
                     <title>{pageTitle}</title>
                     <meta itemprop="name" content={pageTitle} />
                     <meta itemprop="description" content={tweetText} />
-                    <meta itemprop="image" content={socialImage} />
+                    <meta itemprop="image" content={'https://narrowthegap.co' + socialImage} />
                     <meta
                         name="author"
                         content="U.S. Bureau of Labor Statistics"
@@ -126,14 +126,14 @@ class Gap extends Component {
                         property="og:url"
                         content="https://narrowthegap.co/"
                     />
-                    <meta property="og:image" content={socialImage} />
+                  <meta property="og:image" content={'https://narrowthegap.co' + socialImage} />
                     <meta property="og:site_name" content="Narrow the Gapp" />
                     <meta property="fb:admins" content="606837591" />
 
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:title" content={pageTitle} />
                     <meta name="twitter:description" content={tweetText} />
-                    <meta name="twitter:image" content={socialImage} />
+                    <meta name="twitter:image" content={'https://narrowthegap.co' + socialImage} />
                     <meta
                         name="twitter:url"
                         content="https://narrowthegap.co/"
