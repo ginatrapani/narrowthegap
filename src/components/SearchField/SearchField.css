@@ -1,3 +1,12 @@
 .SearchField {
-    width: 20em;
+    width: 100%;
+    min-width: 15em;
+    max-width: 25em;
+    margin: 1em .5em 0;
+}
+
+@media (min-width: 480px) {
+  .SearchField {
+      margin: 0;
+  }
 }

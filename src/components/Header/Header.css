@@ -1,7 +1,7 @@
 .Header {
     margin-top: 10px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -9,18 +9,15 @@
 .Header__logo {
     width: 10em;
     height: auto;
-    margin: .5em 0 0;
+    margin: .5em 0 1em;
 }
 
 .Header__actions {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-.Header__actions > * {
-    margin: 0.5em 0;
+    width: 100%;
+    flex-grow: 1;
 }
 
 a.Header__logo-link {
@@ -32,15 +29,20 @@ a.Header__logo-link:hover {
     border: 0;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 480px) {
     .Header {
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         flex-wrap: nowrap;
     }
 
+    .Header__logo {
+        margin: .5em 0;
+    }
+
     .Header__actions {
-        flex-wrap: nowrap;
+        width: auto;
         display: inline-flex;
         justify-content: flex-end;
         align-items: center;
