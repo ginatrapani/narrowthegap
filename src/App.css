@@ -103,6 +103,11 @@ a:hover {
     border-bottom: 1px solid #fff;
     text-decoration: none;
 }
+a:visited {
+    color: #fff; /*#006DCC;*/
+    border: 0;
+    text-decoration: none;
+}
 blockquote {
     font-size: 16px;
     border: none;
