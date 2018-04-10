@@ -1970,7 +1970,9 @@ const GapAPI = {
     },
     random: function(excludeSlug) {
         const gapsExcludingslug = this.gaps.filter(
-            gap => gap.slug !== excludeSlug
+            gap =>
+                gap.slug !== excludeSlug &&
+                gap.slug !== "total-full-time-wage-and-salary-workers"
         );
 
         return gapsExcludingslug[
