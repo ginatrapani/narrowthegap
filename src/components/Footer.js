@@ -20,7 +20,10 @@ class Footer extends Component {
                             Holly Graham
                         </a>.{" "}
                         <a href="http://github.com/ginatrapani/narrowthegap">
-                            🍴Fork this site on GitHub.
+                            🍴Fork this on GitHub.
+                        </a>{" "}
+                        <a href="https://glitch.com/~narrow-the-gap">
+                            🎏Remix this on Glitch.
                         </a>
                     </p>
                 </footer>
