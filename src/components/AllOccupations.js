@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import GapAPI from "../GapAPI.js";
 
 class AllOccupations extends Component {
-    renderChidren(g) {
+    renderChildren(g) {
         return (
             <ul key={g.slug}>
                 <li key={g.slug}>
@@ -13,10 +13,8 @@ class AllOccupations extends Component {
                         )}
                     </Link>
                     {GapAPI.gaps
-                        .filter(function(child) {
-                            return child.parent_slug === g.slug;
-                        })
-                        .map(g => this.renderChidren(g))}
+                        .filter(child => child.parent_slug === g.slug)
+                        .map(g => this.renderChildren(g))}
                 </li>
             </ul>
         );
@@ -27,10 +25,8 @@ class AllOccupations extends Component {
         return (
             <div className="span4">
                 {GapAPI.gaps
-                    .filter(function(g) {
-                        return g.slug === props.columnSlug;
-                    })
-                    .map(g => this.renderChidren(g))}
+                    .filter(g => g.slug === props.columnSlug)
+                    .map(g => this.renderChildren(g))}
             </div>
         );
     }

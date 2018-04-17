@@ -1969,14 +1969,14 @@ const GapAPI = {
         return this.gaps.find(isGap);
     },
     random: function(excludeSlug) {
-        const gapsExcludingslug = this.gaps.filter(
+        const gapsExcludingSlug = this.gaps.filter(
             gap =>
                 gap.slug !== excludeSlug &&
                 gap.slug !== "total-full-time-wage-and-salary-workers"
         );
 
-        return gapsExcludingslug[
-            Math.floor(Math.random() * gapsExcludingslug.length)
+        return gapsExcludingSlug[
+            Math.floor(Math.random() * gapsExcludingSlug.length)
         ];
     },
     cleanOccupationName: function(occupationName) {
@@ -2007,12 +2007,8 @@ const GapAPI = {
         }
         return cleanName;
     },
-    cutOffSuffix: function(str, suffix) {
-        return str.substring(0, str.length - suffix.length);
-    },
-    capitalize: function(str) {
-        return str.charAt(0).toUpperCase() + str.slice(1);
-    }
+    cutOffSuffix: (str, suffix) => str.substring(0, str.length - suffix.length),
+    capitalize: str => str.charAt(0).toUpperCase() + str.slice(1)
 };
 
 export default GapAPI;
