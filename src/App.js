@@ -7,6 +7,7 @@ const App = () => (
     <main>
         <Switch>
             <Route exact path="/" component={Gap} />
+            <Route exact path="/gap/" component={Gap} />
             <Route path="/gap/:gapSlug" component={Gap} />
         </Switch>
     </main>
