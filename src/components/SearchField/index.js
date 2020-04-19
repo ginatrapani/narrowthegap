@@ -26,7 +26,7 @@ class SearchField extends React.Component {
                     this.clearForm();
                 }}
                 options={GapAPI.gaps}
-                labelKey="occupation_name"
+                labelKey="name"
                 placeholder="Find your occupation"
             />
         );

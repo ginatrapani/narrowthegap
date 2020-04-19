@@ -2,11 +2,6 @@ import React, { Component } from "react";
 
 class Footer extends Component {
     render() {
-        // @TODO Stop using inline CSS
-        var hiddenStyle = {
-            visibility: "hidden"
-        };
-
         return (
             <div>
                 <hr />
@@ -16,7 +11,7 @@ class Footer extends Component {
                         <span role="img" aria-label="love">
                             ❤️
                         </span>{" "}
-                        by <a href="http://ginatrapani.org">Gina Trapani</a> and{" "}
+                        by <a href="https://ginatrapani.org">Gina Trapani</a> and{" "}
                         <a href="http://capndesign.com/">Matt Jacobs</a>. Logo
                         by{" "}
                         <a href="http://www.hollydoodlestudio.com/">
@@ -34,12 +29,6 @@ class Footer extends Component {
                         </a>
                     </p>
                 </footer>
-                <a
-                    style={hiddenStyle}
-                    href="https://plus.google.com/113612142759476883204?rel=author"
-                >
-                    Gina Trapani
-                </a>
             </div>
         );
     }

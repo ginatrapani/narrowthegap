@@ -6,27 +6,9 @@ import Footer from "../Footer.js";
 import RandomizerButton from "../RandomizerButton";
 import AllOccupations from "../AllOccupations.js";
 import { Link } from "react-router-dom";
+import "./Gap.css";
 
 class Gap extends Component {
-  getPhrasing(occupationName) {
-    if (GapAPI.cleanOccupationName(occupationName).endsWith("occupations")) {
-      return " who work in";
-    }
-    return "";
-  }
-
-  componentDidMount() {
-    if (window.twttr.widgets) {
-      window.twttr.widgets.load(
-        // re-scans the DOM to initialize widgets
-        document.getElementById("twitter-share-button")
-      );
-    }
-    if (window.FB) {
-      window.FB.XFBML.parse(document.getElementById("fb-share-button"));
-    }
-  }
-
   componentDidUpdate(prevProps) {
     // When we add a new page to the history, scroll to the top.
     const { history } = this.props;
@@ -34,53 +16,39 @@ class Gap extends Component {
   }
 
   render() {
+    // Get the occupation user requested
     const gapSlug =
       this.props.match.params.gapSlug === undefined
         ? "total-full-time-wage-and-salary-workers"
         : this.props.match.params.gapSlug;
-    const gap = GapAPI.get(gapSlug);
-    if (
-      !gap ||
-      gap.cents_to_dollar === -1 /* not enough data */ ||
-      gap.cents_to_dollar > 100 /* no gap */
-    ) {
-      // @TODO Create a proper NotFound component
-      return <div>Four-oh-four not found</div>;
+    var gap = GapAPI.get(gapSlug);
+    // If occupation exists but gap is null (data unavailable) fall back to parent occupation
+    var dataUnavailableGap = null;
+    if (gap && !gap.wageGaps.years[0].centsToDollar) {
+      dataUnavailableGap = gap;
+      gap = GapAPI.get(gap.parent.slug);
     }
-    const lessPerWeek =
-      gap.men_median_weekly_earnings - gap.women_median_weekly_earnings;
 
-    const tweetText =
-      "Women" +
-      this.getPhrasing(gap.occupation_name) +
-      " " +
-      GapAPI.cleanOccupationName(gap.occupation_name) +
-      " make " +
-      gap.cents_to_dollar +
-      " cents to the dollar men earn doing the same job #EqualPayDay";
+    const tweetText = gap
+      ? "Women" +
+        this.getWorkingPhrasing(gap.name) +
+        " " +
+        GapAPI.cleanOccupationName(gap.name) +
+        " made " +
+        gap.wageGaps.years[0].centsToDollar +
+        " cents to the dollar men earn doing the same job #EqualPayDay"
+      : "";
 
-    const pageTitle =
-      "The gender pay gap for women" +
-      this.getPhrasing(gap.occupation_name) +
-      " " +
-      GapAPI.cleanOccupationName(gap.occupation_name) +
-      " - Narrow the Gap";
-
-    // @TODO Stop using inline CSS
-    var inTheUSStyle = {
-      color: "#0B4D73"
-    };
-    var centsStyle = {
-      color: "#EC5A62"
-    };
-    var weeklyGapStyle = {
-      color: "#EC5A62"
-    };
-    var yearlyGapStyle = {
-      color: "#EC5A62"
-    };
+    const pageTitle = gap
+      ? "The gender pay gap for women" +
+        this.getWorkingPhrasing(gap.name) +
+        " " +
+        GapAPI.cleanOccupationName(gap.name) +
+        " - Narrow the Gap"
+      : "Narrow the Gap";
 
     const permalink = "https://narrowthegap.co/gap/" + gapSlug;
+    // @TODO deprecate this and just use the logo image
     var socialImage = require("./ntg-twitter-card.png");
     const socialImageUrl = "https://narrowthegap.co" + socialImage;
     return (
@@ -109,53 +77,27 @@ class Gap extends Component {
           <Header gap={gap} />
           {/* Main hero unit for a primary call to action */}
           <div className="jumbotron">
-            <h1>
-              Women{this.getPhrasing(gap.occupation_name)}{" "}
-              <span style={inTheUSStyle}>
-                {GapAPI.cleanOccupationName(gap.occupation_name)}
-              </span>{" "}
-              make{" "}
-              <span style={centsStyle}>{gap.cents_to_dollar}&nbsp;cents</span>{" "}
-              to the dollar men earn doing the same job.{" "}
-            </h1>
-            <a
-              href="https://twitter.com/share"
-              className="twitter-share-button"
-              id="twitter-share-button"
-              data-url={permalink}
-              data-lang="en"
-              data-text={tweetText}
-            >
-              Tweet
-            </a>
-            &nbsp;
-            <span
-              className="fb-share-button"
-              data-href={permalink}
-              id="fb-share-button"
-              data-layout="button"
-            />
-            <div>
-              <p>
-                That&#8217;s{" "}
-                <strong style={weeklyGapStyle}>${lessPerWeek}</strong> out of a
-                weekly paycheck, which means she gets paid{" "}
-                <strong style={yearlyGapStyle}>
-                  ${(lessPerWeek * 52).toLocaleString()}
-                </strong>{" "}
-                less per year.
-                <RandomizerButton gap={gap} />
-              </p>
-            </div>
-            <h6 className="small-print">
-              Wage gap calculated from {gap.year} median weekly earnings of
-              full-time salary workers in the United States as per the{" "}
-              <a href="http://www.bls.gov/cps/cpsaat39.htm">
-                U.S. Bureau of Labor Statistics
-              </a>
-              .
-            </h6>
+            {this.getDataUnavailableCaveat(dataUnavailableGap)}
+            {this.getHeadline(gap)}
+            {this.getDek(gap)}
+            {this.getSmallPrint(gap)}
           </div>
+          <div className="row">
+            <div className="col-md-12">
+              <h2>Choose an occupation:</h2>
+            </div>
+          </div>
+          <div className="row">
+            {/* @TODO check we're listing everything here */}
+            <div className="col-md-6">
+              <AllOccupations columnSlug="management-professional-and-related-occupations" />
+            </div>
+            <div className="col-md-6">
+              <AllOccupations columnSlug="service-occupations" />
+              <AllOccupations columnSlug="production-transportation-and-material-moving-occupations" />
+            </div>
+          </div>
+          <hr />
           <div className="row">
             <div className="col-md-4">
               <h2>Unfair and Illegal</h2>
@@ -373,29 +315,125 @@ class Gap extends Component {
               </blockquote>
             </div>
           </div>
-          <hr />
 
-          <div className="row">
-            <div className="col-md-12">
-              <h2>
-                See how it is in <em>your</em> line of work.
-              </h2>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-6">
-              <AllOccupations columnSlug="management-professional-and-related-occupations" />
-            </div>
-            <div className="col-md-6">
-              <AllOccupations columnSlug="service-occupations" />
-              <AllOccupations columnSlug="production-transportation-and-material-moving-occupations" />
-            </div>
-          </div>
           <Footer />
         </div>{" "}
         {/* /container */}
       </div>
     );
+  }
+
+  getDataUnavailableCaveat(unavailableDataGap) {
+    if (unavailableDataGap) {
+      return (
+        <div>
+          <p>
+            Not enough wage data to calculate the gap specifically for{" "}
+            {GapAPI.cleanOccupationName(unavailableDataGap.name)}. In general:
+          </p>
+        </div>
+      );
+    }
+    return;
+  }
+
+  getHeadline(gap) {
+    if (gap) {
+      if (gap.wageGaps.years[0].centsToDollar < 100) {
+        return (
+          <h1>
+            Women{this.getWorkingPhrasing(gap.name)}{" "}
+            <span class="ntg-blue">{GapAPI.cleanOccupationName(gap.name)}</span>{" "}
+            made{" "}
+            <span class="ntg-red">
+              {gap.wageGaps.years[0].centsToDollar}&nbsp;cents
+            </span>{" "}
+            to the dollar men earned in {gap.wageGaps.years[0].year}.{" "}
+          </h1>
+        );
+      } else {
+        const moreCents = gap.wageGaps.years[0].centsToDollar - 100;
+        const plural = moreCents > 1 ? "s" : "";
+        return (
+          <h1>
+            Women{this.getWorkingPhrasing(gap.name)}{" "}
+            <span class="ntg-blue">{GapAPI.cleanOccupationName(gap.name)}</span>{" "}
+            made{" "}
+            <span class="ntg-red">
+              {moreCents}&nbsp;cent{plural} more
+            </span>{" "}
+            per dollar men earned in {gap.wageGaps.years[0].year}.{" "}
+          </h1>
+        );
+      }
+    } else {
+      return <h1>Sorry, can't find that occupation.</h1>;
+    }
+  }
+
+  getDek(gap) {
+    if (gap) {
+      const lessPerWeek =
+        gap.wageGaps.years[0].menMedianWeeklyEarnings -
+        gap.wageGaps.years[0].womenMedianWeeklyEarnings;
+
+      if (lessPerWeek > 0) {
+        return (
+          <div>
+            <p>
+              That&#8217;s <strong class="ntg-red">${lessPerWeek}</strong> out
+              of a weekly paycheck, which means she got paid{" "}
+              <strong class="ntg-red">
+                ${(lessPerWeek * 52).toLocaleString()}
+              </strong>{" "}
+              less doing the same job.
+              <div>
+                <RandomizerButton gap={gap} />
+              </div>
+            </p>
+          </div>
+        );
+      } else {
+        return (
+          <div>
+            <p>
+              This is one of the few occupations that women earned more than men
+              in {gap.wageGaps.years[0].year}.
+              <div>
+                <RandomizerButton gap={gap} suppress={true} />
+              </div>
+            </p>
+          </div>
+        );
+      }
+    } else {
+      return "";
+    }
+  }
+
+  getSmallPrint(gap) {
+    if (gap) {
+      return (
+        <h6 className="small-print">
+          Wage gap calculated from {gap ? gap.wageGaps.years[0].year : ""}{" "}
+          median weekly earnings of full-time salary workers in the United
+          States as per the{" "}
+          <a href="http://www.bls.gov/cps/cpsaat39.htm">
+            U.S. Bureau of Labor Statistics
+          </a>
+          .
+        </h6>
+      );
+    } else {
+      return "";
+    }
+  }
+
+  getWorkingPhrasing(occupationName) {
+    if (GapAPI.cleanOccupationName(occupationName).endsWith("occupations")) {
+      return " who worked in";
+    }
+    return "";
   }
 }
 

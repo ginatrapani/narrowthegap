@@ -52,3 +52,8 @@ a.Header__logo-link:hover {
         margin: 0;
     }
 }
+ul {
+  list-style-type: none;
+  margin:0;
+  padding-left:1em;
+}
