@@ -1,1976 +1,13049 @@
-// A simple data API that will be used to get the data for our
-// components. On a real website, a more robust data fetching
-// solution would be more appropriate.
+// A simple static data API
 const GapAPI = {
   gaps: [
     {
-      slug: "total-full-time-wage-and-salary-workers",
-      occupation_name: "Total, full-time wage and salary workers",
-      parent_slug: null,
-      year: "2019",
-      number_workers: "117584",
-      median_weekly_earnings: "917",
-      men_number_workers: "65007",
-      men_median_weekly_earnings: "1007",
-      women_number_workers: "52577",
-      women_median_weekly_earnings: "821",
-      cents_to_dollar: "82"
-    },
-    {
+      name: "Management, professional, and related occupations",
       slug: "management-professional-and-related-occupations",
-      occupation_name: "Management, professional, and related occupations",
-      parent_slug: null,
-      year: "2019",
-      number_workers: "50119",
-      median_weekly_earnings: "1309",
-      men_number_workers: "24260",
-      men_median_weekly_earnings: "1539",
-      women_number_workers: "25859",
-      women_median_weekly_earnings: "1135",
-      cents_to_dollar: "74"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1539,
+            womenMedianWeeklyEarnings: 1135,
+            year: 2019,
+            centsToDollar: 73
+          },
+          {
+            menMedianWeeklyEarnings: 1539,
+            womenMedianWeeklyEarnings: 1135,
+            year: 2019,
+            centsToDollar: 73
+          }
+        ]
+      },
+      parent: null
     },
     {
+      name: "Management, business, and financial operations occupations",
       slug: "management-business-and-financial-operations-occupations",
-      occupation_name:
-        "Management, business, and financial operations occupations",
-      parent_slug: "management-professional-and-related-occupations",
-      year: "2019",
-      number_workers: "20696",
-      median_weekly_earnings: "1415",
-      men_number_workers: "11111",
-      men_median_weekly_earnings: "1598",
-      women_number_workers: "9585",
-      women_median_weekly_earnings: "1221",
-      cents_to_dollar: "76"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1598,
+            womenMedianWeeklyEarnings: 1221,
+            year: 2019,
+            centsToDollar: 76
+          },
+          {
+            menMedianWeeklyEarnings: 1598,
+            womenMedianWeeklyEarnings: 1221,
+            year: 2019,
+            centsToDollar: 76
+          }
+        ]
+      },
+      parent: {
+        slug: "management-professional-and-related-occupations"
+      }
     },
     {
+      name: "Management occupations",
       slug: "management-occupations",
-      occupation_name: "Management occupations",
-      parent_slug: "management-business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "13948",
-      median_weekly_earnings: "1478",
-      men_number_workers: "8002",
-      men_median_weekly_earnings: "1659",
-      women_number_workers: "5946",
-      women_median_weekly_earnings: "1266",
-      cents_to_dollar: "76"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1659,
+            womenMedianWeeklyEarnings: 1266,
+            year: 2019,
+            centsToDollar: 76
+          },
+          {
+            menMedianWeeklyEarnings: 1659,
+            womenMedianWeeklyEarnings: 1266,
+            year: 2019,
+            centsToDollar: 76
+          }
+        ]
+      },
+      parent: {
+        slug: "management-business-and-financial-operations-occupations"
+      }
     },
     {
+      name: "Chief executives",
       slug: "chief-executives",
-      occupation_name: "Chief executives",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "1113",
-      median_weekly_earnings: "2380",
-      men_number_workers: "812",
-      men_median_weekly_earnings: "2509",
-      women_number_workers: "302",
-      women_median_weekly_earnings: "2019",
-      cents_to_dollar: "80"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 2509,
+            womenMedianWeeklyEarnings: 2019,
+            year: 2019,
+            centsToDollar: 80
+          },
+          {
+            menMedianWeeklyEarnings: 2509,
+            womenMedianWeeklyEarnings: 2019,
+            year: 2019,
+            centsToDollar: 80
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
     },
     {
+      name: "General and operations managers",
       slug: "general-and-operations-managers",
-      occupation_name: "General and operations managers",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "990",
-      median_weekly_earnings: "1384",
-      men_number_workers: "678",
-      men_median_weekly_earnings: "1476",
-      women_number_workers: "312",
-      women_median_weekly_earnings: "1153",
-      cents_to_dollar: "78"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1476,
+            womenMedianWeeklyEarnings: 1153,
+            year: 2019,
+            centsToDollar: 78
+          },
+          {
+            menMedianWeeklyEarnings: 1476,
+            womenMedianWeeklyEarnings: 1153,
+            year: 2019,
+            centsToDollar: 78
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
     },
     {
+      name: "Marketing and sales managers",
       slug: "marketing-and-sales-managers",
-      occupation_name: "Marketing and sales managers",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "1109",
-      median_weekly_earnings: "1600",
-      men_number_workers: "591",
-      men_median_weekly_earnings: "1895",
-      women_number_workers: "518",
-      women_median_weekly_earnings: "1393",
-      cents_to_dollar: "74"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1895,
+            womenMedianWeeklyEarnings: 1393,
+            year: 2019,
+            centsToDollar: 73
+          },
+          {
+            menMedianWeeklyEarnings: 1895,
+            womenMedianWeeklyEarnings: 1393,
+            year: 2019,
+            centsToDollar: 73
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
     },
     {
+      name: "Administrative services managers",
       slug: "administrative-services-managers",
-      occupation_name: "Administrative services managers",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "154",
-      median_weekly_earnings: "1235",
-      men_number_workers: "93",
-      men_median_weekly_earnings: "1277",
-      women_number_workers: "61",
-      women_median_weekly_earnings: "1084",
-      cents_to_dollar: "85"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1277,
+            womenMedianWeeklyEarnings: 1084,
+            year: 2019,
+            centsToDollar: 84
+          },
+          {
+            menMedianWeeklyEarnings: 1277,
+            womenMedianWeeklyEarnings: 1084,
+            year: 2019,
+            centsToDollar: 84
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
     },
     {
+      name: "Computer and information systems managers",
       slug: "computer-and-information-systems-managers",
-      occupation_name: "Computer and information systems managers",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "629",
-      median_weekly_earnings: "1984",
-      men_number_workers: "439",
-      men_median_weekly_earnings: "2019",
-      women_number_workers: "190",
-      women_median_weekly_earnings: "1892",
-      cents_to_dollar: "94"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 2019,
+            womenMedianWeeklyEarnings: 1892,
+            year: 2019,
+            centsToDollar: 93
+          },
+          {
+            menMedianWeeklyEarnings: 2019,
+            womenMedianWeeklyEarnings: 1892,
+            year: 2019,
+            centsToDollar: 93
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
     },
     {
+      name: "Financial managers",
       slug: "financial-managers",
-      occupation_name: "Financial managers",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "1142",
-      median_weekly_earnings: "1447",
-      men_number_workers: "523",
-      men_median_weekly_earnings: "1897",
-      women_number_workers: "619",
-      women_median_weekly_earnings: "1207",
-      cents_to_dollar: "64"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1897,
+            womenMedianWeeklyEarnings: 1207,
+            year: 2019,
+            centsToDollar: 63
+          },
+          {
+            menMedianWeeklyEarnings: 1897,
+            womenMedianWeeklyEarnings: 1207,
+            year: 2019,
+            centsToDollar: 63
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
     },
     {
+      name: "Human resources managers",
       slug: "human-resources-managers",
-      occupation_name: "Human resources managers",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "299",
-      median_weekly_earnings: "1592",
-      men_number_workers: "69",
-      men_median_weekly_earnings: "1829",
-      women_number_workers: "230",
-      women_median_weekly_earnings: "1538",
-      cents_to_dollar: "84"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1829,
+            womenMedianWeeklyEarnings: 1538,
+            year: 2019,
+            centsToDollar: 84
+          },
+          {
+            menMedianWeeklyEarnings: 1829,
+            womenMedianWeeklyEarnings: 1538,
+            year: 2019,
+            centsToDollar: 84
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
     },
     {
-      slug: "purchasing-managers",
-      occupation_name: "Purchasing managers",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "214",
-      median_weekly_earnings: "1539",
-      men_number_workers: "129",
-      men_median_weekly_earnings: "1657",
-      women_number_workers: "84",
-      women_median_weekly_earnings: "1390",
-      cents_to_dollar: "84"
+      name: "Legislators",
+      slug: "legislators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
     },
     {
-      slug: "construction-managers",
-      occupation_name: "Construction managers",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "610",
-      median_weekly_earnings: "1468",
-      men_number_workers: "539",
-      men_median_weekly_earnings: "1511",
-      women_number_workers: "71",
-      women_median_weekly_earnings: "1210",
-      cents_to_dollar: "80"
-    },
-    {
-      slug: "education-administrators",
-      occupation_name: "Education administrators",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "811",
-      median_weekly_earnings: "1371",
-      men_number_workers: "276",
-      men_median_weekly_earnings: "1467",
-      women_number_workers: "536",
-      women_median_weekly_earnings: "1335",
-      cents_to_dollar: "91"
-    },
-    {
-      slug: "food-service-managers",
-      occupation_name: "Food service managers",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "785",
-      median_weekly_earnings: "863",
-      men_number_workers: "420",
-      men_median_weekly_earnings: "964",
-      women_number_workers: "365",
-      women_median_weekly_earnings: "719",
-      cents_to_dollar: "75"
-    },
-    {
-      slug: "lodging-managers",
-      occupation_name: "Lodging managers",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "116",
-      median_weekly_earnings: "975",
-      men_number_workers: "61",
-      men_median_weekly_earnings: "1096",
-      women_number_workers: "55",
-      women_median_weekly_earnings: "894",
-      cents_to_dollar: "82"
-    },
-    {
-      slug: "medical-and-health-services-managers",
-      occupation_name: "Medical and health services managers",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "578",
-      median_weekly_earnings: "1478",
-      men_number_workers: "169",
-      men_median_weekly_earnings: "1828",
-      women_number_workers: "409",
-      women_median_weekly_earnings: "1362",
-      cents_to_dollar: "75"
-    },
-    {
-      slug: "property-real-estate-and-community-association-managers",
-      occupation_name:
-        "Property, real estate, and community association managers",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "438",
-      median_weekly_earnings: "954",
-      men_number_workers: "214",
-      men_median_weekly_earnings: "1168",
-      women_number_workers: "224",
-      women_median_weekly_earnings: "849",
-      cents_to_dollar: "73"
-    },
-    {
-      slug: "social-and-community-service-managers",
-      occupation_name: "Social and community service managers",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "403",
-      median_weekly_earnings: "1243",
-      men_number_workers: "143",
-      men_median_weekly_earnings: "1452",
-      women_number_workers: "260",
-      women_median_weekly_earnings: "1156",
-      cents_to_dollar: "80"
-    },
-    {
-      slug: "managers-all-other",
-      occupation_name: "Managers, all other",
-      parent_slug: "management-occupations",
-      year: "2019",
-      number_workers: "3497",
-      median_weekly_earnings: "1533",
-      men_number_workers: "2088",
-      men_median_weekly_earnings: "1725",
-      women_number_workers: "1409",
-      women_median_weekly_earnings: "1317",
-      cents_to_dollar: "76"
-    },
-    {
-      slug: "business-and-financial-operations-occupations",
-      occupation_name: "Business and financial operations occupations",
-      parent_slug: "management-business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "6748",
-      median_weekly_earnings: "1285",
-      men_number_workers: "3109",
-      men_median_weekly_earnings: "1468",
-      women_number_workers: "3639",
-      women_median_weekly_earnings: "1148",
-      cents_to_dollar: "78"
-    },
-    {
-      slug: "wholesale-and-retail-buyers-except-farm-products",
-      occupation_name: "Wholesale and retail buyers, except farm products",
-      parent_slug: "business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "162",
-      median_weekly_earnings: "979",
-      men_number_workers: "87",
-      men_median_weekly_earnings: "982",
-      women_number_workers: "76",
-      women_median_weekly_earnings: "977",
-      cents_to_dollar: "99"
-    },
-    {
-      slug: "purchasing-agents-except-wholesale-retail-and-farm-products",
-      occupation_name:
-        "Purchasing agents, except wholesale, retail, and farm products",
-      parent_slug: "business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "248",
-      median_weekly_earnings: "1170",
-      men_number_workers: "134",
-      men_median_weekly_earnings: "1202",
-      women_number_workers: "113",
-      women_median_weekly_earnings: "1081",
-      cents_to_dollar: "90"
-    },
-    {
-      slug: "claims-adjusters-appraisers-examiners-and-investigators",
-      occupation_name:
-        "Claims adjusters, appraisers, examiners, and investigators",
-      parent_slug: "business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "299",
-      median_weekly_earnings: "1103",
-      men_number_workers: "104",
-      men_median_weekly_earnings: "1277",
-      women_number_workers: "195",
-      women_median_weekly_earnings: "972",
-      cents_to_dollar: "76"
-    },
-    {
-      slug: "compliance-officers",
-      occupation_name: "Compliance officers",
-      parent_slug: "business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "271",
-      median_weekly_earnings: "1346",
-      men_number_workers: "105",
-      men_median_weekly_earnings: "1561",
-      women_number_workers: "165",
-      women_median_weekly_earnings: "1264",
-      cents_to_dollar: "81"
-    },
-    {
-      slug: "human-resources-workers",
-      occupation_name: "Human resources workers",
-      parent_slug: "business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "680",
-      median_weekly_earnings: "1203",
-      men_number_workers: "186",
-      men_median_weekly_earnings: "1325",
-      women_number_workers: "494",
-      women_median_weekly_earnings: "1149",
-      cents_to_dollar: "87"
-    },
-    {
-      slug: "training-and-development-specialists",
-      occupation_name: "Training and development specialists",
-      parent_slug: "business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "120",
-      median_weekly_earnings: "1127",
-      men_number_workers: "51",
-      men_median_weekly_earnings: "1249",
-      women_number_workers: "68",
-      women_median_weekly_earnings: "968",
-      cents_to_dollar: "78"
-    },
-    {
-      slug: "management-analysts",
-      occupation_name: "Management analysts",
-      parent_slug: "business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "692",
-      median_weekly_earnings: "1622",
-      men_number_workers: "389",
-      men_median_weekly_earnings: "1870",
-      women_number_workers: "303",
-      women_median_weekly_earnings: "1517",
-      cents_to_dollar: "81"
-    },
-    {
-      slug: "market-research-analysts-and-marketing-specialists",
-      occupation_name: "Market research analysts and marketing specialists",
-      parent_slug: "business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "281",
-      median_weekly_earnings: "1363",
-      men_number_workers: "130",
-      men_median_weekly_earnings: "1688",
-      women_number_workers: "152",
-      women_median_weekly_earnings: "1228",
-      cents_to_dollar: "73"
-    },
-    {
-      slug: "business-operations-specialists-all-other",
-      occupation_name: "Business operations specialists, all other",
-      parent_slug: "business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "248",
-      median_weekly_earnings: "1283",
-      men_number_workers: "100",
-      men_median_weekly_earnings: "1540",
-      women_number_workers: "148",
-      women_median_weekly_earnings: "1193",
-      cents_to_dollar: "77"
-    },
-    {
+      name: "Accountants and auditors",
       slug: "accountants-and-auditors",
-      occupation_name: "Accountants and auditors",
-      parent_slug: "business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "1683",
-      median_weekly_earnings: "1221",
-      men_number_workers: "670",
-      men_median_weekly_earnings: "1419",
-      women_number_workers: "1013",
-      women_median_weekly_earnings: "1141",
-      cents_to_dollar: "80"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1419,
+            womenMedianWeeklyEarnings: 1141,
+            year: 2019,
+            centsToDollar: 80
+          },
+          {
+            menMedianWeeklyEarnings: 1419,
+            womenMedianWeeklyEarnings: 1141,
+            year: 2019,
+            centsToDollar: 80
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
     },
     {
+      name: "Financial analysts",
       slug: "financial-analysts",
-      occupation_name: "Financial analysts",
-      parent_slug: "business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "307",
-      median_weekly_earnings: "1613",
-      men_number_workers: "203",
-      men_median_weekly_earnings: "1763",
-      women_number_workers: "104",
-      women_median_weekly_earnings: "1386",
-      cents_to_dollar: "79"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1763,
+            womenMedianWeeklyEarnings: 1386,
+            year: 2019,
+            centsToDollar: 78
+          },
+          {
+            menMedianWeeklyEarnings: 1763,
+            womenMedianWeeklyEarnings: 1386,
+            year: 2019,
+            centsToDollar: 78
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
     },
     {
+      name: "Personal financial advisors",
       slug: "personal-financial-advisors",
-      occupation_name: "Personal financial advisors",
-      parent_slug: "business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "448",
-      median_weekly_earnings: "1618",
-      men_number_workers: "296",
-      men_median_weekly_earnings: "1905",
-      women_number_workers: "152",
-      women_median_weekly_earnings: "1232",
-      cents_to_dollar: "65"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1905,
+            womenMedianWeeklyEarnings: 1232,
+            year: 2019,
+            centsToDollar: 64
+          },
+          {
+            menMedianWeeklyEarnings: 1905,
+            womenMedianWeeklyEarnings: 1232,
+            year: 2019,
+            centsToDollar: 64
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
     },
     {
+      name: "Insurance underwriters",
       slug: "insurance-underwriters",
-      occupation_name: "Insurance underwriters",
-      parent_slug: "business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "116",
-      median_weekly_earnings: "1169",
-      men_number_workers: "57",
-      men_median_weekly_earnings: "1338",
-      women_number_workers: "59",
-      women_median_weekly_earnings: "1142",
-      cents_to_dollar: "85"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1338,
+            womenMedianWeeklyEarnings: 1142,
+            year: 2019,
+            centsToDollar: 85
+          },
+          {
+            menMedianWeeklyEarnings: 1338,
+            womenMedianWeeklyEarnings: 1142,
+            year: 2019,
+            centsToDollar: 85
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
     },
     {
+      name: "Credit counselors and loan officers",
       slug: "credit-counselors-and-loan-officers",
-      occupation_name: "Credit counselors and loan officers",
-      parent_slug: "business-and-financial-operations-occupations",
-      year: "2019",
-      number_workers: "366",
-      median_weekly_earnings: "1235",
-      men_number_workers: "173",
-      men_median_weekly_earnings: "1542",
-      women_number_workers: "193",
-      women_median_weekly_earnings: "1020",
-      cents_to_dollar: "66"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1542,
+            womenMedianWeeklyEarnings: 1020,
+            year: 2019,
+            centsToDollar: 66
+          },
+          {
+            menMedianWeeklyEarnings: 1542,
+            womenMedianWeeklyEarnings: 1020,
+            year: 2019,
+            centsToDollar: 66
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
     },
     {
+      name: "Professional and related occupations",
       slug: "professional-and-related-occupations",
-      occupation_name: "Professional and related occupations",
-      parent_slug: "management-professional-and-related-occupations",
-      year: "2019",
-      number_workers: "29423",
-      median_weekly_earnings: "1237",
-      men_number_workers: "13149",
-      men_median_weekly_earnings: "1493",
-      women_number_workers: "16274",
-      women_median_weekly_earnings: "1085",
-      cents_to_dollar: "73"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1493,
+            womenMedianWeeklyEarnings: 1085,
+            year: 2019,
+            centsToDollar: 72
+          },
+          {
+            menMedianWeeklyEarnings: 1493,
+            womenMedianWeeklyEarnings: 1085,
+            year: 2019,
+            centsToDollar: 72
+          }
+        ]
+      },
+      parent: {
+        slug: "management-professional-and-related-occupations"
+      }
     },
     {
+      name: "Computer and mathematical occupations",
       slug: "computer-and-mathematical-occupations",
-      occupation_name: "Computer and mathematical occupations",
-      parent_slug: "professional-and-related-occupations",
-      year: "2019",
-      number_workers: "4947",
-      median_weekly_earnings: "1579",
-      men_number_workers: "3668",
-      men_median_weekly_earnings: "1658",
-      women_number_workers: "1279",
-      women_median_weekly_earnings: "1353",
-      cents_to_dollar: "82"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1658,
+            womenMedianWeeklyEarnings: 1353,
+            year: 2019,
+            centsToDollar: 81
+          },
+          {
+            menMedianWeeklyEarnings: 1658,
+            womenMedianWeeklyEarnings: 1353,
+            year: 2019,
+            centsToDollar: 81
+          }
+        ]
+      },
+      parent: {
+        slug: "professional-and-related-occupations"
+      }
     },
     {
+      name: "Computer systems analysts",
       slug: "computer-systems-analysts",
-      occupation_name: "Computer systems analysts",
-      parent_slug: "computer-and-mathematical-occupations",
-      year: "2019",
-      number_workers: "623",
-      median_weekly_earnings: "1461",
-      men_number_workers: "368",
-      men_median_weekly_earnings: "1580",
-      women_number_workers: "255",
-      women_median_weekly_earnings: "1289",
-      cents_to_dollar: "82"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1580,
+            womenMedianWeeklyEarnings: 1289,
+            year: 2019,
+            centsToDollar: 81
+          },
+          {
+            menMedianWeeklyEarnings: 1580,
+            womenMedianWeeklyEarnings: 1289,
+            year: 2019,
+            centsToDollar: 81
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
     },
     {
+      name: "Computer programmers",
       slug: "computer-programmers",
-      occupation_name: "Computer programmers",
-      parent_slug: "computer-and-mathematical-occupations",
-      year: "2019",
-      number_workers: "425",
-      median_weekly_earnings: "1586",
-      men_number_workers: "343",
-      men_median_weekly_earnings: "1613",
-      women_number_workers: "82",
-      women_median_weekly_earnings: "1463",
-      cents_to_dollar: "91"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1613,
+            womenMedianWeeklyEarnings: 1463,
+            year: 2019,
+            centsToDollar: 90
+          },
+          {
+            menMedianWeeklyEarnings: 1613,
+            womenMedianWeeklyEarnings: 1463,
+            year: 2019,
+            centsToDollar: 90
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
     },
     {
+      name: "Software developers, applications and systems software",
       slug: "software-developers-applications-and-systems-software",
-      occupation_name: "Software developers, applications and systems software",
-      parent_slug: "computer-and-mathematical-occupations",
-      year: "2019",
-      number_workers: "1714",
-      median_weekly_earnings: "1894",
-      men_number_workers: "1379",
-      men_median_weekly_earnings: "1920",
-      women_number_workers: "335",
-      women_median_weekly_earnings: "1718",
-      cents_to_dollar: "89"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1920,
+            womenMedianWeeklyEarnings: 1718,
+            year: 2019,
+            centsToDollar: 89
+          },
+          {
+            menMedianWeeklyEarnings: 1920,
+            womenMedianWeeklyEarnings: 1718,
+            year: 2019,
+            centsToDollar: 89
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
     },
     {
+      name: "Web developers",
       slug: "web-developers",
-      occupation_name: "Web developers",
-      parent_slug: "computer-and-mathematical-occupations",
-      year: "2019",
-      number_workers: "144",
-      median_weekly_earnings: "1470",
-      men_number_workers: "88",
-      men_median_weekly_earnings: "1633",
-      women_number_workers: "56",
-      women_median_weekly_earnings: "1150",
-      cents_to_dollar: "70"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1633,
+            womenMedianWeeklyEarnings: 1150,
+            year: 2019,
+            centsToDollar: 70
+          },
+          {
+            menMedianWeeklyEarnings: 1633,
+            womenMedianWeeklyEarnings: 1150,
+            year: 2019,
+            centsToDollar: 70
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
     },
     {
+      name: "Computer support specialists",
       slug: "computer-support-specialists",
-      occupation_name: "Computer support specialists",
-      parent_slug: "computer-and-mathematical-occupations",
-      year: "2019",
-      number_workers: "486",
-      median_weekly_earnings: "1192",
-      men_number_workers: "365",
-      men_median_weekly_earnings: "1223",
-      women_number_workers: "121",
-      women_median_weekly_earnings: "1103",
-      cents_to_dollar: "90"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1223,
+            womenMedianWeeklyEarnings: 1103,
+            year: 2019,
+            centsToDollar: 90
+          },
+          {
+            menMedianWeeklyEarnings: 1223,
+            womenMedianWeeklyEarnings: 1103,
+            year: 2019,
+            centsToDollar: 90
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
     },
     {
+      name: "Network and computer systems administrators",
       slug: "network-and-computer-systems-administrators",
-      occupation_name: "Network and computer systems administrators",
-      parent_slug: "computer-and-mathematical-occupations",
-      year: "2019",
-      number_workers: "194",
-      median_weekly_earnings: "1447",
-      men_number_workers: "144",
-      men_median_weekly_earnings: "1541",
-      women_number_workers: "50",
-      women_median_weekly_earnings: "1233",
-      cents_to_dollar: "80"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1541,
+            womenMedianWeeklyEarnings: 1233,
+            year: 2019,
+            centsToDollar: 80
+          },
+          {
+            menMedianWeeklyEarnings: 1541,
+            womenMedianWeeklyEarnings: 1233,
+            year: 2019,
+            centsToDollar: 80
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
     },
     {
+      name: "Computer occupations, all other",
       slug: "computer-occupations-all-other",
-      occupation_name: "Computer occupations, all other",
-      parent_slug: "computer-and-mathematical-occupations",
-      year: "2019",
-      number_workers: "721",
-      median_weekly_earnings: "1277",
-      men_number_workers: "542",
-      men_median_weekly_earnings: "1365",
-      women_number_workers: "179",
-      women_median_weekly_earnings: "1148",
-      cents_to_dollar: "84"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1365,
+            womenMedianWeeklyEarnings: 1148,
+            year: 2019,
+            centsToDollar: 84
+          },
+          {
+            menMedianWeeklyEarnings: 1365,
+            womenMedianWeeklyEarnings: 1148,
+            year: 2019,
+            centsToDollar: 84
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
     },
     {
+      name: "Operations research analysts",
       slug: "operations-research-analysts",
-      occupation_name: "Operations research analysts",
-      parent_slug: "computer-and-mathematical-occupations",
-      year: "2019",
-      number_workers: "153",
-      median_weekly_earnings: "1512",
-      men_number_workers: "86",
-      men_median_weekly_earnings: "1753",
-      women_number_workers: "67",
-      women_median_weekly_earnings: "1188",
-      cents_to_dollar: "68"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1753,
+            womenMedianWeeklyEarnings: 1188,
+            year: 2019,
+            centsToDollar: 67
+          },
+          {
+            menMedianWeeklyEarnings: 1753,
+            womenMedianWeeklyEarnings: 1188,
+            year: 2019,
+            centsToDollar: 67
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
     },
     {
-      slug: "architecture-and-engineering-occupations",
-      occupation_name: "Architecture and engineering occupations",
-      parent_slug: "professional-and-related-occupations",
-      year: "2019",
-      number_workers: "3011",
-      median_weekly_earnings: "1550",
-      men_number_workers: "2559",
-      men_median_weekly_earnings: "1589",
-      women_number_workers: "452",
-      women_median_weekly_earnings: "1339",
-      cents_to_dollar: "84"
-    },
-    {
+      name: "Civil engineers",
       slug: "civil-engineers",
-      occupation_name: "Civil engineers",
-      parent_slug: "architecture-and-engineering-occupations",
-      year: "2019",
-      number_workers: "421",
-      median_weekly_earnings: "1616",
-      men_number_workers: "360",
-      men_median_weekly_earnings: "1657",
-      women_number_workers: "61",
-      women_median_weekly_earnings: "1353",
-      cents_to_dollar: "82"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1657,
+            womenMedianWeeklyEarnings: 1353,
+            year: 2019,
+            centsToDollar: 81
+          },
+          {
+            menMedianWeeklyEarnings: 1657,
+            womenMedianWeeklyEarnings: 1353,
+            year: 2019,
+            centsToDollar: 81
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
     },
     {
-      slug: "industrial-engineers-including-health-and-safety",
-      occupation_name: "Industrial engineers, including health and safety",
-      parent_slug: "architecture-and-engineering-occupations",
-      year: "2019",
-      number_workers: "227",
-      median_weekly_earnings: "1589",
-      men_number_workers: "169",
-      men_median_weekly_earnings: "1616",
-      women_number_workers: "58",
-      women_median_weekly_earnings: "1487",
-      cents_to_dollar: "92"
-    },
-    {
-      slug: "engineers-all-other",
-      occupation_name: "Engineers, all other",
-      parent_slug: "architecture-and-engineering-occupations",
-      year: "2019",
-      number_workers: "529",
-      median_weekly_earnings: "1636",
-      men_number_workers: "455",
-      men_median_weekly_earnings: "1663",
-      women_number_workers: "74",
-      women_median_weekly_earnings: "1446",
-      cents_to_dollar: "87"
-    },
-    {
-      slug: "engineering-technicians-except-drafters",
-      occupation_name: "Engineering technicians, except drafters",
-      parent_slug: "architecture-and-engineering-occupations",
-      year: "2019",
-      number_workers: "462",
-      median_weekly_earnings: "1161",
-      men_number_workers: "382",
-      men_median_weekly_earnings: "1200",
-      women_number_workers: "79",
-      women_median_weekly_earnings: "915",
-      cents_to_dollar: "76"
-    },
-    {
+      name: "Life, physical, and social science occupations",
       slug: "life-physical-and-social-science-occupations",
-      occupation_name: "Life, physical, and social science occupations",
-      parent_slug: "professional-and-related-occupations",
-      year: "2019",
-      number_workers: "1233",
-      median_weekly_earnings: "1334",
-      men_number_workers: "676",
-      men_median_weekly_earnings: "1447",
-      women_number_workers: "556",
-      women_median_weekly_earnings: "1237",
-      cents_to_dollar: "85"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1447,
+            womenMedianWeeklyEarnings: 1237,
+            year: 2019,
+            centsToDollar: 85
+          },
+          {
+            menMedianWeeklyEarnings: 1447,
+            womenMedianWeeklyEarnings: 1237,
+            year: 2019,
+            centsToDollar: 85
+          }
+        ]
+      },
+      parent: {
+        slug: "professional-and-related-occupations"
+      }
     },
     {
+      name: "Medical scientists",
       slug: "medical-scientists",
-      occupation_name: "Medical scientists",
-      parent_slug: "life-physical-and-social-science-occupations",
-      year: "2019",
-      number_workers: "146",
-      median_weekly_earnings: "1188",
-      men_number_workers: "77",
-      men_median_weekly_earnings: "1214",
-      women_number_workers: "70",
-      women_median_weekly_earnings: "1175",
-      cents_to_dollar: "97"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1214,
+            womenMedianWeeklyEarnings: 1175,
+            year: 2019,
+            centsToDollar: 96
+          },
+          {
+            menMedianWeeklyEarnings: 1214,
+            womenMedianWeeklyEarnings: 1175,
+            year: 2019,
+            centsToDollar: 96
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
     },
     {
+      name: "Physical scientists, all other",
       slug: "physical-scientists-all-other",
-      occupation_name: "Physical scientists, all other",
-      parent_slug: "life-physical-and-social-science-occupations",
-      year: "2019",
-      number_workers: "278",
-      median_weekly_earnings: "1669",
-      men_number_workers: "158",
-      men_median_weekly_earnings: "1901",
-      women_number_workers: "120",
-      women_median_weekly_earnings: "1385",
-      cents_to_dollar: "73"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1901,
+            womenMedianWeeklyEarnings: 1385,
+            year: 2019,
+            centsToDollar: 72
+          },
+          {
+            menMedianWeeklyEarnings: 1901,
+            womenMedianWeeklyEarnings: 1385,
+            year: 2019,
+            centsToDollar: 72
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
     },
     {
+      name: "Miscellaneous life, physical, and social science technicians",
       slug: "miscellaneous-life-physical-and-social-science-technicians",
-      occupation_name:
-        "Miscellaneous life, physical, and social science technicians",
-      parent_slug: "life-physical-and-social-science-occupations",
-      year: "2019",
-      number_workers: "108",
-      median_weekly_earnings: "907",
-      men_number_workers: "57",
-      men_median_weekly_earnings: "928",
-      women_number_workers: "51",
-      women_median_weekly_earnings: "896",
-      cents_to_dollar: "97"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 928,
+            womenMedianWeeklyEarnings: 896,
+            year: 2019,
+            centsToDollar: 96
+          },
+          {
+            menMedianWeeklyEarnings: 928,
+            womenMedianWeeklyEarnings: 896,
+            year: 2019,
+            centsToDollar: 96
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
     },
     {
+      name: "Community and social service occupations",
       slug: "community-and-social-service-occupations",
-      occupation_name: "Community and social service occupations",
-      parent_slug: "professional-and-related-occupations",
-      year: "2019",
-      number_workers: "2240",
-      median_weekly_earnings: "968",
-      men_number_workers: "742",
-      men_median_weekly_earnings: "1064",
-      women_number_workers: "1498",
-      women_median_weekly_earnings: "941",
-      cents_to_dollar: "88"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1064,
+            womenMedianWeeklyEarnings: 941,
+            year: 2019,
+            centsToDollar: 88
+          },
+          {
+            menMedianWeeklyEarnings: 1064,
+            womenMedianWeeklyEarnings: 941,
+            year: 2019,
+            centsToDollar: 88
+          }
+        ]
+      },
+      parent: {
+        slug: "professional-and-related-occupations"
+      }
     },
     {
+      name: "Counselors",
+      slug: "counselors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 944,
+            womenMedianWeeklyEarnings: 1003,
+            year: 2019,
+            centsToDollar: 106
+          },
+          {
+            menMedianWeeklyEarnings: 944,
+            womenMedianWeeklyEarnings: 1003,
+            year: 2019,
+            centsToDollar: 106
+          }
+        ]
+      },
+      parent: {
+        slug: "community-and-social-service-occupations"
+      }
+    },
+    {
+      name: "Social workers",
       slug: "social-workers",
-      occupation_name: "Social workers",
-      parent_slug: "community-and-social-service-occupations",
-      year: "2019",
-      number_workers: "739",
-      median_weekly_earnings: "964",
-      men_number_workers: "136",
-      men_median_weekly_earnings: "1108",
-      women_number_workers: "603",
-      women_median_weekly_earnings: "944",
-      cents_to_dollar: "85"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1108,
+            womenMedianWeeklyEarnings: 944,
+            year: 2019,
+            centsToDollar: 85
+          },
+          {
+            menMedianWeeklyEarnings: 1108,
+            womenMedianWeeklyEarnings: 944,
+            year: 2019,
+            centsToDollar: 85
+          }
+        ]
+      },
+      parent: {
+        slug: "community-and-social-service-occupations"
+      }
     },
     {
+      name: "Clergy",
       slug: "clergy",
-      occupation_name: "Clergy",
-      parent_slug: "community-and-social-service-occupations",
-      year: "2019",
-      number_workers: "332",
-      median_weekly_earnings: "1066",
-      men_number_workers: "275",
-      men_median_weekly_earnings: "1155",
-      women_number_workers: "57",
-      women_median_weekly_earnings: "862",
-      cents_to_dollar: "75"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1155,
+            womenMedianWeeklyEarnings: 862,
+            year: 2019,
+            centsToDollar: 74
+          },
+          {
+            menMedianWeeklyEarnings: 1155,
+            womenMedianWeeklyEarnings: 862,
+            year: 2019,
+            centsToDollar: 74
+          }
+        ]
+      },
+      parent: {
+        slug: "community-and-social-service-occupations"
+      }
     },
     {
-      slug: "legal-occupations",
-      occupation_name: "Legal occupations",
-      parent_slug: "professional-and-related-occupations",
-      year: "2019",
-      number_workers: "1478",
-      median_weekly_earnings: "1562",
-      men_number_workers: "670",
-      men_median_weekly_earnings: "1999",
-      women_number_workers: "808",
-      women_median_weekly_earnings: "1266",
-      cents_to_dollar: "63"
-    },
-    {
-      slug: "lawyers",
-      occupation_name: "Lawyers",
-      parent_slug: "legal-occupations",
-      year: "2019",
-      number_workers: "884",
-      median_weekly_earnings: "2043",
-      men_number_workers: "548",
-      men_median_weekly_earnings: "2202",
-      women_number_workers: "336",
-      women_median_weekly_earnings: "1878",
-      cents_to_dollar: "85"
-    },
-    {
-      slug: "education-training-and-library-occupations",
-      occupation_name: "Education, training, and library occupations",
-      parent_slug: "professional-and-related-occupations",
-      year: "2019",
-      number_workers: "7238",
-      median_weekly_earnings: "1057",
-      men_number_workers: "1991",
-      men_median_weekly_earnings: "1265",
-      women_number_workers: "5247",
-      women_median_weekly_earnings: "987",
-      cents_to_dollar: "78"
-    },
-    {
-      slug: "postsecondary-teachers",
-      occupation_name: "Postsecondary teachers",
-      parent_slug: "education-training-and-library-occupations",
-      year: "2019",
-      number_workers: "986",
-      median_weekly_earnings: "1512",
-      men_number_workers: "544",
-      men_median_weekly_earnings: "1670",
-      women_number_workers: "442",
-      women_median_weekly_earnings: "1358",
-      cents_to_dollar: "81"
-    },
-    {
-      slug: "elementary-and-middle-school-teachers",
-      occupation_name: "Elementary and middle school teachers",
-      parent_slug: "education-training-and-library-occupations",
-      year: "2019",
-      number_workers: "3162",
-      median_weekly_earnings: "1067",
-      men_number_workers: "640",
-      men_median_weekly_earnings: "1161",
-      women_number_workers: "2522",
-      women_median_weekly_earnings: "1042",
-      cents_to_dollar: "90"
-    },
-    {
-      slug: "secondary-school-teachers",
-      occupation_name: "Secondary school teachers",
-      parent_slug: "education-training-and-library-occupations",
-      year: "2019",
-      number_workers: "882",
-      median_weekly_earnings: "1161",
-      men_number_workers: "408",
-      men_median_weekly_earnings: "1262",
-      women_number_workers: "474",
-      women_median_weekly_earnings: "1095",
-      cents_to_dollar: "87"
-    },
-    {
-      slug: "other-teachers-and-instructors",
-      occupation_name: "Other teachers and instructors",
-      parent_slug: "education-training-and-library-occupations",
-      year: "2019",
-      number_workers: "455",
-      median_weekly_earnings: "1054",
-      men_number_workers: "192",
-      men_median_weekly_earnings: "1190",
-      women_number_workers: "263",
-      women_median_weekly_earnings: "942",
-      cents_to_dollar: "79"
-    },
-    {
-      slug: "teacher-assistants",
-      occupation_name: "Teacher assistants",
-      parent_slug: "education-training-and-library-occupations",
-      year: "2019",
-      number_workers: "637",
-      median_weekly_earnings: "590",
-      men_number_workers: "72",
-      men_median_weekly_earnings: "707",
-      women_number_workers: "565",
-      women_median_weekly_earnings: "579",
-      cents_to_dollar: "82"
-    },
-    {
+      name: "Arts, design, entertainment, sports, and media occupations",
       slug: "arts-design-entertainment-sports-and-media-occupations",
-      occupation_name:
-        "Arts, design, entertainment, sports, and media occupations",
-      parent_slug: "professional-and-related-occupations",
-      year: "2019",
-      number_workers: "1762",
-      median_weekly_earnings: "1151",
-      men_number_workers: "956",
-      men_median_weekly_earnings: "1231",
-      women_number_workers: "806",
-      women_median_weekly_earnings: "1077",
-      cents_to_dollar: "87"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1231,
+            womenMedianWeeklyEarnings: 1077,
+            year: 2019,
+            centsToDollar: 87
+          },
+          {
+            menMedianWeeklyEarnings: 1231,
+            womenMedianWeeklyEarnings: 1077,
+            year: 2019,
+            centsToDollar: 87
+          }
+        ]
+      },
+      parent: {
+        slug: "professional-and-related-occupations"
+      }
     },
     {
+      name: "Designers",
       slug: "designers",
-      occupation_name: "Designers",
-      parent_slug: "arts-design-entertainment-sports-and-media-occupations",
-      year: "2019",
-      number_workers: "661",
-      median_weekly_earnings: "1126",
-      men_number_workers: "337",
-      men_median_weekly_earnings: "1214",
-      women_number_workers: "324",
-      women_median_weekly_earnings: "1052",
-      cents_to_dollar: "87"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1214,
+            womenMedianWeeklyEarnings: 1052,
+            year: 2019,
+            centsToDollar: 86
+          },
+          {
+            menMedianWeeklyEarnings: 1214,
+            womenMedianWeeklyEarnings: 1052,
+            year: 2019,
+            centsToDollar: 86
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
     },
     {
+      name: "Producers and directors",
       slug: "producers-and-directors",
-      occupation_name: "Producers and directors",
-      parent_slug: "arts-design-entertainment-sports-and-media-occupations",
-      year: "2019",
-      number_workers: "109",
-      median_weekly_earnings: "1483",
-      men_number_workers: "59",
-      men_median_weekly_earnings: "1652",
-      women_number_workers: "50",
-      women_median_weekly_earnings: "1156",
-      cents_to_dollar: "70"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1652,
+            womenMedianWeeklyEarnings: 1156,
+            year: 2019,
+            centsToDollar: 69
+          },
+          {
+            menMedianWeeklyEarnings: 1652,
+            womenMedianWeeklyEarnings: 1156,
+            year: 2019,
+            centsToDollar: 69
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
     },
     {
+      name: "Healthcare practitioners and technical occupations",
       slug: "healthcare-practitioners-and-technical-occupations",
-      occupation_name: "Healthcare practitioners and technical occupations",
-      parent_slug: "professional-and-related-occupations",
-      year: "2019",
-      number_workers: "7514",
-      median_weekly_earnings: "1180",
-      men_number_workers: "1887",
-      men_median_weekly_earnings: "1422",
-      women_number_workers: "5627",
-      women_median_weekly_earnings: "1130",
-      cents_to_dollar: "79"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1422,
+            womenMedianWeeklyEarnings: 1130,
+            year: 2019,
+            centsToDollar: 79
+          },
+          {
+            menMedianWeeklyEarnings: 1422,
+            womenMedianWeeklyEarnings: 1130,
+            year: 2019,
+            centsToDollar: 79
+          }
+        ]
+      },
+      parent: {
+        slug: "professional-and-related-occupations"
+      }
     },
     {
+      name: "Pharmacists",
       slug: "pharmacists",
-      occupation_name: "Pharmacists",
-      parent_slug: "healthcare-practitioners-and-technical-occupations",
-      year: "2019",
-      number_workers: "255",
-      median_weekly_earnings: "2013",
-      men_number_workers: "100",
-      men_median_weekly_earnings: "2245",
-      women_number_workers: "155",
-      women_median_weekly_earnings: "1877",
-      cents_to_dollar: "84"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 2245,
+            womenMedianWeeklyEarnings: 1877,
+            year: 2019,
+            centsToDollar: 83
+          },
+          {
+            menMedianWeeklyEarnings: 2245,
+            womenMedianWeeklyEarnings: 1877,
+            year: 2019,
+            centsToDollar: 83
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
     },
     {
+      name: "Physicians and surgeons",
       slug: "physicians-and-surgeons",
-      occupation_name: "Physicians and surgeons",
-      parent_slug: "healthcare-practitioners-and-technical-occupations",
-      year: "2019",
-      number_workers: "857",
-      median_weekly_earnings: "2292",
-      men_number_workers: "507",
-      men_median_weekly_earnings: "2500",
-      women_number_workers: "349",
-      women_median_weekly_earnings: "1878",
-      cents_to_dollar: "75"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 2500,
+            womenMedianWeeklyEarnings: 1878,
+            year: 2019,
+            centsToDollar: 75
+          },
+          {
+            menMedianWeeklyEarnings: 2500,
+            womenMedianWeeklyEarnings: 1878,
+            year: 2019,
+            centsToDollar: 75
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
     },
     {
-      slug: "physical-therapists",
-      occupation_name: "Physical therapists",
-      parent_slug: "healthcare-practitioners-and-technical-occupations",
-      year: "2019",
-      number_workers: "211",
-      median_weekly_earnings: "1431",
-      men_number_workers: "81",
-      men_median_weekly_earnings: "1610",
-      women_number_workers: "130",
-      women_median_weekly_earnings: "1323",
-      cents_to_dollar: "82"
-    },
-    {
-      slug: "registered-nurses",
-      occupation_name: "Registered nurses",
-      parent_slug: "healthcare-practitioners-and-technical-occupations",
-      year: "2019",
-      number_workers: "2640",
-      median_weekly_earnings: "1223",
-      men_number_workers: "320",
-      men_median_weekly_earnings: "1256",
-      women_number_workers: "2321",
-      women_median_weekly_earnings: "1217",
-      cents_to_dollar: "97"
-    },
-    {
-      slug: "clinical-laboratory-technologists-and-technicians",
-      occupation_name: "Clinical laboratory technologists and technicians",
-      parent_slug: "healthcare-practitioners-and-technical-occupations",
-      year: "2019",
-      number_workers: "281",
-      median_weekly_earnings: "979",
-      men_number_workers: "66",
-      men_median_weekly_earnings: "1117",
-      women_number_workers: "215",
-      women_median_weekly_earnings: "952",
-      cents_to_dollar: "85"
-    },
-    {
-      slug: "diagnostic-related-technologists-and-technicians",
-      occupation_name: "Diagnostic related technologists and technicians",
-      parent_slug: "healthcare-practitioners-and-technical-occupations",
-      year: "2019",
-      number_workers: "320",
-      median_weekly_earnings: "1126",
-      men_number_workers: "107",
-      men_median_weekly_earnings: "1166",
-      women_number_workers: "213",
-      women_median_weekly_earnings: "1076",
-      cents_to_dollar: "92"
-    },
-    {
-      slug: "emergency-medical-technicians-and-paramedics",
-      occupation_name: "Emergency medical technicians and paramedics",
-      parent_slug: "healthcare-practitioners-and-technical-occupations",
-      year: "2019",
-      number_workers: "179",
-      median_weekly_earnings: "912",
-      men_number_workers: "125",
-      men_median_weekly_earnings: "991",
-      women_number_workers: "54",
-      women_median_weekly_earnings: "786",
-      cents_to_dollar: "79"
-    },
-    {
-      slug: "health-practitioner-support-technologists-and-technicians",
-      occupation_name:
-        "Health practitioner support technologists and technicians",
-      parent_slug: "healthcare-practitioners-and-technical-occupations",
-      year: "2019",
-      number_workers: "570",
-      median_weekly_earnings: "735",
-      men_number_workers: "126",
-      men_median_weekly_earnings: "843",
-      women_number_workers: "444",
-      women_median_weekly_earnings: "712",
-      cents_to_dollar: "84"
-    },
-    {
+      name: "Licensed practical and licensed vocational nurses",
       slug: "licensed-practical-and-licensed-vocational-nurses",
-      occupation_name: "Licensed practical and licensed vocational nurses",
-      parent_slug: "healthcare-practitioners-and-technical-occupations",
-      year: "2019",
-      number_workers: "533",
-      median_weekly_earnings: "806",
-      men_number_workers: "53",
-      men_median_weekly_earnings: "896",
-      women_number_workers: "481",
-      women_median_weekly_earnings: "799",
-      cents_to_dollar: "89"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 896,
+            womenMedianWeeklyEarnings: 799,
+            year: 2019,
+            centsToDollar: 89
+          },
+          {
+            menMedianWeeklyEarnings: 896,
+            womenMedianWeeklyEarnings: 799,
+            year: 2019,
+            centsToDollar: 89
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
     },
     {
+      name: "Service occupations",
       slug: "service-occupations",
-      occupation_name: "Service occupations",
-      parent_slug: null,
-      year: "2019",
-      number_workers: "16558",
-      median_weekly_earnings: "592",
-      men_number_workers: "7898",
-      men_median_weekly_earnings: "659",
-      women_number_workers: "8660",
-      women_median_weekly_earnings: "537",
-      cents_to_dollar: "81"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 659,
+            womenMedianWeeklyEarnings: 537,
+            year: 2019,
+            centsToDollar: 81
+          },
+          {
+            menMedianWeeklyEarnings: 659,
+            womenMedianWeeklyEarnings: 537,
+            year: 2019,
+            centsToDollar: 81
+          }
+        ]
+      },
+      parent: null
     },
     {
+      name: "Healthcare support occupations",
       slug: "healthcare-support-occupations",
-      occupation_name: "Healthcare support occupations",
-      parent_slug: "service-occupations",
-      year: "2019",
-      number_workers: "2700",
-      median_weekly_earnings: "591",
-      men_number_workers: "363",
-      men_median_weekly_earnings: "639",
-      women_number_workers: "2337",
-      women_median_weekly_earnings: "585",
-      cents_to_dollar: "92"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 639,
+            womenMedianWeeklyEarnings: 585,
+            year: 2019,
+            centsToDollar: 91
+          },
+          {
+            menMedianWeeklyEarnings: 639,
+            womenMedianWeeklyEarnings: 585,
+            year: 2019,
+            centsToDollar: 91
+          }
+        ]
+      },
+      parent: {
+        slug: "service-occupations"
+      }
     },
     {
+      name: "Nursing, psychiatric, and home health aides",
       slug: "nursing-psychiatric-and-home-health-aides",
-      occupation_name: "Nursing, psychiatric, and home health aides",
-      parent_slug: "healthcare-support-occupations",
-      year: "2019",
-      number_workers: "1471",
-      median_weekly_earnings: "562",
-      men_number_workers: "184",
-      men_median_weekly_earnings: "588",
-      women_number_workers: "1287",
-      women_median_weekly_earnings: "556",
-      cents_to_dollar: "95"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 588,
+            womenMedianWeeklyEarnings: 556,
+            year: 2019,
+            centsToDollar: 94
+          },
+          {
+            menMedianWeeklyEarnings: 588,
+            womenMedianWeeklyEarnings: 556,
+            year: 2019,
+            centsToDollar: 94
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-support-occupations"
+      }
     },
     {
+      name: "Protective service occupations",
       slug: "protective-service-occupations",
-      occupation_name: "Protective service occupations",
-      parent_slug: "service-occupations",
-      year: "2019",
-      number_workers: "2725",
-      median_weekly_earnings: "900",
-      men_number_workers: "2172",
-      men_median_weekly_earnings: "953",
-      women_number_workers: "553",
-      women_median_weekly_earnings: "731",
-      cents_to_dollar: "77"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 953,
+            womenMedianWeeklyEarnings: 731,
+            year: 2019,
+            centsToDollar: 76
+          },
+          {
+            menMedianWeeklyEarnings: 953,
+            womenMedianWeeklyEarnings: 731,
+            year: 2019,
+            centsToDollar: 76
+          }
+        ]
+      },
+      parent: {
+        slug: "service-occupations"
+      }
     },
     {
-      slug: "bailiffs-correctional-officers-and-jailers",
-      occupation_name: "Bailiffs, correctional officers, and jailers",
-      parent_slug: "protective-service-occupations",
-      year: "2019",
-      number_workers: "365",
-      median_weekly_earnings: "776",
-      men_number_workers: "251",
-      men_median_weekly_earnings: "890",
-      women_number_workers: "114",
-      women_median_weekly_earnings: "664",
-      cents_to_dollar: "75"
-    },
-    {
-      slug: "police-and-sheriffs-patrol-officers",
-      occupation_name: "Police and sheriff's patrol officers",
-      parent_slug: "protective-service-occupations",
-      year: "2019",
-      number_workers: "686",
-      median_weekly_earnings: "1111",
-      men_number_workers: "559",
-      men_median_weekly_earnings: "1143",
-      women_number_workers: "127",
-      women_median_weekly_earnings: "922",
-      cents_to_dollar: "81"
-    },
-    {
-      slug: "security-guards-and-gaming-surveillance-officers",
-      occupation_name: "Security guards and gaming surveillance officers",
-      parent_slug: "protective-service-occupations",
-      year: "2019",
-      number_workers: "790",
-      median_weekly_earnings: "650",
-      men_number_workers: "631",
-      men_median_weekly_earnings: "671",
-      women_number_workers: "159",
-      women_median_weekly_earnings: "589",
-      cents_to_dollar: "88"
-    },
-    {
-      slug: "food-preparation-and-serving-related-occupations",
-      occupation_name: "Food preparation and serving related occupations",
-      parent_slug: "service-occupations",
-      year: "2019",
-      number_workers: "4689",
-      median_weekly_earnings: "522",
-      men_number_workers: "2352",
-      men_median_weekly_earnings: "576",
-      women_number_workers: "2337",
-      women_median_weekly_earnings: "492",
-      cents_to_dollar: "85"
-    },
-    {
-      slug: "chefs-and-head-cooks",
-      occupation_name: "Chefs and head cooks",
-      parent_slug: "food-preparation-and-serving-related-occupations",
-      year: "2019",
-      number_workers: "406",
-      median_weekly_earnings: "698",
-      men_number_workers: "334",
-      men_median_weekly_earnings: "727",
-      women_number_workers: "72",
-      women_median_weekly_earnings: "553",
-      cents_to_dollar: "76"
-    },
-    {
-      slug: "first-line-supervisors-of-food-preparation-and-serving-workers",
-      occupation_name:
-        "First-line supervisors of food preparation and serving workers",
-      parent_slug: "food-preparation-and-serving-related-occupations",
-      year: "2019",
-      number_workers: "426",
-      median_weekly_earnings: "584",
-      men_number_workers: "184",
-      men_median_weekly_earnings: "657",
-      women_number_workers: "242",
-      women_median_weekly_earnings: "545",
-      cents_to_dollar: "83"
-    },
-    {
-      slug: "cooks",
-      occupation_name: "Cooks",
-      parent_slug: "food-preparation-and-serving-related-occupations",
-      year: "2019",
-      number_workers: "1362",
-      median_weekly_earnings: "512",
-      men_number_workers: "831",
-      men_median_weekly_earnings: "535",
-      women_number_workers: "531",
-      women_median_weekly_earnings: "489",
-      cents_to_dollar: "91"
-    },
-    {
-      slug: "food-preparation-workers",
-      occupation_name: "Food preparation workers",
-      parent_slug: "food-preparation-and-serving-related-occupations",
-      year: "2019",
-      number_workers: "574",
-      median_weekly_earnings: "496",
-      men_number_workers: "246",
-      men_median_weekly_earnings: "532",
-      women_number_workers: "328",
-      women_median_weekly_earnings: "463",
-      cents_to_dollar: "87"
-    },
-    {
-      slug: "bartenders",
-      occupation_name: "Bartenders",
-      parent_slug: "food-preparation-and-serving-related-occupations",
-      year: "2019",
-      number_workers: "293",
-      median_weekly_earnings: "610",
-      men_number_workers: "159",
-      men_median_weekly_earnings: "655",
-      women_number_workers: "134",
-      women_median_weekly_earnings: "578",
-      cents_to_dollar: "88"
-    },
-    {
-      slug: "waiters-and-waitresses",
-      occupation_name: "Waiters and waitresses",
-      parent_slug: "food-preparation-and-serving-related-occupations",
-      year: "2019",
-      number_workers: "973",
-      median_weekly_earnings: "511",
-      men_number_workers: "292",
-      men_median_weekly_earnings: "594",
-      women_number_workers: "681",
-      women_median_weekly_earnings: "491",
-      cents_to_dollar: "83"
-    },
-    {
-      slug: "dining-room-and-cafeteria-attendants-and-bartender-helpers",
-      occupation_name:
-        "Dining room and cafeteria attendants and bartender helpers",
-      parent_slug: "food-preparation-and-serving-related-occupations",
-      year: "2019",
-      number_workers: "116",
-      median_weekly_earnings: "554",
-      men_number_workers: "66",
-      men_median_weekly_earnings: "605",
-      women_number_workers: "50",
-      women_median_weekly_earnings: "513",
-      cents_to_dollar: "85"
-    },
-    {
+      name: "Building and grounds cleaning and maintenance occupations",
       slug: "building-and-grounds-cleaning-and-maintenance-occupations",
-      occupation_name:
-        "Building and grounds cleaning and maintenance occupations",
-      parent_slug: "service-occupations",
-      year: "2019",
-      number_workers: "3679",
-      median_weekly_earnings: "580",
-      men_number_workers: "2293",
-      men_median_weekly_earnings: "618",
-      women_number_workers: "1386",
-      women_median_weekly_earnings: "502",
-      cents_to_dollar: "81"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 618,
+            womenMedianWeeklyEarnings: 502,
+            year: 2019,
+            centsToDollar: 81
+          },
+          {
+            menMedianWeeklyEarnings: 618,
+            womenMedianWeeklyEarnings: 502,
+            year: 2019,
+            centsToDollar: 81
+          }
+        ]
+      },
+      parent: {
+        slug: "service-occupations"
+      }
     },
     {
+      name: "First-line supervisors of housekeeping and janitorial workers",
       slug: "first-line-supervisors-of-housekeeping-and-janitorial-workers",
-      occupation_name:
-        "First-line supervisors of housekeeping and janitorial workers",
-      parent_slug: "building-and-grounds-cleaning-and-maintenance-occupations",
-      year: "2019",
-      number_workers: "215",
-      median_weekly_earnings: "710",
-      men_number_workers: "134",
-      men_median_weekly_earnings: "758",
-      women_number_workers: "80",
-      women_median_weekly_earnings: "639",
-      cents_to_dollar: "84"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 758,
+            womenMedianWeeklyEarnings: 639,
+            year: 2019,
+            centsToDollar: 84
+          },
+          {
+            menMedianWeeklyEarnings: 758,
+            womenMedianWeeklyEarnings: 639,
+            year: 2019,
+            centsToDollar: 84
+          }
+        ]
+      },
+      parent: {
+        slug: "building-and-grounds-cleaning-and-maintenance-occupations"
+      }
     },
     {
+      name: "Janitors and building cleaners",
       slug: "janitors-and-building-cleaners",
-      occupation_name: "Janitors and building cleaners",
-      parent_slug: "building-and-grounds-cleaning-and-maintenance-occupations",
-      year: "2019",
-      number_workers: "1563",
-      median_weekly_earnings: "582",
-      men_number_workers: "1068",
-      men_median_weekly_earnings: "610",
-      women_number_workers: "494",
-      women_median_weekly_earnings: "510",
-      cents_to_dollar: "84"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 610,
+            womenMedianWeeklyEarnings: 510,
+            year: 2019,
+            centsToDollar: 83
+          },
+          {
+            menMedianWeeklyEarnings: 610,
+            womenMedianWeeklyEarnings: 510,
+            year: 2019,
+            centsToDollar: 83
+          }
+        ]
+      },
+      parent: {
+        slug: "building-and-grounds-cleaning-and-maintenance-occupations"
+      }
     },
     {
+      name: "Maids and housekeeping cleaners",
       slug: "maids-and-housekeeping-cleaners",
-      occupation_name: "Maids and housekeeping cleaners",
-      parent_slug: "building-and-grounds-cleaning-and-maintenance-occupations",
-      year: "2019",
-      number_workers: "895",
-      median_weekly_earnings: "490",
-      men_number_workers: "126",
-      men_median_weekly_earnings: "520",
-      women_number_workers: "769",
-      women_median_weekly_earnings: "484",
-      cents_to_dollar: "93"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 520,
+            womenMedianWeeklyEarnings: 484,
+            year: 2019,
+            centsToDollar: 93
+          },
+          {
+            menMedianWeeklyEarnings: 520,
+            womenMedianWeeklyEarnings: 484,
+            year: 2019,
+            centsToDollar: 93
+          }
+        ]
+      },
+      parent: {
+        slug: "building-and-grounds-cleaning-and-maintenance-occupations"
+      }
     },
     {
+      name: "Personal care and service occupations",
       slug: "personal-care-and-service-occupations",
-      occupation_name: "Personal care and service occupations",
-      parent_slug: "service-occupations",
-      year: "2019",
-      number_workers: "2764",
-      median_weekly_earnings: "565",
-      men_number_workers: "718",
-      men_median_weekly_earnings: "624",
-      women_number_workers: "2047",
-      women_median_weekly_earnings: "531",
-      cents_to_dollar: "85"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 624,
+            womenMedianWeeklyEarnings: 531,
+            year: 2019,
+            centsToDollar: 85
+          },
+          {
+            menMedianWeeklyEarnings: 624,
+            womenMedianWeeklyEarnings: 531,
+            year: 2019,
+            centsToDollar: 85
+          }
+        ]
+      },
+      parent: {
+        slug: "service-occupations"
+      }
     },
     {
+      name: "First-line supervisors of gaming workers",
       slug: "first-line-supervisors-of-gaming-workers",
-      occupation_name: "First-line supervisors of gaming workers",
-      parent_slug: "personal-care-and-service-occupations",
-      year: "2019",
-      number_workers: "117",
-      median_weekly_earnings: "821",
-      men_number_workers: "63",
-      men_median_weekly_earnings: "853",
-      women_number_workers: "54",
-      women_median_weekly_earnings: "791",
-      cents_to_dollar: "93"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 853,
+            womenMedianWeeklyEarnings: 791,
+            year: 2019,
+            centsToDollar: 92
+          },
+          {
+            menMedianWeeklyEarnings: 853,
+            womenMedianWeeklyEarnings: 791,
+            year: 2019,
+            centsToDollar: 92
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
     },
     {
+      name: "Personal care aides",
       slug: "personal-care-aides",
-      occupation_name: "Personal care aides",
-      parent_slug: "personal-care-and-service-occupations",
-      year: "2019",
-      number_workers: "815",
-      median_weekly_earnings: "516",
-      men_number_workers: "130",
-      men_median_weekly_earnings: "581",
-      women_number_workers: "685",
-      women_median_weekly_earnings: "509",
-      cents_to_dollar: "88"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 581,
+            womenMedianWeeklyEarnings: 509,
+            year: 2019,
+            centsToDollar: 87
+          },
+          {
+            menMedianWeeklyEarnings: 581,
+            womenMedianWeeklyEarnings: 509,
+            year: 2019,
+            centsToDollar: 87
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
     },
     {
+      name: "Recreation and fitness workers",
       slug: "recreation-and-fitness-workers",
-      occupation_name: "Recreation and fitness workers",
-      parent_slug: "personal-care-and-service-occupations",
-      year: "2019",
-      number_workers: "191",
-      median_weekly_earnings: "607",
-      men_number_workers: "88",
-      men_median_weekly_earnings: "656",
-      women_number_workers: "102",
-      women_median_weekly_earnings: "580",
-      cents_to_dollar: "88"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 656,
+            womenMedianWeeklyEarnings: 580,
+            year: 2019,
+            centsToDollar: 88
+          },
+          {
+            menMedianWeeklyEarnings: 656,
+            womenMedianWeeklyEarnings: 580,
+            year: 2019,
+            centsToDollar: 88
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
     },
     {
+      name: "Sales and office occupations",
       slug: "sales-and-office-occupations",
-      occupation_name: "Sales and office occupations",
-      parent_slug: null,
-      year: "2019",
-      number_workers: "23883",
-      median_weekly_earnings: "758",
-      men_number_workers: "9695",
-      men_median_weekly_earnings: "874",
-      women_number_workers: "14188",
-      women_median_weekly_earnings: "713",
-      cents_to_dollar: "82"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 874,
+            womenMedianWeeklyEarnings: 713,
+            year: 2019,
+            centsToDollar: 81
+          },
+          {
+            menMedianWeeklyEarnings: 874,
+            womenMedianWeeklyEarnings: 713,
+            year: 2019,
+            centsToDollar: 81
+          }
+        ]
+      },
+      parent: null
     },
     {
+      name: "Sales and related occupations",
       slug: "sales-and-related-occupations",
-      occupation_name: "Sales and related occupations",
-      parent_slug: "sales-and-office-occupations",
-      year: "2019",
-      number_workers: "9929",
-      median_weekly_earnings: "830",
-      men_number_workers: "5525",
-      men_median_weekly_earnings: "982",
-      women_number_workers: "4404",
-      women_median_weekly_earnings: "677",
-      cents_to_dollar: "69"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 982,
+            womenMedianWeeklyEarnings: 677,
+            year: 2019,
+            centsToDollar: 68
+          },
+          {
+            menMedianWeeklyEarnings: 982,
+            womenMedianWeeklyEarnings: 677,
+            year: 2019,
+            centsToDollar: 68
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-office-occupations"
+      }
     },
     {
+      name: "First-line supervisors of retail sales workers",
       slug: "first-line-supervisors-of-retail-sales-workers",
-      occupation_name: "First-line supervisors of retail sales workers",
-      parent_slug: "sales-and-related-occupations",
-      year: "2019",
-      number_workers: "2316",
-      median_weekly_earnings: "817",
-      men_number_workers: "1246",
-      men_median_weekly_earnings: "955",
-      women_number_workers: "1070",
-      women_median_weekly_earnings: "708",
-      cents_to_dollar: "74"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 955,
+            womenMedianWeeklyEarnings: 708,
+            year: 2019,
+            centsToDollar: 74
+          },
+          {
+            menMedianWeeklyEarnings: 955,
+            womenMedianWeeklyEarnings: 708,
+            year: 2019,
+            centsToDollar: 74
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
     },
     {
-      slug: "cashiers",
-      occupation_name: "Cashiers",
-      parent_slug: "sales-and-related-occupations",
-      year: "2019",
-      number_workers: "1398",
-      median_weekly_earnings: "503",
-      men_number_workers: "438",
-      men_median_weekly_earnings: "510",
-      women_number_workers: "959",
-      women_median_weekly_earnings: "499",
-      cents_to_dollar: "98"
-    },
-    {
-      slug: "retail-salespersons",
-      occupation_name: "Retail salespersons",
-      parent_slug: "sales-and-related-occupations",
-      year: "2019",
-      number_workers: "1856",
-      median_weekly_earnings: "692",
-      men_number_workers: "1094",
-      men_median_weekly_earnings: "806",
-      women_number_workers: "762",
-      women_median_weekly_earnings: "578",
-      cents_to_dollar: "72"
-    },
-    {
-      slug: "advertising-sales-agents",
-      occupation_name: "Advertising sales agents",
-      parent_slug: "sales-and-related-occupations",
-      year: "2019",
-      number_workers: "169",
-      median_weekly_earnings: "1050",
-      men_number_workers: "88",
-      men_median_weekly_earnings: "1143",
-      women_number_workers: "81",
-      women_median_weekly_earnings: "874",
-      cents_to_dollar: "76"
-    },
-    {
-      slug: "insurance-sales-agents",
-      occupation_name: "Insurance sales agents",
-      parent_slug: "sales-and-related-occupations",
-      year: "2019",
-      number_workers: "461",
-      median_weekly_earnings: "927",
-      men_number_workers: "214",
-      men_median_weekly_earnings: "1034",
-      women_number_workers: "247",
-      women_median_weekly_earnings: "806",
-      cents_to_dollar: "78"
-    },
-    {
-      slug: "securities-commodities-and-financial-services-sales-agents",
-      occupation_name:
-        "Securities, commodities, and financial services sales agents",
-      parent_slug: "sales-and-related-occupations",
-      year: "2019",
-      number_workers: "192",
-      median_weekly_earnings: "1302",
-      men_number_workers: "129",
-      men_median_weekly_earnings: "1386",
-      women_number_workers: "63",
-      women_median_weekly_earnings: "1063",
-      cents_to_dollar: "77"
-    },
-    {
-      slug: "sales-representatives-services-all-other",
-      occupation_name: "Sales representatives, services, all other",
-      parent_slug: "sales-and-related-occupations",
-      year: "2019",
-      number_workers: "477",
-      median_weekly_earnings: "1211",
-      men_number_workers: "340",
-      men_median_weekly_earnings: "1332",
-      women_number_workers: "137",
-      women_median_weekly_earnings: "973",
-      cents_to_dollar: "73"
-    },
-    {
-      slug: "sales-representatives-wholesale-and-manufacturing",
-      occupation_name: "Sales representatives, wholesale and manufacturing",
-      parent_slug: "sales-and-related-occupations",
-      year: "2019",
-      number_workers: "1107",
-      median_weekly_earnings: "1206",
-      men_number_workers: "813",
-      men_median_weekly_earnings: "1262",
-      women_number_workers: "294",
-      women_median_weekly_earnings: "1067",
-      cents_to_dollar: "85"
-    },
-    {
-      slug: "real-estate-brokers-and-sales-agents",
-      occupation_name: "Real estate brokers and sales agents",
-      parent_slug: "sales-and-related-occupations",
-      year: "2019",
-      number_workers: "543",
-      median_weekly_earnings: "1019",
-      men_number_workers: "222",
-      men_median_weekly_earnings: "1344",
-      women_number_workers: "321",
-      women_median_weekly_earnings: "883",
-      cents_to_dollar: "66"
-    },
-    {
+      name: "Sales and related workers, all other",
       slug: "sales-and-related-workers-all-other",
-      occupation_name: "Sales and related workers, all other",
-      parent_slug: "sales-and-related-occupations",
-      year: "2019",
-      number_workers: "194",
-      median_weekly_earnings: "935",
-      men_number_workers: "123",
-      men_median_weekly_earnings: "966",
-      women_number_workers: "71",
-      women_median_weekly_earnings: "848",
-      cents_to_dollar: "88"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 966,
+            womenMedianWeeklyEarnings: 848,
+            year: 2019,
+            centsToDollar: 87
+          },
+          {
+            menMedianWeeklyEarnings: 966,
+            womenMedianWeeklyEarnings: 848,
+            year: 2019,
+            centsToDollar: 87
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
     },
     {
+      name: "Office and administrative support occupations",
       slug: "office-and-administrative-support-occupations",
-      occupation_name: "Office and administrative support occupations",
-      parent_slug: "sales-and-office-occupations",
-      year: "2019",
-      number_workers: "13954",
-      median_weekly_earnings: "732",
-      men_number_workers: "4170",
-      men_median_weekly_earnings: "771",
-      women_number_workers: "9784",
-      women_median_weekly_earnings: "721",
-      cents_to_dollar: "94"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 771,
+            womenMedianWeeklyEarnings: 721,
+            year: 2019,
+            centsToDollar: 93
+          },
+          {
+            menMedianWeeklyEarnings: 771,
+            womenMedianWeeklyEarnings: 721,
+            year: 2019,
+            centsToDollar: 93
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-office-occupations"
+      }
     },
     {
+      name:
+        "First-line supervisors of office and administrative support workers",
       slug:
         "first-line-supervisors-of-office-and-administrative-support-workers",
-      occupation_name:
-        "First-line supervisors of office and administrative support workers",
-      parent_slug: "office-and-administrative-support-occupations",
-      year: "2019",
-      number_workers: "1215",
-      median_weekly_earnings: "866",
-      men_number_workers: "406",
-      men_median_weekly_earnings: "971",
-      women_number_workers: "809",
-      women_median_weekly_earnings: "816",
-      cents_to_dollar: "84"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 971,
+            womenMedianWeeklyEarnings: 816,
+            year: 2019,
+            centsToDollar: 84
+          },
+          {
+            menMedianWeeklyEarnings: 971,
+            womenMedianWeeklyEarnings: 816,
+            year: 2019,
+            centsToDollar: 84
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
     },
     {
+      name: "Bookkeeping, accounting, and auditing clerks",
       slug: "bookkeeping-accounting-and-auditing-clerks",
-      occupation_name: "Bookkeeping, accounting, and auditing clerks",
-      parent_slug: "office-and-administrative-support-occupations",
-      year: "2019",
-      number_workers: "657",
-      median_weekly_earnings: "764",
-      men_number_workers: "84",
-      men_median_weekly_earnings: "784",
-      women_number_workers: "573",
-      women_median_weekly_earnings: "764",
-      cents_to_dollar: "97"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 784,
+            womenMedianWeeklyEarnings: 764,
+            year: 2019,
+            centsToDollar: 97
+          },
+          {
+            menMedianWeeklyEarnings: 784,
+            womenMedianWeeklyEarnings: 764,
+            year: 2019,
+            centsToDollar: 97
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
     },
     {
+      name: "Customer service representatives",
       slug: "customer-service-representatives",
-      occupation_name: "Customer service representatives",
-      parent_slug: "office-and-administrative-support-occupations",
-      year: "2019",
-      number_workers: "1977",
-      median_weekly_earnings: "693",
-      men_number_workers: "717",
-      men_median_weekly_earnings: "736",
-      women_number_workers: "1259",
-      women_median_weekly_earnings: "673",
-      cents_to_dollar: "91"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 736,
+            womenMedianWeeklyEarnings: 673,
+            year: 2019,
+            centsToDollar: 91
+          },
+          {
+            menMedianWeeklyEarnings: 736,
+            womenMedianWeeklyEarnings: 673,
+            year: 2019,
+            centsToDollar: 91
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
     },
     {
+      name: "Receptionists and information clerks",
       slug: "receptionists-and-information-clerks",
-      occupation_name: "Receptionists and information clerks",
-      parent_slug: "office-and-administrative-support-occupations",
-      year: "2019",
-      number_workers: "909",
-      median_weekly_earnings: "642",
-      men_number_workers: "100",
-      men_median_weekly_earnings: "735",
-      women_number_workers: "809",
-      women_median_weekly_earnings: "636",
-      cents_to_dollar: "87"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 735,
+            womenMedianWeeklyEarnings: 636,
+            year: 2019,
+            centsToDollar: 86
+          },
+          {
+            menMedianWeeklyEarnings: 735,
+            womenMedianWeeklyEarnings: 636,
+            year: 2019,
+            centsToDollar: 86
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
     },
     {
+      name: "Dispatchers",
       slug: "dispatchers",
-      occupation_name: "Dispatchers",
-      parent_slug: "office-and-administrative-support-occupations",
-      year: "2019",
-      number_workers: "240",
-      median_weekly_earnings: "806",
-      men_number_workers: "108",
-      men_median_weekly_earnings: "854",
-      women_number_workers: "131",
-      women_median_weekly_earnings: "763",
-      cents_to_dollar: "89"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 854,
+            womenMedianWeeklyEarnings: 763,
+            year: 2019,
+            centsToDollar: 89
+          },
+          {
+            menMedianWeeklyEarnings: 854,
+            womenMedianWeeklyEarnings: 763,
+            year: 2019,
+            centsToDollar: 89
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
     },
     {
+      name: "Postal service mail carriers",
       slug: "postal-service-mail-carriers",
-      occupation_name: "Postal service mail carriers",
-      parent_slug: "office-and-administrative-support-occupations",
-      year: "2019",
-      number_workers: "296",
-      median_weekly_earnings: "951",
-      men_number_workers: "185",
-      men_median_weekly_earnings: "994",
-      women_number_workers: "111",
-      women_median_weekly_earnings: "893",
-      cents_to_dollar: "90"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 994,
+            womenMedianWeeklyEarnings: 893,
+            year: 2019,
+            centsToDollar: 89
+          },
+          {
+            menMedianWeeklyEarnings: 994,
+            womenMedianWeeklyEarnings: 893,
+            year: 2019,
+            centsToDollar: 89
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
     },
     {
+      name: "Production, planning, and expediting clerks",
       slug: "production-planning-and-expediting-clerks",
-      occupation_name: "Production, planning, and expediting clerks",
-      parent_slug: "office-and-administrative-support-occupations",
-      year: "2019",
-      number_workers: "268",
-      median_weekly_earnings: "939",
-      men_number_workers: "114",
-      men_median_weekly_earnings: "1039",
-      women_number_workers: "154",
-      women_median_weekly_earnings: "872",
-      cents_to_dollar: "84"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1039,
+            womenMedianWeeklyEarnings: 872,
+            year: 2019,
+            centsToDollar: 83
+          },
+          {
+            menMedianWeeklyEarnings: 1039,
+            womenMedianWeeklyEarnings: 872,
+            year: 2019,
+            centsToDollar: 83
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
     },
     {
+      name: "Shipping, receiving, and traffic clerks",
       slug: "shipping-receiving-and-traffic-clerks",
-      occupation_name: "Shipping, receiving, and traffic clerks",
-      parent_slug: "office-and-administrative-support-occupations",
-      year: "2019",
-      number_workers: "507",
-      median_weekly_earnings: "679",
-      men_number_workers: "332",
-      men_median_weekly_earnings: "686",
-      women_number_workers: "175",
-      women_median_weekly_earnings: "662",
-      cents_to_dollar: "97"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 686,
+            womenMedianWeeklyEarnings: 662,
+            year: 2019,
+            centsToDollar: 96
+          },
+          {
+            menMedianWeeklyEarnings: 686,
+            womenMedianWeeklyEarnings: 662,
+            year: 2019,
+            centsToDollar: 96
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
     },
     {
+      name: "Stock clerks and order fillers",
+      slug: "stock-clerks-and-order-fillers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 596,
+            womenMedianWeeklyEarnings: 605,
+            year: 2019,
+            centsToDollar: 101
+          },
+          {
+            menMedianWeeklyEarnings: 596,
+            womenMedianWeeklyEarnings: 605,
+            year: 2019,
+            centsToDollar: 101
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Secretaries and administrative assistants",
       slug: "secretaries-and-administrative-assistants",
-      occupation_name: "Secretaries and administrative assistants",
-      parent_slug: "office-and-administrative-support-occupations",
-      year: "2019",
-      number_workers: "2069",
-      median_weekly_earnings: "765",
-      men_number_workers: "137",
-      men_median_weekly_earnings: "795",
-      women_number_workers: "1932",
-      women_median_weekly_earnings: "763",
-      cents_to_dollar: "96"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 795,
+            womenMedianWeeklyEarnings: 763,
+            year: 2019,
+            centsToDollar: 95
+          },
+          {
+            menMedianWeeklyEarnings: 795,
+            womenMedianWeeklyEarnings: 763,
+            year: 2019,
+            centsToDollar: 95
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
     },
     {
+      name: "Data entry keyers",
       slug: "data-entry-keyers",
-      occupation_name: "Data entry keyers",
-      parent_slug: "office-and-administrative-support-occupations",
-      year: "2019",
-      number_workers: "203",
-      median_weekly_earnings: "675",
-      men_number_workers: "50",
-      men_median_weekly_earnings: "738",
-      women_number_workers: "153",
-      women_median_weekly_earnings: "656",
-      cents_to_dollar: "89"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 738,
+            womenMedianWeeklyEarnings: 656,
+            year: 2019,
+            centsToDollar: 88
+          },
+          {
+            menMedianWeeklyEarnings: 738,
+            womenMedianWeeklyEarnings: 656,
+            year: 2019,
+            centsToDollar: 88
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
     },
     {
+      name: "Office clerks, general",
       slug: "office-clerks-general",
-      occupation_name: "Office clerks, general",
-      parent_slug: "office-and-administrative-support-occupations",
-      year: "2019",
-      number_workers: "997",
-      median_weekly_earnings: "685",
-      men_number_workers: "188",
-      men_median_weekly_earnings: "718",
-      women_number_workers: "809",
-      women_median_weekly_earnings: "677",
-      cents_to_dollar: "94"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 718,
+            womenMedianWeeklyEarnings: 677,
+            year: 2019,
+            centsToDollar: 94
+          },
+          {
+            menMedianWeeklyEarnings: 718,
+            womenMedianWeeklyEarnings: 677,
+            year: 2019,
+            centsToDollar: 94
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
     },
     {
+      name: "Office and administrative support workers, all other",
       slug: "office-and-administrative-support-workers-all-other",
-      occupation_name: "Office and administrative support workers, all other",
-      parent_slug: "office-and-administrative-support-occupations",
-      year: "2019",
-      number_workers: "522",
-      median_weekly_earnings: "866",
-      men_number_workers: "147",
-      men_median_weekly_earnings: "950",
-      women_number_workers: "375",
-      women_median_weekly_earnings: "820",
-      cents_to_dollar: "86"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 950,
+            womenMedianWeeklyEarnings: 820,
+            year: 2019,
+            centsToDollar: 86
+          },
+          {
+            menMedianWeeklyEarnings: 950,
+            womenMedianWeeklyEarnings: 820,
+            year: 2019,
+            centsToDollar: 86
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
     },
     {
+      name: "Natural resources, construction, and maintenance occupations",
       slug: "natural-resources-construction-and-maintenance-occupations",
-      occupation_name:
-        "Natural resources, construction, and maintenance occupations",
-      parent_slug: null,
-      year: "2019",
-      number_workers: "11671",
-      median_weekly_earnings: "869",
-      men_number_workers: "11134",
-      men_median_weekly_earnings: "881",
-      women_number_workers: "537",
-      women_median_weekly_earnings: "614",
-      cents_to_dollar: "70"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 881,
+            womenMedianWeeklyEarnings: 614,
+            year: 2019,
+            centsToDollar: 69
+          },
+          {
+            menMedianWeeklyEarnings: 881,
+            womenMedianWeeklyEarnings: 614,
+            year: 2019,
+            centsToDollar: 69
+          }
+        ]
+      },
+      parent: null
     },
     {
+      name: "Farming, fishing, and forestry occupations",
       slug: "farming-fishing-and-forestry-occupations",
-      occupation_name: "Farming, fishing, and forestry occupations",
-      parent_slug: "natural-resources-construction-and-maintenance-occupations",
-      year: "2019",
-      number_workers: "900",
-      median_weekly_earnings: "574",
-      men_number_workers: "690",
-      men_median_weekly_earnings: "593",
-      women_number_workers: "210",
-      women_median_weekly_earnings: "513",
-      cents_to_dollar: "87"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 593,
+            womenMedianWeeklyEarnings: 513,
+            year: 2019,
+            centsToDollar: 86
+          },
+          {
+            menMedianWeeklyEarnings: 593,
+            womenMedianWeeklyEarnings: 513,
+            year: 2019,
+            centsToDollar: 86
+          }
+        ]
+      },
+      parent: {
+        slug: "natural-resources-construction-and-maintenance-occupations"
+      }
     },
     {
+      name: "Miscellaneous agricultural workers",
       slug: "miscellaneous-agricultural-workers",
-      occupation_name: "Miscellaneous agricultural workers",
-      parent_slug: "farming-fishing-and-forestry-occupations",
-      year: "2019",
-      number_workers: "691",
-      median_weekly_earnings: "558",
-      men_number_workers: "544",
-      men_median_weekly_earnings: "581",
-      women_number_workers: "148",
-      women_median_weekly_earnings: "502",
-      cents_to_dollar: "86"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 581,
+            womenMedianWeeklyEarnings: 502,
+            year: 2019,
+            centsToDollar: 86
+          },
+          {
+            menMedianWeeklyEarnings: 581,
+            womenMedianWeeklyEarnings: 502,
+            year: 2019,
+            centsToDollar: 86
+          }
+        ]
+      },
+      parent: {
+        slug: "farming-fishing-and-forestry-occupations"
+      }
     },
     {
-      slug: "construction-and-extraction-occupations",
-      occupation_name: "Construction and extraction occupations",
-      parent_slug: "natural-resources-construction-and-maintenance-occupations",
-      year: "2019",
-      number_workers: "6467",
-      median_weekly_earnings: "866",
-      men_number_workers: "6280",
-      men_median_weekly_earnings: "873",
-      women_number_workers: "187",
-      women_median_weekly_earnings: "711",
-      cents_to_dollar: "81"
-    },
-    {
+      name: "Installation, maintenance, and repair occupations",
       slug: "installation-maintenance-and-repair-occupations",
-      occupation_name: "Installation, maintenance, and repair occupations",
-      parent_slug: "production-transportation-and-material-moving-occupations",
-      year: "2019",
-      number_workers: "4304",
-      median_weekly_earnings: "939",
-      men_number_workers: "4164",
-      men_median_weekly_earnings: "943",
-      women_number_workers: "140",
-      women_median_weekly_earnings: "850",
-      cents_to_dollar: "90"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 943,
+            womenMedianWeeklyEarnings: 850,
+            year: 2019,
+            centsToDollar: 90
+          },
+          {
+            menMedianWeeklyEarnings: 943,
+            womenMedianWeeklyEarnings: 850,
+            year: 2019,
+            centsToDollar: 90
+          }
+        ]
+      },
+      parent: {
+        slug: "natural-resources-construction-and-maintenance-occupations"
+      }
     },
     {
+      name: "Mining machine operators",
+      slug: "mining-machine-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1101,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1101,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "First-line supervisors of mechanics, installers, and repairers",
+      slug: "first-line-supervisors-of-mechanics-installers-and-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1082,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1082,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Computer, automated teller, and office machine repairers",
+      slug: "computer-automated-teller-and-office-machine-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 899,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 899,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Radio and telecommunications equipment installers and repairers",
+      slug: "radio-and-telecommunications-equipment-installers-and-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1058,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1058,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Security and fire alarm systems installers",
+      slug: "security-and-fire-alarm-systems-installers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 875,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 875,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Aircraft mechanics and service technicians",
+      slug: "aircraft-mechanics-and-service-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1265,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1265,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Automotive body and related repairers",
+      slug: "automotive-body-and-related-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 885,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 885,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Automotive service technicians and mechanics",
+      slug: "automotive-service-technicians-and-mechanics",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 811,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 811,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Bus and truck mechanics and diesel engine specialists",
+      slug: "bus-and-truck-mechanics-and-diesel-engine-specialists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 983,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 983,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name:
+        "Heavy vehicle and mobile equipment service technicians and mechanics",
+      slug:
+        "heavy-vehicle-and-mobile-equipment-service-technicians-and-mechanics",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1008,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1008,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name:
+        "Miscellaneous vehicle and mobile equipment mechanics, installers, and repairers",
+      slug:
+        "miscellaneous-vehicle-and-mobile-equipment-mechanics-installers-and-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 628,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 628,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name:
+        "Heating, air conditioning, and refrigeration mechanics and installers",
+      slug:
+        "heating-air-conditioning-and-refrigeration-mechanics-and-installers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 947,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 947,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Industrial and refractory machinery mechanics",
+      slug: "industrial-and-refractory-machinery-mechanics",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1028,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1028,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Maintenance and repair workers, general",
+      slug: "maintenance-and-repair-workers-general",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 883,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 883,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Electrical power-line installers and repairers",
+      slug: "electrical-power-line-installers-and-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1460,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1460,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Telecommunications line installers and repairers",
+      slug: "telecommunications-line-installers-and-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 884,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 884,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Other extraction workers",
+      slug: "other-extraction-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Millwrights",
+      slug: "millwrights",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Production, transportation, and material moving occupations",
       slug: "production-transportation-and-material-moving-occupations",
-      occupation_name:
-        "Production, transportation, and material moving occupations",
-      parent_slug: null,
-      year: "2019",
-      number_workers: "15353",
-      median_weekly_earnings: "727",
-      men_number_workers: "12020",
-      men_median_weekly_earnings: "780",
-      women_number_workers: "3334",
-      women_median_weekly_earnings: "593",
-      cents_to_dollar: "76"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 780,
+            womenMedianWeeklyEarnings: 593,
+            year: 2019,
+            centsToDollar: 76
+          },
+          {
+            menMedianWeeklyEarnings: 780,
+            womenMedianWeeklyEarnings: 593,
+            year: 2019,
+            centsToDollar: 76
+          }
+        ]
+      },
+      parent: null
     },
     {
+      name: "Production occupations",
       slug: "production-occupations",
-      occupation_name: "Production occupations",
-      parent_slug: "production-transportation-and-material-moving-occupations",
-      year: "2019",
-      number_workers: "7741",
-      median_weekly_earnings: "745",
-      men_number_workers: "5668",
-      men_median_weekly_earnings: "814",
-      women_number_workers: "2073",
-      women_median_weekly_earnings: "596",
-      cents_to_dollar: "73"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 814,
+            womenMedianWeeklyEarnings: 596,
+            year: 2019,
+            centsToDollar: 73
+          },
+          {
+            menMedianWeeklyEarnings: 814,
+            womenMedianWeeklyEarnings: 596,
+            year: 2019,
+            centsToDollar: 73
+          }
+        ]
+      },
+      parent: {
+        slug: "production-transportation-and-material-moving-occupations"
+      }
     },
     {
+      name: "First-line supervisors of production and operating workers",
       slug: "first-line-supervisors-of-production-and-operating-workers",
-      occupation_name:
-        "First-line supervisors of production and operating workers",
-      parent_slug: "production-occupations",
-      year: "2019",
-      number_workers: "806",
-      median_weekly_earnings: "949",
-      men_number_workers: "633",
-      men_median_weekly_earnings: "1031",
-      women_number_workers: "173",
-      women_median_weekly_earnings: "721",
-      cents_to_dollar: "70"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1031,
+            womenMedianWeeklyEarnings: 721,
+            year: 2019,
+            centsToDollar: 69
+          },
+          {
+            menMedianWeeklyEarnings: 1031,
+            womenMedianWeeklyEarnings: 721,
+            year: 2019,
+            centsToDollar: 69
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
     },
     {
+      name: "Electrical, electronics, and electromechanical assemblers",
       slug: "electrical-electronics-and-electromechanical-assemblers",
-      occupation_name:
-        "Electrical, electronics, and electromechanical assemblers",
-      parent_slug: "production-occupations",
-      year: "2019",
-      number_workers: "103",
-      median_weekly_earnings: "644",
-      men_number_workers: "52",
-      men_median_weekly_earnings: "712",
-      women_number_workers: "51",
-      women_median_weekly_earnings: "594",
-      cents_to_dollar: "83"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 712,
+            womenMedianWeeklyEarnings: 594,
+            year: 2019,
+            centsToDollar: 83
+          },
+          {
+            menMedianWeeklyEarnings: 712,
+            womenMedianWeeklyEarnings: 594,
+            year: 2019,
+            centsToDollar: 83
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
     },
     {
+      name: "Miscellaneous assemblers and fabricators",
       slug: "miscellaneous-assemblers-and-fabricators",
-      occupation_name: "Miscellaneous assemblers and fabricators",
-      parent_slug: "production-occupations",
-      year: "2019",
-      number_workers: "900",
-      median_weekly_earnings: "684",
-      men_number_workers: "574",
-      men_median_weekly_earnings: "724",
-      women_number_workers: "326",
-      women_median_weekly_earnings: "597",
-      cents_to_dollar: "82"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 724,
+            womenMedianWeeklyEarnings: 597,
+            year: 2019,
+            centsToDollar: 82
+          },
+          {
+            menMedianWeeklyEarnings: 724,
+            womenMedianWeeklyEarnings: 597,
+            year: 2019,
+            centsToDollar: 82
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
     },
     {
+      name: "Bakers",
       slug: "bakers",
-      occupation_name: "Bakers",
-      parent_slug: "production-occupations",
-      year: "2019",
-      number_workers: "151",
-      median_weekly_earnings: "561",
-      men_number_workers: "70",
-      men_median_weekly_earnings: "590",
-      women_number_workers: "81",
-      women_median_weekly_earnings: "522",
-      cents_to_dollar: "88"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 590,
+            womenMedianWeeklyEarnings: 522,
+            year: 2019,
+            centsToDollar: 88
+          },
+          {
+            menMedianWeeklyEarnings: 590,
+            womenMedianWeeklyEarnings: 522,
+            year: 2019,
+            centsToDollar: 88
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
     },
     {
+      name: "Butchers and other meat, poultry, and fish processing workers",
       slug: "butchers-and-other-meat-poultry-and-fish-processing-workers",
-      occupation_name:
-        "Butchers and other meat, poultry, and fish processing workers",
-      parent_slug: "production-occupations",
-      year: "2019",
-      number_workers: "265",
-      median_weekly_earnings: "648",
-      men_number_workers: "198",
-      men_median_weekly_earnings: "671",
-      women_number_workers: "67",
-      women_median_weekly_earnings: "573",
-      cents_to_dollar: "85"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 671,
+            womenMedianWeeklyEarnings: 573,
+            year: 2019,
+            centsToDollar: 85
+          },
+          {
+            menMedianWeeklyEarnings: 671,
+            womenMedianWeeklyEarnings: 573,
+            year: 2019,
+            centsToDollar: 85
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
     },
     {
+      name: "Food processing workers, all other",
       slug: "food-processing-workers-all-other",
-      occupation_name: "Food processing workers, all other",
-      parent_slug: "production-occupations",
-      year: "2019",
-      number_workers: "144",
-      median_weekly_earnings: "658",
-      men_number_workers: "94",
-      men_median_weekly_earnings: "779",
-      women_number_workers: "50",
-      women_median_weekly_earnings: "573",
-      cents_to_dollar: "74"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 779,
+            womenMedianWeeklyEarnings: 573,
+            year: 2019,
+            centsToDollar: 73
+          },
+          {
+            menMedianWeeklyEarnings: 779,
+            womenMedianWeeklyEarnings: 573,
+            year: 2019,
+            centsToDollar: 73
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
     },
     {
+      name: "Metal workers and plastic workers, all other",
       slug: "metal-workers-and-plastic-workers-all-other",
-      occupation_name: "Metal workers and plastic workers, all other",
-      parent_slug: "production-occupations",
-      year: "2019",
-      number_workers: "385",
-      median_weekly_earnings: "736",
-      men_number_workers: "312",
-      men_median_weekly_earnings: "795",
-      women_number_workers: "74",
-      women_median_weekly_earnings: "592",
-      cents_to_dollar: "74"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 795,
+            womenMedianWeeklyEarnings: 592,
+            year: 2019,
+            centsToDollar: 74
+          },
+          {
+            menMedianWeeklyEarnings: 795,
+            womenMedianWeeklyEarnings: 592,
+            year: 2019,
+            centsToDollar: 74
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
     },
     {
+      name: "Laundry and dry-cleaning workers",
+      slug: "laundry-and-dry-cleaning-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 482,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 482,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Sewing machine operators",
+      slug: "sewing-machine-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 521,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 521,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Other installation, maintenance, and repair workers",
+      slug: "other-installation-maintenance-and-repair-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 850,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 850,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Computer control programmers and operators",
+      slug: "computer-control-programmers-and-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 857,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 857,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Inspectors, testers, sorters, samplers, and weighers",
       slug: "inspectors-testers-sorters-samplers-and-weighers",
-      occupation_name: "Inspectors, testers, sorters, samplers, and weighers",
-      parent_slug: "production-occupations",
-      year: "2019",
-      number_workers: "722",
-      median_weekly_earnings: "835",
-      men_number_workers: "463",
-      men_median_weekly_earnings: "939",
-      women_number_workers: "259",
-      women_median_weekly_earnings: "693",
-      cents_to_dollar: "74"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 939,
+            womenMedianWeeklyEarnings: 693,
+            year: 2019,
+            centsToDollar: 73
+          },
+          {
+            menMedianWeeklyEarnings: 939,
+            womenMedianWeeklyEarnings: 693,
+            year: 2019,
+            centsToDollar: 73
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
     },
     {
+      name: "Packaging and filling machine operators and tenders",
       slug: "packaging-and-filling-machine-operators-and-tenders",
-      occupation_name: "Packaging and filling machine operators and tenders",
-      parent_slug: "production-occupations",
-      year: "2019",
-      number_workers: "244",
-      median_weekly_earnings: "575",
-      men_number_workers: "116",
-      men_median_weekly_earnings: "646",
-      women_number_workers: "128",
-      women_median_weekly_earnings: "533",
-      cents_to_dollar: "83"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 646,
+            womenMedianWeeklyEarnings: 533,
+            year: 2019,
+            centsToDollar: 82
+          },
+          {
+            menMedianWeeklyEarnings: 646,
+            womenMedianWeeklyEarnings: 533,
+            year: 2019,
+            centsToDollar: 82
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
     },
     {
+      name: "Production workers, all other",
       slug: "production-workers-all-other",
-      occupation_name: "Production workers, all other",
-      parent_slug: "production-occupations",
-      year: "2019",
-      number_workers: "1056",
-      median_weekly_earnings: "704",
-      men_number_workers: "763",
-      men_median_weekly_earnings: "767",
-      women_number_workers: "293",
-      women_median_weekly_earnings: "566",
-      cents_to_dollar: "74"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 767,
+            womenMedianWeeklyEarnings: 566,
+            year: 2019,
+            centsToDollar: 73
+          },
+          {
+            menMedianWeeklyEarnings: 767,
+            womenMedianWeeklyEarnings: 566,
+            year: 2019,
+            centsToDollar: 73
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
     },
     {
+      name: "Transportation and material moving occupations",
       slug: "transportation-and-material-moving-occupations",
-      occupation_name: "Transportation and material moving occupations",
-      parent_slug: "production-transportation-and-material-moving-occupations",
-      year: "2019",
-      number_workers: "7612",
-      median_weekly_earnings: "711",
-      men_number_workers: "6352",
-      men_median_weekly_earnings: "747",
-      women_number_workers: "1260",
-      women_median_weekly_earnings: "586",
-      cents_to_dollar: "78"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 747,
+            womenMedianWeeklyEarnings: 586,
+            year: 2019,
+            centsToDollar: 78
+          },
+          {
+            menMedianWeeklyEarnings: 747,
+            womenMedianWeeklyEarnings: 586,
+            year: 2019,
+            centsToDollar: 78
+          }
+        ]
+      },
+      parent: {
+        slug: "production-transportation-and-material-moving-occupations"
+      }
     },
     {
+      name: "Bus drivers",
       slug: "bus-drivers",
-      occupation_name: "Bus drivers",
-      parent_slug: "transportation-and-material-moving-occupations",
-      year: "2019",
-      number_workers: "364",
-      median_weekly_earnings: "674",
-      men_number_workers: "205",
-      men_median_weekly_earnings: "718",
-      women_number_workers: "159",
-      women_median_weekly_earnings: "625",
-      cents_to_dollar: "87"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 718,
+            womenMedianWeeklyEarnings: 625,
+            year: 2019,
+            centsToDollar: 87
+          },
+          {
+            menMedianWeeklyEarnings: 718,
+            womenMedianWeeklyEarnings: 625,
+            year: 2019,
+            centsToDollar: 87
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
     },
     {
+      name: "Driver/sales workers and truck drivers",
       slug: "driver-sales-workers-and-truck-drivers",
-      occupation_name: "Driver/sales workers and truck drivers",
-      parent_slug: "transportation-and-material-moving-occupations",
-      year: "2019",
-      number_workers: "2723",
-      median_weekly_earnings: "843",
-      men_number_workers: "2564",
-      men_median_weekly_earnings: "861",
-      women_number_workers: "159",
-      women_median_weekly_earnings: "660",
-      cents_to_dollar: "77"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 861,
+            womenMedianWeeklyEarnings: 660,
+            year: 2019,
+            centsToDollar: 76
+          },
+          {
+            menMedianWeeklyEarnings: 861,
+            womenMedianWeeklyEarnings: 660,
+            year: 2019,
+            centsToDollar: 76
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
     },
     {
+      name: "Flight attendants",
+      slug: "flight-attendants",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 835,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 835,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Stationary engineers and boiler operators",
+      slug: "stationary-engineers-and-boiler-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 862,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 862,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Water and wastewater treatment plant and system operators",
+      slug: "water-and-wastewater-treatment-plant-and-system-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 930,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 930,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Chemical processing machine setters, operators, and tenders",
+      slug: "chemical-processing-machine-setters-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1017,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1017,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Crushing, grinding, polishing, mixing, and blending workers",
+      slug: "crushing-grinding-polishing-mixing-and-blending-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 772,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 772,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Painting workers",
+      slug: "painting-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 804,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 804,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Cutting workers",
+      slug: "cutting-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Taxi drivers and chauffeurs",
       slug: "taxi-drivers-and-chauffeurs",
-      occupation_name: "Taxi drivers and chauffeurs",
-      parent_slug: "transportation-and-material-moving-occupations",
-      year: "2019",
-      number_workers: "406",
-      median_weekly_earnings: "614",
-      men_number_workers: "356",
-      men_median_weekly_earnings: "624",
-      women_number_workers: "50",
-      women_median_weekly_earnings: "520",
-      cents_to_dollar: "83"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 624,
+            womenMedianWeeklyEarnings: 520,
+            year: 2019,
+            centsToDollar: 83
+          },
+          {
+            menMedianWeeklyEarnings: 624,
+            womenMedianWeeklyEarnings: 520,
+            year: 2019,
+            centsToDollar: 83
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
     },
     {
+      name: "Industrial truck and tractor operators",
       slug: "industrial-truck-and-tractor-operators",
-      occupation_name: "Industrial truck and tractor operators",
-      parent_slug: "transportation-and-material-moving-occupations",
-      year: "2019",
-      number_workers: "541",
-      median_weekly_earnings: "677",
-      men_number_workers: "489",
-      men_median_weekly_earnings: "686",
-      women_number_workers: "52",
-      women_median_weekly_earnings: "625",
-      cents_to_dollar: "91"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 686,
+            womenMedianWeeklyEarnings: 625,
+            year: 2019,
+            centsToDollar: 91
+          },
+          {
+            menMedianWeeklyEarnings: 686,
+            womenMedianWeeklyEarnings: 625,
+            year: 2019,
+            centsToDollar: 91
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
     },
     {
+      name: "Laborers and freight, stock, and material movers, hand",
       slug: "laborers-and-freight-stock-and-material-movers-hand",
-      occupation_name: "Laborers and freight, stock, and material movers, hand",
-      parent_slug: "transportation-and-material-moving-occupations",
-      year: "2019",
-      number_workers: "1764",
-      median_weekly_earnings: "634",
-      men_number_workers: "1402",
-      men_median_weekly_earnings: "657",
-      women_number_workers: "362",
-      women_median_weekly_earnings: "567",
-      cents_to_dollar: "86"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 657,
+            womenMedianWeeklyEarnings: 567,
+            year: 2019,
+            centsToDollar: 86
+          },
+          {
+            menMedianWeeklyEarnings: 657,
+            womenMedianWeeklyEarnings: 567,
+            year: 2019,
+            centsToDollar: 86
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
     },
     {
+      name: "Packers and packagers, hand",
       slug: "packers-and-packagers-hand",
-      occupation_name: "Packers and packagers, hand",
-      parent_slug: "transportation-and-material-moving-occupations",
-      year: "2019",
-      number_workers: "467",
-      median_weekly_earnings: "530",
-      men_number_workers: "202",
-      men_median_weekly_earnings: "576",
-      women_number_workers: "265",
-      women_median_weekly_earnings: "515",
-      cents_to_dollar: "89"
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 576,
+            womenMedianWeeklyEarnings: 515,
+            year: 2019,
+            centsToDollar: 89
+          },
+          {
+            menMedianWeeklyEarnings: 576,
+            womenMedianWeeklyEarnings: 515,
+            year: 2019,
+            centsToDollar: 89
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Railroad conductors and yardmasters",
+      slug: "railroad-conductors-and-yardmasters",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1170,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1170,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Parking lot attendants",
+      slug: "parking-lot-attendants",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 581,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 581,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Automotive and watercraft service attendants",
+      slug: "automotive-and-watercraft-service-attendants",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 520,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 520,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Crane and tower operators",
+      slug: "crane-and-tower-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1104,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1104,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Cleaners of vehicles and equipment",
+      slug: "cleaners-of-vehicles-and-equipment",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 595,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 595,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Refuse and recyclable material collectors",
+      slug: "refuse-and-recyclable-material-collectors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 683,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 683,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Advertising and promotions managers",
+      slug: "advertising-and-promotions-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Compensation and benefits managers",
+      slug: "compensation-and-benefits-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Training and development managers",
+      slug: "training-and-development-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Funeral service managers",
+      slug: "funeral-service-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Gaming managers",
+      slug: "gaming-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Natural sciences managers",
+      slug: "natural-sciences-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Postmasters and mail superintendents",
+      slug: "postmasters-and-mail-superintendents",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Emergency management directors",
+      slug: "emergency-management-directors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Agents and business managers of artists, performers, and athletes",
+      slug: "agents-and-business-managers-of-artists-performers-and-athletes",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Buyers and purchasing agents, farm products",
+      slug: "buyers-and-purchasing-agents-farm-products",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Compensation, benefits, and job analysis specialists",
+      slug: "compensation-benefits-and-job-analysis-specialists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Appraisers and assessors of real estate",
+      slug: "appraisers-and-assessors-of-real-estate",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Budget analysts",
+      slug: "budget-analysts",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Credit analysts",
+      slug: "credit-analysts",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Reservation and transportation ticket agents and travel clerks",
+      slug: "reservation-and-transportation-ticket-agents-and-travel-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 789,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 789,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Information and record clerks, all other",
+      slug: "information-and-record-clerks-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 691,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 691,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Insurance claims and policy processing clerks",
+      slug: "insurance-claims-and-policy-processing-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 739,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 739,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Sales engineers",
+      slug: "sales-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "Postal service clerks",
+      slug: "postal-service-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name:
+        "Postal service mail sorters, processors, and processing machine operators",
+      slug:
+        "postal-service-mail-sorters-processors-and-processing-machine-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Weighers, measurers, checkers, and samplers, recordkeeping",
+      slug: "weighers-measurers-checkers-and-samplers-recordkeeping",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Computer operators",
+      slug: "computer-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Miscellaneous mathematical science occupations",
+      slug: "miscellaneous-mathematical-science-occupations",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
+    },
+    {
+      name: "Surveyors, cartographers, and photogrammetrists",
+      slug: "surveyors-cartographers-and-photogrammetrists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Agricultural engineers",
+      slug: "agricultural-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Biomedical engineers",
+      slug: "biomedical-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Environmental engineers",
+      slug: "environmental-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Marine engineers and naval architects",
+      slug: "marine-engineers-and-naval-architects",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Materials engineers",
+      slug: "materials-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name:
+        "Mining and geological engineers, including mining safety engineers",
+      slug: "mining-and-geological-engineers-including-mining-safety-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Nuclear engineers",
+      slug: "nuclear-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Petroleum engineers",
+      slug: "petroleum-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Agricultural and food scientists",
+      slug: "agricultural-and-food-scientists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Conservation scientists and foresters",
+      slug: "conservation-scientists-and-foresters",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Life scientists, all other",
+      slug: "life-scientists-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Astronomers and physicists",
+      slug: "astronomers-and-physicists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Judicial law clerks",
+      slug: "judicial-law-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "legal-occupations"
+      }
+    },
+    {
+      name: "Tire builders",
+      slug: "tire-builders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Chemical technicians",
+      slug: "chemical-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name:
+        "Miscellaneous community and social service specialists, including health educators and community health workers",
+      slug:
+        "miscellaneous-community-and-social-service-specialists-including-health-educators-and-community-health-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "community-and-social-service-occupations"
+      }
+    },
+    {
+      name: "Judges, magistrates, and other judicial workers",
+      slug: "judges-magistrates-and-other-judicial-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "legal-occupations"
+      }
+    },
+    {
+      name: "Industrial production managers",
+      slug: "industrial-production-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1469,
+            womenMedianWeeklyEarnings: 1497,
+            year: 2019,
+            centsToDollar: 101
+          },
+          {
+            menMedianWeeklyEarnings: 1469,
+            womenMedianWeeklyEarnings: 1497,
+            year: 2019,
+            centsToDollar: 101
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Purchasing managers",
+      slug: "purchasing-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1657,
+            womenMedianWeeklyEarnings: 1390,
+            year: 2019,
+            centsToDollar: 83
+          },
+          {
+            menMedianWeeklyEarnings: 1657,
+            womenMedianWeeklyEarnings: 1390,
+            year: 2019,
+            centsToDollar: 83
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Construction managers",
+      slug: "construction-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1511,
+            womenMedianWeeklyEarnings: 1210,
+            year: 2019,
+            centsToDollar: 80
+          },
+          {
+            menMedianWeeklyEarnings: 1511,
+            womenMedianWeeklyEarnings: 1210,
+            year: 2019,
+            centsToDollar: 80
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Education administrators",
+      slug: "education-administrators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1467,
+            womenMedianWeeklyEarnings: 1335,
+            year: 2019,
+            centsToDollar: 91
+          },
+          {
+            menMedianWeeklyEarnings: 1467,
+            womenMedianWeeklyEarnings: 1335,
+            year: 2019,
+            centsToDollar: 91
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Food service managers",
+      slug: "food-service-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 964,
+            womenMedianWeeklyEarnings: 719,
+            year: 2019,
+            centsToDollar: 74
+          },
+          {
+            menMedianWeeklyEarnings: 964,
+            womenMedianWeeklyEarnings: 719,
+            year: 2019,
+            centsToDollar: 74
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Lodging managers",
+      slug: "lodging-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1096,
+            womenMedianWeeklyEarnings: 894,
+            year: 2019,
+            centsToDollar: 81
+          },
+          {
+            menMedianWeeklyEarnings: 1096,
+            womenMedianWeeklyEarnings: 894,
+            year: 2019,
+            centsToDollar: 81
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Medical and health services managers",
+      slug: "medical-and-health-services-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1828,
+            womenMedianWeeklyEarnings: 1362,
+            year: 2019,
+            centsToDollar: 74
+          },
+          {
+            menMedianWeeklyEarnings: 1828,
+            womenMedianWeeklyEarnings: 1362,
+            year: 2019,
+            centsToDollar: 74
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Property, real estate, and community association managers",
+      slug: "property-real-estate-and-community-association-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1168,
+            womenMedianWeeklyEarnings: 849,
+            year: 2019,
+            centsToDollar: 72
+          },
+          {
+            menMedianWeeklyEarnings: 1168,
+            womenMedianWeeklyEarnings: 849,
+            year: 2019,
+            centsToDollar: 72
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Social and community service managers",
+      slug: "social-and-community-service-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1452,
+            womenMedianWeeklyEarnings: 1156,
+            year: 2019,
+            centsToDollar: 79
+          },
+          {
+            menMedianWeeklyEarnings: 1452,
+            womenMedianWeeklyEarnings: 1156,
+            year: 2019,
+            centsToDollar: 79
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Managers, all other",
+      slug: "managers-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1725,
+            womenMedianWeeklyEarnings: 1317,
+            year: 2019,
+            centsToDollar: 76
+          },
+          {
+            menMedianWeeklyEarnings: 1725,
+            womenMedianWeeklyEarnings: 1317,
+            year: 2019,
+            centsToDollar: 76
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Business and financial operations occupations",
+      slug: "business-and-financial-operations-occupations",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1468,
+            womenMedianWeeklyEarnings: 1148,
+            year: 2019,
+            centsToDollar: 78
+          },
+          {
+            menMedianWeeklyEarnings: 1468,
+            womenMedianWeeklyEarnings: 1148,
+            year: 2019,
+            centsToDollar: 78
+          }
+        ]
+      },
+      parent: {
+        slug: "management-business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Wholesale and retail buyers, except farm products",
+      slug: "wholesale-and-retail-buyers-except-farm-products",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 982,
+            womenMedianWeeklyEarnings: 977,
+            year: 2019,
+            centsToDollar: 99
+          },
+          {
+            menMedianWeeklyEarnings: 982,
+            womenMedianWeeklyEarnings: 977,
+            year: 2019,
+            centsToDollar: 99
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Purchasing agents, except wholesale, retail, and farm products",
+      slug: "purchasing-agents-except-wholesale-retail-and-farm-products",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1202,
+            womenMedianWeeklyEarnings: 1081,
+            year: 2019,
+            centsToDollar: 89
+          },
+          {
+            menMedianWeeklyEarnings: 1202,
+            womenMedianWeeklyEarnings: 1081,
+            year: 2019,
+            centsToDollar: 89
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Claims adjusters, appraisers, examiners, and investigators",
+      slug: "claims-adjusters-appraisers-examiners-and-investigators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1277,
+            womenMedianWeeklyEarnings: 972,
+            year: 2019,
+            centsToDollar: 76
+          },
+          {
+            menMedianWeeklyEarnings: 1277,
+            womenMedianWeeklyEarnings: 972,
+            year: 2019,
+            centsToDollar: 76
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Compliance officers",
+      slug: "compliance-officers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1561,
+            womenMedianWeeklyEarnings: 1264,
+            year: 2019,
+            centsToDollar: 80
+          },
+          {
+            menMedianWeeklyEarnings: 1561,
+            womenMedianWeeklyEarnings: 1264,
+            year: 2019,
+            centsToDollar: 80
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Glaziers",
+      slug: "glaziers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Human resources workers",
+      slug: "human-resources-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1325,
+            womenMedianWeeklyEarnings: 1149,
+            year: 2019,
+            centsToDollar: 86
+          },
+          {
+            menMedianWeeklyEarnings: 1325,
+            womenMedianWeeklyEarnings: 1149,
+            year: 2019,
+            centsToDollar: 86
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Training and development specialists",
+      slug: "training-and-development-specialists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1249,
+            womenMedianWeeklyEarnings: 968,
+            year: 2019,
+            centsToDollar: 77
+          },
+          {
+            menMedianWeeklyEarnings: 1249,
+            womenMedianWeeklyEarnings: 968,
+            year: 2019,
+            centsToDollar: 77
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Management analysts",
+      slug: "management-analysts",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1870,
+            womenMedianWeeklyEarnings: 1517,
+            year: 2019,
+            centsToDollar: 81
+          },
+          {
+            menMedianWeeklyEarnings: 1870,
+            womenMedianWeeklyEarnings: 1517,
+            year: 2019,
+            centsToDollar: 81
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Market research analysts and marketing specialists",
+      slug: "market-research-analysts-and-marketing-specialists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1688,
+            womenMedianWeeklyEarnings: 1228,
+            year: 2019,
+            centsToDollar: 72
+          },
+          {
+            menMedianWeeklyEarnings: 1688,
+            womenMedianWeeklyEarnings: 1228,
+            year: 2019,
+            centsToDollar: 72
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Business operations specialists, all other",
+      slug: "business-operations-specialists-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1540,
+            womenMedianWeeklyEarnings: 1193,
+            year: 2019,
+            centsToDollar: 77
+          },
+          {
+            menMedianWeeklyEarnings: 1540,
+            womenMedianWeeklyEarnings: 1193,
+            year: 2019,
+            centsToDollar: 77
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Public relations and fundraising managers",
+      slug: "public-relations-and-fundraising-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1399,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1399,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Meeting, convention, and event planners",
+      slug: "meeting-convention-and-event-planners",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1018,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1018,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Fundraisers",
+      slug: "fundraisers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1229,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1229,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Transportation, storage, and distribution managers",
+      slug: "transportation-storage-and-distribution-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1238,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1238,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Farmers, ranchers, and other agricultural managers",
+      slug: "farmers-ranchers-and-other-agricultural-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1162,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1162,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Architectural and engineering managers",
+      slug: "architectural-and-engineering-managers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 2457,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 2457,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "management-occupations"
+      }
+    },
+    {
+      name: "Cost estimators",
+      slug: "cost-estimators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1264,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1264,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Logisticians",
+      slug: "logisticians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1149,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1149,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Architecture and engineering occupations",
+      slug: "architecture-and-engineering-occupations",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1589,
+            womenMedianWeeklyEarnings: 1339,
+            year: 2019,
+            centsToDollar: 84
+          },
+          {
+            menMedianWeeklyEarnings: 1589,
+            womenMedianWeeklyEarnings: 1339,
+            year: 2019,
+            centsToDollar: 84
+          }
+        ]
+      },
+      parent: {
+        slug: "professional-and-related-occupations"
+      }
+    },
+    {
+      name: "Industrial engineers, including health and safety",
+      slug: "industrial-engineers-including-health-and-safety",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1616,
+            womenMedianWeeklyEarnings: 1487,
+            year: 2019,
+            centsToDollar: 92
+          },
+          {
+            menMedianWeeklyEarnings: 1616,
+            womenMedianWeeklyEarnings: 1487,
+            year: 2019,
+            centsToDollar: 92
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Engineers, all other",
+      slug: "engineers-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1663,
+            womenMedianWeeklyEarnings: 1446,
+            year: 2019,
+            centsToDollar: 86
+          },
+          {
+            menMedianWeeklyEarnings: 1663,
+            womenMedianWeeklyEarnings: 1446,
+            year: 2019,
+            centsToDollar: 86
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Animal breeders",
+      slug: "animal-breeders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "farming-fishing-and-forestry-occupations"
+      }
+    },
+    {
+      name: "Legal occupations",
+      slug: "legal-occupations",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1999,
+            womenMedianWeeklyEarnings: 1266,
+            year: 2019,
+            centsToDollar: 63
+          },
+          {
+            menMedianWeeklyEarnings: 1999,
+            womenMedianWeeklyEarnings: 1266,
+            year: 2019,
+            centsToDollar: 63
+          }
+        ]
+      },
+      parent: {
+        slug: "professional-and-related-occupations"
+      }
+    },
+    {
+      name: "Lawyers",
+      slug: "lawyers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 2202,
+            womenMedianWeeklyEarnings: 1878,
+            year: 2019,
+            centsToDollar: 85
+          },
+          {
+            menMedianWeeklyEarnings: 2202,
+            womenMedianWeeklyEarnings: 1878,
+            year: 2019,
+            centsToDollar: 85
+          }
+        ]
+      },
+      parent: {
+        slug: "legal-occupations"
+      }
+    },
+    {
+      name: "Education, training, and library occupations",
+      slug: "education-training-and-library-occupations",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1265,
+            womenMedianWeeklyEarnings: 987,
+            year: 2019,
+            centsToDollar: 78
+          },
+          {
+            menMedianWeeklyEarnings: 1265,
+            womenMedianWeeklyEarnings: 987,
+            year: 2019,
+            centsToDollar: 78
+          }
+        ]
+      },
+      parent: {
+        slug: "professional-and-related-occupations"
+      }
+    },
+    {
+      name: "Postsecondary teachers",
+      slug: "postsecondary-teachers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1670,
+            womenMedianWeeklyEarnings: 1358,
+            year: 2019,
+            centsToDollar: 81
+          },
+          {
+            menMedianWeeklyEarnings: 1670,
+            womenMedianWeeklyEarnings: 1358,
+            year: 2019,
+            centsToDollar: 81
+          }
+        ]
+      },
+      parent: {
+        slug: "education-training-and-library-occupations"
+      }
+    },
+    {
+      name: "Elementary and middle school teachers",
+      slug: "elementary-and-middle-school-teachers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1161,
+            womenMedianWeeklyEarnings: 1042,
+            year: 2019,
+            centsToDollar: 89
+          },
+          {
+            menMedianWeeklyEarnings: 1161,
+            womenMedianWeeklyEarnings: 1042,
+            year: 2019,
+            centsToDollar: 89
+          }
+        ]
+      },
+      parent: {
+        slug: "education-training-and-library-occupations"
+      }
+    },
+    {
+      name: "Secondary school teachers",
+      slug: "secondary-school-teachers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1262,
+            womenMedianWeeklyEarnings: 1095,
+            year: 2019,
+            centsToDollar: 86
+          },
+          {
+            menMedianWeeklyEarnings: 1262,
+            womenMedianWeeklyEarnings: 1095,
+            year: 2019,
+            centsToDollar: 86
+          }
+        ]
+      },
+      parent: {
+        slug: "education-training-and-library-occupations"
+      }
+    },
+    {
+      name: "Other teachers and instructors",
+      slug: "other-teachers-and-instructors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1190,
+            womenMedianWeeklyEarnings: 942,
+            year: 2019,
+            centsToDollar: 79
+          },
+          {
+            menMedianWeeklyEarnings: 1190,
+            womenMedianWeeklyEarnings: 942,
+            year: 2019,
+            centsToDollar: 79
+          }
+        ]
+      },
+      parent: {
+        slug: "education-training-and-library-occupations"
+      }
+    },
+    {
+      name: "Teacher assistants",
+      slug: "teacher-assistants",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 707,
+            womenMedianWeeklyEarnings: 579,
+            year: 2019,
+            centsToDollar: 81
+          },
+          {
+            menMedianWeeklyEarnings: 707,
+            womenMedianWeeklyEarnings: 579,
+            year: 2019,
+            centsToDollar: 81
+          }
+        ]
+      },
+      parent: {
+        slug: "education-training-and-library-occupations"
+      }
+    },
+    {
+      name: "Psychologists",
+      slug: "psychologists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1441,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1441,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Social and human service assistants",
+      slug: "social-and-human-service-assistants",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 778,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 778,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "community-and-social-service-occupations"
+      }
+    },
+    {
+      name: "Paralegals and legal assistants",
+      slug: "paralegals-and-legal-assistants",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 970,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 970,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "legal-occupations"
+      }
+    },
+    {
+      name: "Miscellaneous legal support workers",
+      slug: "miscellaneous-legal-support-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1009,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1009,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "legal-occupations"
+      }
+    },
+    {
+      name: "Preschool and kindergarten teachers",
+      slug: "preschool-and-kindergarten-teachers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 705,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 705,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "education-training-and-library-occupations"
+      }
+    },
+    {
+      name: "Bill and account collectors",
+      slug: "bill-and-account-collectors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 672,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 672,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Billing and posting clerks",
+      slug: "billing-and-posting-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 736,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 736,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Payroll and timekeeping clerks",
+      slug: "payroll-and-timekeeping-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 756,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 756,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Sociologists",
+      slug: "sociologists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Construction and extraction occupations",
+      slug: "construction-and-extraction-occupations",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 873,
+            womenMedianWeeklyEarnings: 711,
+            year: 2019,
+            centsToDollar: 81
+          },
+          {
+            menMedianWeeklyEarnings: 873,
+            womenMedianWeeklyEarnings: 711,
+            year: 2019,
+            centsToDollar: 81
+          }
+        ]
+      },
+      parent: {
+        slug: "natural-resources-construction-and-maintenance-occupations"
+      }
+    },
+    {
+      name: "Graders and sorters, agricultural products",
+      slug: "graders-and-sorters-agricultural-products",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 549,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 549,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "farming-fishing-and-forestry-occupations"
+      }
+    },
+    {
+      name:
+        "First-line supervisors of construction trades and extraction workers",
+      slug:
+        "first-line-supervisors-of-construction-trades-and-extraction-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1167,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1167,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Brickmasons, blockmasons, and stonemasons",
+      slug: "brickmasons-blockmasons-and-stonemasons",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 819,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 819,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Carpenters",
+      slug: "carpenters",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 826,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 826,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Carpet, floor, and tile installers and finishers",
+      slug: "carpet-floor-and-tile-installers-and-finishers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 709,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 709,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Cement masons, concrete finishers, and terrazzo workers",
+      slug: "cement-masons-concrete-finishers-and-terrazzo-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 975,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 975,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Construction laborers",
+      slug: "construction-laborers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 724,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 724,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Operating engineers and other construction equipment operators",
+      slug: "operating-engineers-and-other-construction-equipment-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 927,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 927,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Drywall installers, ceiling tile installers, and tapers",
+      slug: "drywall-installers-ceiling-tile-installers-and-tapers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 790,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 790,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Electricians",
+      slug: "electricians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1015,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1015,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Insulation workers",
+      slug: "insulation-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 885,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 885,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Painters, construction and maintenance",
+      slug: "painters-construction-and-maintenance",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 744,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 744,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Pipelayers, plumbers, pipefitters, and steamfitters",
+      slug: "pipelayers-plumbers-pipefitters-and-steamfitters",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 918,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 918,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name:
+        "Cutting, punching, and press machine setters, operators, and tenders, metal and plastic",
+      slug:
+        "cutting-punching-and-press-machine-setters-operators-and-tenders-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 816,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 816,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Machinists",
+      slug: "machinists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 889,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 889,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Tool and die makers",
+      slug: "tool-and-die-makers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 972,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 972,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Welding, soldering, and brazing workers",
+      slug: "welding-soldering-and-brazing-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 810,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 810,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Supervisors of transportation and material moving workers",
+      slug: "supervisors-of-transportation-and-material-moving-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 978,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 978,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Aircraft pilots and flight engineers",
+      slug: "aircraft-pilots-and-flight-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1670,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1670,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Medical, dental, and ophthalmic laboratory technicians",
+      slug: "medical-dental-and-ophthalmic-laboratory-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Upholsterers",
+      slug: "upholsterers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Engineering technicians, except drafters",
+      slug: "engineering-technicians-except-drafters",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1200,
+            womenMedianWeeklyEarnings: 915,
+            year: 2019,
+            centsToDollar: 76
+          },
+          {
+            menMedianWeeklyEarnings: 1200,
+            womenMedianWeeklyEarnings: 915,
+            year: 2019,
+            centsToDollar: 76
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Information security analysts",
+      slug: "information-security-analysts",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1875,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1875,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
+    },
+    {
+      name: "Database administrators",
+      slug: "database-administrators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1752,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1752,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
+    },
+    {
+      name: "Computer network architects",
+      slug: "computer-network-architects",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1901,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1901,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
+    },
+    {
+      name: "Architects, except naval",
+      slug: "architects-except-naval",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1706,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1706,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Aerospace engineers",
+      slug: "aerospace-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 2018,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 2018,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Chemical engineers",
+      slug: "chemical-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1878,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1878,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Computer hardware engineers",
+      slug: "computer-hardware-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1919,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1919,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Electrical and electronics engineers",
+      slug: "electrical-and-electronics-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1830,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1830,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Mechanical engineers",
+      slug: "mechanical-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1635,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1635,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Drafters",
+      slug: "drafters",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1047,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1047,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Financial specialists, all other",
+      slug: "financial-specialists-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Statisticians",
+      slug: "statisticians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
+    },
+    {
+      name: "Surveying and mapping technicians",
+      slug: "surveying-and-mapping-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "architecture-and-engineering-occupations"
+      }
+    },
+    {
+      name: "Special education teachers",
+      slug: "special-education-teachers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1104,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1104,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "education-training-and-library-occupations"
+      }
+    },
+    {
+      name: "Librarians",
+      slug: "librarians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1093,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1093,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "education-training-and-library-occupations"
+      }
+    },
+    {
+      name: "Other education, training, and library workers",
+      slug: "other-education-training-and-library-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1058,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1058,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "education-training-and-library-occupations"
+      }
+    },
+    {
+      name: "Biological scientists",
+      slug: "biological-scientists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1266,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1266,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Environmental scientists and geoscientists",
+      slug: "environmental-scientists-and-geoscientists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1519,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1519,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Probation officers and correctional treatment specialists",
+      slug: "probation-officers-and-correctional-treatment-specialists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1050,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1050,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "community-and-social-service-occupations"
+      }
+    },
+    {
+      name: "Chemists and materials scientists",
+      slug: "chemists-and-materials-scientists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Physical therapists",
+      slug: "physical-therapists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1610,
+            womenMedianWeeklyEarnings: 1323,
+            year: 2019,
+            centsToDollar: 82
+          },
+          {
+            menMedianWeeklyEarnings: 1610,
+            womenMedianWeeklyEarnings: 1323,
+            year: 2019,
+            centsToDollar: 82
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Registered nurses",
+      slug: "registered-nurses",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1256,
+            womenMedianWeeklyEarnings: 1217,
+            year: 2019,
+            centsToDollar: 96
+          },
+          {
+            menMedianWeeklyEarnings: 1256,
+            womenMedianWeeklyEarnings: 1217,
+            year: 2019,
+            centsToDollar: 96
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Clinical laboratory technologists and technicians",
+      slug: "clinical-laboratory-technologists-and-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1117,
+            womenMedianWeeklyEarnings: 952,
+            year: 2019,
+            centsToDollar: 85
+          },
+          {
+            menMedianWeeklyEarnings: 1117,
+            womenMedianWeeklyEarnings: 952,
+            year: 2019,
+            centsToDollar: 85
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Diagnostic related technologists and technicians",
+      slug: "diagnostic-related-technologists-and-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1166,
+            womenMedianWeeklyEarnings: 1076,
+            year: 2019,
+            centsToDollar: 92
+          },
+          {
+            menMedianWeeklyEarnings: 1166,
+            womenMedianWeeklyEarnings: 1076,
+            year: 2019,
+            centsToDollar: 92
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Emergency medical technicians and paramedics",
+      slug: "emergency-medical-technicians-and-paramedics",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 991,
+            womenMedianWeeklyEarnings: 786,
+            year: 2019,
+            centsToDollar: 79
+          },
+          {
+            menMedianWeeklyEarnings: 991,
+            womenMedianWeeklyEarnings: 786,
+            year: 2019,
+            centsToDollar: 79
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Health practitioner support technologists and technicians",
+      slug: "health-practitioner-support-technologists-and-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 843,
+            womenMedianWeeklyEarnings: 712,
+            year: 2019,
+            centsToDollar: 84
+          },
+          {
+            menMedianWeeklyEarnings: 843,
+            womenMedianWeeklyEarnings: 712,
+            year: 2019,
+            centsToDollar: 84
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Public relations specialists",
+      slug: "public-relations-specialists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1255,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1255,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "Editors",
+      slug: "editors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1135,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1135,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "Dietitians and nutritionists",
+      slug: "dietitians-and-nutritionists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 948,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 948,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Physician assistants",
+      slug: "physician-assistants",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1763,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1763,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Occupational therapists",
+      slug: "occupational-therapists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1441,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1441,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Respiratory therapists",
+      slug: "respiratory-therapists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1073,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1073,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Speech-language pathologists",
+      slug: "speech-language-pathologists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1171,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1171,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Therapists, all other",
+      slug: "therapists-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 919,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 919,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Veterinarians",
+      slug: "veterinarians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1985,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1985,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Nurse practitioners",
+      slug: "nurse-practitioners",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1753,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1753,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Dental hygienists",
+      slug: "dental-hygienists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1066,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 1066,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Athletes, coaches, umpires, and related workers",
+      slug: "athletes-coaches-umpires-and-related-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1134,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1134,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "Broadcast and sound engineering technicians and radio operators",
+      slug: "broadcast-and-sound-engineering-technicians-and-radio-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1189,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1189,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "Artists and related workers",
+      slug: "artists-and-related-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "News analysts, reporters and correspondents",
+      slug: "news-analysts-reporters-and-correspondents",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "Technical writers",
+      slug: "technical-writers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "Writers and authors",
+      slug: "writers-and-authors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "Miscellaneous media and communication workers",
+      slug: "miscellaneous-media-and-communication-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "Dentists",
+      slug: "dentists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Bailiffs, correctional officers, and jailers",
+      slug: "bailiffs-correctional-officers-and-jailers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 890,
+            womenMedianWeeklyEarnings: 664,
+            year: 2019,
+            centsToDollar: 74
+          },
+          {
+            menMedianWeeklyEarnings: 890,
+            womenMedianWeeklyEarnings: 664,
+            year: 2019,
+            centsToDollar: 74
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Police and sheriff's patrol officers",
+      slug: "police-and-sheriffs-patrol-officers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1143,
+            womenMedianWeeklyEarnings: 922,
+            year: 2019,
+            centsToDollar: 80
+          },
+          {
+            menMedianWeeklyEarnings: 1143,
+            womenMedianWeeklyEarnings: 922,
+            year: 2019,
+            centsToDollar: 80
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Security guards and gaming surveillance officers",
+      slug: "security-guards-and-gaming-surveillance-officers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 671,
+            womenMedianWeeklyEarnings: 589,
+            year: 2019,
+            centsToDollar: 87
+          },
+          {
+            menMedianWeeklyEarnings: 671,
+            womenMedianWeeklyEarnings: 589,
+            year: 2019,
+            centsToDollar: 87
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Food preparation and serving related occupations",
+      slug: "food-preparation-and-serving-related-occupations",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 576,
+            womenMedianWeeklyEarnings: 492,
+            year: 2019,
+            centsToDollar: 85
+          },
+          {
+            menMedianWeeklyEarnings: 576,
+            womenMedianWeeklyEarnings: 492,
+            year: 2019,
+            centsToDollar: 85
+          }
+        ]
+      },
+      parent: {
+        slug: "service-occupations"
+      }
+    },
+    {
+      name: "Chefs and head cooks",
+      slug: "chefs-and-head-cooks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 727,
+            womenMedianWeeklyEarnings: 553,
+            year: 2019,
+            centsToDollar: 76
+          },
+          {
+            menMedianWeeklyEarnings: 727,
+            womenMedianWeeklyEarnings: 553,
+            year: 2019,
+            centsToDollar: 76
+          }
+        ]
+      },
+      parent: {
+        slug: "food-preparation-and-serving-related-occupations"
+      }
+    },
+    {
+      name: "First-line supervisors of food preparation and serving workers",
+      slug: "first-line-supervisors-of-food-preparation-and-serving-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 657,
+            womenMedianWeeklyEarnings: 545,
+            year: 2019,
+            centsToDollar: 82
+          },
+          {
+            menMedianWeeklyEarnings: 657,
+            womenMedianWeeklyEarnings: 545,
+            year: 2019,
+            centsToDollar: 82
+          }
+        ]
+      },
+      parent: {
+        slug: "food-preparation-and-serving-related-occupations"
+      }
+    },
+    {
+      name: "Cooks",
+      slug: "cooks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 535,
+            womenMedianWeeklyEarnings: 489,
+            year: 2019,
+            centsToDollar: 91
+          },
+          {
+            menMedianWeeklyEarnings: 535,
+            womenMedianWeeklyEarnings: 489,
+            year: 2019,
+            centsToDollar: 91
+          }
+        ]
+      },
+      parent: {
+        slug: "food-preparation-and-serving-related-occupations"
+      }
+    },
+    {
+      name: "Food preparation workers",
+      slug: "food-preparation-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 532,
+            womenMedianWeeklyEarnings: 463,
+            year: 2019,
+            centsToDollar: 87
+          },
+          {
+            menMedianWeeklyEarnings: 532,
+            womenMedianWeeklyEarnings: 463,
+            year: 2019,
+            centsToDollar: 87
+          }
+        ]
+      },
+      parent: {
+        slug: "food-preparation-and-serving-related-occupations"
+      }
+    },
+    {
+      name: "Bartenders",
+      slug: "bartenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 655,
+            womenMedianWeeklyEarnings: 578,
+            year: 2019,
+            centsToDollar: 88
+          },
+          {
+            menMedianWeeklyEarnings: 655,
+            womenMedianWeeklyEarnings: 578,
+            year: 2019,
+            centsToDollar: 88
+          }
+        ]
+      },
+      parent: {
+        slug: "food-preparation-and-serving-related-occupations"
+      }
+    },
+    {
+      name:
+        "Combined food preparation and serving workers, including fast food",
+      slug: "combined-food-preparation-and-serving-workers-including-fast-food",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 457,
+            womenMedianWeeklyEarnings: 467,
+            year: 2019,
+            centsToDollar: 102
+          },
+          {
+            menMedianWeeklyEarnings: 457,
+            womenMedianWeeklyEarnings: 467,
+            year: 2019,
+            centsToDollar: 102
+          }
+        ]
+      },
+      parent: {
+        slug: "food-preparation-and-serving-related-occupations"
+      }
+    },
+    {
+      name: "Waiters and waitresses",
+      slug: "waiters-and-waitresses",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 594,
+            womenMedianWeeklyEarnings: 491,
+            year: 2019,
+            centsToDollar: 82
+          },
+          {
+            menMedianWeeklyEarnings: 594,
+            womenMedianWeeklyEarnings: 491,
+            year: 2019,
+            centsToDollar: 82
+          }
+        ]
+      },
+      parent: {
+        slug: "food-preparation-and-serving-related-occupations"
+      }
+    },
+    {
+      name: "Dining room and cafeteria attendants and bartender helpers",
+      slug: "dining-room-and-cafeteria-attendants-and-bartender-helpers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 605,
+            womenMedianWeeklyEarnings: 513,
+            year: 2019,
+            centsToDollar: 84
+          },
+          {
+            menMedianWeeklyEarnings: 605,
+            womenMedianWeeklyEarnings: 513,
+            year: 2019,
+            centsToDollar: 84
+          }
+        ]
+      },
+      parent: {
+        slug: "food-preparation-and-serving-related-occupations"
+      }
+    },
+    {
+      name: "Medical records and health information technicians",
+      slug: "medical-records-and-health-information-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 799,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 799,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Miscellaneous health technologists and technicians",
+      slug: "miscellaneous-health-technologists-and-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 799,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 799,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Dental assistants",
+      slug: "dental-assistants",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 613,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 613,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-support-occupations"
+      }
+    },
+    {
+      name: "Medical assistants",
+      slug: "medical-assistants",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 635,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 635,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-support-occupations"
+      }
+    },
+    {
+      name: "Phlebotomists",
+      slug: "phlebotomists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 612,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 612,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-support-occupations"
+      }
+    },
+    {
+      name:
+        "Miscellaneous healthcare support occupations, including medical equipment preparers",
+      slug:
+        "miscellaneous-healthcare-support-occupations-including-medical-equipment-preparers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 571,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 571,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-support-occupations"
+      }
+    },
+    {
+      name: "Food servers, nonrestaurant",
+      slug: "food-servers-nonrestaurant",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 501,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 501,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "food-preparation-and-serving-related-occupations"
+      }
+    },
+    {
+      name: "Other healthcare practitioners and technical occupations",
+      slug: "other-healthcare-practitioners-and-technical-occupations",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1261,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1261,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "First-line supervisors of police and detectives",
+      slug: "first-line-supervisors-of-police-and-detectives",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1449,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1449,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "First-line supervisors of protective service workers, all other",
+      slug: "first-line-supervisors-of-protective-service-workers-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 698,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 698,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Firefighters",
+      slug: "firefighters",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1203,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1203,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Detectives and criminal investigators",
+      slug: "detectives-and-criminal-investigators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1472,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1472,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Dishwashers",
+      slug: "dishwashers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 464,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 464,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "food-preparation-and-serving-related-occupations"
+      }
+    },
+    {
+      name: "Physical therapist assistants and aides",
+      slug: "physical-therapist-assistants-and-aides",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-support-occupations"
+      }
+    },
+    {
+      name: "Massage therapists",
+      slug: "massage-therapists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-support-occupations"
+      }
+    },
+    {
+      name: "Private detectives and investigators",
+      slug: "private-detectives-and-investigators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "First-line supervisors of non-retail sales workers",
+      slug: "first-line-supervisors-of-non-retail-sales-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1157,
+            womenMedianWeeklyEarnings: 1173,
+            year: 2019,
+            centsToDollar: 101
+          },
+          {
+            menMedianWeeklyEarnings: 1157,
+            womenMedianWeeklyEarnings: 1173,
+            year: 2019,
+            centsToDollar: 101
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "Cashiers",
+      slug: "cashiers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 510,
+            womenMedianWeeklyEarnings: 499,
+            year: 2019,
+            centsToDollar: 97
+          },
+          {
+            menMedianWeeklyEarnings: 510,
+            womenMedianWeeklyEarnings: 499,
+            year: 2019,
+            centsToDollar: 97
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "Retail salespersons",
+      slug: "retail-salespersons",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 806,
+            womenMedianWeeklyEarnings: 578,
+            year: 2019,
+            centsToDollar: 71
+          },
+          {
+            menMedianWeeklyEarnings: 806,
+            womenMedianWeeklyEarnings: 578,
+            year: 2019,
+            centsToDollar: 71
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "Advertising sales agents",
+      slug: "advertising-sales-agents",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1143,
+            womenMedianWeeklyEarnings: 874,
+            year: 2019,
+            centsToDollar: 76
+          },
+          {
+            menMedianWeeklyEarnings: 1143,
+            womenMedianWeeklyEarnings: 874,
+            year: 2019,
+            centsToDollar: 76
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "Insurance sales agents",
+      slug: "insurance-sales-agents",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1034,
+            womenMedianWeeklyEarnings: 806,
+            year: 2019,
+            centsToDollar: 77
+          },
+          {
+            menMedianWeeklyEarnings: 1034,
+            womenMedianWeeklyEarnings: 806,
+            year: 2019,
+            centsToDollar: 77
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "Securities, commodities, and financial services sales agents",
+      slug: "securities-commodities-and-financial-services-sales-agents",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1386,
+            womenMedianWeeklyEarnings: 1063,
+            year: 2019,
+            centsToDollar: 76
+          },
+          {
+            menMedianWeeklyEarnings: 1386,
+            womenMedianWeeklyEarnings: 1063,
+            year: 2019,
+            centsToDollar: 76
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "Sales representatives, services, all other",
+      slug: "sales-representatives-services-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1332,
+            womenMedianWeeklyEarnings: 973,
+            year: 2019,
+            centsToDollar: 73
+          },
+          {
+            menMedianWeeklyEarnings: 1332,
+            womenMedianWeeklyEarnings: 973,
+            year: 2019,
+            centsToDollar: 73
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "Sales representatives, wholesale and manufacturing",
+      slug: "sales-representatives-wholesale-and-manufacturing",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1262,
+            womenMedianWeeklyEarnings: 1067,
+            year: 2019,
+            centsToDollar: 84
+          },
+          {
+            menMedianWeeklyEarnings: 1262,
+            womenMedianWeeklyEarnings: 1067,
+            year: 2019,
+            centsToDollar: 84
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "Real estate brokers and sales agents",
+      slug: "real-estate-brokers-and-sales-agents",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1344,
+            womenMedianWeeklyEarnings: 883,
+            year: 2019,
+            centsToDollar: 65
+          },
+          {
+            menMedianWeeklyEarnings: 1344,
+            womenMedianWeeklyEarnings: 883,
+            year: 2019,
+            centsToDollar: 65
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "Hosts and hostesses, restaurant, lounge, and coffee shop",
+      slug: "hosts-and-hostesses-restaurant-lounge-and-coffee-shop",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 441,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 441,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "food-preparation-and-serving-related-occupations"
+      }
+    },
+    {
+      name: "Nonfarm animal caretakers",
+      slug: "nonfarm-animal-caretakers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 489,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 489,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Hairdressers, hairstylists, and cosmetologists",
+      slug: "hairdressers-hairstylists-and-cosmetologists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 569,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 569,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Miscellaneous personal appearance workers",
+      slug: "miscellaneous-personal-appearance-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 554,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 554,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Childcare workers",
+      slug: "childcare-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 491,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 491,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name:
+        "First-line supervisors of landscaping, lawn service, and groundskeeping workers",
+      slug:
+        "first-line-supervisors-of-landscaping-lawn-service-and-groundskeeping-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 800,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 800,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "building-and-grounds-cleaning-and-maintenance-occupations"
+      }
+    },
+    {
+      name: "Pest control workers",
+      slug: "pest-control-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 741,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 741,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "building-and-grounds-cleaning-and-maintenance-occupations"
+      }
+    },
+    {
+      name: "Grounds maintenance workers",
+      slug: "grounds-maintenance-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 607,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 607,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "building-and-grounds-cleaning-and-maintenance-occupations"
+      }
+    },
+    {
+      name: "Miscellaneous entertainment attendants and related workers",
+      slug: "miscellaneous-entertainment-attendants-and-related-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 557,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 557,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Barbers",
+      slug: "barbers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 789,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 789,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Baggage porters, bellhops, and concierges",
+      slug: "baggage-porters-bellhops-and-concierges",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 672,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 672,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Parts salespersons",
+      slug: "parts-salespersons",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 768,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 768,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "First-line supervisors of personal service workers",
+      slug: "first-line-supervisors-of-personal-service-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Gaming services workers",
+      slug: "gaming-services-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Personal care and service workers, all other",
+      slug: "personal-care-and-service-workers-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Tellers",
+      slug: "tellers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 571,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 571,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Financial clerks, all other",
+      slug: "financial-clerks-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 797,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 797,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Court, municipal, and license clerks",
+      slug: "court-municipal-and-license-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 759,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 759,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Eligibility interviewers, government programs",
+      slug: "eligibility-interviewers-government-programs",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 756,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 756,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "File clerks",
+      slug: "file-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 667,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 667,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Hotel, motel, and resort desk clerks",
+      slug: "hotel-motel-and-resort-desk-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 490,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 490,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Interviewers, except eligibility and loan",
+      slug: "interviewers-except-eligibility-and-loan",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 734,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 734,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Loan interviewers and clerks",
+      slug: "loan-interviewers-and-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 802,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: 802,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Couriers and messengers",
+      slug: "couriers-and-messengers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 789,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 789,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Order clerks",
+      slug: "order-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Human resources assistants, except payroll and timekeeping",
+      slug: "human-resources-assistants-except-payroll-and-timekeeping",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Roofers",
+      slug: "roofers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 690,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 690,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Sheet metal workers",
+      slug: "sheet-metal-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 900,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 900,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Structural iron and steel workers",
+      slug: "structural-iron-and-steel-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1057,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1057,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Construction and building inspectors",
+      slug: "construction-and-building-inspectors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1134,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 1134,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Highway maintenance workers",
+      slug: "highway-maintenance-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 806,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 806,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Statistical assistants",
+      slug: "statistical-assistants",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Printing press operators",
+      slug: "printing-press-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 886,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: 886,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Food batchmakers",
+      slug: "food-batchmakers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Tailors, dressmakers, and sewers",
+      slug: "tailors-dressmakers-and-sewers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Atmospheric and space scientists",
+      slug: "atmospheric-and-space-scientists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Economists",
+      slug: "economists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Survey researchers",
+      slug: "survey-researchers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Counter and rental clerks",
+      slug: "counter-and-rental-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "Travel agents",
+      slug: "travel-agents",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "Helpers, construction trades",
+      slug: "helpers-construction-trades",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Financial examiners",
+      slug: "financial-examiners",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Tax examiners and collectors, and revenue agents",
+      slug: "tax-examiners-and-collectors-and-revenue-agents",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Tax preparers",
+      slug: "tax-preparers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "business-and-financial-operations-occupations"
+      }
+    },
+    {
+      name: "Computer and information research scientists",
+      slug: "computer-and-information-research-scientists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
+    },
+    {
+      name: "Actuaries",
+      slug: "actuaries",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
+    },
+    {
+      name: "Mathematicians",
+      slug: "mathematicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "computer-and-mathematical-occupations"
+      }
+    },
+    {
+      name: "Urban and regional planners",
+      slug: "urban-and-regional-planners",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Miscellaneous social scientists and related workers",
+      slug: "miscellaneous-social-scientists-and-related-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Agricultural and food science technicians",
+      slug: "agricultural-and-food-science-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Biological technicians",
+      slug: "biological-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Geological and petroleum technicians",
+      slug: "geological-and-petroleum-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Nuclear technicians",
+      slug: "nuclear-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Social science research assistants",
+      slug: "social-science-research-assistants",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "life-physical-and-social-science-occupations"
+      }
+    },
+    {
+      name: "Directors, religious activities and education",
+      slug: "directors-religious-activities-and-education",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "community-and-social-service-occupations"
+      }
+    },
+    {
+      name: "Religious workers, all other",
+      slug: "religious-workers-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "community-and-social-service-occupations"
+      }
+    },
+    {
+      name: "Archivists, curators, and museum technicians",
+      slug: "archivists-curators-and-museum-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "education-training-and-library-occupations"
+      }
+    },
+    {
+      name: "Library technicians",
+      slug: "library-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "education-training-and-library-occupations"
+      }
+    },
+    {
+      name: "Actors",
+      slug: "actors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "Dancers and choreographers",
+      slug: "dancers-and-choreographers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "Musicians, singers, and related workers",
+      slug: "musicians-singers-and-related-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name:
+        "Entertainers and performers, sports and related workers, all other",
+      slug: "entertainers-and-performers-sports-and-related-workers-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "Announcers",
+      slug: "announcers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "Photographers",
+      slug: "photographers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name:
+        "Television, video, and motion picture camera operators and editors",
+      slug: "television-video-and-motion-picture-camera-operators-and-editors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "Media and communication equipment workers, all other",
+      slug: "media-and-communication-equipment-workers-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "arts-design-entertainment-sports-and-media-occupations"
+      }
+    },
+    {
+      name: "Chiropractors",
+      slug: "chiropractors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Optometrists",
+      slug: "optometrists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Podiatrists",
+      slug: "podiatrists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Audiologists",
+      slug: "audiologists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Radiation therapists",
+      slug: "radiation-therapists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Recreational therapists",
+      slug: "recreational-therapists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Exercise physiologists",
+      slug: "exercise-physiologists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Nurse anesthetists",
+      slug: "nurse-anesthetists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Nurse midwives",
+      slug: "nurse-midwives",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Health diagnosing and treating practitioners, all other",
+      slug: "health-diagnosing-and-treating-practitioners-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Opticians, dispensing",
+      slug: "opticians-dispensing",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-practitioners-and-technical-occupations"
+      }
+    },
+    {
+      name: "Occupational therapy assistants and aides",
+      slug: "occupational-therapy-assistants-and-aides",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-support-occupations"
+      }
+    },
+    {
+      name: "Medical transcriptionists",
+      slug: "medical-transcriptionists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-support-occupations"
+      }
+    },
+    {
+      name: "Pharmacy aides",
+      slug: "pharmacy-aides",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-support-occupations"
+      }
+    },
+    {
+      name: "Veterinary assistants and laboratory animal caretakers",
+      slug: "veterinary-assistants-and-laboratory-animal-caretakers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "healthcare-support-occupations"
+      }
+    },
+    {
+      name: "First-line supervisors of correctional officers",
+      slug: "first-line-supervisors-of-correctional-officers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "First-line supervisors of fire fighting and prevention workers",
+      slug: "first-line-supervisors-of-fire-fighting-and-prevention-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Fire inspectors",
+      slug: "fire-inspectors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Fish and game wardens",
+      slug: "fish-and-game-wardens",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Parking enforcement workers",
+      slug: "parking-enforcement-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Transit and railroad police",
+      slug: "transit-and-railroad-police",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Animal control workers",
+      slug: "animal-control-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Crossing guards",
+      slug: "crossing-guards",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Transportation security screeners",
+      slug: "transportation-security-screeners",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Other transportation workers",
+      slug: "other-transportation-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name:
+        "Lifeguards and other recreational, and all other protective service workers",
+      slug:
+        "lifeguards-and-other-recreational-and-all-other-protective-service-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "protective-service-occupations"
+      }
+    },
+    {
+      name: "Counter attendants, cafeteria, food concession, and coffee shop",
+      slug: "counter-attendants-cafeteria-food-concession-and-coffee-shop",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "food-preparation-and-serving-related-occupations"
+      }
+    },
+    {
+      name: "Food preparation and serving related workers, all other",
+      slug: "food-preparation-and-serving-related-workers-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "food-preparation-and-serving-related-occupations"
+      }
+    },
+    {
+      name: "Animal trainers",
+      slug: "animal-trainers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Motion picture projectionists",
+      slug: "motion-picture-projectionists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Ushers, lobby attendants, and ticket takers",
+      slug: "ushers-lobby-attendants-and-ticket-takers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Embalmers and funeral attendants",
+      slug: "embalmers-and-funeral-attendants",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Morticians, undertakers, and funeral directors",
+      slug: "morticians-undertakers-and-funeral-directors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Tour and travel guides",
+      slug: "tour-and-travel-guides",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Residential advisors",
+      slug: "residential-advisors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "personal-care-and-service-occupations"
+      }
+    },
+    {
+      name: "Models, demonstrators, and product promoters",
+      slug: "models-demonstrators-and-product-promoters",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "Telemarketers",
+      slug: "telemarketers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name:
+        "Door-to-door sales workers, news and street vendors, and related workers",
+      slug:
+        "door-to-door-sales-workers-news-and-street-vendors-and-related-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "sales-and-related-occupations"
+      }
+    },
+    {
+      name: "Switchboard operators, including answering service",
+      slug: "switchboard-operators-including-answering-service",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Telephone operators",
+      slug: "telephone-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Communications equipment operators, all other",
+      slug: "communications-equipment-operators-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Gaming cage workers",
+      slug: "gaming-cage-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Procurement clerks",
+      slug: "procurement-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Brokerage clerks",
+      slug: "brokerage-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Correspondence clerks",
+      slug: "correspondence-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Credit authorizers, checkers, and clerks",
+      slug: "credit-authorizers-checkers-and-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Library assistants, clerical",
+      slug: "library-assistants-clerical",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "New accounts clerks",
+      slug: "new-accounts-clerks",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Cargo and freight agents",
+      slug: "cargo-and-freight-agents",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Meter readers, utilities",
+      slug: "meter-readers-utilities",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Word processors and typists",
+      slug: "word-processors-and-typists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Desktop publishers",
+      slug: "desktop-publishers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Signal and track switch repairers",
+      slug: "signal-and-track-switch-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Mail clerks and mail machine operators, except postal service",
+      slug: "mail-clerks-and-mail-machine-operators-except-postal-service",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Office machine operators, except computer",
+      slug: "office-machine-operators-except-computer",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "Proofreaders and copy markers",
+      slug: "proofreaders-and-copy-markers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "office-and-administrative-support-occupations"
+      }
+    },
+    {
+      name: "First-line supervisors of farming, fishing, and forestry workers",
+      slug: "first-line-supervisors-of-farming-fishing-and-forestry-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "farming-fishing-and-forestry-occupations"
+      }
+    },
+    {
+      name: "Agricultural inspectors",
+      slug: "agricultural-inspectors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "farming-fishing-and-forestry-occupations"
+      }
+    },
+    {
+      name: "Fishers and related fishing workers",
+      slug: "fishers-and-related-fishing-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "farming-fishing-and-forestry-occupations"
+      }
+    },
+    {
+      name: "Hunters and trappers",
+      slug: "hunters-and-trappers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "farming-fishing-and-forestry-occupations"
+      }
+    },
+    {
+      name: "Forest and conservation workers",
+      slug: "forest-and-conservation-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "farming-fishing-and-forestry-occupations"
+      }
+    },
+    {
+      name: "Logging workers",
+      slug: "logging-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "farming-fishing-and-forestry-occupations"
+      }
+    },
+    {
+      name: "Boilermakers",
+      slug: "boilermakers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Paving, surfacing, and tamping equipment operators",
+      slug: "paving-surfacing-and-tamping-equipment-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Pile-driver operators",
+      slug: "pile-driver-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Paperhangers",
+      slug: "paperhangers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Plasterers and stucco masons",
+      slug: "plasterers-and-stucco-masons",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Reinforcing iron and rebar workers",
+      slug: "reinforcing-iron-and-rebar-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Solar photovoltaic installers",
+      slug: "solar-photovoltaic-installers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Elevator installers and repairers",
+      slug: "elevator-installers-and-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Fence erectors",
+      slug: "fence-erectors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Hazardous materials removal workers",
+      slug: "hazardous-materials-removal-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Rail-track laying and maintenance equipment operators",
+      slug: "rail-track-laying-and-maintenance-equipment-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Septic tank servicers and sewer pipe cleaners",
+      slug: "septic-tank-servicers-and-sewer-pipe-cleaners",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Miscellaneous construction and related workers",
+      slug: "miscellaneous-construction-and-related-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name:
+        "Derrick, rotary drill, and service unit operators, oil, gas, and mining",
+      slug:
+        "derrick-rotary-drill-and-service-unit-operators-oil-gas-and-mining",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Earth drillers, except oil and gas",
+      slug: "earth-drillers-except-oil-and-gas",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Explosives workers, ordnance handling experts, and blasters",
+      slug: "explosives-workers-ordnance-handling-experts-and-blasters",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Roof bolters, mining",
+      slug: "roof-bolters-mining",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Roustabouts, oil and gas",
+      slug: "roustabouts-oil-and-gas",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Helpers-extraction workers",
+      slug: "helpers-extraction-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "construction-and-extraction-occupations"
+      }
+    },
+    {
+      name: "Avionics technicians",
+      slug: "avionics-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Electric motor, power tool, and related repairers",
+      slug: "electric-motor-power-tool-and-related-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name:
+        "Electrical and electronics installers and repairers, transportation equipment",
+      slug:
+        "electrical-and-electronics-installers-and-repairers-transportation-equipment",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Electrical and electronics repairers, industrial and utility",
+      slug: "electrical-and-electronics-repairers-industrial-and-utility",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Electronic equipment installers and repairers, motor vehicles",
+      slug: "electronic-equipment-installers-and-repairers-motor-vehicles",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Electronic home entertainment equipment installers and repairers",
+      slug: "electronic-home-entertainment-equipment-installers-and-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Automotive glass installers and repairers",
+      slug: "automotive-glass-installers-and-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Small engine mechanics",
+      slug: "small-engine-mechanics",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Control and valve installers and repairers",
+      slug: "control-and-valve-installers-and-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Home appliance repairers",
+      slug: "home-appliance-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Maintenance workers, machinery",
+      slug: "maintenance-workers-machinery",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Precision instrument and equipment repairers",
+      slug: "precision-instrument-and-equipment-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Wind turbine service technicians",
+      slug: "wind-turbine-service-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Coin, vending, and amusement machine servicers and repairers",
+      slug: "coin-vending-and-amusement-machine-servicers-and-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Commercial divers",
+      slug: "commercial-divers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Locksmiths and safe repairers",
+      slug: "locksmiths-and-safe-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Manufactured building and mobile home installers",
+      slug: "manufactured-building-and-mobile-home-installers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Riggers",
+      slug: "riggers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Helpers--installation, maintenance, and repair workers",
+      slug: "helpers-installation-maintenance-and-repair-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "installation-maintenance-and-repair-occupations"
+      }
+    },
+    {
+      name: "Aircraft structure, surfaces, rigging, and systems assemblers",
+      slug: "aircraft-structure-surfaces-rigging-and-systems-assemblers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Engine and other machine assemblers",
+      slug: "engine-and-other-machine-assemblers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Structural metal fabricators and fitters",
+      slug: "structural-metal-fabricators-and-fitters",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Food and tobacco roasting, baking, and drying machine operators and tenders",
+      slug:
+        "food-and-tobacco-roasting-baking-and-drying-machine-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Food cooking machine operators and tenders",
+      slug: "food-cooking-machine-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Extruding and drawing machine setters, operators, and tenders, metal and plastic",
+      slug:
+        "extruding-and-drawing-machine-setters-operators-and-tenders-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Forging machine setters, operators, and tenders, metal and plastic",
+      slug: "forging-machine-setters-operators-and-tenders-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Rolling machine setters, operators, and tenders, metal and plastic",
+      slug: "rolling-machine-setters-operators-and-tenders-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Helpers--production workers",
+      slug: "helpers-production-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Drilling and boring machine tool setters, operators, and tenders, metal and plastic",
+      slug:
+        "drilling-and-boring-machine-tool-setters-operators-and-tenders-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic",
+      slug:
+        "grinding-lapping-polishing-and-buffing-machine-tool-setters-operators-and-tenders-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Railroad brake, signal, and switch operators",
+      slug: "railroad-brake-signal-and-switch-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name:
+        "Lathe and turning machine tool setters, operators, and tenders, metal and plastic",
+      slug:
+        "lathe-and-turning-machine-tool-setters-operators-and-tenders-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Milling and planing machine setters, operators, and tenders, metal and plastic",
+      slug:
+        "milling-and-planing-machine-setters-operators-and-tenders-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Metal furnace operators, tenders, pourers, and casters",
+      slug: "metal-furnace-operators-tenders-pourers-and-casters",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Model makers and patternmakers, metal and plastic",
+      slug: "model-makers-and-patternmakers-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Molders and molding machine setters, operators, and tenders, metal and plastic",
+      slug:
+        "molders-and-molding-machine-setters-operators-and-tenders-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Multiple machine tool setters, operators, and tenders, metal and plastic",
+      slug:
+        "multiple-machine-tool-setters-operators-and-tenders-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Heat treating equipment setters, operators, and tenders, metal and plastic",
+      slug:
+        "heat-treating-equipment-setters-operators-and-tenders-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Layout workers, metal and plastic",
+      slug: "layout-workers-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Plating and coating machine setters, operators, and tenders, metal and plastic",
+      slug:
+        "plating-and-coating-machine-setters-operators-and-tenders-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Tool grinders, filers, and sharpeners",
+      slug: "tool-grinders-filers-and-sharpeners",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Prepress technicians and workers",
+      slug: "prepress-technicians-and-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Print binding and finishing workers",
+      slug: "print-binding-and-finishing-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Pressers, textile, garment, and related materials",
+      slug: "pressers-textile-garment-and-related-materials",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Shoe and leather workers and repairers",
+      slug: "shoe-and-leather-workers-and-repairers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Shoe machine operators and tenders",
+      slug: "shoe-machine-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Textile bleaching and dyeing machine operators and tenders",
+      slug: "textile-bleaching-and-dyeing-machine-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Textile cutting machine setters, operators, and tenders",
+      slug: "textile-cutting-machine-setters-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Textile knitting and weaving machine setters, operators, and tenders",
+      slug:
+        "textile-knitting-and-weaving-machine-setters-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Textile winding, twisting, and drawing out machine setters, operators, and tenders",
+      slug:
+        "textile-winding-twisting-and-drawing-out-machine-setters-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Extruding and forming machine setters, operators, and tenders, synthetic and glass fibers",
+      slug:
+        "extruding-and-forming-machine-setters-operators-and-tenders-synthetic-and-glass-fibers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Fabric and apparel patternmakers",
+      slug: "fabric-and-apparel-patternmakers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Textile, apparel, and furnishings workers, all other",
+      slug: "textile-apparel-and-furnishings-workers-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Cabinetmakers and bench carpenters",
+      slug: "cabinetmakers-and-bench-carpenters",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Furniture finishers",
+      slug: "furniture-finishers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Model makers and patternmakers, wood",
+      slug: "model-makers-and-patternmakers-wood",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Sawing machine setters, operators, and tenders, wood",
+      slug: "sawing-machine-setters-operators-and-tenders-wood",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Woodworking machine setters, operators, and tenders, except sawing",
+      slug: "woodworking-machine-setters-operators-and-tenders-except-sawing",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Woodworkers, all other",
+      slug: "woodworkers-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Power plant operators, distributors, and dispatchers",
+      slug: "power-plant-operators-distributors-and-dispatchers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Miscellaneous plant and system operators",
+      slug: "miscellaneous-plant-and-system-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Extruding, forming, pressing, and compacting machine setters, operators, and tenders",
+      slug:
+        "extruding-forming-pressing-and-compacting-machine-setters-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Furnace, kiln, oven, drier, and kettle operators and tenders",
+      slug: "furnace-kiln-oven-drier-and-kettle-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Jewelers and precious stone and metal workers",
+      slug: "jewelers-and-precious-stone-and-metal-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Photographic process workers and processing machine operators",
+      slug: "photographic-process-workers-and-processing-machine-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Semiconductor processors",
+      slug: "semiconductor-processors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Adhesive bonding machine operators and tenders",
+      slug: "adhesive-bonding-machine-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name:
+        "Cleaning, washing, and metal pickling equipment operators and tenders",
+      slug:
+        "cleaning-washing-and-metal-pickling-equipment-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Cooling and freezing equipment operators and tenders",
+      slug: "cooling-and-freezing-equipment-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Etchers and engravers",
+      slug: "etchers-and-engravers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Molders, shapers, and casters, except metal and plastic",
+      slug: "molders-shapers-and-casters-except-metal-and-plastic",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Paper goods machine setters, operators, and tenders",
+      slug: "paper-goods-machine-setters-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "production-occupations"
+      }
+    },
+    {
+      name: "Air traffic controllers and airfield operations specialists",
+      slug: "air-traffic-controllers-and-airfield-operations-specialists",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name:
+        "Ambulance drivers and attendants, except emergency medical technicians",
+      slug:
+        "ambulance-drivers-and-attendants-except-emergency-medical-technicians",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Motor vehicle operators, all other",
+      slug: "motor-vehicle-operators-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Locomotive engineers and operators",
+      slug: "locomotive-engineers-and-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Subway, streetcar, and other rail transportation workers",
+      slug: "subway-streetcar-and-other-rail-transportation-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Sailors and marine oilers",
+      slug: "sailors-and-marine-oilers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Ship and boat captains and operators",
+      slug: "ship-and-boat-captains-and-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Ship engineers",
+      slug: "ship-engineers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Bridge and lock tenders",
+      slug: "bridge-and-lock-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Transportation inspectors",
+      slug: "transportation-inspectors",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Transportation attendants, except flight attendants",
+      slug: "transportation-attendants-except-flight-attendants",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Conveyor operators and tenders",
+      slug: "conveyor-operators-and-tenders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Dredge, excavating, and loading machine operators",
+      slug: "dredge-excavating-and-loading-machine-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Hoist and winch operators",
+      slug: "hoist-and-winch-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Machine feeders and offbearers",
+      slug: "machine-feeders-and-offbearers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Pumping station operators",
+      slug: "pumping-station-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Mine shuttle car operators",
+      slug: "mine-shuttle-car-operators",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Tank car, truck, and ship loaders",
+      slug: "tank-car-truck-and-ship-loaders",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Material moving workers, all other",
+      slug: "material-moving-workers-all-other",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          },
+          {
+            menMedianWeeklyEarnings: null,
+            womenMedianWeeklyEarnings: null,
+            year: 2019,
+            centsToDollar: null
+          }
+        ]
+      },
+      parent: {
+        slug: "transportation-and-material-moving-occupations"
+      }
+    },
+    {
+      name: "Total, full-time wage and salary workers",
+      slug: "total-full-time-wage-and-salary-workers",
+      wageGaps: {
+        years: [
+          {
+            menMedianWeeklyEarnings: 1007,
+            womenMedianWeeklyEarnings: 821,
+            year: 2019,
+            centsToDollar: 81
+          }
+        ]
+      },
+      parent: null
     }
   ],
   all: function() {

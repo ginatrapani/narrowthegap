@@ -2,11 +2,11 @@
 a.RandomizerButton,
 .RandomizerButton {
     display: inline-block;
-    margin-left: 0.5em;
     background-color: #ec5a62;
     color: #fff;
     border: 0;
     transition: 200ms all;
+    margin-top: 20px;
 }
 
 .jumbotron a.RandomizerButton:hover,

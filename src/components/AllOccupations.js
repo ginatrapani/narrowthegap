@@ -9,11 +9,11 @@ class AllOccupations extends Component {
                 <li key={g.slug}>
                     <Link to={`/gap/${g.slug}`}>
                         {GapAPI.capitalize(
-                            GapAPI.cleanOccupationName(g.occupation_name)
+                            GapAPI.cleanOccupationName(g.name)
                         )}
                     </Link>
                     {GapAPI.gaps
-                        .filter(child => child.parent_slug === g.slug)
+                        .filter(child => child.parent && child.parent.slug === g.slug)
                         .map(g => this.renderChildren(g))}
                 </li>
             </ul>
