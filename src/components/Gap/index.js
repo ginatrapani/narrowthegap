@@ -1,25 +1,25 @@
-import React, { Component } from "react";
-import { Helmet } from "react-helmet";
-import GapAPI from "../../GapAPI.js";
-import Header from "../Header";
-import Footer from "../Footer.js";
-import RandomizerButton from "../RandomizerButton";
-import AllOccupations from "../AllOccupations.js";
-import { Link } from "react-router-dom";
-import "./Gap.css";
+import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
+import GapAPI from '../../GapAPI.js';
+import Header from '../Header';
+import Footer from '../Footer.js';
+import RandomizerButton from '../RandomizerButton';
+import AllOccupations from '../AllOccupations.js';
+import { Link } from 'react-router-dom';
+import './Gap.css';
 
 class Gap extends Component {
   componentDidUpdate(prevProps) {
     // When we add a new page to the history, scroll to the top.
     const { history } = this.props;
-    if (history.action === "PUSH") window.scrollTo(0, 0);
+    if (history.action === 'PUSH') window.scrollTo(0, 0);
   }
 
   render() {
     // Get the occupation user requested
     const gapSlug =
       this.props.match.params.gapSlug === undefined
-        ? "total-full-time-wage-and-salary-workers"
+        ? 'total-full-time-wage-and-salary-workers'
         : this.props.match.params.gapSlug;
     var gap = GapAPI.get(gapSlug);
     // If occupation exists but gap is null (data unavailable) fall back to parent occupation
@@ -30,27 +30,27 @@ class Gap extends Component {
     }
 
     const tweetText = gap
-      ? "Women" +
+      ? 'Women' +
         this.getWorkingPhrasing(gap.name) +
-        " " +
+        ' ' +
         GapAPI.cleanOccupationName(gap.name) +
-        " made " +
+        ' made ' +
         gap.wageGaps.years[0].centsToDollar +
-        " cents to the dollar men earn doing the same job #EqualPayDay"
-      : "";
+        ' cents to the dollar men earn doing the same job #EqualPayDay'
+      : '';
 
     const pageTitle = gap
-      ? "The gender pay gap for women" +
+      ? 'The gender pay gap for women' +
         this.getWorkingPhrasing(gap.name) +
-        " " +
+        ' ' +
         GapAPI.cleanOccupationName(gap.name) +
-        " - Narrow the Gap"
-      : "Narrow the Gap";
+        ' - Narrow the Gap'
+      : 'Narrow the Gap';
 
-    const permalink = "https://narrowthegap.co/gap/" + gapSlug;
+    const permalink = 'https://narrowthegap.co/gap/' + gapSlug;
     // @TODO deprecate this and just use the logo image
-    var socialImage = require("./ntg-twitter-card.png");
-    const socialImageUrl = "https://narrowthegap.co" + socialImage;
+    var socialImage = require('./ntg-twitter-card.png');
+    const socialImageUrl = 'https://narrowthegap.co' + socialImage;
     return (
       <div className="App">
         <Helmet>
@@ -102,7 +102,7 @@ class Gap extends Component {
             <div className="col-md-4">
               <h2>Unfair and Illegal</h2>
               <p>
-                Over 50 years after President Kennedy signed the{" "}
+                Over 50 years after President Kennedy signed the{' '}
                 <a href="http://www.eeoc.gov/laws/statutes/epa.cfm">
                   Equal Pay Act
                 </a>
@@ -118,12 +118,12 @@ class Gap extends Component {
                 and her male colleagues is likely to become wider and wider.
               </p>
               <p>
-                <Link to="/gap/legal-occupations">Legal occupations</Link> and{" "}
-                <Link to="/gap/financial-managers">financial managers</Link>{" "}
-                suffer the largest gender pay gaps.{" "}
+                <Link to="/gap/legal-occupations">Legal occupations</Link> and{' '}
+                <Link to="/gap/financial-managers">financial managers</Link>{' '}
+                suffer the largest gender pay gaps.{' '}
                 <Link to="/gap/wholesale-and-retail-buyers-except-farm-products">
                   Wholesale and retail buyers
-                </Link>{" "}
+                </Link>{' '}
                 and <Link to="/gap/cashiers">cashiers</Link> have the smallest
                 pay gaps.
               </p>
@@ -132,10 +132,10 @@ class Gap extends Component {
                 Unequal pay isn&#8217;t just unfair, it&#8217;s illegal. But
                 unless men and women who have the same job discuss what
                 they&#8217;re getting paid, unequal pay can go unaddressed
-                indefinitely. At the current pace, it will{" "}
+                indefinitely. At the current pace, it will{' '}
                 <a href="http://www.newsweek.com/gender-pay-gap-wont-close-another-43-years-314249">
                   take until 2058
-                </a>{" "}
+                </a>{' '}
                 for women and men’s earnings to reach pay parity. Let&#8217;s
                 make it happen sooner.
               </p>
@@ -154,7 +154,7 @@ class Gap extends Component {
               </p>
               <ul>
                 <li>
-                  <strong>Get educated</strong> about{" "}
+                  <strong>Get educated</strong> about{' '}
                   <a href="http://www.eeoc.gov/laws/types/equalcompensation.cfm">
                     Equal Pay and Compensation Discrimination
                   </a>
@@ -171,7 +171,7 @@ class Gap extends Component {
                 </li>
                 <li>
                   <strong>Change the numbers</strong> by citing the numbers.
-                  Boatloads of data just like this is freely available from the{" "}
+                  Boatloads of data just like this is freely available from the{' '}
                   <a href="http://www.dol.gov/">U.S. Department of Labor</a> and
                   beyond.
                 </li>
@@ -188,11 +188,11 @@ class Gap extends Component {
                 <div className="media-body">
                   <p className="media-heading">
                     The Institute for Women&#8217;s Policy Research&#8217;s fact
-                    sheet{" "}
+                    sheet{' '}
                     <a href="https://iwpr.org/wp-content/uploads/2018/03/C464_Gender-Wage-Gap-2.pdf">
                       The Gender Wage Gap: 2017 Earnings Differences by Race and
                       Ethnicity
-                    </a>{" "}
+                    </a>{' '}
                     (PDF, 4 pages)
                   </p>
                 </div>
@@ -205,11 +205,11 @@ class Gap extends Component {
                 </div>
                 <div className="media-body">
                   <p className="media-heading">
-                    Catalyst.org&#8217;s research report{" "}
+                    Catalyst.org&#8217;s research report{' '}
                     <a href="http://www.catalyst.org/knowledge/myth-ideal-worker-does-doing-all-right-things-really-get-women-ahead">
                       The Myth of the Ideal Worker: Does Doing All The Right
                       Things Really Get Women Ahead?
-                    </a>{" "}
+                    </a>{' '}
                     (PDF, 21 pages)
                   </p>
                 </div>
@@ -227,7 +227,7 @@ class Gap extends Component {
                         Women Don&#8217;t Ask: The High Cost of Avoiding
                         Negotiation--and Positive Strategies for Change
                       </a>
-                    </i>{" "}
+                    </i>{' '}
                     by Linda Babcock and Sara Laschever (Book, 272 pages)
                   </p>
                 </div>
@@ -240,7 +240,7 @@ class Gap extends Component {
                 </div>
                 <div className="media-body">
                   <p className="media-heading">
-                    Hiring manager at a multinational tech company:{" "}
+                    Hiring manager at a multinational tech company:{' '}
                     <a href="http://www.reddit.com/r/TwoXChromosomes/comments/hvv2m/i_work_for_a_large_multinational_tech_company_i/">
                       &quot;I regularly hire women for 65% to 75% of what men
                       make. I am sick of it. Here is why it happens and how you
@@ -270,8 +270,8 @@ class Gap extends Component {
                 </p>
                 <footer>
                   This data compares the salaries of women and men in the same
-                  jobs, from{" "}
-                  <Link to="/gap/janitors-and-building-cleaners">janitors</Link>{" "}
+                  jobs, from{' '}
+                  <Link to="/gap/janitors-and-building-cleaners">janitors</Link>{' '}
                   to <Link to="/gap/chief-executives">executives</Link>.
                 </footer>
               </blockquote>
@@ -297,7 +297,7 @@ class Gap extends Component {
                 <footer>
                   <a href="http://www.seattletimes.com/opinion/close-the-gender-wage-gap/">
                     Studies show
-                  </a>{" "}
+                  </a>{' '}
                   the pay gap exists whether or not women have children.
                 </footer>
               </blockquote>
@@ -317,7 +317,7 @@ class Gap extends Component {
           </div>
 
           <Footer />
-        </div>{" "}
+        </div>{' '}
         {/* /container */}
       </div>
     );
@@ -328,7 +328,7 @@ class Gap extends Component {
       return (
         <div>
           <p>
-            Not enough wage data to calculate the gap specifically for{" "}
+            Not enough wage data to calculate the gap specifically for{' '}
             {GapAPI.cleanOccupationName(unavailableDataGap.name)}. In general:
           </p>
         </div>
@@ -342,27 +342,31 @@ class Gap extends Component {
       if (gap.wageGaps.years[0].centsToDollar < 100) {
         return (
           <h1>
-            Women{this.getWorkingPhrasing(gap.name)}{" "}
-            <span class="ntg-blue">{GapAPI.cleanOccupationName(gap.name)}</span>{" "}
-            made{" "}
-            <span class="ntg-red">
+            Women{this.getWorkingPhrasing(gap.name)}{' '}
+            <span className="ntg-blue">
+              {GapAPI.cleanOccupationName(gap.name)}
+            </span>{' '}
+            made{' '}
+            <span className="ntg-red">
               {gap.wageGaps.years[0].centsToDollar}&nbsp;cents
-            </span>{" "}
-            to the dollar men earned in {gap.wageGaps.years[0].year}.{" "}
+            </span>{' '}
+            to the dollar men earned in {gap.wageGaps.years[0].year}.{' '}
           </h1>
         );
       } else {
         const moreCents = gap.wageGaps.years[0].centsToDollar - 100;
-        const plural = moreCents > 1 ? "s" : "";
+        const plural = moreCents > 1 ? 's' : '';
         return (
           <h1>
-            Women{this.getWorkingPhrasing(gap.name)}{" "}
-            <span class="ntg-blue">{GapAPI.cleanOccupationName(gap.name)}</span>{" "}
-            made{" "}
-            <span class="ntg-red">
+            Women{this.getWorkingPhrasing(gap.name)}{' '}
+            <span className="ntg-blue">
+              {GapAPI.cleanOccupationName(gap.name)}
+            </span>{' '}
+            made{' '}
+            <span className="ntg-red">
               {moreCents}&nbsp;cent{plural} more
-            </span>{" "}
-            per dollar men earned in {gap.wageGaps.years[0].year}.{" "}
+            </span>{' '}
+            per dollar men earned in {gap.wageGaps.years[0].year}.{' '}
           </h1>
         );
       }
@@ -381,11 +385,11 @@ class Gap extends Component {
         return (
           <div>
             <p>
-              That&#8217;s <strong class="ntg-red">${lessPerWeek}</strong> out
-              of a weekly paycheck, which means she got paid{" "}
-              <strong class="ntg-red">
+              That&#8217;s <strong className="ntg-red">${lessPerWeek}</strong>{' '}
+              out of a weekly paycheck, which means she got paid{' '}
+              <strong className="ntg-red">
                 ${(lessPerWeek * 52).toLocaleString()}
-              </strong>{" "}
+              </strong>{' '}
               less doing the same job.
               <div>
                 <RandomizerButton gap={gap} />
@@ -407,7 +411,7 @@ class Gap extends Component {
         );
       }
     } else {
-      return "";
+      return '';
     }
   }
 
@@ -415,9 +419,9 @@ class Gap extends Component {
     if (gap) {
       return (
         <h6 className="small-print">
-          Wage gap calculated from {gap ? gap.wageGaps.years[0].year : ""}{" "}
+          Wage gap calculated from {gap ? gap.wageGaps.years[0].year : ''}{' '}
           median weekly earnings of full-time salary workers in the United
-          States as per the{" "}
+          States as per the{' '}
           <a href="http://www.bls.gov/cps/cpsaat39.htm">
             U.S. Bureau of Labor Statistics
           </a>
@@ -425,15 +429,15 @@ class Gap extends Component {
         </h6>
       );
     } else {
-      return "";
+      return '';
     }
   }
 
   getWorkingPhrasing(occupationName) {
-    if (GapAPI.cleanOccupationName(occupationName).endsWith("occupations")) {
-      return " who worked in";
+    if (GapAPI.cleanOccupationName(occupationName).endsWith('occupations')) {
+      return ' who worked in';
     }
-    return "";
+    return '';
   }
 }
 
