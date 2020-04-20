@@ -20,8 +20,8 @@ class SearchField extends React.Component {
         return (
             <Typeahead
                 className="SearchField"
-                ref={typeahead => (this.typeahead = typeahead)}
-                onChange={selected => {
+                ref={(typeahead) => (this.typeahead = typeahead)}
+                onChange={(selected) => {
                     this.props.history.push(`/gap/${selected[0].slug}`);
                     this.clearForm();
                 }}
