@@ -9,7 +9,7 @@
 .Header__logo {
     width: 10em;
     height: auto;
-    margin: .5em 0 1em;
+    margin: 0.5em 0 1em;
 }
 
 .Header__actions {
@@ -38,7 +38,7 @@ a.Header__logo-link:hover {
     }
 
     .Header__logo {
-        margin: .5em 0;
+        margin: 0.5em 0;
     }
 
     .Header__actions {
@@ -53,7 +53,7 @@ a.Header__logo-link:hover {
     }
 }
 ul {
-  list-style-type: none;
-  margin:0;
-  padding-left:1em;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1em;
 }
