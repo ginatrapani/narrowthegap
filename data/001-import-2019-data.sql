@@ -637,8 +637,7 @@ FROM
 UPDATE
 	wage_gaps
 SET
-	cents_to_dollar = (women_median_weekly_earnings * 100) / men_median_weekly_earnings
+	cents_to_dollar = ROUND((women_median_weekly_earnings::numeric * 100) / men_median_weekly_earnings::numeric)
 WHERE
 	men_median_weekly_earnings IS NOT NULL
 	AND women_median_weekly_earnings IS NOT NULL;
-
