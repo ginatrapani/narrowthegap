@@ -438,7 +438,13 @@ class Gap extends Component {
                             </strong>{" "}
                             less doing the same job.
                             <div>
-                                <RandomizerButton gap={gap} />
+                                <RandomizerButton
+                                    gap={gap}
+                                    suppress={
+                                        gap.slug ===
+                                        "total-full-time-wage-and-salary-workers"
+                                    }
+                                />
                             </div>
                         </p>
                     </div>
