@@ -1,10 +1,10 @@
-DROP VIEW "wage_gaps_view";
+DROP VIEW IF EXISTS "wage_gaps_view";
 
-DROP TABLE "wage_gaps";
+DROP TABLE IF EXISTS "wage_gaps";
 
-DROP TABLE "occupations";
+DROP TABLE IF EXISTS "occupations";
 
-DROP TABLE "weekly_earnings";
+DROP TABLE IF EXISTS "weekly_earnings";
 
 CREATE TABLE "occupations" (
 	"id" SERIAL PRIMARY KEY,
