@@ -436,7 +436,9 @@ class Gap extends Component {
                             <strong className="ntg-red">
                                 ${(lessPerWeek * 52).toLocaleString()}
                             </strong>{" "}
-                            less doing the same job.
+                            less doing the same job in{" "}
+                            {gap.wageGaps.years[0].year}.
+                            {this.getComparative(gap)}
                             <div>
                                 <RandomizerButton
                                     gap={gap}
@@ -493,6 +495,68 @@ class Gap extends Component {
             return " who worked in";
         }
         return "";
+    }
+
+    getComparative(gap) {
+        var comparative = "";
+        if (
+            gap.slug !== "total-full-time-wage-and-salary-workers" &&
+            gap.wageGaps.years[1].centsToDollar
+        ) {
+            if (
+                gap.wageGaps.years[1].centsToDollar >
+                gap.wageGaps.years[0].centsToDollar
+            ) {
+                const down =
+                    gap.wageGaps.years[1].centsToDollar -
+                    gap.wageGaps.years[0].centsToDollar;
+                return (
+                    <p>
+                        This wage gap is{" "}
+                        <strong className="ntg-red">
+                            down {down} cent{this.pluralize(down)}
+                        </strong>{" "}
+                        from the same data collected in{" "}
+                        {gap.wageGaps.years[1].year}.
+                    </p>
+                );
+            }
+            if (
+                gap.wageGaps.years[1].centsToDollar <
+                gap.wageGaps.years[0].centsToDollar
+            ) {
+                const up =
+                    gap.wageGaps.years[0].centsToDollar -
+                    gap.wageGaps.years[1].centsToDollar;
+                return (
+                    <p>
+                        This wage gap is{" "}
+                        <strong className="ntg-blue">
+                            up {up} cent{this.pluralize(up)}
+                        </strong>{" "}
+                        from the same data collected in{" "}
+                        {gap.wageGaps.years[1].year}.
+                    </p>
+                );
+            }
+            if (
+                gap.wageGaps.years[1].centsToDollar ===
+                gap.wageGaps.years[0].centsToDollar
+            ) {
+                return (
+                    <p>
+                        This wage gap is the same as it was in{" "}
+                        {gap.wageGaps.years[1].year}.
+                    </p>
+                );
+            }
+            return comparative;
+        }
+        return comparative;
+    }
+
+    pluralize(amount) {
+        return amount > 1 ? "s" : "";
     }
 }
 
