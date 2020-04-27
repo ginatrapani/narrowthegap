@@ -91,12 +91,13 @@ class Gap extends Component {
                         </div>
                     </div>
                     <div className="row">
-                        {/* @TODO check we're listing everything here */}
                         <div className="col-md-6">
                             <AllOccupations columnSlug="management-professional-and-related-occupations" />
+                            <AllOccupations columnSlug="service-occupations" />
                         </div>
                         <div className="col-md-6">
-                            <AllOccupations columnSlug="service-occupations" />
+                            <AllOccupations columnSlug="sales-and-office-occupations" />
+                            <AllOccupations columnSlug="natural-resources-construction-and-maintenance-occupations" />
                             <AllOccupations columnSlug="production-transportation-and-material-moving-occupations" />
                         </div>
                     </div>
