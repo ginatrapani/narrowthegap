@@ -439,7 +439,13 @@ class Gap extends Component {
                             {gap.wageGaps.years[0].year}.
                             {this.getComparative(gap)}
                             <div>
-                                <RandomizerButton gap={gap} />
+                                <RandomizerButton
+                                    gap={gap}
+                                    suppress={
+                                        gap.slug ===
+                                        "total-full-time-wage-and-salary-workers"
+                                    }
+                                />
                             </div>
                         </p>
                     </div>
