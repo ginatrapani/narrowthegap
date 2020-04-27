@@ -41,7 +41,11 @@ class RandomizerButton extends Component {
                 role="button"
                 className="btn btn-default btn-lg RandomizerButton"
             >
-                {this.exclaim(this.props.suppress)} Show me another
+                {this.exclaim(this.props.suppress)}{" "}
+                {this.props.gap.slug !==
+                "total-full-time-wage-and-salary-workers"
+                    ? "Show me another"
+                    : "Show me an occupation"}
             </Link>
         );
     }
