@@ -22,11 +22,10 @@ class AllOccupations extends Component {
     }
 
     render() {
-        var props = this.props;
         return (
             <div className="span4">
                 {GapAPI.gaps
-                    .filter((g) => g.slug === props.columnSlug)
+                    .filter((g) => g.slug === this.props.columnSlug)
                     .map((g) => this.renderChildren(g))}
             </div>
         );
