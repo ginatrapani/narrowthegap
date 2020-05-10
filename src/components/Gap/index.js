@@ -518,8 +518,7 @@ class Gap extends Component {
                         <strong className="ntg-red">
                             down {down} cent{this.pluralize(down)}
                         </strong>{" "}
-                        from the same data collected in{" "}
-                        {gap.wageGaps.years[1].year}.
+                        from {gap.wageGaps.years[1].year}.
                     </p>
                 );
             }
@@ -536,8 +535,7 @@ class Gap extends Component {
                         <strong className="ntg-blue">
                             up {up} cent{this.pluralize(up)}
                         </strong>{" "}
-                        from the same data collected in{" "}
-                        {gap.wageGaps.years[1].year}.
+                        from {gap.wageGaps.years[1].year}.
                     </p>
                 );
             }
