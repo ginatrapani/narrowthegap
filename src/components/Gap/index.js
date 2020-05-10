@@ -93,14 +93,12 @@ class Gap extends Component {
                     <div className="row">
                         <div className="col-md-6">
                             <AllOccupations columnSlug="management-professional-and-related-occupations" />
+                            <AllOccupations columnSlug="sales-and-office-occupations" />
                         </div>
                         <div className="col-md-6">
-                            <AllOccupations columnSlug="sales-and-office-occupations" />
                             <AllOccupations columnSlug="natural-resources-construction-and-maintenance-occupations" />
                             <AllOccupations columnSlug="service-occupations" />
-                            {/*  Avoid RangeError
-                                <AllOccupations columnSlug="production-transportation-and-material-moving-occupations" />
-                            */}
+                            <AllOccupations columnSlug="production-transportation-and-material-moving-occupations" />
                         </div>
                     </div>
                     <hr />

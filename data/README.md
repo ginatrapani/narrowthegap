@@ -1,34 +1,24 @@
 # Narrow the Gap Data API
 
-In a local, PostgreSQL database, run the .sql files in this directory in order.
+To experiment with the data set yourself, in a local, PostgreSQL database, run the `.sql` files in this directory in order.
 
-Spin up [PostGraphile](https://www.graphile.org/postgraphile/) pointing at that database, and run the following GraphQL Query to get the updated data set:
-
-```
-{
-  occupations: allOccupations {
-    gaps: nodes {
-      name
-      slug
-      wageGaps: wageGapsByOccupationId {
-        years: nodes {
-          menMedianWeeklyEarnings
-          womenMedianWeeklyEarnings
-          year
-          centsToDollar
-        }
-      }
-      parent: occupationByParentId {
-        slug
-      }
-    }
-  }
-}
-```
+Spin up [PostGraphile](https://www.graphile.org/postgraphile/) pointing at that database, and run the GraphQL query in the `gql` folder.
 
 TODO: Automate this process.
 
 ---
+
+## Update the Data
+
+Every year around March, the Bureau of Labor Statistics [publishes](http://www.bls.gov/cps/cpsaat39.htm) the latest wage data from the year before.
+
+To update the web site:
+
+- Import the data into [a spreadsheet](https://docs.google.com/spreadsheets/d/1KQFBYYBdFoHtYoixBCERvgTiWkU6YcyeX_-Wzo1g1hc/edit?usp=sharing).
+- Export to csv and add it to the `src` folder.
+- Import that csv into Postgres as per the import sql files here.
+- Export the sql file into this directory for future use.
+- Run PostGraphile and update `GapAPI.js` with the results from the query in the `gql` folder.
 
 ## Data Explorations
 

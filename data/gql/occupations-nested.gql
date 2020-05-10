@@ -1,0 +1,43 @@
+{
+  occupations: allOccupations {
+    gaps: nodes {
+      ...GapParts
+      children: occupationsByParentId {
+        occupations: nodes {
+          ...OccupParts
+          children: occupationsByParentId {
+            occupations: nodes {
+              ...OccupParts
+              children: occupationsByParentId {
+                occupations: nodes {
+                  ...OccupParts
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+fragment GapParts on Occupation {
+  name
+  slug
+  wageGaps: wageGapsByOccupationId {
+    years: nodes {
+      menMedianWeeklyEarnings
+      womenMedianWeeklyEarnings
+      year
+      centsToDollar
+    }
+  }
+  parent: occupationByParentId {
+    slug
+  }
+}
+
+fragment OccupParts on Occupation {
+  name
+  slug
+}

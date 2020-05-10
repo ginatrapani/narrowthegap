@@ -21,6 +21,9 @@ const GapAPI = {
                 ],
             },
             parent: null,
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Management, professional, and related occupations",
@@ -42,6 +45,1113 @@ const GapAPI = {
                 ],
             },
             parent: null,
+            children: {
+                occupations: [
+                    {
+                        name:
+                            "Management, business, and financial operations occupations",
+                        slug:
+                            "management-business-and-financial-operations-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name: "Management occupations",
+                                    slug: "management-occupations",
+                                    children: {
+                                        occupations: [
+                                            {
+                                                name: "Chief executives",
+                                                slug: "chief-executives",
+                                            },
+                                            {
+                                                name:
+                                                    "General and operations managers",
+                                                slug:
+                                                    "general-and-operations-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Marketing and sales managers",
+                                                slug:
+                                                    "marketing-and-sales-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Administrative services managers",
+                                                slug:
+                                                    "administrative-services-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Computer and information systems managers",
+                                                slug:
+                                                    "computer-and-information-systems-managers",
+                                            },
+                                            {
+                                                name: "Financial managers",
+                                                slug: "financial-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Human resources managers",
+                                                slug:
+                                                    "human-resources-managers",
+                                            },
+                                            {
+                                                name: "Legislators",
+                                                slug: "legislators",
+                                            },
+                                            {
+                                                name:
+                                                    "Advertising and promotions managers",
+                                                slug:
+                                                    "advertising-and-promotions-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Compensation and benefits managers",
+                                                slug:
+                                                    "compensation-and-benefits-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Training and development managers",
+                                                slug:
+                                                    "training-and-development-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Funeral service managers",
+                                                slug:
+                                                    "funeral-service-managers",
+                                            },
+                                            {
+                                                name: "Gaming managers",
+                                                slug: "gaming-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Natural sciences managers",
+                                                slug:
+                                                    "natural-sciences-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Postmasters and mail superintendents",
+                                                slug:
+                                                    "postmasters-and-mail-superintendents",
+                                            },
+                                            {
+                                                name:
+                                                    "Emergency management directors",
+                                                slug:
+                                                    "emergency-management-directors",
+                                            },
+                                            {
+                                                name:
+                                                    "Industrial production managers",
+                                                slug:
+                                                    "industrial-production-managers",
+                                            },
+                                            {
+                                                name: "Purchasing managers",
+                                                slug: "purchasing-managers",
+                                            },
+                                            {
+                                                name: "Construction managers",
+                                                slug: "construction-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Education administrators",
+                                                slug:
+                                                    "education-administrators",
+                                            },
+                                            {
+                                                name: "Food service managers",
+                                                slug: "food-service-managers",
+                                            },
+                                            {
+                                                name: "Lodging managers",
+                                                slug: "lodging-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Medical and health services managers",
+                                                slug:
+                                                    "medical-and-health-services-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Property, real estate, and community association managers",
+                                                slug:
+                                                    "property-real-estate-and-community-association-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Social and community service managers",
+                                                slug:
+                                                    "social-and-community-service-managers",
+                                            },
+                                            {
+                                                name: "Managers, all other",
+                                                slug: "managers-all-other",
+                                            },
+                                            {
+                                                name:
+                                                    "Public relations and fundraising managers",
+                                                slug:
+                                                    "public-relations-and-fundraising-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Transportation, storage, and distribution managers",
+                                                slug:
+                                                    "transportation-storage-and-distribution-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Architectural and engineering managers",
+                                                slug:
+                                                    "architectural-and-engineering-managers",
+                                            },
+                                            {
+                                                name:
+                                                    "Farmers, ranchers, and other agricultural managers",
+                                                slug:
+                                                    "farmers-ranchers-and-other-agricultural-managers",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Business and financial operations occupations",
+                                    slug:
+                                        "business-and-financial-operations-occupations",
+                                    children: {
+                                        occupations: [
+                                            {
+                                                name:
+                                                    "Business operations specialists, all other",
+                                                slug:
+                                                    "business-operations-specialists-all-other",
+                                            },
+                                            {
+                                                name:
+                                                    "Accountants and auditors",
+                                                slug:
+                                                    "accountants-and-auditors",
+                                            },
+                                            {
+                                                name: "Financial analysts",
+                                                slug: "financial-analysts",
+                                            },
+                                            {
+                                                name:
+                                                    "Personal financial advisors",
+                                                slug:
+                                                    "personal-financial-advisors",
+                                            },
+                                            {
+                                                name: "Insurance underwriters",
+                                                slug: "insurance-underwriters",
+                                            },
+                                            {
+                                                name:
+                                                    "Credit counselors and loan officers",
+                                                slug:
+                                                    "credit-counselors-and-loan-officers",
+                                            },
+                                            {
+                                                name:
+                                                    "Agents and business managers of artists, performers, and athletes",
+                                                slug:
+                                                    "agents-and-business-managers-of-artists-performers-and-athletes",
+                                            },
+                                            {
+                                                name:
+                                                    "Buyers and purchasing agents, farm products",
+                                                slug:
+                                                    "buyers-and-purchasing-agents-farm-products",
+                                            },
+                                            {
+                                                name:
+                                                    "Compensation, benefits, and job analysis specialists",
+                                                slug:
+                                                    "compensation-benefits-and-job-analysis-specialists",
+                                            },
+                                            {
+                                                name:
+                                                    "Wholesale and retail buyers, except farm products",
+                                                slug:
+                                                    "wholesale-and-retail-buyers-except-farm-products",
+                                            },
+                                            {
+                                                name:
+                                                    "Purchasing agents, except wholesale, retail, and farm products",
+                                                slug:
+                                                    "purchasing-agents-except-wholesale-retail-and-farm-products",
+                                            },
+                                            {
+                                                name:
+                                                    "Claims adjusters, appraisers, examiners, and investigators",
+                                                slug:
+                                                    "claims-adjusters-appraisers-examiners-and-investigators",
+                                            },
+                                            {
+                                                name: "Compliance officers",
+                                                slug: "compliance-officers",
+                                            },
+                                            {
+                                                name: "Human resources workers",
+                                                slug: "human-resources-workers",
+                                            },
+                                            {
+                                                name:
+                                                    "Training and development specialists",
+                                                slug:
+                                                    "training-and-development-specialists",
+                                            },
+                                            {
+                                                name: "Management analysts",
+                                                slug: "management-analysts",
+                                            },
+                                            {
+                                                name:
+                                                    "Market research analysts and marketing specialists",
+                                                slug:
+                                                    "market-research-analysts-and-marketing-specialists",
+                                            },
+                                            {
+                                                name:
+                                                    "Meeting, convention, and event planners",
+                                                slug:
+                                                    "meeting-convention-and-event-planners",
+                                            },
+                                            {
+                                                name: "Fundraisers",
+                                                slug: "fundraisers",
+                                            },
+                                            {
+                                                name: "Cost estimators",
+                                                slug: "cost-estimators",
+                                            },
+                                            {
+                                                name: "Logisticians",
+                                                slug: "logisticians",
+                                            },
+                                            {
+                                                name:
+                                                    "Financial specialists, all other",
+                                                slug:
+                                                    "financial-specialists-all-other",
+                                            },
+                                            {
+                                                name:
+                                                    "Appraisers and assessors of real estate",
+                                                slug:
+                                                    "appraisers-and-assessors-of-real-estate",
+                                            },
+                                            {
+                                                name: "Budget analysts",
+                                                slug: "budget-analysts",
+                                            },
+                                            {
+                                                name: "Credit analysts",
+                                                slug: "credit-analysts",
+                                            },
+                                            {
+                                                name: "Financial examiners",
+                                                slug: "financial-examiners",
+                                            },
+                                            {
+                                                name:
+                                                    "Tax examiners and collectors, and revenue agents",
+                                                slug:
+                                                    "tax-examiners-and-collectors-and-revenue-agents",
+                                            },
+                                            {
+                                                name: "Tax preparers",
+                                                slug: "tax-preparers",
+                                            },
+                                        ],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name: "Professional and related occupations",
+                        slug: "professional-and-related-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name:
+                                        "Computer and mathematical occupations",
+                                    slug:
+                                        "computer-and-mathematical-occupations",
+                                    children: {
+                                        occupations: [
+                                            {
+                                                name:
+                                                    "Computer systems analysts",
+                                                slug:
+                                                    "computer-systems-analysts",
+                                            },
+                                            {
+                                                name: "Computer programmers",
+                                                slug: "computer-programmers",
+                                            },
+                                            {
+                                                name:
+                                                    "Software developers, applications and systems software",
+                                                slug:
+                                                    "software-developers-applications-and-systems-software",
+                                            },
+                                            {
+                                                name: "Web developers",
+                                                slug: "web-developers",
+                                            },
+                                            {
+                                                name:
+                                                    "Computer support specialists",
+                                                slug:
+                                                    "computer-support-specialists",
+                                            },
+                                            {
+                                                name:
+                                                    "Network and computer systems administrators",
+                                                slug:
+                                                    "network-and-computer-systems-administrators",
+                                            },
+                                            {
+                                                name:
+                                                    "Computer occupations, all other",
+                                                slug:
+                                                    "computer-occupations-all-other",
+                                            },
+                                            {
+                                                name: "Actuaries",
+                                                slug: "actuaries",
+                                            },
+                                            {
+                                                name: "Mathematicians",
+                                                slug: "mathematicians",
+                                            },
+                                            {
+                                                name:
+                                                    "Miscellaneous mathematical science occupations",
+                                                slug:
+                                                    "miscellaneous-mathematical-science-occupations",
+                                            },
+                                            {
+                                                name:
+                                                    "Operations research analysts",
+                                                slug:
+                                                    "operations-research-analysts",
+                                            },
+                                            {
+                                                name:
+                                                    "Information security analysts",
+                                                slug:
+                                                    "information-security-analysts",
+                                            },
+                                            {
+                                                name: "Database administrators",
+                                                slug: "database-administrators",
+                                            },
+                                            {
+                                                name:
+                                                    "Computer network architects",
+                                                slug:
+                                                    "computer-network-architects",
+                                            },
+                                            {
+                                                name: "Statisticians",
+                                                slug: "statisticians",
+                                            },
+                                            {
+                                                name:
+                                                    "Computer and information research scientists",
+                                                slug:
+                                                    "computer-and-information-research-scientists",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Life, physical, and social science occupations",
+                                    slug:
+                                        "life-physical-and-social-science-occupations",
+                                    children: {
+                                        occupations: [
+                                            {
+                                                name: "Medical scientists",
+                                                slug: "medical-scientists",
+                                            },
+                                            {
+                                                name:
+                                                    "Physical scientists, all other",
+                                                slug:
+                                                    "physical-scientists-all-other",
+                                            },
+                                            {
+                                                name:
+                                                    "Miscellaneous life, physical, and social science technicians",
+                                                slug:
+                                                    "miscellaneous-life-physical-and-social-science-technicians",
+                                            },
+                                            {
+                                                name:
+                                                    "Agricultural and food scientists",
+                                                slug:
+                                                    "agricultural-and-food-scientists",
+                                            },
+                                            {
+                                                name:
+                                                    "Conservation scientists and foresters",
+                                                slug:
+                                                    "conservation-scientists-and-foresters",
+                                            },
+                                            {
+                                                name: "Psychologists",
+                                                slug: "psychologists",
+                                            },
+                                            {
+                                                name: "Biological scientists",
+                                                slug: "biological-scientists",
+                                            },
+                                            {
+                                                name:
+                                                    "Environmental scientists and geoscientists",
+                                                slug:
+                                                    "environmental-scientists-and-geoscientists",
+                                            },
+                                            {
+                                                name:
+                                                    "Chemists and materials scientists",
+                                                slug:
+                                                    "chemists-and-materials-scientists",
+                                            },
+                                            {
+                                                name: "Chemical technicians",
+                                                slug: "chemical-technicians",
+                                            },
+                                            {
+                                                name: "Economists",
+                                                slug: "economists",
+                                            },
+                                            {
+                                                name:
+                                                    "Life scientists, all other",
+                                                slug:
+                                                    "life-scientists-all-other",
+                                            },
+                                            {
+                                                name:
+                                                    "Astronomers and physicists",
+                                                slug:
+                                                    "astronomers-and-physicists",
+                                            },
+                                            {
+                                                name:
+                                                    "Atmospheric and space scientists",
+                                                slug:
+                                                    "atmospheric-and-space-scientists",
+                                            },
+                                            {
+                                                name: "Survey researchers",
+                                                slug: "survey-researchers",
+                                            },
+                                            {
+                                                name: "Sociologists",
+                                                slug: "sociologists",
+                                            },
+                                            {
+                                                name:
+                                                    "Urban and regional planners",
+                                                slug:
+                                                    "urban-and-regional-planners",
+                                            },
+                                            {
+                                                name:
+                                                    "Miscellaneous social scientists and related workers",
+                                                slug:
+                                                    "miscellaneous-social-scientists-and-related-workers",
+                                            },
+                                            {
+                                                name:
+                                                    "Agricultural and food science technicians",
+                                                slug:
+                                                    "agricultural-and-food-science-technicians",
+                                            },
+                                            {
+                                                name: "Biological technicians",
+                                                slug: "biological-technicians",
+                                            },
+                                            {
+                                                name:
+                                                    "Geological and petroleum technicians",
+                                                slug:
+                                                    "geological-and-petroleum-technicians",
+                                            },
+                                            {
+                                                name: "Nuclear technicians",
+                                                slug: "nuclear-technicians",
+                                            },
+                                            {
+                                                name:
+                                                    "Social science research assistants",
+                                                slug:
+                                                    "social-science-research-assistants",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Arts, design, entertainment, sports, and media occupations",
+                                    slug:
+                                        "arts-design-entertainment-sports-and-media-occupations",
+                                    children: {
+                                        occupations: [
+                                            {
+                                                name: "Designers",
+                                                slug: "designers",
+                                            },
+                                            {
+                                                name: "Producers and directors",
+                                                slug: "producers-and-directors",
+                                            },
+                                            {
+                                                name: "Editors",
+                                                slug: "editors",
+                                            },
+                                            {
+                                                name:
+                                                    "Public relations specialists",
+                                                slug:
+                                                    "public-relations-specialists",
+                                            },
+                                            {
+                                                name:
+                                                    "Athletes, coaches, umpires, and related workers",
+                                                slug:
+                                                    "athletes-coaches-umpires-and-related-workers",
+                                            },
+                                            {
+                                                name:
+                                                    "Broadcast and sound engineering technicians and radio operators",
+                                                slug:
+                                                    "broadcast-and-sound-engineering-technicians-and-radio-operators",
+                                            },
+                                            {
+                                                name:
+                                                    "Artists and related workers",
+                                                slug:
+                                                    "artists-and-related-workers",
+                                            },
+                                            {
+                                                name:
+                                                    "News analysts, reporters and correspondents",
+                                                slug:
+                                                    "news-analysts-reporters-and-correspondents",
+                                            },
+                                            {
+                                                name: "Technical writers",
+                                                slug: "technical-writers",
+                                            },
+                                            {
+                                                name: "Writers and authors",
+                                                slug: "writers-and-authors",
+                                            },
+                                            {
+                                                name:
+                                                    "Miscellaneous media and communication workers",
+                                                slug:
+                                                    "miscellaneous-media-and-communication-workers",
+                                            },
+                                            {
+                                                name: "Actors",
+                                                slug: "actors",
+                                            },
+                                            {
+                                                name:
+                                                    "Dancers and choreographers",
+                                                slug:
+                                                    "dancers-and-choreographers",
+                                            },
+                                            {
+                                                name:
+                                                    "Musicians, singers, and related workers",
+                                                slug:
+                                                    "musicians-singers-and-related-workers",
+                                            },
+                                            {
+                                                name:
+                                                    "Entertainers and performers, sports and related workers, all other",
+                                                slug:
+                                                    "entertainers-and-performers-sports-and-related-workers-all-other",
+                                            },
+                                            {
+                                                name: "Announcers",
+                                                slug: "announcers",
+                                            },
+                                            {
+                                                name: "Photographers",
+                                                slug: "photographers",
+                                            },
+                                            {
+                                                name:
+                                                    "Television, video, and motion picture camera operators and editors",
+                                                slug:
+                                                    "television-video-and-motion-picture-camera-operators-and-editors",
+                                            },
+                                            {
+                                                name:
+                                                    "Media and communication equipment workers, all other",
+                                                slug:
+                                                    "media-and-communication-equipment-workers-all-other",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Healthcare practitioners and technical occupations",
+                                    slug:
+                                        "healthcare-practitioners-and-technical-occupations",
+                                    children: {
+                                        occupations: [
+                                            {
+                                                name: "Pharmacists",
+                                                slug: "pharmacists",
+                                            },
+                                            {
+                                                name: "Physicians and surgeons",
+                                                slug: "physicians-and-surgeons",
+                                            },
+                                            {
+                                                name: "Physical therapists",
+                                                slug: "physical-therapists",
+                                            },
+                                            {
+                                                name:
+                                                    "Health practitioner support technologists and technicians",
+                                                slug:
+                                                    "health-practitioner-support-technologists-and-technicians",
+                                            },
+                                            {
+                                                name:
+                                                    "Licensed practical and licensed vocational nurses",
+                                                slug:
+                                                    "licensed-practical-and-licensed-vocational-nurses",
+                                            },
+                                            {
+                                                name: "Nurse practitioners",
+                                                slug: "nurse-practitioners",
+                                            },
+                                            {
+                                                name: "Nurse midwives",
+                                                slug: "nurse-midwives",
+                                            },
+                                            {
+                                                name: "Registered nurses",
+                                                slug: "registered-nurses",
+                                            },
+                                            {
+                                                name:
+                                                    "Clinical laboratory technologists and technicians",
+                                                slug:
+                                                    "clinical-laboratory-technologists-and-technicians",
+                                            },
+                                            {
+                                                name:
+                                                    "Diagnostic related technologists and technicians",
+                                                slug:
+                                                    "diagnostic-related-technologists-and-technicians",
+                                            },
+                                            {
+                                                name:
+                                                    "Emergency medical technicians and paramedics",
+                                                slug:
+                                                    "emergency-medical-technicians-and-paramedics",
+                                            },
+                                            {
+                                                name:
+                                                    "Dietitians and nutritionists",
+                                                slug:
+                                                    "dietitians-and-nutritionists",
+                                            },
+                                            {
+                                                name: "Physician assistants",
+                                                slug: "physician-assistants",
+                                            },
+                                            {
+                                                name: "Occupational therapists",
+                                                slug: "occupational-therapists",
+                                            },
+                                            {
+                                                name: "Respiratory therapists",
+                                                slug: "respiratory-therapists",
+                                            },
+                                            {
+                                                name:
+                                                    "Speech-language pathologists",
+                                                slug:
+                                                    "speech-language-pathologists",
+                                            },
+                                            {
+                                                name: "Therapists, all other",
+                                                slug: "therapists-all-other",
+                                            },
+                                            {
+                                                name: "Veterinarians",
+                                                slug: "veterinarians",
+                                            },
+                                            {
+                                                name: "Dental hygienists",
+                                                slug: "dental-hygienists",
+                                            },
+                                            {
+                                                name: "Dentists",
+                                                slug: "dentists",
+                                            },
+                                            {
+                                                name:
+                                                    "Medical records and health information technicians",
+                                                slug:
+                                                    "medical-records-and-health-information-technicians",
+                                            },
+                                            {
+                                                name:
+                                                    "Miscellaneous health technologists and technicians",
+                                                slug:
+                                                    "miscellaneous-health-technologists-and-technicians",
+                                            },
+                                            {
+                                                name:
+                                                    "Other healthcare practitioners and technical occupations",
+                                                slug:
+                                                    "other-healthcare-practitioners-and-technical-occupations",
+                                            },
+                                            {
+                                                name: "Exercise physiologists",
+                                                slug: "exercise-physiologists",
+                                            },
+                                            {
+                                                name: "Chiropractors",
+                                                slug: "chiropractors",
+                                            },
+                                            {
+                                                name: "Optometrists",
+                                                slug: "optometrists",
+                                            },
+                                            {
+                                                name: "Podiatrists",
+                                                slug: "podiatrists",
+                                            },
+                                            {
+                                                name: "Audiologists",
+                                                slug: "audiologists",
+                                            },
+                                            {
+                                                name: "Radiation therapists",
+                                                slug: "radiation-therapists",
+                                            },
+                                            {
+                                                name: "Recreational therapists",
+                                                slug: "recreational-therapists",
+                                            },
+                                            {
+                                                name: "Nurse anesthetists",
+                                                slug: "nurse-anesthetists",
+                                            },
+                                            {
+                                                name:
+                                                    "Health diagnosing and treating practitioners, all other",
+                                                slug:
+                                                    "health-diagnosing-and-treating-practitioners-all-other",
+                                            },
+                                            {
+                                                name: "Opticians, dispensing",
+                                                slug: "opticians-dispensing",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Architecture and engineering occupations",
+                                    slug:
+                                        "architecture-and-engineering-occupations",
+                                    children: {
+                                        occupations: [
+                                            {
+                                                name:
+                                                    "Engineering technicians, except drafters",
+                                                slug:
+                                                    "engineering-technicians-except-drafters",
+                                            },
+                                            {
+                                                name:
+                                                    "Surveyors, cartographers, and photogrammetrists",
+                                                slug:
+                                                    "surveyors-cartographers-and-photogrammetrists",
+                                            },
+                                            {
+                                                name: "Agricultural engineers",
+                                                slug: "agricultural-engineers",
+                                            },
+                                            {
+                                                name: "Biomedical engineers",
+                                                slug: "biomedical-engineers",
+                                            },
+                                            {
+                                                name: "Environmental engineers",
+                                                slug: "environmental-engineers",
+                                            },
+                                            {
+                                                name:
+                                                    "Marine engineers and naval architects",
+                                                slug:
+                                                    "marine-engineers-and-naval-architects",
+                                            },
+                                            {
+                                                name: "Materials engineers",
+                                                slug: "materials-engineers",
+                                            },
+                                            {
+                                                name:
+                                                    "Mining and geological engineers, including mining safety engineers",
+                                                slug:
+                                                    "mining-and-geological-engineers-including-mining-safety-engineers",
+                                            },
+                                            {
+                                                name: "Nuclear engineers",
+                                                slug: "nuclear-engineers",
+                                            },
+                                            {
+                                                name: "Petroleum engineers",
+                                                slug: "petroleum-engineers",
+                                            },
+                                            {
+                                                name: "Aerospace engineers",
+                                                slug: "aerospace-engineers",
+                                            },
+                                            {
+                                                name:
+                                                    "Industrial engineers, including health and safety",
+                                                slug:
+                                                    "industrial-engineers-including-health-and-safety",
+                                            },
+                                            {
+                                                name: "Engineers, all other",
+                                                slug: "engineers-all-other",
+                                            },
+                                            {
+                                                name:
+                                                    "Architects, except naval",
+                                                slug: "architects-except-naval",
+                                            },
+                                            {
+                                                name: "Civil engineers",
+                                                slug: "civil-engineers",
+                                            },
+                                            {
+                                                name: "Chemical engineers",
+                                                slug: "chemical-engineers",
+                                            },
+                                            {
+                                                name:
+                                                    "Computer hardware engineers",
+                                                slug:
+                                                    "computer-hardware-engineers",
+                                            },
+                                            {
+                                                name:
+                                                    "Electrical and electronics engineers",
+                                                slug:
+                                                    "electrical-and-electronics-engineers",
+                                            },
+                                            {
+                                                name: "Mechanical engineers",
+                                                slug: "mechanical-engineers",
+                                            },
+                                            {
+                                                name: "Drafters",
+                                                slug: "drafters",
+                                            },
+                                            {
+                                                name:
+                                                    "Surveying and mapping technicians",
+                                                slug:
+                                                    "surveying-and-mapping-technicians",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Community and social service occupations",
+                                    slug:
+                                        "community-and-social-service-occupations",
+                                    children: {
+                                        occupations: [
+                                            {
+                                                name: "Counselors",
+                                                slug: "counselors",
+                                            },
+                                            {
+                                                name: "Social workers",
+                                                slug: "social-workers",
+                                            },
+                                            {
+                                                name: "Clergy",
+                                                slug: "clergy",
+                                            },
+                                            {
+                                                name:
+                                                    "Social and human service assistants",
+                                                slug:
+                                                    "social-and-human-service-assistants",
+                                            },
+                                            {
+                                                name:
+                                                    "Probation officers and correctional treatment specialists",
+                                                slug:
+                                                    "probation-officers-and-correctional-treatment-specialists",
+                                            },
+                                            {
+                                                name:
+                                                    "Miscellaneous community and social service specialists, including health educators and community health workers",
+                                                slug:
+                                                    "miscellaneous-community-and-social-service-specialists-including-health-educators-and-community-health-workers",
+                                            },
+                                            {
+                                                name:
+                                                    "Directors, religious activities and education",
+                                                slug:
+                                                    "directors-religious-activities-and-education",
+                                            },
+                                            {
+                                                name:
+                                                    "Religious workers, all other",
+                                                slug:
+                                                    "religious-workers-all-other",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    name: "Legal occupations",
+                                    slug: "legal-occupations",
+                                    children: {
+                                        occupations: [
+                                            {
+                                                name: "Lawyers",
+                                                slug: "lawyers",
+                                            },
+                                            {
+                                                name:
+                                                    "Paralegals and legal assistants",
+                                                slug:
+                                                    "paralegals-and-legal-assistants",
+                                            },
+                                            {
+                                                name:
+                                                    "Miscellaneous legal support workers",
+                                                slug:
+                                                    "miscellaneous-legal-support-workers",
+                                            },
+                                            {
+                                                name:
+                                                    "Judges, magistrates, and other judicial workers",
+                                                slug:
+                                                    "judges-magistrates-and-other-judicial-workers",
+                                            },
+                                            {
+                                                name: "Judicial law clerks",
+                                                slug: "judicial-law-clerks",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Education, training, and library occupations",
+                                    slug:
+                                        "education-training-and-library-occupations",
+                                    children: {
+                                        occupations: [
+                                            {
+                                                name: "Library technicians",
+                                                slug: "library-technicians",
+                                            },
+                                            {
+                                                name: "Teacher assistants",
+                                                slug: "teacher-assistants",
+                                            },
+                                            {
+                                                name: "Postsecondary teachers",
+                                                slug: "postsecondary-teachers",
+                                            },
+                                            {
+                                                name:
+                                                    "Elementary and middle school teachers",
+                                                slug:
+                                                    "elementary-and-middle-school-teachers",
+                                            },
+                                            {
+                                                name:
+                                                    "Secondary school teachers",
+                                                slug:
+                                                    "secondary-school-teachers",
+                                            },
+                                            {
+                                                name:
+                                                    "Other teachers and instructors",
+                                                slug:
+                                                    "other-teachers-and-instructors",
+                                            },
+                                            {
+                                                name:
+                                                    "Preschool and kindergarten teachers",
+                                                slug:
+                                                    "preschool-and-kindergarten-teachers",
+                                            },
+                                            {
+                                                name:
+                                                    "Special education teachers",
+                                                slug:
+                                                    "special-education-teachers",
+                                            },
+                                            {
+                                                name: "Librarians",
+                                                slug: "librarians",
+                                            },
+                                            {
+                                                name:
+                                                    "Other education, training, and library workers",
+                                                slug:
+                                                    "other-education-training-and-library-workers",
+                                            },
+                                            {
+                                                name:
+                                                    "Archivists, curators, and museum technicians",
+                                                slug:
+                                                    "archivists-curators-and-museum-technicians",
+                                            },
+                                        ],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Management, business, and financial operations occupations",
@@ -64,6 +1174,474 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-professional-and-related-occupations",
+            },
+            children: {
+                occupations: [
+                    {
+                        name: "Management occupations",
+                        slug: "management-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name: "Chief executives",
+                                    slug: "chief-executives",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "General and operations managers",
+                                    slug: "general-and-operations-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Marketing and sales managers",
+                                    slug: "marketing-and-sales-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Administrative services managers",
+                                    slug: "administrative-services-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Computer and information systems managers",
+                                    slug:
+                                        "computer-and-information-systems-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Financial managers",
+                                    slug: "financial-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Human resources managers",
+                                    slug: "human-resources-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Legislators",
+                                    slug: "legislators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Advertising and promotions managers",
+                                    slug: "advertising-and-promotions-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Compensation and benefits managers",
+                                    slug: "compensation-and-benefits-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Training and development managers",
+                                    slug: "training-and-development-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Funeral service managers",
+                                    slug: "funeral-service-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Gaming managers",
+                                    slug: "gaming-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Natural sciences managers",
+                                    slug: "natural-sciences-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Postmasters and mail superintendents",
+                                    slug:
+                                        "postmasters-and-mail-superintendents",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Emergency management directors",
+                                    slug: "emergency-management-directors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Industrial production managers",
+                                    slug: "industrial-production-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Purchasing managers",
+                                    slug: "purchasing-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Construction managers",
+                                    slug: "construction-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Education administrators",
+                                    slug: "education-administrators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Food service managers",
+                                    slug: "food-service-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Lodging managers",
+                                    slug: "lodging-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Medical and health services managers",
+                                    slug:
+                                        "medical-and-health-services-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Property, real estate, and community association managers",
+                                    slug:
+                                        "property-real-estate-and-community-association-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Social and community service managers",
+                                    slug:
+                                        "social-and-community-service-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Managers, all other",
+                                    slug: "managers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Public relations and fundraising managers",
+                                    slug:
+                                        "public-relations-and-fundraising-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Transportation, storage, and distribution managers",
+                                    slug:
+                                        "transportation-storage-and-distribution-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Architectural and engineering managers",
+                                    slug:
+                                        "architectural-and-engineering-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Farmers, ranchers, and other agricultural managers",
+                                    slug:
+                                        "farmers-ranchers-and-other-agricultural-managers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name: "Business and financial operations occupations",
+                        slug: "business-and-financial-operations-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name:
+                                        "Business operations specialists, all other",
+                                    slug:
+                                        "business-operations-specialists-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Accountants and auditors",
+                                    slug: "accountants-and-auditors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Financial analysts",
+                                    slug: "financial-analysts",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Personal financial advisors",
+                                    slug: "personal-financial-advisors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Insurance underwriters",
+                                    slug: "insurance-underwriters",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Credit counselors and loan officers",
+                                    slug: "credit-counselors-and-loan-officers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Agents and business managers of artists, performers, and athletes",
+                                    slug:
+                                        "agents-and-business-managers-of-artists-performers-and-athletes",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Buyers and purchasing agents, farm products",
+                                    slug:
+                                        "buyers-and-purchasing-agents-farm-products",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Compensation, benefits, and job analysis specialists",
+                                    slug:
+                                        "compensation-benefits-and-job-analysis-specialists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Wholesale and retail buyers, except farm products",
+                                    slug:
+                                        "wholesale-and-retail-buyers-except-farm-products",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Purchasing agents, except wholesale, retail, and farm products",
+                                    slug:
+                                        "purchasing-agents-except-wholesale-retail-and-farm-products",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Claims adjusters, appraisers, examiners, and investigators",
+                                    slug:
+                                        "claims-adjusters-appraisers-examiners-and-investigators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Compliance officers",
+                                    slug: "compliance-officers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Human resources workers",
+                                    slug: "human-resources-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Training and development specialists",
+                                    slug:
+                                        "training-and-development-specialists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Management analysts",
+                                    slug: "management-analysts",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Market research analysts and marketing specialists",
+                                    slug:
+                                        "market-research-analysts-and-marketing-specialists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Meeting, convention, and event planners",
+                                    slug:
+                                        "meeting-convention-and-event-planners",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Fundraisers",
+                                    slug: "fundraisers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Cost estimators",
+                                    slug: "cost-estimators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Logisticians",
+                                    slug: "logisticians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Financial specialists, all other",
+                                    slug: "financial-specialists-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Appraisers and assessors of real estate",
+                                    slug:
+                                        "appraisers-and-assessors-of-real-estate",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Budget analysts",
+                                    slug: "budget-analysts",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Credit analysts",
+                                    slug: "credit-analysts",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Financial examiners",
+                                    slug: "financial-examiners",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Tax examiners and collectors, and revenue agents",
+                                    slug:
+                                        "tax-examiners-and-collectors-and-revenue-agents",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Tax preparers",
+                                    slug: "tax-preparers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
             },
         },
         {
@@ -89,6 +1667,226 @@ const GapAPI = {
                 slug:
                     "management-business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [
+                    {
+                        name: "Chief executives",
+                        slug: "chief-executives",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "General and operations managers",
+                        slug: "general-and-operations-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Marketing and sales managers",
+                        slug: "marketing-and-sales-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Administrative services managers",
+                        slug: "administrative-services-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Computer and information systems managers",
+                        slug: "computer-and-information-systems-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Financial managers",
+                        slug: "financial-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Human resources managers",
+                        slug: "human-resources-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Legislators",
+                        slug: "legislators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Advertising and promotions managers",
+                        slug: "advertising-and-promotions-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Compensation and benefits managers",
+                        slug: "compensation-and-benefits-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Training and development managers",
+                        slug: "training-and-development-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Funeral service managers",
+                        slug: "funeral-service-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Gaming managers",
+                        slug: "gaming-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Natural sciences managers",
+                        slug: "natural-sciences-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Postmasters and mail superintendents",
+                        slug: "postmasters-and-mail-superintendents",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Emergency management directors",
+                        slug: "emergency-management-directors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Industrial production managers",
+                        slug: "industrial-production-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Purchasing managers",
+                        slug: "purchasing-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Construction managers",
+                        slug: "construction-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Education administrators",
+                        slug: "education-administrators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Food service managers",
+                        slug: "food-service-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Lodging managers",
+                        slug: "lodging-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Medical and health services managers",
+                        slug: "medical-and-health-services-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Property, real estate, and community association managers",
+                        slug:
+                            "property-real-estate-and-community-association-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Social and community service managers",
+                        slug: "social-and-community-service-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Managers, all other",
+                        slug: "managers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Public relations and fundraising managers",
+                        slug: "public-relations-and-fundraising-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Transportation, storage, and distribution managers",
+                        slug:
+                            "transportation-storage-and-distribution-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Architectural and engineering managers",
+                        slug: "architectural-and-engineering-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Farmers, ranchers, and other agricultural managers",
+                        slug:
+                            "farmers-ranchers-and-other-agricultural-managers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Chief executives",
@@ -111,6 +1909,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -135,6 +1936,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Marketing and sales managers",
@@ -157,6 +1961,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -181,6 +1988,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Computer and information systems managers",
@@ -203,6 +2013,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -227,6 +2040,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Human resources managers",
@@ -249,6 +2065,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -273,6 +2092,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Accountants and auditors",
@@ -295,6 +2117,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "business-and-financial-operations-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -319,6 +2144,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Personal financial advisors",
@@ -341,6 +2169,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "business-and-financial-operations-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -365,6 +2196,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Credit counselors and loan officers",
@@ -387,6 +2221,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "business-and-financial-operations-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -411,6 +2248,1110 @@ const GapAPI = {
             parent: {
                 slug: "management-professional-and-related-occupations",
             },
+            children: {
+                occupations: [
+                    {
+                        name: "Computer and mathematical occupations",
+                        slug: "computer-and-mathematical-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name: "Computer systems analysts",
+                                    slug: "computer-systems-analysts",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Computer programmers",
+                                    slug: "computer-programmers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Software developers, applications and systems software",
+                                    slug:
+                                        "software-developers-applications-and-systems-software",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Web developers",
+                                    slug: "web-developers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Computer support specialists",
+                                    slug: "computer-support-specialists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Network and computer systems administrators",
+                                    slug:
+                                        "network-and-computer-systems-administrators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Computer occupations, all other",
+                                    slug: "computer-occupations-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Actuaries",
+                                    slug: "actuaries",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Mathematicians",
+                                    slug: "mathematicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Miscellaneous mathematical science occupations",
+                                    slug:
+                                        "miscellaneous-mathematical-science-occupations",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Operations research analysts",
+                                    slug: "operations-research-analysts",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Information security analysts",
+                                    slug: "information-security-analysts",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Database administrators",
+                                    slug: "database-administrators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Computer network architects",
+                                    slug: "computer-network-architects",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Statisticians",
+                                    slug: "statisticians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Computer and information research scientists",
+                                    slug:
+                                        "computer-and-information-research-scientists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name: "Life, physical, and social science occupations",
+                        slug: "life-physical-and-social-science-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name: "Medical scientists",
+                                    slug: "medical-scientists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Physical scientists, all other",
+                                    slug: "physical-scientists-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Miscellaneous life, physical, and social science technicians",
+                                    slug:
+                                        "miscellaneous-life-physical-and-social-science-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Agricultural and food scientists",
+                                    slug: "agricultural-and-food-scientists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Conservation scientists and foresters",
+                                    slug:
+                                        "conservation-scientists-and-foresters",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Psychologists",
+                                    slug: "psychologists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Biological scientists",
+                                    slug: "biological-scientists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Environmental scientists and geoscientists",
+                                    slug:
+                                        "environmental-scientists-and-geoscientists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Chemists and materials scientists",
+                                    slug: "chemists-and-materials-scientists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Chemical technicians",
+                                    slug: "chemical-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Economists",
+                                    slug: "economists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Life scientists, all other",
+                                    slug: "life-scientists-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Astronomers and physicists",
+                                    slug: "astronomers-and-physicists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Atmospheric and space scientists",
+                                    slug: "atmospheric-and-space-scientists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Survey researchers",
+                                    slug: "survey-researchers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Sociologists",
+                                    slug: "sociologists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Urban and regional planners",
+                                    slug: "urban-and-regional-planners",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Miscellaneous social scientists and related workers",
+                                    slug:
+                                        "miscellaneous-social-scientists-and-related-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Agricultural and food science technicians",
+                                    slug:
+                                        "agricultural-and-food-science-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Biological technicians",
+                                    slug: "biological-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Geological and petroleum technicians",
+                                    slug:
+                                        "geological-and-petroleum-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Nuclear technicians",
+                                    slug: "nuclear-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Social science research assistants",
+                                    slug: "social-science-research-assistants",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name:
+                            "Arts, design, entertainment, sports, and media occupations",
+                        slug:
+                            "arts-design-entertainment-sports-and-media-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name: "Designers",
+                                    slug: "designers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Producers and directors",
+                                    slug: "producers-and-directors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Editors",
+                                    slug: "editors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Public relations specialists",
+                                    slug: "public-relations-specialists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Athletes, coaches, umpires, and related workers",
+                                    slug:
+                                        "athletes-coaches-umpires-and-related-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Broadcast and sound engineering technicians and radio operators",
+                                    slug:
+                                        "broadcast-and-sound-engineering-technicians-and-radio-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Artists and related workers",
+                                    slug: "artists-and-related-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "News analysts, reporters and correspondents",
+                                    slug:
+                                        "news-analysts-reporters-and-correspondents",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Technical writers",
+                                    slug: "technical-writers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Writers and authors",
+                                    slug: "writers-and-authors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Miscellaneous media and communication workers",
+                                    slug:
+                                        "miscellaneous-media-and-communication-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Actors",
+                                    slug: "actors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Dancers and choreographers",
+                                    slug: "dancers-and-choreographers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Musicians, singers, and related workers",
+                                    slug:
+                                        "musicians-singers-and-related-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Entertainers and performers, sports and related workers, all other",
+                                    slug:
+                                        "entertainers-and-performers-sports-and-related-workers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Announcers",
+                                    slug: "announcers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Photographers",
+                                    slug: "photographers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Television, video, and motion picture camera operators and editors",
+                                    slug:
+                                        "television-video-and-motion-picture-camera-operators-and-editors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Media and communication equipment workers, all other",
+                                    slug:
+                                        "media-and-communication-equipment-workers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name:
+                            "Healthcare practitioners and technical occupations",
+                        slug:
+                            "healthcare-practitioners-and-technical-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name: "Pharmacists",
+                                    slug: "pharmacists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Physicians and surgeons",
+                                    slug: "physicians-and-surgeons",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Physical therapists",
+                                    slug: "physical-therapists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Health practitioner support technologists and technicians",
+                                    slug:
+                                        "health-practitioner-support-technologists-and-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Licensed practical and licensed vocational nurses",
+                                    slug:
+                                        "licensed-practical-and-licensed-vocational-nurses",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Nurse practitioners",
+                                    slug: "nurse-practitioners",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Nurse midwives",
+                                    slug: "nurse-midwives",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Registered nurses",
+                                    slug: "registered-nurses",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Clinical laboratory technologists and technicians",
+                                    slug:
+                                        "clinical-laboratory-technologists-and-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Diagnostic related technologists and technicians",
+                                    slug:
+                                        "diagnostic-related-technologists-and-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Emergency medical technicians and paramedics",
+                                    slug:
+                                        "emergency-medical-technicians-and-paramedics",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Dietitians and nutritionists",
+                                    slug: "dietitians-and-nutritionists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Physician assistants",
+                                    slug: "physician-assistants",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Occupational therapists",
+                                    slug: "occupational-therapists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Respiratory therapists",
+                                    slug: "respiratory-therapists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Speech-language pathologists",
+                                    slug: "speech-language-pathologists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Therapists, all other",
+                                    slug: "therapists-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Veterinarians",
+                                    slug: "veterinarians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Dental hygienists",
+                                    slug: "dental-hygienists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Dentists",
+                                    slug: "dentists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Medical records and health information technicians",
+                                    slug:
+                                        "medical-records-and-health-information-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Miscellaneous health technologists and technicians",
+                                    slug:
+                                        "miscellaneous-health-technologists-and-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Other healthcare practitioners and technical occupations",
+                                    slug:
+                                        "other-healthcare-practitioners-and-technical-occupations",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Exercise physiologists",
+                                    slug: "exercise-physiologists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Chiropractors",
+                                    slug: "chiropractors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Optometrists",
+                                    slug: "optometrists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Podiatrists",
+                                    slug: "podiatrists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Audiologists",
+                                    slug: "audiologists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Radiation therapists",
+                                    slug: "radiation-therapists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Recreational therapists",
+                                    slug: "recreational-therapists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Nurse anesthetists",
+                                    slug: "nurse-anesthetists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Health diagnosing and treating practitioners, all other",
+                                    slug:
+                                        "health-diagnosing-and-treating-practitioners-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Opticians, dispensing",
+                                    slug: "opticians-dispensing",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name: "Architecture and engineering occupations",
+                        slug: "architecture-and-engineering-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name:
+                                        "Engineering technicians, except drafters",
+                                    slug:
+                                        "engineering-technicians-except-drafters",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Surveyors, cartographers, and photogrammetrists",
+                                    slug:
+                                        "surveyors-cartographers-and-photogrammetrists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Agricultural engineers",
+                                    slug: "agricultural-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Biomedical engineers",
+                                    slug: "biomedical-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Environmental engineers",
+                                    slug: "environmental-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Marine engineers and naval architects",
+                                    slug:
+                                        "marine-engineers-and-naval-architects",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Materials engineers",
+                                    slug: "materials-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Mining and geological engineers, including mining safety engineers",
+                                    slug:
+                                        "mining-and-geological-engineers-including-mining-safety-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Nuclear engineers",
+                                    slug: "nuclear-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Petroleum engineers",
+                                    slug: "petroleum-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Aerospace engineers",
+                                    slug: "aerospace-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Industrial engineers, including health and safety",
+                                    slug:
+                                        "industrial-engineers-including-health-and-safety",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Engineers, all other",
+                                    slug: "engineers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Architects, except naval",
+                                    slug: "architects-except-naval",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Civil engineers",
+                                    slug: "civil-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Chemical engineers",
+                                    slug: "chemical-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Computer hardware engineers",
+                                    slug: "computer-hardware-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Electrical and electronics engineers",
+                                    slug:
+                                        "electrical-and-electronics-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Mechanical engineers",
+                                    slug: "mechanical-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Drafters",
+                                    slug: "drafters",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Surveying and mapping technicians",
+                                    slug: "surveying-and-mapping-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name: "Community and social service occupations",
+                        slug: "community-and-social-service-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name: "Counselors",
+                                    slug: "counselors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Social workers",
+                                    slug: "social-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Clergy",
+                                    slug: "clergy",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Social and human service assistants",
+                                    slug: "social-and-human-service-assistants",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Probation officers and correctional treatment specialists",
+                                    slug:
+                                        "probation-officers-and-correctional-treatment-specialists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Miscellaneous community and social service specialists, including health educators and community health workers",
+                                    slug:
+                                        "miscellaneous-community-and-social-service-specialists-including-health-educators-and-community-health-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Directors, religious activities and education",
+                                    slug:
+                                        "directors-religious-activities-and-education",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Religious workers, all other",
+                                    slug: "religious-workers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name: "Legal occupations",
+                        slug: "legal-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name: "Lawyers",
+                                    slug: "lawyers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Paralegals and legal assistants",
+                                    slug: "paralegals-and-legal-assistants",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Miscellaneous legal support workers",
+                                    slug: "miscellaneous-legal-support-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Judges, magistrates, and other judicial workers",
+                                    slug:
+                                        "judges-magistrates-and-other-judicial-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Judicial law clerks",
+                                    slug: "judicial-law-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name: "Education, training, and library occupations",
+                        slug: "education-training-and-library-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name: "Library technicians",
+                                    slug: "library-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Teacher assistants",
+                                    slug: "teacher-assistants",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Postsecondary teachers",
+                                    slug: "postsecondary-teachers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Elementary and middle school teachers",
+                                    slug:
+                                        "elementary-and-middle-school-teachers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Secondary school teachers",
+                                    slug: "secondary-school-teachers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Other teachers and instructors",
+                                    slug: "other-teachers-and-instructors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Preschool and kindergarten teachers",
+                                    slug: "preschool-and-kindergarten-teachers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Special education teachers",
+                                    slug: "special-education-teachers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Librarians",
+                                    slug: "librarians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Other education, training, and library workers",
+                                    slug:
+                                        "other-education-training-and-library-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Archivists, curators, and museum technicians",
+                                    slug:
+                                        "archivists-curators-and-museum-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Computer and mathematical occupations",
@@ -433,6 +3374,124 @@ const GapAPI = {
             },
             parent: {
                 slug: "professional-and-related-occupations",
+            },
+            children: {
+                occupations: [
+                    {
+                        name: "Computer systems analysts",
+                        slug: "computer-systems-analysts",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Computer programmers",
+                        slug: "computer-programmers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Software developers, applications and systems software",
+                        slug:
+                            "software-developers-applications-and-systems-software",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Web developers",
+                        slug: "web-developers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Computer support specialists",
+                        slug: "computer-support-specialists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Network and computer systems administrators",
+                        slug: "network-and-computer-systems-administrators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Computer occupations, all other",
+                        slug: "computer-occupations-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Actuaries",
+                        slug: "actuaries",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Mathematicians",
+                        slug: "mathematicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Miscellaneous mathematical science occupations",
+                        slug: "miscellaneous-mathematical-science-occupations",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Operations research analysts",
+                        slug: "operations-research-analysts",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Information security analysts",
+                        slug: "information-security-analysts",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Database administrators",
+                        slug: "database-administrators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Computer network architects",
+                        slug: "computer-network-architects",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Statisticians",
+                        slug: "statisticians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Computer and information research scientists",
+                        slug: "computer-and-information-research-scientists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
             },
         },
         {
@@ -457,6 +3516,9 @@ const GapAPI = {
             parent: {
                 slug: "computer-and-mathematical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Computer programmers",
@@ -479,6 +3541,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "computer-and-mathematical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -503,6 +3568,9 @@ const GapAPI = {
             parent: {
                 slug: "computer-and-mathematical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Web developers",
@@ -525,6 +3593,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "computer-and-mathematical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -549,6 +3620,9 @@ const GapAPI = {
             parent: {
                 slug: "computer-and-mathematical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Network and computer systems administrators",
@@ -571,6 +3645,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "computer-and-mathematical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -595,6 +3672,9 @@ const GapAPI = {
             parent: {
                 slug: "computer-and-mathematical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Engineering technicians, except drafters",
@@ -617,6 +3697,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "architecture-and-engineering-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -641,6 +3724,175 @@ const GapAPI = {
             parent: {
                 slug: "professional-and-related-occupations",
             },
+            children: {
+                occupations: [
+                    {
+                        name: "Medical scientists",
+                        slug: "medical-scientists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Physical scientists, all other",
+                        slug: "physical-scientists-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Miscellaneous life, physical, and social science technicians",
+                        slug:
+                            "miscellaneous-life-physical-and-social-science-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Agricultural and food scientists",
+                        slug: "agricultural-and-food-scientists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Conservation scientists and foresters",
+                        slug: "conservation-scientists-and-foresters",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Psychologists",
+                        slug: "psychologists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Biological scientists",
+                        slug: "biological-scientists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Environmental scientists and geoscientists",
+                        slug: "environmental-scientists-and-geoscientists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Chemists and materials scientists",
+                        slug: "chemists-and-materials-scientists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Chemical technicians",
+                        slug: "chemical-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Economists",
+                        slug: "economists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Life scientists, all other",
+                        slug: "life-scientists-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Astronomers and physicists",
+                        slug: "astronomers-and-physicists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Atmospheric and space scientists",
+                        slug: "atmospheric-and-space-scientists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Survey researchers",
+                        slug: "survey-researchers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Sociologists",
+                        slug: "sociologists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Urban and regional planners",
+                        slug: "urban-and-regional-planners",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Miscellaneous social scientists and related workers",
+                        slug:
+                            "miscellaneous-social-scientists-and-related-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Agricultural and food science technicians",
+                        slug: "agricultural-and-food-science-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Biological technicians",
+                        slug: "biological-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Geological and petroleum technicians",
+                        slug: "geological-and-petroleum-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Nuclear technicians",
+                        slug: "nuclear-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Social science research assistants",
+                        slug: "social-science-research-assistants",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Medical scientists",
@@ -664,6 +3916,9 @@ const GapAPI = {
             parent: {
                 slug: "life-physical-and-social-science-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Physical scientists, all other",
@@ -686,6 +3941,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "life-physical-and-social-science-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -711,6 +3969,9 @@ const GapAPI = {
             parent: {
                 slug: "life-physical-and-social-science-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Lawyers",
@@ -733,6 +3994,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "legal-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -757,6 +4021,151 @@ const GapAPI = {
             parent: {
                 slug: "professional-and-related-occupations",
             },
+            children: {
+                occupations: [
+                    {
+                        name: "Designers",
+                        slug: "designers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Producers and directors",
+                        slug: "producers-and-directors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Editors",
+                        slug: "editors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Public relations specialists",
+                        slug: "public-relations-specialists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Athletes, coaches, umpires, and related workers",
+                        slug: "athletes-coaches-umpires-and-related-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Broadcast and sound engineering technicians and radio operators",
+                        slug:
+                            "broadcast-and-sound-engineering-technicians-and-radio-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Artists and related workers",
+                        slug: "artists-and-related-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "News analysts, reporters and correspondents",
+                        slug: "news-analysts-reporters-and-correspondents",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Technical writers",
+                        slug: "technical-writers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Writers and authors",
+                        slug: "writers-and-authors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Miscellaneous media and communication workers",
+                        slug: "miscellaneous-media-and-communication-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Actors",
+                        slug: "actors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Dancers and choreographers",
+                        slug: "dancers-and-choreographers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Musicians, singers, and related workers",
+                        slug: "musicians-singers-and-related-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Entertainers and performers, sports and related workers, all other",
+                        slug:
+                            "entertainers-and-performers-sports-and-related-workers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Announcers",
+                        slug: "announcers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Photographers",
+                        slug: "photographers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Television, video, and motion picture camera operators and editors",
+                        slug:
+                            "television-video-and-motion-picture-camera-operators-and-editors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Media and communication equipment workers, all other",
+                        slug:
+                            "media-and-communication-equipment-workers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Designers",
@@ -779,6 +4188,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -803,6 +4215,9 @@ const GapAPI = {
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Healthcare practitioners and technical occupations",
@@ -825,6 +4240,257 @@ const GapAPI = {
             },
             parent: {
                 slug: "professional-and-related-occupations",
+            },
+            children: {
+                occupations: [
+                    {
+                        name: "Pharmacists",
+                        slug: "pharmacists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Physicians and surgeons",
+                        slug: "physicians-and-surgeons",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Physical therapists",
+                        slug: "physical-therapists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Health practitioner support technologists and technicians",
+                        slug:
+                            "health-practitioner-support-technologists-and-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Licensed practical and licensed vocational nurses",
+                        slug:
+                            "licensed-practical-and-licensed-vocational-nurses",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Nurse practitioners",
+                        slug: "nurse-practitioners",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Nurse midwives",
+                        slug: "nurse-midwives",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Registered nurses",
+                        slug: "registered-nurses",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Clinical laboratory technologists and technicians",
+                        slug:
+                            "clinical-laboratory-technologists-and-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Diagnostic related technologists and technicians",
+                        slug:
+                            "diagnostic-related-technologists-and-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Emergency medical technicians and paramedics",
+                        slug: "emergency-medical-technicians-and-paramedics",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Dietitians and nutritionists",
+                        slug: "dietitians-and-nutritionists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Physician assistants",
+                        slug: "physician-assistants",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Occupational therapists",
+                        slug: "occupational-therapists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Respiratory therapists",
+                        slug: "respiratory-therapists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Speech-language pathologists",
+                        slug: "speech-language-pathologists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Therapists, all other",
+                        slug: "therapists-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Veterinarians",
+                        slug: "veterinarians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Dental hygienists",
+                        slug: "dental-hygienists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Dentists",
+                        slug: "dentists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Medical records and health information technicians",
+                        slug:
+                            "medical-records-and-health-information-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Miscellaneous health technologists and technicians",
+                        slug:
+                            "miscellaneous-health-technologists-and-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Other healthcare practitioners and technical occupations",
+                        slug:
+                            "other-healthcare-practitioners-and-technical-occupations",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Exercise physiologists",
+                        slug: "exercise-physiologists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Chiropractors",
+                        slug: "chiropractors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Optometrists",
+                        slug: "optometrists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Podiatrists",
+                        slug: "podiatrists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Audiologists",
+                        slug: "audiologists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Radiation therapists",
+                        slug: "radiation-therapists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Recreational therapists",
+                        slug: "recreational-therapists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Nurse anesthetists",
+                        slug: "nurse-anesthetists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Health diagnosing and treating practitioners, all other",
+                        slug:
+                            "health-diagnosing-and-treating-practitioners-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Opticians, dispensing",
+                        slug: "opticians-dispensing",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
             },
         },
         {
@@ -849,6 +4515,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Physicians and surgeons",
@@ -871,6 +4540,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -895,6 +4567,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Editors",
@@ -917,6 +4592,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -941,6 +4619,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Licensed practical and licensed vocational nurses",
@@ -964,6 +4645,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Service occupations",
@@ -985,6 +4669,593 @@ const GapAPI = {
                 ],
             },
             parent: null,
+            children: {
+                occupations: [
+                    {
+                        name: "Healthcare support occupations",
+                        slug: "healthcare-support-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name:
+                                        "Nursing, psychiatric, and home health aides",
+                                    slug:
+                                        "nursing-psychiatric-and-home-health-aides",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Physical therapist assistants and aides",
+                                    slug:
+                                        "physical-therapist-assistants-and-aides",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Massage therapists",
+                                    slug: "massage-therapists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Dental assistants",
+                                    slug: "dental-assistants",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Medical assistants",
+                                    slug: "medical-assistants",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Phlebotomists",
+                                    slug: "phlebotomists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Miscellaneous healthcare support occupations, including medical equipment preparers",
+                                    slug:
+                                        "miscellaneous-healthcare-support-occupations-including-medical-equipment-preparers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Occupational therapy assistants and aides",
+                                    slug:
+                                        "occupational-therapy-assistants-and-aides",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Medical transcriptionists",
+                                    slug: "medical-transcriptionists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Pharmacy aides",
+                                    slug: "pharmacy-aides",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Veterinary assistants and laboratory animal caretakers",
+                                    slug:
+                                        "veterinary-assistants-and-laboratory-animal-caretakers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name: "Protective service occupations",
+                        slug: "protective-service-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name:
+                                        "Bailiffs, correctional officers, and jailers",
+                                    slug:
+                                        "bailiffs-correctional-officers-and-jailers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Police and sheriff's patrol officers",
+                                    slug: "police-and-sheriffs-patrol-officers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Security guards and gaming surveillance officers",
+                                    slug:
+                                        "security-guards-and-gaming-surveillance-officers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Private detectives and investigators",
+                                    slug:
+                                        "private-detectives-and-investigators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "First-line supervisors of police and detectives",
+                                    slug:
+                                        "first-line-supervisors-of-police-and-detectives",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "First-line supervisors of protective service workers, all other",
+                                    slug:
+                                        "first-line-supervisors-of-protective-service-workers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Firefighters",
+                                    slug: "firefighters",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Detectives and criminal investigators",
+                                    slug:
+                                        "detectives-and-criminal-investigators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "First-line supervisors of correctional officers",
+                                    slug:
+                                        "first-line-supervisors-of-correctional-officers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "First-line supervisors of fire fighting and prevention workers",
+                                    slug:
+                                        "first-line-supervisors-of-fire-fighting-and-prevention-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Fire inspectors",
+                                    slug: "fire-inspectors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Fish and game wardens",
+                                    slug: "fish-and-game-wardens",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Parking enforcement workers",
+                                    slug: "parking-enforcement-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Transit and railroad police",
+                                    slug: "transit-and-railroad-police",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Animal control workers",
+                                    slug: "animal-control-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Crossing guards",
+                                    slug: "crossing-guards",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Transportation security screeners",
+                                    slug: "transportation-security-screeners",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Lifeguards and other recreational, and all other protective service workers",
+                                    slug:
+                                        "lifeguards-and-other-recreational-and-all-other-protective-service-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name:
+                            "Food preparation and serving related occupations",
+                        slug:
+                            "food-preparation-and-serving-related-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name: "Chefs and head cooks",
+                                    slug: "chefs-and-head-cooks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Cooks",
+                                    slug: "cooks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Dining room and cafeteria attendants and bartender helpers",
+                                    slug:
+                                        "dining-room-and-cafeteria-attendants-and-bartender-helpers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "First-line supervisors of food preparation and serving workers",
+                                    slug:
+                                        "first-line-supervisors-of-food-preparation-and-serving-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Food preparation workers",
+                                    slug: "food-preparation-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Bartenders",
+                                    slug: "bartenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Combined food preparation and serving workers, including fast food",
+                                    slug:
+                                        "combined-food-preparation-and-serving-workers-including-fast-food",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Waiters and waitresses",
+                                    slug: "waiters-and-waitresses",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Food servers, nonrestaurant",
+                                    slug: "food-servers-nonrestaurant",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Hosts and hostesses, restaurant, lounge, and coffee shop",
+                                    slug:
+                                        "hosts-and-hostesses-restaurant-lounge-and-coffee-shop",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Dishwashers",
+                                    slug: "dishwashers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Counter attendants, cafeteria, food concession, and coffee shop",
+                                    slug:
+                                        "counter-attendants-cafeteria-food-concession-and-coffee-shop",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Food preparation and serving related workers, all other",
+                                    slug:
+                                        "food-preparation-and-serving-related-workers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name:
+                            "Building and grounds cleaning and maintenance occupations",
+                        slug:
+                            "building-and-grounds-cleaning-and-maintenance-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name:
+                                        "First-line supervisors of housekeeping and janitorial workers",
+                                    slug:
+                                        "first-line-supervisors-of-housekeeping-and-janitorial-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Janitors and building cleaners",
+                                    slug: "janitors-and-building-cleaners",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Maids and housekeeping cleaners",
+                                    slug: "maids-and-housekeeping-cleaners",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "First-line supervisors of landscaping, lawn service, and groundskeeping workers",
+                                    slug:
+                                        "first-line-supervisors-of-landscaping-lawn-service-and-groundskeeping-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Pest control workers",
+                                    slug: "pest-control-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Grounds maintenance workers",
+                                    slug: "grounds-maintenance-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name: "Personal care and service occupations",
+                        slug: "personal-care-and-service-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name:
+                                        "First-line supervisors of gaming workers",
+                                    slug:
+                                        "first-line-supervisors-of-gaming-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Personal care aides",
+                                    slug: "personal-care-aides",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Recreation and fitness workers",
+                                    slug: "recreation-and-fitness-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Gaming services workers",
+                                    slug: "gaming-services-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Personal care and service workers, all other",
+                                    slug:
+                                        "personal-care-and-service-workers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Nonfarm animal caretakers",
+                                    slug: "nonfarm-animal-caretakers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Hairdressers, hairstylists, and cosmetologists",
+                                    slug:
+                                        "hairdressers-hairstylists-and-cosmetologists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Miscellaneous personal appearance workers",
+                                    slug:
+                                        "miscellaneous-personal-appearance-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Childcare workers",
+                                    slug: "childcare-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Miscellaneous entertainment attendants and related workers",
+                                    slug:
+                                        "miscellaneous-entertainment-attendants-and-related-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Barbers",
+                                    slug: "barbers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Baggage porters, bellhops, and concierges",
+                                    slug:
+                                        "baggage-porters-bellhops-and-concierges",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "First-line supervisors of personal service workers",
+                                    slug:
+                                        "first-line-supervisors-of-personal-service-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Animal trainers",
+                                    slug: "animal-trainers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Motion picture projectionists",
+                                    slug: "motion-picture-projectionists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Ushers, lobby attendants, and ticket takers",
+                                    slug:
+                                        "ushers-lobby-attendants-and-ticket-takers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Embalmers and funeral attendants",
+                                    slug: "embalmers-and-funeral-attendants",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Morticians, undertakers, and funeral directors",
+                                    slug:
+                                        "morticians-undertakers-and-funeral-directors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Tour and travel guides",
+                                    slug: "tour-and-travel-guides",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Residential advisors",
+                                    slug: "residential-advisors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Healthcare support occupations",
@@ -1007,6 +5278,91 @@ const GapAPI = {
             },
             parent: {
                 slug: "service-occupations",
+            },
+            children: {
+                occupations: [
+                    {
+                        name: "Nursing, psychiatric, and home health aides",
+                        slug: "nursing-psychiatric-and-home-health-aides",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Physical therapist assistants and aides",
+                        slug: "physical-therapist-assistants-and-aides",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Massage therapists",
+                        slug: "massage-therapists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Dental assistants",
+                        slug: "dental-assistants",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Medical assistants",
+                        slug: "medical-assistants",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Phlebotomists",
+                        slug: "phlebotomists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Miscellaneous healthcare support occupations, including medical equipment preparers",
+                        slug:
+                            "miscellaneous-healthcare-support-occupations-including-medical-equipment-preparers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Occupational therapy assistants and aides",
+                        slug: "occupational-therapy-assistants-and-aides",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Medical transcriptionists",
+                        slug: "medical-transcriptionists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Pharmacy aides",
+                        slug: "pharmacy-aides",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Veterinary assistants and laboratory animal caretakers",
+                        slug:
+                            "veterinary-assistants-and-laboratory-animal-caretakers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
             },
         },
         {
@@ -1031,6 +5387,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Protective service occupations",
@@ -1053,6 +5412,144 @@ const GapAPI = {
             },
             parent: {
                 slug: "service-occupations",
+            },
+            children: {
+                occupations: [
+                    {
+                        name: "Bailiffs, correctional officers, and jailers",
+                        slug: "bailiffs-correctional-officers-and-jailers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Police and sheriff's patrol officers",
+                        slug: "police-and-sheriffs-patrol-officers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Security guards and gaming surveillance officers",
+                        slug:
+                            "security-guards-and-gaming-surveillance-officers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Private detectives and investigators",
+                        slug: "private-detectives-and-investigators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "First-line supervisors of police and detectives",
+                        slug: "first-line-supervisors-of-police-and-detectives",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "First-line supervisors of protective service workers, all other",
+                        slug:
+                            "first-line-supervisors-of-protective-service-workers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Firefighters",
+                        slug: "firefighters",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Detectives and criminal investigators",
+                        slug: "detectives-and-criminal-investigators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "First-line supervisors of correctional officers",
+                        slug: "first-line-supervisors-of-correctional-officers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "First-line supervisors of fire fighting and prevention workers",
+                        slug:
+                            "first-line-supervisors-of-fire-fighting-and-prevention-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Fire inspectors",
+                        slug: "fire-inspectors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Fish and game wardens",
+                        slug: "fish-and-game-wardens",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Parking enforcement workers",
+                        slug: "parking-enforcement-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Transit and railroad police",
+                        slug: "transit-and-railroad-police",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Animal control workers",
+                        slug: "animal-control-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Crossing guards",
+                        slug: "crossing-guards",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Transportation security screeners",
+                        slug: "transportation-security-screeners",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Lifeguards and other recreational, and all other protective service workers",
+                        slug:
+                            "lifeguards-and-other-recreational-and-all-other-protective-service-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
             },
         },
         {
@@ -1077,6 +5574,9 @@ const GapAPI = {
             parent: {
                 slug: "protective-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Police and sheriff's patrol officers",
@@ -1099,6 +5599,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "protective-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -1123,6 +5626,9 @@ const GapAPI = {
             parent: {
                 slug: "protective-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Food preparation and serving related occupations",
@@ -1145,6 +5651,113 @@ const GapAPI = {
             },
             parent: {
                 slug: "service-occupations",
+            },
+            children: {
+                occupations: [
+                    {
+                        name: "Chefs and head cooks",
+                        slug: "chefs-and-head-cooks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Cooks",
+                        slug: "cooks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Dining room and cafeteria attendants and bartender helpers",
+                        slug:
+                            "dining-room-and-cafeteria-attendants-and-bartender-helpers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "First-line supervisors of food preparation and serving workers",
+                        slug:
+                            "first-line-supervisors-of-food-preparation-and-serving-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Food preparation workers",
+                        slug: "food-preparation-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Bartenders",
+                        slug: "bartenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Combined food preparation and serving workers, including fast food",
+                        slug:
+                            "combined-food-preparation-and-serving-workers-including-fast-food",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Waiters and waitresses",
+                        slug: "waiters-and-waitresses",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Food servers, nonrestaurant",
+                        slug: "food-servers-nonrestaurant",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Hosts and hostesses, restaurant, lounge, and coffee shop",
+                        slug:
+                            "hosts-and-hostesses-restaurant-lounge-and-coffee-shop",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Dishwashers",
+                        slug: "dishwashers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Counter attendants, cafeteria, food concession, and coffee shop",
+                        slug:
+                            "counter-attendants-cafeteria-food-concession-and-coffee-shop",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Food preparation and serving related workers, all other",
+                        slug:
+                            "food-preparation-and-serving-related-workers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
             },
         },
         {
@@ -1169,6 +5782,9 @@ const GapAPI = {
             parent: {
                 slug: "food-preparation-and-serving-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Cooks",
@@ -1191,6 +5807,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "food-preparation-and-serving-related-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -1215,6 +5834,9 @@ const GapAPI = {
             parent: {
                 slug: "food-preparation-and-serving-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Building and grounds cleaning and maintenance occupations",
@@ -1237,6 +5859,56 @@ const GapAPI = {
             },
             parent: {
                 slug: "service-occupations",
+            },
+            children: {
+                occupations: [
+                    {
+                        name:
+                            "First-line supervisors of housekeeping and janitorial workers",
+                        slug:
+                            "first-line-supervisors-of-housekeeping-and-janitorial-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Janitors and building cleaners",
+                        slug: "janitors-and-building-cleaners",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Maids and housekeeping cleaners",
+                        slug: "maids-and-housekeeping-cleaners",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "First-line supervisors of landscaping, lawn service, and groundskeeping workers",
+                        slug:
+                            "first-line-supervisors-of-landscaping-lawn-service-and-groundskeeping-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Pest control workers",
+                        slug: "pest-control-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Grounds maintenance workers",
+                        slug: "grounds-maintenance-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
             },
         },
         {
@@ -1264,6 +5936,9 @@ const GapAPI = {
                 slug:
                     "building-and-grounds-cleaning-and-maintenance-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Janitors and building cleaners",
@@ -1287,6 +5962,9 @@ const GapAPI = {
             parent: {
                 slug:
                     "building-and-grounds-cleaning-and-maintenance-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -1312,6 +5990,9 @@ const GapAPI = {
                 slug:
                     "building-and-grounds-cleaning-and-maintenance-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Personal care and service occupations",
@@ -1334,6 +6015,154 @@ const GapAPI = {
             },
             parent: {
                 slug: "service-occupations",
+            },
+            children: {
+                occupations: [
+                    {
+                        name: "First-line supervisors of gaming workers",
+                        slug: "first-line-supervisors-of-gaming-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Personal care aides",
+                        slug: "personal-care-aides",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Recreation and fitness workers",
+                        slug: "recreation-and-fitness-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Gaming services workers",
+                        slug: "gaming-services-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Personal care and service workers, all other",
+                        slug: "personal-care-and-service-workers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Nonfarm animal caretakers",
+                        slug: "nonfarm-animal-caretakers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Hairdressers, hairstylists, and cosmetologists",
+                        slug: "hairdressers-hairstylists-and-cosmetologists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Miscellaneous personal appearance workers",
+                        slug: "miscellaneous-personal-appearance-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Childcare workers",
+                        slug: "childcare-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Miscellaneous entertainment attendants and related workers",
+                        slug:
+                            "miscellaneous-entertainment-attendants-and-related-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Barbers",
+                        slug: "barbers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Baggage porters, bellhops, and concierges",
+                        slug: "baggage-porters-bellhops-and-concierges",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "First-line supervisors of personal service workers",
+                        slug:
+                            "first-line-supervisors-of-personal-service-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Animal trainers",
+                        slug: "animal-trainers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Motion picture projectionists",
+                        slug: "motion-picture-projectionists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Ushers, lobby attendants, and ticket takers",
+                        slug: "ushers-lobby-attendants-and-ticket-takers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Embalmers and funeral attendants",
+                        slug: "embalmers-and-funeral-attendants",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Morticians, undertakers, and funeral directors",
+                        slug: "morticians-undertakers-and-funeral-directors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Tour and travel guides",
+                        slug: "tour-and-travel-guides",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Residential advisors",
+                        slug: "residential-advisors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
             },
         },
         {
@@ -1358,6 +6187,9 @@ const GapAPI = {
             parent: {
                 slug: "personal-care-and-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Personal care aides",
@@ -1380,6 +6212,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "personal-care-and-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -1404,6 +6239,9 @@ const GapAPI = {
             parent: {
                 slug: "personal-care-and-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Sales and office occupations",
@@ -1425,6 +6263,575 @@ const GapAPI = {
                 ],
             },
             parent: null,
+            children: {
+                occupations: [
+                    {
+                        name: "Sales and related occupations",
+                        slug: "sales-and-related-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name:
+                                        "Sales and related workers, all other",
+                                    slug: "sales-and-related-workers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Counter and rental clerks",
+                                    slug: "counter-and-rental-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Travel agents",
+                                    slug: "travel-agents",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "First-line supervisors of retail sales workers",
+                                    slug:
+                                        "first-line-supervisors-of-retail-sales-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "First-line supervisors of non-retail sales workers",
+                                    slug:
+                                        "first-line-supervisors-of-non-retail-sales-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Cashiers",
+                                    slug: "cashiers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Retail salespersons",
+                                    slug: "retail-salespersons",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Advertising sales agents",
+                                    slug: "advertising-sales-agents",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Insurance sales agents",
+                                    slug: "insurance-sales-agents",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Securities, commodities, and financial services sales agents",
+                                    slug:
+                                        "securities-commodities-and-financial-services-sales-agents",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Sales representatives, services, all other",
+                                    slug:
+                                        "sales-representatives-services-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Sales representatives, wholesale and manufacturing",
+                                    slug:
+                                        "sales-representatives-wholesale-and-manufacturing",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Real estate brokers and sales agents",
+                                    slug:
+                                        "real-estate-brokers-and-sales-agents",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Parts salespersons",
+                                    slug: "parts-salespersons",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Telemarketers",
+                                    slug: "telemarketers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Models, demonstrators, and product promoters",
+                                    slug:
+                                        "models-demonstrators-and-product-promoters",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Sales engineers",
+                                    slug: "sales-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Door-to-door sales workers, news and street vendors, and related workers",
+                                    slug:
+                                        "door-to-door-sales-workers-news-and-street-vendors-and-related-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name: "Office and administrative support occupations",
+                        slug: "office-and-administrative-support-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name:
+                                        "First-line supervisors of office and administrative support workers",
+                                    slug:
+                                        "first-line-supervisors-of-office-and-administrative-support-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Bookkeeping, accounting, and auditing clerks",
+                                    slug:
+                                        "bookkeeping-accounting-and-auditing-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Customer service representatives",
+                                    slug: "customer-service-representatives",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Receptionists and information clerks",
+                                    slug:
+                                        "receptionists-and-information-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Dispatchers",
+                                    slug: "dispatchers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Postal service mail carriers",
+                                    slug: "postal-service-mail-carriers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Production, planning, and expediting clerks",
+                                    slug:
+                                        "production-planning-and-expediting-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Shipping, receiving, and traffic clerks",
+                                    slug:
+                                        "shipping-receiving-and-traffic-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Stock clerks and order fillers",
+                                    slug: "stock-clerks-and-order-fillers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Secretaries and administrative assistants",
+                                    slug:
+                                        "secretaries-and-administrative-assistants",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Data entry keyers",
+                                    slug: "data-entry-keyers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Office clerks, general",
+                                    slug: "office-clerks-general",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Office and administrative support workers, all other",
+                                    slug:
+                                        "office-and-administrative-support-workers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Insurance claims and policy processing clerks",
+                                    slug:
+                                        "insurance-claims-and-policy-processing-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Reservation and transportation ticket agents and travel clerks",
+                                    slug:
+                                        "reservation-and-transportation-ticket-agents-and-travel-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Information and record clerks, all other",
+                                    slug:
+                                        "information-and-record-clerks-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Postal service clerks",
+                                    slug: "postal-service-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Postal service mail sorters, processors, and processing machine operators",
+                                    slug:
+                                        "postal-service-mail-sorters-processors-and-processing-machine-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Weighers, measurers, checkers, and samplers, recordkeeping",
+                                    slug:
+                                        "weighers-measurers-checkers-and-samplers-recordkeeping",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Computer operators",
+                                    slug: "computer-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Bill and account collectors",
+                                    slug: "bill-and-account-collectors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Billing and posting clerks",
+                                    slug: "billing-and-posting-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Payroll and timekeeping clerks",
+                                    slug: "payroll-and-timekeeping-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Library assistants, clerical",
+                                    slug: "library-assistants-clerical",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Tellers",
+                                    slug: "tellers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Financial clerks, all other",
+                                    slug: "financial-clerks-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Court, municipal, and license clerks",
+                                    slug: "court-municipal-and-license-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Eligibility interviewers, government programs",
+                                    slug:
+                                        "eligibility-interviewers-government-programs",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "File clerks",
+                                    slug: "file-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Hotel, motel, and resort desk clerks",
+                                    slug: "hotel-motel-and-resort-desk-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Interviewers, except eligibility and loan",
+                                    slug:
+                                        "interviewers-except-eligibility-and-loan",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Loan interviewers and clerks",
+                                    slug: "loan-interviewers-and-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Couriers and messengers",
+                                    slug: "couriers-and-messengers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Order clerks",
+                                    slug: "order-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Human resources assistants, except payroll and timekeeping",
+                                    slug:
+                                        "human-resources-assistants-except-payroll-and-timekeeping",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Statistical assistants",
+                                    slug: "statistical-assistants",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Switchboard operators, including answering service",
+                                    slug:
+                                        "switchboard-operators-including-answering-service",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Telephone operators",
+                                    slug: "telephone-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Communications equipment operators, all other",
+                                    slug:
+                                        "communications-equipment-operators-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Gaming cage workers",
+                                    slug: "gaming-cage-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Procurement clerks",
+                                    slug: "procurement-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Brokerage clerks",
+                                    slug: "brokerage-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Correspondence clerks",
+                                    slug: "correspondence-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Credit authorizers, checkers, and clerks",
+                                    slug:
+                                        "credit-authorizers-checkers-and-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "New accounts clerks",
+                                    slug: "new-accounts-clerks",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Cargo and freight agents",
+                                    slug: "cargo-and-freight-agents",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Meter readers, utilities",
+                                    slug: "meter-readers-utilities",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Word processors and typists",
+                                    slug: "word-processors-and-typists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Desktop publishers",
+                                    slug: "desktop-publishers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Mail clerks and mail machine operators, except postal service",
+                                    slug:
+                                        "mail-clerks-and-mail-machine-operators-except-postal-service",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Office machine operators, except computer",
+                                    slug:
+                                        "office-machine-operators-except-computer",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Proofreaders and copy markers",
+                                    slug: "proofreaders-and-copy-markers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Sales and related occupations",
@@ -1447,6 +6854,144 @@ const GapAPI = {
             },
             parent: {
                 slug: "sales-and-office-occupations",
+            },
+            children: {
+                occupations: [
+                    {
+                        name: "Sales and related workers, all other",
+                        slug: "sales-and-related-workers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Counter and rental clerks",
+                        slug: "counter-and-rental-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Travel agents",
+                        slug: "travel-agents",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "First-line supervisors of retail sales workers",
+                        slug: "first-line-supervisors-of-retail-sales-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "First-line supervisors of non-retail sales workers",
+                        slug:
+                            "first-line-supervisors-of-non-retail-sales-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Cashiers",
+                        slug: "cashiers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Retail salespersons",
+                        slug: "retail-salespersons",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Advertising sales agents",
+                        slug: "advertising-sales-agents",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Insurance sales agents",
+                        slug: "insurance-sales-agents",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Securities, commodities, and financial services sales agents",
+                        slug:
+                            "securities-commodities-and-financial-services-sales-agents",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Sales representatives, services, all other",
+                        slug: "sales-representatives-services-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Sales representatives, wholesale and manufacturing",
+                        slug:
+                            "sales-representatives-wholesale-and-manufacturing",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Real estate brokers and sales agents",
+                        slug: "real-estate-brokers-and-sales-agents",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Parts salespersons",
+                        slug: "parts-salespersons",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Telemarketers",
+                        slug: "telemarketers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Models, demonstrators, and product promoters",
+                        slug: "models-demonstrators-and-product-promoters",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Sales engineers",
+                        slug: "sales-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Door-to-door sales workers, news and street vendors, and related workers",
+                        slug:
+                            "door-to-door-sales-workers-news-and-street-vendors-and-related-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
             },
         },
         {
@@ -1471,6 +7016,9 @@ const GapAPI = {
             parent: {
                 slug: "sales-and-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Office and administrative support occupations",
@@ -1493,6 +7041,390 @@ const GapAPI = {
             },
             parent: {
                 slug: "sales-and-office-occupations",
+            },
+            children: {
+                occupations: [
+                    {
+                        name:
+                            "First-line supervisors of office and administrative support workers",
+                        slug:
+                            "first-line-supervisors-of-office-and-administrative-support-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Bookkeeping, accounting, and auditing clerks",
+                        slug: "bookkeeping-accounting-and-auditing-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Customer service representatives",
+                        slug: "customer-service-representatives",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Receptionists and information clerks",
+                        slug: "receptionists-and-information-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Dispatchers",
+                        slug: "dispatchers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Postal service mail carriers",
+                        slug: "postal-service-mail-carriers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Production, planning, and expediting clerks",
+                        slug: "production-planning-and-expediting-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Shipping, receiving, and traffic clerks",
+                        slug: "shipping-receiving-and-traffic-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Stock clerks and order fillers",
+                        slug: "stock-clerks-and-order-fillers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Secretaries and administrative assistants",
+                        slug: "secretaries-and-administrative-assistants",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Data entry keyers",
+                        slug: "data-entry-keyers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Office clerks, general",
+                        slug: "office-clerks-general",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Office and administrative support workers, all other",
+                        slug:
+                            "office-and-administrative-support-workers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Insurance claims and policy processing clerks",
+                        slug: "insurance-claims-and-policy-processing-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Reservation and transportation ticket agents and travel clerks",
+                        slug:
+                            "reservation-and-transportation-ticket-agents-and-travel-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Information and record clerks, all other",
+                        slug: "information-and-record-clerks-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Postal service clerks",
+                        slug: "postal-service-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Postal service mail sorters, processors, and processing machine operators",
+                        slug:
+                            "postal-service-mail-sorters-processors-and-processing-machine-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Weighers, measurers, checkers, and samplers, recordkeeping",
+                        slug:
+                            "weighers-measurers-checkers-and-samplers-recordkeeping",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Computer operators",
+                        slug: "computer-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Bill and account collectors",
+                        slug: "bill-and-account-collectors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Billing and posting clerks",
+                        slug: "billing-and-posting-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Payroll and timekeeping clerks",
+                        slug: "payroll-and-timekeeping-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Library assistants, clerical",
+                        slug: "library-assistants-clerical",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Tellers",
+                        slug: "tellers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Financial clerks, all other",
+                        slug: "financial-clerks-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Court, municipal, and license clerks",
+                        slug: "court-municipal-and-license-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Eligibility interviewers, government programs",
+                        slug: "eligibility-interviewers-government-programs",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "File clerks",
+                        slug: "file-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Hotel, motel, and resort desk clerks",
+                        slug: "hotel-motel-and-resort-desk-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Interviewers, except eligibility and loan",
+                        slug: "interviewers-except-eligibility-and-loan",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Loan interviewers and clerks",
+                        slug: "loan-interviewers-and-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Couriers and messengers",
+                        slug: "couriers-and-messengers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Order clerks",
+                        slug: "order-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Human resources assistants, except payroll and timekeeping",
+                        slug:
+                            "human-resources-assistants-except-payroll-and-timekeeping",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Statistical assistants",
+                        slug: "statistical-assistants",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Switchboard operators, including answering service",
+                        slug:
+                            "switchboard-operators-including-answering-service",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Telephone operators",
+                        slug: "telephone-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Communications equipment operators, all other",
+                        slug: "communications-equipment-operators-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Gaming cage workers",
+                        slug: "gaming-cage-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Procurement clerks",
+                        slug: "procurement-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Brokerage clerks",
+                        slug: "brokerage-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Correspondence clerks",
+                        slug: "correspondence-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Credit authorizers, checkers, and clerks",
+                        slug: "credit-authorizers-checkers-and-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "New accounts clerks",
+                        slug: "new-accounts-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Cargo and freight agents",
+                        slug: "cargo-and-freight-agents",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Meter readers, utilities",
+                        slug: "meter-readers-utilities",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Word processors and typists",
+                        slug: "word-processors-and-typists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Desktop publishers",
+                        slug: "desktop-publishers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Mail clerks and mail machine operators, except postal service",
+                        slug:
+                            "mail-clerks-and-mail-machine-operators-except-postal-service",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Office machine operators, except computer",
+                        slug: "office-machine-operators-except-computer",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Proofreaders and copy markers",
+                        slug: "proofreaders-and-copy-markers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
             },
         },
         {
@@ -1519,6 +7451,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Bookkeeping, accounting, and auditing clerks",
@@ -1541,6 +7476,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -1565,6 +7503,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Receptionists and information clerks",
@@ -1587,6 +7528,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -1611,6 +7555,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Postal service mail carriers",
@@ -1633,6 +7580,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -1657,6 +7607,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Shipping, receiving, and traffic clerks",
@@ -1679,6 +7632,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -1703,6 +7659,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Secretaries and administrative assistants",
@@ -1725,6 +7684,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -1749,6 +7711,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Office clerks, general",
@@ -1771,6 +7736,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -1795,6 +7763,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name:
@@ -1817,6 +7788,725 @@ const GapAPI = {
                 ],
             },
             parent: null,
+            children: {
+                occupations: [
+                    {
+                        name: "Farming, fishing, and forestry occupations",
+                        slug: "farming-fishing-and-forestry-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name: "Miscellaneous agricultural workers",
+                                    slug: "miscellaneous-agricultural-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Graders and sorters, agricultural products",
+                                    slug:
+                                        "graders-and-sorters-agricultural-products",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "First-line supervisors of farming, fishing, and forestry workers",
+                                    slug:
+                                        "first-line-supervisors-of-farming-fishing-and-forestry-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Agricultural inspectors",
+                                    slug: "agricultural-inspectors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Animal breeders",
+                                    slug: "animal-breeders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Fishers and related fishing workers",
+                                    slug: "fishers-and-related-fishing-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Hunters and trappers",
+                                    slug: "hunters-and-trappers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Forest and conservation workers",
+                                    slug: "forest-and-conservation-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Logging workers",
+                                    slug: "logging-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name: "Construction and extraction occupations",
+                        slug: "construction-and-extraction-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name:
+                                        "First-line supervisors of construction trades and extraction workers",
+                                    slug:
+                                        "first-line-supervisors-of-construction-trades-and-extraction-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Brickmasons, blockmasons, and stonemasons",
+                                    slug:
+                                        "brickmasons-blockmasons-and-stonemasons",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Carpenters",
+                                    slug: "carpenters",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Carpet, floor, and tile installers and finishers",
+                                    slug:
+                                        "carpet-floor-and-tile-installers-and-finishers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Cement masons, concrete finishers, and terrazzo workers",
+                                    slug:
+                                        "cement-masons-concrete-finishers-and-terrazzo-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Construction laborers",
+                                    slug: "construction-laborers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Operating engineers and other construction equipment operators",
+                                    slug:
+                                        "operating-engineers-and-other-construction-equipment-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Drywall installers, ceiling tile installers, and tapers",
+                                    slug:
+                                        "drywall-installers-ceiling-tile-installers-and-tapers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Electricians",
+                                    slug: "electricians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Insulation workers",
+                                    slug: "insulation-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Painters, construction and maintenance",
+                                    slug:
+                                        "painters-construction-and-maintenance",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Pipelayers, plumbers, pipefitters, and steamfitters",
+                                    slug:
+                                        "pipelayers-plumbers-pipefitters-and-steamfitters",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Roofers",
+                                    slug: "roofers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Mining machine operators",
+                                    slug: "mining-machine-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Other extraction workers",
+                                    slug: "other-extraction-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Glaziers",
+                                    slug: "glaziers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Sheet metal workers",
+                                    slug: "sheet-metal-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Structural iron and steel workers",
+                                    slug: "structural-iron-and-steel-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Construction and building inspectors",
+                                    slug:
+                                        "construction-and-building-inspectors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Highway maintenance workers",
+                                    slug: "highway-maintenance-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Helpers, construction trades",
+                                    slug: "helpers-construction-trades",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Boilermakers",
+                                    slug: "boilermakers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Paving, surfacing, and tamping equipment operators",
+                                    slug:
+                                        "paving-surfacing-and-tamping-equipment-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Pile-driver operators",
+                                    slug: "pile-driver-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Paperhangers",
+                                    slug: "paperhangers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Plasterers and stucco masons",
+                                    slug: "plasterers-and-stucco-masons",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Reinforcing iron and rebar workers",
+                                    slug: "reinforcing-iron-and-rebar-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Solar photovoltaic installers",
+                                    slug: "solar-photovoltaic-installers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Elevator installers and repairers",
+                                    slug: "elevator-installers-and-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Fence erectors",
+                                    slug: "fence-erectors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Hazardous materials removal workers",
+                                    slug: "hazardous-materials-removal-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Rail-track laying and maintenance equipment operators",
+                                    slug:
+                                        "rail-track-laying-and-maintenance-equipment-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Septic tank servicers and sewer pipe cleaners",
+                                    slug:
+                                        "septic-tank-servicers-and-sewer-pipe-cleaners",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Miscellaneous construction and related workers",
+                                    slug:
+                                        "miscellaneous-construction-and-related-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Derrick, rotary drill, and service unit operators, oil, gas, and mining",
+                                    slug:
+                                        "derrick-rotary-drill-and-service-unit-operators-oil-gas-and-mining",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Earth drillers, except oil and gas",
+                                    slug: "earth-drillers-except-oil-and-gas",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Explosives workers, ordnance handling experts, and blasters",
+                                    slug:
+                                        "explosives-workers-ordnance-handling-experts-and-blasters",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Roof bolters, mining",
+                                    slug: "roof-bolters-mining",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Roustabouts, oil and gas",
+                                    slug: "roustabouts-oil-and-gas",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Helpers--extraction workers",
+                                    slug: "helpers-extraction-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name:
+                            "Installation, maintenance, and repair occupations",
+                        slug: "installation-maintenance-and-repair-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name:
+                                        "First-line supervisors of mechanics, installers, and repairers",
+                                    slug:
+                                        "first-line-supervisors-of-mechanics-installers-and-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Computer, automated teller, and office machine repairers",
+                                    slug:
+                                        "computer-automated-teller-and-office-machine-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Radio and telecommunications equipment installers and repairers",
+                                    slug:
+                                        "radio-and-telecommunications-equipment-installers-and-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Security and fire alarm systems installers",
+                                    slug:
+                                        "security-and-fire-alarm-systems-installers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Aircraft mechanics and service technicians",
+                                    slug:
+                                        "aircraft-mechanics-and-service-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Automotive body and related repairers",
+                                    slug:
+                                        "automotive-body-and-related-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Automotive service technicians and mechanics",
+                                    slug:
+                                        "automotive-service-technicians-and-mechanics",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Bus and truck mechanics and diesel engine specialists",
+                                    slug:
+                                        "bus-and-truck-mechanics-and-diesel-engine-specialists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Heavy vehicle and mobile equipment service technicians and mechanics",
+                                    slug:
+                                        "heavy-vehicle-and-mobile-equipment-service-technicians-and-mechanics",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Miscellaneous vehicle and mobile equipment mechanics, installers, and repairers",
+                                    slug:
+                                        "miscellaneous-vehicle-and-mobile-equipment-mechanics-installers-and-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Heating, air conditioning, and refrigeration mechanics and installers",
+                                    slug:
+                                        "heating-air-conditioning-and-refrigeration-mechanics-and-installers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Industrial and refractory machinery mechanics",
+                                    slug:
+                                        "industrial-and-refractory-machinery-mechanics",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Maintenance and repair workers, general",
+                                    slug:
+                                        "maintenance-and-repair-workers-general",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Electrical power-line installers and repairers",
+                                    slug:
+                                        "electrical-power-line-installers-and-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Telecommunications line installers and repairers",
+                                    slug:
+                                        "telecommunications-line-installers-and-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Millwrights",
+                                    slug: "millwrights",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Other installation, maintenance, and repair workers",
+                                    slug:
+                                        "other-installation-maintenance-and-repair-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Riggers",
+                                    slug: "riggers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Avionics technicians",
+                                    slug: "avionics-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Electric motor, power tool, and related repairers",
+                                    slug:
+                                        "electric-motor-power-tool-and-related-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Electrical and electronics installers and repairers, transportation equipment",
+                                    slug:
+                                        "electrical-and-electronics-installers-and-repairers-transportation-equipment",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Electrical and electronics repairers, industrial and utility",
+                                    slug:
+                                        "electrical-and-electronics-repairers-industrial-and-utility",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Electronic equipment installers and repairers, motor vehicles",
+                                    slug:
+                                        "electronic-equipment-installers-and-repairers-motor-vehicles",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Electronic home entertainment equipment installers and repairers",
+                                    slug:
+                                        "electronic-home-entertainment-equipment-installers-and-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Automotive glass installers and repairers",
+                                    slug:
+                                        "automotive-glass-installers-and-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Small engine mechanics",
+                                    slug: "small-engine-mechanics",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Control and valve installers and repairers",
+                                    slug:
+                                        "control-and-valve-installers-and-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Home appliance repairers",
+                                    slug: "home-appliance-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Maintenance workers, machinery",
+                                    slug: "maintenance-workers-machinery",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Precision instrument and equipment repairers",
+                                    slug:
+                                        "precision-instrument-and-equipment-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Wind turbine service technicians",
+                                    slug: "wind-turbine-service-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Coin, vending, and amusement machine servicers and repairers",
+                                    slug:
+                                        "coin-vending-and-amusement-machine-servicers-and-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Commercial divers",
+                                    slug: "commercial-divers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Locksmiths and safe repairers",
+                                    slug: "locksmiths-and-safe-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Manufactured building and mobile home installers",
+                                    slug:
+                                        "manufactured-building-and-mobile-home-installers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Signal and track switch repairers",
+                                    slug: "signal-and-track-switch-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Helpers--installation, maintenance, and repair workers",
+                                    slug:
+                                        "helpers-installation-maintenance-and-repair-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Farming, fishing, and forestry occupations",
@@ -1841,6 +8531,75 @@ const GapAPI = {
                 slug:
                     "natural-resources-construction-and-maintenance-occupations",
             },
+            children: {
+                occupations: [
+                    {
+                        name: "Miscellaneous agricultural workers",
+                        slug: "miscellaneous-agricultural-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Graders and sorters, agricultural products",
+                        slug: "graders-and-sorters-agricultural-products",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "First-line supervisors of farming, fishing, and forestry workers",
+                        slug:
+                            "first-line-supervisors-of-farming-fishing-and-forestry-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Agricultural inspectors",
+                        slug: "agricultural-inspectors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Animal breeders",
+                        slug: "animal-breeders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Fishers and related fishing workers",
+                        slug: "fishers-and-related-fishing-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Hunters and trappers",
+                        slug: "hunters-and-trappers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Forest and conservation workers",
+                        slug: "forest-and-conservation-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Logging workers",
+                        slug: "logging-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Miscellaneous agricultural workers",
@@ -1863,6 +8622,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "farming-fishing-and-forestry-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -1888,6 +8650,309 @@ const GapAPI = {
                 slug:
                     "natural-resources-construction-and-maintenance-occupations",
             },
+            children: {
+                occupations: [
+                    {
+                        name:
+                            "First-line supervisors of construction trades and extraction workers",
+                        slug:
+                            "first-line-supervisors-of-construction-trades-and-extraction-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Brickmasons, blockmasons, and stonemasons",
+                        slug: "brickmasons-blockmasons-and-stonemasons",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Carpenters",
+                        slug: "carpenters",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Carpet, floor, and tile installers and finishers",
+                        slug: "carpet-floor-and-tile-installers-and-finishers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Cement masons, concrete finishers, and terrazzo workers",
+                        slug:
+                            "cement-masons-concrete-finishers-and-terrazzo-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Construction laborers",
+                        slug: "construction-laborers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Operating engineers and other construction equipment operators",
+                        slug:
+                            "operating-engineers-and-other-construction-equipment-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Drywall installers, ceiling tile installers, and tapers",
+                        slug:
+                            "drywall-installers-ceiling-tile-installers-and-tapers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Electricians",
+                        slug: "electricians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Insulation workers",
+                        slug: "insulation-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Painters, construction and maintenance",
+                        slug: "painters-construction-and-maintenance",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Pipelayers, plumbers, pipefitters, and steamfitters",
+                        slug:
+                            "pipelayers-plumbers-pipefitters-and-steamfitters",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Roofers",
+                        slug: "roofers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Mining machine operators",
+                        slug: "mining-machine-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Other extraction workers",
+                        slug: "other-extraction-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Glaziers",
+                        slug: "glaziers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Sheet metal workers",
+                        slug: "sheet-metal-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Structural iron and steel workers",
+                        slug: "structural-iron-and-steel-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Construction and building inspectors",
+                        slug: "construction-and-building-inspectors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Highway maintenance workers",
+                        slug: "highway-maintenance-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Helpers, construction trades",
+                        slug: "helpers-construction-trades",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Boilermakers",
+                        slug: "boilermakers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Paving, surfacing, and tamping equipment operators",
+                        slug:
+                            "paving-surfacing-and-tamping-equipment-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Pile-driver operators",
+                        slug: "pile-driver-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Paperhangers",
+                        slug: "paperhangers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Plasterers and stucco masons",
+                        slug: "plasterers-and-stucco-masons",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Reinforcing iron and rebar workers",
+                        slug: "reinforcing-iron-and-rebar-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Solar photovoltaic installers",
+                        slug: "solar-photovoltaic-installers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Elevator installers and repairers",
+                        slug: "elevator-installers-and-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Fence erectors",
+                        slug: "fence-erectors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Hazardous materials removal workers",
+                        slug: "hazardous-materials-removal-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Rail-track laying and maintenance equipment operators",
+                        slug:
+                            "rail-track-laying-and-maintenance-equipment-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Septic tank servicers and sewer pipe cleaners",
+                        slug: "septic-tank-servicers-and-sewer-pipe-cleaners",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Miscellaneous construction and related workers",
+                        slug: "miscellaneous-construction-and-related-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Derrick, rotary drill, and service unit operators, oil, gas, and mining",
+                        slug:
+                            "derrick-rotary-drill-and-service-unit-operators-oil-gas-and-mining",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Earth drillers, except oil and gas",
+                        slug: "earth-drillers-except-oil-and-gas",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Explosives workers, ordnance handling experts, and blasters",
+                        slug:
+                            "explosives-workers-ordnance-handling-experts-and-blasters",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Roof bolters, mining",
+                        slug: "roof-bolters-mining",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Roustabouts, oil and gas",
+                        slug: "roustabouts-oil-and-gas",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Helpers--extraction workers",
+                        slug: "helpers-extraction-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Insurance claims and policy processing clerks",
@@ -1911,6 +8976,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Graders and sorters, agricultural products",
@@ -1933,6 +9001,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "farming-fishing-and-forestry-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -1959,6 +9030,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Brickmasons, blockmasons, and stonemasons",
@@ -1981,6 +9055,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2005,6 +9082,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Carpet, floor, and tile installers and finishers",
@@ -2027,6 +9107,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2051,6 +9134,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Construction laborers",
@@ -2073,6 +9159,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2099,6 +9188,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Drywall installers, ceiling tile installers, and tapers",
@@ -2121,6 +9213,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2145,6 +9240,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Insulation workers",
@@ -2167,6 +9265,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2191,6 +9292,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Pipelayers, plumbers, pipefitters, and steamfitters",
@@ -2214,6 +9318,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Roofers",
@@ -2236,6 +9343,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2261,6 +9371,302 @@ const GapAPI = {
                 slug:
                     "natural-resources-construction-and-maintenance-occupations",
             },
+            children: {
+                occupations: [
+                    {
+                        name:
+                            "First-line supervisors of mechanics, installers, and repairers",
+                        slug:
+                            "first-line-supervisors-of-mechanics-installers-and-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Computer, automated teller, and office machine repairers",
+                        slug:
+                            "computer-automated-teller-and-office-machine-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Radio and telecommunications equipment installers and repairers",
+                        slug:
+                            "radio-and-telecommunications-equipment-installers-and-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Security and fire alarm systems installers",
+                        slug: "security-and-fire-alarm-systems-installers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Aircraft mechanics and service technicians",
+                        slug: "aircraft-mechanics-and-service-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Automotive body and related repairers",
+                        slug: "automotive-body-and-related-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Automotive service technicians and mechanics",
+                        slug: "automotive-service-technicians-and-mechanics",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Bus and truck mechanics and diesel engine specialists",
+                        slug:
+                            "bus-and-truck-mechanics-and-diesel-engine-specialists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Heavy vehicle and mobile equipment service technicians and mechanics",
+                        slug:
+                            "heavy-vehicle-and-mobile-equipment-service-technicians-and-mechanics",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Miscellaneous vehicle and mobile equipment mechanics, installers, and repairers",
+                        slug:
+                            "miscellaneous-vehicle-and-mobile-equipment-mechanics-installers-and-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Heating, air conditioning, and refrigeration mechanics and installers",
+                        slug:
+                            "heating-air-conditioning-and-refrigeration-mechanics-and-installers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Industrial and refractory machinery mechanics",
+                        slug: "industrial-and-refractory-machinery-mechanics",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Maintenance and repair workers, general",
+                        slug: "maintenance-and-repair-workers-general",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Electrical power-line installers and repairers",
+                        slug: "electrical-power-line-installers-and-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Telecommunications line installers and repairers",
+                        slug:
+                            "telecommunications-line-installers-and-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Millwrights",
+                        slug: "millwrights",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Other installation, maintenance, and repair workers",
+                        slug:
+                            "other-installation-maintenance-and-repair-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Riggers",
+                        slug: "riggers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Avionics technicians",
+                        slug: "avionics-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Electric motor, power tool, and related repairers",
+                        slug: "electric-motor-power-tool-and-related-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Electrical and electronics installers and repairers, transportation equipment",
+                        slug:
+                            "electrical-and-electronics-installers-and-repairers-transportation-equipment",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Electrical and electronics repairers, industrial and utility",
+                        slug:
+                            "electrical-and-electronics-repairers-industrial-and-utility",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Electronic equipment installers and repairers, motor vehicles",
+                        slug:
+                            "electronic-equipment-installers-and-repairers-motor-vehicles",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Electronic home entertainment equipment installers and repairers",
+                        slug:
+                            "electronic-home-entertainment-equipment-installers-and-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Automotive glass installers and repairers",
+                        slug: "automotive-glass-installers-and-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Small engine mechanics",
+                        slug: "small-engine-mechanics",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Control and valve installers and repairers",
+                        slug: "control-and-valve-installers-and-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Home appliance repairers",
+                        slug: "home-appliance-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Maintenance workers, machinery",
+                        slug: "maintenance-workers-machinery",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Precision instrument and equipment repairers",
+                        slug: "precision-instrument-and-equipment-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Wind turbine service technicians",
+                        slug: "wind-turbine-service-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Coin, vending, and amusement machine servicers and repairers",
+                        slug:
+                            "coin-vending-and-amusement-machine-servicers-and-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Commercial divers",
+                        slug: "commercial-divers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Locksmiths and safe repairers",
+                        slug: "locksmiths-and-safe-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Manufactured building and mobile home installers",
+                        slug:
+                            "manufactured-building-and-mobile-home-installers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Signal and track switch repairers",
+                        slug: "signal-and-track-switch-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Helpers--installation, maintenance, and repair workers",
+                        slug:
+                            "helpers-installation-maintenance-and-repair-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Mining machine operators",
@@ -2283,6 +9689,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2309,6 +9718,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Computer, automated teller, and office machine repairers",
@@ -2331,6 +9743,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2357,6 +9772,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Security and fire alarm systems installers",
@@ -2379,6 +9797,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2403,6 +9824,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Automotive body and related repairers",
@@ -2425,6 +9849,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2449,6 +9876,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Bus and truck mechanics and diesel engine specialists",
@@ -2471,6 +9901,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2497,6 +9930,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name:
@@ -2521,6 +9957,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2547,6 +9986,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Industrial and refractory machinery mechanics",
@@ -2569,6 +10011,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2593,6 +10038,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Electrical power-line installers and repairers",
@@ -2615,6 +10063,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2639,6 +10090,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Other extraction workers",
@@ -2661,6 +10115,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2685,6 +10142,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Production, transportation, and material moving occupations",
@@ -2706,6 +10166,981 @@ const GapAPI = {
                 ],
             },
             parent: null,
+            children: {
+                occupations: [
+                    {
+                        name: "Production occupations",
+                        slug: "production-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name:
+                                        "First-line supervisors of production and operating workers",
+                                    slug:
+                                        "first-line-supervisors-of-production-and-operating-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Electrical, electronics, and electromechanical assemblers",
+                                    slug:
+                                        "electrical-electronics-and-electromechanical-assemblers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Miscellaneous assemblers and fabricators",
+                                    slug:
+                                        "miscellaneous-assemblers-and-fabricators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Bakers",
+                                    slug: "bakers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Butchers and other meat, poultry, and fish processing workers",
+                                    slug:
+                                        "butchers-and-other-meat-poultry-and-fish-processing-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Food processing workers, all other",
+                                    slug: "food-processing-workers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Metal workers and plastic workers, all other",
+                                    slug:
+                                        "metal-workers-and-plastic-workers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Laundry and dry-cleaning workers",
+                                    slug: "laundry-and-dry-cleaning-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Machinists",
+                                    slug: "machinists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Inspectors, testers, sorters, samplers, and weighers",
+                                    slug:
+                                        "inspectors-testers-sorters-samplers-and-weighers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Packaging and filling machine operators and tenders",
+                                    slug:
+                                        "packaging-and-filling-machine-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Production workers, all other",
+                                    slug: "production-workers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Stationary engineers and boiler operators",
+                                    slug:
+                                        "stationary-engineers-and-boiler-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Water and wastewater treatment plant and system operators",
+                                    slug:
+                                        "water-and-wastewater-treatment-plant-and-system-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Chemical processing machine setters, operators, and tenders",
+                                    slug:
+                                        "chemical-processing-machine-setters-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Crushing, grinding, polishing, mixing, and blending workers",
+                                    slug:
+                                        "crushing-grinding-polishing-mixing-and-blending-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Painting workers",
+                                    slug: "painting-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Tailors, dressmakers, and sewers",
+                                    slug: "tailors-dressmakers-and-sewers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Sewing machine operators",
+                                    slug: "sewing-machine-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Computer control programmers and operators",
+                                    slug:
+                                        "computer-control-programmers-and-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Cutting, punching, and press machine setters, operators, and tenders, metal and plastic",
+                                    slug:
+                                        "cutting-punching-and-press-machine-setters-operators-and-tenders-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Tool and die makers",
+                                    slug: "tool-and-die-makers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Welding, soldering, and brazing workers",
+                                    slug:
+                                        "welding-soldering-and-brazing-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Printing press operators",
+                                    slug: "printing-press-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Food batchmakers",
+                                    slug: "food-batchmakers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Cutting workers",
+                                    slug: "cutting-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Medical, dental, and ophthalmic laboratory technicians",
+                                    slug:
+                                        "medical-dental-and-ophthalmic-laboratory-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Shoe and leather workers and repairers",
+                                    slug:
+                                        "shoe-and-leather-workers-and-repairers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Aircraft structure, surfaces, rigging, and systems assemblers",
+                                    slug:
+                                        "aircraft-structure-surfaces-rigging-and-systems-assemblers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Engine and other machine assemblers",
+                                    slug: "engine-and-other-machine-assemblers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Structural metal fabricators and fitters",
+                                    slug:
+                                        "structural-metal-fabricators-and-fitters",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Food and tobacco roasting, baking, and drying machine operators and tenders",
+                                    slug:
+                                        "food-and-tobacco-roasting-baking-and-drying-machine-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Food cooking machine operators and tenders",
+                                    slug:
+                                        "food-cooking-machine-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Etchers and engravers",
+                                    slug: "etchers-and-engravers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Molders, shapers, and casters, except metal and plastic",
+                                    slug:
+                                        "molders-shapers-and-casters-except-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Extruding and drawing machine setters, operators, and tenders, metal and plastic",
+                                    slug:
+                                        "extruding-and-drawing-machine-setters-operators-and-tenders-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Forging machine setters, operators, and tenders, metal and plastic",
+                                    slug:
+                                        "forging-machine-setters-operators-and-tenders-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Tire builders",
+                                    slug: "tire-builders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Rolling machine setters, operators, and tenders, metal and plastic",
+                                    slug:
+                                        "rolling-machine-setters-operators-and-tenders-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Drilling and boring machine tool setters, operators, and tenders, metal and plastic",
+                                    slug:
+                                        "drilling-and-boring-machine-tool-setters-operators-and-tenders-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic",
+                                    slug:
+                                        "grinding-lapping-polishing-and-buffing-machine-tool-setters-operators-and-tenders-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Lathe and turning machine tool setters, operators, and tenders, metal and plastic",
+                                    slug:
+                                        "lathe-and-turning-machine-tool-setters-operators-and-tenders-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Milling and planing machine setters, operators, and tenders, metal and plastic",
+                                    slug:
+                                        "milling-and-planing-machine-setters-operators-and-tenders-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Metal furnace operators, tenders, pourers, and casters",
+                                    slug:
+                                        "metal-furnace-operators-tenders-pourers-and-casters",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Model makers and patternmakers, metal and plastic",
+                                    slug:
+                                        "model-makers-and-patternmakers-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Molders and molding machine setters, operators, and tenders, metal and plastic",
+                                    slug:
+                                        "molders-and-molding-machine-setters-operators-and-tenders-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Multiple machine tool setters, operators, and tenders, metal and plastic",
+                                    slug:
+                                        "multiple-machine-tool-setters-operators-and-tenders-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Heat treating equipment setters, operators, and tenders, metal and plastic",
+                                    slug:
+                                        "heat-treating-equipment-setters-operators-and-tenders-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Layout workers, metal and plastic",
+                                    slug: "layout-workers-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Plating and coating machine setters, operators, and tenders, metal and plastic",
+                                    slug:
+                                        "plating-and-coating-machine-setters-operators-and-tenders-metal-and-plastic",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Tool grinders, filers, and sharpeners",
+                                    slug: "tool-grinders-filers-and-sharpeners",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Prepress technicians and workers",
+                                    slug: "prepress-technicians-and-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Print binding and finishing workers",
+                                    slug: "print-binding-and-finishing-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Pressers, textile, garment, and related materials",
+                                    slug:
+                                        "pressers-textile-garment-and-related-materials",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Shoe machine operators and tenders",
+                                    slug: "shoe-machine-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Textile bleaching and dyeing machine operators and tenders",
+                                    slug:
+                                        "textile-bleaching-and-dyeing-machine-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Textile cutting machine setters, operators, and tenders",
+                                    slug:
+                                        "textile-cutting-machine-setters-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Textile knitting and weaving machine setters, operators, and tenders",
+                                    slug:
+                                        "textile-knitting-and-weaving-machine-setters-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Textile winding, twisting, and drawing out machine setters, operators, and tenders",
+                                    slug:
+                                        "textile-winding-twisting-and-drawing-out-machine-setters-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Extruding and forming machine setters, operators, and tenders, synthetic and glass fibers",
+                                    slug:
+                                        "extruding-and-forming-machine-setters-operators-and-tenders-synthetic-and-glass-fibers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Fabric and apparel patternmakers",
+                                    slug: "fabric-and-apparel-patternmakers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Upholsterers",
+                                    slug: "upholsterers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Textile, apparel, and furnishings workers, all other",
+                                    slug:
+                                        "textile-apparel-and-furnishings-workers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Cabinetmakers and bench carpenters",
+                                    slug: "cabinetmakers-and-bench-carpenters",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Furniture finishers",
+                                    slug: "furniture-finishers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Model makers and patternmakers, wood",
+                                    slug: "model-makers-and-patternmakers-wood",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Sawing machine setters, operators, and tenders, wood",
+                                    slug:
+                                        "sawing-machine-setters-operators-and-tenders-wood",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Woodworking machine setters, operators, and tenders, except sawing",
+                                    slug:
+                                        "woodworking-machine-setters-operators-and-tenders-except-sawing",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Woodworkers, all other",
+                                    slug: "woodworkers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Power plant operators, distributors, and dispatchers",
+                                    slug:
+                                        "power-plant-operators-distributors-and-dispatchers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Miscellaneous plant and system operators",
+                                    slug:
+                                        "miscellaneous-plant-and-system-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Extruding, forming, pressing, and compacting machine setters, operators, and tenders",
+                                    slug:
+                                        "extruding-forming-pressing-and-compacting-machine-setters-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Furnace, kiln, oven, drier, and kettle operators and tenders",
+                                    slug:
+                                        "furnace-kiln-oven-drier-and-kettle-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Jewelers and precious stone and metal workers",
+                                    slug:
+                                        "jewelers-and-precious-stone-and-metal-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Photographic process workers and processing machine operators",
+                                    slug:
+                                        "photographic-process-workers-and-processing-machine-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Semiconductor processors",
+                                    slug: "semiconductor-processors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Adhesive bonding machine operators and tenders",
+                                    slug:
+                                        "adhesive-bonding-machine-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Cleaning, washing, and metal pickling equipment operators and tenders",
+                                    slug:
+                                        "cleaning-washing-and-metal-pickling-equipment-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Cooling and freezing equipment operators and tenders",
+                                    slug:
+                                        "cooling-and-freezing-equipment-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Paper goods machine setters, operators, and tenders",
+                                    slug:
+                                        "paper-goods-machine-setters-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Helpers--production workers",
+                                    slug: "helpers-production-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                    {
+                        name: "Transportation and material moving occupations",
+                        slug: "transportation-and-material-moving-occupations",
+                        children: {
+                            occupations: [
+                                {
+                                    name: "Bus drivers",
+                                    slug: "bus-drivers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Flight attendants",
+                                    slug: "flight-attendants",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Supervisors of transportation and material moving workers",
+                                    slug:
+                                        "supervisors-of-transportation-and-material-moving-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Aircraft pilots and flight engineers",
+                                    slug:
+                                        "aircraft-pilots-and-flight-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Driver/sales workers and truck drivers",
+                                    slug:
+                                        "driver-sales-workers-and-truck-drivers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Taxi drivers and chauffeurs",
+                                    slug: "taxi-drivers-and-chauffeurs",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Industrial truck and tractor operators",
+                                    slug:
+                                        "industrial-truck-and-tractor-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Laborers and freight, stock, and material movers, hand",
+                                    slug:
+                                        "laborers-and-freight-stock-and-material-movers-hand",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Packers and packagers, hand",
+                                    slug: "packers-and-packagers-hand",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Railroad conductors and yardmasters",
+                                    slug: "railroad-conductors-and-yardmasters",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Parking lot attendants",
+                                    slug: "parking-lot-attendants",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Automotive and watercraft service attendants",
+                                    slug:
+                                        "automotive-and-watercraft-service-attendants",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Crane and tower operators",
+                                    slug: "crane-and-tower-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Cleaners of vehicles and equipment",
+                                    slug: "cleaners-of-vehicles-and-equipment",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Refuse and recyclable material collectors",
+                                    slug:
+                                        "refuse-and-recyclable-material-collectors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Air traffic controllers and airfield operations specialists",
+                                    slug:
+                                        "air-traffic-controllers-and-airfield-operations-specialists",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Ambulance drivers and attendants, except emergency medical technicians",
+                                    slug:
+                                        "ambulance-drivers-and-attendants-except-emergency-medical-technicians",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Motor vehicle operators, all other",
+                                    slug: "motor-vehicle-operators-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Locomotive engineers and operators",
+                                    slug: "locomotive-engineers-and-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Railroad brake, signal, and switch operators",
+                                    slug:
+                                        "railroad-brake-signal-and-switch-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Subway, streetcar, and other rail transportation workers",
+                                    slug:
+                                        "subway-streetcar-and-other-rail-transportation-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Sailors and marine oilers",
+                                    slug: "sailors-and-marine-oilers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Ship and boat captains and operators",
+                                    slug:
+                                        "ship-and-boat-captains-and-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Ship engineers",
+                                    slug: "ship-engineers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Bridge and lock tenders",
+                                    slug: "bridge-and-lock-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Transportation inspectors",
+                                    slug: "transportation-inspectors",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Transportation attendants, except flight attendants",
+                                    slug:
+                                        "transportation-attendants-except-flight-attendants",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Other transportation workers",
+                                    slug: "other-transportation-workers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Conveyor operators and tenders",
+                                    slug: "conveyor-operators-and-tenders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name:
+                                        "Dredge, excavating, and loading machine operators",
+                                    slug:
+                                        "dredge-excavating-and-loading-machine-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Hoist and winch operators",
+                                    slug: "hoist-and-winch-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Machine feeders and offbearers",
+                                    slug: "machine-feeders-and-offbearers",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Pumping station operators",
+                                    slug: "pumping-station-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Mine shuttle car operators",
+                                    slug: "mine-shuttle-car-operators",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Tank car, truck, and ship loaders",
+                                    slug: "tank-car-truck-and-ship-loaders",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                                {
+                                    name: "Material moving workers, all other",
+                                    slug: "material-moving-workers-all-other",
+                                    children: {
+                                        occupations: [],
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Production occupations",
@@ -2730,6 +11165,660 @@ const GapAPI = {
                 slug:
                     "production-transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [
+                    {
+                        name:
+                            "First-line supervisors of production and operating workers",
+                        slug:
+                            "first-line-supervisors-of-production-and-operating-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Electrical, electronics, and electromechanical assemblers",
+                        slug:
+                            "electrical-electronics-and-electromechanical-assemblers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Miscellaneous assemblers and fabricators",
+                        slug: "miscellaneous-assemblers-and-fabricators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Bakers",
+                        slug: "bakers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Butchers and other meat, poultry, and fish processing workers",
+                        slug:
+                            "butchers-and-other-meat-poultry-and-fish-processing-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Food processing workers, all other",
+                        slug: "food-processing-workers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Metal workers and plastic workers, all other",
+                        slug: "metal-workers-and-plastic-workers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Laundry and dry-cleaning workers",
+                        slug: "laundry-and-dry-cleaning-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Machinists",
+                        slug: "machinists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Inspectors, testers, sorters, samplers, and weighers",
+                        slug:
+                            "inspectors-testers-sorters-samplers-and-weighers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Packaging and filling machine operators and tenders",
+                        slug:
+                            "packaging-and-filling-machine-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Production workers, all other",
+                        slug: "production-workers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Stationary engineers and boiler operators",
+                        slug: "stationary-engineers-and-boiler-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Water and wastewater treatment plant and system operators",
+                        slug:
+                            "water-and-wastewater-treatment-plant-and-system-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Chemical processing machine setters, operators, and tenders",
+                        slug:
+                            "chemical-processing-machine-setters-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Crushing, grinding, polishing, mixing, and blending workers",
+                        slug:
+                            "crushing-grinding-polishing-mixing-and-blending-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Painting workers",
+                        slug: "painting-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Tailors, dressmakers, and sewers",
+                        slug: "tailors-dressmakers-and-sewers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Sewing machine operators",
+                        slug: "sewing-machine-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Computer control programmers and operators",
+                        slug: "computer-control-programmers-and-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Cutting, punching, and press machine setters, operators, and tenders, metal and plastic",
+                        slug:
+                            "cutting-punching-and-press-machine-setters-operators-and-tenders-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Tool and die makers",
+                        slug: "tool-and-die-makers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Welding, soldering, and brazing workers",
+                        slug: "welding-soldering-and-brazing-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Printing press operators",
+                        slug: "printing-press-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Food batchmakers",
+                        slug: "food-batchmakers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Cutting workers",
+                        slug: "cutting-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Medical, dental, and ophthalmic laboratory technicians",
+                        slug:
+                            "medical-dental-and-ophthalmic-laboratory-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Shoe and leather workers and repairers",
+                        slug: "shoe-and-leather-workers-and-repairers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Aircraft structure, surfaces, rigging, and systems assemblers",
+                        slug:
+                            "aircraft-structure-surfaces-rigging-and-systems-assemblers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Engine and other machine assemblers",
+                        slug: "engine-and-other-machine-assemblers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Structural metal fabricators and fitters",
+                        slug: "structural-metal-fabricators-and-fitters",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Food and tobacco roasting, baking, and drying machine operators and tenders",
+                        slug:
+                            "food-and-tobacco-roasting-baking-and-drying-machine-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Food cooking machine operators and tenders",
+                        slug: "food-cooking-machine-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Etchers and engravers",
+                        slug: "etchers-and-engravers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Molders, shapers, and casters, except metal and plastic",
+                        slug:
+                            "molders-shapers-and-casters-except-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Extruding and drawing machine setters, operators, and tenders, metal and plastic",
+                        slug:
+                            "extruding-and-drawing-machine-setters-operators-and-tenders-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Forging machine setters, operators, and tenders, metal and plastic",
+                        slug:
+                            "forging-machine-setters-operators-and-tenders-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Tire builders",
+                        slug: "tire-builders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Rolling machine setters, operators, and tenders, metal and plastic",
+                        slug:
+                            "rolling-machine-setters-operators-and-tenders-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Drilling and boring machine tool setters, operators, and tenders, metal and plastic",
+                        slug:
+                            "drilling-and-boring-machine-tool-setters-operators-and-tenders-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic",
+                        slug:
+                            "grinding-lapping-polishing-and-buffing-machine-tool-setters-operators-and-tenders-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Lathe and turning machine tool setters, operators, and tenders, metal and plastic",
+                        slug:
+                            "lathe-and-turning-machine-tool-setters-operators-and-tenders-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Milling and planing machine setters, operators, and tenders, metal and plastic",
+                        slug:
+                            "milling-and-planing-machine-setters-operators-and-tenders-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Metal furnace operators, tenders, pourers, and casters",
+                        slug:
+                            "metal-furnace-operators-tenders-pourers-and-casters",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Model makers and patternmakers, metal and plastic",
+                        slug:
+                            "model-makers-and-patternmakers-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Molders and molding machine setters, operators, and tenders, metal and plastic",
+                        slug:
+                            "molders-and-molding-machine-setters-operators-and-tenders-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Multiple machine tool setters, operators, and tenders, metal and plastic",
+                        slug:
+                            "multiple-machine-tool-setters-operators-and-tenders-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Heat treating equipment setters, operators, and tenders, metal and plastic",
+                        slug:
+                            "heat-treating-equipment-setters-operators-and-tenders-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Layout workers, metal and plastic",
+                        slug: "layout-workers-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Plating and coating machine setters, operators, and tenders, metal and plastic",
+                        slug:
+                            "plating-and-coating-machine-setters-operators-and-tenders-metal-and-plastic",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Tool grinders, filers, and sharpeners",
+                        slug: "tool-grinders-filers-and-sharpeners",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Prepress technicians and workers",
+                        slug: "prepress-technicians-and-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Print binding and finishing workers",
+                        slug: "print-binding-and-finishing-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Pressers, textile, garment, and related materials",
+                        slug: "pressers-textile-garment-and-related-materials",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Shoe machine operators and tenders",
+                        slug: "shoe-machine-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Textile bleaching and dyeing machine operators and tenders",
+                        slug:
+                            "textile-bleaching-and-dyeing-machine-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Textile cutting machine setters, operators, and tenders",
+                        slug:
+                            "textile-cutting-machine-setters-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Textile knitting and weaving machine setters, operators, and tenders",
+                        slug:
+                            "textile-knitting-and-weaving-machine-setters-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Textile winding, twisting, and drawing out machine setters, operators, and tenders",
+                        slug:
+                            "textile-winding-twisting-and-drawing-out-machine-setters-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Extruding and forming machine setters, operators, and tenders, synthetic and glass fibers",
+                        slug:
+                            "extruding-and-forming-machine-setters-operators-and-tenders-synthetic-and-glass-fibers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Fabric and apparel patternmakers",
+                        slug: "fabric-and-apparel-patternmakers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Upholsterers",
+                        slug: "upholsterers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Textile, apparel, and furnishings workers, all other",
+                        slug:
+                            "textile-apparel-and-furnishings-workers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Cabinetmakers and bench carpenters",
+                        slug: "cabinetmakers-and-bench-carpenters",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Furniture finishers",
+                        slug: "furniture-finishers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Model makers and patternmakers, wood",
+                        slug: "model-makers-and-patternmakers-wood",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Sawing machine setters, operators, and tenders, wood",
+                        slug:
+                            "sawing-machine-setters-operators-and-tenders-wood",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Woodworking machine setters, operators, and tenders, except sawing",
+                        slug:
+                            "woodworking-machine-setters-operators-and-tenders-except-sawing",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Woodworkers, all other",
+                        slug: "woodworkers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Power plant operators, distributors, and dispatchers",
+                        slug:
+                            "power-plant-operators-distributors-and-dispatchers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Miscellaneous plant and system operators",
+                        slug: "miscellaneous-plant-and-system-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Extruding, forming, pressing, and compacting machine setters, operators, and tenders",
+                        slug:
+                            "extruding-forming-pressing-and-compacting-machine-setters-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Furnace, kiln, oven, drier, and kettle operators and tenders",
+                        slug:
+                            "furnace-kiln-oven-drier-and-kettle-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Jewelers and precious stone and metal workers",
+                        slug: "jewelers-and-precious-stone-and-metal-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Photographic process workers and processing machine operators",
+                        slug:
+                            "photographic-process-workers-and-processing-machine-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Semiconductor processors",
+                        slug: "semiconductor-processors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Adhesive bonding machine operators and tenders",
+                        slug: "adhesive-bonding-machine-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Cleaning, washing, and metal pickling equipment operators and tenders",
+                        slug:
+                            "cleaning-washing-and-metal-pickling-equipment-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Cooling and freezing equipment operators and tenders",
+                        slug:
+                            "cooling-and-freezing-equipment-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Paper goods machine setters, operators, and tenders",
+                        slug:
+                            "paper-goods-machine-setters-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Helpers--production workers",
+                        slug: "helpers-production-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "First-line supervisors of production and operating workers",
@@ -2752,6 +11841,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2776,6 +11868,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Miscellaneous assemblers and fabricators",
@@ -2799,6 +11894,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Bakers",
@@ -2821,6 +11919,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2846,6 +11947,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Food processing workers, all other",
@@ -2868,6 +11972,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2892,6 +11999,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Laundry and dry-cleaning workers",
@@ -2914,6 +12024,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2938,6 +12051,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Inspectors, testers, sorters, samplers, and weighers",
@@ -2960,6 +12076,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -2984,6 +12103,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Production workers, all other",
@@ -3006,6 +12128,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3031,6 +12156,275 @@ const GapAPI = {
                 slug:
                     "production-transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [
+                    {
+                        name: "Bus drivers",
+                        slug: "bus-drivers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Flight attendants",
+                        slug: "flight-attendants",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Supervisors of transportation and material moving workers",
+                        slug:
+                            "supervisors-of-transportation-and-material-moving-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Aircraft pilots and flight engineers",
+                        slug: "aircraft-pilots-and-flight-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Driver/sales workers and truck drivers",
+                        slug: "driver-sales-workers-and-truck-drivers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Taxi drivers and chauffeurs",
+                        slug: "taxi-drivers-and-chauffeurs",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Industrial truck and tractor operators",
+                        slug: "industrial-truck-and-tractor-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Laborers and freight, stock, and material movers, hand",
+                        slug:
+                            "laborers-and-freight-stock-and-material-movers-hand",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Packers and packagers, hand",
+                        slug: "packers-and-packagers-hand",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Railroad conductors and yardmasters",
+                        slug: "railroad-conductors-and-yardmasters",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Parking lot attendants",
+                        slug: "parking-lot-attendants",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Automotive and watercraft service attendants",
+                        slug: "automotive-and-watercraft-service-attendants",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Crane and tower operators",
+                        slug: "crane-and-tower-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Cleaners of vehicles and equipment",
+                        slug: "cleaners-of-vehicles-and-equipment",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Refuse and recyclable material collectors",
+                        slug: "refuse-and-recyclable-material-collectors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Air traffic controllers and airfield operations specialists",
+                        slug:
+                            "air-traffic-controllers-and-airfield-operations-specialists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Ambulance drivers and attendants, except emergency medical technicians",
+                        slug:
+                            "ambulance-drivers-and-attendants-except-emergency-medical-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Motor vehicle operators, all other",
+                        slug: "motor-vehicle-operators-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Locomotive engineers and operators",
+                        slug: "locomotive-engineers-and-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Railroad brake, signal, and switch operators",
+                        slug: "railroad-brake-signal-and-switch-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Subway, streetcar, and other rail transportation workers",
+                        slug:
+                            "subway-streetcar-and-other-rail-transportation-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Sailors and marine oilers",
+                        slug: "sailors-and-marine-oilers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Ship and boat captains and operators",
+                        slug: "ship-and-boat-captains-and-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Ship engineers",
+                        slug: "ship-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Bridge and lock tenders",
+                        slug: "bridge-and-lock-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Transportation inspectors",
+                        slug: "transportation-inspectors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Transportation attendants, except flight attendants",
+                        slug:
+                            "transportation-attendants-except-flight-attendants",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Other transportation workers",
+                        slug: "other-transportation-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Conveyor operators and tenders",
+                        slug: "conveyor-operators-and-tenders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Dredge, excavating, and loading machine operators",
+                        slug: "dredge-excavating-and-loading-machine-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Hoist and winch operators",
+                        slug: "hoist-and-winch-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Machine feeders and offbearers",
+                        slug: "machine-feeders-and-offbearers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Pumping station operators",
+                        slug: "pumping-station-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Mine shuttle car operators",
+                        slug: "mine-shuttle-car-operators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Tank car, truck, and ship loaders",
+                        slug: "tank-car-truck-and-ship-loaders",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Material moving workers, all other",
+                        slug: "material-moving-workers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Bus drivers",
@@ -3053,6 +12447,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3077,6 +12474,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Stationary engineers and boiler operators",
@@ -3099,6 +12499,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3123,6 +12526,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Chemical processing machine setters, operators, and tenders",
@@ -3145,6 +12551,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3169,6 +12578,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Painting workers",
@@ -3191,6 +12603,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3215,6 +12630,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Aircraft pilots and flight engineers",
@@ -3237,6 +12655,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3261,6 +12682,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Driver/sales workers and truck drivers",
@@ -3283,6 +12707,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3307,6 +12734,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Industrial truck and tractor operators",
@@ -3329,6 +12759,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3353,6 +12786,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Packers and packagers, hand",
@@ -3375,6 +12811,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3399,6 +12838,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Parking lot attendants",
@@ -3421,6 +12863,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3445,6 +12890,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Crane and tower operators",
@@ -3467,6 +12915,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3491,6 +12942,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Refuse and recyclable material collectors",
@@ -3513,6 +12967,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3537,6 +12994,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Advertising and promotions managers",
@@ -3559,6 +13019,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3583,6 +13046,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Training and development managers",
@@ -3605,6 +13071,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3629,6 +13098,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Gaming managers",
@@ -3651,6 +13123,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3675,6 +13150,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Postmasters and mail superintendents",
@@ -3698,6 +13176,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Emergency management directors",
@@ -3720,6 +13201,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3746,6 +13230,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Buyers and purchasing agents, farm products",
@@ -3768,6 +13255,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "business-and-financial-operations-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3792,6 +13282,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Library technicians",
@@ -3815,6 +13308,9 @@ const GapAPI = {
             parent: {
                 slug: "education-training-and-library-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Nurse practitioners",
@@ -3837,6 +13333,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3863,6 +13362,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Information and record clerks, all other",
@@ -3885,6 +13387,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3909,6 +13414,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Counter and rental clerks",
@@ -3932,6 +13440,9 @@ const GapAPI = {
             parent: {
                 slug: "sales-and-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Postal service clerks",
@@ -3954,6 +13465,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -3980,6 +13494,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Weighers, measurers, checkers, and samplers, recordkeeping",
@@ -4002,6 +13519,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4026,6 +13546,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Actuaries",
@@ -4048,6 +13571,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "computer-and-mathematical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4072,6 +13598,9 @@ const GapAPI = {
             parent: {
                 slug: "computer-and-mathematical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Miscellaneous mathematical science occupations",
@@ -4094,6 +13623,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "computer-and-mathematical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4118,6 +13650,9 @@ const GapAPI = {
             parent: {
                 slug: "architecture-and-engineering-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Agricultural engineers",
@@ -4140,6 +13675,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "architecture-and-engineering-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4164,6 +13702,9 @@ const GapAPI = {
             parent: {
                 slug: "architecture-and-engineering-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Environmental engineers",
@@ -4186,6 +13727,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "architecture-and-engineering-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4210,6 +13754,9 @@ const GapAPI = {
             parent: {
                 slug: "architecture-and-engineering-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Materials engineers",
@@ -4232,6 +13779,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "architecture-and-engineering-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4258,6 +13808,9 @@ const GapAPI = {
             parent: {
                 slug: "architecture-and-engineering-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Nuclear engineers",
@@ -4280,6 +13833,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "architecture-and-engineering-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4304,6 +13860,9 @@ const GapAPI = {
             parent: {
                 slug: "architecture-and-engineering-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Agricultural and food scientists",
@@ -4326,6 +13885,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "life-physical-and-social-science-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4350,6 +13912,9 @@ const GapAPI = {
             parent: {
                 slug: "life-physical-and-social-science-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Nurse midwives",
@@ -4372,6 +13937,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4396,6 +13964,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Massage therapists",
@@ -4418,6 +13989,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4442,6 +14016,9 @@ const GapAPI = {
             parent: {
                 slug: "protective-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Gaming services workers",
@@ -4464,6 +14041,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "personal-care-and-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4488,6 +14068,9 @@ const GapAPI = {
             parent: {
                 slug: "personal-care-and-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Travel agents",
@@ -4510,6 +14093,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "sales-and-related-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4534,6 +14120,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Purchasing managers",
@@ -4556,6 +14145,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4580,6 +14172,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Education administrators",
@@ -4602,6 +14197,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4626,6 +14224,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Lodging managers",
@@ -4648,6 +14249,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4672,6 +14276,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Property, real estate, and community association managers",
@@ -4694,6 +14301,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4718,6 +14328,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Managers, all other",
@@ -4740,6 +14353,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4765,6 +14381,219 @@ const GapAPI = {
                 slug:
                     "management-business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [
+                    {
+                        name: "Business operations specialists, all other",
+                        slug: "business-operations-specialists-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Accountants and auditors",
+                        slug: "accountants-and-auditors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Financial analysts",
+                        slug: "financial-analysts",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Personal financial advisors",
+                        slug: "personal-financial-advisors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Insurance underwriters",
+                        slug: "insurance-underwriters",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Credit counselors and loan officers",
+                        slug: "credit-counselors-and-loan-officers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Agents and business managers of artists, performers, and athletes",
+                        slug:
+                            "agents-and-business-managers-of-artists-performers-and-athletes",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Buyers and purchasing agents, farm products",
+                        slug: "buyers-and-purchasing-agents-farm-products",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Compensation, benefits, and job analysis specialists",
+                        slug:
+                            "compensation-benefits-and-job-analysis-specialists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Wholesale and retail buyers, except farm products",
+                        slug:
+                            "wholesale-and-retail-buyers-except-farm-products",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Purchasing agents, except wholesale, retail, and farm products",
+                        slug:
+                            "purchasing-agents-except-wholesale-retail-and-farm-products",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Claims adjusters, appraisers, examiners, and investigators",
+                        slug:
+                            "claims-adjusters-appraisers-examiners-and-investigators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Compliance officers",
+                        slug: "compliance-officers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Human resources workers",
+                        slug: "human-resources-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Training and development specialists",
+                        slug: "training-and-development-specialists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Management analysts",
+                        slug: "management-analysts",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Market research analysts and marketing specialists",
+                        slug:
+                            "market-research-analysts-and-marketing-specialists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Meeting, convention, and event planners",
+                        slug: "meeting-convention-and-event-planners",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Fundraisers",
+                        slug: "fundraisers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Cost estimators",
+                        slug: "cost-estimators",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Logisticians",
+                        slug: "logisticians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Financial specialists, all other",
+                        slug: "financial-specialists-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Appraisers and assessors of real estate",
+                        slug: "appraisers-and-assessors-of-real-estate",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Budget analysts",
+                        slug: "budget-analysts",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Credit analysts",
+                        slug: "credit-analysts",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Financial examiners",
+                        slug: "financial-examiners",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Tax examiners and collectors, and revenue agents",
+                        slug: "tax-examiners-and-collectors-and-revenue-agents",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Tax preparers",
+                        slug: "tax-preparers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Wholesale and retail buyers, except farm products",
@@ -4787,6 +14616,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "business-and-financial-operations-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4812,6 +14644,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Claims adjusters, appraisers, examiners, and investigators",
@@ -4834,6 +14669,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "business-and-financial-operations-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4858,6 +14696,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Human resources workers",
@@ -4880,6 +14721,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "business-and-financial-operations-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4904,6 +14748,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Management analysts",
@@ -4926,6 +14773,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "business-and-financial-operations-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4950,6 +14800,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Public relations and fundraising managers",
@@ -4972,6 +14825,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -4996,6 +14852,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Fundraisers",
@@ -5018,6 +14877,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "business-and-financial-operations-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5042,6 +14904,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Glaziers",
@@ -5064,6 +14929,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5088,6 +14956,9 @@ const GapAPI = {
             parent: {
                 slug: "architecture-and-engineering-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Architectural and engineering managers",
@@ -5110,6 +14981,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "management-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5134,6 +15008,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Logisticians",
@@ -5156,6 +15033,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "business-and-financial-operations-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5180,6 +15060,9 @@ const GapAPI = {
             parent: {
                 slug: "computer-and-mathematical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Architecture and engineering occupations",
@@ -5202,6 +15085,161 @@ const GapAPI = {
             },
             parent: {
                 slug: "professional-and-related-occupations",
+            },
+            children: {
+                occupations: [
+                    {
+                        name: "Engineering technicians, except drafters",
+                        slug: "engineering-technicians-except-drafters",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Surveyors, cartographers, and photogrammetrists",
+                        slug: "surveyors-cartographers-and-photogrammetrists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Agricultural engineers",
+                        slug: "agricultural-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Biomedical engineers",
+                        slug: "biomedical-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Environmental engineers",
+                        slug: "environmental-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Marine engineers and naval architects",
+                        slug: "marine-engineers-and-naval-architects",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Materials engineers",
+                        slug: "materials-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Mining and geological engineers, including mining safety engineers",
+                        slug:
+                            "mining-and-geological-engineers-including-mining-safety-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Nuclear engineers",
+                        slug: "nuclear-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Petroleum engineers",
+                        slug: "petroleum-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Aerospace engineers",
+                        slug: "aerospace-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Industrial engineers, including health and safety",
+                        slug:
+                            "industrial-engineers-including-health-and-safety",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Engineers, all other",
+                        slug: "engineers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Architects, except naval",
+                        slug: "architects-except-naval",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Civil engineers",
+                        slug: "civil-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Chemical engineers",
+                        slug: "chemical-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Computer hardware engineers",
+                        slug: "computer-hardware-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Electrical and electronics engineers",
+                        slug: "electrical-and-electronics-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Mechanical engineers",
+                        slug: "mechanical-engineers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Drafters",
+                        slug: "drafters",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Surveying and mapping technicians",
+                        slug: "surveying-and-mapping-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
             },
         },
         {
@@ -5226,6 +15264,9 @@ const GapAPI = {
             parent: {
                 slug: "architecture-and-engineering-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Engineers, all other",
@@ -5248,6 +15289,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "architecture-and-engineering-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5272,6 +15316,9 @@ const GapAPI = {
             parent: {
                 slug: "education-training-and-library-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Information security analysts",
@@ -5294,6 +15341,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "computer-and-mathematical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5318,6 +15368,9 @@ const GapAPI = {
             parent: {
                 slug: "computer-and-mathematical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Computer network architects",
@@ -5340,6 +15393,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "computer-and-mathematical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5364,6 +15420,9 @@ const GapAPI = {
             parent: {
                 slug: "architecture-and-engineering-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Civil engineers",
@@ -5386,6 +15445,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "architecture-and-engineering-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5412,6 +15474,9 @@ const GapAPI = {
             parent: {
                 slug: "food-preparation-and-serving-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Food preparation workers",
@@ -5435,6 +15500,9 @@ const GapAPI = {
             parent: {
                 slug: "food-preparation-and-serving-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Bartenders",
@@ -5457,6 +15525,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "food-preparation-and-serving-related-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5483,6 +15554,9 @@ const GapAPI = {
             parent: {
                 slug: "food-preparation-and-serving-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Waiters and waitresses",
@@ -5505,6 +15579,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "food-preparation-and-serving-related-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5529,6 +15606,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Billing and posting clerks",
@@ -5551,6 +15631,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5575,6 +15658,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Other installation, maintenance, and repair workers",
@@ -5598,6 +15684,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Computer control programmers and operators",
@@ -5620,6 +15709,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5646,6 +15738,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Tool and die makers",
@@ -5668,6 +15763,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5692,6 +15790,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Printing press operators",
@@ -5714,6 +15815,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5738,6 +15842,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Riggers",
@@ -5760,6 +15867,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5784,6 +15894,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Medical, dental, and ophthalmic laboratory technicians",
@@ -5806,6 +15919,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5830,6 +15946,9 @@ const GapAPI = {
             parent: {
                 slug: "management-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Chemical engineers",
@@ -5852,6 +15971,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "architecture-and-engineering-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5876,6 +15998,9 @@ const GapAPI = {
             parent: {
                 slug: "architecture-and-engineering-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Electrical and electronics engineers",
@@ -5898,6 +16023,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "architecture-and-engineering-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5922,6 +16050,9 @@ const GapAPI = {
             parent: {
                 slug: "architecture-and-engineering-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Drafters",
@@ -5944,6 +16075,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "architecture-and-engineering-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -5968,6 +16102,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Statisticians",
@@ -5990,6 +16127,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "computer-and-mathematical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6014,6 +16154,70 @@ const GapAPI = {
             parent: {
                 slug: "professional-and-related-occupations",
             },
+            children: {
+                occupations: [
+                    {
+                        name: "Counselors",
+                        slug: "counselors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Social workers",
+                        slug: "social-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Clergy",
+                        slug: "clergy",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Social and human service assistants",
+                        slug: "social-and-human-service-assistants",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Probation officers and correctional treatment specialists",
+                        slug:
+                            "probation-officers-and-correctional-treatment-specialists",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name:
+                            "Miscellaneous community and social service specialists, including health educators and community health workers",
+                        slug:
+                            "miscellaneous-community-and-social-service-specialists-including-health-educators-and-community-health-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Directors, religious activities and education",
+                        slug: "directors-religious-activities-and-education",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Religious workers, all other",
+                        slug: "religious-workers-all-other",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Counselors",
@@ -6036,6 +16240,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "community-and-social-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6060,6 +16267,9 @@ const GapAPI = {
             parent: {
                 slug: "community-and-social-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Clergy",
@@ -6082,6 +16292,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "community-and-social-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6106,6 +16319,45 @@ const GapAPI = {
             parent: {
                 slug: "professional-and-related-occupations",
             },
+            children: {
+                occupations: [
+                    {
+                        name: "Lawyers",
+                        slug: "lawyers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Paralegals and legal assistants",
+                        slug: "paralegals-and-legal-assistants",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Miscellaneous legal support workers",
+                        slug: "miscellaneous-legal-support-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Judges, magistrates, and other judicial workers",
+                        slug: "judges-magistrates-and-other-judicial-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Judicial law clerks",
+                        slug: "judicial-law-clerks",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
+            },
         },
         {
             name: "Education, training, and library occupations",
@@ -6128,6 +16380,87 @@ const GapAPI = {
             },
             parent: {
                 slug: "professional-and-related-occupations",
+            },
+            children: {
+                occupations: [
+                    {
+                        name: "Library technicians",
+                        slug: "library-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Teacher assistants",
+                        slug: "teacher-assistants",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Postsecondary teachers",
+                        slug: "postsecondary-teachers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Elementary and middle school teachers",
+                        slug: "elementary-and-middle-school-teachers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Secondary school teachers",
+                        slug: "secondary-school-teachers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Other teachers and instructors",
+                        slug: "other-teachers-and-instructors",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Preschool and kindergarten teachers",
+                        slug: "preschool-and-kindergarten-teachers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Special education teachers",
+                        slug: "special-education-teachers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Librarians",
+                        slug: "librarians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Other education, training, and library workers",
+                        slug: "other-education-training-and-library-workers",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                    {
+                        name: "Archivists, curators, and museum technicians",
+                        slug: "archivists-curators-and-museum-technicians",
+                        children: {
+                            occupations: [],
+                        },
+                    },
+                ],
             },
         },
         {
@@ -6152,6 +16485,9 @@ const GapAPI = {
             parent: {
                 slug: "education-training-and-library-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Elementary and middle school teachers",
@@ -6174,6 +16510,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "education-training-and-library-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6198,6 +16537,9 @@ const GapAPI = {
             parent: {
                 slug: "education-training-and-library-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Other teachers and instructors",
@@ -6220,6 +16562,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "education-training-and-library-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6244,6 +16589,9 @@ const GapAPI = {
             parent: {
                 slug: "life-physical-and-social-science-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Social and human service assistants",
@@ -6266,6 +16614,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "community-and-social-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6290,6 +16641,9 @@ const GapAPI = {
             parent: {
                 slug: "legal-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Miscellaneous legal support workers",
@@ -6312,6 +16666,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "legal-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6336,6 +16693,9 @@ const GapAPI = {
             parent: {
                 slug: "education-training-and-library-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Special education teachers",
@@ -6358,6 +16718,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "education-training-and-library-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6382,6 +16745,9 @@ const GapAPI = {
             parent: {
                 slug: "education-training-and-library-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Biological scientists",
@@ -6404,6 +16770,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "life-physical-and-social-science-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6428,6 +16797,9 @@ const GapAPI = {
             parent: {
                 slug: "life-physical-and-social-science-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Probation officers and correctional treatment specialists",
@@ -6450,6 +16822,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "community-and-social-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6474,6 +16849,9 @@ const GapAPI = {
             parent: {
                 slug: "architecture-and-engineering-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Chemists and materials scientists",
@@ -6497,6 +16875,9 @@ const GapAPI = {
             parent: {
                 slug: "life-physical-and-social-science-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Chemical technicians",
@@ -6519,6 +16900,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "life-physical-and-social-science-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6545,6 +16929,9 @@ const GapAPI = {
             parent: {
                 slug: "community-and-social-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Judges, magistrates, and other judicial workers",
@@ -6567,6 +16954,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "legal-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6591,6 +16981,9 @@ const GapAPI = {
             parent: {
                 slug: "life-physical-and-social-science-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Registered nurses",
@@ -6613,6 +17006,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6637,6 +17033,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Diagnostic related technologists and technicians",
@@ -6659,6 +17058,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6683,6 +17085,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Emergency medical technicians and paramedics",
@@ -6705,6 +17110,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6729,6 +17137,9 @@ const GapAPI = {
             parent: {
                 slug: "education-training-and-library-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Public relations specialists",
@@ -6751,6 +17162,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6775,6 +17189,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Physician assistants",
@@ -6797,6 +17214,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6821,6 +17241,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Respiratory therapists",
@@ -6843,6 +17266,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6867,6 +17293,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Therapists, all other",
@@ -6889,6 +17318,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6913,6 +17345,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Dental hygienists",
@@ -6936,6 +17371,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Athletes, coaches, umpires, and related workers",
@@ -6958,6 +17396,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -6984,6 +17425,9 @@ const GapAPI = {
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Artists and related workers",
@@ -7006,6 +17450,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7030,6 +17477,9 @@ const GapAPI = {
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Technical writers",
@@ -7052,6 +17502,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7076,6 +17529,9 @@ const GapAPI = {
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Miscellaneous media and communication workers",
@@ -7098,6 +17554,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7122,6 +17581,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Medical records and health information technicians",
@@ -7144,6 +17606,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7168,6 +17633,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Dental assistants",
@@ -7190,6 +17658,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7214,6 +17685,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Phlebotomists",
@@ -7236,6 +17710,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7262,6 +17739,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Food servers, nonrestaurant",
@@ -7284,6 +17764,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "food-preparation-and-serving-related-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7308,6 +17791,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "First-line supervisors of police and detectives",
@@ -7330,6 +17816,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "protective-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7356,6 +17845,9 @@ const GapAPI = {
             parent: {
                 slug: "protective-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Firefighters",
@@ -7378,6 +17870,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "protective-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7402,6 +17897,9 @@ const GapAPI = {
             parent: {
                 slug: "protective-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "First-line supervisors of retail sales workers",
@@ -7424,6 +17922,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "sales-and-related-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7448,6 +17949,9 @@ const GapAPI = {
             parent: {
                 slug: "sales-and-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Cashiers",
@@ -7470,6 +17974,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "sales-and-related-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7494,6 +18001,9 @@ const GapAPI = {
             parent: {
                 slug: "sales-and-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Advertising sales agents",
@@ -7517,6 +18027,9 @@ const GapAPI = {
             parent: {
                 slug: "sales-and-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Insurance sales agents",
@@ -7539,6 +18052,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "sales-and-related-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7564,6 +18080,9 @@ const GapAPI = {
             parent: {
                 slug: "sales-and-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Sales representatives, services, all other",
@@ -7586,6 +18105,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "sales-and-related-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7610,6 +18132,9 @@ const GapAPI = {
             parent: {
                 slug: "sales-and-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Real estate brokers and sales agents",
@@ -7632,6 +18157,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "sales-and-related-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7656,6 +18184,9 @@ const GapAPI = {
             parent: {
                 slug: "food-preparation-and-serving-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Nonfarm animal caretakers",
@@ -7678,6 +18209,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "personal-care-and-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7702,6 +18236,9 @@ const GapAPI = {
             parent: {
                 slug: "personal-care-and-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Miscellaneous personal appearance workers",
@@ -7724,6 +18261,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "personal-care-and-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7748,6 +18288,9 @@ const GapAPI = {
             parent: {
                 slug: "personal-care-and-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Dishwashers",
@@ -7770,6 +18313,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "food-preparation-and-serving-related-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7797,6 +18343,9 @@ const GapAPI = {
                 slug:
                     "building-and-grounds-cleaning-and-maintenance-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Pest control workers",
@@ -7820,6 +18369,9 @@ const GapAPI = {
             parent: {
                 slug:
                     "building-and-grounds-cleaning-and-maintenance-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7845,6 +18397,9 @@ const GapAPI = {
                 slug:
                     "building-and-grounds-cleaning-and-maintenance-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Miscellaneous entertainment attendants and related workers",
@@ -7867,6 +18422,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "personal-care-and-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7891,6 +18449,9 @@ const GapAPI = {
             parent: {
                 slug: "personal-care-and-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Baggage porters, bellhops, and concierges",
@@ -7913,6 +18474,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "personal-care-and-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7937,6 +18501,9 @@ const GapAPI = {
             parent: {
                 slug: "sales-and-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "First-line supervisors of personal service workers",
@@ -7959,6 +18526,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "personal-care-and-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -7983,6 +18553,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Financial clerks, all other",
@@ -8005,6 +18578,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8029,6 +18605,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Exercise physiologists",
@@ -8051,6 +18630,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8075,6 +18657,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "File clerks",
@@ -8097,6 +18682,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8121,6 +18709,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Interviewers, except eligibility and loan",
@@ -8143,6 +18734,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8167,6 +18761,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Couriers and messengers",
@@ -8189,6 +18786,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8213,6 +18813,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Human resources assistants, except payroll and timekeeping",
@@ -8235,6 +18838,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8259,6 +18865,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Structural iron and steel workers",
@@ -8282,6 +18891,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Life scientists, all other",
@@ -8298,6 +18910,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "life-physical-and-social-science-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8322,6 +18937,9 @@ const GapAPI = {
             parent: {
                 slug: "life-physical-and-social-science-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Atmospheric and space scientists",
@@ -8344,6 +18962,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "life-physical-and-social-science-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8368,6 +18989,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Highway maintenance workers",
@@ -8390,6 +19014,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8414,6 +19041,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Helpers, construction trades",
@@ -8436,6 +19066,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8460,6 +19093,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Budget analysts",
@@ -8482,6 +19118,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "business-and-financial-operations-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8506,6 +19145,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Financial examiners",
@@ -8528,6 +19170,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "business-and-financial-operations-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8552,6 +19197,9 @@ const GapAPI = {
             parent: {
                 slug: "business-and-financial-operations-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Tax preparers",
@@ -8574,6 +19222,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "business-and-financial-operations-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8598,6 +19249,9 @@ const GapAPI = {
             parent: {
                 slug: "computer-and-mathematical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Survey researchers",
@@ -8620,6 +19274,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "life-physical-and-social-science-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8644,6 +19301,9 @@ const GapAPI = {
             parent: {
                 slug: "life-physical-and-social-science-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Urban and regional planners",
@@ -8666,6 +19326,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "life-physical-and-social-science-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8690,6 +19353,9 @@ const GapAPI = {
             parent: {
                 slug: "life-physical-and-social-science-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Agricultural and food science technicians",
@@ -8712,6 +19378,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "life-physical-and-social-science-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8736,6 +19405,9 @@ const GapAPI = {
             parent: {
                 slug: "life-physical-and-social-science-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Geological and petroleum technicians",
@@ -8758,6 +19430,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "life-physical-and-social-science-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8782,6 +19457,9 @@ const GapAPI = {
             parent: {
                 slug: "life-physical-and-social-science-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Social science research assistants",
@@ -8804,6 +19482,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "life-physical-and-social-science-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8828,6 +19509,9 @@ const GapAPI = {
             parent: {
                 slug: "community-and-social-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Religious workers, all other",
@@ -8850,6 +19534,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "community-and-social-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8874,6 +19561,9 @@ const GapAPI = {
             parent: {
                 slug: "legal-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Archivists, curators, and museum technicians",
@@ -8896,6 +19586,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "education-training-and-library-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8920,6 +19613,9 @@ const GapAPI = {
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Dancers and choreographers",
@@ -8943,6 +19639,9 @@ const GapAPI = {
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Musicians, singers, and related workers",
@@ -8965,6 +19664,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -8991,6 +19693,9 @@ const GapAPI = {
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Announcers",
@@ -9014,6 +19719,9 @@ const GapAPI = {
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Photographers",
@@ -9036,6 +19744,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9062,6 +19773,9 @@ const GapAPI = {
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Media and communication equipment workers, all other",
@@ -9084,6 +19798,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "arts-design-entertainment-sports-and-media-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9108,6 +19825,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Optometrists",
@@ -9130,6 +19850,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9154,6 +19877,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Audiologists",
@@ -9176,6 +19902,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9200,6 +19929,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Recreational therapists",
@@ -9222,6 +19954,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9246,6 +19981,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Health diagnosing and treating practitioners, all other",
@@ -9268,6 +20006,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9292,6 +20033,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-practitioners-and-technical-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Occupational therapy assistants and aides",
@@ -9314,6 +20058,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9338,6 +20085,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Pharmacy aides",
@@ -9360,6 +20110,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "healthcare-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9384,6 +20137,9 @@ const GapAPI = {
             parent: {
                 slug: "healthcare-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "First-line supervisors of correctional officers",
@@ -9406,6 +20162,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "protective-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9432,6 +20191,9 @@ const GapAPI = {
             parent: {
                 slug: "protective-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Fire inspectors",
@@ -9454,6 +20216,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "protective-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9478,6 +20243,9 @@ const GapAPI = {
             parent: {
                 slug: "protective-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Parking enforcement workers",
@@ -9500,6 +20268,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "protective-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9524,6 +20295,9 @@ const GapAPI = {
             parent: {
                 slug: "protective-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Animal control workers",
@@ -9546,6 +20320,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "protective-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9570,6 +20347,9 @@ const GapAPI = {
             parent: {
                 slug: "protective-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Transportation security screeners",
@@ -9592,6 +20372,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "protective-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9618,6 +20401,9 @@ const GapAPI = {
             parent: {
                 slug: "protective-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name:
@@ -9643,6 +20429,9 @@ const GapAPI = {
             parent: {
                 slug: "food-preparation-and-serving-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Telemarketers",
@@ -9665,6 +20454,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "sales-and-related-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9689,6 +20481,9 @@ const GapAPI = {
             parent: {
                 slug: "food-preparation-and-serving-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Animal trainers",
@@ -9711,6 +20506,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "personal-care-and-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9735,6 +20533,9 @@ const GapAPI = {
             parent: {
                 slug: "personal-care-and-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Ushers, lobby attendants, and ticket takers",
@@ -9757,6 +20558,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "personal-care-and-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9781,6 +20585,9 @@ const GapAPI = {
             parent: {
                 slug: "personal-care-and-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Morticians, undertakers, and funeral directors",
@@ -9803,6 +20610,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "personal-care-and-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9827,6 +20637,9 @@ const GapAPI = {
             parent: {
                 slug: "personal-care-and-service-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Residential advisors",
@@ -9849,6 +20662,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "personal-care-and-service-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9873,6 +20689,9 @@ const GapAPI = {
             parent: {
                 slug: "sales-and-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Sales engineers",
@@ -9895,6 +20714,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "sales-and-related-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9921,6 +20743,9 @@ const GapAPI = {
             parent: {
                 slug: "sales-and-related-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Switchboard operators, including answering service",
@@ -9943,6 +20768,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -9967,6 +20795,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Communications equipment operators, all other",
@@ -9989,6 +20820,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10013,6 +20847,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Procurement clerks",
@@ -10035,6 +20872,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10059,6 +20899,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Correspondence clerks",
@@ -10081,6 +20924,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10105,6 +20951,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "New accounts clerks",
@@ -10127,6 +20976,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10151,6 +21003,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Meter readers, utilities",
@@ -10173,6 +21028,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10197,6 +21055,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Desktop publishers",
@@ -10219,6 +21080,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10245,6 +21109,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Office machine operators, except computer",
@@ -10268,6 +21135,9 @@ const GapAPI = {
             parent: {
                 slug: "office-and-administrative-support-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Proofreaders and copy markers",
@@ -10290,6 +21160,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "office-and-administrative-support-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10316,6 +21189,9 @@ const GapAPI = {
             parent: {
                 slug: "farming-fishing-and-forestry-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Agricultural inspectors",
@@ -10338,6 +21214,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "farming-fishing-and-forestry-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10362,6 +21241,9 @@ const GapAPI = {
             parent: {
                 slug: "farming-fishing-and-forestry-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Fishers and related fishing workers",
@@ -10384,6 +21266,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "farming-fishing-and-forestry-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10408,6 +21293,9 @@ const GapAPI = {
             parent: {
                 slug: "farming-fishing-and-forestry-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Forest and conservation workers",
@@ -10430,6 +21318,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "farming-fishing-and-forestry-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10454,6 +21345,9 @@ const GapAPI = {
             parent: {
                 slug: "farming-fishing-and-forestry-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Boilermakers",
@@ -10476,6 +21370,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10500,6 +21397,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Pile-driver operators",
@@ -10522,6 +21422,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10546,6 +21449,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Plasterers and stucco masons",
@@ -10568,6 +21474,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10592,6 +21501,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Solar photovoltaic installers",
@@ -10614,6 +21526,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10638,6 +21553,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Fence erectors",
@@ -10660,6 +21578,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10684,6 +21605,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Rail-track laying and maintenance equipment operators",
@@ -10706,6 +21630,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10730,6 +21657,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Septic tank servicers and sewer pipe cleaners",
@@ -10753,6 +21683,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Miscellaneous construction and related workers",
@@ -10775,6 +21708,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10801,6 +21737,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Earth drillers, except oil and gas",
@@ -10823,6 +21762,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10847,6 +21789,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Roof bolters, mining",
@@ -10869,6 +21814,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10893,6 +21841,9 @@ const GapAPI = {
             parent: {
                 slug: "construction-and-extraction-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Helpers--extraction workers",
@@ -10915,6 +21866,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "construction-and-extraction-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10939,6 +21893,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Electric motor, power tool, and related repairers",
@@ -10961,6 +21918,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -10987,6 +21947,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name:
@@ -11010,6 +21973,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11036,6 +22002,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name:
@@ -11061,6 +22030,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Automotive glass installers and repairers",
@@ -11083,6 +22055,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11107,6 +22082,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Control and valve installers and repairers",
@@ -11129,6 +22107,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11153,6 +22134,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Maintenance workers, machinery",
@@ -11175,6 +22159,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11199,6 +22186,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Wind turbine service technicians",
@@ -11221,6 +22211,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11246,6 +22239,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Commercial divers",
@@ -11268,6 +22264,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11292,6 +22291,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Manufactured building and mobile home installers",
@@ -11314,6 +22316,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11338,6 +22343,9 @@ const GapAPI = {
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Helpers--installation, maintenance, and repair workers",
@@ -11360,6 +22368,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "installation-maintenance-and-repair-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11385,6 +22396,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Engine and other machine assemblers",
@@ -11408,6 +22422,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Structural metal fabricators and fitters",
@@ -11430,6 +22447,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11456,6 +22476,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Food cooking machine operators and tenders",
@@ -11478,6 +22501,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11502,6 +22528,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Molders, shapers, and casters, except metal and plastic",
@@ -11524,6 +22553,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11550,6 +22582,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name:
@@ -11575,6 +22610,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Tire builders",
@@ -11597,6 +22635,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11623,6 +22664,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name:
@@ -11647,6 +22691,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11673,6 +22720,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name:
@@ -11697,6 +22747,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11723,6 +22776,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Metal furnace operators, tenders, pourers, and casters",
@@ -11746,6 +22802,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Model makers and patternmakers, metal and plastic",
@@ -11768,6 +22827,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11794,6 +22856,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name:
@@ -11818,6 +22883,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11844,6 +22912,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Layout workers, metal and plastic",
@@ -11866,6 +22937,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11892,6 +22966,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Tool grinders, filers, and sharpeners",
@@ -11914,6 +22991,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11938,6 +23018,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Print binding and finishing workers",
@@ -11960,6 +23043,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -11984,6 +23070,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Shoe machine operators and tenders",
@@ -12006,6 +23095,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12030,6 +23122,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Textile cutting machine setters, operators, and tenders",
@@ -12052,6 +23147,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12078,6 +23176,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name:
@@ -12102,6 +23203,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12128,6 +23232,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Fabric and apparel patternmakers",
@@ -12150,6 +23257,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12174,6 +23284,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Textile, apparel, and furnishings workers, all other",
@@ -12196,6 +23309,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12220,6 +23336,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Furniture finishers",
@@ -12242,6 +23361,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12266,6 +23388,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Sawing machine setters, operators, and tenders, wood",
@@ -12288,6 +23413,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12314,6 +23442,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Woodworkers, all other",
@@ -12336,6 +23467,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12360,6 +23494,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Miscellaneous plant and system operators",
@@ -12382,6 +23519,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12408,6 +23548,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name:
@@ -12432,6 +23575,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Jewelers and precious stone and metal workers",
@@ -12454,6 +23600,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12480,6 +23629,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Semiconductor processors",
@@ -12503,6 +23655,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Adhesive bonding machine operators and tenders",
@@ -12525,6 +23680,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12551,6 +23709,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Cooling and freezing equipment operators and tenders",
@@ -12573,6 +23734,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "production-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12597,6 +23761,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Helpers--production workers",
@@ -12620,6 +23787,9 @@ const GapAPI = {
             parent: {
                 slug: "production-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Air traffic controllers and airfield operations specialists",
@@ -12642,6 +23812,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12668,6 +23841,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Motor vehicle operators, all other",
@@ -12690,6 +23866,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12714,6 +23893,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Railroad brake, signal, and switch operators",
@@ -12736,6 +23918,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12760,6 +23945,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Sailors and marine oilers",
@@ -12782,6 +23970,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12806,6 +23997,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Ship engineers",
@@ -12828,6 +24022,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12852,6 +24049,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Transportation inspectors",
@@ -12874,6 +24074,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12898,6 +24101,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Other transportation workers",
@@ -12920,6 +24126,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12944,6 +24153,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Dredge, excavating, and loading machine operators",
@@ -12966,6 +24178,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -12990,6 +24205,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Machine feeders and offbearers",
@@ -13012,6 +24230,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -13036,6 +24257,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Mine shuttle car operators",
@@ -13058,6 +24282,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
         {
@@ -13082,6 +24309,9 @@ const GapAPI = {
             parent: {
                 slug: "transportation-and-material-moving-occupations",
             },
+            children: {
+                occupations: [],
+            },
         },
         {
             name: "Material moving workers, all other",
@@ -13104,6 +24334,9 @@ const GapAPI = {
             },
             parent: {
                 slug: "transportation-and-material-moving-occupations",
+            },
+            children: {
+                occupations: [],
             },
         },
     ],

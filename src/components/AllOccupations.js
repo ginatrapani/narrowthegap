@@ -2,31 +2,48 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import GapAPI from "../GapAPI.js";
 
-class AllOccupations extends Component {
-    renderChildren(g) {
+class OccupationListItem extends Component {
+    render() {
         return (
-            <ul key={g.slug}>
-                <li key={g.slug}>
-                    <Link to={`/gap/${g.slug}`}>
-                        {GapAPI.capitalize(GapAPI.cleanOccupationName(g.name))}
-                    </Link>
-                    {GapAPI.gaps
-                        .filter(
-                            (child) =>
-                                child.parent && child.parent.slug === g.slug
-                        )
-                        .map((g) => this.renderChildren(g))}
-                </li>
+            <li key={this.props.gap.slug}>
+                <Link to={`/gap/${this.props.gap.slug}`}>
+                    {GapAPI.capitalize(
+                        GapAPI.cleanOccupationName(this.props.gap.name)
+                    )}
+                </Link>
+            </li>
+        );
+    }
+}
+
+class OccupationList extends Component {
+    render() {
+        return (
+            <ul key={this.props.gap.slug}>
+                <OccupationListItem gap={this.props.gap} />
+                {this.props.gap.children.occupations.map((childGap) => {
+                    if (!childGap.children) {
+                        return <OccupationListItem gap={childGap} />;
+                    } else {
+                        return <OccupationList gap={childGap} />;
+                    }
+                })}
             </ul>
         );
     }
+}
 
+class AllOccupations extends Component {
     render() {
+        const parentGap = GapAPI.get(this.props.columnSlug);
         return (
             <div className="span4">
-                {GapAPI.gaps
-                    .filter((g) => g.slug === this.props.columnSlug)
-                    .map((g) => this.renderChildren(g))}
+                <ul key={parentGap.slug}>
+                    <OccupationListItem gap={parentGap} />
+                    {parentGap.children.occupations.map((childGap) => {
+                        return <OccupationList gap={childGap} />;
+                    })}
+                </ul>
             </div>
         );
     }
