@@ -402,7 +402,6 @@ class Gap extends Component {
                 );
             } else {
                 const moreCents = gap.wageGaps.years[0].centsToDollar - 100;
-                const plural = moreCents > 1 ? "s" : "";
                 return (
                     <h1>
                         Women{this.getWorkingPhrasing(gap.name)}{" "}
@@ -411,7 +410,8 @@ class Gap extends Component {
                         </span>{" "}
                         made{" "}
                         <span className="ntg-red">
-                            {moreCents}&nbsp;cent{plural} more
+                            {moreCents}&nbsp;cent{this.pluralize(moreCents)}{" "}
+                            more
                         </span>{" "}
                         per dollar men earned in {gap.wageGaps.years[0].year}.{" "}
                     </h1>
