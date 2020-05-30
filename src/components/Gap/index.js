@@ -29,24 +29,11 @@ class Gap extends Component {
             gap = GapAPI.get(gap.parent.slug);
         }
 
-        const tweetText = gap
-            ? "Women" +
-              this.getWorkingPhrasing(gap.name) +
-              " " +
-              GapAPI.cleanOccupationName(gap.name) +
-              " made " +
-              gap.wageGaps.years[0].centsToDollar +
-              " cents to the dollar men earn doing the same job #EqualPayDay"
-            : "";
-
-        const pageTitle = gap
-            ? "The gender pay gap for women" +
-              this.getWorkingPhrasing(gap.name) +
-              " " +
-              GapAPI.cleanOccupationName(gap.name) +
-              " - Narrow the Gap"
-            : "Narrow the Gap";
-
+        const tweetText = this.getTweetText(gap);
+        // For SEO, set the page title to the gap name even if data isn't available
+        const pageTitle = this.getPageTitle(
+            dataUnavailableGap ? dataUnavailableGap : gap
+        );
         const permalink = "https://narrowthegap.co/gap/" + gapSlug;
         // @TODO deprecate this and just use the logo image
         var socialImage = require("./ntg-twitter-card.png");
@@ -379,6 +366,63 @@ class Gap extends Component {
             );
         }
         return;
+    }
+
+    getTweetText(gap) {
+        // @TODO: Test following scenarios
+        // front page
+        // regular gap
+        // gap without enough data (default to parent)
+        // women make more than men
+        // missing gap (occupation not found)
+        if (gap) {
+            const lessPerWeek =
+                gap.wageGaps.years[0].menMedianWeeklyEarnings -
+                gap.wageGaps.years[0].womenMedianWeeklyEarnings;
+
+            if (lessPerWeek > 0) {
+                return (
+                    "Women" +
+                    this.getWorkingPhrasing(gap.name) +
+                    " " +
+                    GapAPI.cleanOccupationName(gap.name) +
+                    " made " +
+                    gap.wageGaps.years[0].centsToDollar +
+                    " cents to the dollar men earned doing the same job."
+                );
+            } else {
+                const moreCents = gap.wageGaps.years[0].centsToDollar - 100;
+                return (
+                    "Women" +
+                    this.getWorkingPhrasing(gap.name) +
+                    " " +
+                    GapAPI.cleanOccupationName(gap.name) +
+                    " made " +
+                    moreCents +
+                    " cents more per dollar men earned in " +
+                    gap.wageGaps.years[0].year +
+                    ". This is one of the few occupations that women earned more than men."
+                );
+            }
+        } else {
+            return "";
+        }
+    }
+
+    getPageTitle(gap) {
+        // @TODO: Test following scenarios
+        // front page
+        // regular gap
+        // gap without enough data (default to parent)
+        // women make more than men
+        // missing gap (occupation not found)
+        return gap
+            ? "The gender pay gap for women" +
+                  this.getWorkingPhrasing(gap.name) +
+                  " " +
+                  GapAPI.cleanOccupationName(gap.name) +
+                  " - Narrow the Gap"
+            : "Narrow the Gap";
     }
 
     getHeadline(gap) {
