@@ -22,8 +22,25 @@ To update the web site:
 
 ## Data Explorations
 
-- Any gaps that we had in 2011 that we don't in 2019? 8
-- Any gaps that we didn't have in 2011 that we do in 2019? 23
+- Any occupations where women and men made exactly the same / i.e., cents_to_dollar is 100 in 2019?
+  No in 2019, yes for 3 occupations in 2011
+
+```
+SELECT
+	o.id,
+	o.name,
+	wg19.cents_to_dollar AS wg2019_cents_to_dollar,
+	wg19.year
+FROM
+	wage_gaps wg19
+	INNER JOIN occupations o ON wg19.occupation_id = o.id
+WHERE
+	wg19.cents_to_dollar = 100
+	AND wg19.year = 2019
+```
+
+- Any gaps that we had data for in 2011 that we don't in 2019? 8
+- Any gaps that we didn't have data for in 2011 that we do in 2019? 23
 
 ```
 SELECT
@@ -64,7 +81,8 @@ SELECT
 	o.id,
 	o.name,
 	wg11.cents_to_dollar AS wg2011_cents_to_dollar,
-	wg19.cents_to_dollar AS wg2019_cents_to_dollar
+	wg19.cents_to_dollar AS wg2019_cents_to_dollar,
+	wg19.cents_to_dollar - wg11.cents_to_dollar AS gap_size_difference
 FROM
 	wage_gaps wg19
 	INNER JOIN wage_gaps wg11 ON wg11.occupation_id = wg19.occupation_id
