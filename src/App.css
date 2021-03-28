@@ -33,12 +33,16 @@ h6 {
     color: #666;
     margin-bottom: 0;
 }
+h6 a:hover {
+    text-decoration: none;
+}
 a {
     color: #fff;
     border-bottom: 1px dotted #ccc;
 }
 p a:hover,
-li a:hover {
+li a:hover,
+footer a:hover {
     color: #fff;
     border-bottom: 1px solid #fff;
     text-decoration: none;
