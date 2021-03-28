@@ -116,14 +116,14 @@ class Gap extends Component {
                                     Legal occupations
                                 </Link>{" "}
                                 and{" "}
-                                <Link to="/gap/financial-managers">
-                                    financial managers
+                                <Link to="/gap/medical-scientists">
+                                    medical scientists
                                 </Link>{" "}
                                 suffer the largest gender pay gaps.{" "}
-                                <Link to="/gap/wholesale-and-retail-buyers-except-farm-products">
-                                    Wholesale and retail buyers
+                                <Link to="/gap/cooks">Cooks</Link> and{" "}
+                                <Link to="/gap/civil-engineers">
+                                    civil engineers
                                 </Link>{" "}
-                                and <Link to="/gap/cashiers">cashiers</Link>{" "}
                                 have the smallest pay gaps.
                             </p>
                             <h2>
@@ -200,11 +200,11 @@ class Gap extends Component {
                                     <p className="media-heading">
                                         The Institute for Women&#8217;s Policy
                                         Research&#8217;s fact sheet{" "}
-                                        <a href="https://iwpr.org/wp-content/uploads/2018/03/C464_Gender-Wage-Gap-2.pdf">
-                                            The Gender Wage Gap: 2017 Earnings
-                                            Differences by Race and Ethnicity
+                                        <a href="https://iwpr.org/wp-content/uploads/2021/03/2021-Occupational-Wage-Gap-Brief-v2.pdf">
+                                            The Gender Wage Gap by Occupation,
+                                            Race, and Ethnicity 2020
                                         </a>{" "}
-                                        (PDF, 4 pages)
+                                        (PDF, 12 pages)
                                     </p>
                                 </div>
                             </div>
@@ -339,7 +339,8 @@ class Gap extends Component {
                                     Pay disparity does not exist in every
                                     occupation, but across all occupations,
                                     women consistently earn less at the same
-                                    jobs.
+                                    jobs. Of the 150 pay gaps presented here,
+                                    women earned more than men in 5 occupations.
                                 </footer>
                             </blockquote>
                         </div>
@@ -376,6 +377,7 @@ class Gap extends Component {
         // women make more than men
         // women and men make the same wage!
         // missing gap (occupation not found)
+        // occupation is new (didn't have data for it in 2011)
         if (gap) {
             const lessPerWeek =
                 gap.wageGaps.years[0].menMedianWeeklyEarnings -
@@ -431,6 +433,7 @@ class Gap extends Component {
         // women make more than men
         // women and men make the same wage!
         // missing gap (occupation not found)
+        // occupation is new (didn't have data for it in 2011)
         return gap
             ? "The gender pay gap for women" +
                   this.getWorkingPhrasing(gap.name) +
@@ -594,6 +597,7 @@ class Gap extends Component {
         var comparative = "";
         if (
             gap.slug !== "total-full-time-wage-and-salary-workers" &&
+            gap.wageGaps.years[1] &&
             gap.wageGaps.years[1].centsToDollar
         ) {
             if (
@@ -605,9 +609,9 @@ class Gap extends Component {
                     gap.wageGaps.years[0].centsToDollar;
                 return (
                     <p>
-                        This wage gap is{" "}
+                        This wage gap has{" "}
                         <strong className="ntg-red">
-                            down {down} cent{this.pluralize(down)}
+                            widened {down} cent{this.pluralize(down)}
                         </strong>{" "}
                         from {gap.wageGaps.years[1].year}.
                     </p>
@@ -622,9 +626,9 @@ class Gap extends Component {
                     gap.wageGaps.years[1].centsToDollar;
                 return (
                     <p>
-                        This wage gap is{" "}
+                        This wage gap has{" "}
                         <strong className="ntg-blue">
-                            up {up} cent{this.pluralize(up)}
+                            narrowed {up} cent{this.pluralize(up)}
                         </strong>{" "}
                         from {gap.wageGaps.years[1].year}.
                     </p>

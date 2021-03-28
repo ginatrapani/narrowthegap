@@ -1,0 +1,596 @@
+Occupation,Slug,Parent,Total number of workers,Total median weekly earnings,Men number of workers,Men median weekly earnings,Women number of workers,Women median weekly earnings,Year
+"Total, full-time wage and salary workers",total-full-time-wage-and-salary-workers,,"110,387",984,"60,911","1,082","49,476",891,2020
+"Management, professional, and related occupations",management-professional-and-related-occupations,,"50,023","1,356","24,090","1,578","25,933","1,164",2020
+"Management, business, and financial operations occupations",management-business-and-financial-operations-occupations,management-professional-and-related-occupations,"20,811","1,461","11,082","1,667","9,729","1,274",2020
+Management occupations,management-occupations,management-business-and-financial-operations-occupations,"13,517","1,541","7,770","1,737","5,747","1,347",2020
+Chief executives,chief-executives,management-occupations,"1,157","2,402",794,"2,712",363,"2,051",2020
+General and operations managers,general-and-operations-managers,management-occupations,983,"1,453",702,"1,541",281,"1,241",2020
+Legislators,legislators,management-occupations,11,–,9,–,3,–,2020
+Advertising and promotions managers,advertising-and-promotions-managers,management-occupations,46,–,19,–,27,–,2020
+Marketing managers,marketing-managers,management-occupations,483,"1,537",199,"1,732",284,"1,435",2020
+Sales managers,sales-managers,management-occupations,495,"1,794",332,"1,896",163,"1,411",2020
+Public relations and fundraising managers,public-relations-and-fundraising-managers,management-occupations,74,"1,344",25,–,50,"1,286",2020
+Administrative services managers,administrative-services-managers,management-occupations,62,"1,284",22,–,41,–,2020
+Facilities managers,facilities-managers,management-occupations,122,"1,318",89,"1,389",33,–,2020
+Computer and information systems managers,computer-and-information-systems-managers,management-occupations,703,"2,018",516,"2,091",187,"1,910",2020
+Financial managers,financial-managers,management-occupations,"1,228","1,492",603,"1,880",624,"1,242",2020
+Compensation and benefits managers,compensation-and-benefits-managers,management-occupations,14,–,1,–,13,–,2020
+Human resources managers,human-resources-managers,management-occupations,264,"1,644",70,"1,748",194,"1,599",2020
+Training and development managers,training-and-development-managers,management-occupations,47,–,27,–,20,–,2020
+Industrial production managers,industrial-production-managers,management-occupations,248,"1,550",195,"1,582",53,"1,402",2020
+Purchasing managers,purchasing-managers,management-occupations,221,"1,544",123,"1,636",98,"1,441",2020
+"Transportation, storage, and distribution managers",transportation-storage-and-distribution-managers,management-occupations,266,972,212,989,55,943,2020
+"Farmers, ranchers, and other agricultural managers",farmers-ranchers-and-other-agricultural-managers,management-occupations,109,874,92,874,17,–,2020
+Construction managers,construction-managers,management-occupations,606,"1,575",556,"1,586",50,"1,368",2020
+Education and childcare administrators,education-and-childcare-administrators,management-occupations,846,"1,462",286,"1,590",560,"1,400",2020
+Architectural and engineering managers,architectural-and-engineering-managers,management-occupations,155,"2,413",140,"2,402",15,–,2020
+Food service managers,food-service-managers,management-occupations,707,877,363,"1,006",344,791,2020
+Funeral home managers,funeral-home-managers,management-occupations,6,–,4,–,3,–,2020
+Entertainment and recreation managers,entertainment-and-recreation-managers,management-occupations,34,–,24,–,9,–,2020
+Lodging managers,lodging-managers,management-occupations,74,888,36,–,38,–,2020
+Medical and health services managers,medical-and-health-services-managers,management-occupations,629,"1,555",192,"1,839",438,"1,464",2020
+Natural sciences managers,natural-sciences-managers,management-occupations,11,–,3,–,8,–,2020
+Postmasters and mail superintendents,postmasters-and-mail-superintendents,management-occupations,19,–,9,–,10,–,2020
+"Property, real estate, and community association managers",property-real-estate-and-community-association-managers,management-occupations,433,"1,140",209,"1,182",224,"1,086",2020
+Social and community service managers,social-and-community-service-managers,management-occupations,330,"1,234",90,"1,580",240,"1,163",2020
+Emergency management directors,emergency-management-directors,management-occupations,10,–,7,–,3,–,2020
+"Personal service managers, all other",personal-service-managers-all-other,management-occupations,2,–,1,–,1,–,2020
+"Managers, all other",managers-all-other,management-occupations,"3,120","1,564","1,821","1,749","1,299","1,379",2020
+Business and financial operations occupations,business-and-financial-operations-occupations,management-business-and-financial-operations-occupations,"7,294","1,363","3,312","1,550","3,982","1,209",2020
+"Agents and business managers of artists, performers, and athletes",agents-and-business-managers-of-artists-performers-and-athletes,business-and-financial-operations-occupations,27,–,12,–,15,–,2020
+"Buyers and purchasing agents, farm products",buyers-and-purchasing-agents-farm-products,business-and-financial-operations-occupations,9,–,5,–,4,–,2020
+"Wholesale and retail buyers, except farm products",wholesale-and-retail-buyers-except-farm-products,business-and-financial-operations-occupations,130,"1,053",64,"1,047",66,"1,066",2020
+"Purchasing agents, except wholesale, retail, and farm products",purchasing-agents-except-wholesale-retail-and-farm-products,business-and-financial-operations-occupations,219,"1,231",106,"1,387",113,"1,138",2020
+"Claims adjusters, appraisers, examiners, and investigators",claims-adjusters-appraisers-examiners-and-investigators,business-and-financial-operations-occupations,325,"1,108",122,"1,336",203,967,2020
+Compliance officers,compliance-officers,business-and-financial-operations-occupations,286,"1,372",119,"1,373",167,"1,371",2020
+Cost estimators,cost-estimators,business-and-financial-operations-occupations,111,"1,434",96,"1,456",15,–,2020
+Human resources workers,human-resources-workers,business-and-financial-operations-occupations,739,"1,251",185,"1,443",553,"1,174",2020
+"Compensation, benefits, and job analysis specialists",compensation-benefits-and-job-analysis-specialists,business-and-financial-operations-occupations,67,"1,143",14,–,53,"1,041",2020
+Training and development specialists,training-and-development-specialists,business-and-financial-operations-occupations,103,"1,255",43,–,60,"1,171",2020
+Logisticians,logisticians,business-and-financial-operations-occupations,134,"1,173",84,"1,256",50,"1,140",2020
+Project management specialists,project-management-specialists,business-and-financial-operations-occupations,644,"1,560",350,"1,693",295,"1,468",2020
+Management analysts,management-analysts,business-and-financial-operations-occupations,658,"1,629",384,"1,856",273,"1,455",2020
+"Meeting, convention, and event planners",meeting-convention-and-event-planners,business-and-financial-operations-occupations,92,"1,049",29,–,63,996,2020
+Fundraisers,fundraisers,business-and-financial-operations-occupations,91,"1,479",26,–,65,"1,486",2020
+Market research analysts and marketing specialists,market-research-analysts-and-marketing-specialists,business-and-financial-operations-occupations,358,"1,326",145,"1,608",212,"1,198",2020
+"Business operations specialists, all other",business-operations-specialists-all-other,business-and-financial-operations-occupations,271,"1,273",126,"1,540",144,"1,086",2020
+Accountants and auditors,accountants-and-auditors,business-and-financial-operations-occupations,"1,488","1,298",595,"1,520",893,"1,186",2020
+Property appraisers and assessors,property-appraisers-and-assessors,business-and-financial-operations-occupations,51,"1,225",32,–,19,–,2020
+Budget analysts,budget-analysts,business-and-financial-operations-occupations,66,"1,461",33,–,32,–,2020
+Credit analysts,credit-analysts,business-and-financial-operations-occupations,20,–,9,–,11,–,2020
+Financial and investment analysts,financial-and-investment-analysts,business-and-financial-operations-occupations,310,"1,590",182,"1,742",128,"1,488",2020
+Personal financial advisors,personal-financial-advisors,business-and-financial-operations-occupations,400,"1,638",251,"1,900",149,"1,291",2020
+Insurance underwriters,insurance-underwriters,business-and-financial-operations-occupations,101,"1,261",42,–,59,"1,141",2020
+Financial examiners,financial-examiners,business-and-financial-operations-occupations,21,–,8,–,13,–,2020
+Credit counselors and loan officers,credit-counselors-and-loan-officers,business-and-financial-operations-occupations,391,"1,199",169,"1,492",222,"1,013",2020
+"Tax examiners and collectors, and revenue agents",tax-examiners-and-collectors-and-revenue-agents,business-and-financial-operations-occupations,59,"1,086",26,–,33,–,2020
+Tax preparers,tax-preparers,business-and-financial-operations-occupations,44,–,17,–,27,–,2020
+Other financial specialists,other-financial-specialists,business-and-financial-operations-occupations,80,"1,328",37,–,43,–,2020
+Professional and related occupations,professional-and-related-occupations,management-professional-and-related-occupations,"29,213","1,270","13,008","1,532","16,204","1,121",2020
+Computer and mathematical occupations,computer-and-mathematical-occupations,professional-and-related-occupations,"5,083","1,633","3,838","1,738","1,246","1,423",2020
+Computer and information research scientists,computer-and-information-research-scientists,computer-and-mathematical-occupations,39,–,30,–,9,–,2020
+Computer systems analysts,computer-systems-analysts,computer-and-mathematical-occupations,529,"1,515",353,"1,621",175,"1,413",2020
+Information security analysts,information-security-analysts,computer-and-mathematical-occupations,125,"2,078",114,"2,082",11,–,2020
+Computer programmers,computer-programmers,computer-and-mathematical-occupations,388,"1,653",307,"1,673",82,"1,529",2020
+Software developers,software-developers,computer-and-mathematical-occupations,"1,742","1,920","1,420","2,004",322,"1,728",2020
+Software quality assurance analysts and testers,software-quality-assurance-analysts-and-testers,computer-and-mathematical-occupations,94,"1,697",73,"1,977",21,–,2020
+Web developers,web-developers,computer-and-mathematical-occupations,78,"1,554",60,"1,551",18,–,2020
+Web and digital interface designers,web-and-digital-interface-designers,computer-and-mathematical-occupations,52,"1,158",30,–,22,–,2020
+Computer support specialists,computer-support-specialists,computer-and-mathematical-occupations,584,"1,147",427,"1,163",157,"1,095",2020
+Database administrators and architects,database-administrators-and-architects,computer-and-mathematical-occupations,107,"1,725",78,"1,718",29,–,2020
+Network and computer systems administrators,network-and-computer-systems-administrators,computer-and-mathematical-occupations,235,"1,438",187,"1,461",48,–,2020
+Computer network architects,computer-network-architects,computer-and-mathematical-occupations,93,"1,902",83,"1,980",10,–,2020
+"Computer occupations, all other",computer-occupations-all-other,computer-and-mathematical-occupations,716,"1,394",517,"1,456",199,"1,161",2020
+Actuaries,actuaries,computer-and-mathematical-occupations,24,–,15,–,9,–,2020
+Mathematicians,mathematicians,computer-and-mathematical-occupations,2,–,2,–,1,–,2020
+Operations research analysts,operations-research-analysts,computer-and-mathematical-occupations,154,"1,615",81,"1,786",73,"1,460",2020
+Statisticians,statisticians,computer-and-mathematical-occupations,53,"1,572",24,–,30,–,2020
+Other mathematical science occupations,other-mathematical-science-occupations,computer-and-mathematical-occupations,68,"1,416",38,–,30,–,2020
+Architecture and engineering occupations,architecture-and-engineering-occupations,professional-and-related-occupations,"2,933","1,575","2,466","1,626",467,"1,382",2020
+"Architects, except landscape and naval",architects-except-landscape-and-naval,architecture-and-engineering-occupations,136,"1,537",101,"1,549",34,–,2020
+Landscape architects,landscape-architects,architecture-and-engineering-occupations,15,–,11,–,5,–,2020
+"Surveyors, cartographers, and photogrammetrists",surveyors-cartographers-and-photogrammetrists,architecture-and-engineering-occupations,38,–,36,–,3,–,2020
+Aerospace engineers,aerospace-engineers,architecture-and-engineering-occupations,121,"1,939",107,"1,993",14,–,2020
+Agricultural engineers,agricultural-engineers,architecture-and-engineering-occupations,6,–,6,–,0,–,2020
+Bioengineers and biomedical engineers,bioengineers-and-biomedical-engineers,architecture-and-engineering-occupations,22,–,12,–,10,–,2020
+Chemical engineers,chemical-engineers,architecture-and-engineering-occupations,70,"1,862",55,"1,900",14,–,2020
+Civil engineers,civil-engineers,architecture-and-engineering-occupations,370,"1,611",317,"1,629",54,"1,588",2020
+Computer hardware engineers,computer-hardware-engineers,architecture-and-engineering-occupations,84,"1,889",66,"1,884",18,–,2020
+Electrical and electronics engineers,electrical-and-electronics-engineers,architecture-and-engineering-occupations,243,"1,864",213,"1,866",30,–,2020
+Environmental engineers,environmental-engineers,architecture-and-engineering-occupations,26,–,15,–,11,–,2020
+"Industrial engineers, including health and safety",industrial-engineers-including-health-and-safety,architecture-and-engineering-occupations,225,"1,584",179,"1,595",46,–,2020
+Marine engineers and naval architects,marine-engineers-and-naval-architects,architecture-and-engineering-occupations,18,–,18,–,0,–,2020
+Materials engineers,materials-engineers,architecture-and-engineering-occupations,52,"1,586",42,–,10,–,2020
+Mechanical engineers,mechanical-engineers,architecture-and-engineering-occupations,348,"1,713",317,"1,736",31,–,2020
+"Mining and geological engineers, including mining safety engineers",mining-and-geological-engineers-including-mining-safety-engineers,architecture-and-engineering-occupations,15,–,13,–,2,–,2020
+Nuclear engineers,nuclear-engineers,architecture-and-engineering-occupations,9,–,7,–,1,–,2020
+Petroleum engineers,petroleum-engineers,architecture-and-engineering-occupations,18,–,16,–,2,–,2020
+"Engineers, all other",engineers-all-other,architecture-and-engineering-occupations,543,"1,746",460,"1,759",83,"1,463",2020
+Architectural and civil drafters,architectural-and-civil-drafters,architecture-and-engineering-occupations,34,–,25,–,9,–,2020
+Other drafters,other-drafters,architecture-and-engineering-occupations,77,"1,126",60,"1,137",16,–,2020
+Electrical and electronic engineering technologists and technicians,electrical-and-electronic-engineering-technologists-and-technicians,architecture-and-engineering-occupations,81,"1,172",78,"1,198",3,–,2020
+"Other engineering technologists and technicians, except drafters",other-engineering-technologists-and-technicians-except-drafters,architecture-and-engineering-occupations,340,"1,119",275,"1,186",65,900,2020
+Surveying and mapping technicians,surveying-and-mapping-technicians,architecture-and-engineering-occupations,43,–,38,–,6,–,2020
+"Life, physical, and social science occupations",life-physical-and-social-science-occupations,professional-and-related-occupations,"1,401","1,336",735,"1,450",666,"1,202",2020
+Agricultural and food scientists,agricultural-and-food-scientists,life-physical-and-social-science-occupations,26,–,15,–,11,–,2020
+Biological scientists,biological-scientists,life-physical-and-social-science-occupations,72,"1,141",37,–,35,–,2020
+Conservation scientists and foresters,conservation-scientists-and-foresters,life-physical-and-social-science-occupations,11,–,8,–,3,–,2020
+Medical scientists,medical-scientists,life-physical-and-social-science-occupations,114,"1,612",53,"2,103",60,"1,372",2020
+"Life scientists, all other",life-scientists-all-other,life-physical-and-social-science-occupations,7,–,4,–,3,–,2020
+Astronomers and physicists,astronomers-and-physicists,life-physical-and-social-science-occupations,19,–,10,–,9,–,2020
+Atmospheric and space scientists,atmospheric-and-space-scientists,life-physical-and-social-science-occupations,9,–,5,–,4,–,2020
+Chemists and materials scientists,chemists-and-materials-scientists,life-physical-and-social-science-occupations,83,"1,362",50,"1,435",34,–,2020
+"Environmental scientists and specialists, including health",environmental-scientists-and-specialists-including-health,life-physical-and-social-science-occupations,39,–,19,–,20,–,2020
+"Geoscientists and hydrologists, except geographers",geoscientists-and-hydrologists-except-geographers,life-physical-and-social-science-occupations,43,–,34,–,8,–,2020
+"Physical scientists, all other",physical-scientists-all-other,life-physical-and-social-science-occupations,324,"1,438",175,"1,728",149,"1,325",2020
+Economists,economists,life-physical-and-social-science-occupations,26,–,15,–,11,–,2020
+Survey researchers,survey-researchers,life-physical-and-social-science-occupations,5,–,1,–,3,–,2020
+Clinical and counseling psychologists,clinical-and-counseling-psychologists,life-physical-and-social-science-occupations,8,–,3,–,5,–,2020
+School psychologists,school-psychologists,life-physical-and-social-science-occupations,34,–,5,–,29,–,2020
+Other psychologists,other-psychologists,life-physical-and-social-science-occupations,63,"1,435",13,–,50,"1,302",2020
+Sociologists,sociologists,life-physical-and-social-science-occupations,3,–,1,–,2,–,2020
+Urban and regional planners,urban-and-regional-planners,life-physical-and-social-science-occupations,47,–,29,–,19,–,2020
+Miscellaneous social scientists and related workers,miscellaneous-social-scientists-and-related-workers,life-physical-and-social-science-occupations,39,–,24,–,15,–,2020
+Agricultural and food science technicians,agricultural-and-food-science-technicians,life-physical-and-social-science-occupations,38,–,24,–,15,–,2020
+Biological technicians,biological-technicians,life-physical-and-social-science-occupations,22,–,7,–,15,–,2020
+Chemical technicians,chemical-technicians,life-physical-and-social-science-occupations,64,"1,039",39,–,25,–,2020
+Environmental science and geoscience technicians,environmental-science-and-geoscience-technicians,life-physical-and-social-science-occupations,18,–,13,–,6,–,2020
+Nuclear technicians,nuclear-technicians,life-physical-and-social-science-occupations,6,–,6,–,0,–,2020
+Social science research assistants,social-science-research-assistants,life-physical-and-social-science-occupations,3,–,2,–,1,–,2020
+"Other life, physical, and social science technicians",other-life-physical-and-social-science-technicians,life-physical-and-social-science-occupations,202,"1,074",90,"1,116",111,"1,047",2020
+Occupational health and safety specialists and technicians,occupational-health-and-safety-specialists-and-technicians,life-physical-and-social-science-occupations,77,"1,444",53,"1,423",24,–,2020
+Community and social service occupations,community-and-social-service-occupations,professional-and-related-occupations,"2,187","1,003",703,"1,103","1,484",976,2020
+Substance abuse and behavioral disorder counselors,substance-abuse-and-behavioral-disorder-counselors,community-and-social-service-occupations,99,950,17,–,82,966,2020
+"Educational, guidance, and career counselors and advisors",educational-guidance-and-career-counselors-and-advisors,community-and-social-service-occupations,294,"1,080",72,"1,133",222,"1,061",2020
+Marriage and family therapists,marriage-and-family-therapists,community-and-social-service-occupations,22,–,3,–,19,–,2020
+Mental health counselors,mental-health-counselors,community-and-social-service-occupations,86,"1,066",21,–,65,"1,089",2020
+Rehabilitation counselors,rehabilitation-counselors,community-and-social-service-occupations,24,–,11,–,13,–,2020
+"Counselors, all other",counselors-all-other,community-and-social-service-occupations,132,956,47,–,85,947,2020
+"Child, family, and school social workers",child-family-and-school-social-workers,community-and-social-service-occupations,58,894,7,–,51,894,2020
+Healthcare social workers,healthcare-social-workers,community-and-social-service-occupations,70,"1,152",9,–,61,"1,139",2020
+Mental health and substance abuse social workers,mental-health-and-substance-abuse-social-workers,community-and-social-service-occupations,19,–,2,–,17,–,2020
+"Social workers, all other",social-workers-all-other,community-and-social-service-occupations,593,985,84,"1,170",509,972,2020
+Probation officers and correctional treatment specialists,probation-officers-and-correctional-treatment-specialists,community-and-social-service-occupations,111,"1,058",53,"1,203",58,977,2020
+Social and human service assistants,social-and-human-service-assistants,community-and-social-service-occupations,168,841,35,–,133,803,2020
+Other community and social service specialists,other-community-and-social-service-specialists,community-and-social-service-occupations,83,"1,034",22,–,62,"1,045",2020
+Clergy,clergy,community-and-social-service-occupations,353,"1,055",292,"1,131",61,858,2020
+"Directors, religious activities and education",directors-religious-activities-and-education,community-and-social-service-occupations,36,–,14,–,22,–,2020
+"Religious workers, all other",religious-workers-all-other,community-and-social-service-occupations,38,–,14,–,24,–,2020
+Legal occupations,legal-occupations,professional-and-related-occupations,"1,410","1,540",599,"2,275",812,"1,252",2020
+Lawyers,lawyers,legal-occupations,821,"2,097",470,"2,324",351,"1,665",2020
+Judicial law clerks,judicial-law-clerks,legal-occupations,15,–,4,–,11,–,2020
+"Judges, magistrates, and other judicial workers",judges-magistrates-and-other-judicial-workers,legal-occupations,60,"1,856",26,–,34,–,2020
+Paralegals and legal assistants,paralegals-and-legal-assistants,legal-occupations,343,942,48,–,295,918,2020
+"Title examiners, abstractors, and searchers",title-examiners-abstractors-and-searchers,legal-occupations,101,"1,136",25,–,76,989,2020
+"Legal support workers, all other",legal-support-workers-all-other,legal-occupations,71,"1,042",25,–,46,–,2020
+"Education, training, and library occupations",education-training-and-library-occupations,professional-and-related-occupations,"7,012","1,096","1,870","1,327","5,142","1,026",2020
+Postsecondary teachers,postsecondary-teachers,education-training-and-library-occupations,891,"1,516",443,"1,633",448,"1,384",2020
+Preschool and kindergarten teachers,preschool-and-kindergarten-teachers,education-training-and-library-occupations,412,721,2,–,411,721,2020
+Elementary and middle school teachers,elementary-and-middle-school-teachers,education-training-and-library-occupations,"3,064","1,118",634,"1,258","2,430","1,085",2020
+Secondary school teachers,secondary-school-teachers,education-training-and-library-occupations,914,"1,199",383,"1,319",530,"1,149",2020
+Special education teachers,special-education-teachers,education-training-and-library-occupations,301,"1,044",58,"1,102",244,"1,036",2020
+Tutors,tutors,education-training-and-library-occupations,42,–,11,–,31,–,2020
+Other teachers and instructors,other-teachers-and-instructors,education-training-and-library-occupations,376,"1,061",145,"1,314",231,942,2020
+"Archivists, curators, and museum technicians",archivists-curators-and-museum-technicians,education-training-and-library-occupations,46,–,19,–,27,–,2020
+Librarians and media collections specialists,librarians-and-media-collections-specialists,education-training-and-library-occupations,120,"1,073",19,–,100,"1,127",2020
+Library technicians,library-technicians,education-training-and-library-occupations,17,–,2,–,14,–,2020
+Teaching assistants,teaching-assistants,education-training-and-library-occupations,714,617,123,732,591,604,2020
+Other educational instruction and library workers,other-educational-instruction-and-library-workers,education-training-and-library-occupations,116,"1,145",31,–,85,"1,108",2020
+"Arts, design, entertainment, sports, and media occupations",arts-design-entertainment-sports-and-media-occupations,professional-and-related-occupations,"1,681","1,179",877,"1,252",804,"1,128",2020
+Artists and related workers,artists-and-related-workers,arts-design-entertainment-sports-and-media-occupations,87,"1,116",59,"1,152",28,–,2020
+Commercial and industrial designers,commercial-and-industrial-designers,arts-design-entertainment-sports-and-media-occupations,6,–,3,–,3,–,2020
+Fashion designers,fashion-designers,arts-design-entertainment-sports-and-media-occupations,24,–,7,–,16,–,2020
+Floral designers,floral-designers,arts-design-entertainment-sports-and-media-occupations,38,–,11,–,27,–,2020
+Graphic designers,graphic-designers,arts-design-entertainment-sports-and-media-occupations,209,"1,230",91,"1,395",119,"1,140",2020
+Interior designers,interior-designers,arts-design-entertainment-sports-and-media-occupations,74,"1,107",19,–,55,"1,021",2020
+Merchandise displayers and window trimmers,merchandise-displayers-and-window-trimmers,arts-design-entertainment-sports-and-media-occupations,22,–,10,–,12,–,2020
+Other designers,other-designers,arts-design-entertainment-sports-and-media-occupations,271,"1,210",170,"1,234",101,"1,107",2020
+Actors,actors,arts-design-entertainment-sports-and-media-occupations,10,–,6,–,5,–,2020
+Producers and directors,producers-and-directors,arts-design-entertainment-sports-and-media-occupations,123,"1,499",63,"1,458",60,"1,548",2020
+Athletes and sports competitors,athletes-and-sports-competitors,arts-design-entertainment-sports-and-media-occupations,21,–,19,–,2,–,2020
+Coaches and scouts,coaches-and-scouts,arts-design-entertainment-sports-and-media-occupations,90,931,54,946,36,–,2020
+"Umpires, referees, and other sports officials",umpires-referees-and-other-sports-officials,arts-design-entertainment-sports-and-media-occupations,9,–,9,–,1,–,2020
+Dancers and choreographers,dancers-and-choreographers,arts-design-entertainment-sports-and-media-occupations,4,–,0,–,4,–,2020
+Music directors and composers,music-directors-and-composers,arts-design-entertainment-sports-and-media-occupations,16,–,13,–,3,–,2020
+Musicians and singers,musicians-and-singers,arts-design-entertainment-sports-and-media-occupations,12,–,10,–,2,–,2020
+"Disc jockeys, except radio",disc-jockeys-except-radio,arts-design-entertainment-sports-and-media-occupations,1,–,1,–,0,–,2020
+"Entertainers and performers, sports and related workers, all other",entertainers-and-performers-sports-and-related-workers-all-other,arts-design-entertainment-sports-and-media-occupations,7,–,5,–,3,–,2020
+Broadcast announcers and radio disc jockeys,broadcast-announcers-and-radio-disc-jockeys,arts-design-entertainment-sports-and-media-occupations,18,–,16,–,2,–,2020
+"News analysts, reporters, and journalists",news-analysts-reporters-and-journalists,arts-design-entertainment-sports-and-media-occupations,62,"1,044",29,–,34,–,2020
+Public relations specialists,public-relations-specialists,arts-design-entertainment-sports-and-media-occupations,128,"1,553",48,–,80,"1,452",2020
+Editors,editors,arts-design-entertainment-sports-and-media-occupations,57,"1,237",28,–,29,–,2020
+Technical writers,technical-writers,arts-design-entertainment-sports-and-media-occupations,53,"1,347",28,–,26,–,2020
+Writers and authors,writers-and-authors,arts-design-entertainment-sports-and-media-occupations,98,"1,257",35,–,64,"1,127",2020
+Interpreters and translators,interpreters-and-translators,arts-design-entertainment-sports-and-media-occupations,44,–,18,–,25,–,2020
+Court reporters and simultaneous captioners,court-reporters-and-simultaneous-captioners,arts-design-entertainment-sports-and-media-occupations,21,–,3,–,18,–,2020
+"Media and communication workers, all other",media-and-communication-workers-all-other,arts-design-entertainment-sports-and-media-occupations,14,–,8,–,6,–,2020
+"Broadcast, sound, and lighting technicians",broadcast-sound-and-lighting-technicians,arts-design-entertainment-sports-and-media-occupations,53,"1,001",47,–,6,–,2020
+Photographers,photographers,arts-design-entertainment-sports-and-media-occupations,66,990,36,–,30,–,2020
+"Television, video, and film camera operators and editors",television-video-and-film-camera-operators-and-editors,arts-design-entertainment-sports-and-media-occupations,40,–,30,–,10,–,2020
+"Media and communication equipment workers, all other",media-and-communication-equipment-workers-all-other,arts-design-entertainment-sports-and-media-occupations,3,–,3,–,0,–,2020
+Healthcare practitioners and technical occupations,healthcare-practitioners-and-technical-occupations,professional-and-related-occupations,"7,504","1,227","1,921","1,506","5,584","1,153",2020
+Chiropractors,chiropractors,healthcare-practitioners-and-technical-occupations,9,–,8,–,2,–,2020
+Dentists,dentists,healthcare-practitioners-and-technical-occupations,58,"2,079",41,–,18,–,2020
+Dietitians and nutritionists,dietitians-and-nutritionists,healthcare-practitioners-and-technical-occupations,83,"1,009",5,–,77,"1,019",2020
+Optometrists,optometrists,healthcare-practitioners-and-technical-occupations,21,–,11,–,10,–,2020
+Pharmacists,pharmacists,healthcare-practitioners-and-technical-occupations,241,"2,222",108,"2,286",134,"2,160",2020
+Emergency medicine physicians,emergency-medicine-physicians,healthcare-practitioners-and-technical-occupations,10,–,8,–,2,–,2020
+Radiologists,radiologists,healthcare-practitioners-and-technical-occupations,20,–,15,–,5,–,2020
+Other physicians,other-physicians,healthcare-practitioners-and-technical-occupations,752,"2,102",439,"2,311",313,"1,905",2020
+Surgeons,surgeons,healthcare-practitioners-and-technical-occupations,48,–,32,–,16,–,2020
+Physician assistants,physician-assistants,healthcare-practitioners-and-technical-occupations,113,"1,911",47,–,67,"1,894",2020
+Podiatrists,podiatrists,healthcare-practitioners-and-technical-occupations,5,–,4,–,1,–,2020
+Audiologists,audiologists,healthcare-practitioners-and-technical-occupations,13,–,1,–,12,–,2020
+Occupational therapists,occupational-therapists,healthcare-practitioners-and-technical-occupations,96,"1,373",11,–,85,"1,357",2020
+Physical therapists,physical-therapists,healthcare-practitioners-and-technical-occupations,209,"1,468",74,"1,591",135,"1,451",2020
+Radiation therapists,radiation-therapists,healthcare-practitioners-and-technical-occupations,11,–,8,–,3,–,2020
+Recreational therapists,recreational-therapists,healthcare-practitioners-and-technical-occupations,11,–,3,–,7,–,2020
+Respiratory therapists,respiratory-therapists,healthcare-practitioners-and-technical-occupations,100,"1,162",29,–,71,"1,093",2020
+Speech-language pathologists,speech-language-pathologists,healthcare-practitioners-and-technical-occupations,152,"1,297",8,–,143,"1,272",2020
+Exercise physiologists,exercise-physiologists,healthcare-practitioners-and-technical-occupations,5,–,0,–,4,–,2020
+"Therapists, all other",therapists-all-other,healthcare-practitioners-and-technical-occupations,159,"1,043",29,–,130,986,2020
+Veterinarians,veterinarians,healthcare-practitioners-and-technical-occupations,55,"1,795",19,–,36,–,2020
+Registered nurses,registered-nurses,healthcare-practitioners-and-technical-occupations,"2,701","1,262",364,"1,454","2,337","1,240",2020
+Nurse anesthetists,nurse-anesthetists,healthcare-practitioners-and-technical-occupations,30,–,15,–,16,–,2020
+Nurse midwives,nurse-midwives,healthcare-practitioners-and-technical-occupations,7,–,0,–,7,–,2020
+Nurse practitioners,nurse-practitioners,healthcare-practitioners-and-technical-occupations,171,"1,872",26,–,145,"1,867",2020
+Acupuncturists,acupuncturists,healthcare-practitioners-and-technical-occupations,7,–,4,–,3,–,2020
+"Healthcare diagnosing or treating practitioners, all other",healthcare-diagnosing-or-treating-practitioners-all-other,healthcare-practitioners-and-technical-occupations,1,–,0,–,1,–,2020
+Clinical laboratory technologists and technicians,clinical-laboratory-technologists-and-technicians,healthcare-practitioners-and-technical-occupations,289,"1,028",78,"1,195",211,946,2020
+Dental hygienists,dental-hygienists,healthcare-practitioners-and-technical-occupations,96,"1,125",7,–,89,"1,083",2020
+Cardiovascular technologists and technicians,cardiovascular-technologists-and-technicians,healthcare-practitioners-and-technical-occupations,37,–,12,–,25,–,2020
+Diagnostic medical sonographers,diagnostic-medical-sonographers,healthcare-practitioners-and-technical-occupations,73,"1,227",12,–,61,"1,208",2020
+Radiologic technologists and technicians,radiologic-technologists-and-technicians,healthcare-practitioners-and-technical-occupations,222,"1,103",77,"1,234",145,"1,063",2020
+Magnetic resonance imaging technologists,magnetic-resonance-imaging-technologists,healthcare-practitioners-and-technical-occupations,45,–,24,–,21,–,2020
+Nuclear medicine technologists and medical dosimetrists,nuclear-medicine-technologists-and-medical-dosimetrists,healthcare-practitioners-and-technical-occupations,39,–,21,–,18,–,2020
+Emergency medical technicians,emergency-medical-technicians,healthcare-practitioners-and-technical-occupations,134,844,90,936,44,–,2020
+Paramedics,paramedics,healthcare-practitioners-and-technical-occupations,65,"1,163",43,–,23,–,2020
+Pharmacy technicians,pharmacy-technicians,healthcare-practitioners-and-technical-occupations,257,723,58,814,199,700,2020
+Psychiatric technicians,psychiatric-technicians,healthcare-practitioners-and-technical-occupations,53,658,5,–,48,–,2020
+Surgical technologists,surgical-technologists,healthcare-practitioners-and-technical-occupations,74,875,25,–,49,–,2020
+Veterinary technologists and technicians,veterinary-technologists-and-technicians,healthcare-practitioners-and-technical-occupations,73,655,8,–,65,633,2020
+Dietetic technicians and ophthalmic medical technicians,dietetic-technicians-and-ophthalmic-medical-technicians,healthcare-practitioners-and-technical-occupations,44,–,10,–,34,–,2020
+Licensed practical and licensed vocational nurses,licensed-practical-and-licensed-vocational-nurses,healthcare-practitioners-and-technical-occupations,500,875,55,964,445,864,2020
+Medical records specialists,medical-records-specialists,healthcare-practitioners-and-technical-occupations,166,888,4,–,162,893,2020
+"Opticians, dispensing",opticians-dispensing,healthcare-practitioners-and-technical-occupations,32,–,4,–,27,–,2020
+Miscellaneous health technologists and technicians,miscellaneous-health-technologists-and-technicians,healthcare-practitioners-and-technical-occupations,143,888,51,"1,120",93,825,2020
+Other healthcare practitioners and technical occupations,other-healthcare-practitioners-and-technical-occupations,healthcare-practitioners-and-technical-occupations,73,"1,254",30,–,43,–,2020
+Service occupations,service-occupations,,"13,771",621,"6,740",704,"7,032",574,2020
+Healthcare support occupations,healthcare-support-occupations,service-occupations,"3,210",606,532,640,"2,678",600,2020
+Home health aides,home-health-aides,healthcare-support-occupations,310,549,27,–,283,551,2020
+Personal care aides,personal-care-aides,healthcare-support-occupations,788,543,176,567,612,537,2020
+Nursing assistants,nursing-assistants,healthcare-support-occupations,966,595,115,689,851,588,2020
+Orderlies and psychiatric aides,orderlies-and-psychiatric-aides,healthcare-support-occupations,57,663,27,–,30,–,2020
+Occupational therapy assistants and aides,occupational-therapy-assistants-and-aides,healthcare-support-occupations,26,–,5,–,21,–,2020
+Physical therapist assistants and aides,physical-therapist-assistants-and-aides,healthcare-support-occupations,58,964,21,–,37,–,2020
+Massage therapists,massage-therapists,healthcare-support-occupations,38,–,14,–,25,–,2020
+Dental assistants,dental-assistants,healthcare-support-occupations,204,661,11,–,193,663,2020
+Medical assistants,medical-assistants,healthcare-support-occupations,450,675,44,–,407,665,2020
+Medical transcriptionists,medical-transcriptionists,healthcare-support-occupations,29,–,4,–,24,–,2020
+Pharmacy aides,pharmacy-aides,healthcare-support-occupations,32,–,11,–,21,–,2020
+Veterinary assistants and laboratory animal caretakers,veterinary-assistants-and-laboratory-animal-caretakers,healthcare-support-occupations,42,–,12,–,31,–,2020
+Phlebotomists,phlebotomists,healthcare-support-occupations,86,614,15,–,70,612,2020
+Other healthcare support workers,other-healthcare-support-workers,healthcare-support-occupations,124,682,51,738,73,615,2020
+Protective service occupations,protective-service-occupations,service-occupations,"2,690",982,"2,080","1,043",610,768,2020
+First-line supervisors of correctional officers,first-line-supervisors-of-correctional-officers,protective-service-occupations,51,976,34,–,16,–,2020
+First-line supervisors of police and detectives,first-line-supervisors-of-police-and-detectives,protective-service-occupations,92,"1,551",80,"1,553",11,–,2020
+First-line supervisors of firefighting and prevention workers,first-line-supervisors-of-firefighting-and-prevention-workers,protective-service-occupations,34,–,30,–,4,–,2020
+First-line supervisors of security workers,first-line-supervisors-of-security-workers,protective-service-occupations,67,946,44,–,24,–,2020
+"First-line supervisors of protective service workers, all other",first-line-supervisors-of-protective-service-workers-all-other,protective-service-occupations,8,–,8,–,0,–,2020
+Firefighters,firefighters,protective-service-occupations,320,"1,233",304,"1,256",16,–,2020
+Fire inspectors,fire-inspectors,protective-service-occupations,21,–,20,–,1,–,2020
+Bailiffs,bailiffs,protective-service-occupations,11,–,5,–,5,–,2020
+Correctional officers and jailers,correctional-officers-and-jailers,protective-service-occupations,337,907,225,"1,073",112,743,2020
+Detectives and criminal investigators,detectives-and-criminal-investigators,protective-service-occupations,146,"1,437",107,"1,544",39,–,2020
+Fish and game wardens,fish-and-game-wardens,protective-service-occupations,5,–,4,–,1,–,2020
+Parking enforcement workers,parking-enforcement-workers,protective-service-occupations,7,–,5,–,2,–,2020
+Police officers,police-officers,protective-service-occupations,742,"1,155",611,"1,188",131,"1,074",2020
+Animal control workers,animal-control-workers,protective-service-occupations,9,–,7,–,3,–,2020
+Private detectives and investigators,private-detectives-and-investigators,protective-service-occupations,72,979,38,–,35,–,2020
+Security guards and gambling surveillance officers,security-guards-and-gambling-surveillance-officers,protective-service-occupations,673,650,503,680,170,583,2020
+Crossing guards and flaggers,crossing-guards-and-flaggers,protective-service-occupations,17,–,10,–,7,–,2020
+Transportation security screeners,transportation-security-screeners,protective-service-occupations,40,–,24,–,16,–,2020
+School bus monitors,school-bus-monitors,protective-service-occupations,0,–,0,–,0,–,2020
+Other protective service workers,other-protective-service-workers,protective-service-occupations,37,–,22,–,15,–,2020
+Food preparation and serving related occupations,food-preparation-and-serving-related-occupations,service-occupations,"3,353",530,"1,700",570,"1,653",506,2020
+Chefs and head cooks,chefs-and-head-cooks,food-preparation-and-serving-related-occupations,321,696,263,707,57,613,2020
+First-line supervisors of food preparation and serving workers,first-line-supervisors-of-food-preparation-and-serving-workers,food-preparation-and-serving-related-occupations,335,602,137,636,198,583,2020
+Cooks,cooks,food-preparation-and-serving-related-occupations,"1,026",510,610,512,416,505,2020
+Food preparation workers,food-preparation-workers,food-preparation-and-serving-related-occupations,355,510,132,576,224,489,2020
+Bartenders,bartenders,food-preparation-and-serving-related-occupations,169,648,99,708,70,585,2020
+Fast food and counter workers,fast-food-and-counter-workers,food-preparation-and-serving-related-occupations,231,468,84,462,146,470,2020
+Waiters and waitresses,waiters-and-waitresses,food-preparation-and-serving-related-occupations,600,514,212,563,388,497,2020
+"Food servers, nonrestaurant",food-servers-nonrestaurant,food-preparation-and-serving-related-occupations,85,531,25,–,60,513,2020
+Dining room and cafeteria attendants and bartender helpers,dining-room-and-cafeteria-attendants-and-bartender-helpers,food-preparation-and-serving-related-occupations,99,508,50,545,48,–,2020
+Dishwashers,dishwashers,food-preparation-and-serving-related-occupations,83,528,74,567,9,–,2020
+"Hosts and hostesses, restaurant, lounge, and coffee shop",hosts-and-hostesses-restaurant-lounge-and-coffee-shop,food-preparation-and-serving-related-occupations,46,–,10,–,36,–,2020
+"Food preparation and serving related workers, all other",food-preparation-and-serving-related-workers-all-other,food-preparation-and-serving-related-occupations,4,–,3,–,1,–,2020
+Building and grounds cleaning and maintenance occupations,building-and-grounds-cleaning-and-maintenance-occupations,service-occupations,"3,138",603,"2,051",651,"1,087",511,2020
+First-line supervisors of housekeeping and janitorial workers,first-line-supervisors-of-housekeeping-and-janitorial-workers,building-and-grounds-cleaning-and-maintenance-occupations,171,738,107,902,64,596,2020
+"First-line supervisors of landscaping, lawn service, and groundskeeping workers",first-line-supervisors-of-landscaping-lawn-service-and-groundskeeping-workers,building-and-grounds-cleaning-and-maintenance-occupations,108,786,102,785,6,–,2020
+Janitors and building cleaners,janitors-and-building-cleaners,building-and-grounds-cleaning-and-maintenance-occupations,"1,372",614,925,662,447,522,2020
+Maids and housekeeping cleaners,maids-and-housekeeping-cleaners,building-and-grounds-cleaning-and-maintenance-occupations,629,503,98,556,531,497,2020
+Pest control workers,pest-control-workers,building-and-grounds-cleaning-and-maintenance-occupations,90,749,87,747,3,–,2020
+Landscaping and groundskeeping workers,landscaping-and-groundskeeping-workers,building-and-grounds-cleaning-and-maintenance-occupations,665,605,635,603,30,–,2020
+Tree trimmers and pruners,tree-trimmers-and-pruners,building-and-grounds-cleaning-and-maintenance-occupations,82,666,77,684,5,–,2020
+Other grounds maintenance workers,other-grounds-maintenance-workers,building-and-grounds-cleaning-and-maintenance-occupations,21,–,20,–,1,–,2020
+Personal care and service occupations,personal-care-and-service-occupations,service-occupations,"1,380",616,376,740,"1,004",591,2020
+Supervisors of personal care and service workers,supervisors-of-personal-care-and-service-workers,personal-care-and-service-occupations,96,761,35,–,60,719,2020
+Animal trainers,animal-trainers,personal-care-and-service-occupations,34,–,12,–,22,–,2020
+Animal caretakers,animal-caretakers,personal-care-and-service-occupations,108,626,22,–,86,591,2020
+Gambling services workers,gambling-services-workers,personal-care-and-service-occupations,53,765,27,–,26,–,2020
+"Ushers, lobby attendants, and ticket takers",ushers-lobby-attendants-and-ticket-takers,personal-care-and-service-occupations,3,–,1,–,1,–,2020
+Other entertainment attendants and related workers,other-entertainment-attendants-and-related-workers,personal-care-and-service-occupations,47,–,31,–,15,–,2020
+"Embalmers, crematory operators, and funeral attendants",embalmers-crematory-operators-and-funeral-attendants,personal-care-and-service-occupations,8,–,7,–,2,–,2020
+"Morticians, undertakers, and funeral arrangers",morticians-undertakers-and-funeral-arrangers,personal-care-and-service-occupations,10,–,8,–,2,–,2020
+Barbers,barbers,personal-care-and-service-occupations,49,–,39,–,11,–,2020
+"Hairdressers, hairstylists, and cosmetologists",hairdressers-hairstylists-and-cosmetologists,personal-care-and-service-occupations,205,606,24,–,180,601,2020
+Manicurists and pedicurists,manicurists-and-pedicurists,personal-care-and-service-occupations,110,607,26,–,84,578,2020
+Skincare specialists,skincare-specialists,personal-care-and-service-occupations,23,–,3,–,20,–,2020
+Other personal appearance workers,other-personal-appearance-workers,personal-care-and-service-occupations,5,–,0,–,5,–,2020
+"Baggage porters, bellhops, and concierges",baggage-porters-bellhops-and-concierges,personal-care-and-service-occupations,44,–,28,–,16,–,2020
+Tour and travel guides,tour-and-travel-guides,personal-care-and-service-occupations,16,–,13,–,3,–,2020
+Childcare workers,childcare-workers,personal-care-and-service-occupations,383,537,25,–,358,542,2020
+Exercise trainers and group fitness instructors,exercise-trainers-and-group-fitness-instructors,personal-care-and-service-occupations,53,618,20,–,33,–,2020
+Recreation workers,recreation-workers,personal-care-and-service-occupations,80,715,29,–,51,658,2020
+Residential advisors,residential-advisors,personal-care-and-service-occupations,17,–,10,–,7,–,2020
+"Personal care and service workers, all other",personal-care-and-service-workers-all-other,personal-care-and-service-occupations,37,–,14,–,22,–,2020
+Sales and office occupations,sales-and-office-occupations,,"21,165",809,"8,435",956,"12,729",746,2020
+Sales and related occupations,sales-and-related-occupations,sales-and-office-occupations,"8,958",880,"4,991","1,046","3,967",715,2020
+First-line supervisors of retail sales workers,first-line-supervisors-of-retail-sales-workers,sales-and-related-occupations,"2,141",858,"1,181",981,960,733,2020
+First-line supervisors of non-retail sales workers,first-line-supervisors-of-non-retail-sales-workers,sales-and-related-occupations,783,"1,226",510,"1,338",273,"1,076",2020
+Cashiers,cashiers,sales-and-related-occupations,"1,088",507,284,524,805,501,2020
+Counter and rental clerks,counter-and-rental-clerks,sales-and-related-occupations,48,–,27,–,21,–,2020
+Parts salespersons,parts-salespersons,sales-and-related-occupations,97,741,77,756,20,–,2020
+Retail salespersons,retail-salespersons,sales-and-related-occupations,"1,603",705,992,779,611,603,2020
+Advertising sales agents,advertising-sales-agents,sales-and-related-occupations,120,"1,066",50,"1,199",69,"1,055",2020
+Insurance sales agents,insurance-sales-agents,sales-and-related-occupations,469,931,226,"1,169",242,825,2020
+"Securities, commodities, and financial services sales agents",securities-commodities-and-financial-services-sales-agents,sales-and-related-occupations,200,"1,545",158,"1,880",41,–,2020
+Travel agents,travel-agents,sales-and-related-occupations,30,–,7,–,23,–,2020
+"Sales representatives of services, except advertising, insurance, financial services, and travel",sales-representatives-of-services-except-advertising-insurance-financial-services-and-travel,sales-and-related-occupations,497,"1,351",333,"1,482",163,"1,101",2020
+"Sales representatives, wholesale and manufacturing",sales-representatives-wholesale-and-manufacturing,sales-and-related-occupations,"1,073","1,275",758,"1,378",315,"1,065",2020
+"Models, demonstrators, and product promoters",models-demonstrators-and-product-promoters,sales-and-related-occupations,6,–,3,–,3,–,2020
+Real estate brokers and sales agents,real-estate-brokers-and-sales-agents,sales-and-related-occupations,498,"1,084",215,"1,352",283,937,2020
+Sales engineers,sales-engineers,sales-and-related-occupations,37,–,32,–,5,–,2020
+Telemarketers,telemarketers,sales-and-related-occupations,28,–,13,–,15,–,2020
+"Door-to-door sales workers, news and street vendors, and related workers",door-to-door-sales-workers-news-and-street-vendors-and-related-workers,sales-and-related-occupations,34,–,23,–,12,–,2020
+"Sales and related workers, all other",sales-and-related-workers-all-other,sales-and-related-occupations,206,950,100,"1,039",106,838,2020
+Office and administrative support occupations,office-and-administrative-support-occupations,sales-and-office-occupations,"12,207",781,"3,445",868,"8,762",756,2020
+First-line supervisors of office and administrative support workers,first-line-supervisors-of-office-and-administrative-support-workers,office-and-administrative-support-occupations,"1,129",966,395,"1,145",734,925,2020
+"Switchboard operators, including answering service",switchboard-operators-including-answering-service,office-and-administrative-support-occupations,8,–,1,–,7,–,2020
+Telephone operators,telephone-operators,office-and-administrative-support-occupations,19,–,6,–,14,–,2020
+"Communications equipment operators, all other",communications-equipment-operators-all-other,office-and-administrative-support-occupations,8,–,6,–,3,–,2020
+Bill and account collectors,bill-and-account-collectors,office-and-administrative-support-occupations,96,758,27,–,69,744,2020
+Billing and posting clerks,billing-and-posting-clerks,office-and-administrative-support-occupations,379,749,40,–,339,736,2020
+"Bookkeeping, accounting, and auditing clerks",bookkeeping-accounting-and-auditing-clerks,office-and-administrative-support-occupations,741,824,105,"1,101",636,809,2020
+Gambling cage workers,gambling-cage-workers,office-and-administrative-support-occupations,11,–,5,–,6,–,2020
+Payroll and timekeeping clerks,payroll-and-timekeeping-clerks,office-and-administrative-support-occupations,129,945,18,–,111,921,2020
+Procurement clerks,procurement-clerks,office-and-administrative-support-occupations,27,–,11,–,16,–,2020
+Tellers,tellers,office-and-administrative-support-occupations,225,639,42,–,183,634,2020
+"Financial clerks, all other",financial-clerks-all-other,office-and-administrative-support-occupations,90,"1,039",31,–,58,903,2020
+Brokerage clerks,brokerage-clerks,office-and-administrative-support-occupations,4,–,2,–,3,–,2020
+Correspondence clerks,correspondence-clerks,office-and-administrative-support-occupations,3,–,0,–,3,–,2020
+"Court, municipal, and license clerks",court-municipal-and-license-clerks,office-and-administrative-support-occupations,73,777,8,–,65,764,2020
+"Credit authorizers, checkers, and clerks",credit-authorizers-checkers-and-clerks,office-and-administrative-support-occupations,41,–,13,–,28,–,2020
+Customer service representatives,customer-service-representatives,office-and-administrative-support-occupations,"1,814",721,655,771,"1,160",698,2020
+"Eligibility interviewers, government programs",eligibility-interviewers-government-programs,office-and-administrative-support-occupations,71,898,17,–,54,824,2020
+File clerks,file-clerks,office-and-administrative-support-occupations,138,751,32,–,106,744,2020
+"Hotel, motel, and resort desk clerks",hotel-motel-and-resort-desk-clerks,office-and-administrative-support-occupations,60,534,10,–,50,520,2020
+"Interviewers, except eligibility and loan",interviewers-except-eligibility-and-loan,office-and-administrative-support-occupations,155,711,33,–,123,710,2020
+"Library assistants, clerical",library-assistants-clerical,office-and-administrative-support-occupations,25,–,6,–,19,–,2020
+Loan interviewers and clerks,loan-interviewers-and-clerks,office-and-administrative-support-occupations,135,911,32,–,103,874,2020
+New accounts clerks,new-accounts-clerks,office-and-administrative-support-occupations,22,–,8,–,14,–,2020
+Order clerks,order-clerks,office-and-administrative-support-occupations,75,704,36,–,39,–,2020
+"Human resources assistants, except payroll and timekeeping",human-resources-assistants-except-payroll-and-timekeeping,office-and-administrative-support-occupations,44,–,6,–,38,–,2020
+Receptionists and information clerks,receptionists-and-information-clerks,office-and-administrative-support-occupations,846,642,108,688,738,636,2020
+Reservation and transportation ticket agents and travel clerks,reservation-and-transportation-ticket-agents-and-travel-clerks,office-and-administrative-support-occupations,81,879,37,–,44,–,2020
+"Information and record clerks, all other",information-and-record-clerks-all-other,office-and-administrative-support-occupations,81,915,24,–,57,830,2020
+Cargo and freight agents,cargo-and-freight-agents,office-and-administrative-support-occupations,16,–,9,–,7,–,2020
+Couriers and messengers,couriers-and-messengers,office-and-administrative-support-occupations,340,779,284,814,55,701,2020
+Public safety telecommunicators,public-safety-telecommunicators,office-and-administrative-support-occupations,102,858,42,–,60,799,2020
+"Dispatchers, except police, fire, and ambulance",dispatchers-except-police-fire-and-ambulance,office-and-administrative-support-occupations,178,768,84,908,95,717,2020
+"Meter readers, utilities",meter-readers-utilities,office-and-administrative-support-occupations,18,–,17,–,1,–,2020
+Postal service clerks,postal-service-clerks,office-and-administrative-support-occupations,80,"1,010",35,–,45,–,2020
+Postal service mail carriers,postal-service-mail-carriers,office-and-administrative-support-occupations,290,"1,017",185,"1,089",104,962,2020
+"Postal service mail sorters, processors, and processing machine operators",postal-service-mail-sorters-processors-and-processing-machine-operators,office-and-administrative-support-occupations,60,977,34,–,26,–,2020
+"Production, planning, and expediting clerks",production-planning-and-expediting-clerks,office-and-administrative-support-occupations,243,"1,072",118,"1,227",125,908,2020
+"Shipping, receiving, and inventory clerks",shipping-receiving-and-inventory-clerks,office-and-administrative-support-occupations,505,696,340,713,165,667,2020
+"Weighers, measurers, checkers, and samplers, recordkeeping",weighers-measurers-checkers-and-samplers-recordkeeping,office-and-administrative-support-occupations,53,729,30,–,23,–,2020
+Executive secretaries and executive administrative assistants,executive-secretaries-and-executive-administrative-assistants,office-and-administrative-support-occupations,170,991,12,–,158,991,2020
+Legal secretaries and administrative assistants,legal-secretaries-and-administrative-assistants,office-and-administrative-support-occupations,54,914,12,–,42,–,2020
+Medical secretaries and administrative assistants,medical-secretaries-and-administrative-assistants,office-and-administrative-support-occupations,63,804,4,–,59,800,2020
+"Secretaries and administrative assistants, except legal, medical, and executive",secretaries-and-administrative-assistants-except-legal-medical-and-executive,office-and-administrative-support-occupations,"1,607",781,112,929,"1,496",777,2020
+Data entry keyers,data-entry-keyers,office-and-administrative-support-occupations,180,710,51,803,128,700,2020
+Word processors and typists,word-processors-and-typists,office-and-administrative-support-occupations,32,–,6,–,26,–,2020
+Desktop publishers,desktop-publishers,office-and-administrative-support-occupations,0,–,0,–,0,–,2020
+Insurance claims and policy processing clerks,insurance-claims-and-policy-processing-clerks,office-and-administrative-support-occupations,221,760,37,–,184,759,2020
+"Mail clerks and mail machine operators, except postal service",mail-clerks-and-mail-machine-operators-except-postal-service,office-and-administrative-support-occupations,35,–,19,–,17,–,2020
+"Office clerks, general",office-clerks-general,office-and-administrative-support-occupations,912,736,153,790,759,726,2020
+"Office machine operators, except computer",office-machine-operators-except-computer,office-and-administrative-support-occupations,12,–,4,–,9,–,2020
+Proofreaders and copy markers,proofreaders-and-copy-markers,office-and-administrative-support-occupations,4,–,2,–,2,–,2020
+Statistical assistants,statistical-assistants,office-and-administrative-support-occupations,66,"1,272",39,–,27,–,2020
+"Office and administrative support workers, all other",office-and-administrative-support-workers-all-other,office-and-administrative-support-occupations,437,867,107,836,330,875,2020
+"Natural resources, construction, and maintenance occupations",natural-resources-construction-and-maintenance-occupations,,"10,690",905,"10,152",917,538,682,2020
+"Farming, fishing, and forestry occupations",farming-fishing-and-forestry-occupations,natural-resources-construction-and-maintenance-occupations,787,589,600,608,187,528,2020
+"First-line supervisors of farming, fishing, and forestry workers",first-line-supervisors-of-farming-fishing-and-forestry-workers,farming-fishing-and-forestry-occupations,43,–,39,–,5,–,2020
+Agricultural inspectors,agricultural-inspectors,farming-fishing-and-forestry-occupations,14,–,6,–,8,–,2020
+Animal breeders,animal-breeders,farming-fishing-and-forestry-occupations,0,–,0,–,0,–,2020
+"Graders and sorters, agricultural products",graders-and-sorters-agricultural-products,farming-fishing-and-forestry-occupations,41,–,11,–,30,–,2020
+Miscellaneous agricultural workers,miscellaneous-agricultural-workers,farming-fishing-and-forestry-occupations,628,574,491,589,137,519,2020
+Fishing and hunting workers,fishing-and-hunting-workers,farming-fishing-and-forestry-occupations,14,–,14,–,0,–,2020
+Forest and conservation workers,forest-and-conservation-workers,farming-fishing-and-forestry-occupations,17,–,10,–,7,–,2020
+Logging workers,logging-workers,farming-fishing-and-forestry-occupations,29,–,29,–,0,–,2020
+Construction and extraction occupations,construction-and-extraction-occupations,natural-resources-construction-and-maintenance-occupations,"5,826",906,"5,635",910,191,796,2020
+First-line supervisors of construction trades and extraction workers,first-line-supervisors-of-construction-trades-and-extraction-workers,construction-and-extraction-occupations,596,"1,200",579,"1,199",17,–,2020
+Boilermakers,boilermakers,construction-and-extraction-occupations,14,–,14,–,0,–,2020
+"Brickmasons, blockmasons, and stonemasons",brickmasons-blockmasons-and-stonemasons,construction-and-extraction-occupations,87,749,87,749,0,–,2020
+Carpenters,carpenters,construction-and-extraction-occupations,756,892,739,889,17,–,2020
+"Carpet, floor, and tile installers and finishers",carpet-floor-and-tile-installers-and-finishers,construction-and-extraction-occupations,117,770,113,785,4,–,2020
+"Cement masons, concrete finishers, and terrazzo workers",cement-masons-concrete-finishers-and-terrazzo-workers,construction-and-extraction-occupations,54,782,52,787,2,–,2020
+Construction laborers,construction-laborers,construction-and-extraction-occupations,"1,343",783,"1,304",788,39,–,2020
+Construction equipment operators,construction-equipment-operators,construction-and-extraction-occupations,328,979,317,980,10,–,2020
+"Drywall installers, ceiling tile installers, and tapers",drywall-installers-ceiling-tile-installers-and-tapers,construction-and-extraction-occupations,131,784,123,787,8,–,2020
+Electricians,electricians,construction-and-extraction-occupations,735,"1,024",713,"1,035",22,–,2020
+Glaziers,glaziers,construction-and-extraction-occupations,43,–,41,–,2,–,2020
+Insulation workers,insulation-workers,construction-and-extraction-occupations,49,–,47,–,2,–,2020
+Painters and paperhangers,painters-and-paperhangers,construction-and-extraction-occupations,316,691,290,695,26,–,2020
+Pipelayers,pipelayers,construction-and-extraction-occupations,41,–,39,–,1,–,2020
+"Plumbers, pipefitters, and steamfitters",plumbers-pipefitters-and-steamfitters,construction-and-extraction-occupations,444,"1,002",436,"1,004",8,–,2020
+Plasterers and stucco masons,plasterers-and-stucco-masons,construction-and-extraction-occupations,24,–,24,–,0,–,2020
+Reinforcing iron and rebar workers,reinforcing-iron-and-rebar-workers,construction-and-extraction-occupations,3,–,3,–,0,–,2020
+Roofers,roofers,construction-and-extraction-occupations,146,732,145,729,1,–,2020
+Sheet metal workers,sheet-metal-workers,construction-and-extraction-occupations,103,905,99,905,4,–,2020
+Structural iron and steel workers,structural-iron-and-steel-workers,construction-and-extraction-occupations,38,–,36,–,1,–,2020
+Solar photovoltaic installers,solar-photovoltaic-installers,construction-and-extraction-occupations,18,–,18,–,0,–,2020
+"Helpers, construction trades",helpers-construction-trades,construction-and-extraction-occupations,48,–,46,–,2,–,2020
+Construction and building inspectors,construction-and-building-inspectors,construction-and-extraction-occupations,73,"1,119",62,"1,113",11,–,2020
+Elevator and escalator installers and repairers,elevator-and-escalator-installers-and-repairers,construction-and-extraction-occupations,17,–,17,–,0,–,2020
+Fence erectors,fence-erectors,construction-and-extraction-occupations,27,–,27,–,0,–,2020
+Hazardous materials removal workers,hazardous-materials-removal-workers,construction-and-extraction-occupations,26,–,22,–,4,–,2020
+Highway maintenance workers,highway-maintenance-workers,construction-and-extraction-occupations,89,846,83,868,6,–,2020
+Rail-track laying and maintenance equipment operators,rail-track-laying-and-maintenance-equipment-operators,construction-and-extraction-occupations,5,–,5,–,0,–,2020
+Septic tank servicers and sewer pipe cleaners,septic-tank-servicers-and-sewer-pipe-cleaners,construction-and-extraction-occupations,4,–,4,–,0,–,2020
+Miscellaneous construction and related workers,miscellaneous-construction-and-related-workers,construction-and-extraction-occupations,22,–,22,–,0,–,2020
+"Derrick, rotary drill, and service unit operators, oil and gas",derrick-rotary-drill-and-service-unit-operators-oil-and-gas,construction-and-extraction-occupations,16,–,16,–,0,–,2020
+"Excavating and loading machine and dragline operators, surface mining",excavating-and-loading-machine-and-dragline-operators-surface-mining,construction-and-extraction-occupations,6,–,6,–,0,–,2020
+"Earth drillers, except oil and gas",earth-drillers-except-oil-and-gas,construction-and-extraction-occupations,19,–,18,–,1,–,2020
+"Explosives workers, ordnance handling experts, and blasters",explosives-workers-ordnance-handling-experts-and-blasters,construction-and-extraction-occupations,6,–,6,–,0,–,2020
+Underground mining machine operators,underground-mining-machine-operators,construction-and-extraction-occupations,35,–,33,–,2,–,2020
+"Roustabouts, oil and gas",roustabouts-oil-and-gas,construction-and-extraction-occupations,7,–,7,–,0,–,2020
+Other extraction workers,other-extraction-workers,construction-and-extraction-occupations,40,–,40,–,0,–,2020
+"Installation, maintenance, and repair occupations",installation-maintenance-and-repair-occupations,natural-resources-construction-and-maintenance-occupations,"4,077",984,"3,917",991,160,801,2020
+"First-line supervisors of mechanics, installers, and repairers",first-line-supervisors-of-mechanics-installers-and-repairers,installation-maintenance-and-repair-occupations,212,"1,269",191,"1,283",21,–,2020
+"Computer, automated teller, and office machine repairers",computer-automated-teller-and-office-machine-repairers,installation-maintenance-and-repair-occupations,142,960,127,965,15,–,2020
+Radio and telecommunications equipment installers and repairers,radio-and-telecommunications-equipment-installers-and-repairers,installation-maintenance-and-repair-occupations,125,"1,192",116,"1,242",8,–,2020
+Avionics technicians,avionics-technicians,installation-maintenance-and-repair-occupations,8,–,8,–,0,–,2020
+"Electric motor, power tool, and related repairers",electric-motor-power-tool-and-related-repairers,installation-maintenance-and-repair-occupations,15,–,14,–,0,–,2020
+"Electrical and electronics installers and repairers, transportation equipment",electrical-and-electronics-installers-and-repairers-transportation-equipment,installation-maintenance-and-repair-occupations,3,–,3,–,0,–,2020
+"Electrical and electronics repairers, industrial and utility",electrical-and-electronics-repairers-industrial-and-utility,installation-maintenance-and-repair-occupations,9,–,9,–,0,–,2020
+"Electronic equipment installers and repairers, motor vehicles",electronic-equipment-installers-and-repairers-motor-vehicles,installation-maintenance-and-repair-occupations,4,–,4,–,0,–,2020
+Audiovisual equipment installers and repairers,audiovisual-equipment-installers-and-repairers,installation-maintenance-and-repair-occupations,23,–,22,–,1,–,2020
+Security and fire alarm systems installers,security-and-fire-alarm-systems-installers,installation-maintenance-and-repair-occupations,50,"1,028",50,"1,028",0,–,2020
+Aircraft mechanics and service technicians,aircraft-mechanics-and-service-technicians,installation-maintenance-and-repair-occupations,151,"1,164",146,"1,174",5,–,2020
+Automotive body and related repairers,automotive-body-and-related-repairers,installation-maintenance-and-repair-occupations,102,904,100,975,2,–,2020
+Automotive glass installers and repairers,automotive-glass-installers-and-repairers,installation-maintenance-and-repair-occupations,12,–,10,–,3,–,2020
+Automotive service technicians and mechanics,automotive-service-technicians-and-mechanics,installation-maintenance-and-repair-occupations,585,855,581,857,4,–,2020
+Bus and truck mechanics and diesel engine specialists,bus-and-truck-mechanics-and-diesel-engine-specialists,installation-maintenance-and-repair-occupations,312,"1,023",306,"1,023",6,–,2020
+Heavy vehicle and mobile equipment service technicians and mechanics,heavy-vehicle-and-mobile-equipment-service-technicians-and-mechanics,installation-maintenance-and-repair-occupations,179,999,178,998,1,–,2020
+Small engine mechanics,small-engine-mechanics,installation-maintenance-and-repair-occupations,36,–,36,–,0,–,2020
+"Miscellaneous vehicle and mobile equipment mechanics, installers, and repairers",miscellaneous-vehicle-and-mobile-equipment-mechanics-installers-and-repairers,installation-maintenance-and-repair-occupations,72,665,71,668,1,–,2020
+Control and valve installers and repairers,control-and-valve-installers-and-repairers,installation-maintenance-and-repair-occupations,25,–,24,–,1,–,2020
+"Heating, air conditioning, and refrigeration mechanics and installers",heating-air-conditioning-and-refrigeration-mechanics-and-installers,installation-maintenance-and-repair-occupations,382,"1,003",377,"1,011",6,–,2020
+Home appliance repairers,home-appliance-repairers,installation-maintenance-and-repair-occupations,24,–,22,–,1,–,2020
+Industrial and refractory machinery mechanics,industrial-and-refractory-machinery-mechanics,installation-maintenance-and-repair-occupations,401,"1,031",377,"1,049",23,–,2020
+"Maintenance and repair workers, general",maintenance-and-repair-workers-general,installation-maintenance-and-repair-occupations,550,895,526,897,24,–,2020
+"Maintenance workers, machinery",maintenance-workers-machinery,installation-maintenance-and-repair-occupations,22,–,22,–,0,–,2020
+Millwrights,millwrights,installation-maintenance-and-repair-occupations,62,"1,178",61,"1,185",1,–,2020
+Electrical power-line installers and repairers,electrical-power-line-installers-and-repairers,installation-maintenance-and-repair-occupations,139,"1,268",136,"1,306",2,–,2020
+Telecommunications line installers and repairers,telecommunications-line-installers-and-repairers,installation-maintenance-and-repair-occupations,155,"1,031",146,"1,076",9,–,2020
+Precision instrument and equipment repairers,precision-instrument-and-equipment-repairers,installation-maintenance-and-repair-occupations,62,"1,085",52,"1,098",11,–,2020
+Wind turbine service technicians,wind-turbine-service-technicians,installation-maintenance-and-repair-occupations,5,–,4,–,1,–,2020
+"Coin, vending, and amusement machine servicers and repairers",coin-vending-and-amusement-machine-servicers-and-repairers,installation-maintenance-and-repair-occupations,27,–,22,–,6,–,2020
+Commercial divers,commercial-divers,installation-maintenance-and-repair-occupations,3,–,3,–,0,–,2020
+Locksmiths and safe repairers,locksmiths-and-safe-repairers,installation-maintenance-and-repair-occupations,19,–,19,–,0,–,2020
+Manufactured building and mobile home installers,manufactured-building-and-mobile-home-installers,installation-maintenance-and-repair-occupations,3,–,3,–,0,–,2020
+Riggers,riggers,installation-maintenance-and-repair-occupations,6,–,6,–,0,–,2020
+"Helpers--installation, maintenance, and repair workers",helpers-installation-maintenance-and-repair-workers,installation-maintenance-and-repair-occupations,16,–,14,–,2,–,2020
+"Other installation, maintenance, and repair workers",other-installation-maintenance-and-repair-workers,installation-maintenance-and-repair-occupations,139,780,131,810,8,–,2020
+"Production, transportation, and material moving occupations",production-transportation-and-material-moving-occupations,,"14,738",746,"11,494",796,"3,243",614,2020
+Production occupations,production-occupations,production-transportation-and-material-moving-occupations,"6,820",775,"5,055",841,"1,765",630,2020
+First-line supervisors of production and operating workers,first-line-supervisors-of-production-and-operating-workers,production-occupations,713,"1,038",591,"1,099",122,816,2020
+"Aircraft structure, surfaces, rigging, and systems assemblers",aircraft-structure-surfaces-rigging-and-systems-assemblers,production-occupations,3,–,2,–,1,–,2020
+"Electrical, electronics, and electromechanical assemblers",electrical-electronics-and-electromechanical-assemblers,production-occupations,90,640,53,742,37,–,2020
+Engine and other machine assemblers,engine-and-other-machine-assemblers,production-occupations,3,–,3,–,0,–,2020
+Structural metal fabricators and fitters,structural-metal-fabricators-and-fitters,production-occupations,17,–,17,–,0,–,2020
+Other assemblers and fabricators,other-assemblers-and-fabricators,production-occupations,828,705,565,740,263,638,2020
+Bakers,bakers,production-occupations,131,596,53,621,78,584,2020
+"Butchers and other meat, poultry, and fish processing workers",butchers-and-other-meat-poultry-and-fish-processing-workers,production-occupations,221,733,163,754,57,642,2020
+"Food and tobacco roasting, baking, and drying machine operators and tenders",food-and-tobacco-roasting-baking-and-drying-machine-operators-and-tenders,production-occupations,8,–,7,–,1,–,2020
+Food batchmakers,food-batchmakers,production-occupations,70,649,32,–,38,–,2020
+Food cooking machine operators and tenders,food-cooking-machine-operators-and-tenders,production-occupations,7,–,2,–,5,–,2020
+"Food processing workers, all other",food-processing-workers-all-other,production-occupations,118,669,74,743,44,–,2020
+Computer numerically controlled tool operators and programmers,computer-numerically-controlled-tool-operators-and-programmers,production-occupations,96,964,89,974,6,–,2020
+"Forming machine setters, operators, and tenders, metal and plastic",forming-machine-setters-operators-and-tenders-metal-and-plastic,production-occupations,24,–,23,–,1,–,2020
+"Cutting, punching, and press machine setters, operators, and tenders, metal and plastic",cutting-punching-and-press-machine-setters-operators-and-tenders-metal-and-plastic,production-occupations,69,821,58,843,11,–,2020
+"Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic",grinding-lapping-polishing-and-buffing-machine-tool-setters-operators-and-tenders-metal-and-plastic,production-occupations,35,–,29,–,6,–,2020
+"Other machine tool setters, operators, and tenders, metal and plastic",other-machine-tool-setters-operators-and-tenders-metal-and-plastic,production-occupations,8,–,6,–,2,–,2020
+Machinists,machinists,production-occupations,297,923,272,940,25,–,2020
+"Metal furnace operators, tenders, pourers, and casters",metal-furnace-operators-tenders-pourers-and-casters,production-occupations,19,–,19,–,0,–,2020
+"Model makers and patternmakers, metal and plastic",model-makers-and-patternmakers-metal-and-plastic,production-occupations,9,–,7,–,2,–,2020
+"Molders and molding machine setters, operators, and tenders, metal and plastic",molders-and-molding-machine-setters-operators-and-tenders-metal-and-plastic,production-occupations,37,–,31,–,5,–,2020
+Tool and die makers,tool-and-die-makers,production-occupations,37,–,36,–,1,–,2020
+"Welding, soldering, and brazing workers",welding-soldering-and-brazing-workers,production-occupations,486,839,471,848,16,–,2020
+Other metal workers and plastic workers,other-metal-workers-and-plastic-workers,production-occupations,338,770,277,816,61,622,2020
+Prepress technicians and workers,prepress-technicians-and-workers,production-occupations,12,–,10,–,3,–,2020
+Printing press operators,printing-press-operators,production-occupations,120,748,95,757,25,–,2020
+Print binding and finishing workers,print-binding-and-finishing-workers,production-occupations,16,–,9,–,7,–,2020
+Laundry and dry-cleaning workers,laundry-and-dry-cleaning-workers,production-occupations,94,538,34,–,60,522,2020
+"Pressers, textile, garment, and related materials",pressers-textile-garment-and-related-materials,production-occupations,23,–,7,–,15,–,2020
+Sewing machine operators,sewing-machine-operators,production-occupations,97,579,37,–,59,584,2020
+Shoe and leather workers,shoe-and-leather-workers,production-occupations,6,–,2,–,3,–,2020
+"Tailors, dressmakers, and sewers",tailors-dressmakers-and-sewers,production-occupations,31,–,5,–,26,–,2020
+"Textile machine setters, operators, and tenders",textile-machine-setters-operators-and-tenders,production-occupations,15,–,5,–,10,–,2020
+Upholsterers,upholsterers,production-occupations,20,–,18,–,2,–,2020
+"Other textile, apparel, and furnishings workers",other-textile-apparel-and-furnishings-workers,production-occupations,12,–,9,–,2,–,2020
+Cabinetmakers and bench carpenters,cabinetmakers-and-bench-carpenters,production-occupations,31,–,29,–,1,–,2020
+Furniture finishers,furniture-finishers,production-occupations,9,–,3,–,6,–,2020
+"Sawing machine setters, operators, and tenders, wood",sawing-machine-setters-operators-and-tenders-wood,production-occupations,20,–,16,–,3,–,2020
+"Woodworking machine setters, operators, and tenders, except sawing",woodworking-machine-setters-operators-and-tenders-except-sawing,production-occupations,9,–,9,–,1,–,2020
+Other woodworkers,other-woodworkers,production-occupations,12,–,12,–,0,–,2020
+"Power plant operators, distributors, and dispatchers",power-plant-operators-distributors-and-dispatchers,production-occupations,38,–,37,–,1,–,2020
+Stationary engineers and boiler operators,stationary-engineers-and-boiler-operators,production-occupations,45,–,40,–,5,–,2020
+Water and wastewater treatment plant and system operators,water-and-wastewater-treatment-plant-and-system-operators,production-occupations,116,955,104,990,12,–,2020
+Miscellaneous plant and system operators,miscellaneous-plant-and-system-operators,production-occupations,42,–,38,–,4,–,2020
+"Chemical processing machine setters, operators, and tenders",chemical-processing-machine-setters-operators-and-tenders,production-occupations,50,"1,083",47,–,3,–,2020
+"Crushing, grinding, polishing, mixing, and blending workers",crushing-grinding-polishing-mixing-and-blending-workers,production-occupations,79,766,61,788,17,–,2020
+Cutting workers,cutting-workers,production-occupations,54,692,40,–,14,–,2020
+"Extruding, forming, pressing, and compacting machine setters, operators, and tenders",extruding-forming-pressing-and-compacting-machine-setters-operators-and-tenders,production-occupations,22,–,15,–,7,–,2020
+"Furnace, kiln, oven, drier, and kettle operators and tenders",furnace-kiln-oven-drier-and-kettle-operators-and-tenders,production-occupations,10,–,10,–,0,–,2020
+"Inspectors, testers, sorters, samplers, and weighers",inspectors-testers-sorters-samplers-and-weighers,production-occupations,684,814,418,910,266,710,2020
+Jewelers and precious stone and metal workers,jewelers-and-precious-stone-and-metal-workers,production-occupations,22,–,12,–,10,–,2020
+Dental and ophthalmic laboratory technicians and medical appliance technicians,dental-and-ophthalmic-laboratory-technicians-and-medical-appliance-technicians,production-occupations,59,694,23,–,36,–,2020
+Packaging and filling machine operators and tenders,packaging-and-filling-machine-operators-and-tenders,production-occupations,224,620,126,667,98,544,2020
+Painting workers,painting-workers,production-occupations,139,849,124,879,15,–,2020
+Photographic process workers and processing machine operators,photographic-process-workers-and-processing-machine-operators,production-occupations,3,–,1,–,2,–,2020
+Adhesive bonding machine operators and tenders,adhesive-bonding-machine-operators-and-tenders,production-occupations,8,–,6,–,2,–,2020
+Etchers and engravers,etchers-and-engravers,production-occupations,3,–,3,–,0,–,2020
+"Molders, shapers, and casters, except metal and plastic",molders-shapers-and-casters-except-metal-and-plastic,production-occupations,19,–,17,–,2,–,2020
+"Paper goods machine setters, operators, and tenders",paper-goods-machine-setters-operators-and-tenders,production-occupations,22,–,18,–,4,–,2020
+Tire builders,tire-builders,production-occupations,0,–,0,–,0,–,2020
+Helpers--production workers,helpers-production-workers,production-occupations,31,–,23,–,9,–,2020
+Other production equipment operators and tenders,other-production-equipment-operators-and-tenders,production-occupations,5,–,5,–,0,–,2020
+Other production workers,other-production-workers,production-occupations,957,739,706,798,251,637,2020
+Transportation and material moving occupations,transportation-and-material-moving-occupations,production-transportation-and-material-moving-occupations,"7,917",719,"6,439",759,"1,478",600,2020
+Supervisors of transportation and material moving workers,supervisors-of-transportation-and-material-moving-workers,transportation-and-material-moving-occupations,222,919,175,943,47,–,2020
+Aircraft pilots and flight engineers,aircraft-pilots-and-flight-engineers,transportation-and-material-moving-occupations,112,"1,923",109,"1,984",3,–,2020
+Air traffic controllers and airfield operations specialists,air-traffic-controllers-and-airfield-operations-specialists,transportation-and-material-moving-occupations,32,–,29,–,3,–,2020
+Flight attendants,flight-attendants,transportation-and-material-moving-occupations,54,895,13,–,41,–,2020
+"Ambulance drivers and attendants, except emergency medical technicians",ambulance-drivers-and-attendants-except-emergency-medical-technicians,transportation-and-material-moving-occupations,8,–,7,–,1,–,2020
+"Bus drivers, school",bus-drivers-school,transportation-and-material-moving-occupations,105,647,52,708,53,622,2020
+"Bus drivers, transit and intercity",bus-drivers-transit-and-intercity,transportation-and-material-moving-occupations,146,783,89,774,57,791,2020
+Driver/sales workers and truck drivers,driver-sales-workers-and-truck-drivers,transportation-and-material-moving-occupations,"2,592",896,"2,409",916,183,666,2020
+Shuttle drivers and chauffeurs,shuttle-drivers-and-chauffeurs,transportation-and-material-moving-occupations,57,606,47,–,10,–,2020
+Taxi drivers,taxi-drivers,transportation-and-material-moving-occupations,157,734,132,743,25,–,2020
+"Motor vehicle operators, all other",motor-vehicle-operators-all-other,transportation-and-material-moving-occupations,84,616,70,642,15,–,2020
+Locomotive engineers and operators,locomotive-engineers-and-operators,transportation-and-material-moving-occupations,50,"1,489",45,–,5,–,2020
+Railroad conductors and yardmasters,railroad-conductors-and-yardmasters,transportation-and-material-moving-occupations,34,–,34,–,0,–,2020
+Other rail transportation workers,other-rail-transportation-workers,transportation-and-material-moving-occupations,11,–,8,–,2,–,2020
+Sailors and marine oilers,sailors-and-marine-oilers,transportation-and-material-moving-occupations,16,–,16,–,0,–,2020
+Ship and boat captains and operators,ship-and-boat-captains-and-operators,transportation-and-material-moving-occupations,30,–,28,–,2,–,2020
+Ship engineers,ship-engineers,transportation-and-material-moving-occupations,1,–,1,–,0,–,2020
+Parking attendants,parking-attendants,transportation-and-material-moving-occupations,44,–,36,–,7,–,2020
+Transportation service attendants,transportation-service-attendants,transportation-and-material-moving-occupations,81,611,70,614,11,–,2020
+Transportation inspectors,transportation-inspectors,transportation-and-material-moving-occupations,26,–,21,–,6,–,2020
+Passenger attendants,passenger-attendants,transportation-and-material-moving-occupations,14,–,4,–,11,–,2020
+Other transportation workers,other-transportation-workers,transportation-and-material-moving-occupations,24,–,16,–,7,–,2020
+Crane and tower operators,crane-and-tower-operators,transportation-and-material-moving-occupations,48,–,46,–,2,–,2020
+"Conveyor, dredge, and hoist and winch operators",conveyor-dredge-and-hoist-and-winch-operators,transportation-and-material-moving-occupations,23,–,22,–,1,–,2020
+Industrial truck and tractor operators,industrial-truck-and-tractor-operators,transportation-and-material-moving-occupations,507,711,467,708,41,–,2020
+Cleaners of vehicles and equipment,cleaners-of-vehicles-and-equipment,transportation-and-material-moving-occupations,214,580,179,581,35,–,2020
+"Laborers and freight, stock, and material movers, hand",laborers-and-freight-stock-and-material-movers-hand,transportation-and-material-moving-occupations,"1,587",650,"1,268",672,319,595,2020
+Machine feeders and offbearers,machine-feeders-and-offbearers,transportation-and-material-moving-occupations,11,–,4,–,6,–,2020
+"Packers and packagers, hand",packers-and-packagers-hand,transportation-and-material-moving-occupations,436,582,205,604,231,544,2020
+Stockers and order fillers,stockers-and-order-fillers,transportation-and-material-moving-occupations,"1,058",593,714,602,345,576,2020
+Pumping station operators,pumping-station-operators,transportation-and-material-moving-occupations,17,–,17,–,0,–,2020
+Refuse and recyclable material collectors,refuse-and-recyclable-material-collectors,transportation-and-material-moving-occupations,70,680,64,698,6,–,2020
+Other material moving workers,other-material-moving-workers,transportation-and-material-moving-occupations,46,–,41,–,5,–,2020
