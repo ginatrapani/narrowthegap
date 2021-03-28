@@ -374,6 +374,7 @@ class Gap extends Component {
         // regular gap
         // gap without enough data (default to parent)
         // women make more than men
+        // women and men make the same wage!
         // missing gap (occupation not found)
         if (gap) {
             const lessPerWeek =
@@ -381,15 +382,28 @@ class Gap extends Component {
                 gap.wageGaps.years[0].womenMedianWeeklyEarnings;
 
             if (lessPerWeek > 0) {
-                return (
-                    "Women" +
-                    this.getWorkingPhrasing(gap.name) +
-                    " " +
-                    GapAPI.cleanOccupationName(gap.name) +
-                    " made " +
-                    gap.wageGaps.years[0].centsToDollar +
-                    " cents to the dollar men earned doing the same job."
-                );
+                if (gap.wageGaps.years[0].centsToDollar !== 100) {
+                    return (
+                        "Women" +
+                        this.getWorkingPhrasing(gap.name) +
+                        " " +
+                        GapAPI.cleanOccupationName(gap.name) +
+                        " made " +
+                        gap.wageGaps.years[0].centsToDollar +
+                        " cents to the dollar men earned doing the same job."
+                    );
+                } else {
+                    // Equal pay!
+                    return (
+                        "Women" +
+                        this.getWorkingPhrasing(gap.name) +
+                        " " +
+                        GapAPI.cleanOccupationName(gap.name) +
+                        " made the same wage men earned in " +
+                        gap.wageGaps.years[0].year +
+                        ". 🎉"
+                    );
+                }
             } else {
                 const moreCents = gap.wageGaps.years[0].centsToDollar - 100;
                 return (
@@ -415,6 +429,7 @@ class Gap extends Component {
         // regular gap
         // gap without enough data (default to parent)
         // women make more than men
+        // women and men make the same wage!
         // missing gap (occupation not found)
         return gap
             ? "The gender pay gap for women" +
@@ -427,7 +442,18 @@ class Gap extends Component {
 
     getHeadline(gap) {
         if (gap) {
-            if (gap.wageGaps.years[0].centsToDollar < 100) {
+            if (gap.wageGaps.years[0].centsToDollar === 100) {
+                return (
+                    <h1>
+                        Women{this.getWorkingPhrasing(gap.name)}{" "}
+                        <span className="ntg-blue">
+                            {GapAPI.cleanOccupationName(gap.name)}
+                        </span>{" "}
+                        made <span className="ntg-blue">the same wage</span> men
+                        earned in {gap.wageGaps.years[0].year}.{" "}
+                    </h1>
+                );
+            } else if (gap.wageGaps.years[0].centsToDollar < 100) {
                 return (
                     <h1>
                         Women{this.getWorkingPhrasing(gap.name)}{" "}
@@ -471,30 +497,53 @@ class Gap extends Component {
                 gap.wageGaps.years[0].womenMedianWeeklyEarnings;
 
             if (lessPerWeek > 0) {
-                return (
-                    <div>
-                        <p>
-                            That&#8217;s{" "}
-                            <strong className="ntg-red">${lessPerWeek}</strong>{" "}
-                            out of a weekly paycheck, which means she got paid{" "}
-                            <strong className="ntg-red">
-                                ${(lessPerWeek * 52).toLocaleString()}
-                            </strong>{" "}
-                            less doing the same job in{" "}
-                            {gap.wageGaps.years[0].year}.
-                            {this.getComparative(gap)}
-                            <div>
-                                <RandomizerButton
-                                    gap={gap}
-                                    suppress={
-                                        gap.slug ===
-                                        "total-full-time-wage-and-salary-workers"
-                                    }
-                                />
-                            </div>
-                        </p>
-                    </div>
-                );
+                if (gap.wageGaps.years[0].centsToDollar !== 100) {
+                    return (
+                        <div>
+                            <p>
+                                That&#8217;s{" "}
+                                <strong className="ntg-red">
+                                    ${lessPerWeek}
+                                </strong>{" "}
+                                out of a weekly paycheck, which means she got
+                                paid{" "}
+                                <strong className="ntg-red">
+                                    ${(lessPerWeek * 52).toLocaleString()}
+                                </strong>{" "}
+                                less doing the same job in{" "}
+                                {gap.wageGaps.years[0].year}.
+                                {this.getComparative(gap)}
+                                <div>
+                                    <RandomizerButton
+                                        gap={gap}
+                                        suppress={
+                                            gap.slug ===
+                                            "total-full-time-wage-and-salary-workers"
+                                        }
+                                    />
+                                </div>
+                            </p>
+                        </div>
+                    );
+                } else {
+                    // Equal pay!
+                    return (
+                        <div>
+                            <p>
+                                This is one of the occupations that women earned
+                                the same wage as men did in{" "}
+                                {gap.wageGaps.years[0].year}. 🎉
+                                {this.getComparative(gap)}
+                                <div>
+                                    <RandomizerButton
+                                        gap={gap}
+                                        suppress={true}
+                                    />
+                                </div>
+                            </p>
+                        </div>
+                    );
+                }
             } else {
                 return (
                     <div>
