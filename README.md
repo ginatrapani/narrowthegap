@@ -1,6 +1,6 @@
 # Narrow the Gap
 
-A single-serving web site displays the wage gap between men and women in the United States on a per-occupation basis. All factoids based on data provided by the U.S. Bureau of Labor Statistics. See it in action at
+A single-serving web site displays the wage gap between men and women in the United States on a per-occupation basis. Statements based on data provided by the [U.S. Bureau of Labor Statistics](http://www.bls.gov/cps/cpsaat39.htm). See it in action at
 [https://narrowthegap.co](https://narrowthegap.co).
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
