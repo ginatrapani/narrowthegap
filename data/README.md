@@ -1,6 +1,6 @@
 # Narrow the Gap Data API
 
-To experiment with the data set yourself, in a local, PostgreSQL database, run the `.sql` files in this directory in order.
+To experiment with the data set yourself, in a local, PostgreSQL database, run the `.sql` files in this directory in order. Here's [a DB Diagram of the tables you'll get](https://dbdiagram.io/d/5e95c0d239d18f5553fd946c).
 
 Spin up [PostGraphile](https://www.graphile.org/postgraphile/) pointing at that database, and run the GraphQL query in the `gql` folder.
 
