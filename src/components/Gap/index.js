@@ -116,15 +116,19 @@ class Gap extends Component {
                                     Legal occupations
                                 </Link>{" "}
                                 and{" "}
-                                <Link to="/gap/medical-scientists">
-                                    medical scientists
+                                <Link to="/gap/securities-commodities-and-financial-services-sales-agents">
+                                    securities, commodities, and financial
+                                    services sales agents
                                 </Link>{" "}
                                 suffer the largest gender pay gaps.{" "}
-                                <Link to="/gap/cooks">Cooks</Link> and{" "}
-                                <Link to="/gap/civil-engineers">
-                                    civil engineers
+                                <Link to="/gap/teaching-assistants">
+                                    Teaching assistants
                                 </Link>{" "}
-                                have the smallest pay gaps.
+                                and{" "}
+                                <Link to="/gap/purchasing-agents-except-wholesale-retail-and-farm-products">
+                                    purchasing agents
+                                </Link>{" "}
+                                had no pay gap.
                             </p>
                             <h2>
                                 {2058 - new Date().getFullYear()} more years
@@ -499,55 +503,47 @@ class Gap extends Component {
                 gap.wageGaps.years[0].menMedianWeeklyEarnings -
                 gap.wageGaps.years[0].womenMedianWeeklyEarnings;
 
-            if (lessPerWeek > 0) {
-                if (gap.wageGaps.years[0].centsToDollar !== 100) {
-                    return (
-                        <div>
-                            <p>
-                                That&#8217;s{" "}
-                                <strong className="ntg-red">
-                                    ${lessPerWeek}
-                                </strong>{" "}
-                                out of a weekly paycheck, which means she got
-                                paid{" "}
-                                <strong className="ntg-red">
-                                    ${(lessPerWeek * 52).toLocaleString()}
-                                </strong>{" "}
-                                less doing the same job in{" "}
-                                {gap.wageGaps.years[0].year}.
-                                {this.getComparative(gap)}
-                                <div>
-                                    <RandomizerButton
-                                        gap={gap}
-                                        suppress={
-                                            gap.slug ===
-                                            "total-full-time-wage-and-salary-workers"
-                                        }
-                                    />
-                                </div>
-                            </p>
-                        </div>
-                    );
-                } else {
-                    // Equal pay!
-                    return (
-                        <div>
-                            <p>
-                                This is one of the occupations that women earned
-                                the same wage as men did in{" "}
-                                {gap.wageGaps.years[0].year}. 🎉
-                                {this.getComparative(gap)}
-                                <div>
-                                    <RandomizerButton
-                                        gap={gap}
-                                        suppress={true}
-                                    />
-                                </div>
-                            </p>
-                        </div>
-                    );
-                }
-            } else {
+            if (gap.wageGaps.years[0].centsToDollar === 100) {
+                // Equal pay!
+                return (
+                    <div>
+                        <p>
+                            This is one of the occupations that women earned the
+                            same wage as men did in {gap.wageGaps.years[0].year}
+                            . 🎉
+                            {this.getComparative(gap)}
+                            <div>
+                                <RandomizerButton gap={gap} suppress={true} />
+                            </div>
+                        </p>
+                    </div>
+                );
+            } else if (gap.wageGaps.years[0].centsToDollar < 100) {
+                return (
+                    <div>
+                        <p>
+                            That&#8217;s{" "}
+                            <strong className="ntg-red">${lessPerWeek}</strong>{" "}
+                            out of a weekly paycheck, which means she got paid{" "}
+                            <strong className="ntg-red">
+                                ${(lessPerWeek * 52).toLocaleString()}
+                            </strong>{" "}
+                            less doing the same job in{" "}
+                            {gap.wageGaps.years[0].year}.
+                            {this.getComparative(gap)}
+                            <div>
+                                <RandomizerButton
+                                    gap={gap}
+                                    suppress={
+                                        gap.slug ===
+                                        "total-full-time-wage-and-salary-workers"
+                                    }
+                                />
+                            </div>
+                        </p>
+                    </div>
+                );
+            } else if (gap.wageGaps.years[0].centsToDollar > 100) {
                 return (
                     <div>
                         <p>
@@ -559,10 +555,8 @@ class Gap extends Component {
                         </p>
                     </div>
                 );
-            }
-        } else {
-            return "";
-        }
+            } else return "";
+        } else return "";
     }
 
     getSmallPrint(gap) {
