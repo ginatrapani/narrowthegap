@@ -343,8 +343,9 @@ class Gap extends Component {
                                     Pay disparity does not exist in every
                                     occupation, but across all occupations,
                                     women consistently earn less at the same
-                                    jobs. Of the 150 pay gaps presented here,
-                                    women earned more than men in 5 occupations.
+                                    jobs. Of the 147 pay gaps presented here,
+                                    women earned the same or more than men in 8
+                                    occupations.
                                 </footer>
                             </blockquote>
                         </div>
