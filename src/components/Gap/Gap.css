@@ -5,3 +5,6 @@
 .ntg-blue {
     color: #0b4d73;
 }
+ul.dotme {
+    list-style-type: disc;
+}

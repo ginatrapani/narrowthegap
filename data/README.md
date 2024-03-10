@@ -28,57 +28,57 @@ Important note: According to the BLS, 2011 data is not "strictly comparable" to 
 
 Therefore, the following comparisons are for fun and education, but not endorsed by actual data scientists.
 
-- Any occupations where women and men made exactly the same / i.e., cents_to_dollar is 100 in 2021?
-  Yes for 2 occupations, Teaching assistants & purchasing agents
+- Any occupations where women and men made exactly the same / i.e., cents_to_dollar is 100 in 2023?
+  Yes for 2 occupations, Other physicians assistants & Production, planning, and expediting clerks
 
 ```
 SELECT
 	o.id,
 	o.name,
-	wg2021.cents_to_dollar AS wg2021_cents_to_dollar,
-	wg2021.year
+	wg2023.cents_to_dollar AS wg2023_cents_to_dollar,
+	wg2023.year
 FROM
-	wage_gaps wg2021
-	INNER JOIN occupations o ON wg2021.occupation_id = o.id
+	wage_gaps wg2023
+	INNER JOIN occupations o ON wg2023.occupation_id = o.id
 WHERE
-	wg2021.cents_to_dollar = 100
-	AND wg2021.year = 2021
+	wg2023.cents_to_dollar = 100
+	AND wg2023.year = 2023
 ```
 
-- Any gaps that we had data for in 2011 that we don't in 2021? 10
-- Any gaps that we didn't have data for in 2011 that we do in 2021? 15
+- Any gaps that we had data for in 2011 that we don't in 2023? 7
+- Any gaps that we didn't have data for in 2011 that we do in 2023? 19
 
 ```
 SELECT
 	o.id,
 	o.name,
 	wg2011.cents_to_dollar AS wg2011_cents_to_dollar,
-	wg2021.cents_to_dollar AS wg2021_cents_to_dollar
+	wg2023.cents_to_dollar AS wg2023_cents_to_dollar
 FROM
-	wage_gaps wg2021
-	INNER JOIN wage_gaps wg2011 ON wg2011.occupation_id = wg2021.occupation_id
+	wage_gaps wg2023
+	INNER JOIN wage_gaps wg2011 ON wg2011.occupation_id = wg2023.occupation_id
 	INNER JOIN occupations o ON wg2011.occupation_id = o.id
 WHERE
 	wg2011.cents_to_dollar IS NULL
-	AND wg2021.cents_to_dollar IS NOT NULL
+	AND wg2023.cents_to_dollar IS NOT NULL
 	AND wg2011.year = 2011
-	AND wg2021.year = 2021
+	AND wg2023.year = 2023
 ```
 
-- Are there any new occupations with gaps in 2021 not in the 2011 dataset?
-  Yes, 33!
+- Are there any new occupations with gaps in 2023 not in the 2011 dataset?
+  Yes, 37!
 
 ```
 SELECT
     o.id,
     o.name,
-    wg2021.cents_to_dollar
+    wg2023.cents_to_dollar
 FROM
-	wage_gaps wg2021
+	wage_gaps wg2023
 INNER JOIN
 	occupations o
 ON
-	o.id = wg2021.occupation_id
+	o.id = wg2023.occupation_id
 WHERE
 	o.name NOT IN
 	( SELECT o2011.name
@@ -93,7 +93,7 @@ WHERE
 	AND cents_to_dollar IS NOT NULL
 ```
 
-- Did any of the parent slugs change from 2011 to 2021?
+- Did any of the parent slugs change from 2011 to 2023?
   Yes, 1: Personal Care Aides moved from Personal Care and Service Occupations to Healthcare Support Occupations
 
 ```
@@ -108,24 +108,24 @@ WHERE
 	we.parent != o.parent_slug_denorm
 ```
 
-- How many gaps got larger from 2011 to 2021? 61
-- How many gaps got smaller from 2011 to 2021? 39
+- How many gaps got larger from 2011 to 2023? 61
+- How many gaps got smaller from 2011 to 2023? 39
 
 ```
 SELECT
 	o.id,
 	o.name,
 	wg2011.cents_to_dollar AS wg2011_cents_to_dollar,
-	wg2021.cents_to_dollar AS wg2021_cents_to_dollar,
-	wg2021.cents_to_dollar - wg2011.cents_to_dollar AS gap_size_difference
+	wg2023.cents_to_dollar AS wg2023_cents_to_dollar,
+	wg2023.cents_to_dollar - wg2011.cents_to_dollar AS gap_size_difference
 FROM
-	wage_gaps wg2021
-	INNER JOIN wage_gaps wg2011 ON wg2011.occupation_id = wg2021.occupation_id
+	wage_gaps wg2023
+	INNER JOIN wage_gaps wg2011 ON wg2011.occupation_id = wg2023.occupation_id
 	INNER JOIN occupations o ON wg2011.occupation_id = o.id
 WHERE
 	wg2011.cents_to_dollar IS NOT NULL
-	AND wg2021.cents_to_dollar IS NOT NULL
+	AND wg2023.cents_to_dollar IS NOT NULL
 	AND wg2011.year = 2011
-	AND wg2021.year = 2021
-	AND wg2011.cents_to_dollar < wg2021.cents_to_dollar
+	AND wg2023.year = 2023
+	AND wg2011.cents_to_dollar < wg2023.cents_to_dollar
 ```
