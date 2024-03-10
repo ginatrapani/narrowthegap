@@ -23,12 +23,6 @@ class Footer extends Component {
                                 🍴
                             </span>
                             Fork this on GitHub.
-                        </a>{" "}
-                        <a href="https://glitch.com/~narrow-the-gap">
-                            <span role="img" aria-label="carp streamer">
-                                🎏
-                            </span>
-                            Remix this on Glitch.
                         </a>
                     </p>
                 </footer>

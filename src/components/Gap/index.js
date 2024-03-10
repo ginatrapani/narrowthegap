@@ -73,27 +73,10 @@ class Gap extends Component {
                         {this.getSmallPrint(gap)}
                     </div>
                     <div className="row">
-                        <div className="col-md-12">
-                            <h2>Choose an occupation:</h2>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-6">
-                            <AllOccupations columnSlug="management-professional-and-related-occupations" />
-                            <AllOccupations columnSlug="sales-and-office-occupations" />
-                        </div>
-                        <div className="col-md-6">
-                            <AllOccupations columnSlug="natural-resources-construction-and-maintenance-occupations" />
-                            <AllOccupations columnSlug="service-occupations" />
-                            <AllOccupations columnSlug="production-transportation-and-material-moving-occupations" />
-                        </div>
-                    </div>
-                    <hr />
-                    <div className="row">
                         <div className="col-md-4">
                             <h2>Unfair and Illegal</h2>
                             <p>
-                                Over 50 years after President Kennedy signed the{" "}
+                                Over 60 years after President Kennedy signed the{" "}
                                 <a href="http://www.eeoc.gov/laws/statutes/epa.cfm">
                                     Equal Pay Act
                                 </a>
@@ -112,26 +95,24 @@ class Gap extends Component {
                                 colleagues is likely to become wider and wider.
                             </p>
                             <p>
+                                In 2023,{" "}
+                                <Link to="/gap/other-financial-specialists">
+                                    finance specialists
+                                </Link>{" "}
+                                and{" "}
                                 <Link to="/gap/legal-occupations">
-                                    Legal occupations
+                                    legal occupations
                                 </Link>{" "}
-                                and{" "}
-                                <Link to="/gap/securities-commodities-and-financial-services-sales-agents">
-                                    securities, commodities, and financial
-                                    services sales agents
-                                </Link>{" "}
-                                suffer the largest gender pay gaps.{" "}
-                                <Link to="/gap/teaching-assistants">
-                                    Teaching assistants
-                                </Link>{" "}
-                                and{" "}
-                                <Link to="/gap/purchasing-agents-except-wholesale-retail-and-farm-products">
-                                    purchasing agents
-                                </Link>{" "}
-                                had no pay gap.
+                                suffered the largest gender pay gaps. Out of 595
+                                occupations, there was one where women earned
+                                more than men:{" "}
+                                <Link to="/gap/producers-and-directors">
+                                    producers and directors
+                                </Link>
+                                {". "}
                             </p>
                             <h2>
-                                {2058 - new Date().getFullYear()} more years
+                                {2088 - new Date().getFullYear()} more years
                             </h2>
                             <p>
                                 Unequal pay isn&#8217;t just unfair, it&#8217;s
@@ -139,8 +120,8 @@ class Gap extends Component {
                                 same job discuss what they&#8217;re getting
                                 paid, unequal pay can go unaddressed
                                 indefinitely. At the current pace, it will{" "}
-                                <a href="http://www.newsweek.com/gender-pay-gap-wont-close-another-43-years-314249">
-                                    take until 2058
+                                <a href="https://www.aauw.org/resources/research/simple-truth/">
+                                    take until 2088
                                 </a>{" "}
                                 for women and men’s earnings to reach pay
                                 parity. Let&#8217;s make it happen sooner.
@@ -160,7 +141,7 @@ class Gap extends Component {
                                 your loved ones&#8217; workplaces. Here&#8217;s
                                 what you can do.
                             </p>
-                            <ul>
+                            <ul class="dotme">
                                 <li>
                                     <strong>Get educated</strong> about{" "}
                                     <a href="http://www.eeoc.gov/laws/types/equalcompensation.cfm">
@@ -171,8 +152,8 @@ class Gap extends Component {
                                 </li>
                                 <li>
                                     <strong>Raise awareness</strong> about the
-                                    pay gap. To start, tweet, like, share, and
-                                    blog a page from this site.
+                                    pay gap. To start, share a page from this
+                                    site.
                                 </li>
                                 <li>
                                     <strong>
@@ -239,7 +220,7 @@ class Gap extends Component {
                                 <div className="media-body">
                                     <p className="media-heading">
                                         <i>
-                                            <a href="http://www.amazon.com/o/ASIN/0553383876/ref=nosim/lifehackerboo-20">
+                                            <a href="http://www.amazon.com/o/ASIN/0691210535/ref=nosim/lifehackerboo-20">
                                                 Women Don&#8217;t Ask: The High
                                                 Cost of Avoiding
                                                 Negotiation--and Positive
@@ -247,7 +228,7 @@ class Gap extends Component {
                                             </a>
                                         </i>{" "}
                                         by Linda Babcock and Sara Laschever
-                                        (Book, 272 pages)
+                                        (Book, 248 pages)
                                     </p>
                                 </div>
                             </div>
@@ -343,11 +324,28 @@ class Gap extends Component {
                                     Pay disparity does not exist in every
                                     occupation, but across all occupations,
                                     women consistently earn less at the same
-                                    jobs. Of the 147 pay gaps presented here,
-                                    women earned the same or more than men in 8
+                                    jobs. Of the 158 pay gaps presented here,
+                                    women earned the same or more than men in 3
                                     occupations.
                                 </footer>
                             </blockquote>
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h2>See the whole list of occupations</h2>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <AllOccupations columnSlug="management-professional-and-related-occupations" />
+                            <AllOccupations columnSlug="sales-and-office-occupations" />
+                        </div>
+                        <div className="col-md-6">
+                            <AllOccupations columnSlug="natural-resources-construction-and-maintenance-occupations" />
+                            <AllOccupations columnSlug="service-occupations" />
+                            <AllOccupations columnSlug="production-transportation-and-material-moving-occupations" />
                         </div>
                     </div>
 
@@ -457,7 +455,8 @@ class Gap extends Component {
                         <span className="ntg-blue">
                             {GapAPI.cleanOccupationName(gap.name)}
                         </span>{" "}
-                        made <span className="ntg-blue">the same wage</span> men
+                        who worked full-time made{" "}
+                        <span className="ntg-blue">the same wage</span> men
                         earned in {gap.wageGaps.years[0].year}.{" "}
                     </h1>
                 );
@@ -468,7 +467,7 @@ class Gap extends Component {
                         <span className="ntg-blue">
                             {GapAPI.cleanOccupationName(gap.name)}
                         </span>{" "}
-                        made{" "}
+                        who worked full-time made{" "}
                         <span className="ntg-red">
                             {gap.wageGaps.years[0].centsToDollar}&nbsp;cents
                         </span>{" "}
@@ -524,7 +523,9 @@ class Gap extends Component {
                     <div>
                         <p>
                             That&#8217;s{" "}
-                            <strong className="ntg-red">${lessPerWeek}</strong>{" "}
+                            <strong className="ntg-red">
+                                ${lessPerWeek.toLocaleString()}
+                            </strong>{" "}
                             out of a weekly paycheck, which means she got paid{" "}
                             <strong className="ntg-red">
                                 ${(lessPerWeek * 52).toLocaleString()}
@@ -583,7 +584,7 @@ class Gap extends Component {
         if (
             GapAPI.cleanOccupationName(occupationName).endsWith("occupations")
         ) {
-            return " who worked in";
+            return " in";
         }
         return "";
     }
