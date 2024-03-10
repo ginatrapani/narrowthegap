@@ -36,9 +36,12 @@ h6 {
 h6 a:hover {
     text-decoration: none;
 }
-a {
+a,
+a:focus,
+a:visited {
     color: #fff;
     border-bottom: 1px dotted #ccc;
+    text-decoration: none;
 }
 p a:hover,
 li a:hover,
