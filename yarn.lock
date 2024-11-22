@@ -16289,11 +16289,11 @@ __metadata:
   linkType: hard
 
 "ws@npm:^5.2.0":
-  version: 5.2.3
-  resolution: "ws@npm:5.2.3"
+  version: 5.2.4
+  resolution: "ws@npm:5.2.4"
   dependencies:
     async-limiter: "npm:~1.0.0"
-  checksum: 8/bdb2223a40c2c68cf91b25a6c9b8c67d5275378ec6187f343314d3df7530e55b77cb9fe79fb1c6a9758389ac5aefc569d24236924b5c65c5dbbaff409ef739fc
+  checksum: 10c0/14e84e4209f86ab68b01b9ebf42c88f81f26a64ff4886ef65d27c734c9b90b8d7e84712da3c3f7a922a4ab58bf0b96544d32ae28ebbd620fcda3027dd5bc7604
   languageName: node
   linkType: hard
 
