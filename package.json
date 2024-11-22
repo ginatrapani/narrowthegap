@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "netlify-cli": "^17.37.2",
     "react": "^16",
     "react-bootstrap-typeahead": "3.4.7",
     "react-dom": "^16",
