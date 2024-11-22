@@ -3,17 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16",
+    "react": "^18.3.1",
     "react-bootstrap-typeahead": "3.4.7",
-    "react-dom": "^16",
+    "react-dom": "^18.3.1",
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "^3.4.1",
-    "react-snapshot": "^1.3.0"
+    "react-scripts": "^3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && react-snapshot",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build && react-snap",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
@@ -26,7 +25,8 @@
   "devDependencies": {
     "husky": "^4.2.5",
     "prettier": "2.0.4",
-    "pretty-quick": "^2.0.1"
+    "pretty-quick": "^2.0.1",
+    "react-snap": "^1.23.0"
   },
   "husky": {
     "hooks": {
