@@ -21,9 +21,7 @@ You will also see any lint errors in the console.
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.<br>
-It uses `react-snapshot` to [statically pre-render](https://medium.com/superhighfives/an-almost-static-stack-6df0a2791319) all the site's pages.
-
-**Note:** Currently the build command completes with and error "🔥 RangeError: Maximum call stack size exceeded." Fixes welcome! See [Issue #79](https://github.com/ginatrapani/narrowthegap/issues/79).
+It uses [`react-snap`](https://github.com/stereobooster/react-snap) to [statically pre-render](https://medium.com/superhighfives/an-almost-static-stack-6df0a2791319) all the site's pages.
 
 ## Data
 
